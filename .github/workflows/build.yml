@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install --non-interactive
+
+      - name: Make production build
+        run: yarn run production
+
+      - name: Commit production build
+        uses: EndBug/add-and-commit@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          add: "."
+
+          author_name: Production Bot
+          author_email: bot@aw-studio.de
+
+          message: "Apply production build from CI"
