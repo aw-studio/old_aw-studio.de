@@ -1,0 +1,18 @@
+header {
+  transition: all 0.3s;
+}
+
+#app.aw-home {
+  header {
+    background: white;
+    color: black;
+  }
+}
+
+#app.aw-home.aw--scrolled,
+body.aw-nav-open #app.aw-home {
+  header {
+    background: #161616;
+    color: white;
+  }
+}

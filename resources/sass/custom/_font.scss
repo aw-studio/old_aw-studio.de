@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Calibre";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/calibre-web-regular.woff2") format("woff2"),
+    url("/fonts/calibre-web-regular.woff") format("woff"),
+    url("/fonts/calibre-web-regular.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/calibre-web-semibold.woff2") format("woff2"),
+    url("/fonts/calibre-web-semibold.woff") format("woff"),
+    url("/fonts/calibre-web-semibold.eot") format("eot");
+}

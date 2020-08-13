@@ -1,0 +1,17 @@
+{
+    "name": "aw-wiki",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vuepress dev",
+        "build": "vuepress build"
+    },
+    "author": [
+        "Jannes Behrens"
+    ],
+    "devDependencies": {
+        "vuepress-plugin-clean-urls": "^1.1.1"
+    },
+    "dependencies": {
+        "vuepress": "^1.4.0"
+    }
+}
