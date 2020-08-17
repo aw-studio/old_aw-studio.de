@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Fjord\Support\Facades\Form;
 use App\Models\Reference;
+use Fjord\Support\Facades\Form;
 
 class ReferencesController extends Controller
 {
     public function index()
     {
         return view('pages.references.index')->with([
-        'references' => Form::load('pages', 'references'),
-        'highlights' => Form::load('collections', 'highlights'),
-        'featured' => Form::load('collections', 'featured'),
-        'references_az' => Reference::get()->sortBy('title')
-      ]);
+            'references'    => Form::load('pages', 'references'),
+            'highlights'    => Form::load('collections', 'highlights'),
+            'featured'      => Form::load('collections', 'featured'),
+            'references_az' => Reference::get()->sortBy('title'),
+        ]);
     }
 
     public function show($slug)
@@ -32,15 +31,12 @@ class ReferencesController extends Controller
             return [$item->locale => $item->slug];
         })->toArray();
 
-
-
         return view('pages.references.show')->with([
-        'reference' => $reference,
-        'next_reference_slug' => $this->getNextReferenceSlug($slug),
-        'routeParameters' => ['slug' => $slugs]
-      ]);
+            'reference'           => $reference,
+            'next_reference_slug' => $this->getNextReferenceSlug($slug),
+            'routeParameters'     => ['slug' => $slugs],
+        ]);
     }
-
 
     private function getNextReferenceSlug($current)
     {
@@ -54,13 +50,14 @@ class ReferencesController extends Controller
             return $reference->slug === $this->current;
         });
 
-        if ($current_index < $highlights_and_featured->count()-1) {
+        if ($current_index < $highlights_and_featured->count() - 1) {
             $next_index = $current_index + 1;
         } else {
             $next_index = 0;
         }
 
         $next_slug = $highlights_and_featured[$next_index]->slug;
+
         return $next_slug;
     }
 }
