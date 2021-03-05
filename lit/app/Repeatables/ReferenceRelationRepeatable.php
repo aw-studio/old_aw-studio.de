@@ -2,25 +2,26 @@
 
 namespace Lit\Repeatables;
 
+use App\Models\Reference;
 use Ignite\Crud\Fields\Block\Repeatable;
 use Ignite\Crud\Fields\Block\RepeatableForm;
 use Ignite\Page\Table\ColumnBuilder;
 
-class SectionStickyRepeatable extends Repeatable
+class ReferenceRelationRepeatable extends Repeatable
 {
     /**
      * Repeatable type.
      *
      * @var string
      */
-    protected $type = 'section_sticky';
+    protected $type = 'reference_relation';
 
     /**
      * The represantive view of the repeatable.
      *
      * @var string
      */
-    protected $view = 'rep.section_sticky';
+    protected $view = 'rep.reference_relation';
 
     /**
      * Build the repeatable preview.
@@ -30,7 +31,7 @@ class SectionStickyRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Sticky Section</span>');
+        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Reference Repeatable</span>');
     }
 
     /**
@@ -41,18 +42,11 @@ class SectionStickyRepeatable extends Repeatable
      */
     public function form(RepeatableForm $form): void
     {
-        $form->input('headline')
-            ->title('Headline');
-        $form->wysiwyg('text')
-            ->title('Text');
-        $form->boolean('dark')
-            ->title('Dark Backround?')
-            ->hint('Default: Light');
-
-        $form->block('content')
-            ->title('Content')
-            ->repeatables(function ($repeatables) {
-                $repeatables->add(ReferenceRelationRepeatable::class)->button('Reference Relation');
+        $form->oneRelation('reference')
+            ->title('Reference')
+            ->model(Reference::class)
+            ->preview(function ($table) {
+                $table->col('title');
             });
     }
 }
