@@ -10,10 +10,10 @@
 <body>
     <div id="app" class="flex flex-col min-h-screen">
         <header class="fixed top-0 left-0 z-50 flex items-center w-full h-16 text-white bg-black sm:h-24">
-            @yield('header')
+            @include('partials.header')
         </header>
         <nav id="aw-nav" class="bg-black">
-            @yield('nav')
+            @include('partials.nav')
         </nav>
         <main>
             @yield('content')
