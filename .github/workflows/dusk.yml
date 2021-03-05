@@ -14,7 +14,7 @@ jobs:
       - name: Create Database
         run: |
           sudo systemctl start mysql
-          mysql --user="root" --password="root" -e "CREATE DATABASE newawstudio character set UTF8mb4 collate utf8mb4_bin;"
+          mysql --user="root" -e "CREATE DATABASE newawstudio character set UTF8mb4 collate utf8mb4_bin;"
       - name: Install Composer Dependencies
         run: |
           composer config http-basic.store.litstack.io ${{ secrets.LITSTACK_USERNAME }} ${{ secrets.LITSTACK_PASSWORD }}
