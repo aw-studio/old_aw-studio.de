@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94e28cd74bd583592535dfe7eb8a0cbc",
+    "content-hash": "3654bc68ccaaca70d5ed72322b8abf54",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2539,17 +2539,17 @@
         },
         {
             "name": "litstack/bladesmith",
-            "version": "v1.0.2",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:litstack/bladesmith.git",
-                "reference": "1b0df5abb955f8054d7aed76af57b9b771b832dd"
+                "reference": "08a48548978aab8c275c918f8d165bcdfa166951"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://store.litstack.io/dist/litstack/bladesmith/litstack-bladesmith-1b0df5abb955f8054d7aed76af57b9b771b832dd-zip-895fac.zip",
-                "reference": "1b0df5abb955f8054d7aed76af57b9b771b832dd",
-                "shasum": "b6379a9574ffa75886fb9009287f0d089dd9a3ee"
+                "url": "https://store.litstack.io/dist/litstack/bladesmith/litstack-bladesmith-08a48548978aab8c275c918f8d165bcdfa166951-zip-f58109.zip",
+                "reference": "08a48548978aab8c275c918f8d165bcdfa166951",
+                "shasum": "829b2b81d586ba3b176be92fa317cb751362fb54"
             },
             "require": {
                 "cbl/blade-script": "^1.0",
@@ -2601,10 +2601,75 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/litstack/bladesmith/tree/v1.0.2",
+                "source": "https://github.com/litstack/bladesmith/tree/1.x",
                 "issues": "https://github.com/litstack/bladesmith/issues"
             },
-            "time": "2021-01-18T15:43:24+00:00"
+            "time": "2021-03-04T14:52:06+00:00"
+        },
+        {
+            "name": "litstack/bricks",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:litstack/bricks.git",
+                "reference": "ca4b16fda6de459f527b4b4245f65b25d1cf2b9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://store.litstack.io/dist/litstack/bricks/litstack-bricks-ca4b16fda6de459f527b4b4245f65b25d1cf2b9e-zip-4708be.zip",
+                "reference": "ca4b16fda6de459f527b4b4245f65b25d1cf2b9e",
+                "shasum": "20979c8628d569e99bc7658f1bef6fe33ddb0927"
+            },
+            "require": {
+                "litstack/bladesmith": "1.x-dev",
+                "litstack/litstack": "^3.0"
+            },
+            "require-dev": {
+                "litstack/rehearsal": "^1.0.1",
+                "mockery/mockery": "^1.4",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Litstack\\Bricks\\BricksServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Litstack\\Bricks\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://store.litstack.io/downloads/%package%",
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jannescb",
+                    "email": "jannes@aw-studio.de"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/litstack/bricks/tree/main",
+                "issues": "https://github.com/litstack/bricks/issues"
+            },
+            "time": "2021-03-04T15:02:28+00:00"
         },
         {
             "name": "litstack/lang",
@@ -9736,6 +9801,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "litstack/bladesmith": 20,
+        "litstack/bricks": 20,
         "aw-studio/cshelper": 20
     },
     "prefer-stable": true,
