@@ -5,6 +5,7 @@ namespace Lit\Config;
 use Ignite\Application\Navigation\Config;
 use Ignite\Application\Navigation\Navigation;
 use Lit\Config\Crud\ReferenceConfig;
+use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\MasterConfig;
 
 class NavigationConfig extends Config
@@ -44,6 +45,10 @@ class NavigationConfig extends Config
         $nav->section([
             $nav->title('Datensätze'),
             $nav->preset(ReferenceConfig::class)->icon(fa('shapes')),
+        ]);
+        $nav->section([
+            $nav->title('Navigation'),
+            $nav->preset(MainNavigationConfig::class)->icon(fa('stream')),
         ]);
     }
 }
