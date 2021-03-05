@@ -50,8 +50,8 @@ class NavigationConfig extends Config
         ]);
         $nav->section([
             $nav->title('Datensätze'),
-            $nav->preset(ReferenceConfig::class)->icon(fa('shapes')),
-            $nav->preset(CustomerConfig::class)->icon(fa('shapes')),
+            $nav->preset(ReferenceConfig::class)->icon(fa('star-of-life')),
+            $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
         ]);
         $nav->section([
