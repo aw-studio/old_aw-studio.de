@@ -17,10 +17,10 @@
         </section>
         <main>
             @yield('content')
+            <footer class="z-10 mt-auto border-t border-white lg:pb-0">
+                @include('partials.footer')
+            </footer>
         </main>
-        <footer class="z-10 mt-auto border-t border-white lg:pb-0">
-            @include('partials.footer')
-        </footer>
     </div>
     <script src="/js/app.js"></script>
     <x-scripts />

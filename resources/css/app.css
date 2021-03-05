@@ -224,7 +224,16 @@ body.aw-first-section-is-white {
         rgba(255, 255, 255, 1) 100%
     );
 }
-body.aw-nav-animating {
+body.aw-first-section-is-white {
+    background: linear-gradient(
+        0deg,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 1) 46%,
+        rgba(255, 255, 255, 1) 48%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+body.aw-first-section-is-white.aw-nav-animating {
     background: #161616;
 }
 

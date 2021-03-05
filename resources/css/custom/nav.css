@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     opacity: 0;
-    z-index: 60;
+    z-index: 0;
     height: calc(100vh - 96px);
     overflow: auto;
     transform: translateY(10px);
@@ -89,5 +89,6 @@
 
 body.aw-nav-open #aw-nav {
     opacity: 1;
+    z-index: 60;
     transform: translateY(0);
 }

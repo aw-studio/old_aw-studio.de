@@ -103,7 +103,7 @@ body.aw-nav-open main {
   left: 0;
   width: 100vw;
   opacity: 0;
-  z-index: 60;
+  z-index: 0;
   height: calc(100vh - 96px);
   overflow: auto;
   transform: translateY(10px);
@@ -196,6 +196,7 @@ body.aw-nav-open main {
 
 body.aw-nav-open #aw-nav {
   opacity: 1;
+  z-index: 60;
   transform: translateY(0);
 }
 
@@ -17221,7 +17222,17 @@ body.aw-first-section-is-white {
     );
 }
 
-body.aw-nav-animating {
+body.aw-first-section-is-white {
+  background: linear-gradient(
+        0deg,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 1) 46%,
+        rgba(255, 255, 255, 1) 48%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+body.aw-first-section-is-white.aw-nav-animating {
   background: #161616;
 }
 
