@@ -5,5 +5,8 @@
 @endsection
 
 @section('content')
-    bar
+    @if ($form)
+        <h1>{{ $form->h1 }}</h1>
+        @block($form->sections)
+    @endif
 @endsection

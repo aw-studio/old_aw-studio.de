@@ -3,6 +3,7 @@
 namespace Lit\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Lit\Macros\Form\ContentAreaMacro;
 
 class LitstackServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,6 @@ class LitstackServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        (new ContentAreaMacro)->register();
     }
 }
