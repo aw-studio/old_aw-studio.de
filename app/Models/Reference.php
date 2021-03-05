@@ -17,14 +17,14 @@ class Reference extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['title'];
+    protected $fillable = ['title', 'link_href', 'active'];
 
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title'];
+    public $translatedAttributes = ['title', 'subtitle', 'buzzwords', 'text', 'link_text'];
 
     /**
      * The accessors to append to the model's array form.
@@ -48,5 +48,10 @@ class Reference extends Model implements HasMediaContract, TranslatableContract
     public function getImageAttribute()
     {
         return $this->getMedia('image')->first();
+    }
+
+    public function details()
+    {
+        return $this->repeatables('details');
     }
 }

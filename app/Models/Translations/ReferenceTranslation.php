@@ -22,7 +22,7 @@ class ReferenceTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title'];
+    protected $fillable = ['title', 'subtitle', 'buzzwords', 'text', 'link_text'];
 
     /**
      * Return the sluggable configuration array for this model.
