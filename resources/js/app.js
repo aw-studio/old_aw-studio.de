@@ -1,7 +1,5 @@
 require('./bootstrap');
-window.Vue = require('vue');
-
-Vue.component('burger', require('./components/Burger.vue').default);
+require('./service/component.service');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

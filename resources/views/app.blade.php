@@ -8,16 +8,20 @@
     <x-styles />
 </head>
 <body>
-    <nav></nav>
-    <header>
-        @yield('header')
-    </header>
-    <main>
-        @yield('content')
-    </main>
-    <footer>
-        @include('partials.footer')
-    </footer>
+    <div id="app" class="flex flex-col min-h-screen">
+        <header class="fixed top-0 left-0 z-50 flex items-center w-full h-16 text-white bg-black sm:h-24">
+            @yield('header')
+        </header>
+        <nav id="aw-nav" class="bg-black">
+            @yield('nav')
+        </nav>
+        <main>
+            @yield('content')
+        </main>
+        <footer class="pb-20 mt-auto border-t border-white lg:pb-0">
+            @include('partials.footer')
+        </footer>
+    </div>
     <script src="/js/app.js"></script>
     <x-scripts />
 </body>
