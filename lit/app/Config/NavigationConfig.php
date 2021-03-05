@@ -9,6 +9,7 @@ use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
+use Lit\Config\Form\Pages\ApplicationConfig;
 use Lit\Config\Form\Pages\HomeConfig;
 use Lit\Config\Form\Pages\MasterConfig;
 use Lit\Config\Form\Pages\ReferencesConfig;
@@ -52,6 +53,7 @@ class NavigationConfig extends Config
             $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
             $nav->preset(ReferencesConfig::class)->icon(fa('star-of-life')),
             $nav->preset(StudioConfig::class)->icon(fa('star-of-life')),
+            $nav->preset(ApplicationConfig::class)->icon(fa('envelope')),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
         ]);
         $nav->section([
