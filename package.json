@@ -22,6 +22,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "lit-bricks": "file:vendor/litstack/bricks",
         "vue": "^2.6.12"
     }
 }

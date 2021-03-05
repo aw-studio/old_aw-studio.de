@@ -1,5 +1,7 @@
 <?php
 
+use Ignite\Support\Facades\Form;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+if (App::environment('local')) {
+    // only available during development
+    Route::get('/master', function () {
+        return view('master')->with([
+            'form' => Form::load('pages', 'master'),
+        ]);
+    });
+}
