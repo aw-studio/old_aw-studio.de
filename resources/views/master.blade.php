@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('header')
-    foo
+    @include('partials.header')
 @endsection
 
 @section('content')

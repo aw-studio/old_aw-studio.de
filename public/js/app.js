@@ -2014,7 +2014,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbutton[data-v-00d90fc0] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    right: -5px;\n    transition: all 0.3s;\n&:focus {\n        outline: none;\n}\n&:active {\n        transform: scale(0.75);\nspan {\n            height: 3px;\n}\n}\nspan {\n        position: absolute;\n        width: 30px;\n        height: 2px;\n        background: white;\n        border-radius: 1px;\n        transition: all 0.3s;\n        left: 5px;\n&:first-child {\n            top: 15px;\n}\n&:last-child {\n            top: 25px;\n}\n}\n&.overlap {\nspan {\n&:first-child {\n                top: 20px;\n}\n&:last-child {\n                top: 20px;\n}\n}\n}\n&.rotation {\nspan {\n&:first-child {\n                transform: rotate(45deg);\n}\n&:last-child {\n                transform: rotate(-45deg);\n}\n}\n}\n}\n#app.aw-home[data-v-00d90fc0] {\nbutton {\nspan {\n            background: #161616;\n}\n}\n}\n#app.aw-home.aw--scrolled[data-v-00d90fc0],\nbody.aw-nav-open #app.aw-home[data-v-00d90fc0] {\nbutton {\nspan {\n            background: white;\n}\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbutton[data-v-00d90fc0] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    right: -5px;\n    transition: all 0.3s;\n}\nbutton[data-v-00d90fc0]:focus {\n    outline: none;\n}\nbutton[data-v-00d90fc0]:active {\n    transform: scale(0.75);\n}\nbutton:active span[data-v-00d90fc0] {\n    height: 3px;\n}\nbutton span[data-v-00d90fc0] {\n    position: absolute;\n    width: 30px;\n    height: 2px;\n    background: white;\n    border-radius: 1px;\n    transition: all 0.3s;\n    left: 5px;\n}\nbutton span[data-v-00d90fc0]:first-child {\n    top: 15px;\n}\nbutton span[data-v-00d90fc0]:last-child {\n    top: 25px;\n}\nbutton.overlap span[data-v-00d90fc0]:first-child {\n    top: 20px;\n}\nbutton.overlap span[data-v-00d90fc0]:last-child {\n    top: 20px;\n}\nbutton.rotation span[data-v-00d90fc0]:first-child {\n    transform: rotate(45deg);\n}\nbutton.rotation span[data-v-00d90fc0]:last-child {\n    transform: rotate(-45deg);\n}\n#app.aw-home button span[data-v-00d90fc0] {\n    background: #161616;\n}\n#app.aw-home.aw--scrolled button span[data-v-00d90fc0],\nbody.a-nav-open #app.aw-home button span[data-v-00d90fc0] {\n    background: white;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -19313,9 +19313,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nSyntaxError\n\n(59:40) /Users/christian/git/aw-studio.de/resources/css/custom/main.css The `aw-arrow-ltr-white` class does not exist. If you're sure that `aw-arrow-ltr-white` exists, make sure that any `@import` statements are being properly processed before Tailwind CSS sees your CSS, as `@apply` can only be used for classes in the same CSS tree.\n\n \u001b[90m 57 | \u001b[39m    content\u001b[33m:\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 58 | \u001b[39m    transform\u001b[33m:\u001b[39m \u001b[36mtranslate\u001b[39m\u001b[36m(0, 5px)\u001b[39m\u001b[33m;\u001b[39m\n\u001b[1m\u001b[31m>\u001b[39m\u001b[22m\u001b[90m 59 | \u001b[39m    \u001b[36m@apply\u001b[39m inline-block w-12 h-10 mr-4 aw-arrow-ltr-white\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m                                       \u001b[1m\u001b[31m^\u001b[39m\u001b[22m\n \u001b[90m 60 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m 61 | \u001b[39m\n\n    at processResult (/Users/christian/git/aw-studio.de/node_modules/webpack/lib/NormalModule.js:598:19)\n    at /Users/christian/git/aw-studio.de/node_modules/webpack/lib/NormalModule.js:692:5\n    at /Users/christian/git/aw-studio.de/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/christian/git/aw-studio.de/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/christian/git/aw-studio.de/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/christian/git/aw-studio.de/node_modules/postcss-loader/dist/index.js:102:7)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -32082,6 +32085,12 @@ Vue.compile = compileToFunctions;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/******/ 	// the startup function
+/******/ 	// It's empty as some runtime module handles the default behavior
+/******/ 	__webpack_require__.x = x => {};
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -32144,13 +32153,100 @@ Vue.compile = compileToFunctions;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// Promise = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"/js/app": 0
+/******/ 		};
+/******/ 		
+/******/ 		var deferredModules = [
+/******/ 			["./resources/js/app.js"],
+/******/ 			["./resources/css/app.css"]
+/******/ 		];
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		var checkDeferredModules = x => {};
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime, executeModules] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0, resolves = [];
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					resolves.push(installedChunks[chunkId][0]);
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			for(moduleId in moreModules) {
+/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 				}
+/******/ 			}
+/******/ 			if(runtime) runtime(__webpack_require__);
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			while(resolves.length) {
+/******/ 				resolves.shift()();
+/******/ 			}
+/******/ 		
+/******/ 			// add entry modules from loaded chunk to deferred list
+/******/ 			if(executeModules) deferredModules.push.apply(deferredModules, executeModules);
+/******/ 		
+/******/ 			// run deferred modules when all chunks ready
+/******/ 			return checkDeferredModules();
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 		
+/******/ 		function checkDeferredModulesImpl() {
+/******/ 			var result;
+/******/ 			for(var i = 0; i < deferredModules.length; i++) {
+/******/ 				var deferredModule = deferredModules[i];
+/******/ 				var fulfilled = true;
+/******/ 				for(var j = 1; j < deferredModule.length; j++) {
+/******/ 					var depId = deferredModule[j];
+/******/ 					if(installedChunks[depId] !== 0) fulfilled = false;
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferredModules.splice(i--, 1);
+/******/ 					result = __webpack_require__(__webpack_require__.s = deferredModule[0]);
+/******/ 				}
+/******/ 			}
+/******/ 			if(deferredModules.length === 0) {
+/******/ 				__webpack_require__.x();
+/******/ 				__webpack_require__.x = x => {};
+/******/ 			}
+/******/ 			return result;
+/******/ 		}
+/******/ 		var startup = __webpack_require__.x;
+/******/ 		__webpack_require__.x = () => {
+/******/ 			// reset startup function so it can be called again when more startup code is added
+/******/ 			__webpack_require__.x = startup || (x => {});
+/******/ 			return (checkDeferredModules = checkDeferredModulesImpl)();
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./resources/js/app.js");
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
+/******/ 	// run startup
+/******/ 	var __webpack_exports__ = __webpack_require__.x();
 /******/ 	
 /******/ })()
 ;

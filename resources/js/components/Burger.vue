@@ -1,0 +1,95 @@
+<template>
+    <button @click="toggleNav()" aria-label="Navigation" class="aw-burger">
+        <span></span>
+        <span></span>
+    </button>
+</template>
+
+<script>
+export default {
+    methods: {
+        toggleNav() {
+            let body = document.querySelector('body');
+            body.classList.toggle('aw-nav-open');
+            body.classList.add('aw-nav-animating');
+            setTimeout(() => {
+                body.classList.remove('aw-nav-animating');
+            }, 700);
+            this.updateBurger();
+        },
+        updateBurger() {
+            let button = document.querySelector('button.aw-burger');
+            if (button.classList.contains('rotation')) {
+                setTimeout(() => {
+                    button.classList.remove('rotation');
+                }, 200);
+                setTimeout(() => {
+                    button.classList.remove('overlap');
+                }, 500);
+            } else {
+                setTimeout(() => {
+                    button.classList.add('overlap');
+                }, 200);
+                setTimeout(() => {
+                    button.classList.add('rotation');
+                }, 500);
+            }
+        },
+    },
+};
+</script>
+
+<style scoped>
+button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: -5px;
+    transition: all 0.3s;
+}
+button:focus {
+    outline: none;
+}
+button:active {
+    transform: scale(0.75);
+}
+button:active span {
+    height: 3px;
+}
+button span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: all 0.3s;
+    left: 5px;
+}
+button span:first-child {
+    top: 15px;
+}
+button span:last-child {
+    top: 25px;
+}
+button.overlap span:first-child {
+    top: 20px;
+}
+button.overlap span:last-child {
+    top: 20px;
+}
+button.rotation span:first-child {
+    transform: rotate(45deg);
+}
+button.rotation span:last-child {
+    transform: rotate(-45deg);
+}
+
+#app.aw-home button span {
+    background: #161616;
+}
+
+#app.aw-home.aw--scrolled button span,
+body.a-nav-open #app.aw-home button span {
+    background: white;
+}
+</style>

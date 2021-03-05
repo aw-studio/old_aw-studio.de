@@ -5,6 +5,6 @@
                 <b class="mr-2">//* Alle Wetter</b> <span class="hidden sm:inline-block">{{ __('app.claim') }}</span>
             </a>
         </span>
-        {{-- <burger /> --}}
+        <burger />
     </div>
 </header>
