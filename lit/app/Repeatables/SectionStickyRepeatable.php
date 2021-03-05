@@ -5,6 +5,7 @@ namespace Lit\Repeatables;
 use Ignite\Crud\Fields\Block\Repeatable;
 use Ignite\Crud\Fields\Block\RepeatableForm;
 use Ignite\Page\Table\ColumnBuilder;
+use Litstack\Bricks\Repeatables\TextRepeatable;
 
 class SectionStickyRepeatable extends Repeatable
 {
@@ -30,7 +31,7 @@ class SectionStickyRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Sticky Section</span>');
+        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Sticky Section</span> {headline}');
     }
 
     /**
@@ -55,6 +56,7 @@ class SectionStickyRepeatable extends Repeatable
             ->title('Content')
             ->repeatables(function ($repeatables) {
                 $repeatables->add(ReferenceRelationRepeatable::class)->button('Reference Relation');
+                $repeatables->add(TextRepeatable::class)->button('Text');
             });
     }
 }
