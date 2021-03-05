@@ -8,7 +8,7 @@
     <x-styles />
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="flex flex-col min-h-screen">
         <header class="fixed top-0 left-0 z-50 flex items-center w-full h-16 text-white bg-black sm:h-24">
             @yield('header')
         </header>
@@ -18,7 +18,7 @@
         <main>
             @yield('content')
         </main>
-        <footer>
+        <footer class="pb-20 mt-auto border-t border-white lg:pb-0">
             @include('partials.footer')
         </footer>
     </div>
