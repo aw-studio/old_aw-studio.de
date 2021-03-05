@@ -29,7 +29,6 @@
             @apply mb-8;
         }
     }
-    /* TODO: class aw-arrow-ltr-black in @apply */
     .h1::before {
         content: '';
         @apply inline-block w-12 h-10 mr-2 text-black;
@@ -115,12 +114,6 @@
         @apply mb-8 text-base font-normal text-black;
     }
 
-    @media (min-width: 376px) {
-        .text-xl p {
-            @apply text-xl;
-        }
-    }
-
     ul {
         @apply mb-8 text-base font-normal text-black;
     }
@@ -137,7 +130,7 @@
         }
     }
     .aw-list ul li {
-        @apply pl-8 aw-dash-black;
+        @apply pl-8;
     }
     .aw-list ul li p {
         @apply font-semibold;
@@ -160,10 +153,10 @@
     nav.bg-black .h1 {
         @apply text-white;
     }
-    section.bg-black .h1::before,
+    /* section.bg-black .h1::before,
     nav.bg-black .h1::before {
         @apply aw-arrow-ltr-white;
-    }
+    } */
 
     section.bg-black h2,
     section.bg-black .h2,
@@ -185,10 +178,10 @@
     nav.bg-black .aw-list ul {
         @apply text-white;
     }
-    section.bg-black .aw-list ul li,
+    /* section.bg-black .aw-list ul li,
     nav.bg-black .aw-list ul li {
         @apply aw-dash-white;
-    }
+    } */
 
     section.bg-black p a,
     section.bg-black a.aw-link,
