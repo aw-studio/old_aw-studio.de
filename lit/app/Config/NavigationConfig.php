@@ -11,6 +11,7 @@ use Lit\Config\Crud\TeamMemberConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\HomeConfig;
 use Lit\Config\Form\Pages\MasterConfig;
+use Lit\Config\Form\Pages\ServicesConfig;
 
 class NavigationConfig extends Config
 {
@@ -46,6 +47,7 @@ class NavigationConfig extends Config
             $nav->title('Models'),
             $nav->preset(MasterConfig::class)->icon(fa('shapes')),
             $nav->preset(HomeConfig::class)->icon(fa('home')),
+            $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
         ]);
         $nav->section([
