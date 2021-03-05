@@ -5,6 +5,7 @@ namespace Lit\Config;
 use Ignite\Application\Navigation\Config;
 use Ignite\Application\Navigation\Navigation;
 use Lit\Config\Crud\CustomerConfig;
+use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
@@ -45,6 +46,7 @@ class NavigationConfig extends Config
             $nav->title('Models'),
             $nav->preset(MasterConfig::class)->icon(fa('shapes')),
             $nav->preset(HomeConfig::class)->icon(fa('home')),
+            $nav->preset(PostConfig::class)->icon(fa('newspaper')),
         ]);
         $nav->section([
             $nav->title('Datensätze'),
