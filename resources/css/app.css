@@ -1,3 +1,240 @@
+@import 'custom/_font';
+
+@import 'custom/_utilities';
+
+@import 'custom/_icons';
+
 @tailwind base;
+
+@layer base {
+    @media (max-width: 640px) {
+        .aw-jumbo br {
+            display: none;
+        }
+        .aw-jumbo h1 {
+            font-size: 32px;
+        }
+    }
+    .h1 {
+        @apply mb-20 text-4xl font-semibold text-black;
+        transition: all 0.3s;
+    }
+    @media (max-width: 768px) {
+        .h1 {
+            @apply mb-12;
+        }
+    }
+    @media (max-width: 640px) {
+        .h1 {
+            @apply mb-8;
+        }
+    }
+    /* TODO: class aw-arrow-ltr-black in @apply */
+    .h1::before {
+        content: '';
+        @apply inline-block w-12 h-10 mr-2 text-black;
+        transform-origin: left center;
+        transform: translate(-60px, 8px) scale(1);
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @media (max-width: 768px) {
+        .h1::before {
+            transform: translate(-60px, 12px) scale(0.95);
+            margin-right: 3px;
+        }
+    }
+    @media (max-width: 640px) {
+        .h1::before {
+            transform: translate(-60px, 15px) scale(0.7);
+            margin-right: -10px;
+        }
+    }
+    .h1.aw--animate::before {
+        transform: translate(0, 8px) scale(1);
+        opacity: 1;
+        margin-left: 0px;
+    }
+    @media (max-width: 768px) {
+        .h1.aw--animate::before {
+            transform: translate(0, 12px) scale(0.95);
+        }
+    }
+    @media (max-width: 640px) {
+        .h1.aw--animate::before {
+            transform: translate(0, 15px) scale(0.7);
+        }
+    }
+    @media (max-width: 768px) {
+        .h1 {
+            @apply text-3xl;
+        }
+    }
+    @media (max-width: 640px) {
+        .h1 {
+            @apply text-2xl;
+            hyphens: auto;
+        }
+    }
+
+    h2,
+    .h2 {
+        @apply mb-8 text-3xl font-semibold text-black;
+    }
+    @media (max-width: 768px) {
+        h2,
+        .h2 {
+            @apply text-2xl;
+        }
+    }
+    @media (max-width: 640px) {
+        h2,
+        .h2 {
+            @apply text-xl;
+        }
+    }
+
+    h3,
+    .h3 {
+        @apply mb-8 text-2xl font-semibold text-black;
+    }
+    @media (max-width: 768px) {
+        h3,
+        .h3 {
+            @apply text-xl;
+        }
+    }
+    @media (max-width: 640px) {
+        h3,
+        .h3 {
+            @apply text-xl;
+        }
+    }
+
+    p {
+        @apply mb-8 text-base font-normal text-black;
+    }
+
+    @media (min-width: 376px) {
+        .text-xl p {
+            @apply text-xl;
+        }
+    }
+
+    ul {
+        @apply mb-8 text-base font-normal text-black;
+    }
+    ul li p:first-child {
+        display: inline;
+    }
+
+    .aw-list ul {
+        @apply mb-8 text-lg font-semibold text-black;
+    }
+    @media (max-width: 768px) {
+        .aw-list ul {
+            @apply text-base;
+        }
+    }
+    .aw-list ul li {
+        @apply pl-8 aw-dash-black;
+    }
+    .aw-list ul li p {
+        @apply font-semibold;
+    }
+
+    p a,
+    a.aw-link {
+        @apply font-normal text-black;
+        border-bottom: 1px solid rgba(22, 22, 22, 0.25);
+        padding-bottom: 0.005rem;
+        transition: all 0.2s;
+    }
+    p a:hover,
+    a.aw-link:hover {
+        border-bottom: 1px solid rgba(22, 22, 22, 1);
+        padding-bottom: 0.075rem;
+    }
+
+    section.bg-black .h1,
+    nav.bg-black .h1 {
+        @apply text-white;
+    }
+    section.bg-black .h1::before,
+    nav.bg-black .h1::before {
+        @apply aw-arrow-ltr-white;
+    }
+
+    section.bg-black h2,
+    section.bg-black .h2,
+    nav.bg-black h2,
+    nav.bg-black .h2 {
+        @apply text-white;
+    }
+    section.bg-black h3,
+    section.bg-black .h3,
+    nav.bg-black h3,
+    nav.bg-black .h3 {
+        @apply text-white;
+    }
+    section.bg-black p {
+        @apply text-white;
+    }
+
+    section.bg-black .aw-list ul,
+    nav.bg-black .aw-list ul {
+        @apply text-white;
+    }
+    section.bg-black .aw-list ul li,
+    nav.bg-black .aw-list ul li {
+        @apply aw-dash-white;
+    }
+
+    section.bg-black p a,
+    section.bg-black a.aw-link,
+    nav.bg-black p a,
+    nav.bg-black a.aw-link {
+        @apply text-white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    section.bg-black p a:hover,
+    section.bg-black a.aw-link:hover,
+    nav.bg-black p a:hover,
+    nav.bg-black a.aw-link:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    section.bg-black ul,
+    nav.bg-black ul {
+        @apply text-white;
+    }
+}
+
 @tailwind components;
+
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+body.aw-first-section-is-white {
+    background: linear-gradient(
+        0deg,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 1) 46%,
+        rgba(255, 255, 255, 1) 48%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+body.aw-nav-animating {
+    background: #161616;
+}
+
+@import 'custom/header';
+@import 'custom/main';
+@import 'custom/nav';

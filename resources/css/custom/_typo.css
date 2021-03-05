@@ -1,0 +1,8 @@
+@media (max-width: 640px) {
+    .aw-jumbo br {
+        display: none;
+    }
+    .aw-jumbo h1 {
+        font-size: 32px;
+    }
+}
