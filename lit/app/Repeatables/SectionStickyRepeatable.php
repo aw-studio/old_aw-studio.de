@@ -42,12 +42,14 @@ class SectionStickyRepeatable extends Repeatable
     public function form(RepeatableForm $form): void
     {
         $form->input('headline')
-            ->title('Headline');
+            ->title('Headline')
+            ->width(9);
+        $form->boolean('dark')
+            ->title('Dark Background?')
+            ->hint('Default: Light')
+            ->width(3);
         $form->wysiwyg('text')
             ->title('Text');
-        $form->boolean('dark')
-            ->title('Dark Backround?')
-            ->hint('Default: Light');
 
         $form->block('content')
             ->title('Content')
