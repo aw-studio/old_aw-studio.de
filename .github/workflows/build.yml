@@ -1,42 +1,42 @@
-name: build
+# name: build
 
-on:
-  push:
-    branches:
-      - '**'
+# on:
+#   push:
+#     branches:
+#       - '**'
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
+#     steps:
+#       - name: checkout
+#         uses: actions/checkout@v2
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 7.4
-          tools: composer:v2
-          coverage: none
+#       - name: Setup PHP
+#         uses: shivammathur/setup-php@v2
+#         with:
+#           php-version: 7.4
+#           tools: composer:v2
+#           coverage: none
 
-      - name: Install dependencies
-        run: composer install && yarn install --non-interactive
+#       - name: Install dependencies
+#         run: composer install && yarn install --non-interactive
 
-      - name: Make production build
-        run: yarn run production
+#       - name: Make production build
+#         run: yarn run production
 
-      - name: Commit production build
-        uses: EndBug/add-and-commit@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          add: "."
+#       - name: Commit production build
+#         uses: EndBug/add-and-commit@v4
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         with:
+#           add: "."
 
-          author_name: ${{ github.event.pusher.name }}
-          author_email: ${{ github.event.pusher.email }}
+#           author_name: ${{ github.event.pusher.name }}
+#           author_email: ${{ github.event.pusher.email }}
 
-          message: "Apply production build from CI
-          
-          
-          Co-authored-by: aw-ci-bot <bot@aw-studio.de>"
+#           message: "Apply production build from CI
+
+
+#           Co-authored-by: aw-ci-bot <bot@aw-studio.de>"
