@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard'     => 'web',
         'passwords' => 'users',
     ],
 
@@ -36,19 +36,19 @@ return [
     */
 
     'guards' => [
-        'fjord' => [
-            'driver' => 'session',
-            'provider' => 'fjord_users',
+        'lit' => [
+            'driver'   => 'session',
+            'provider' => 'lit_users',
         ],
         'web' => [
-            'driver' => 'session',
+            'driver'   => 'session',
             'provider' => 'users',
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver'   => 'token',
             'provider' => 'users',
-            'hash' => false,
+            'hash'     => false,
         ],
     ],
 
@@ -70,13 +70,13 @@ return [
     */
 
     'providers' => [
-        'fjord_users' => [
+        'lit_users' => [
             'driver' => 'eloquent',
-            'model' => Fjord\User\Models\FjordUser::class,
+            'model'  => Lit\Models\User::class,
         ],
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model'  => App\Models\User::class,
         ],
 
         // 'users' => [
@@ -101,16 +101,16 @@ return [
     */
 
     'passwords' => [
-        'fjord_users' => [
-            'provider' => 'fjord_users',
-            'table' => 'password_resets',
-            'expire' => 60,
+        'lit_users' => [
+            'provider' => 'lit_users',
+            'table'    => 'password_resets',
+            'expire'   => 60,
             'throttle' => 60,
         ],
         'users' => [
             'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 60,
+            'table'    => 'password_resets',
+            'expire'   => 60,
             'throttle' => 60,
         ],
     ],

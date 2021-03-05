@@ -4,11 +4,11 @@ return [
 
     /**
      * What attributes do we use to build the slug?
-     * This can be a single field, like "name" which will build a slug from:
+     * This can be a single field, like "name" which will build a slug from:.
      *
      *     $model->name;
      *
-     * Or it can be an array of fields, like ("name", "company"), which builds a slug from:
+     * Or it can be an array of fields, like ["name", "company"], which builds a slug from:
      *
      *     $model->name . ' ' . $model->company;
      *
@@ -17,7 +17,6 @@ return [
      *
      * Defaults to null, which uses the toString() method on your model.
      */
-
     'source' => null,
 
     /**
@@ -25,13 +24,12 @@ return [
      * no length restrictions are enforced.  Set it to a positive integer if you
      * want to make sure your slugs aren't too long.
      */
-
     'maxLength' => null,
 
     /**
      * If you are setting a maximum length on your slugs, you may not want the
      * truncated string to split a word in half.  The default setting of "true"
-     * will ensure this, e.g. with a maxLength of 12:
+     * will ensure this, e.g. with a maxLength of 12:.
      *
      *   "my source string" -> "my-source"
      *
@@ -40,7 +38,6 @@ return [
      *
      *   "my source string" -> "my-source-st"
      */
-
     'maxLengthKeepWords' => true,
 
     /**
@@ -58,25 +55,22 @@ return [
      *
      *    'method' => array('Str','slug'),
      */
-
     'method' => null,
 
     /**
      * Separator to use when generating slugs.  Defaults to a hyphen.
      */
-
     'separator' => '-',
 
     /**
      * Enforce uniqueness of slugs?  Defaults to true.
      * If a generated slug already exists, an incremental numeric
-     * value will be appended to the end until a unique slug is found.  e.g.:
+     * value will be appended to the end until a unique slug is found.  e.g.:.
      *
      *     my-slug
      *     my-slug-1
      *     my-slug-2
      */
-
     'unique' => true,
 
     /**
@@ -87,8 +81,18 @@ return [
      * "similar" slugs.  The closure should return the new unique
      * suffix to append to the slug.
      */
-    
     'uniqueSuffix' => null,
+
+    /**
+     * What is the first suffix to add to a slug to make it unique?
+     * For the default method of adding incremental integers, we start
+     * counting at 2, so the list of slugs would be, e.g.:.
+     *
+     *   - my-post
+     *   - my-post-2
+     *   - my-post-3
+     */
+    'firstUniqueSuffix' => 2,
 
     /**
      * Should we include the trashed items when generating a unique slug?
@@ -96,14 +100,13 @@ return [
      * If set to "false", then a new slug could duplicate one that exists on a trashed model.
      * If set to "true", then uniqueness is enforced across trashed and existing models.
      */
-
     'includeTrashed' => false,
 
     /**
      * An array of slug names that can never be used for this model,
      * e.g. to prevent collisions with existing routes or controller methods, etc..
      * Defaults to null (i.e. no reserved names).
-     * Can be a static array, e.g.:
+     * Can be a static array, e.g.:.
      *
      *    'reserved' => array('add', 'delete'),
      *
@@ -122,7 +125,6 @@ return [
      *
      * and continue from there.
      */
-
     'reserved' => null,
 
     /**
@@ -135,7 +137,12 @@ return [
      * is probably not a good idea from an SEO point of view.
      * Only set this to true if you understand the possible consequences.
      */
-    
     'onUpdate' => false,
+
+    /**
+     * If the default slug engine of cocur/slugify is used, this array of
+     * configuration options will be used when instantiating the engine.
+     */
+    'slugEngineOptions' => [],
 
 ];
