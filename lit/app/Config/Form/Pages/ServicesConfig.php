@@ -33,7 +33,7 @@ class ServicesConfig extends FormConfig
     public function names()
     {
         return [
-            'singular' => 'Services',
+            'singular' => 'Leistungen',
         ];
     }
 
