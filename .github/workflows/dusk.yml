@@ -16,7 +16,9 @@ jobs:
           sudo systemctl start mysql
           mysql --user="root" --password="root" -e "CREATE DATABASE newawstudio character set UTF8mb4 collate utf8mb4_bin;"
       - name: Install Composer Dependencies
-        run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+        run: |
+          composer config http-basic.store.litstack.io ${{ secrets.LITSTACK_USERNAME }} ${{ secrets.LITSTACK_PASSWORD }}
+          composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
       - name: Generate Application Key
         run: php artisan key:generate
       - name: Upgrade Chrome Driver
