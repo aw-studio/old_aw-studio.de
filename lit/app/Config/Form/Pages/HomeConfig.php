@@ -2,6 +2,7 @@
 
 namespace Lit\Config\Form\Pages;
 
+use App\Models\Reference;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\HomeController;
@@ -49,14 +50,13 @@ class HomeConfig extends FormConfig
             ->width(3);
         $page->card(function ($form) {
             $form->textarea('h1')->title('Headline Playground')->translatable()->hint('jumbo Headline (h1)');
-        })
-            ->width(9);
+        })->width(9);
 
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {
-            $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)')->width(9);
-            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(3);
+            $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)');
+            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum');
 
             $form->group(function ($form) {
                 $form->input('h3_design')->title('Headline Design')->translatable()->hint('(h3)');
@@ -72,20 +72,24 @@ class HomeConfig extends FormConfig
         })->width(9);
 
         $page->info('Digitale Lösungen / Referenzen')
-            ->text('Die Highlight-Referenzen werden über die Collection „Highlights“ bei den Referenzen-Datensätzen gesteuert')
             ->width(3);
         $page->card(function ($form) {
-            $form->group(function ($form) {
-                $form->input('h2_solutions')->title('Headline')->translatable()->hint('große Headline (h2)');
-                $form->wysiwyg('list_solutions')->title('List')->translatable();
-            });
+            $form->input('h2_solutions')->title('Headline')->translatable()->hint('große Headline (h2)');
+            $form->wysiwyg('list_solutions')->title('List')->translatable();
+
+            $form->manyRelation('references')
+                ->title('Referenzen')
+                ->model(Reference::class)
+                ->preview(function ($table) {
+                    $table->col('title');
+                });
         })->width(9);
 
         $page->info('Kunden-Listen')
             ->text('Die Auflistung der Kunden wird aus den Kunden-Datensätzen automatisch – sortiert nach Gruppen und A-Z – eingebunden.')
             ->width(3);
         $page->card(function ($form) {
-            $form->input('h2_customers')->title('Headline')->translatable()->hint('große Headline (h2)')->width(6);
+            $form->input('h2_customers')->title('Headline')->translatable()->hint('große Headline (h2)');
         })->width(9);
 
         $page->info('Studio')
@@ -93,8 +97,8 @@ class HomeConfig extends FormConfig
             ->width(3);
         $page->card(function ($form) {
             $form->group(function ($form) {
-                $form->input('h3_management')->title('Headline')->translatable()->hint('kleine Headline (h3)')->width(6);
-                $form->wysiwyg('text_management')->title('Text')->translatable()->width(10);
+                $form->input('h3_management')->title('Headline')->translatable()->hint('kleine Headline (h3)');
+                $form->wysiwyg('text_management')->title('Text')->translatable();
                 // $form->manyRelation('team_members')
                 //     ->title('Geschäftsführung')
                 //     ->model(TeamMember::class)
