@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="/css/app.css">
     <x-styles />
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     <div id="app" class="flex flex-col min-h-screen">
         <header class="fixed top-0 left-0 z-50 flex items-center w-full h-16 text-white bg-black sm:h-24">
             @include('partials.header')
         </header>
-        <nav id="aw-nav" class="bg-black">
-            @include('partials.nav')
-        </nav>
+        <section id="aw-nav" class="bg-black">
+            <x-main-navigation />
+        </section>
         <main>
             @yield('content')
         </main>
-        <footer class="pb-20 mt-auto border-t border-white lg:pb-0">
+        <footer class="z-10 mt-auto border-t border-white lg:pb-0">
             @include('partials.footer')
         </footer>
     </div>

@@ -4,6 +4,7 @@
 
         <div class="pt-16 pb-0 nav-row sm:pb-16 md:pb-0">
             <ul class="text-3xl text-white aw-main md:text-4xl">
+                {{-- <x-lit-nav-list :list="$nav->main" /> --}}
                 <li><a class="" href=""><span class="aw-link">test</span></a></li>
                 <li><a class="" href=""><span class="aw-link">test</span></a></li>
                 <li><a class="" href=""><span class="aw-link">test</span></a></li>
