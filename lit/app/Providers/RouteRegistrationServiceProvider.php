@@ -19,8 +19,9 @@ class RouteRegistrationServiceProvider extends ServiceProvider
 
         Route::register('app', function ($collection) {
             $collection->route('Startseite', 'home', fn ($locale) => __route('home'));
-            $collection->route('Studio', 'studio', fn ($locale) => __route('studio'));
+            $collection->route('Referenzen', 'references', fn ($locale) => __route('references'));
             $collection->route('Leistungen', 'services', fn ($locale) => __route('services'));
+            $collection->route('Studio', 'studio', fn ($locale) => __route('studio'));
             // Page::collection('about')->get()->addToRouteCollection('Über uns Unterseiten', $collection);
         });
     }
