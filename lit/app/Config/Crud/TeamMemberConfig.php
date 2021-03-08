@@ -33,8 +33,9 @@ class TeamMemberConfig extends CrudConfig
     public function names(TeamMember $teamMember = null)
     {
         return [
-            'singular' => $teamMember?->name ?: 'Teammitglied',
-            'plural'   => 'Team',
+            'singular' => 'Teammitglied',
+            // 'singular' => $teamMember->name ?: 'Teammitglied',
+            'plural' => 'Team',
         ];
     }
 

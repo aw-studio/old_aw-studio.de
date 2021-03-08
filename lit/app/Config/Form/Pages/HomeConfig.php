@@ -78,7 +78,7 @@ class HomeConfig extends FormConfig
             $form->wysiwyg('list_solutions')->title('List')->translatable();
 
             $form->manyRelation('references')
-                ->title('Referenzen')
+                ->title('Referenzen/Highlights')
                 ->model(Reference::class)
                 ->preview(function ($table) {
                     $table->col('title');
