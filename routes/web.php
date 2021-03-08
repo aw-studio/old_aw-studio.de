@@ -29,6 +29,6 @@ if (App::environment('local')) {
 }
 
 Route::trans('/', HomeController::class)->name('home');
-Route::trans('/__(routes.references)', ReferencesController::class)->name('references');
+Route::trans('/__(routes.references)', ReferencesController::class)->name('references.index');
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
