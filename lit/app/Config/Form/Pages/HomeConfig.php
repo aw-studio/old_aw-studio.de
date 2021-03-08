@@ -3,6 +3,7 @@
 namespace Lit\Config\Form\Pages;
 
 use App\Models\Reference;
+use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\HomeController;
@@ -99,16 +100,16 @@ class HomeConfig extends FormConfig
             $form->group(function ($form) {
                 $form->input('h3_management')->title('Headline')->translatable()->hint('kleine Headline (h3)');
                 $form->wysiwyg('text_management')->title('Text')->translatable();
-                // $form->manyRelation('team_members')
-                //     ->title('Geschäftsführung')
-                //     ->model(TeamMember::class)
-                //     ->preview(function ($table) {
-                //         $table->image('Image')
-                //             ->src('{image.conversion_urls.sm}')
-                //             ->maxWidth('50px')
-                //             ->small();
-                //         $table->col('name');
-                //     })->width(12);
+                $form->manyRelation('team_members')
+                    ->title('Geschäftsführung')
+                    ->model(TeamMember::class)
+                    ->preview(function ($table) {
+                        $table->image('Image')
+                            ->src('{image.conversion_urls.sm}')
+                            ->maxWidth('50px')
+                            ->small();
+                        $table->col('name');
+                    });
                 $form->input('button_studio')->title('Button')->translatable()->hint('Button zu Studio & Team')->width(6);
             });
         })->width(9);
