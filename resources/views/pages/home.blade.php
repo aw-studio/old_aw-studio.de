@@ -123,7 +123,7 @@ $playground_no = 4;
                     @isset($form->team_members)
                     @foreach ($form->team_members as $team_member)
                     <div>
-                        <x-lit-image :image="$team_member->image" :alt="$team_member->name" />
+                        <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full" />
                         <p class="mt-2 text-sm">
                             {{ $team_member->name }}
                         </p>
@@ -131,7 +131,7 @@ $playground_no = 4;
                     @endforeach
                     @endisset
                 </div>
-                <x-button type="dark" text="{!! $form->button_studio !!}" link="{{ __route('studio') }}" />
+                <x-button :type="'dark'" text="{!! $form->button_studio !!}" link="{{ __route('studio') }}" />
             </div>
             <div class="col-span-12 col-start-1 md:col-start-8 md:col-span-5 lg:col-start-9 lg:col-span-4 md:mt-64">
                 <x-jobs />
