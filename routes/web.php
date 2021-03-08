@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Pages\HomeController;
-use App\Http\Controllers\Pages\ReferencesController;
 use App\Http\Controllers\Pages\ServicesController;
 use App\Http\Controllers\Pages\StudioController;
 use Ignite\Support\Facades\Form;
@@ -29,6 +28,7 @@ if (App::environment('local')) {
 }
 
 Route::trans('/', HomeController::class)->name('home');
-Route::trans('/__(routes.references)', ReferencesController::class)->name('references.index');
+Route::trans('/__(routes.references)', 'ReferencesController@index')->name('references.index');
+Route::trans('/__(routes.references)/{slug}', 'ReferencesController@show')->name('references.show');
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');

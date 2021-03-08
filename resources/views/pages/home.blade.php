@@ -83,7 +83,7 @@ $playground_no = 4;
                 </div>
             </div>
             <div class="col-span-12 col-start-1 mb-12 lg:col-start-6 lg:col-span-7 lg:mb-0">
-                <x-references-teaser />
+                <x-references-teaser :references="$form->references" />
                 <x-button type="light" text="{{ __('app.all-references') }}" link="{{ __route('references.index') }}" />
             </div>
         </div>
