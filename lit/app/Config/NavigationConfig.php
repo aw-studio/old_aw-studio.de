@@ -8,6 +8,7 @@ use Lit\Config\Crud\CustomerConfig;
 use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
+use Lit\Config\Form\Components\JobsConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\ApplicationConfig;
 use Lit\Config\Form\Pages\HomeConfig;
@@ -57,10 +58,14 @@ class NavigationConfig extends Config
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
         ]);
         $nav->section([
-            $nav->title('Datensätze'),
+            $nav->title('Daten'),
             $nav->preset(ReferenceConfig::class)->icon(fa('star-of-life')),
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
+        ]);
+        $nav->section([
+            $nav->title('Komponenten'),
+            $nav->preset(JobsConfig::class)->icon(fa('keyboard')),
         ]);
         $nav->section([
             $nav->title('Navigation'),

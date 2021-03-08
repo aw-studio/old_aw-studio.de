@@ -32,3 +32,5 @@ Route::trans('/__(routes.references)', 'ReferencesController@index')->name('refe
 Route::trans('/__(routes.references)/{slug}', 'ReferencesController@show')->name('references.show');
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
+
+Route::trans('/__(routes.application)', 'ApplicationController@index')->name('application');
