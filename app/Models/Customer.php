@@ -17,7 +17,7 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['name', 'category_id', 'url'];
+    protected $fillable = ['name', 'suffix', 'category_id', 'url'];
 
     /**
      * The attributes to be translated.
@@ -40,6 +40,10 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
      */
     protected $with = ['media', 'translations'];
 
+    const RESEARCH = 1;
+    const INDUSTRY = 2;
+    const CULTURE = 3;
+
     /**
      * Image attribute.
      *
@@ -48,5 +52,20 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
     public function getImageAttribute()
     {
         return $this->getMedia('image')->first();
+    }
+
+    public function scopeResearch($query)
+    {
+        return $query->where('category_id', self::RESEARCH);
+    }
+
+    public function scopeIndustry($query)
+    {
+        return $query->where('category_id', self::INDUSTRY);
+    }
+
+    public function scopeCulture($query)
+    {
+        return $query->where('category_id', self::CULTURE);
     }
 }
