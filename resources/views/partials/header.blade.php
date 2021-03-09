@@ -1,13 +1,13 @@
 <div class="container flex justify-between">
-        <span class="flex items-center">
-            <a href="">
-                <b class="mr-2">//* Alle Wetter</b> <span class="hidden sm:inline-block">{{ __('app.claim') }}</span>
-            </a>
-        </span>
-        <button aria-label="Navigation" class="aw-burger">
-            <span></span>
-            <span></span>
-        </button>
+    <span class="flex items-center">
+        <a href="{{__route('home')}}">
+            <b class="mr-2">//* Alle Wetter</b> <span class="hidden sm:inline-block">{{ __('app.claim') }}</span>
+        </a>
+    </span>
+    <button aria-label="Navigation" class="aw-burger">
+        <span></span>
+        <span></span>
+    </button>
 </div>
 
 <x-script>

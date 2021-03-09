@@ -49,12 +49,15 @@ class NavigationConfig extends Config
     {
         $nav->section([
             $nav->title('Models'),
-            $nav->preset(MasterConfig::class)->icon(fa('shapes')),
+            //$nav->preset(MasterConfig::class)->icon(fa('shapes')),
             $nav->preset(HomeConfig::class)->icon(fa('home')),
             $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
             $nav->preset(ReferencesConfig::class)->icon(fa('star-of-life')),
             $nav->preset(StudioConfig::class)->icon(fa('star-of-life')),
             $nav->preset(ApplicationConfig::class)->icon(fa('envelope')),
+        ]);
+        $nav->section([
+            $nav->title('Blog'),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
         ]);
         $nav->section([

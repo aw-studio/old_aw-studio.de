@@ -18,16 +18,13 @@ $playground_no = 4;
 
 <section class="bg-white">
     <div class="container pt-20">
-
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 lg:col-span-8">
-
                 <div class="mb-20 lg:mb-40">
                     <h2 class="h1">
                         {!! nl2br(e($form->h2)) !!}
                     </h2>
                 </div>
-
                 <div class="grid grid-cols-12 gap-5 lg:grid-cols-8 lg:mb-40 ">
                     <div class="col-span-12 col-start-1 mb-8 md:col-start-1 md:col-span-5 lg:col-start-2 lg:col-span-3">
                         <h3 class="h3">
@@ -55,8 +52,6 @@ $playground_no = 4;
                         </ul>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-span-12 col-start-1 pb-20 lg:col-start-9 lg:col-span-4">
                 <div class="md:sticky top-sticky lg:float-right ">
@@ -64,10 +59,8 @@ $playground_no = 4;
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
 
 <section class="py-8 bg-black md:py-20 lg:py-40">
     <div class="container">
@@ -90,7 +83,6 @@ $playground_no = 4;
     </div>
 </section>
 
-
 <section class="py-8 bg-white md:py-20 lg:py-40">
     <div class="container">
         <div class="grid grid-cols-12 gap-5">
@@ -105,9 +97,7 @@ $playground_no = 4;
                 <x-customers />
             </div>
         </div>
-
     </div>
-
 </section>
 
 
@@ -137,9 +127,7 @@ $playground_no = 4;
                 <x-jobs />
             </div>
         </div>
-
     </div>
-
 </section>
 
 
