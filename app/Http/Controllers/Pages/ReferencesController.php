@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
+use App\Models\Reference;
 use Ignite\Support\Facades\Form;
 
 class ReferencesController extends Controller
