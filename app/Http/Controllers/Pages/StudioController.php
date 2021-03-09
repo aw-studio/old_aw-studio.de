@@ -9,7 +9,7 @@ class StudioController
     public function __invoke()
     {
         return view('pages.studio')->with([
-            'form' => Form::load('pages', 'studio'),
+            'studio' => Form::load('pages', 'studio'),
         ]);
     }
 }
