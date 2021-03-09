@@ -53,7 +53,7 @@ class NavigationConfig extends Config
             $nav->preset(HomeConfig::class)->icon(fa('home')),
             $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
             $nav->preset(ReferencesConfig::class)->icon(fa('star-of-life')),
-            $nav->preset(StudioConfig::class)->icon(fa('star-of-life')),
+            $nav->preset(StudioConfig::class)->icon(fa('door-open')),
             $nav->preset(ApplicationConfig::class)->icon(fa('envelope')),
         ]);
         $nav->section([
