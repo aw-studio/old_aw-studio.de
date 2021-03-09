@@ -9,7 +9,7 @@ class ServicesController
     public function __invoke()
     {
         return view('pages.services')->with([
-            'form' => Form::load('pages', 'services'),
+            'services' => Form::load('pages', 'services'),
         ]);
     }
 }
