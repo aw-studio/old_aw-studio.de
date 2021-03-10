@@ -21,4 +21,9 @@ class PostController extends CrudController
         // return $user->can("{$operation} posts");
         return true;
     }
+
+    public function fillOnStore($model)
+    {
+        $model->lit_user_id = lit_user()->id;
+    }
 }

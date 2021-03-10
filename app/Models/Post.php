@@ -50,4 +50,9 @@ class Post extends Model implements HasMediaContract, TranslatableContract
     {
         return $this->getMedia('image')->first();
     }
+
+    public function sections()
+    {
+        return $this->repeatables('sections');
+    }
 }

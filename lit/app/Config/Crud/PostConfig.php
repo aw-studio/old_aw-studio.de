@@ -69,16 +69,42 @@ class PostConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
+        $page->info('Autor:in: {lit_user_id}');
         $page->card(function ($form) {
-            $form->input('title');
-            $form->wysiwyg('excerpt');
-            $form->image('image');
+            $form->wysiwyg('title')
+                ->hint('Der Slug wird aus diesem Titel gebildet')
+                ->width(8);
+
+            // $form->modal('change_slug')
+            //     ->title('Slug')
+            //     ->variant('primary')
+            //     ->preview($this->routePrefix() . '/<b>{' . $this->getSlugColumnName() . '}</b>')
+            //     ->name('Change Slug')
+            //     ->form(function ($modal) {
+            //         $modal->input($this->getSlugColumnName())
+            //             ->width(12)
+            //             ->title('Slug');
+            //     })->width(4);
+
+            // $this->prependForm($form);
+        });
+
+        $page->card(function ($form) {
+            $form->postContentAreaMacro();
         });
 
         $page->card(function ($form) {
             $form->relation('tags')
                 ->type('tags')
                 ->tagValue('{title}');
-        })->width(12);
+
+            // ->preview(function ($preview) {
+                //     $preview->col('Titel')->value('{title}');
+                // })
+
+                // ->create(function ($form) {
+                //     $form->input('title');
+                // });
+        });
     }
 }

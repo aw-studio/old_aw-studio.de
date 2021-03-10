@@ -93,6 +93,13 @@ class HomeConfig extends FormConfig
             $form->input('h2_customers')->title('Headline')->translatable()->hint('große Headline (h2)');
         })->width(9);
 
+        $page->info('Blog')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->input('h2_blog')->title('Headline')->translatable()->hint('große Headline (h2)');
+            $form->input('button_blog')->title('Button')->translatable()->hint('Button zum Blog')->width(8);
+        })->width(9);
+
         $page->info('Studio')
             ->text('Der Hinweis zu Jobs und Praktika wird automatisch aus der Komponente „Jobs & Praktika“ eingebunden.')
             ->width(3);

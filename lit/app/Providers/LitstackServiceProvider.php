@@ -4,6 +4,7 @@ namespace Lit\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Lit\Macros\Form\ContentAreaMacro;
+use Lit\Macros\Form\PostContentAreaMacro;
 
 class LitstackServiceProvider extends ServiceProvider
 {
@@ -25,5 +26,6 @@ class LitstackServiceProvider extends ServiceProvider
     public function register()
     {
         (new ContentAreaMacro)->register();
+        (new PostContentAreaMacro)->register();
     }
 }

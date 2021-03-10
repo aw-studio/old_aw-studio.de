@@ -100,6 +100,36 @@ $playground_no = 4;
     </div>
 </section>
 
+<section class="py-8 bg-white md:py-20 lg:py-40">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-5 mb-12">
+            <div class="col-span-12 col-start-1 lg:col-span-6">
+                <h2 class="mb-0 h1">
+                    {{ $form->h2_blog}}
+                </h2>
+            </div>
+            <div class="order-last col-span-12 col-start-1 lg:flex lg:mt-0 lg:col-start-7 lg:col-span-6 lg:justify-end lg:items-end lg:order-none">
+                <x-button type="dark" text="{{ $form->button_blog }}" link="{{ __route('blog.index') }}" />
+            </div>
+       
+         
+                @foreach($posts as $post)
+                <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
+                    <a href="{{ __route('blog.index')}}/{{$post->slug}}">
+                         @isset($post->image)
+                         <x-lit-image :image="$post->image" class="w-full mb-8" />
+                         @endisset
+                         <div class="text-2xl">
+                             {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
+                        </div>
+                    </a>
+                </div>
+                @endforeach
+        
+        </div>
+    </div>
+</section>
+
 
 <section class="pt-20 pb-20 bg-white border-t border-black md:pb-40 lg:pb-40">
     <div class="container">
