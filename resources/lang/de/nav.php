@@ -2,12 +2,12 @@
 
 return [
 
-    'home' => 'Übersicht',
-    'services' => 'Leistungen',
+    'home'       => 'Übersicht',
+    'services'   => 'Leistungen',
     'references' => 'Referenzen',
-    'studio' => 'Studio & Team',
+    'studio'     => 'Studio & Team',
 
-    'imprint' => 'Impressum',
+    'imprint'    => 'Impressum',
     'datapolicy' => 'Datenschutz',
 
 ];

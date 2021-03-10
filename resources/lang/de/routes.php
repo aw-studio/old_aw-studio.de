@@ -2,12 +2,13 @@
 
 return [
 
-    'references' => 'referenzen',
-    'services' => 'leistungen',
-    'studio' => 'studio',
+    'references'  => 'referenzen',
+    'services'    => 'leistungen',
+    'studio'      => 'studio',
     'application' => 'bewerbung',
+    'blog'        => 'blog',
 
-    'imprint' => 'impressum',
+    'imprint'    => 'impressum',
     'datapolicy' => 'datenschutz',
 
 ];

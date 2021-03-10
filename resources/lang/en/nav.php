@@ -2,12 +2,12 @@
 
 return [
 
-    'home' => 'Overview',
-    'services' => 'Services',
+    'home'       => 'Overview',
+    'services'   => 'Services',
     'references' => 'References',
-    'studio' => 'Studio & Team',
+    'studio'     => 'Studio & Team',
 
-    'imprint' => 'imprint',
+    'imprint'    => 'imprint',
     'datapolicy' => 'data policy',
 
 ];

@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Pages\ApplicationController;
+use App\Http\Controllers\Pages\DatapolicyController;
 use App\Http\Controllers\Pages\HomeController;
+use App\Http\Controllers\Pages\ImprintController;
 use App\Http\Controllers\Pages\ReferencesController;
 use App\Http\Controllers\Pages\ServicesController;
 use App\Http\Controllers\Pages\StudioController;
@@ -35,4 +38,10 @@ Route::trans('/__(routes.references)/{slug}', ReferencesController::class . '@sh
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 
+Route::trans('/__(routes.blog)', BlogController::class . '@index')->name('blog.index');
+Route::trans('/__(routes.blog)/{slug}', BlogController::class . '@show')->name('blog.show');
+
 Route::trans('/__(routes.application)', ApplicationController::class . '@index')->name('application');
+
+Route::trans('/__(routes.imprint)', ImprintController::class)->name('imprint');
+Route::trans('/__(routes.datapolicy)', DatapolicyController::class)->name('datapolicy');
