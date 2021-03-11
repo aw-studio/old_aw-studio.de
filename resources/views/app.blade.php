@@ -25,7 +25,8 @@
             </footer>
         </main>
     </div>
-    <script src="/js/app.js"></script>
+    <script src="{{asset('js/app.js')}}?v={{filemtime('js/app.js')}}"></script>
+    @yield('scripts')
     <x-scripts />
 </body>
 </html>

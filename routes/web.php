@@ -45,3 +45,15 @@ Route::trans('/__(routes.application)', ApplicationController::class . '@index')
 
 Route::trans('/__(routes.imprint)', ImprintController::class)->name('imprint');
 Route::trans('/__(routes.datapolicy)', DatapolicyController::class)->name('datapolicy');
+
+// Redirect to locale
+Route::get('/', function () {
+    $locale = app()->getLocale();
+    $acceptedLanguages = request()->server('HTTP_ACCEPT_LANGUAGE');
+
+    if (! empty($acceptedLanguages)) {
+        $locale = substr($acceptedLanguages, 0, 2);
+    }
+
+    return redirect($locale);
+});
