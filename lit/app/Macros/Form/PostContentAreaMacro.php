@@ -10,15 +10,6 @@ class PostContentAreaMacro
     public function register()
     {
         Form::macro('postContentAreaMacro', function () {
-            $this->input('h1')
-                ->translatable()
-                ->title('H1');
-
-            $this->wysiwyg('excerpt')
-                ->translatable();
-
-            $this->image('image');
-
             $this->block('sections')
                 ->title('Sections')
                 ->repeatables(function ($repeatables) {

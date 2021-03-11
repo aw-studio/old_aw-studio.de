@@ -58,7 +58,9 @@ aw-first-section-is-white
                     {{ $service->h3 }}
                 </h3>
                 <div class="flex items-center h-40">
+                    @isset($service->illustration)
                     <img src="{{ $service->illustration->url }}" class="mb-8" alt="Illustration: {{ $service->h3 }}">
+                    @endisset
                 </div>
 
                 <div class="aw-list">
@@ -146,7 +148,9 @@ aw-first-section-is-white
             <div class="pr-12 mb-8">
 
                 <div class="flex items-end h-16">
+                    @isset($method->illustration)
                     <img src="{{ $method->illustration->url }}" class="mb-8" alt="Illustration: {{ $method->h3 }}">
+                    @endisset
                 </div>
 
                 <h3 class="h3">

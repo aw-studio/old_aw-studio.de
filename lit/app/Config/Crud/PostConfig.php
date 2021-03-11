@@ -75,6 +75,11 @@ class PostConfig extends CrudConfig
                 ->hint('Der Slug wird aus diesem Titel gebildet')
                 ->width(8);
 
+            $form->wysiwyg('excerpt')
+                ->translatable();
+
+            $form->image('image');
+
             // $form->modal('change_slug')
             //     ->title('Slug')
             //     ->variant('primary')

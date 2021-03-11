@@ -12,9 +12,11 @@ return [
     'all-references' => 'Alle Referenzen',
     'next-reference' => 'nächste Referenz ansehen',
 
-    'next-services' => 'weiter zum Leistungsspektrum',
+    'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',
-    'next-studio' => 'weiter zu Studio & Team',
-    'back-home' => 'zurück zur Übersicht',
+    'next-studio'     => 'weiter zu Studio & Team',
+    'back-home'       => 'zurück zur Übersicht',
+
+    'read-post' => 'Beitrag lesen',
 
 ];

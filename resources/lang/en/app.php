@@ -12,9 +12,11 @@ return [
     'all-references' => 'all references',
     'next-reference' => 'view next reference',
 
-    'next-services' => 'continue to the range of services',
+    'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',
-    'next-studio' => 'continue to studio & team',
-    'back-home' => 'back to overview',
+    'next-studio'     => 'continue to studio & team',
+    'back-home'       => 'back to overview',
+
+    'read-post' => 'Read post',
 
 ];

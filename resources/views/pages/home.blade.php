@@ -115,7 +115,7 @@ $playground_no = 4;
          
                 @foreach($posts as $post)
                 <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
-                    <a href="{{ __route('blog.index')}}/{{$post->slug}}">
+                    <a href="{{ __route('blog.index')}}/{{$post->slug}}" class="mb-6">
                          @isset($post->image)
                          <x-lit-image :image="$post->image" class="w-full mb-8" />
                          @endisset
@@ -123,6 +123,7 @@ $playground_no = 4;
                              {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
                         </div>
                     </a>
+                    <p><a href="{{ __route('blog.index')}}/{{$post->slug}}">{{__('app.read-post')}}</a></p>
                 </div>
                 @endforeach
         
