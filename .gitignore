@@ -13,4 +13,4 @@ npm-debug.log
 yarn-error.log
 .php_cs.cache
 .DS_Store
-.auth.json
+auth.json
