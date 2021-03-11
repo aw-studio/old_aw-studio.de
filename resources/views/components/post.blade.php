@@ -1,5 +1,4 @@
-
-<a href="{{ __route('blog.index')}}/{{$post->slug}}" class="relative block mb-6">
+<a href="{{ __route('blog.show',$post->slug)}}" class="relative block mb-6">
     <div class="relative">
         <div class="absolute">
             @if(count($post->tags) > 0)
@@ -16,5 +15,4 @@
         {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
     </div>
 </a>
-
-<a href="{{ __route('blog.index')}}/{{$post->slug}}">{{__('app.read-post')}}</a>
+<a href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a>

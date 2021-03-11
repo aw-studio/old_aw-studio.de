@@ -21,6 +21,10 @@ class BlogController extends Controller
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->with('translations')->first();
 
+        $slugs = $reference->translations->mapWithKeys(function ($item) {
+            return [$item->locale => $item->slug];
+        })->toArray();
+
         return view('pages.blog.show')->with([
             'post' => $post,
         ]);

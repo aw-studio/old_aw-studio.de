@@ -23,14 +23,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-if (App::environment('local')) {
-    // only available during development
-    Route::get('/master', function () {
-        return view('master')->with([
-            'form' => Form::load('pages', 'master'),
-        ]);
-    });
-}
+// if (App::environment('local')) {
+//     // only available during development
+//     Route::get('/master', function () {
+//         return view('master')->with([
+//             'form' => Form::load('pages', 'master'),
+//         ]);
+//     });
+// }
 
 Route::trans('/', HomeController::class)->name('home');
 Route::trans('/__(routes.references)', ReferencesController::class . '@index')->name('references.index');
