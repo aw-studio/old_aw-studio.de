@@ -19,7 +19,9 @@
         "postcss": "^8.2.7",
         "tailwindcss": "^2.0.3",
         "vue-loader": "^15.9.6",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
+        "sass": "^1.32.8",
+        "sass-loader": "^11.0.1"
     },
     "dependencies": {
         "lit-bricks": "file:vendor/litstack/bricks",
