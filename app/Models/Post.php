@@ -18,7 +18,7 @@ class Post extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['title', 'excerpt'];
+    protected $fillable = ['title', 'excerpt', 'active'];
 
     /**
      * The attributes to be translated.
@@ -40,6 +40,10 @@ class Post extends Model implements HasMediaContract, TranslatableContract
      * @var array
      */
     protected $with = ['media', 'translations'];
+
+    protected $casts = [
+        'active' => 'boolean',
+    ];
 
     /**
      * Image attribute.

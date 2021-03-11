@@ -111,22 +111,11 @@ $playground_no = 4;
             <div class="order-last col-span-12 col-start-1 lg:flex lg:mt-0 lg:col-start-7 lg:col-span-6 lg:justify-end lg:items-end lg:order-none">
                 <x-button type="dark" text="{{ $form->button_blog }}" link="{{ __route('blog.index') }}" />
             </div>
-       
-         
-                @foreach($posts as $post)
-                <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
-                    <a href="{{ __route('blog.index')}}/{{$post->slug}}" class="mb-6">
-                         @isset($post->image)
-                         <x-lit-image :image="$post->image" class="w-full mb-8" />
-                         @endisset
-                         <div class="text-2xl">
-                             {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
-                        </div>
-                    </a>
-                    <p><a href="{{ __route('blog.index')}}/{{$post->slug}}">{{__('app.read-post')}}</a></p>
-                </div>
-                @endforeach
-        
+            @foreach($posts as $post)
+            <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
+                <x-post :post="$post" />
+            </div>
+            @endforeach
         </div>
     </div>
 </section>

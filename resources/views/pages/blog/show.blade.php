@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<section id="headline" class="bg-white">
+<section class="bg-white">
     <div class="container pt-20 pb-20 lg:pb-40">
         {{-- <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 lg:col-span-3">

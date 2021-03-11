@@ -13,7 +13,6 @@ aw-first-section-is-white
 
 <section class="bg-white">
     <div class="container pt-20 pb-20 lg:pb-40">
-
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 lg:col-span-3">
                 <h1 class="mb-4 text-xl text-black">
@@ -27,7 +26,6 @@ aw-first-section-is-white
                 <x-lit-image :image="$services->image" class="w-full" />
             </div>
         </div>
-
         <div class="grid grid-cols-12 gap-5 mt-20 lg:mt-40">
             <div class="col-span-12 col-start-1 lg:col-span-7">
                 <h2 class="h1">
@@ -35,7 +33,6 @@ aw-first-section-is-white
                 </h2>
             </div>
         </div>
-
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 text-xl md:col-span-6 lg:col-span-7">
                 {!! $services->text_intro !!}
@@ -44,10 +41,8 @@ aw-first-section-is-white
                 {!! $services->text_fjord !!}
             </div>
         </div>
-
     </div>
 </section>
-
 
 <section class="pt-20 bg-white border-t border-black lg:pt-40">
     <div class="container pb-8 md:pd-12 lg:pb-40">

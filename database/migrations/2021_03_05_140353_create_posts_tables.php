@@ -16,6 +16,7 @@ class CreatePostsTables extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('lit_user_id');
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
 

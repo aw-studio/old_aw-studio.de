@@ -12,6 +12,7 @@ use Lit\Config\Crud\TeamMemberConfig;
 use Lit\Config\Form\Components\JobsConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\ApplicationConfig;
+use Lit\Config\Form\Pages\BlogConfig;
 use Lit\Config\Form\Pages\DatapolicyConfig;
 use Lit\Config\Form\Pages\HomeConfig;
 use Lit\Config\Form\Pages\ImprintConfig;
@@ -51,12 +52,13 @@ class NavigationConfig extends Config
     public function main(Navigation $nav)
     {
         $nav->section([
-            $nav->title('Models'),
+            $nav->title('Seiten'),
             //$nav->preset(MasterConfig::class)->icon(fa('shapes')),
             $nav->preset(HomeConfig::class)->icon(fa('home')),
             $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
             $nav->preset(ReferencesConfig::class)->icon(fa('star-of-life')),
             $nav->preset(StudioConfig::class)->icon(fa('door-open')),
+            $nav->preset(BlogConfig::class)->icon(fa('newspaper')),
             $nav->preset(ApplicationConfig::class)->icon(fa('envelope')),
             $nav->preset(ImprintConfig::class)->icon(fa('info-circle')),
             $nav->preset(DatapolicyConfig::class)->icon(fa('file-alt')),

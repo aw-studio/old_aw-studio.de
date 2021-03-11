@@ -7,6 +7,7 @@ module.exports = {
             default: ['Calibre', 'sans-serif'],
         },
         fontSize: {
+            xs: ['12px', '14px'],
             sm: ['16px', '22px'],
             base: ['18px', '26px'],
             lg: ['20px', '28px'],

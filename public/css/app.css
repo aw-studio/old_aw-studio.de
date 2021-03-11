@@ -4224,6 +4224,11 @@ section.bg-black ul, nav.bg-black ul{
   height: 100vh;
 }
 
+.text-xs{
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .text-sm{
   font-size: 16px;
   line-height: 22px;
@@ -20443,6 +20448,11 @@ body.aw-first-section-is-white.aw-nav-animating {
     height: 100vh;
   }
 
+  .sm\:text-xs{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .sm\:text-sm{
     font-size: 16px;
     line-height: 22px;
@@ -36549,6 +36559,11 @@ body.aw-first-section-is-white.aw-nav-animating {
 
   .md\:h-screen{
     height: 100vh;
+  }
+
+  .md\:text-xs{
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .md\:text-sm{
@@ -52659,6 +52674,11 @@ body.aw-first-section-is-white.aw-nav-animating {
     height: 100vh;
   }
 
+  .lg\:text-xs{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .lg\:text-sm{
     font-size: 16px;
     line-height: 22px;
@@ -68767,6 +68787,11 @@ body.aw-first-section-is-white.aw-nav-animating {
     height: 100vh;
   }
 
+  .xl\:text-xs{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .xl\:text-sm{
     font-size: 16px;
     line-height: 22px;
@@ -84873,6 +84898,11 @@ body.aw-first-section-is-white.aw-nav-animating {
 
   .\32xl\:h-screen{
     height: 100vh;
+  }
+
+  .\32xl\:text-xs{
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .\32xl\:text-sm{
