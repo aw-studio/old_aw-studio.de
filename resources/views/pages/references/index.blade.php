@@ -15,7 +15,7 @@
                 </h2>
             </div>
         </div>
-        {{-- @include('pages.references.partials.index_highlights') --}}
+        @include('pages.references.partials.index_highlights')
     </div>
 </section>
 

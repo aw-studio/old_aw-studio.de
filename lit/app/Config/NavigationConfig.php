@@ -9,6 +9,7 @@ use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TagConfig;
 use Lit\Config\Crud\TeamMemberConfig;
+use Lit\Config\Form\Collections\HighlightsConfig;
 use Lit\Config\Form\Components\JobsConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\ApplicationConfig;
@@ -76,6 +77,7 @@ class NavigationConfig extends Config
         ]);
         $nav->section([
             $nav->title('Komponenten'),
+            $nav->preset(HighlightsConfig::class)->icon(fa('star')),
             $nav->preset(JobsConfig::class)->icon(fa('keyboard')),
         ]);
         $nav->section([
