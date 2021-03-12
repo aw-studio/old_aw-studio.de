@@ -2,7 +2,6 @@
 
 namespace Lit\Config\Form\Pages;
 
-use App\Models\Reference;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
@@ -77,13 +76,6 @@ class HomeConfig extends FormConfig
         $page->card(function ($form) {
             $form->input('h2_solutions')->title('Headline')->translatable()->hint('große Headline (h2)');
             $form->wysiwyg('list_solutions')->title('List')->translatable();
-
-            $form->manyRelation('references')
-                ->title('Referenzen/Highlights')
-                ->model(Reference::class)
-                ->preview(function ($table) {
-                    $table->col('title');
-                });
         })->width(9);
 
         $page->info('Kunden-Listen')

@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use Ignite\Support\Facades\Form;
 use Illuminate\View\Component;
 
 class ReferencesTeaser extends Component
@@ -13,9 +14,9 @@ class ReferencesTeaser extends Component
      *
      * @return void
      */
-    public function __construct($references)
+    public function __construct()
     {
-        $this->references = $references;
+        $this->references = Form::load('collections', 'highlights')->references;
     }
 
     /**

@@ -9,6 +9,7 @@ use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TagConfig;
 use Lit\Config\Crud\TeamMemberConfig;
+use Lit\Config\Form\Collections\FeaturedConfig;
 use Lit\Config\Form\Collections\HighlightsConfig;
 use Lit\Config\Form\Components\JobsConfig;
 use Lit\Config\Form\Navigations\MainNavigationConfig;
@@ -71,13 +72,20 @@ class NavigationConfig extends Config
         ]);
         $nav->section([
             $nav->title('Daten'),
-            $nav->preset(ReferenceConfig::class)->icon(fa('star-of-life')),
+            $nav->group([
+                'title' => 'Referenzen',
+                'icon'  => fa('asterisk'),
+            ], [
+                $nav->preset(ReferenceConfig::class)->icon(fa('star-of-life')),
+                $nav->preset(HighlightsConfig::class)->icon(fa('star')),
+                $nav->preset(FeaturedConfig::class)->icon(fa('star')),
+            ]),
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
         ]);
         $nav->section([
             $nav->title('Komponenten'),
-            $nav->preset(HighlightsConfig::class)->icon(fa('star')),
+
             $nav->preset(JobsConfig::class)->icon(fa('keyboard')),
         ]);
         $nav->section([

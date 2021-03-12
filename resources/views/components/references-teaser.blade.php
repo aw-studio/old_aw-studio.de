@@ -2,11 +2,9 @@
     @foreach ($references as $reference)
     <div class="mb-20">
         <div class="mb-4">
-            <x-lit-image :image="$reference->image" :alt="$reference->title" class="w-full" />
-            {{-- TODO: reference route --}}
-            {{-- <a href="{{ __route('references.show',$reference->slug) }}">
-                <x-lit-image :image="$reference->image" :alt="$reference->title"/>
-            </a> --}}
+            <a href="{{ __route('references.show',$reference->slug) }}">
+                <x-lit-image :image="$reference->image" :alt="$reference->title" class="w-full" />
+            </a>
         </div>
         <div class="justify-between md:flex">
             <div>
@@ -18,8 +16,7 @@
                 </p>
             </div>
             <div>
-                {{-- TODO: reference route --}}
-                {{-- <a href="{{ __route('references.show',$reference->slug) }}" class="aw-link">{{ __('app.view-reference') }}</a> --}}
+                <a href="{{ __route('references.show',$reference->slug) }}" class="aw-link">{{ __('app.view-reference') }}</a>
             </div>
         </div>
     </div>
