@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Ignite\Crud\Models\Repeatable;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -54,8 +55,7 @@ class ImportMediaCommand extends Command
         $medias = OldMedia::all();
 
         foreach ($medias as $oldmedia) {
-            if ($oldmedia->model_type === 'Fjord\Crud\Models\FormBlock' ||
-                $oldmedia->model_type === 'Fjord\Crud\Models\FormField') {
+            if ($oldmedia->model_type === 'Fjord\Crud\Models\FormField') {
                 continue;
             }
 
@@ -63,6 +63,10 @@ class ImportMediaCommand extends Command
 
             $newMedia = new Media;
             $newMedia->forceFill($oldmedia->toArray());
+
+            if ($oldmedia->model_type === 'Fjord\Crud\Models\FormBlock') {
+                $newMedia->model_type = Repeatable::class;
+            }
 
             $newMedia->conversions_disk = $oldmedia->disk;
             $props = json_decode($oldmedia->custom_properties, true);
