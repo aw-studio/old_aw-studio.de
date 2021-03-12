@@ -2543,13 +2543,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:litstack/bladesmith.git",
-                "reference": "08a48548978aab8c275c918f8d165bcdfa166951"
+                "reference": "1e6ba1aef06749af7f5d9f85686f0060e9bb7363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://store.litstack.io/dist/litstack/bladesmith/litstack-bladesmith-08a48548978aab8c275c918f8d165bcdfa166951-zip-f58109.zip",
-                "reference": "08a48548978aab8c275c918f8d165bcdfa166951",
-                "shasum": "829b2b81d586ba3b176be92fa317cb751362fb54"
+                "url": "https://store.litstack.io/dist/litstack/bladesmith/litstack-bladesmith-1e6ba1aef06749af7f5d9f85686f0060e9bb7363-zip-889f8f.zip",
+                "reference": "1e6ba1aef06749af7f5d9f85686f0060e9bb7363",
+                "shasum": "9afc641f66620c71c47f3a9422e1bb9051e5edf0"
             },
             "require": {
                 "cbl/blade-script": "^1.0",
@@ -2604,7 +2604,7 @@
                 "source": "https://github.com/litstack/bladesmith/tree/1.x",
                 "issues": "https://github.com/litstack/bladesmith/issues"
             },
-            "time": "2021-03-04T14:52:06+00:00"
+            "time": "2021-03-08T21:30:51+00:00"
         },
         {
             "name": "litstack/bricks",

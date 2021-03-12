@@ -25,7 +25,7 @@ class Post extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    public $translatedAttributes = ['title', 'excerpt'];
+    public $translatedAttributes = ['title', 'excerpt', 'slug'];
 
     /**
      * The accessors to append to the model's array form.

@@ -39,7 +39,7 @@ Route::trans('/__(routes.services)', ServicesController::class)->name('services'
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 
 Route::trans('/__(routes.blog)', BlogController::class . '@index')->name('blog.index');
-Route::trans('/__(routes.blog)/{slug}', BlogController::class . '@show')->name('blog.show');
+Route::trans('/__(routes.blog)/{slug}', BlogController::class . '@show')->translator('getPostSlug')->name('blog.show');
 
 Route::trans('/__(routes.application)', ApplicationController::class . '@index')->name('application');
 

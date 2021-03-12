@@ -112,6 +112,7 @@ $playground_no = 4;
                 <x-button type="dark" text="{{ $form->button_blog }}" link="{{ __route('blog.index') }}" />
             </div>
             @foreach($posts as $post)
+            {{-- {{dd($post->translations)}} --}}
             <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
                 <x-post :post="$post" />
             </div>
