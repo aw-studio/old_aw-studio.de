@@ -61,4 +61,19 @@ class ReferencesController extends Controller
 
         return $next_slug;
     }
+
+    /**
+     * Looks up the translated slug for a crud in the translation table.
+     *
+     * @return slug
+     */
+    public function getReferenceSlug($locale, $slug)
+    {
+        $slug = Reference::whereTranslation('slug', $slug)
+            ->first()
+            ->translate($locale)
+            ->slug;
+
+        return ['slug' => $slug];
+    }
 }

@@ -24,7 +24,7 @@ class Reference extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    public $translatedAttributes = ['title', 'subtitle', 'buzzwords', 'text', 'link_text'];
+    public $translatedAttributes = ['title', 'subtitle', 'buzzwords', 'text', 'link_text', 'slug'];
 
     /**
      * The accessors to append to the model's array form.
