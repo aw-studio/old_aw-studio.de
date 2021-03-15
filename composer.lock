@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48561694e57a11fc9a5adb304c49d441",
+    "content-hash": "2bce86ca4028ac9c06139d3bea1743ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2787,6 +2787,59 @@
                 "source": "https://github.com/litstack/litstack/tree/v3.4.2"
             },
             "time": "2021-03-03T11:15:20+00:00"
+        },
+        {
+            "name": "litstack/meta",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/litstack/meta.git",
+                "reference": "ce0a159892d9e08df493930e907f0d6af4cfdc74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/litstack/meta/zipball/ce0a159892d9e08df493930e907f0d6af4cfdc74",
+                "reference": "ce0a159892d9e08df493930e907f0d6af4cfdc74",
+                "shasum": ""
+            },
+            "require": {
+                "litstack/litstack": "^3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Litstack\\Meta\\MetaServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Litstack\\Meta\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jannescb",
+                    "email": "jannes@aw-studio.de"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/litstack/meta/issues",
+                "source": "https://github.com/litstack/meta/tree/v1.0.0"
+            },
+            "time": "2021-03-04T08:18:11+00:00"
         },
         {
             "name": "livewire/livewire",

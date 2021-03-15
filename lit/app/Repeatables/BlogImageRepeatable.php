@@ -20,7 +20,7 @@ class BlogImageRepeatable extends Repeatable
      *
      * @var string
      */
-    protected $view = 'rep.blog_image';
+    protected $view = 'rep.blog.image';
 
     /**
      * Build the repeatable preview.
@@ -30,7 +30,7 @@ class BlogImageRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        //
+        $preview->col('<span class="text-secondary">' . fa('image') . ' Bild</span>');
     }
 
     /**
@@ -41,6 +41,6 @@ class BlogImageRepeatable extends Repeatable
      */
     public function form(RepeatableForm $form): void
     {
-        //
+        $form->image('image')->title('Bild')->maxFiles(1);
     }
 }

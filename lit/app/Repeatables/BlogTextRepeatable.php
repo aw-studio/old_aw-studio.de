@@ -20,7 +20,7 @@ class BlogTextRepeatable extends Repeatable
      *
      * @var string
      */
-    protected $view = 'rep.blog_text';
+    protected $view = 'rep.blog.text';
 
     /**
      * Build the repeatable preview.
@@ -30,7 +30,7 @@ class BlogTextRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        //
+        $preview->col('<span class="text-secondary">' . fa('quote-right') . ' Text</span>');
     }
 
     /**
@@ -41,6 +41,6 @@ class BlogTextRepeatable extends Repeatable
      */
     public function form(RepeatableForm $form): void
     {
-        //
+        $form->wysiwyg('text')->title('Text');
     }
 }
