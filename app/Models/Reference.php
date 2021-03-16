@@ -28,6 +28,12 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      */
     public $translatedAttributes = ['title', 'subtitle', 'buzzwords', 'text', 'link_text', 'slug'];
 
+    protected $defaultMetaAttribute = [
+        'title'       => 'blablabla',
+        'description' => 'blablabla',
+        'keywords'    => 'blablabla',
+    ];
+
     /**
      * The accessors to append to the model's array form.
      *
@@ -41,18 +47,6 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      * @var array
      */
     protected $with = ['media', 'translations'];
-
-    // protected $metaAttributes = [
-    //     'title' => 'title',
-    //     //'description' => stripHtml('text'),
-    //     'image' => 'image',
-    // ];
-
-    // public function metaTitle(): ?string
-    // {
-    //     // Return a prefix:
-    //     return 'Awesome Blog: ' . 'title';
-    // }
 
     /**
      * Image attribute.

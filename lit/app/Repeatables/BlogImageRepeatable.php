@@ -41,6 +41,6 @@ class BlogImageRepeatable extends Repeatable
      */
     public function form(RepeatableForm $form): void
     {
-        $form->image('image')->title('Bild')->maxFiles(1);
+        $form->image('image')->title('Bild')->maxFiles(1)->crop(1.6181 / 1);
     }
 }

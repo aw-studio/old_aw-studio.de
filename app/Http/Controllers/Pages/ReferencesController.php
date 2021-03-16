@@ -33,9 +33,9 @@ class ReferencesController extends Controller
         })->toArray();
 
         return view('pages.references.show')->with([
-            'reference'           => $reference,
-            'next_reference_slug' => $this->getNextReferenceSlug($slug),
-            'routeParameters'     => ['slug' => $slugs],
+            'reference' => $reference,
+            //'next_reference_slug' => $this->getNextReferenceSlug($slug),
+            'routeParameters' => ['slug' => $slugs],
         ]);
     }
 

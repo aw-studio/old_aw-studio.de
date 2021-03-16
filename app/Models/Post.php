@@ -7,11 +7,13 @@ use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Ignite\Crud\Models\Traits\HasMedia;
 use Ignite\Crud\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Litstack\Meta\Metaable;
+use Litstack\Meta\Traits\HasMeta;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
 
-class Post extends Model implements HasMediaContract, TranslatableContract
+class Post extends Model implements HasMediaContract, TranslatableContract, Metaable
 {
-    use HasMedia, Translatable, Taggable;
+    use HasMedia, Translatable, Taggable, HasMeta;
 
     /**
      * The attributes that are mass assignable.

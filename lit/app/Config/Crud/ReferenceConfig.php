@@ -12,6 +12,7 @@ use Litstack\Meta\Traits\CrudHasMeta;
 class ReferenceConfig extends CrudConfig
 {
     use CrudHasMeta;
+
     /**
      * Model class.
      *
