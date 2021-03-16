@@ -7,9 +7,12 @@ use Ignite\Crud\Config\CrudConfig;
 use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\ReferenceController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class ReferenceConfig extends CrudConfig
 {
+    use CrudHasMeta;
+
     /**
      * Model class.
      *
@@ -188,5 +191,7 @@ class ReferenceConfig extends CrudConfig
                     });
                 });
         })->width(9);
+
+        $this->meta($page);
     }
 }

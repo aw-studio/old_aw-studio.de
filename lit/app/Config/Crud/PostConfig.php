@@ -7,9 +7,11 @@ use Ignite\Crud\Config\CrudConfig;
 use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\PostController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class PostConfig extends CrudConfig
 {
+    use CrudHasMeta;
     /**
      * Model class.
      *
@@ -84,7 +86,7 @@ class PostConfig extends CrudConfig
 
             $form->image('image')
                 ->maxFiles(1)
-                ->expand();
+                ->expand()
 
             // $form->modal('change_slug')
             //     ->title('Slug')
@@ -98,6 +100,7 @@ class PostConfig extends CrudConfig
             //     })->width(4);
 
             // $this->prependForm($form);
+                ->crop(1.6181 / 1);
         });
 
         $page->card(function ($form) {
@@ -108,14 +111,8 @@ class PostConfig extends CrudConfig
             $form->relation('tags')
                 ->type('tags')
                 ->tagValue('{title}');
-
-            // ->preview(function ($preview) {
-                //     $preview->col('Titel')->value('{title}');
-                // })
-
-                // ->create(function ($form) {
-                //     $form->input('title');
-                // });
         });
+
+        $this->meta($page);
     }
 }

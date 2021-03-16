@@ -5,8 +5,6 @@ namespace Lit\Repeatables;
 use Ignite\Crud\Fields\Block\Repeatable;
 use Ignite\Crud\Fields\Block\RepeatableForm;
 use Ignite\Page\Table\ColumnBuilder;
-use Litstack\Bricks\Repeatables\ImageRepeatable;
-use Litstack\Bricks\Repeatables\TextRepeatable;
 
 class SectionPostRepeatable extends Repeatable
 {
@@ -52,8 +50,8 @@ class SectionPostRepeatable extends Repeatable
         $form->block('content')
             ->title('Content')
             ->repeatables(function ($repeatables) {
-                $repeatables->add(TextRepeatable::class)->button('Text');
-                $repeatables->add(ImageRepeatable::class)->button('Image');
+                $repeatables->add(BlogTextRepeatable::class)->button('Text');
+                $repeatables->add(BlogImageRepeatable::class)->button('Image');
             });
     }
 }

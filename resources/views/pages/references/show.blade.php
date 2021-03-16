@@ -11,10 +11,13 @@
 <meta property="og:description" content="{{ $reference->text }}">
 @endif
 
-<x-meta :metaTitle="$reference->title . ': ' . $reference->subtitle" :metaDescription="strip_tags($reference->text)" :metaKeywords="strip_tags(str_replace('</li>', '</li>, ', $reference->buzzwords))" />
 @endsection --}}
-
-@section('content')
+@section('meta')
+{{-- <x-lit-meta :title="$reference->title . ': ' . $reference->subtitle" :description="strip_tags($reference->text)" :keywords="strip_tags(str_replace('</li>', '</li>, ', $reference->buzzwords))" /> --}}
+    {{-- <x-lit-meta :for="$reference" /> --}}
+    @endsection
+    
+    @section('content')
 <section class="bg-black">
     <div class="container py-8 md:py-20">
         <div class="grid grid-cols-12 gap-5 mb-0 md:mb-20">
@@ -53,16 +56,16 @@
                 <div class="text-white">
 
                     @if ($detail->type == 'image_1xfull')                    
-                        <x-lit-image :image="$detail->image" :alt="$reference->title" />
+                        <x-lit-image :image="$detail->image" :alt="$reference->title" class="w-full" />
                     @endif
 
                     @if ($detail->type == 'image_2xhalf')
                     <div class="flex flex-wrap">
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image1" :alt="$reference->title" />
+                            <x-lit-image :image="$detail->image1" :alt="$reference->title" class="w-full" />
                         </div>
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image2" :alt="$reference->title" />
+                            <x-lit-image :image="$detail->image2" :alt="$reference->title" class="w-full" />
                         </div>
                     </div>
                     @endif
