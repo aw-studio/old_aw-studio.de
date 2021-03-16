@@ -34,7 +34,7 @@
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
         transition: all .3s cubic-bezier(.175,.885,.32,1.275);
-        transform: translate(-60px, 0px) scale(1);
+        transform: translate(-60px, -2px) scale(1);
         opacity: 0;
     }
     section.bg-black .h1::before {
@@ -42,7 +42,7 @@
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
         transition: all .3s cubic-bezier(.175,.885,.32,1.275);
-        transform: translate(-60px, 0px) scale(1);
+        transform: translate(-60px, -2px) scale(1);
         opacity: 0;
     }
     @media (max-width: 768px) {
@@ -66,12 +66,12 @@
         }
     }
     section.bg-white .h1.aw--animate::before {
-        transform: translate(0, -4px) scale(1);
+        transform: translate(0, -2px) scale(1);
         opacity: 1;
         margin-left: 0px;
     }
     section.bg-black .h1.aw--animate::before {
-        transform: translate(0, -4px) scale(1);
+        transform: translate(0, -2px) scale(1);
         opacity: 1;
         margin-left: 0px;
     }
@@ -122,7 +122,7 @@
 
     h3,
     .h3 {
-        @apply mb-4 text-2xl font-semibold text-black;
+        @apply mb-6 text-2xl font-semibold text-black;
     }
     @media (max-width: 768px) {
         h3,

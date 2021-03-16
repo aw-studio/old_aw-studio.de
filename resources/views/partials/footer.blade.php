@@ -1,4 +1,4 @@
-    <section class="pt-20 pb-8 bg-black">
+    <section class="pt-20 pb-24 bg-black lg:pb-8">
         <div class="container text-white">
             <div class="grid grid-cols-12 gap-5">
                 <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-9">
