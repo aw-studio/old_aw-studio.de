@@ -3,16 +3,16 @@
             <div class="grid grid-cols-12 gap-5">
                 <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-9">
 
-                    {{-- @include('partials.contactdata.mail') --}}mail
+                    @include('partials.contactdata.mail')
 
                     <div class="grid grid-cols-9">
                         <div class="col-span-9 col-start-1 mb-8 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-5">
-                            {{-- @include('partials.contactdata.phone') --}}phone
+                            @include('partials.contactdata.phone')
                         </div>
                         <div class="col-span-7 col-start-1 md:col-start-1 md:col-span-4 lg:col-start-7 lg:col-span-3">
 
                             <div class="grid grid-cols-2 mt-2">
-                                {{-- @include('partials.contactdata.apps') --}}contact data apps
+                                @include('partials.contactdata.apps')
                             </div>
 
                         </div>
@@ -24,17 +24,17 @@
                     <ul class="flex w-full md:justify-end">
                         <li class="mr-4 md:mr-0 md:ml-4">
                             <a href="https://www.instagram.com/alle_wetter/" target="_blank" aria-label="Instagram" rel="noreferrer">
-                                {{-- @include('partials.svg.icon-instagram') --}}insta
+                                @include('partials.svg.icon-instagram')
                             </a>
                         </li>
                         <li class="mr-4 md:mr-0 md:ml-4">
                             <a href="https://www.linkedin.com/company/alle-wetter/" target="_blank" aria-label="LinkedIn" rel="noreferrer">
-                                {{-- @include('partials.svg.icon-linkedin') --}}linkedin
+                                @include('partials.svg.icon-linkedin')
                             </a>
                         </li>
                         <li class="mr-4 md:mr-0 md:ml-4">
                             <a href="https://github.com/aw-studio" target="_blank" aria-label="GitHub" rel="noreferrer">
-                                {{-- @include('partials.svg.icon-github') --}}github
+                                @include('partials.svg.icon-github')
                             </a>
                         </li>
                     </ul>

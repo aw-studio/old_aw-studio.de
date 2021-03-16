@@ -54,7 +54,8 @@ aw-first-section-is-white
                 </h3>
                 <div class="flex items-center h-40">
                     @isset($service->illustration)
-                    <img src="{{ $service->illustration->url }}" class="mb-8" alt="Illustration: {{ $service->h3 }}">
+                        <x-lit-image :image="$service->illustration" />
+                    {{-- <img src="{{ $service->illustration->url }}" class="mb-8" alt="Illustration: {{ $service->h3 }}"> --}}
                     @endisset
                 </div>
 
@@ -144,7 +145,8 @@ aw-first-section-is-white
 
                 <div class="flex items-end h-16">
                     @isset($method->illustration)
-                    <img src="{{ $method->illustration->url }}" class="mb-8" alt="Illustration: {{ $method->h3 }}">
+                    {{-- <img src="{{ $method->illustration->url }}" class="mb-8" alt="Illustration: {{ $method->h3 }}"> --}}
+                    <x-lit-image :image="$service->illustration" />
                     @endisset
                 </div>
 

@@ -1,4 +1,4 @@
-<a href="{{ __route('blog.show',$post->slug)}}" class="relative block mb-6">
+<a href="{{ __route('blog.show',$post->slug)}}" class="relative block mb-2 lg:mb-6">
     <div class="relative">
         <div class="absolute">
             @if(count($post->tags) > 0)
@@ -8,11 +8,11 @@
             @endif
         </div>
         @isset($post->image)
-        <x-lit-image :image="$post->image" class="z-10 w-full mb-8" />
+        <x-lit-image :image="$post->image" class="z-10 w-full mb-4 lg:mb-8" />
         @endisset
     </div>
-    <div class="text-2xl">
+    <div class="text-xl md:text-2xl">
         {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
     </div>
 </a>
-<a href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a>
+<a class="aw-link" href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a>

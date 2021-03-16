@@ -82,7 +82,9 @@ class PostConfig extends CrudConfig
             $form->wysiwyg('excerpt')
                 ->translatable();
 
-            $form->image('image');
+            $form->image('image')
+                ->maxFiles(1)
+                ->expand();
 
             // $form->modal('change_slug')
             //     ->title('Slug')

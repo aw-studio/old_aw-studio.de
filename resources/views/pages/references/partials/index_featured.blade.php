@@ -17,3 +17,9 @@
 
     @endforeach
 </div>
+
+<x-style>
+    .image-container img {
+        width: 100%;
+    }
+</x-style>

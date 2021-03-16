@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/app.css">
     <x-styles />
 </head>
-<body class="flex flex-col min-h-screen">
-    <div id="app" class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen @yield('bodyclass')">
+    <div id="app" class="flex flex-col min-h-screen @yield('appclass')">
         <header class="fixed top-0 left-0 z-50 flex items-center w-full h-16 text-white bg-black sm:h-24">
             @include('partials.header')
         </header>

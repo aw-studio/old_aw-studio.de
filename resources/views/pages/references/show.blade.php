@@ -35,21 +35,19 @@
             @foreach ($reference->details as $detail)
 
             @if($loop->iteration == 2)
-
-                <div class="grid grid-cols-12 py-0 md:py-20">
-                    <div class="flex flex-row-reverse justify-between col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 md:block">
-                        <div class="mb-8 text-xl text-right md:text-left">
-                            <b>{!! $reference->date !!}</b>
-                        </div>
-                        <div class="">
-                            {!! $reference->buzzwords !!}
-                        </div>
+            <div class="grid grid-cols-12 py-0 md:py-20">
+                <div class="flex flex-row-reverse justify-between col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 md:block">
+                    <div class="mb-8 text-xl text-right md:text-left">
+                        <b>{!! $reference->date !!}</b>
                     </div>
-                    <div class="col-span-12 col-start-1 text-xl md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
-                        {!! $reference->text !!}
+                    <div class="">
+                        {!! $reference->buzzwords !!}
                     </div>
                 </div>
-
+                <div class="col-span-12 col-start-1 text-xl md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+                    {!! $reference->text !!}
+                </div>
+            </div>  
                 @endif
 
                 <div class="text-white">
@@ -88,7 +86,7 @@
 </section>
 
 
-
+{{-- TODO: --}}
 <section class="pt-12 pb-40 bg-black md:pt-0">
     <div class="container text-center">
         {{-- <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a> --}}

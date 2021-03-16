@@ -39,6 +39,7 @@ class ReferencesController extends Controller
         ]);
     }
 
+    // TODO:
     private function getNextReferenceSlug($current)
     {
         // $this->current = $current;

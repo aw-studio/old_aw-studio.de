@@ -181,7 +181,7 @@ body.aw-nav-open main {
 
 .lit-nav-list a.lit--active::before {
   content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.146 3L40 15 28.146 27m11.24-12L2.5 14.5' stroke='%23FFF' stroke-width='5' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
-  transform: translate(0, -10px);
+  transform: translate(0, 0px);
   position: absolute;
   left: -58px;
   display: inline-block;
@@ -568,7 +568,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Calibre, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -764,13 +764,13 @@ video {
 }
 
 .h1 {
+  transition: all 0.3s;
   font-weight: 600;
   font-size: 54px;
   line-height: 60px;
   margin-bottom: 5rem;
   --tw-text-opacity: 1;
   color: rgba(22, 22, 22, var(--tw-text-opacity));
-  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -794,9 +794,9 @@ video {
   color: rgba(22, 22, 22, var(--tw-text-opacity));
   width: 3rem;
   transform-origin: left center;
-  transform: translate(-60px, 8px) scale(1);
+  transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+  transform: translate(-60px, 0px) scale(1);
   opacity: 0;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media (max-width: 768px) {
@@ -813,21 +813,41 @@ video {
   }
 }
 
-.h1.aw--animate::before {
-  transform: translate(0, 8px) scale(1);
+section.bg-white .h1.aw--animate::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  transform: translate(0, -4px) scale(1);
+  opacity: 1;
+  margin-left: 0px;
+}
+
+section.bg-black .h1.aw--animate::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  transform: translate(0, -4px) scale(1);
   opacity: 1;
   margin-left: 0px;
 }
 
 @media (max-width: 768px) {
-  .h1.aw--animate::before {
-    transform: translate(0, 12px) scale(0.95);
+  section.bg-white .h1.aw--animate::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transform: translate(0, 2px) scale(0.95);
+  }
+
+  section.bg-black .h1.aw--animate::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transform: translate(0, 2px) scale(0.95);
   }
 }
 
 @media (max-width: 640px) {
-  .h1.aw--animate::before {
-    transform: translate(0, 15px) scale(0.7);
+  section.bg-white .h1.aw--animate::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transform: translate(0, 4px) scale(0.7);
+  }
+
+  section.bg-black .h1.aw--animate::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transform: translate(0, 4px) scale(0.7);
   }
 }
 
@@ -865,6 +885,11 @@ h2, .h2{
 }
 
 @media (max-width: 640px) {
+  h2 p, .h2 p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   h2, .h2{
     font-size: 22px;
     line-height: 28px;
@@ -875,12 +900,17 @@ h3, .h3{
   font-weight: 600;
   font-size: 30px;
   line-height: 38px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgba(22, 22, 22, var(--tw-text-opacity));
 }
 
 @media (max-width: 768px) {
+  h3 p, .h3 p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   h3, .h3{
     font-size: 22px;
     line-height: 28px;
@@ -888,6 +918,11 @@ h3, .h3{
 }
 
 @media (max-width: 640px) {
+  h3 p, .h3 p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   h3, .h3{
     font-size: 22px;
     line-height: 28px;
@@ -932,7 +967,17 @@ ul li p:first-child {
   }
 }
 
-.aw-list ul li {
+section.bg-white .aw-list ul li {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23161616' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-position: 0 13px;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+}
+
+section.bg-black .aw-list ul li {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23FFF' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-position: 0 13px;
+  background-repeat: no-repeat;
   padding-left: 2rem;
 }
 
@@ -957,6 +1002,11 @@ p a:hover,
     a.aw-link:hover {
   border-bottom: 1px solid rgba(22, 22, 22, 1);
   padding-bottom: 0.075rem;
+}
+
+.text-xl p {
+  font-size: 22px;
+  line-height: 28px;
 }
 
 section.bg-black .h1, nav.bg-black .h1{
@@ -1022,6 +1072,8 @@ section.bg-black ul, nav.bg-black ul{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 @media (min-width: 640px){
@@ -4000,7 +4052,7 @@ section.bg-black ul, nav.bg-black ul{
   clear: none;
 }
 
-.font-default{
+.font-sans{
   font-family: Calibre, sans-serif;
 }
 
@@ -17246,6 +17298,8 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (min-width: 640px){
@@ -20224,7 +20278,7 @@ body.aw-first-section-is-white.aw-nav-animating {
     clear: none;
   }
 
-  .sm\:font-default{
+  .sm\:font-sans{
     font-family: Calibre, sans-serif;
   }
 
@@ -33359,6 +33413,8 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (min-width: 640px){
@@ -36337,7 +36393,7 @@ body.aw-first-section-is-white.aw-nav-animating {
     clear: none;
   }
 
-  .md\:font-default{
+  .md\:font-sans{
     font-family: Calibre, sans-serif;
   }
 
@@ -49472,6 +49528,8 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (min-width: 640px){
@@ -52450,7 +52508,7 @@ body.aw-first-section-is-white.aw-nav-animating {
     clear: none;
   }
 
-  .lg\:font-default{
+  .lg\:font-sans{
     font-family: Calibre, sans-serif;
   }
 
@@ -65585,6 +65643,8 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (min-width: 640px){
@@ -68563,7 +68623,7 @@ body.aw-first-section-is-white.aw-nav-animating {
     clear: none;
   }
 
-  .xl\:font-default{
+  .xl\:font-sans{
     font-family: Calibre, sans-serif;
   }
 
@@ -81698,6 +81758,8 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (min-width: 640px){
@@ -84676,7 +84738,7 @@ body.aw-first-section-is-white.aw-nav-animating {
     clear: none;
   }
 
-  .\32xl\:font-default{
+  .\32xl\:font-sans{
     font-family: Calibre, sans-serif;
   }
 

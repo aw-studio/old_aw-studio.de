@@ -90,6 +90,10 @@
     #app.aw-home button span {
         background: #161616;
     }
+
+    .aw-nav-open #app.aw-home button span {
+        background: #fff;
+    }
     
     #app.aw-home.aw--scrolled button span,
     body.a-nav-open #app.aw-home button span {

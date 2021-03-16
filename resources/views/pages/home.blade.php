@@ -1,14 +1,18 @@
 @extends('app')
 
-@section('bodyclass')
-aw-first-section-is-white
-@endsection
-
 @section('appclass')
 aw-home
 @endsection
 
 @section('content')
+
+<section class="bg-white aw-first-section">
+
+    <div class="container py-20 lg:py-24 aw-jumbo">
+        <h1 class="text-2xl font-semibold sm:text-3xl lg:text-5xl">{!! nl2br(e($form->h1)) !!}</h1>
+    </div>
+
+</section>
 
 @php
 $playground_no = rand(1,3);

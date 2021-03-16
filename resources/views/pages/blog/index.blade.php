@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="bg-white">
-    <div class="container pt-20 pb-20 lg:pb-40">
+    <div class="container pt-20 pb-16 lg:pb-20">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 lg:col-span-3">
                 <h1 class="mb-4 text-xl text-black">
@@ -33,10 +33,10 @@
 
 <section class="bg-white">
     <div class="container pb-20 lg:pb-40">
-        <div class="grid grid-cols-12 gap-10">
+        <div class="grid grid-cols-12 lg:gap-10">
             {{-- {{$posts[0]->slug}} --}}
             @foreach($posts as $post)
-            <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
+            <div class="col-span-12 mt-8 lg:col-span-6 lg:mt-12">
                 <x-post :post="$post" />
             </div>
             @endforeach

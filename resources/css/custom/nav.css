@@ -76,7 +76,7 @@
 
 .lit-nav-list a.lit--active::before {
     content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.146 3L40 15 28.146 27m11.24-12L2.5 14.5' stroke='%23FFF' stroke-width='5' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
-    transform: translate(0, -10px);
+    transform: translate(0, 0px);
     position: absolute;
     left: -58px;
     @apply inline-block w-12 h-10;

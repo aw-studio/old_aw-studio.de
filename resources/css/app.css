@@ -16,8 +16,8 @@
         }
     }
     .h1 {
-        @apply mb-20 text-4xl font-semibold text-black;
         transition: all 0.3s;
+        @apply mb-20 text-4xl font-semibold text-black;
     }
     @media (max-width: 768px) {
         .h1 {
@@ -33,9 +33,9 @@
         content: '';
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
-        transform: translate(-60px, 8px) scale(1);
+        transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+        transform: translate(-60px, 0px) scale(1);
         opacity: 0;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     @media (max-width: 768px) {
         .h1::before {
@@ -49,19 +49,36 @@
             margin-right: -10px;
         }
     }
-    .h1.aw--animate::before {
-        transform: translate(0, 8px) scale(1);
+    section.bg-white .h1.aw--animate::before {
+        content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        transform: translate(0, -4px) scale(1);
+        opacity: 1;
+        margin-left: 0px;
+    }
+    section.bg-black .h1.aw--animate::before {
+        content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        transform: translate(0, -4px) scale(1);
         opacity: 1;
         margin-left: 0px;
     }
     @media (max-width: 768px) {
-        .h1.aw--animate::before {
-            transform: translate(0, 12px) scale(0.95);
+        section.bg-white .h1.aw--animate::before {
+            content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            transform: translate(0, 2px) scale(0.95);
+        }
+        section.bg-black .h1.aw--animate::before {
+            content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            transform: translate(0, 2px) scale(0.95);
         }
     }
     @media (max-width: 640px) {
-        .h1.aw--animate::before {
-            transform: translate(0, 15px) scale(0.7);
+        section.bg-white .h1.aw--animate::before {
+            content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            transform: translate(0, 4px) scale(0.7);
+        }
+        section.bg-black .h1.aw--animate::before {
+            content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            transform: translate(0, 4px) scale(0.7);
         }
     }
     @media (max-width: 768px) {
@@ -95,7 +112,7 @@
 
     h3,
     .h3 {
-        @apply mb-8 text-2xl font-semibold text-black;
+        @apply mb-4 text-2xl font-semibold text-black;
     }
     @media (max-width: 768px) {
         h3,
@@ -129,7 +146,16 @@
             @apply text-base;
         }
     }
-    .aw-list ul li {
+    section.bg-white .aw-list ul li {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23161616' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-position: 0 13px;
+        background-repeat: no-repeat;
+        @apply pl-8;
+    }
+    section.bg-black .aw-list ul li {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23FFF' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-position: 0 13px;
+        background-repeat: no-repeat;
         @apply pl-8;
     }
     .aw-list ul li p {
@@ -147,6 +173,10 @@
     a.aw-link:hover {
         border-bottom: 1px solid rgba(22, 22, 22, 1);
         padding-bottom: 0.075rem;
+    }
+    .text-xl p {
+        font-size: 22px;
+        line-height: 28px;
     }
 
     section.bg-black .h1,

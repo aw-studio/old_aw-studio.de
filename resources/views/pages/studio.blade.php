@@ -11,7 +11,9 @@ aw-first-section-is-white
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
                 <h1 class="mb-8 text-xl text-black">
+                    @isset($studio->h1)
                     {{ $studio->h1 }}
+                    @endisset
                 </h1>
             </div>
         </div>
@@ -35,15 +37,18 @@ aw-first-section-is-white
         <div class="grid grid-cols-12 gap-5 mt-8 lg:mt-40">
             <div class="col-span-12 col-start-1 lg:col-start-1 lg:col-span-7">
                 <h2 class="h1">
-                    {{ $studio->h2 }}
+                   @isset($studio->h2)
+                   {{ $studio->h2 }}
+                   @endisset
                 </h2>
             </div>
             <div class="col-span-12 col-start-1 text-xl lg:col-start-1 lg:col-span-5">
+                @isset($studio->text_intro)
                 {!! $studio->text_intro !!}
-
+                @endisset
             </div>
             <div class="col-span-12 col-start-1 mt-8 lg:col-start-7 lg:col-span-6 lg:mt-20">
-                @isset($studio->images[1])
+                @isset($studio->images[2])
                 <x-lit-image :image="$studio->images[2]" class="w-full" />
                 @endisset
                 <div class="mt-4">
@@ -60,14 +65,19 @@ aw-first-section-is-white
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-6">
                 <h2 class="mb-0 h1">
+                    @isset($studio->h2_team_members)
                     {{ $studio->h2_team_members }}
+                    @endisset
                 </h2>
                 <div class="my-12 text-xl">
+                    @isset($studio->text_team_members)
                     {!! $studio->text_team_members !!}
+                    @endisset
                 </div>
             </div>
         </div>
         <div class="grid grid-flow-row grid-cols-2 gap-5 mb-8 md:grid-cols-4">
+            @isset($studio->team_members)
             @foreach ($studio->team_members as $team_member)            
             <div>
                 <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full mb-4"/>
@@ -82,8 +92,9 @@ aw-first-section-is-white
             @if($loop->iteration == 3)
                 <div></div>
                 <div></div>
-                @endif
-                @endforeach
+            @endif
+            @endforeach
+            @endisset
         </div>
     </div>
 </section>

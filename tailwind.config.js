@@ -4,7 +4,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            default: ['Calibre', 'sans-serif'],
+            sans: ['Calibre', 'sans-serif'],
         },
         fontSize: {
             xs: ['12px', '14px'],
@@ -28,7 +28,7 @@ module.exports = {
         container: {
             center: true,
             padding: {
-                default: '24px',
+                DEFAULT: '24px',
                 md: '48px',
             },
         },
