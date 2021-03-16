@@ -785,8 +785,22 @@ video {
   }
 }
 
-.h1::before {
-  content: '';
+section.bg-white .h1::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: inline-block;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(22, 22, 22, var(--tw-text-opacity));
+  width: 3rem;
+  transform-origin: left center;
+  transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+  transform: translate(-60px, 0px) scale(1);
+  opacity: 0;
+}
+
+section.bg-black .h1::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   display: inline-block;
   height: 2.5rem;
   margin-right: 0.5rem;
@@ -800,28 +814,36 @@ video {
 }
 
 @media (max-width: 768px) {
-  .h1::before {
+  section.bg-white .h1::before {
+    transform: translate(-60px, 12px) scale(0.95);
+    margin-right: 3px;
+  }
+
+  section.bg-black .h1::before {
     transform: translate(-60px, 12px) scale(0.95);
     margin-right: 3px;
   }
 }
 
 @media (max-width: 640px) {
-  .h1::before {
+  section.bg-white .h1::before {
+    transform: translate(-60px, 15px) scale(0.7);
+    margin-right: -10px;
+  }
+
+  section.bg-black .h1::before {
     transform: translate(-60px, 15px) scale(0.7);
     margin-right: -10px;
   }
 }
 
 section.bg-white .h1.aw--animate::before {
-  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   transform: translate(0, -4px) scale(1);
   opacity: 1;
   margin-left: 0px;
 }
 
 section.bg-black .h1.aw--animate::before {
-  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   transform: translate(0, -4px) scale(1);
   opacity: 1;
   margin-left: 0px;
@@ -829,24 +851,20 @@ section.bg-black .h1.aw--animate::before {
 
 @media (max-width: 768px) {
   section.bg-white .h1.aw--animate::before {
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     transform: translate(0, 2px) scale(0.95);
   }
 
   section.bg-black .h1.aw--animate::before {
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     transform: translate(0, 2px) scale(0.95);
   }
 }
 
 @media (max-width: 640px) {
   section.bg-white .h1.aw--animate::before {
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     transform: translate(0, 4px) scale(0.7);
   }
 
   section.bg-black .h1.aw--animate::before {
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     transform: translate(0, 4px) scale(0.7);
   }
 }
