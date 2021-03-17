@@ -7,11 +7,14 @@
     z-index: 0;
     height: calc(100vh - 96px);
     overflow: auto;
-    transform: translateY(10px);
     transition: opacity 0.6s, transform 0.6s, box-shadow 0.3s;
 }
 #aw-nav.container {
     height: 100%;
+}
+body.aw-nav-open #aw-nav {
+    opacity: 1;
+    z-index: 60;
 }
 
 @media (max-width: 640px) {
@@ -85,10 +88,4 @@
 #aw-nav a:hover .aw-link {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
     padding-bottom: 0.125rem;
-}
-
-body.aw-nav-open #aw-nav {
-    opacity: 1;
-    z-index: 60;
-    transform: translateY(0);
 }

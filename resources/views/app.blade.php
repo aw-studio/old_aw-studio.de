@@ -19,7 +19,7 @@
         <section id="aw-nav" class="bg-black">
             <x-main-navigation />
         </section>
-        <main>
+        <main class="aw-main">
             @yield('content')
             <footer class="z-10 mt-auto border-t border-white lg:pb-0">
                 @include('partials.footer')
