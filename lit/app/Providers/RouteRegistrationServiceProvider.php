@@ -22,6 +22,7 @@ class RouteRegistrationServiceProvider extends ServiceProvider
             $collection->route('Referenzen', 'references', fn ($locale) => __route('references.index'));
             $collection->route('Leistungen', 'services', fn ($locale) => __route('services'));
             $collection->route('Studio', 'studio', fn ($locale) => __route('studio'));
+            $collection->route('Blog', 'blog', fn ($locale) => __route('blog.index'));
             // Page::collection('about')->get()->addToRouteCollection('Über uns Unterseiten', $collection);
         });
     }

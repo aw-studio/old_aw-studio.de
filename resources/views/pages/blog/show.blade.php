@@ -25,13 +25,16 @@
                     {!!$post->excerpt!!}
                 </div>
 
-                <div class="col-span-12 lg:col-span-10 lg:col-start-2">
+                <div class="col-span-12 mb-10 lg:col-span-10 lg:col-start-2">
                     <x-lit-image :image="$post->image" class="w-full" />
                 </div>
+                {{-- <div class="col-span-12 lg:col-span-10 lg:col-start-2">
+                    
+                </div> --}}
             </div>
         </div>
     </section>
-    
+
     @if ($post)
         @block($post->sections)
     @endif

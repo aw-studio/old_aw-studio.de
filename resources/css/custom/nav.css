@@ -16,6 +16,13 @@ body.aw-nav-open #aw-nav {
     opacity: 1;
     z-index: 60;
 }
+#aw-nav > div {
+    transition: transform .6s ease-out;
+    transform: translateY(10px);
+}
+body.aw-nav-open #aw-nav > div {
+    transform: translateY(0px);
+}
 
 @media (max-width: 640px) {
     #aw-nav {

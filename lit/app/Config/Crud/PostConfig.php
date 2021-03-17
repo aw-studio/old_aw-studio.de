@@ -71,7 +71,7 @@ class PostConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
-        $page->info('Autor:in: {lit_user_id}');
+        $page->info('Autor:in: {lit_user_username}');
         $page->card(function ($form) {
             $form->wysiwyg('title')
                 ->hint('Der Slug wird aus diesem Titel gebildet')
@@ -87,7 +87,7 @@ class PostConfig extends CrudConfig
             $form->image('image')
                 ->maxFiles(1)
                 ->expand()
-
+                ->crop(1.6181 / 1);
             // $form->modal('change_slug')
             //     ->title('Slug')
             //     ->variant('primary')
@@ -100,7 +100,6 @@ class PostConfig extends CrudConfig
             //     })->width(4);
 
             // $this->prependForm($form);
-                ->crop(1.6181 / 1);
         });
 
         $page->card(function ($form) {
