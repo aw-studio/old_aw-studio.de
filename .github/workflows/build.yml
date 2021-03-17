@@ -51,7 +51,7 @@ jobs:
     name: Deploy Staging
     steps:
       - name: Request staging deployment
-        run: curl -X POST ${{ secrets.PRODUCTION_DEPLOYMENT_TRIGGER_URL }}
+        run: curl -X POST ${{ secrets.STAGING_DEPLOYMENT_TRIGGER_URL }}
 
 
   deploy_production:
