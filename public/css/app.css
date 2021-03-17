@@ -59,7 +59,7 @@
 }
 
 header {
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 
 #app.aw-home header {
@@ -106,11 +106,11 @@ body.aw-nav-open main {
   z-index: 0;
   height: calc(100vh - 96px);
   overflow: auto;
-  transition: opacity 0.6s, transform 0.6s, box-shadow 0.3s;
+  transition: opacity 0.6s, transform 0.6s, box-shadow 0.6s;
 }
 
 #aw-nav.container {
-  height: 100%;
+  width: 100%;
 }
 
 body.aw-nav-open #aw-nav {

@@ -1,8 +1,8 @@
-<div class="container absolute flex flex-col md:h-full md:justify-between">
+<div class="container flex flex-col items-center md:h-full md:justify-between">
 
 
 
-    <div class="pt-12 text-3xl text-white md:text-4xl nav-row sm:pb-16 md:pb-0">
+    <div class="pt-12 mx-auto text-3xl text-white md:text-4xl nav-row sm:pb-16 md:pb-0">
         <x-lit-nav-list :list="$nav->main" />
     </div>
 
