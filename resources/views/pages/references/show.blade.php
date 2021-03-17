@@ -1,6 +1,6 @@
 @extends('app')
 
-{{-- @section('meta')
+@section('meta')
 @if ($reference->image)
 <meta property="og:image" content="{{ $reference->image->getFullUrl('xl') }}">
 @endif
@@ -11,11 +11,9 @@
 <meta property="og:description" content="{{ $reference->text }}">
 @endif
 
-@endsection --}}
-@section('meta')
-{{-- <x-lit-meta :title="$reference->title . ': ' . $reference->subtitle" :description="strip_tags($reference->text)" :keywords="strip_tags(str_replace('</li>', '</li>, ', $reference->buzzwords))" /> --}}
-    {{-- <x-lit-meta :for="$reference" /> --}}
-    @endsection
+{{-- <x-lit-meta :for="$reference" /> --}}
+@endsection
+
     
     @section('content')
 <section class="bg-black">

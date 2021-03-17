@@ -2,8 +2,8 @@
 
 @section('content')
 <section class="bg-white">
-    <div class="container pt-20 pb-16 lg:pb-20">
-        <div class="grid grid-cols-12 gap-5">
+    <div class="container pb-16 lg:pb-20">
+        {{-- <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 lg:col-span-3">
                 <h1 class="mb-4 text-xl text-black">
                     {{ $blog->h1 }}
@@ -15,8 +15,8 @@
             <div class="col-span-12 col-start-1 lg:col-start-5 lg:col-span-8">
                 <x-lit-image :image="$blog->image" class="w-full" />
             </div>
-        </div>
-        <div class="grid grid-cols-12 gap-5 mt-20 lg:mt-40">
+        </div> --}}
+        <div class="grid grid-cols-12 gap-5 mt-20">
             <div class="col-span-12 col-start-1 lg:col-span-7">
                 <h2 class="h1">
                     {{ $blog->h2 }}
@@ -41,6 +41,12 @@
             </div>
             @endforeach
         </div>
+    </div>
+</section>
+
+<section class="pt-40 pb-40 bg-white border-t border-white">
+    <div class="container text-center">
+        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
     </div>
 </section>
 @endsection
