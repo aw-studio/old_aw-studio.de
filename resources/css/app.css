@@ -33,7 +33,7 @@
         content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23161616' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
-        transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transform: translate(-60px, -2px) scale(1);
         opacity: 0;
     }
@@ -41,7 +41,7 @@
         content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='44px' height='30px' viewBox='0 0 44 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECombined Shape%3C/title%3E%3Cg id='3-Studio-&amp;-Team' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='03-Studio-&amp;-Team' transform='translate(-84.000000, -925.000000)' stroke='%23FFFFFF' stroke-width='5'%3E%3Cpath d='M112.146042,928 L124,940 L112.146042,952 M123.385561,940 L86.5,939.5' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
-        transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transform: translate(-60px, -2px) scale(1);
         opacity: 0;
     }
@@ -122,7 +122,7 @@
 
     h3,
     .h3 {
-        @apply mb-6 text-2xl font-semibold text-black;
+        @apply mb-8 text-2xl font-semibold text-black;
     }
     @media (max-width: 768px) {
         h3,
