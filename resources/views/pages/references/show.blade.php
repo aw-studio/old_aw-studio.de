@@ -11,6 +11,7 @@
 <meta property="og:description" content="{{ $reference->text }}">
 @endif
 
+{{-- <x-lit-meta :for="$reference" /> --}}
 @endsection
 
     

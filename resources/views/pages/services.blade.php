@@ -38,7 +38,7 @@ aw-first-section-is-white
                 {!! $services->text_intro !!}
             </div>
             <div class="col-span-12 col-start-1 text-xl md:col-start-8 md:col-span-5 lg:col-start-9 lg:col-span-4 md:mt-20">
-                {!! $services->text_fjord !!}
+                {!! $services->text_litstack !!}
             </div>
         </div>
     </div>

@@ -14,6 +14,7 @@ return [
 
     'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',
+    'next-blog'       => 'continue to the blog',
     'next-studio'     => 'continue to studio & team',
     'back-home'       => 'back to overview',
 

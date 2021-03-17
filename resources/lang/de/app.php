@@ -14,6 +14,7 @@ return [
 
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',
+    'next-blog'       => 'weiter zum Blog',
     'next-studio'     => 'weiter zu Studio & Team',
     'back-home'       => 'zurück zur Übersicht',
 
