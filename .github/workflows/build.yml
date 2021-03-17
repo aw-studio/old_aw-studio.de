@@ -45,19 +45,20 @@ jobs:
 
           Co-authored-by: aw-ci-bot <bot@aw-studio.de>"
 
-deploy_staging:
-  needs: build
-  runs-on: ubuntu-latest
-  name: Deploy Staging
-  steps:
-    - name: Request  deploy
-      run: curl -X POST ${{ secrets.PRODUCTION_DEPLOYMENT_TRIGGER_URL }}
+  deploy_staging:
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy Staging
+    steps:
+      - name: Request staging deployment
+        run: curl -X POST ${{ secrets.PRODUCTION_DEPLOYMENT_TRIGGER_URL }}
 
 
   deploy_production:
     if: ${{ github.event_name == 'release' }}
     needs: build
     runs-on: ubuntu-latest
+    name: Deploy production
     steps:
-      - name: Request Production Deployment
+      - name: Request production deployment
         run: curl -X POST ${{ secrets.PRODUCTION_DEPLOYMENT_TRIGGER_URL }}
