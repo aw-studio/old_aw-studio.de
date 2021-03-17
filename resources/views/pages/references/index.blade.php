@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="bg-black">
-    <div class="container pt-20">
+    <div class="container pt-20 pb-1">
         <div class="grid grid-cols-12 gap-5 mb-20">
             <div class="col-span-12 col-start-1 lg:col-span-9">
                 <h1 class="mb-4 text-xl text-white">

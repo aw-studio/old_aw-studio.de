@@ -38,7 +38,7 @@ aw-first-section-is-white
                 {!! $services->text_intro !!}
             </div>
             <div class="col-span-12 col-start-1 text-xl md:col-start-8 md:col-span-5 lg:col-start-9 lg:col-span-4 md:mt-20">
-                {!! $services->text_fjord !!}
+                {!! $services->text_litstack !!}
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@ aw-first-section-is-white
                 </h3>
                 <div class="flex items-center h-40">
                     @isset($service->illustration)
-                        <x-lit-image :image="$service->illustration" />
+                        <x-lit-image :image="$service->illustration" class="h-24 mb-8" />
                     {{-- <img src="{{ $service->illustration->url }}" class="mb-8" alt="Illustration: {{ $service->h3 }}"> --}}
                     @endisset
                 </div>
@@ -146,7 +146,7 @@ aw-first-section-is-white
                 <div class="flex items-end h-16">
                     @isset($method->illustration)
                     {{-- <img src="{{ $method->illustration->url }}" class="mb-8" alt="Illustration: {{ $method->h3 }}"> --}}
-                    <x-lit-image :image="$service->illustration" />
+                    <x-lit-image :image="$method->illustration" class="h-10 mb-8" />
                     @endisset
                 </div>
 

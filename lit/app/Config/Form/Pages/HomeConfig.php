@@ -102,6 +102,7 @@ class HomeConfig extends FormConfig
                 $form->manyRelation('team_members')
                     ->title('Geschäftsführung')
                     ->model(TeamMember::class)
+                    ->sortable()
                     ->preview(function ($table) {
                         $table->image('Image')
                             ->src('{image.conversion_urls.sm}')

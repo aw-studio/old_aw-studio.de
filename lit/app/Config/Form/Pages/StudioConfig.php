@@ -62,7 +62,8 @@ class StudioConfig extends FormConfig
             $form->wysiwyg('text_team_members')->title('Text')->translatable()->width(6);
             $form->manyRelation('team_members')
                 ->title('Team-Mitglieder')
-                ->model(TeamMember::class);
+                ->model(TeamMember::class)
+                ->sortable();
         })->width(9);
 
         $page->info('Jobs')

@@ -33,7 +33,7 @@
         content: '';
         @apply inline-block w-12 h-10 mr-2 text-black;
         transform-origin: left center;
-        transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transform: translate(-60px, 0px) scale(1);
         opacity: 0;
     }
@@ -112,7 +112,7 @@
 
     h3,
     .h3 {
-        @apply mb-4 text-2xl font-semibold text-black;
+        @apply mb-8 text-2xl font-semibold text-black;
     }
     @media (max-width: 768px) {
         h3,
