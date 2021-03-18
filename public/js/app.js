@@ -1985,12 +1985,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Events',
   props: {
@@ -2626,7 +2620,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#dropdown-button {\n    transform: rotate(0deg);\n    transition: transform 0.3s;\n}\n#dropdown-button.filterActive {\n    transform: rotate(180deg);\n}\n.clicked {\n@apply bg-gray-400;\n}\n.filterTranslation {\n    transform: translateY(45px);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* #dropdown-button {\n    transform: rotate(0deg);\n    transition: transform 0.3s;\n}\n#dropdown-button.filterActive {\n    transform: rotate(180deg);\n} */\n.clicked {\n@apply bg-gray-400;\n}\n.filterTranslation {\n    transform: translateY(45px);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22639,7 +22633,7 @@ var render = function() {
                           {
                             key: tag.id,
                             staticClass:
-                              "px-4 py-1 m-1 text-white bg-black rounded"
+                              "px-4 py-2 ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
                           },
                           [
                             _vm._v(
@@ -22696,17 +22690,13 @@ var render = function() {
                         on: { click: _vm.clickFilter }
                       },
                       [
-                        _c("div", { staticClass: "text-indigo-300" }, [
-                          _vm._v("Filter")
-                        ]),
+                        _c("div", [_vm._v("Filter")]),
                         _vm._v(" "),
                         _c(
                           "div",
                           {
                             staticClass:
-                              "relative flex items-center justify-center w-8 h-8 text-sm cursor-pointer",
-                            class: { filterActive: _vm.filterActive },
-                            attrs: { id: "dropdown-button" }
+                              "relative flex items-center justify-center w-6 h-6 text-sm cursor-pointer"
                           },
                           [
                             _c(
@@ -22715,9 +22705,9 @@ var render = function() {
                                 staticClass: "fill-current icon__icon",
                                 attrs: {
                                   xmlns: "http://www.w3.org/2000/svg",
-                                  viewBox: "-5 -8 24 24",
-                                  width: "18",
-                                  height: "18",
+                                  viewBox: "-5 -10 24 24",
+                                  width: "14",
+                                  height: "14",
                                   preserveAspectRatio: "xMinYMin"
                                 }
                               },
@@ -22755,7 +22745,7 @@ var render = function() {
                             }
                           ],
                           staticClass:
-                            "absolute top-0 right-0 w-full px-3 py-2 text-white bg-black rounded shadow md:w-1/2 lg:w-1/4 xl:w-1/5 filterTranslation"
+                            "absolute top-0 right-0 w-full px-3 py-2 text-white bg-black rounded shadow md:w-1/2 lg:w-1/3 xl:w-1/4 filterTranslation"
                         },
                         _vm._l(_vm.categories, function(tag) {
                           return _c(
@@ -22763,7 +22753,7 @@ var render = function() {
                             {
                               key: tag.id,
                               staticClass:
-                                "flex flex-col px-5 py-2 my-1 cursor-pointer",
+                                "flex flex-col w-full px-5 py-2 my-1 cursor-pointer",
                               class: { clicked: _vm.selected.includes(tag) },
                               on: {
                                 click: function($event) {
@@ -22793,67 +22783,69 @@ var render = function() {
     _vm._v(" "),
     _c(
       "section",
-      { staticClass: "grid grid-cols-12 gap-10" },
+      { staticClass: "flex flex-col w-full gap-10 lg:flex-row" },
       _vm._l(_vm.posts, function(post) {
-        return _c(
-          "div",
-          { key: post.id, staticClass: "w-full col-span-12 lg:col-span-6" },
-          [
-            _c(
-              "a",
-              {
-                staticClass: "relative block mb-2 lg:mb-6",
-                attrs: { href: "blog/" + post.slug }
-              },
-              [
-                _c("div", { staticClass: "relative" }, [
-                  _c("div", { staticClass: "absolute" }, [
-                    post.tags.length > 0
-                      ? _c(
-                          "div",
-                          {
-                            staticClass:
-                              "absolute z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
-                          },
-                          [_c("pre", [_vm._v(_vm._s(post.tags[0].title))])]
-                        )
-                      : _vm._e()
-                  ]),
-                  _vm._v(" "),
-                  post.image
-                    ? _c("img", {
-                        staticClass: "z-10 w-full mb-4 lg:mb-8",
-                        attrs: { src: post.image.conversion_urls.xl, alt: "" }
-                      })
+        return _c("div", { key: post.id, staticClass: "w-full lg:w-1/2" }, [
+          _c(
+            "a",
+            {
+              staticClass: "relative block mb-2 lg:mb-6",
+              attrs: { href: "blog/" + post.slug }
+            },
+            [
+              _c("div", { staticClass: "relative" }, [
+                _c("div", { staticClass: "absolute" }, [
+                  post.tags.length > 0
+                    ? _c(
+                        "div",
+                        {
+                          staticClass:
+                            "absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(post.tags[0].title) +
+                              "\n                        "
+                          )
+                        ]
+                      )
                     : _vm._e()
                 ]),
                 _vm._v(" "),
-                _c("div", {
-                  staticClass: "text-xl md:text-2xl",
-                  domProps: { innerHTML: _vm._s(post.title) }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _vm.locale == "de"
-              ? _c(
-                  "a",
-                  {
-                    staticClass: "aw-link",
-                    attrs: { id: "go-to-post", href: "blog/" + post.slug }
-                  },
-                  [_vm._v("Beitrag lesen")]
-                )
-              : _c(
-                  "a",
-                  {
-                    staticClass: "aw-link",
-                    attrs: { href: "blog/" + post.slug }
-                  },
-                  [_vm._v("Read post")]
-                )
-          ]
-        )
+                post.image
+                  ? _c("img", {
+                      staticClass: "z-10 w-full mb-4 lg:mb-8",
+                      attrs: { src: post.image.conversion_urls.xl, alt: "" }
+                    })
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "text-xl md:text-2xl",
+                domProps: { innerHTML: _vm._s(post.title) }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _vm.locale == "de"
+            ? _c(
+                "a",
+                {
+                  staticClass: "aw-link",
+                  attrs: { id: "go-to-post", href: "blog/" + post.slug }
+                },
+                [_vm._v("Beitrag lesen")]
+              )
+            : _c(
+                "a",
+                {
+                  staticClass: "aw-link",
+                  attrs: { href: "blog/" + post.slug }
+                },
+                [_vm._v("Read post")]
+              )
+        ])
       }),
       0
     )

@@ -8,7 +8,7 @@
                     <div class="flex items-center justify-end w-full ml-auto">
                         <div class="flex flex-wrap mr-4">
                             <div
-                                class="px-4 py-1 m-1 text-white bg-black rounded"
+                                class="px-4 py-2 ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
                                 v-for="tag in selected"
                                 :key="tag.id"
                             >
@@ -37,17 +37,15 @@
                             ref="button"
                             class="flex items-center justify-end cursor-pointer"
                         >
-                            <div class="text-indigo-300">Filter</div>
+                            <div>Filter</div>
                             <div
-                                id="dropdown-button"
-                                class="relative flex items-center justify-center w-8 h-8 text-sm cursor-pointer"
-                                :class="{ filterActive: filterActive }"
+                                class="relative flex items-center justify-center w-6 h-6 text-sm cursor-pointer"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="-5 -8 24 24"
-                                    width="18"
-                                    height="18"
+                                    viewBox="-5 -10 24 24"
+                                    width="14"
+                                    height="14"
                                     preserveAspectRatio="xMinYMin"
                                     class="fill-current icon__icon"
                                 >
@@ -65,13 +63,13 @@
                                 exclude: ['button'],
                                 handler: 'onClose',
                             }"
-                            class="absolute top-0 right-0 w-full px-3 py-2 text-white bg-black rounded shadow md:w-1/2 lg:w-1/4 xl:w-1/5 filterTranslation"
+                            class="absolute top-0 right-0 w-full px-3 py-2 text-white bg-black rounded shadow md:w-1/2 lg:w-1/3 xl:w-1/4 filterTranslation"
                         >
                             <button
                                 v-for="tag in categories"
                                 :key="tag.id"
                                 @click="add(tag)"
-                                class="flex flex-col px-5 py-2 my-1 cursor-pointer"
+                                class="flex flex-col w-full px-5 py-2 my-1 cursor-pointer"
                                 :class="{ clicked: selected.includes(tag) }"
                             >
                                 {{ tag.title }}
@@ -82,12 +80,8 @@
             </div>
         </section>
         <!-- <section v-if="categories.length > 0" class="pt-20"></section> -->
-        <section class="grid grid-cols-12 gap-10">
-            <div
-                v-for="post in posts"
-                :key="post.id"
-                class="w-full col-span-12 lg:col-span-6"
-            >
+        <section class="flex flex-col w-full gap-10 lg:flex-row">
+            <div v-for="post in posts" :key="post.id" class="w-full lg:w-1/2">
                 <a
                     :href="`blog/${post.slug}`"
                     class="relative block mb-2 lg:mb-6"
@@ -96,9 +90,9 @@
                         <div class="absolute">
                             <div
                                 v-if="post.tags.length > 0"
-                                class="absolute z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
+                                class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
                             >
-                                <pre>{{ post.tags[0].title }}</pre>
+                                {{ post.tags[0].title }}
                             </div>
                         </div>
                         <img
@@ -185,13 +179,13 @@ export default {
 </script>
 
 <style>
-#dropdown-button {
+/* #dropdown-button {
     transform: rotate(0deg);
     transition: transform 0.3s;
 }
 #dropdown-button.filterActive {
     transform: rotate(180deg);
-}
+} */
 .clicked {
     @apply bg-gray-400;
 }
