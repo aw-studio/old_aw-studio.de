@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Tag;
 use Ignite\Support\Facades\Form;
+use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
@@ -12,6 +14,7 @@ class BlogController extends Controller
         return view('pages.blog.index')->with([
             'blog'  => Form::load('pages', 'blog'),
             'posts' => Post::whereActive(1)->orderBy('updated_at')->get(),
+            'tags'  => Tag::all(),
         ]);
     }
 
@@ -44,5 +47,26 @@ class BlogController extends Controller
             ->slug;
 
         return ['slug' => $slug];
+    }
+
+    /**
+     * Returns either all posts if nothing is selected or the posts with the selected filter options.
+     *
+     * @return mixed
+     */
+    public function filter(Request $request)
+    {
+        $tag_ids = $request->tag_ids;
+        $query = Post::whereActive(1)->orderBy('updated_at')->with('tags');
+
+        if (collect($tag_ids)->isNotEmpty()) {
+            $posts = $query->whereHas('tags', function ($query) use ($tag_ids) {
+                $query->whereIn('tag_id', $tag_ids);
+            })->get();
+        } else {
+            $posts = $query->get();
+        }
+
+        return $posts;
     }
 }

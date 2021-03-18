@@ -35,11 +35,15 @@
     <div class="container pb-20 lg:pb-40">
         <div class="grid grid-cols-12 lg:gap-10">
             {{-- {{$posts[0]->slug}} --}}
+            @bot 
             @foreach($posts as $post)
             <div class="col-span-12 mt-8 lg:col-span-6 lg:mt-12">
                 <x-post :post="$post" />
             </div>
             @endforeach
+            @else 
+            <blog-filter :categories="{{ $tags }}" />
+            @endbot
         </div>
     </div>
 </section>
