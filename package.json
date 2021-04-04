@@ -14,7 +14,7 @@
         "axios": "^0.21",
         "browser-sync": "^2.26.14",
         "browser-sync-webpack-plugin": "^2.2.2",
-        "laravel-mix": "^6.0.6",
+        "laravel-mix": "^6.0.16",
         "lodash": "^4.17.19",
         "postcss": "^8.2.7",
         "sass": "^1.32.8",
