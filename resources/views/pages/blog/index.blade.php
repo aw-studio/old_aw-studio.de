@@ -1,5 +1,22 @@
 @extends('app')
 
+@section('meta')
+@if ($blog->meta_title)
+<meta property="og:title" content="{{ $blog->meta_title }}">
+@endif
+
+@if ($blog->meta_description)
+<meta property="og:description" content="{{ $blog->meta_description }}">
+@endif
+@isset($blog)
+    <x-lit-meta-tags
+    :title="$blog->meta_title"
+    :description="$blog->meta_description"
+    :keywords="$blog->meta_keywords"
+    />
+@endisset
+@endsection
+
 @section('content')
 <section class="bg-white">
     <div class="container pb-16 lg:pb-20">

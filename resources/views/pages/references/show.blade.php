@@ -1,21 +1,15 @@
 @extends('app')
 
 @section('meta')
-@if ($reference->image)
-<meta property="og:image" content="{{ $reference->image->getFullUrl('xl') }}">
-@endif
-<meta property="og:title" content="{{ $reference->title }}" />
-@if ($reference->excerpt)
-<meta property="og:description" content="{{ strip_tags($reference->excerpt) }}">
-@else
-<meta property="og:description" content="{{ $reference->text }}">
+@if ($reference->title)
+<title>{{ $reference->title }}</title>
 @endif
 
-{{-- <x-lit-meta :for="$reference" /> --}}
+<x-lit-meta :for="$reference" />
 @endsection
 
     
-    @section('content')
+@section('content')
 <section class="bg-black">
     <div class="container py-8 md:py-20">
         <div class="grid grid-cols-12 gap-5 mb-0 md:mb-20">

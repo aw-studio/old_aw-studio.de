@@ -75,6 +75,7 @@ class PostConfig extends CrudConfig
         $page->card(function ($form) {
             $form->wysiwyg('title')
                 ->hint('Der Slug wird aus diesem Titel gebildet')
+                ->rules('required')
                 ->width(10);
 
             $form->boolean('active')

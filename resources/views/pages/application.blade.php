@@ -1,5 +1,22 @@
 @extends('app')
 
+@section('meta')
+@if ($application->meta_title)
+<meta property="og:title" content="{{ $application->meta_title }}">
+@endif
+
+@if ($application->meta_description)
+<meta property="og:description" content="{{ $application->meta_description }}">
+@endif
+@isset($application)
+    <x-lit-meta-tags
+    :title="$application->meta_title"
+    :description="$application->meta_description"
+    :keywords="$application->meta_keywords"
+    />
+@endisset
+@endsection
+
 @section('bodyclass')
 aw-first-section-is-white
 @endsection

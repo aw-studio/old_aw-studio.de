@@ -1,5 +1,22 @@
 @extends('app')
 
+@section('meta')
+@if ($references->meta_title)
+<meta property="og:title" content="{{ $references->meta_title }}">
+@endif
+
+@if ($references->meta_description)
+<meta property="og:description" content="{{ $references->meta_description }}">
+@endif
+@isset($references)
+    <x-lit-meta-tags
+    :title="$references->meta_title"
+    :description="$references->meta_description"
+    :keywords="$references->meta_keywords"
+    />
+@endisset
+@endsection
+
 @section('content')
 <section class="bg-black">
     <div class="container pt-20 pb-1">

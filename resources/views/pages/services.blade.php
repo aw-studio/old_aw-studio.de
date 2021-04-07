@@ -1,5 +1,26 @@
 @extends('app')
 
+@section('meta')
+@if ($services->images[0] instanceof Ignite\Crud\Models\Media && $services->images[0])
+<meta property="og:image" content="{{ $services->images[0]->getFullUrl('xl') }}">
+@endif
+
+@if ($services->meta_title)
+<meta property="og:title" content="{{ $services->meta_title }}">
+@endif
+
+@if ($services->meta_description)
+<meta property="og:description" content="{{ $services->meta_description }}">
+@endif
+@isset($services)
+    <x-lit-meta-tags
+    :title="$services->meta_title"
+    :description="$services->meta_description"
+    :keywords="$services->meta_keywords"
+    />
+@endisset
+@endsection
+
 @section('bodyclass')
 aw-first-section-is-white
 @endsection

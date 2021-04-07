@@ -53,5 +53,10 @@ class BlogConfig extends FormConfig
             $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)');
             $form->wysiwyg('text_intro')->title('Text Intro')->translatable()->width(6);
         })->width(9);
+
+        $page->info('Meta')
+            ->text('Die hier eingetragenen Metadaten werden auf der entsprechenden Seite im head Element geladen.')
+            ->width(3);
+        $page->meta()->width(9);
     }
 }
