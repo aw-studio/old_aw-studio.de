@@ -2,7 +2,7 @@
 
 @section('meta')
 @if ($reference->title)
-<title>{{ $reference->title }}</title>
+<title>{{ $reference->title }}: {{ $reference->subtitle }}</title>
 @endif
 
 <x-lit-meta :for="$reference" />
