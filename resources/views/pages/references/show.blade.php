@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('meta')
-@if ($reference->title)
+@if ($reference->title && $reference->subtitle)
 <title>{{ $reference->title }}: {{ $reference->subtitle }}</title>
 @endif
 

@@ -28,6 +28,11 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      */
     public $translatedAttributes = ['title', 'excerpt', 'subtitle', 'buzzwords', 'text', 'link_text', 'slug'];
 
+    protected $metaAttributes = [
+        'title'       => 'title',
+        'description' => 'excerpt',
+    ];
+
     protected $defaultMetaAttribute = [
         'title'       => 'blablabla',
         'description' => 'blablabla',

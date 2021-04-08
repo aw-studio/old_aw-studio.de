@@ -1,20 +1,10 @@
 @extends('app')
 
 @section('meta')
-@if ($datapolicy->meta_title)
-<meta property="og:title" content="{{ $datapolicy->meta_title }}">
+@if ($datapolicy->meta->title)
+<title>{{ strip_tags($datapolicy->meta->title) }}</title>
 @endif
-
-@if ($datapolicy->meta_description)
-<meta property="og:description" content="{{ $datapolicy->meta_description }}">
-@endif
-@isset($datapolicy)
-    <x-lit-meta-tags
-    :title="$datapolicy->meta_title"
-    :description="$datapolicy->meta_description"
-    :keywords="$datapolicy->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$datapolicy" />
 @endsection
 
 @section('content')

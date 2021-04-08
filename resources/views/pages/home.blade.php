@@ -1,24 +1,10 @@
 @extends('app')
 
 @section('meta')
-{{-- @if ($form->images[0] instanceof Ignite\Crud\Models\Media && $form->images[0])
-<meta property="og:image" content="{{ $form->images[0]->getFullUrl('xl') }}">
-@endif --}}
-
-@if ($form->meta_title)
-<meta property="og:title" content="{{ $form->meta_title }}">
+@if ($form->meta->title)
+<title>{{ $form->meta->title }}</title>
 @endif
-
-@if ($form->meta_description)
-<meta property="og:description" content="{{ $form->meta_description }}">
-@endif
-@isset($form)
-    <x-lit-meta-tags
-    :title="$form->meta_title"
-    :description="$form->meta_description"
-    :keywords="$form->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$form" />
 @endsection
 
 @section('appclass')

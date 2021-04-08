@@ -6,9 +6,11 @@ use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\StudioController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class StudioConfig extends FormConfig
 {
+    use CrudHasMeta;
     /**
      * Controller class.
      *
@@ -73,9 +75,6 @@ class StudioConfig extends FormConfig
             $form->image('images_jobs')->title('Bild')->maxFiles(1)->expand();
         })->width(9);
 
-        $page->info('Meta')
-            ->text('Die hier eingetragenen Metadaten werden auf der entsprechenden Seite im head Element geladen.')
-            ->width(3);
-        $page->meta()->width(9);
+        $this->meta($page);
     }
 }

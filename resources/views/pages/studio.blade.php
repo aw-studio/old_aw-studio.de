@@ -1,24 +1,10 @@
 @extends('app')
 
 @section('meta')
-@if ($studio->images[0] instanceof Ignite\Crud\Models\Media && $studio->images[0])
-<meta property="og:image" content="{{ $studio->images[0]->getFullUrl('xl') }}">
+@if ($studio->meta->title)
+<title>{{ $studio->meta->title }}</title>
 @endif
-
-@if ($studio->meta_title)
-<meta property="og:title" content="{{ $studio->meta_title }}">
-@endif
-
-@if ($studio->meta_description)
-<meta property="og:description" content="{{ $studio->meta_description }}">
-@endif
-@isset($studio)
-    <x-lit-meta-tags
-    :title="$studio->meta_title"
-    :description="$studio->meta_description"
-    :keywords="$studio->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$studio" />
 @endsection
 
 @section('bodyclass')
@@ -139,7 +125,7 @@ aw-first-section-is-white
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('home') }}">{{ __('app.back-home') }}</a>
+        <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
     </div>
 </section>
 

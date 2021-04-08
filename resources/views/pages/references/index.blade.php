@@ -1,20 +1,10 @@
 @extends('app')
 
 @section('meta')
-@if ($references->meta_title)
-<meta property="og:title" content="{{ $references->meta_title }}">
+@if ($references->meta->title)
+<title>{{ $references->meta->title }}</title>
 @endif
-
-@if ($references->meta_description)
-<meta property="og:description" content="{{ $references->meta_description }}">
-@endif
-@isset($references)
-    <x-lit-meta-tags
-    :title="$references->meta_title"
-    :description="$references->meta_description"
-    :keywords="$references->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$references" />
 @endsection
 
 @section('content')
@@ -54,7 +44,7 @@
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
+        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
     </div>
 </section>
 

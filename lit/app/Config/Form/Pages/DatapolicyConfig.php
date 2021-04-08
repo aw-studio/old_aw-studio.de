@@ -5,9 +5,11 @@ namespace Lit\Config\Form\Pages;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\DatapolicyController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class DatapolicyConfig extends FormConfig
 {
+    use CrudHasMeta;
     /**
      * Controller class.
      *
@@ -49,9 +51,6 @@ class DatapolicyConfig extends FormConfig
             $form->input('h1')->title('H1')->translatable();
             $form->wysiwyg('text')->title('Text')->translatable();
         });
-        $page->info('Meta')
-            ->text('Die hier eingetragenen Metadaten werden auf der entsprechenden Seite im head Element geladen.')
-            ->width(3);
-        $page->meta()->width(9);
+        $this->meta($page);
     }
 }

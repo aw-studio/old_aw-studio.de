@@ -1,20 +1,10 @@
 @extends('app')
 
 @section('meta')
-@if ($imprint->meta_title)
-<meta property="og:title" content="{{ $imprint->meta_title }}">
+@if ($imprint->meta->title)
+<title>{{ $imprint->meta->title }}</title>
 @endif
-
-@if ($imprint->meta_description)
-<meta property="og:description" content="{{ $imprint->meta_description }}">
-@endif
-@isset($imprint)
-    <x-lit-meta-tags
-    :title="$imprint->meta_title"
-    :description="$imprint->meta_description"
-    :keywords="$imprint->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$imprint" />
 @endsection
 
 @section('content')

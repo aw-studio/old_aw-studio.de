@@ -1,20 +1,10 @@
 @extends('app')
 
 @section('meta')
-@if ($blog->meta_title)
-<meta property="og:title" content="{{ $blog->meta_title }}">
+@if ($blog->meta->title)
+<title>{{ $blog->meta->title }}</title>
 @endif
-
-@if ($blog->meta_description)
-<meta property="og:description" content="{{ $blog->meta_description }}">
-@endif
-@isset($blog)
-    <x-lit-meta-tags
-    :title="$blog->meta_title"
-    :description="$blog->meta_description"
-    :keywords="$blog->meta_keywords"
-    />
-@endisset
+<x-lit-meta :for="$blog" />
 @endsection
 
 @section('content')
@@ -67,7 +57,7 @@
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
+        <a class="aw-link" href="{{ __route('home') }}">{{ __('app.back-home') }}</a>
     </div>
 </section>
 @endsection
