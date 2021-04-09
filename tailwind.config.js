@@ -1,6 +1,11 @@
 module.exports = {
-    purge: [],
-    // purge: ['./resources/**/*.blade.php', './resources/**/*.vue'],
+    purge: [
+        './resources/views/**/*.blade.php',
+        './resources/views/**/**/*.blade.php',
+        './resources/views/**/**/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/components/*.vue',
+    ],
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
