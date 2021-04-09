@@ -84,7 +84,7 @@
 {{-- TODO: --}}
 <section class="pt-12 pb-40 bg-black md:pt-0">
     <div class="container text-center">
-        {{-- <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a> --}}
+        <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
     </div>
 </section>
 

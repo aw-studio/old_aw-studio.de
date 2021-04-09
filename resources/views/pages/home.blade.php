@@ -22,8 +22,7 @@ aw-home
 </section>
 
 @php
-$playground_no = rand(1,3);
-$playground_no = 4;
+$playground_no = rand(1,4);
 @endphp
 <playground-{{ $playground_no }}></playground-{{ $playground_no }}>
 
