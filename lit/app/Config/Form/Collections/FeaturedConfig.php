@@ -26,7 +26,7 @@ class FeaturedConfig extends FormConfig
         return 'collections/featured';
     }
 
-    /**
+    /***
      * Form singular name. This name will be displayed in the navigation.
      *
      * @return array
