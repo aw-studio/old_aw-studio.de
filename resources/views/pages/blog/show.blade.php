@@ -1,8 +1,10 @@
 @extends('app')
 
 @section('meta')
-{{-- TODO: meta package fix??? --}}
-{{-- <x-lit-meta :for="$post" /> --}}
+@if ($post->title)
+<title>{{ strip_tags($post->title) }}</title>
+@endif
+<x-lit-meta :for="$post" />
 @endsection
 
 @section('content')

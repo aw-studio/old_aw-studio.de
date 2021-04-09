@@ -5,9 +5,11 @@ namespace Lit\Config\Form\Pages;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\ApplicationController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class ApplicationConfig extends FormConfig
 {
+    use CrudHasMeta;
     /**
      * Controller class.
      *
@@ -80,5 +82,7 @@ class ApplicationConfig extends FormConfig
                     });
                 });
         })->width(9);
+
+        $this->meta($page);
     }
 }

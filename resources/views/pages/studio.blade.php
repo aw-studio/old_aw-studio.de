@@ -1,5 +1,12 @@
 @extends('app')
 
+@section('meta')
+@if ($studio->meta->title)
+<title>{{ $studio->meta->title }}</title>
+@endif
+<x-lit-meta :for="$studio" />
+@endsection
+
 @section('bodyclass')
 aw-first-section-is-white
 @endsection
@@ -118,7 +125,7 @@ aw-first-section-is-white
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('home') }}">{{ __('app.back-home') }}</a>
+        <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
     </div>
 </section>
 

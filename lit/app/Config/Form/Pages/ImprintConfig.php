@@ -5,9 +5,11 @@ namespace Lit\Config\Form\Pages;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\ImprintController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class ImprintConfig extends FormConfig
 {
+    use CrudHasMeta;
     /**
      * Controller class.
      *
@@ -49,5 +51,7 @@ class ImprintConfig extends FormConfig
             $form->input('h1')->title('H1')->translatable();
             $form->wysiwyg('text')->title('Text')->translatable();
         });
+
+        $this->meta($page);
     }
 }

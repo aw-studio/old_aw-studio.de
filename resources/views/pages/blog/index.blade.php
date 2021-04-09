@@ -1,5 +1,12 @@
 @extends('app')
 
+@section('meta')
+@if ($blog->meta->title)
+<title>{{ $blog->meta->title }}</title>
+@endif
+<x-lit-meta :for="$blog" />
+@endsection
+
 @section('content')
 <section class="bg-white">
     <div class="container pb-16 lg:pb-20">
@@ -35,18 +42,22 @@
     <div class="container pb-20 lg:pb-40">
         <div class="grid grid-cols-12 lg:gap-10">
             {{-- {{$posts[0]->slug}} --}}
+            @bot 
             @foreach($posts as $post)
             <div class="col-span-12 mt-8 lg:col-span-6 lg:mt-12">
                 <x-post :post="$post" />
             </div>
             @endforeach
+            @else 
+            <blog-filter :categories="{{ $tags }}" />
+            @endbot
         </div>
     </div>
 </section>
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
+        <a class="aw-link" href="{{ __route('home') }}">{{ __('app.back-home') }}</a>
     </div>
 </section>
 @endsection

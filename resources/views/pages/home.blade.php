@@ -1,5 +1,12 @@
 @extends('app')
 
+@section('meta')
+@if ($form->meta->title)
+<title>{{ $form->meta->title }}</title>
+@endif
+<x-lit-meta :for="$form" />
+@endsection
+
 @section('appclass')
 aw-home
 @endsection

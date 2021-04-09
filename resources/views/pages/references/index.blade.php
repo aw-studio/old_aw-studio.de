@@ -1,5 +1,12 @@
 @extends('app')
 
+@section('meta')
+@if ($references->meta->title)
+<title>{{ $references->meta->title }}</title>
+@endif
+<x-lit-meta :for="$references" />
+@endsection
+
 @section('content')
 <section class="bg-black">
     <div class="container pt-20 pb-1">
@@ -37,7 +44,7 @@
 
 <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
-        <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
+        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
     </div>
 </section>
 

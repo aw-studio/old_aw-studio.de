@@ -1,5 +1,12 @@
 @extends('app')
 
+@section('meta')
+@if ($services->meta->title)
+<title>{{ $services->meta->title }}</title>
+@endif
+<x-lit-meta :for="$services" />
+@endsection
+
 @section('bodyclass')
 aw-first-section-is-white
 @endsection

@@ -6,9 +6,11 @@ use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\HomeController;
+use Litstack\Meta\Traits\CrudHasMeta;
 
 class HomeConfig extends FormConfig
 {
+    use CrudHasMeta;
     /**
      * Controller class.
      *
@@ -113,5 +115,11 @@ class HomeConfig extends FormConfig
                 $form->input('button_studio')->title('Button')->translatable()->hint('Button zu Studio & Team')->width(6);
             });
         })->width(9);
+
+        // $page->info('Meta')
+        //     ->text('Die hier eingetragenen Metadaten werden auf der entsprechenden Seite im head Element geladen.')
+        //     ->width(3);
+        // $page->meta()->width(9);
+        $this->meta($page);
     }
 }

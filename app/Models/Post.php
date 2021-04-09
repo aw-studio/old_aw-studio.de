@@ -29,11 +29,15 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
      */
     public $translatedAttributes = ['title', 'excerpt', 'slug'];
 
-    // protected $defaultMetaAttribute = [
-    //     'title'       => 'blablabla',
-    //     'description' => 'blablabla',
-    //     'keywords'    => 'blablabla',
-    // ];
+    protected $metaAttributes = [
+        'title'       => 'title',
+        'description' => 'excerpt',
+    ];
+
+    protected $defaultMetaAttribute = [
+        'title'       => 'AW-Studio Blog Post',
+        'description' => 'This is a blog post by Alle Wetter //*.',
+    ];
 
     /**
      * The accessors to append to the model's array form.
