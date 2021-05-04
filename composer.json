@@ -17,7 +17,7 @@
         "litstack/bladesmith": "1.x-dev",
         "litstack/bricks": "dev-main",
         "litstack/litstack": "^3.4",
-        "litstack/meta": "1.0.1"
+        "litstack/meta": "^1.0"
     },
     "require-dev": {
         "aw-studio/cshelper": "dev-main",

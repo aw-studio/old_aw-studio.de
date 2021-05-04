@@ -103,6 +103,7 @@
                         />
                     </div>
                     <div v-html="post.title" class="text-xl md:text-2xl" />
+                    <div v-html="post.excerpt" class="text-lg" />
                 </a>
                 <a
                     v-if="locale == 'de'"

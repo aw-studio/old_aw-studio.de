@@ -18,9 +18,13 @@
                 </div>
 
                 <div class="col-span-12 lg:col-span-2 lg:col-start-3">
-                    <ul>
+                    <ul class="flex flex-wrap mt-2">
                         @foreach($post->tags as $tag)
-                            <li>{{$tag->title}}</li>
+                            <li>
+                                <div class="z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap inline-block mb-2 mr-2">
+                                    {{$tag->title}}
+                                </div>
+                            </li>
                         @endforeach
                     </ul>
                 </div>

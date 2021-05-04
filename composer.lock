@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e15796c73370e777c9819522b0185f33",
+    "content-hash": "2bce86ca4028ac9c06139d3bea1743ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2685,16 +2685,16 @@
         },
         {
             "name": "litstack/litstack",
-            "version": "v3.6.1",
+            "version": "v3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/litstack/litstack.git",
-                "reference": "3be646bd9ea4cda99e52a54e60b34c05d4885b49"
+                "reference": "562a69faf0fce87e2994a0b9dec56c85ff152575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/litstack/litstack/zipball/3be646bd9ea4cda99e52a54e60b34c05d4885b49",
-                "reference": "3be646bd9ea4cda99e52a54e60b34c05d4885b49",
+                "url": "https://api.github.com/repos/litstack/litstack/zipball/562a69faf0fce87e2994a0b9dec56c85ff152575",
+                "reference": "562a69faf0fce87e2994a0b9dec56c85ff152575",
                 "shasum": ""
             },
             "require": {
@@ -2754,22 +2754,22 @@
             "description": "Laravel Content-Administration",
             "support": {
                 "issues": "https://github.com/litstack/litstack/issues",
-                "source": "https://github.com/litstack/litstack/tree/v3.6.1"
+                "source": "https://github.com/litstack/litstack/tree/v3.7.1"
             },
-            "time": "2021-04-08T09:57:16+00:00"
+            "time": "2021-04-22T18:51:45+00:00"
         },
         {
             "name": "litstack/meta",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/litstack/meta.git",
-                "reference": "8b69a6d20a5926f82cef3d953925cf00ee943054"
+                "reference": "18754e47121633cc1184310b2a299e026013038e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/litstack/meta/zipball/8b69a6d20a5926f82cef3d953925cf00ee943054",
-                "reference": "8b69a6d20a5926f82cef3d953925cf00ee943054",
+                "url": "https://api.github.com/repos/litstack/meta/zipball/18754e47121633cc1184310b2a299e026013038e",
+                "reference": "18754e47121633cc1184310b2a299e026013038e",
                 "shasum": ""
             },
             "require": {
@@ -2808,9 +2808,9 @@
             ],
             "support": {
                 "issues": "https://github.com/litstack/meta/issues",
-                "source": "https://github.com/litstack/meta/tree/v1.0.1"
+                "source": "https://github.com/litstack/meta/tree/v1.0.2"
             },
-            "time": "2021-03-13T18:27:18+00:00"
+            "time": "2021-03-29T09:27:54+00:00"
         },
         {
             "name": "livewire/livewire",

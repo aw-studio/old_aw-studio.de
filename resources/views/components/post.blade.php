@@ -11,8 +11,11 @@
         <x-lit-image :image="$post->image" class="z-10 w-full mb-4 lg:mb-8" />
         @endisset
     </div>
-    <div class="text-xl md:text-2xl">
+    <div class="text-xl md:text-2xl mr-8">
         {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
+    </div>
+    <div class="mt-4 mr-8">
+        {!! $post->excerpt !!}
     </div>
 </a>
 <a class="aw-link" href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a>
