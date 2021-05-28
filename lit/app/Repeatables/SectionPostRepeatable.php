@@ -30,7 +30,7 @@ class SectionPostRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Blog Section</span>');
+        $preview->col('<span class="text-secondary">'.fa('puzzle-piece').' Blog Section</span>');
     }
 
     /**

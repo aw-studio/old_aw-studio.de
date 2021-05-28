@@ -9,11 +9,11 @@ class StudioController extends FormController
 {
     /**
      * Authorize request for authenticated lit-user and permission operation.
-     * Operations: read, update
+     * Operations: read, update.
      *
      * @param Authorizable $user
      * @param string $operation
-     * @return boolean
+     * @return bool
      */
     public function authorize(Authorizable $user, string $operation): bool
     {

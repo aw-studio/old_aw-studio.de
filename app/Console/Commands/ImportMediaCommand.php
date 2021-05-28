@@ -59,7 +59,7 @@ class ImportMediaCommand extends Command
                 continue;
             }
 
-            DB::update('ALTER TABLE media AUTO_INCREMENT = ' . $oldmedia->id . ';');
+            DB::update('ALTER TABLE media AUTO_INCREMENT = '.$oldmedia->id.';');
 
             $newMedia = new Media;
             $newMedia->forceFill($oldmedia->toArray());

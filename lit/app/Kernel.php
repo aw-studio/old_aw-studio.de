@@ -36,7 +36,7 @@ class Kernel extends LitstackKernel
      */
     public function mount()
     {
-        $this->loadRepeatablesFrom(__DIR__ . '/Repeatables');
+        $this->loadRepeatablesFrom(__DIR__.'/Repeatables');
     }
 
     /**

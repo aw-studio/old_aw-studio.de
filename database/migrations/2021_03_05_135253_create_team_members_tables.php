@@ -22,7 +22,7 @@ class CreateTeamMembersTables extends Migration
 
         Schema::create('team_member_translations', function (Blueprint $table) {
             $table->translates('team_members');
-            
+
             $table->string('position')->nullable();
             $table->text('profession')->nullable();
         });

@@ -25,7 +25,7 @@ class ReferencesController extends Controller
         })->with('translations')->first();
 
         if (! $reference || ! $reference->active) {
-            return redirect()->route(app()->getLocale() . '.references.index');
+            return redirect()->route(app()->getLocale().'.references.index');
         }
 
         $slugs = $reference->translations->mapWithKeys(function ($item) {

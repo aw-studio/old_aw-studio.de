@@ -31,7 +31,7 @@ class SectionStickyRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Sticky Section</span> {headline}');
+        $preview->col('<span class="text-secondary">'.fa('puzzle-piece').' Sticky Section</span> {headline}');
     }
 
     /**

@@ -6,7 +6,7 @@ Vue.directive('closable', {
     bind(el, binding, vnode) {
         // Here's the click/touchstart handler
         // (it is registered below)
-        handleOutsideClick = e => {
+        handleOutsideClick = (e) => {
             e.stopPropagation();
             // Get the handler method name and the exclude array
             // from the object used in v-closable
@@ -14,7 +14,7 @@ Vue.directive('closable', {
 
             // This variable indicates if the clicked element is excluded
             let clickedOnExcludedEl = false;
-            exclude.forEach(refName => {
+            exclude.forEach((refName) => {
                 // We only run this code if we haven't detected
                 // any excluded element yet
                 if (!clickedOnExcludedEl) {

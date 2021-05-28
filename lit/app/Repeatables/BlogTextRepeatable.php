@@ -30,7 +30,7 @@ class BlogTextRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('quote-right') . ' Text</span>');
+        $preview->col('<span class="text-secondary">'.fa('quote-right').' Text</span>');
     }
 
     /**

@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateMetaTable extends Migration
 {
@@ -11,10 +11,10 @@ class CreateMetaTable extends Migration
         Schema::create('meta', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->morphs('model');
-            
+
             $table->timestamps();
         });
-        
+
         Schema::create('meta_translations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('meta_id');

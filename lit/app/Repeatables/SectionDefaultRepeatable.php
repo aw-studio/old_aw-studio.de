@@ -31,7 +31,7 @@ class SectionDefaultRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('puzzle-piece') . ' Default Section</span>');
+        $preview->col('<span class="text-secondary">'.fa('puzzle-piece').' Default Section</span>');
     }
 
     /**
@@ -45,7 +45,7 @@ class SectionDefaultRepeatable extends Repeatable
         $form->block('content')
             ->title('Content')
             ->repeatables(function ($repeatables) {
-            $repeatables->add(TextRepeatable::class)->button('Text');
-        });
+                $repeatables->add(TextRepeatable::class)->button('Text');
+            });
     }
 }

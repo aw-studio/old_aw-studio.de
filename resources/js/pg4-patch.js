@@ -1,4 +1,4 @@
-var CABLES = (function(t) {
+var CABLES = (function (t) {
     var e = {};
     function i(s) {
         if (e[s]) return e[s].exports;
@@ -8,11 +8,10 @@ var CABLES = (function(t) {
     return (
         (i.m = t),
         (i.c = e),
-        (i.d = function(t, e, s) {
-            i.o(t, e) ||
-                Object.defineProperty(t, e, { enumerable: !0, get: s });
+        (i.d = function (t, e, s) {
+            i.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: s });
         }),
-        (i.r = function(t) {
+        (i.r = function (t) {
             'undefined' != typeof Symbol &&
                 Symbol.toStringTag &&
                 Object.defineProperty(t, Symbol.toStringTag, {
@@ -20,7 +19,7 @@ var CABLES = (function(t) {
                 }),
                 Object.defineProperty(t, '__esModule', { value: !0 });
         }),
-        (i.t = function(t, e) {
+        (i.t = function (t, e) {
             if ((1 & e && (t = i(t)), 8 & e)) return t;
             if (4 & e && 'object' == typeof t && t && t.__esModule) return t;
             var s = Object.create(null);
@@ -36,34 +35,34 @@ var CABLES = (function(t) {
                     i.d(
                         s,
                         r,
-                        function(e) {
+                        function (e) {
                             return t[e];
                         }.bind(null, r)
                     );
             return s;
         }),
-        (i.n = function(t) {
+        (i.n = function (t) {
             var e =
                 t && t.__esModule
-                    ? function() {
+                    ? function () {
                           return t.default;
                       }
-                    : function() {
+                    : function () {
                           return t;
                       };
             return i.d(e, 'a', e), e;
         }),
-        (i.o = function(t, e) {
+        (i.o = function (t, e) {
             return Object.prototype.hasOwnProperty.call(t, e);
         }),
         (i.p = ''),
         i((i.s = 0))
     );
 })([
-    function(t, e, i) {
+    function (t, e, i) {
         t.exports = i(2);
     },
-    function(t, e) {
+    function (t, e) {
         t.exports = {
             timestamp: 1610523835610,
             created: '2021-01-13T07:43:55.610Z',
@@ -74,116 +73,115 @@ var CABLES = (function(t) {
             },
         };
     },
-    function(t, e, i) {
+    function (t, e, i) {
         'use strict';
         i.r(e);
         var s = {};
         i.r(s),
-            i.d(s, 'base64Chars', function() {
+            i.d(s, 'base64Chars', function () {
                 return h;
             }),
-            i.d(s, 'base64lookup', function() {
+            i.d(s, 'base64lookup', function () {
                 return l;
             }),
-            i.d(s, 'b64encTypesArray', function() {
+            i.d(s, 'b64encTypesArray', function () {
                 return u;
             }),
-            i.d(s, 'b64decTypedArray', function() {
+            i.d(s, 'b64decTypedArray', function () {
                 return c;
             });
         var r = {};
         i.r(r),
-            i.d(r, 'shuffleArray', function() {
+            i.d(r, 'shuffleArray', function () {
                 return g;
             }),
-            i.d(r, 'shortId', function() {
+            i.d(r, 'shortId', function () {
                 return T;
             }),
-            i.d(r, 'uuid', function() {
+            i.d(r, 'uuid', function () {
                 return b;
             }),
-            i.d(r, 'generateUUID', function() {
+            i.d(r, 'generateUUID', function () {
                 return y;
             }),
-            i.d(r, 'simpleId', function() {
+            i.d(r, 'simpleId', function () {
                 return x;
             }),
-            i.d(r, 'smoothStep', function() {
+            i.d(r, 'smoothStep', function () {
                 return I;
             }),
-            i.d(r, 'smootherStep', function() {
+            i.d(r, 'smootherStep', function () {
                 return v;
             }),
-            i.d(r, 'map', function() {
+            i.d(r, 'map', function () {
                 return P;
             }),
-            i.d(r, 'cacheBust', function() {
+            i.d(r, 'cacheBust', function () {
                 return R;
             }),
-            i.d(r, 'basename', function() {
+            i.d(r, 'basename', function () {
                 return N;
             }),
-            i.d(r, 'jsonp', function() {
+            i.d(r, 'jsonp', function () {
                 return S;
             }),
-            i.d(r, 'ajaxSync', function() {
+            i.d(r, 'ajaxSync', function () {
                 return M;
             }),
-            i.d(r, 'ajax', function() {
+            i.d(r, 'ajax', function () {
                 return C;
             }),
-            i.d(r, 'request', function() {
+            i.d(r, 'request', function () {
                 return w;
             }),
-            i.d(r, 'UTILS', function() {
+            i.d(r, 'UTILS', function () {
                 return f;
             });
         var n = {};
         i.r(n),
-            i.d(n, 'easeExpoIn', function() {
+            i.d(n, 'easeExpoIn', function () {
                 return D;
             }),
-            i.d(n, 'easeExpoOut', function() {
+            i.d(n, 'easeExpoOut', function () {
                 return G;
             }),
-            i.d(n, 'easeExpoInOut', function() {
+            i.d(n, 'easeExpoInOut', function () {
                 return H;
             }),
-            i.d(n, 'easeCubicIn', function() {
+            i.d(n, 'easeCubicIn', function () {
                 return z;
             }),
-            i.d(n, 'easeCubicOut', function() {
+            i.d(n, 'easeCubicOut', function () {
                 return Y;
             }),
-            i.d(n, 'easeCubicInOut', function() {
+            i.d(n, 'easeCubicInOut', function () {
                 return W;
             }),
-            i.d(n, 'ANIM', function() {
+            i.d(n, 'ANIM', function () {
                 return V;
             }),
-            i.d(n, 'Anim', function() {
+            i.d(n, 'Anim', function () {
                 return K;
             }),
-            i.d(n, 'TL', function() {
+            i.d(n, 'TL', function () {
                 return X;
             });
         var o = {};
         i.r(o),
-            i.d(o, 'PatchConnectionReceiver', function() {
+            i.d(o, 'PatchConnectionReceiver', function () {
                 return Ct;
             }),
-            i.d(o, 'PatchConnectionSender', function() {
+            i.d(o, 'PatchConnectionSender', function () {
                 return wt;
             }),
-            i.d(o, 'PatchConnectorBroadcastChannel', function() {
+            i.d(o, 'PatchConnectorBroadcastChannel', function () {
                 return kt;
             });
-        const h =
-                'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
+        const h = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
             a = new Uint8Array(256);
         for (let t = 0; t < h.length; t++) a[h.charCodeAt(t)] = t;
         const l = a,
-            u = function(t) {
+            u = function (t) {
                 t.buffer && (t = t.buffer);
                 let e,
                     i = new Uint8Array(t),
@@ -197,12 +195,11 @@ var CABLES = (function(t) {
                 return (
                     s % 3 == 2
                         ? (r = r.substring(0, r.length - 1) + '=')
-                        : s % 3 == 1 &&
-                          (r = r.substring(0, r.length - 2) + '=='),
+                        : s % 3 == 1 && (r = r.substring(0, r.length - 2) + '=='),
                     r
                 );
             },
-            c = function(t) {
+            c = function (t) {
                 let e,
                     i,
                     s,
@@ -211,8 +208,7 @@ var CABLES = (function(t) {
                     o = 0.75 * t.length,
                     h = t.length,
                     a = 0;
-                '=' === t[t.length - 1] &&
-                    (o--, '=' === t[t.length - 2] && o--);
+                '=' === t[t.length - 1] && (o--, '=' === t[t.length - 2] && o--);
                 let u = new ArrayBuffer(o),
                     c = new Uint8Array(u);
                 for (e = 0; e < h; e += 4)
@@ -230,28 +226,16 @@ var CABLES = (function(t) {
                 log() {
                     if (p) return;
                     const t = ['[core]'];
-                    t.push.apply(t, arguments),
-                        Function.prototype.apply.apply(console.log, [
-                            console,
-                            t,
-                        ]);
+                    t.push.apply(t, arguments), Function.prototype.apply.apply(console.log, [console, t]);
                 },
                 warn(t) {
                     if (p) return;
                     const e = ['[core]'];
-                    e.push.apply(e, arguments),
-                        Function.prototype.apply.apply(console.warn, [
-                            console,
-                            e,
-                        ]);
+                    e.push.apply(e, arguments), Function.prototype.apply.apply(console.warn, [console, e]);
                 },
                 error(t) {
                     const e = ['[core]'];
-                    e.push.apply(e, arguments),
-                        Function.prototype.apply.apply(console.error, [
-                            console,
-                            e,
-                        ]);
+                    e.push.apply(e, arguments), Function.prototype.apply.apply(console.error, [console, e]);
                 },
                 setSilent(t) {
                     p = t;
@@ -260,119 +244,79 @@ var CABLES = (function(t) {
                     console.log(new Error().stack);
                 },
             },
-            _ = function() {
+            _ = function () {
                 (this._eventCallbacks = {}),
                     (this._logName = ''),
                     (this._log = !1),
                     (this._listeners = {}),
-                    (this.addEventListener = this.on = function(t, e, i) {
-                        const s = {
-                            id: (i || '') + CABLES.uuid(),
-                            name: t,
-                            cb: e,
-                        };
-                        return (
-                            this._eventCallbacks[t]
-                                ? this._eventCallbacks[t].push(s)
-                                : (this._eventCallbacks[t] = [s]),
-                            (this._listeners[s.id] = s),
-                            s.id
-                        );
-                    }),
-                    (this.hasEventListener = function(t, e) {
-                        if (
-                            (console.warn(
-                                'old eventtarget function haseventlistener!'
-                            ),
-                            t && e)
-                        ) {
+                    (this.addEventListener = this.on =
+                        function (t, e, i) {
+                            const s = {
+                                id: (i || '') + CABLES.uuid(),
+                                name: t,
+                                cb: e,
+                            };
+                            return (
+                                this._eventCallbacks[t]
+                                    ? this._eventCallbacks[t].push(s)
+                                    : (this._eventCallbacks[t] = [s]),
+                                (this._listeners[s.id] = s),
+                                s.id
+                            );
+                        }),
+                    (this.hasEventListener = function (t, e) {
+                        if ((console.warn('old eventtarget function haseventlistener!'), t && e)) {
                             if (this._eventCallbacks[t]) {
                                 return -1 != this._eventCallbacks[t].indexOf(e);
                             }
                         } else d.warn('hasListener: missing parameters');
                     }),
-                    (this.removeEventListener = this.off = function(t, e) {
-                        if (null == t) return;
-                        if (!e) {
-                            const e = this._listeners[t];
-                            if (!e) return;
-                            let i = !0;
-                            for (; i; ) {
-                                i = !1;
-                                let s = -1;
-                                for (
-                                    let r = 0;
-                                    r < this._eventCallbacks[e.name].length;
-                                    r++
-                                )
-                                    0 ===
-                                        this._eventCallbacks[e.name][
-                                            r
-                                        ].id.indexOf(t) && ((i = !0), (s = r));
-                                -1 !== s &&
-                                    (this._eventCallbacks[e.name].splice(s, 1),
-                                    delete this._listeners[t]);
+                    (this.removeEventListener = this.off =
+                        function (t, e) {
+                            if (null == t) return;
+                            if (!e) {
+                                const e = this._listeners[t];
+                                if (!e) return;
+                                let i = !0;
+                                for (; i; ) {
+                                    i = !1;
+                                    let s = -1;
+                                    for (let r = 0; r < this._eventCallbacks[e.name].length; r++)
+                                        0 === this._eventCallbacks[e.name][r].id.indexOf(t) && ((i = !0), (s = r));
+                                    -1 !== s && (this._eventCallbacks[e.name].splice(s, 1), delete this._listeners[t]);
+                                }
+                                return;
                             }
-                            return;
-                        }
-                        console.warn(
-                            '[eventtarget] old function signature: removeEventListener!'
-                        );
-                        let i = null;
-                        for (let s = 0; s < this._eventCallbacks[t].length; s++)
-                            this._eventCallbacks[t][s].cb == e && (i = s);
-                        null !== i
-                            ? delete this._eventCallbacks[i]
-                            : console.warn(
-                                  '[removeEventListener] not found ' + t
-                              );
-                    }),
-                    (this.logEvents = function(t, e) {
+                            console.warn('[eventtarget] old function signature: removeEventListener!');
+                            let i = null;
+                            for (let s = 0; s < this._eventCallbacks[t].length; s++)
+                                this._eventCallbacks[t][s].cb == e && (i = s);
+                            null !== i
+                                ? delete this._eventCallbacks[i]
+                                : console.warn('[removeEventListener] not found ' + t);
+                        }),
+                    (this.logEvents = function (t, e) {
                         (this._log = t), (this._logName = e);
                     }),
-                    (this.emitEvent = function(t, e, i, s, r, n, o) {
+                    (this.emitEvent = function (t, e, i, s, r, n, o) {
                         if (
-                            (this._log &&
-                                console.log(
-                                    '[event] ',
-                                    this._logName,
-                                    t,
-                                    this._eventCallbacks
-                                ),
+                            (this._log && console.log('[event] ', this._logName, t, this._eventCallbacks),
                             this._eventCallbacks[t])
                         )
-                            for (
-                                let h = 0;
-                                h < this._eventCallbacks[t].length;
-                                h++
-                            )
-                                this._eventCallbacks[t][h] &&
-                                    this._eventCallbacks[t][h].cb(
-                                        e,
-                                        i,
-                                        s,
-                                        r,
-                                        n,
-                                        o
-                                    );
-                        else
-                            this._log &&
-                                console.log(
-                                    '[event] has no event callback',
-                                    t,
-                                    this._eventCallbacks
-                                );
+                            for (let h = 0; h < this._eventCallbacks[t].length; h++)
+                                this._eventCallbacks[t][h] && this._eventCallbacks[t][h].cb(e, i, s, r, n, o);
+                        else this._log && console.log('[event] has no event callback', t, this._eventCallbacks);
                     });
             },
             f = {
-                float32Concat: function(t, e) {
+                float32Concat: function (t, e) {
                     t instanceof Float32Array || (t = new Float32Array(t)),
                         e instanceof Float32Array || (e = new Float32Array(e));
                     const i = new Float32Array(t.length + e.length);
                     return i.set(t), i.set(e, t.length), i;
                 },
             },
-            g = function(t) {
+            g = function (t) {
                 for (let e = t.length - 1; e > 0; e--) {
                     const i = Math.floor(Math.seededRandom() * (e + 1)),
                         s = t[e];
@@ -381,41 +325,33 @@ var CABLES = (function(t) {
                 return t;
             },
             m = {},
-            E = function() {
-                let t = Math.random()
-                    .toString(36)
-                    .substr(2, 9);
+            E = function () {
+                let t = Math.random().toString(36).substr(2, 9);
                 return m.hasOwnProperty(t) && (t = E()), (m[t] = !0), t;
             },
             T = E,
-            A = function() {
+            A = function () {
                 let t = new Date().getTime();
-                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
-                    /[xy]/g,
-                    e => {
-                        const i = (t + 16 * Math.random()) % 16 | 0;
-                        return (
-                            (t = Math.floor(t / 16)),
-                            ('x' == e ? i : (3 & i) | 8).toString(16)
-                        );
-                    }
-                );
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (e) => {
+                    const i = (t + 16 * Math.random()) % 16 | 0;
+                    return (t = Math.floor(t / 16)), ('x' == e ? i : (3 & i) | 8).toString(16);
+                });
             },
             b = A,
             y = A;
         let O = 0;
-        const x = function() {
+        const x = function () {
                 return O++, O;
             },
-            I = function(t) {
+            I = function (t) {
                 const e = Math.max(0, Math.min(1, (t - 0) / 1));
                 return (t = e * e * (3 - 2 * e));
             },
-            v = function(t) {
+            v = function (t) {
                 const e = Math.max(0, Math.min(1, (t - 0) / 1));
                 return (t = e * e * e * (e * (6 * e - 15) + 10));
             },
-            P = function(t, e, i, s, r, n) {
+            P = function (t, e, i, s, r, n) {
                 if (t >= i) return r;
                 if (t <= e) return s;
                 let o = !1;
@@ -429,26 +365,14 @@ var CABLES = (function(t) {
                 let p = 0,
                     d = 0;
                 return (
-                    (p = o
-                        ? ((a - t) * (c - u)) / (a - h)
-                        : ((t - h) * (c - u)) / (a - h)),
+                    (p = o ? ((a - t) * (c - u)) / (a - h) : ((t - h) * (c - u)) / (a - h)),
                     (d = l ? c - p : p + u),
                     n
                         ? 1 == n
-                            ? s +
-                              (t = Math.max(
-                                  0,
-                                  Math.min(1, (d - s) / (r - s))
-                              )) *
-                                  t *
-                                  (3 - 2 * t) *
-                                  (r - s)
+                            ? s + (t = Math.max(0, Math.min(1, (d - s) / (r - s)))) * t * (3 - 2 * t) * (r - s)
                             : 2 == n
                             ? s +
-                              (t = Math.max(
-                                  0,
-                                  Math.min(1, (d - s) / (r - s))
-                              )) *
+                              (t = Math.max(0, Math.min(1, (d - s) / (r - s)))) *
                                   t *
                                   t *
                                   (t * (6 * t - 15) + 10) *
@@ -458,41 +382,36 @@ var CABLES = (function(t) {
                 );
             };
         (Math.randomSeed = 1),
-            (Math.seededRandom = function(t, e) {
-                0 === Math.randomSeed &&
-                    (Math.randomSeed = 999 * Math.random()),
+            (Math.seededRandom = function (t, e) {
+                0 === Math.randomSeed && (Math.randomSeed = 999 * Math.random()),
                     (t = t || 1),
                     (e = e || 0),
-                    (Math.randomSeed =
-                        (9301 * Math.randomSeed + 49297) % 233280);
+                    (Math.randomSeed = (9301 * Math.randomSeed + 49297) % 233280);
                 return e + (Math.randomSeed / 233280) * (t - e);
             }),
-            (f.arrayWriteToEnd = function(t, e) {
+            (f.arrayWriteToEnd = function (t, e) {
                 for (let e = 1; e < t.length; e++) t[e - 1] = t[e];
                 t[t.length - 1] = e;
             }),
-            (f.isNumeric = function(t) {
+            (f.isNumeric = function (t) {
                 return !isNaN(parseFloat(t)) && isFinite(t);
             }),
-            (f.isArray = function(t) {
+            (f.isArray = function (t) {
                 return '[object Array]' === Object.prototype.toString.call(t);
             }),
-            (String.prototype.endl = function() {
+            (String.prototype.endl = function () {
                 return this + '\n';
             }),
-            (String.prototype.startsWith = function(t) {
+            (String.prototype.startsWith = function (t) {
                 return 0 === this.indexOf(t);
             }),
-            (String.prototype.endsWith = function(t) {
+            (String.prototype.endsWith = function (t) {
                 return this.match(t + '$') == t;
             });
-        const R = function(t) {
-                return (
-                    t.indexOf('?') > -1 ? (t += '&') : (t += '?'),
-                    t + 'cb=' + CABLES.uuid()
-                );
+        const R = function (t) {
+                return t.indexOf('?') > -1 ? (t += '&') : (t += '?'), t + 'cb=' + CABLES.uuid();
             },
-            N = function(t) {
+            N = function (t) {
                 let e = '';
                 if (!t) return '';
                 const i = (t + '').split('/');
@@ -503,19 +422,18 @@ var CABLES = (function(t) {
                 return e;
             };
         let F = null;
-        const S = function(t, e) {
+        const S = function (t, e) {
                 (F = F || 0), F++;
                 const i = F;
-                CABLES['jsonpFunc' + i] = function(t) {
+                CABLES['jsonpFunc' + i] = function (t) {
                     e(!1, t);
                 };
                 let s = '?';
                 t.indexOf(s) > -1 && (s = '&');
                 const r = document.createElement('script');
-                r.setAttribute('src', t + s + 'callback=CABLES.jsonpFunc' + i),
-                    document.body.appendChild(r);
+                r.setAttribute('src', t + s + 'callback=CABLES.jsonpFunc' + i), document.body.appendChild(r);
             },
-            M = function(t, e, i, s, r) {
+            M = function (t, e, i, s, r) {
                 w({
                     url: t,
                     cb: e,
@@ -525,7 +443,7 @@ var CABLES = (function(t) {
                     sync: !0,
                 });
             },
-            C = function(t, e, i, s, r, n, o = {}) {
+            C = function (t, e, i, s, r, n, o = {}) {
                 w({
                     url: t,
                     cb: e,
@@ -537,26 +455,22 @@ var CABLES = (function(t) {
                     headers: o,
                 });
             },
-            w = function(t) {
+            w = function (t) {
                 let e;
                 t.hasOwnProperty('asynch') || (t.asynch = !0);
                 try {
                     e = new XMLHttpRequest();
                 } catch (t) {}
                 if (
-                    ((e.onreadystatechange = function() {
+                    ((e.onreadystatechange = function () {
                         4 == e.readyState &&
                             t.cb &&
                             (200 == e.status || 0 == e.status
                                 ? t.cb(!1, e.responseText, e)
                                 : t.cb(!0, e.responseText, e));
                     }),
-                    e.addEventListener('progress', t => {}),
-                    e.open(
-                        t.method ? t.method.toUpperCase() : 'GET',
-                        t.url,
-                        !t.sync
-                    ),
+                    e.addEventListener('progress', (t) => {}),
+                    e.open(t.method ? t.method.toUpperCase() : 'GET', t.url, !t.sync),
                     'object' == typeof t.headers)
                 ) {
                     const i = Object.keys(t.headers);
@@ -569,16 +483,14 @@ var CABLES = (function(t) {
                 t.post || t.data
                     ? (e.setRequestHeader(
                           'Content-type',
-                          t.contenttype
-                              ? t.contenttype
-                              : 'application/x-www-form-urlencoded'
+                          t.contenttype ? t.contenttype : 'application/x-www-form-urlencoded'
                       ),
                       e.send(t.data || t.post))
                     : e.send();
             };
         window.performance = window.performance || {
             offset: Date.now(),
-            now: function() {
+            now: function () {
                 return Date.now() - this.offset;
             },
         };
@@ -663,7 +575,7 @@ var CABLES = (function(t) {
                     PACO_OP_DISABLE: 8,
                 },
             },
-            U = function(t, e, i, s) {
+            U = function (t, e, i, s) {
                 _.apply(this),
                     (this.data = {}),
                     (this.direction = k.PORT.PORT_DIR_IN),
@@ -700,109 +612,89 @@ var CABLES = (function(t) {
                         },
                     });
             };
-        (U.prototype.getValueForDisplay = function() {
+        (U.prototype.getValueForDisplay = function () {
             let t = String(this.val);
             return (
-                !this.uiAttribs ||
-                ('bool' != this.uiAttribs.display &&
-                    'bool' != this.uiAttribs.type)
+                !this.uiAttribs || ('bool' != this.uiAttribs.display && 'bool' != this.uiAttribs.type)
                     ? t.length > 100 && (t = t.substring(0, 100))
                     : (t = this.val ? 'true' : 'false'),
                 t
             );
         }),
-            (U.prototype.onAnimToggle = function() {}),
-            (U.prototype._onAnimToggle = function() {
+            (U.prototype.onAnimToggle = function () {}),
+            (U.prototype._onAnimToggle = function () {
                 this.onAnimToggle();
             }),
-            (U.prototype.hidePort = function() {
+            (U.prototype.hidePort = function () {
                 this.setUiAttribs({ hidePort: !0 });
             }),
-            (U.prototype.remove = function() {
+            (U.prototype.remove = function () {
                 this.removeLinks(), this.parent.removePort(this);
             }),
-            (U.prototype.setUiAttribs = function(t) {
+            (U.prototype.setUiAttribs = function (t) {
                 let e = !1;
                 this.uiAttribs || (this.uiAttribs = {});
-                for (const i in t)
-                    this.uiAttribs[i] != t[i] && (e = !0),
-                        (this.uiAttribs[i] = t[i]);
+                for (const i in t) this.uiAttribs[i] != t[i] && (e = !0), (this.uiAttribs[i] = t[i]);
                 e && this.emitEvent('onUiAttrChange', t);
             }),
-            (U.prototype.getUiAttribs = function() {
+            (U.prototype.getUiAttribs = function () {
                 return this.uiAttribs;
             }),
-            (U.prototype.getUiAttrib = function(t) {
-                return this.uiAttribs && this.uiAttribs.hasOwnProperty(t)
-                    ? this.uiAttribs[t]
-                    : null;
+            (U.prototype.getUiAttrib = function (t) {
+                return this.uiAttribs && this.uiAttribs.hasOwnProperty(t) ? this.uiAttribs[t] : null;
             }),
-            (U.prototype.get = function() {
+            (U.prototype.get = function () {
                 return (
                     this._animated &&
-                        this._lastAnimFrame !=
-                            this.parent.patch.getFrameNum() &&
+                        this._lastAnimFrame != this.parent.patch.getFrameNum() &&
                         ((this._lastAnimFrame = this.parent.patch.getFrameNum()),
-                        (this.value = this.anim.getValue(
-                            this.parent.patch.timer.getTime()
-                        )),
+                        (this.value = this.anim.getValue(this.parent.patch.timer.getTime())),
                         (this._oldAnimVal = this.value),
                         this.forceChange()),
                     this.value
                 );
             }),
-            (U.prototype.set = U.prototype.setValue = function(t) {
-                if (
-                    void 0 !== t &&
-                    this.parent.enabled &&
-                    !this.crashed &&
-                    (t !== this.value ||
-                        this.changeAlways ||
-                        this.type == k.OP.OP_PORT_TYPE_TEXTURE ||
-                        this.type == k.OP.OP_PORT_TYPE_ARRAY)
-                ) {
-                    if (this._animated)
-                        this.anim.setValue(
-                            this.parent.patch.timer.getTime(),
-                            t
-                        );
-                    else {
-                        try {
-                            (this.value = t), this.forceChange();
-                        } catch (t) {
-                            (this.crashed = !0),
-                                (this.setValue = function(t) {}),
-                                (this.onTriggered = function() {}),
-                                console.error(
-                                    'onvaluechanged exception cought',
-                                    t
-                                ),
-                                d.log(t.stack),
-                                d.log('exception in: ' + this.parent.name),
-                                this.parent.patch.isEditorMode() &&
-                                    gui.showOpCrash(this.parent),
-                                this.parent.patch.emitEvent(
-                                    'exception'.ex,
-                                    this.parent
-                                );
+            (U.prototype.set = U.prototype.setValue =
+                function (t) {
+                    if (
+                        void 0 !== t &&
+                        this.parent.enabled &&
+                        !this.crashed &&
+                        (t !== this.value ||
+                            this.changeAlways ||
+                            this.type == k.OP.OP_PORT_TYPE_TEXTURE ||
+                            this.type == k.OP.OP_PORT_TYPE_ARRAY)
+                    ) {
+                        if (this._animated) this.anim.setValue(this.parent.patch.timer.getTime(), t);
+                        else {
+                            try {
+                                (this.value = t), this.forceChange();
+                            } catch (t) {
+                                (this.crashed = !0),
+                                    (this.setValue = function (t) {}),
+                                    (this.onTriggered = function () {}),
+                                    console.error('onvaluechanged exception cought', t),
+                                    d.log(t.stack),
+                                    d.log('exception in: ' + this.parent.name),
+                                    this.parent.patch.isEditorMode() && gui.showOpCrash(this.parent),
+                                    this.parent.patch.emitEvent('exception'.ex, this.parent);
+                            }
+                            this.parent.patch.isEditorMode() &&
+                                this.type == k.OP.OP_PORT_TYPE_TEXTURE &&
+                                gui.texturePreview().updateTexturePort(this);
                         }
-                        this.parent.patch.isEditorMode() &&
-                            this.type == k.OP.OP_PORT_TYPE_TEXTURE &&
-                            gui.texturePreview().updateTexturePort(this);
+                        if (this.direction == k.PORT.PORT_DIR_OUT)
+                            for (let t = 0; t < this.links.length; ++t) this.links[t].setValue();
                     }
-                    if (this.direction == k.PORT.PORT_DIR_OUT)
-                        for (let t = 0; t < this.links.length; ++t)
-                            this.links[t].setValue();
-                }
-            }),
-            (U.prototype.updateAnim = function() {
+                }),
+            (U.prototype.updateAnim = function () {
                 this._animated &&
                     ((this.value = this.get()),
                     (this._oldAnimVal != this.value || this.changeAlways) &&
                         ((this._oldAnimVal = this.value), this.forceChange()),
                     (this._oldAnimVal = this.value));
             }),
-            (U.args = function(t) {
+            (U.args = function (t) {
                 return (t + '')
                     .replace(/[/][/].*$/gm, '')
                     .replace(/\s+/g, '')
@@ -813,15 +705,14 @@ var CABLES = (function(t) {
                     .split(',')
                     .filter(Boolean);
             }),
-            (U.prototype.forceChange = function() {
+            (U.prototype.forceChange = function () {
                 this.onValueChanged || this.onChange,
                     this.emitEvent('change', this.value, this),
                     this.onChange
                         ? this.onChange(this, this.value)
-                        : this.onValueChanged &&
-                          this.onValueChanged(this, this.value);
+                        : this.onValueChanged && this.onValueChanged(this, this.value);
             }),
-            (U.prototype.getTypeString = function() {
+            (U.prototype.getTypeString = function () {
                 return this.type == k.OP.OP_PORT_TYPE_VALUE
                     ? 'Number'
                     : this.type == k.OP.OP_PORT_TYPE_FUNCTION
@@ -836,52 +727,41 @@ var CABLES = (function(t) {
                     ? 'String'
                     : 'Unknown';
             }),
-            (U.prototype.getSerialized = function() {
+            (U.prototype.getSerialized = function () {
                 const t = {};
                 if (
                     ((t.name = this.getName()),
                     this.ignoreValueSerialize ||
                         0 !== this.links.length ||
-                        (this.type == k.OP.OP_PORT_TYPE_OBJECT &&
-                            this.value &&
-                            this.value.tex) ||
+                        (this.type == k.OP.OP_PORT_TYPE_OBJECT && this.value && this.value.tex) ||
                         (t.value = this.value),
-                    this._useVariableName &&
-                        (t.useVariable = this._useVariableName),
+                    this._useVariableName && (t.useVariable = this._useVariableName),
                     this._animated && (t.animated = !0),
                     this.anim && (t.anim = this.anim.getSerialized()),
-                    'file' == this.uiAttribs.display &&
-                        (t.display = this.uiAttribs.display),
-                    this.direction == k.PORT.PORT_DIR_IN &&
-                        this.links.length > 0)
+                    'file' == this.uiAttribs.display && (t.display = this.uiAttribs.display),
+                    this.direction == k.PORT.PORT_DIR_IN && this.links.length > 0)
                 ) {
                     t.links = [];
                     for (const e in this.links)
-                        this.links[e].portIn &&
-                            this.links[e].portOut &&
-                            t.links.push(this.links[e].getSerialized());
+                        this.links[e].portIn && this.links[e].portOut && t.links.push(this.links[e].getSerialized());
                 }
                 return t;
             }),
-            (U.prototype.shouldLink = function() {
+            (U.prototype.shouldLink = function () {
                 return !0;
             }),
-            (U.prototype.removeLinks = function() {
+            (U.prototype.removeLinks = function () {
                 let t = 0;
                 for (; this.links.length > 0; ) {
                     if ((t++, t > 5e3)) {
-                        console.warn(
-                            'could not delete links... / infinite loop'
-                        ),
-                            (this.links.length = 0);
+                        console.warn('could not delete links... / infinite loop'), (this.links.length = 0);
                         break;
                     }
                     this.links[0].remove();
                 }
             }),
-            (U.prototype.removeLink = function(t) {
-                for (const e in this.links)
-                    this.links[e] == t && this.links.splice(e, 1);
+            (U.prototype.removeLink = function (t) {
+                for (const e in this.links) this.links[e] == t && this.links.splice(e, 1);
                 this.direction == k.PORT.PORT_DIR_IN &&
                     (this.type == k.OP.OP_PORT_TYPE_VALUE
                         ? this.setValue(this._valueBeforeLink || 0)
@@ -889,21 +769,20 @@ var CABLES = (function(t) {
                     this.onLinkChanged && this.onLinkChanged(),
                     this.emitEvent('onLinkChanged');
             }),
-            (U.prototype.getName = function() {
+            (U.prototype.getName = function () {
                 return this.name;
             }),
-            (U.prototype.addLink = function(t) {
+            (U.prototype.addLink = function (t) {
                 (this._valueBeforeLink = this.value),
                     this.links.push(t),
                     this.onLinkChanged && this.onLinkChanged(),
                     this.emitEvent('onLinkChanged');
             }),
-            (U.prototype.getLinkTo = function(t) {
+            (U.prototype.getLinkTo = function (t) {
                 for (const e in this.links)
-                    if (this.links[e].portIn == t || this.links[e].portOut == t)
-                        return this.links[e];
+                    if (this.links[e].portIn == t || this.links[e].portOut == t) return this.links[e];
             }),
-            (U.prototype.removeLinkTo = function(t) {
+            (U.prototype.removeLinkTo = function (t) {
                 for (const e in this.links)
                     if (this.links[e].portIn == t || this.links[e].portOut == t)
                         return (
@@ -912,29 +791,22 @@ var CABLES = (function(t) {
                             void this.emitEvent('onLinkChanged')
                         );
             }),
-            (U.prototype.isLinkedTo = function(t) {
-                for (const e in this.links)
-                    if (this.links[e].portIn == t || this.links[e].portOut == t)
-                        return !0;
+            (U.prototype.isLinkedTo = function (t) {
+                for (const e in this.links) if (this.links[e].portIn == t || this.links[e].portOut == t) return !0;
                 return !1;
             }),
-            (U.prototype.trigger = function() {
+            (U.prototype.trigger = function () {
                 if (0 === this.links.length) return;
                 if (!this.parent.enabled) return;
                 let t = null;
                 try {
                     for (let e = 0; e < this.links.length; ++e)
-                        this.links[e].portIn &&
-                            ((t = this.links[e].portIn), t._onTriggered()),
+                        this.links[e].portIn && ((t = this.links[e].portIn), t._onTriggered()),
                             this.links[e] && this.links[e].activity();
                 } catch (e) {
                     (this.parent.enabled = !1),
                         this.parent.patch.isEditorMode() &&
-                            (this.parent.patch.emitEvent(
-                                'exception',
-                                e,
-                                t.parent
-                            ),
+                            (this.parent.patch.emitEvent('exception', e, t.parent),
                             this.parent.patch.emitEvent('opcrash', t)),
                         d.log('exception!'),
                         console.error('ontriggered exception cought', e),
@@ -942,97 +814,86 @@ var CABLES = (function(t) {
                         d.log('exception in: ' + t.parent.name);
                 }
             }),
-            (U.prototype.call = function() {
+            (U.prototype.call = function () {
                 d.log('call deprecated - use trigger() '), this.trigger();
             }),
-            (U.prototype.execute = function() {
+            (U.prototype.execute = function () {
                 d.log('### execute port: ' + this.getName(), this.goals.length);
             }),
-            (U.prototype.setVariableName = function(t) {
+            (U.prototype.setVariableName = function (t) {
                 this._useVariableName = t;
             }),
-            (U.prototype.getVariableName = function() {
+            (U.prototype.getVariableName = function () {
                 return this._useVariableName;
             }),
-            (U.prototype.setVariable = function(t) {
+            (U.prototype.setVariable = function (t) {
                 this.setAnimated(!1);
                 const e = { useVariable: !1 };
-                this._variableIn &&
-                    (this._variableIn.removeListener(this.set.bind(this)),
-                    (this._variableIn = null)),
+                this._variableIn && (this._variableIn.removeListener(this.set.bind(this)), (this._variableIn = null)),
                     t
                         ? ((this._variableIn = this.parent.patch.getVar(t)),
                           this._variableIn
-                              ? (this._variableIn.addListener(
-                                    this.set.bind(this)
-                                ),
+                              ? (this._variableIn.addListener(this.set.bind(this)),
                                 this.set(this._variableIn.getValue()))
                               : console.log('PORT VAR NOT FOUND!!!'),
                           (this._useVariableName = t),
                           (e.useVariable = !0),
                           (e.variableName = this._useVariableName))
-                        : ((e.variableName = this._useVariableName = null),
-                          (e.useVariable = !1)),
+                        : ((e.variableName = this._useVariableName = null), (e.useVariable = !1)),
                     this.setUiAttribs(e);
             }),
-            (U.prototype.setAnimated = function(t) {
+            (U.prototype.setAnimated = function (t) {
                 this._animated != t &&
-                    ((this._animated = t),
-                    this._animated && !this.anim && (this.anim = new K()),
-                    this._onAnimToggle()),
+                    ((this._animated = t), this._animated && !this.anim && (this.anim = new K()), this._onAnimToggle()),
                     this.setUiAttribs({ isAnimated: this._animated });
             }),
-            (U.prototype.toggleAnim = function(t) {
+            (U.prototype.toggleAnim = function (t) {
                 (this._animated = !this._animated),
                     this._animated && !this.anim && (this.anim = new K()),
                     this.setAnimated(this._animated),
                     this._onAnimToggle(),
                     this.setUiAttribs({ isAnimated: this._animated });
             }),
-            (U.prototype.getType = function() {
+            (U.prototype.getType = function () {
                 return this.type;
             }),
-            (U.prototype.isLinked = function() {
+            (U.prototype.isLinked = function () {
                 return this.links.length > 0;
             }),
-            (U.prototype.isBoundToVar = function() {
+            (U.prototype.isBoundToVar = function () {
                 return null != this._useVariableName;
             }),
-            (U.prototype.isAnimated = function() {
+            (U.prototype.isAnimated = function () {
                 return this._animated;
             }),
-            (U.prototype.isHidden = function() {
+            (U.prototype.isHidden = function () {
                 return this.uiAttribs.hidePort;
             }),
-            (U.prototype._onTriggered = function(t) {
-                this.parent.updateAnims(),
-                    this.parent.enabled &&
-                        this.onTriggered &&
-                        this.onTriggered(t);
+            (U.prototype._onTriggered = function (t) {
+                this.parent.updateAnims(), this.parent.enabled && this.onTriggered && this.onTriggered(t);
             }),
-            (U.prototype._onSetProfiling = function(t) {
+            (U.prototype._onSetProfiling = function (t) {
                 this.parent.patch.profiler.add('port', this),
                     this.setValue(t),
                     this.parent.patch.profiler.add('port', null);
             }),
-            (U.prototype._onTriggeredProfiling = function() {
+            (U.prototype._onTriggeredProfiling = function () {
                 this.parent.enabled &&
                     this.onTriggered &&
                     (this.parent.patch.profiler.add('port', this),
                     this.onTriggered(),
                     this.parent.patch.profiler.add('port', null));
             }),
-            (U.prototype.onValueChange = function(t) {
+            (U.prototype.onValueChange = function (t) {
                 this.onChange = t;
             }),
-            (U.prototype.getUiActiveState = function() {
+            (U.prototype.getUiActiveState = function () {
                 return this._uiActiveState;
             }),
-            (U.prototype.setUiActiveState = function(t) {
-                (this._uiActiveState = t),
-                    this.onUiActiveStateChange && this.onUiActiveStateChange();
+            (U.prototype.setUiActiveState = function (t) {
+                (this._uiActiveState = t), this.onUiActiveStateChange && this.onUiActiveStateChange();
             }),
-            (U.portTypeNumberToString = function(t) {
+            (U.portTypeNumberToString = function (t) {
                 return t == k.OP.OP_PORT_TYPE_VALUE
                     ? 'value'
                     : t == k.OP.OP_PORT_TYPE_FUNCTION
@@ -1051,7 +912,7 @@ var CABLES = (function(t) {
             constructor(t, e, i, s, r) {
                 super(t, e, i, s),
                     (this.indexPort = r),
-                    (this.indexPort.set = t => {
+                    (this.indexPort.set = (t) => {
                         const e = s.values;
                         if (!e) return;
                         let i = Math.floor(t);
@@ -1067,15 +928,12 @@ var CABLES = (function(t) {
             }
             setUiAttribs(t) {
                 const e = t.hidePort;
-                (t.hidePort = !0),
-                    super.setUiAttribs(t),
-                    void 0 !== e &&
-                        this.indexPort.setUiAttribs({ hidePort: e });
+                (t.hidePort = !0), super.setUiAttribs(t), void 0 !== e && this.indexPort.setUiAttribs({ hidePort: e });
             }
         }
         class B extends L {}
         const V = {
-            Key: function(t) {
+            Key: function (t) {
                 (this.time = 0),
                     (this.value = 0),
                     (this.ui = {}),
@@ -1087,100 +945,78 @@ var CABLES = (function(t) {
                     (this.bezValueIn = 0),
                     (this.cb = null),
                     (this.cbTriggered = !1);
-                (this._updateBezier = !1),
-                    this.setEasing(k.ANIM.EASING_LINEAR),
-                    this.set(t);
+                (this._updateBezier = !1), this.setEasing(k.ANIM.EASING_LINEAR), this.set(t);
             },
         };
-        (V.Key.linear = function(t, e, i) {
+        (V.Key.linear = function (t, e, i) {
             return parseFloat(e.value) + parseFloat(i.value - e.value) * t;
         }),
-            (V.Key.easeLinear = function(t, e) {
+            (V.Key.easeLinear = function (t, e) {
                 return V.Key.linear(t, this, e);
             }),
-            (V.Key.easeAbsolute = function(t, e) {
+            (V.Key.easeAbsolute = function (t, e) {
                 return this.value;
             });
-        const D = function(t) {
+        const D = function (t) {
             return Math.pow(2, 10 * (t - 1));
         };
-        V.Key.easeExpoIn = function(t, e) {
+        V.Key.easeExpoIn = function (t, e) {
             return (t = D(t)), V.Key.linear(t, this, e);
         };
-        const G = function(t) {
+        const G = function (t) {
             return (t = 1 - Math.pow(2, -10 * t));
         };
-        V.Key.easeExpoOut = function(t, e) {
+        V.Key.easeExpoOut = function (t, e) {
             return (t = G(t)), V.Key.linear(t, this, e);
         };
-        const H = function(t) {
+        const H = function (t) {
             return (
-                (t *= 2) < 1
-                    ? (t = 0.5 * Math.pow(2, 10 * (t - 1)))
-                    : (t--, (t = 0.5 * (2 - Math.pow(2, -10 * t)))),
-                t
+                (t *= 2) < 1 ? (t = 0.5 * Math.pow(2, 10 * (t - 1))) : (t--, (t = 0.5 * (2 - Math.pow(2, -10 * t)))), t
             );
         };
-        (V.Key.easeExpoInOut = function(t, e) {
+        (V.Key.easeExpoInOut = function (t, e) {
             return (t = H(t)), V.Key.linear(t, this, e);
         }),
-            (V.Key.easeSinIn = function(t, e) {
-                return (
-                    (t = -1 * Math.cos((t * Math.PI) / 2) + 1),
-                    V.Key.linear(t, this, e)
-                );
+            (V.Key.easeSinIn = function (t, e) {
+                return (t = -1 * Math.cos((t * Math.PI) / 2) + 1), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeSinOut = function(t, e) {
-                return (
-                    (t = Math.sin((t * Math.PI) / 2)), V.Key.linear(t, this, e)
-                );
+            (V.Key.easeSinOut = function (t, e) {
+                return (t = Math.sin((t * Math.PI) / 2)), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeSinInOut = function(t, e) {
-                return (
-                    (t = -0.5 * (Math.cos(Math.PI * t) - 1)),
-                    V.Key.linear(t, this, e)
-                );
+            (V.Key.easeSinInOut = function (t, e) {
+                return (t = -0.5 * (Math.cos(Math.PI * t) - 1)), V.Key.linear(t, this, e);
             });
-        const z = function(t) {
+        const z = function (t) {
             return (t *= t * t);
         };
-        (V.Key.easeCubicIn = function(t, e) {
+        (V.Key.easeCubicIn = function (t, e) {
             return (t = z(t)), V.Key.linear(t, this, e);
         }),
-            (V.Key.easeInQuint = function(t, e) {
+            (V.Key.easeInQuint = function (t, e) {
                 return (t *= t * t * t * t), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeOutQuint = function(t, e) {
-                return (
-                    (t = (t -= 1) * t * t * t * t + 1), V.Key.linear(t, this, e)
-                );
+            (V.Key.easeOutQuint = function (t, e) {
+                return (t = (t -= 1) * t * t * t * t + 1), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeInOutQuint = function(t, e) {
+            (V.Key.easeInOutQuint = function (t, e) {
                 return (
-                    (t /= 0.5) < 1
-                        ? (t *= 0.5 * t * t * t * t)
-                        : (t = 0.5 * ((t -= 2) * t * t * t * t + 2)),
+                    (t /= 0.5) < 1 ? (t *= 0.5 * t * t * t * t) : (t = 0.5 * ((t -= 2) * t * t * t * t + 2)),
                     V.Key.linear(t, this, e)
                 );
             }),
-            (V.Key.easeInQuart = function(t, e) {
+            (V.Key.easeInQuart = function (t, e) {
                 return (t *= t * t * t), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeOutQuart = function(t, e) {
+            (V.Key.easeOutQuart = function (t, e) {
+                return (t = -1 * ((t -= 1) * t * t * t - 1)), V.Key.linear(t, this, e);
+            }),
+            (V.Key.easeInOutQuart = function (t, e) {
                 return (
-                    (t = -1 * ((t -= 1) * t * t * t - 1)),
+                    (t /= 0.5) < 1 ? (t *= 0.5 * t * t * t) : (t = -0.5 * ((t -= 2) * t * t * t - 2)),
                     V.Key.linear(t, this, e)
                 );
             }),
-            (V.Key.easeInOutQuart = function(t, e) {
-                return (
-                    (t /= 0.5) < 1
-                        ? (t *= 0.5 * t * t * t)
-                        : (t = -0.5 * ((t -= 2) * t * t * t - 2)),
-                    V.Key.linear(t, this, e)
-                );
-            }),
-            (V.Key.bounce = function(t) {
+            (V.Key.bounce = function (t) {
                 return (
                     (t /= 1) < 1 / 2.75
                         ? (t *= 7.5625 * t)
@@ -1189,18 +1025,17 @@ var CABLES = (function(t) {
                                   ? 7.5625 * (t -= 1.5 / 2.75) * t + 0.75
                                   : t < 2.5 / 2.75
                                   ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
-                                  : 7.5625 * (t -= 2.625 / 2.75) * t +
-                                    0.984375),
+                                  : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375),
                     t
                 );
             }),
-            (V.Key.easeInBounce = function(t, e) {
+            (V.Key.easeInBounce = function (t, e) {
                 return V.Key.linear(V.Key.bounce(t), this, e);
             }),
-            (V.Key.easeOutBounce = function(t, e) {
+            (V.Key.easeOutBounce = function (t, e) {
                 return V.Key.linear(V.Key.bounce(t), this, e);
             }),
-            (V.Key.easeInElastic = function(t, e) {
+            (V.Key.easeInElastic = function (t, e) {
                 let i = 1.70158,
                     s = 0,
                     r = 1;
@@ -1210,18 +1045,12 @@ var CABLES = (function(t) {
                         : 1 == (t /= 1)
                         ? (t = 1)
                         : (s || (s = 0.3),
-                          r < Math.abs(1)
-                              ? ((r = 1), (i = s / 4))
-                              : (i = (s / (2 * Math.PI)) * Math.asin(1 / r)),
-                          (t =
-                              -r *
-                                  Math.pow(2, 10 * (t -= 1)) *
-                                  Math.sin(((1 * t - i) * (2 * Math.PI)) / s) +
-                              0)),
+                          r < Math.abs(1) ? ((r = 1), (i = s / 4)) : (i = (s / (2 * Math.PI)) * Math.asin(1 / r)),
+                          (t = -r * Math.pow(2, 10 * (t -= 1)) * Math.sin(((1 * t - i) * (2 * Math.PI)) / s) + 0)),
                     V.Key.linear(t, this, e)
                 );
             }),
-            (V.Key.easeOutElastic = function(t, e) {
+            (V.Key.easeOutElastic = function (t, e) {
                 let i = 1.70158,
                     s = 0,
                     r = 1;
@@ -1231,72 +1060,50 @@ var CABLES = (function(t) {
                         : 1 == (t /= 1)
                         ? (t = 1)
                         : (s || (s = 0.3),
-                          r < Math.abs(1)
-                              ? ((r = 1), (i = s / 4))
-                              : (i = (s / (2 * Math.PI)) * Math.asin(1 / r)),
-                          (t =
-                              r *
-                                  Math.pow(2, -10 * t) *
-                                  Math.sin(((1 * t - i) * (2 * Math.PI)) / s) +
-                              1 +
-                              0)),
+                          r < Math.abs(1) ? ((r = 1), (i = s / 4)) : (i = (s / (2 * Math.PI)) * Math.asin(1 / r)),
+                          (t = r * Math.pow(2, -10 * t) * Math.sin(((1 * t - i) * (2 * Math.PI)) / s) + 1 + 0)),
                     V.Key.linear(t, this, e)
                 );
             }),
-            (V.Key.easeInBack = function(t, e) {
+            (V.Key.easeInBack = function (t, e) {
                 const i = 1.70158;
-                return (
-                    (t = t * t * ((i + 1) * t - i)), V.Key.linear(t, this, e)
-                );
+                return (t = t * t * ((i + 1) * t - i)), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeOutBack = function(t, e) {
+            (V.Key.easeOutBack = function (t, e) {
                 const i = 1.70158;
-                return (
-                    (t = (t = t / 1 - 1) * t * ((i + 1) * t + i) + 1),
-                    V.Key.linear(t, this, e)
-                );
+                return (t = (t = t / 1 - 1) * t * ((i + 1) * t + i) + 1), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeInOutBack = function(t, e) {
+            (V.Key.easeInOutBack = function (t, e) {
                 let i = 1.70158;
                 return (
                     (t =
                         (t /= 0.5) < 1
                             ? t * t * ((1 + (i *= 1.525)) * t - i) * 0.5
-                            : 0.5 *
-                              ((t -= 2) * t * ((1 + (i *= 1.525)) * t + i) +
-                                  2)),
+                            : 0.5 * ((t -= 2) * t * ((1 + (i *= 1.525)) * t + i) + 2)),
                     V.Key.linear(t, this, e)
                 );
             });
-        const Y = function(t) {
+        const Y = function (t) {
             return (t = --t * t * t + 1);
         };
-        V.Key.easeCubicOut = function(t, e) {
+        V.Key.easeCubicOut = function (t, e) {
             return (t = Y(t)), V.Key.linear(t, this, e);
         };
-        const W = function(t) {
-            return (
-                (t *= 2) < 1
-                    ? (t *= 0.5 * t * t)
-                    : (t = 0.5 * ((t -= 2) * t * t + 2)),
-                t
-            );
+        const W = function (t) {
+            return (t *= 2) < 1 ? (t *= 0.5 * t * t) : (t = 0.5 * ((t -= 2) * t * t + 2)), t;
         };
-        (V.Key.easeCubicInOut = function(t, e) {
+        (V.Key.easeCubicInOut = function (t, e) {
             return (t = W(t)), V.Key.linear(t, this, e);
         }),
-            (V.Key.easeSmoothStep = function(t, e) {
+            (V.Key.easeSmoothStep = function (t, e) {
                 const i = Math.max(0, Math.min(1, t));
                 return (t = i * i * (3 - 2 * i)), V.Key.linear(t, this, e);
             }),
-            (V.Key.easeSmootherStep = function(t, e) {
+            (V.Key.easeSmootherStep = function (t, e) {
                 const i = Math.max(0, Math.min(1, (t - 0) / 1));
-                return (
-                    (t = i * i * i * (i * (6 * i - 15) + 10)),
-                    V.Key.linear(t, this, e)
-                );
+                return (t = i * i * i * (i * (6 * i - 15) + 10)), V.Key.linear(t, this, e);
             }),
-            (V.Key.prototype.setEasing = function(t) {
+            (V.Key.prototype.setEasing = function (t) {
                 (this._easing = t),
                     this._easing == k.ANIM.EASING_ABSOLUTE
                         ? (this.ease = V.Key.easeAbsolute)
@@ -1351,20 +1158,16 @@ var CABLES = (function(t) {
                         : this._easing == k.ANIM.EASING_QUINT_INOUT
                         ? (this.ease = V.Key.easeInOutQuint)
                         : this._easing == k.ANIM.EASING_BEZIER
-                        ? ((this._updateBezier = !0),
-                          (this.ease = V.Key.easeBezier))
-                        : ((this._easing = k.ANIM.EASING_LINEAR),
-                          (this.ease = V.Key.easeLinear));
+                        ? ((this._updateBezier = !0), (this.ease = V.Key.easeBezier))
+                        : ((this._easing = k.ANIM.EASING_LINEAR), (this.ease = V.Key.easeLinear));
             }),
-            (V.Key.prototype.trigger = function() {
+            (V.Key.prototype.trigger = function () {
                 this.cb(), (this.cbTriggered = !0);
             }),
-            (V.Key.prototype.setValue = function(t) {
-                (this.value = t),
-                    (this._updateBezier = !0),
-                    null !== this.onChange && this.onChange();
+            (V.Key.prototype.setValue = function (t) {
+                (this.value = t), (this._updateBezier = !0), null !== this.onChange && this.onChange();
             }),
-            (V.Key.prototype.set = function(t) {
+            (V.Key.prototype.set = function (t) {
                 t &&
                     (t.e && this.setEasing(t.e),
                     t.cb && ((this.cb = t.cb), (this.cbTriggered = !1)),
@@ -1376,31 +1179,24 @@ var CABLES = (function(t) {
                         (this._updateBezier = !0)),
                     t.hasOwnProperty('t') && (this.time = t.t),
                     t.hasOwnProperty('time') && (this.time = t.time),
-                    t.hasOwnProperty('v')
-                        ? (this.value = t.v)
-                        : t.hasOwnProperty('value') && (this.value = t.value)),
+                    t.hasOwnProperty('v') ? (this.value = t.v) : t.hasOwnProperty('value') && (this.value = t.value)),
                     null !== this.onChange && this.onChange();
             }),
-            (V.Key.prototype.getSerialized = function() {
+            (V.Key.prototype.getSerialized = function () {
                 const t = {};
                 return (
                     (t.t = this.time),
                     (t.v = this.value),
                     (t.e = this._easing),
                     this._easing == k.ANIM.EASING_BEZIER &&
-                        (t.b = [
-                            this.bezTime,
-                            this.bezValue,
-                            this.bezTimeIn,
-                            this.bezValueIn,
-                        ]),
+                        (t.b = [this.bezTime, this.bezValue, this.bezTimeIn, this.bezValueIn]),
                     t
                 );
             }),
-            (V.Key.prototype.getEasing = function() {
+            (V.Key.prototype.getEasing = function () {
                 return this._easing;
             });
-        const K = function(t) {
+        const K = function (t) {
             (t = t || {}),
                 (this.keys = []),
                 (this.onChange = null),
@@ -1411,60 +1207,46 @@ var CABLES = (function(t) {
                 (this._timesLooped = 0),
                 (this._needsSort = !1);
         };
-        (K.prototype.forceChangeCallback = function() {
+        (K.prototype.forceChangeCallback = function () {
             null !== this.onChange && this.onChange();
         }),
-            (K.prototype.hasEnded = function(t) {
-                return (
-                    0 === this.keys.length ||
-                    this.keys[this.keys.length - 1].time <= t
-                );
+            (K.prototype.hasEnded = function (t) {
+                return 0 === this.keys.length || this.keys[this.keys.length - 1].time <= t;
             }),
-            (K.prototype.isRising = function(t) {
+            (K.prototype.isRising = function (t) {
                 if (this.hasEnded(t)) return !1;
                 const e = this.getKeyIndex(t);
                 return this.keys[e].value < this.keys[e + 1].value;
             }),
-            (K.prototype.clearBefore = function(t) {
+            (K.prototype.clearBefore = function (t) {
                 const e = this.getValue(t),
                     i = this.getKeyIndex(t);
                 this.setValue(t, e), i > 1 && this.keys.splice(0, i);
             }),
-            (K.prototype.clear = function(t) {
+            (K.prototype.clear = function (t) {
                 let e = 0;
                 t && (e = this.getValue(t)),
                     (this.keys.length = 0),
                     t && this.setValue(t, e),
                     null !== this.onChange && this.onChange();
             }),
-            (K.prototype.sortKeys = function() {
-                this.keys.sort(
-                    (t, e) => parseFloat(t.time) - parseFloat(e.time)
-                ),
-                    (this._needsSort = !1);
+            (K.prototype.sortKeys = function () {
+                this.keys.sort((t, e) => parseFloat(t.time) - parseFloat(e.time)), (this._needsSort = !1);
             }),
-            (K.prototype.getLength = function() {
-                return 0 === this.keys.length
-                    ? 0
-                    : this.keys[this.keys.length - 1].time;
+            (K.prototype.getLength = function () {
+                return 0 === this.keys.length ? 0 : this.keys[this.keys.length - 1].time;
             }),
-            (K.prototype.getKeyIndex = function(t) {
+            (K.prototype.getKeyIndex = function (t) {
                 let e = 0;
                 for (let i = 0; i < this.keys.length; i++)
-                    if (
-                        (t >= this.keys[i].time && (e = i),
-                        this.keys[i].time > t)
-                    )
-                        return e;
+                    if ((t >= this.keys[i].time && (e = i), this.keys[i].time > t)) return e;
                 return e;
             }),
-            (K.prototype.setValue = function(t, e, i) {
+            (K.prototype.setValue = function (t, e, i) {
                 let s = !1;
                 for (const r in this.keys)
                     if (this.keys[r].time == t) {
-                        (s = this.keys[r]),
-                            this.keys[r].setValue(e),
-                            (this.keys[r].cb = i);
+                        (s = this.keys[r]), this.keys[r].setValue(e), (this.keys[r].cb = i);
                         break;
                     }
                 s ||
@@ -1479,54 +1261,39 @@ var CABLES = (function(t) {
                     this.onChange && this.onChange(),
                     (this._needsSort = !0);
             }),
-            (K.prototype.getSerialized = function() {
+            (K.prototype.getSerialized = function () {
                 const t = { keys: [] };
                 t.loop = this.loop;
-                for (const e in this.keys)
-                    t.keys.push(this.keys[e].getSerialized());
+                for (const e in this.keys) t.keys.push(this.keys[e].getSerialized());
                 return t;
             }),
-            (K.prototype.getKey = function(t) {
+            (K.prototype.getKey = function (t) {
                 const e = this.getKeyIndex(t);
                 return this.keys[e];
             }),
-            (K.prototype.getNextKey = function(t) {
+            (K.prototype.getNextKey = function (t) {
                 let e = this.getKeyIndex(t) + 1;
-                return (
-                    e >= this.keys.length && (e = this.keys.length - 1),
-                    this.keys[e]
-                );
+                return e >= this.keys.length && (e = this.keys.length - 1), this.keys[e];
             }),
-            (K.prototype.isFinished = function(t) {
-                return (
-                    this.keys.length <= 0 ||
-                    t > this.keys[this.keys.length - 1].time
-                );
+            (K.prototype.isFinished = function (t) {
+                return this.keys.length <= 0 || t > this.keys[this.keys.length - 1].time;
             }),
-            (K.prototype.isStarted = function(t) {
+            (K.prototype.isStarted = function (t) {
                 return !(this.keys.length <= 0) && t >= this.keys[0].time;
             }),
-            (K.prototype.getValue = function(t) {
+            (K.prototype.getValue = function (t) {
                 if (0 === this.keys.length) return 0;
-                if ((this._needsSort && this.sortKeys(), t < this.keys[0].time))
-                    return this.keys[0].value;
+                if ((this._needsSort && this.sortKeys(), t < this.keys[0].time)) return this.keys[0].value;
                 const e = this.keys.length - 1;
                 if (this.loop && t > this.keys[e].time) {
                     t / this.keys[e].time > this._timesLooped &&
                         (this._timesLooped++, this.onLooped && this.onLooped()),
-                        (t =
-                            (t - this.keys[0].time) %
-                            (this.keys[e].time - this.keys[0].time)),
+                        (t = (t - this.keys[0].time) % (this.keys[e].time - this.keys[0].time)),
                         (t += this.keys[0].time);
                 }
                 const i = this.getKeyIndex(t);
                 if (i >= e)
-                    return (
-                        this.keys[e].cb &&
-                            !this.keys[e].cbTriggered &&
-                            this.keys[e].trigger(),
-                        this.keys[e].value
-                    );
+                    return this.keys[e].cb && !this.keys[e].cbTriggered && this.keys[e].trigger(), this.keys[e].value;
                 const s = parseInt(i, 10) + 1,
                     r = this.keys[i],
                     n = this.keys[s];
@@ -1534,13 +1301,12 @@ var CABLES = (function(t) {
                 const o = (t - r.time) / (n.time - r.time);
                 return r.ease || console.log('has no ease', r, n), r.ease(o, n);
             }),
-            (K.prototype.addKey = function(t) {
+            (K.prototype.addKey = function (t) {
                 void 0 === t.time
                     ? d.log('key time undefined, ignoring!')
-                    : (this.keys.push(t),
-                      null !== this.onChange && this.onChange());
+                    : (this.keys.push(t), null !== this.onChange && this.onChange());
             }),
-            (K.prototype.easingFromString = function(t) {
+            (K.prototype.easingFromString = function (t) {
                 return 'linear' == t
                     ? k.ANIM.EASING_LINEAR
                     : 'absolute' == t
@@ -1595,7 +1361,7 @@ var CABLES = (function(t) {
                     ? k.ANIM.EASING_QUINT_INOUT
                     : void 0;
             }),
-            (K.prototype.createPort = function(t, e, i) {
+            (K.prototype.createPort = function (t, e, i) {
                 const s = t.addInPort(
                     new U(t, e, k.OP.OP_PORT_TYPE_VALUE, {
                         display: 'dropdown',
@@ -1605,37 +1371,23 @@ var CABLES = (function(t) {
                 return (
                     s.set('linear'),
                     (s.defaultValue = 'linear'),
-                    (s.onChange = function() {
-                        (this.defaultEasing = this.easingFromString(s.get())),
-                            i && i();
+                    (s.onChange = function () {
+                        (this.defaultEasing = this.easingFromString(s.get())), i && i();
                     }.bind(this)),
                     s
                 );
             }),
-            (K.slerpQuaternion = function(t, e, i, s, r, n) {
+            (K.slerpQuaternion = function (t, e, i, s, r, n) {
                 K.slerpQuaternion.q1 ||
-                    ((K.slerpQuaternion.q1 = quat.create()),
-                    (K.slerpQuaternion.q2 = quat.create()));
+                    ((K.slerpQuaternion.q1 = quat.create()), (K.slerpQuaternion.q2 = quat.create()));
                 const o = i.getKeyIndex(t);
                 let h = o + 1;
                 if ((h >= i.keys.length && (h = i.keys.length - 1), o == h))
-                    quat.set(
-                        e,
-                        i.keys[o].value,
-                        s.keys[o].value,
-                        r.keys[o].value,
-                        n.keys[o].value
-                    );
+                    quat.set(e, i.keys[o].value, s.keys[o].value, r.keys[o].value, n.keys[o].value);
                 else {
                     const a = i.keys[o].time,
                         l = (t - a) / (i.keys[h].time - a);
-                    quat.set(
-                        K.slerpQuaternion.q1,
-                        i.keys[o].value,
-                        s.keys[o].value,
-                        r.keys[o].value,
-                        n.keys[o].value
-                    ),
+                    quat.set(K.slerpQuaternion.q1, i.keys[o].value, s.keys[o].value, r.keys[o].value, n.keys[o].value),
                         quat.set(
                             K.slerpQuaternion.q2,
                             i.keys[h].value,
@@ -1643,18 +1395,13 @@ var CABLES = (function(t) {
                             r.keys[h].value,
                             n.keys[h].value
                         ),
-                        quat.slerp(
-                            e,
-                            K.slerpQuaternion.q1,
-                            K.slerpQuaternion.q2,
-                            l
-                        );
+                        quat.slerp(e, K.slerpQuaternion.q1, K.slerpQuaternion.q2, l);
                 }
                 return e;
             });
         const X = V;
         X.Anim = K;
-        const j = function(t) {
+        const j = function (t) {
             _.apply(this),
                 (this.id = CABLES.uuid()),
                 (this.portIn = null),
@@ -1662,52 +1409,38 @@ var CABLES = (function(t) {
                 (this.scene = t),
                 (this.activityCounter = 0);
         };
-        (j.prototype.setValue = function(t) {
+        (j.prototype.setValue = function (t) {
             void 0 === t ? this._setValue() : this.portIn.set(t);
         }),
-            (j.prototype.activity = function() {
+            (j.prototype.activity = function () {
                 this.activityCounter++;
             }),
-            (j.prototype._setValue = function() {
+            (j.prototype._setValue = function () {
                 if (!this.portOut) return void this.remove();
                 const t = this.portOut.get();
                 t == t &&
-                    (this.portIn.type != k.OP.OP_PORT_TYPE_FUNCTION &&
-                        this.activity(),
-                    (this.portIn.get() !== t || this.portIn.changeAlways) &&
-                        this.portIn.set(t));
+                    (this.portIn.type != k.OP.OP_PORT_TYPE_FUNCTION && this.activity(),
+                    (this.portIn.get() !== t || this.portIn.changeAlways) && this.portIn.set(t));
             }),
-            (j.prototype.getOtherPort = function(t) {
+            (j.prototype.getOtherPort = function (t) {
                 return t == this.portIn ? this.portOut : this.portIn;
             }),
-            (j.prototype.remove = function() {
+            (j.prototype.remove = function () {
                 this.portIn && this.portIn.removeLink(this),
                     this.portOut && this.portOut.removeLink(this),
-                    this.scene &&
-                        this.scene.emitEvent(
-                            'onUnLink',
-                            this.portIn,
-                            this.portOut,
-                            this
-                        ),
+                    this.scene && this.scene.emitEvent('onUnLink', this.portIn, this.portOut, this),
                     !this.portIn ||
-                        (this.portIn.type != k.OP.OP_PORT_TYPE_OBJECT &&
-                            this.portIn.type != k.OP.OP_PORT_TYPE_ARRAY) ||
+                        (this.portIn.type != k.OP.OP_PORT_TYPE_OBJECT && this.portIn.type != k.OP.OP_PORT_TYPE_ARRAY) ||
                         (this.portIn.set(null),
                         this.portIn.links.length > 0 &&
-                            this.portIn.set(
-                                this.portIn.links[0]
-                                    .getOtherPort(this.portIn)
-                                    .get()
-                            )),
+                            this.portIn.set(this.portIn.links[0].getOtherPort(this.portIn).get())),
                     this.portIn && this.portIn.parent._checkLinksNeededToWork(),
-                    this.portOut &&
-                        this.portOut.parent._checkLinksNeededToWork(),
+                    this.portOut && this.portOut.parent._checkLinksNeededToWork(),
                     (this.portIn = null),
                     (this.portOut = null),
                     (this.scene = null);
             }),
-            (j.prototype.link = function(t, e) {
+            (j.prototype.link = function (t, e) {
                 if (!j.canLink(t, e)) return d.log('cannot link ports!'), !1;
                 t.direction == k.PORT.PORT_DIR_IN
                     ? ((this.portIn = t), (this.portOut = e))
@@ -1720,7 +1453,7 @@ var CABLES = (function(t) {
                     t.parent._checkLinksNeededToWork(),
                     e.parent._checkLinksNeededToWork();
             }),
-            (j.prototype.getSerialized = function() {
+            (j.prototype.getSerialized = function () {
                 const t = {};
                 return (
                     (t.portIn = this.portIn.getName()),
@@ -1730,70 +1463,45 @@ var CABLES = (function(t) {
                     t
                 );
             }),
-            (j.canLinkText = function(t, e) {
+            (j.canLinkText = function (t, e) {
                 if (t.direction == e.direction) {
                     let t = '(out)';
-                    return (
-                        e.direction == k.PORT.PORT_DIR_IN && (t = '(in)'),
-                        'can not link: same direction ' + t
-                    );
+                    return e.direction == k.PORT.PORT_DIR_IN && (t = '(in)'), 'can not link: same direction ' + t;
                 }
                 return t.parent == e.parent
                     ? 'can not link: same op'
-                    : t.type != k.OP.OP_PORT_TYPE_DYNAMIC &&
-                      e.type != k.OP.OP_PORT_TYPE_DYNAMIC &&
-                      t.type != e.type
+                    : t.type != k.OP.OP_PORT_TYPE_DYNAMIC && e.type != k.OP.OP_PORT_TYPE_DYNAMIC && t.type != e.type
                     ? 'can not link: different type'
                     : t
                     ? e
-                        ? (t.direction == k.PORT.PORT_DIR_IN &&
-                              t.isAnimated()) ||
+                        ? (t.direction == k.PORT.PORT_DIR_IN && t.isAnimated()) ||
                           (e.direction == k.PORT.PORT_DIR_IN && e.isAnimated())
                             ? 'can not link: is animated'
                             : t.isLinkedTo(e)
                             ? 'ports already linked'
-                            : (t.canLink && !t.canLink(e)) ||
-                              (e.canLink && !e.canLink(t))
+                            : (t.canLink && !t.canLink(e)) || (e.canLink && !e.canLink(t))
                             ? 'Incompatible'
                             : 'can link'
                         : 'can not link: port 2 invalid'
                     : 'can not link: port 1 invalid';
             }),
-            (j.canLink = function(t, e) {
+            (j.canLink = function (t, e) {
                 return (
                     !!t &&
                     !!e &&
-                        (t.direction != k.PORT.PORT_DIR_IN ||
-                            !t.isAnimated()) &&
-                            (e.direction != k.PORT.PORT_DIR_IN ||
-                                !e.isAnimated()) &&
-                                !t.isHidden() &&
-                                    !e.isHidden() &&
-                                    !t.isLinkedTo(e) &&
-                                        t.direction != e.direction &&
-                                            (t.type == e.type ||
-                                                t.type ==
-                                                    k.OP.OP_PORT_TYPE_DYNAMIC ||
-                                                e.type ==
-                                                    k.OP
-                                                        .OP_PORT_TYPE_DYNAMIC) &&
-                                                (t.type ==
-                                                    k.OP.OP_PORT_TYPE_DYNAMIC ||
-                                                    e.type ==
-                                                        k.OP
-                                                            .OP_PORT_TYPE_DYNAMIC ||
-                                                    (t.parent != e.parent &&
-                                                        !(
-                                                            t.canLink &&
-                                                            !t.canLink(e)
-                                                        ) &&
-                                                            !(
-                                                                e.canLink &&
-                                                                !e.canLink(t)
-                                                            )))
+                    (t.direction != k.PORT.PORT_DIR_IN || !t.isAnimated()) &&
+                    (e.direction != k.PORT.PORT_DIR_IN || !e.isAnimated()) &&
+                    !t.isHidden() &&
+                    !e.isHidden() &&
+                    !t.isLinkedTo(e) &&
+                    t.direction != e.direction &&
+                    (t.type == e.type || t.type == k.OP.OP_PORT_TYPE_DYNAMIC || e.type == k.OP.OP_PORT_TYPE_DYNAMIC) &&
+                    (t.type == k.OP.OP_PORT_TYPE_DYNAMIC ||
+                        e.type == k.OP.OP_PORT_TYPE_DYNAMIC ||
+                        (t.parent != e.parent && !(t.canLink && !t.canLink(e)) && !(e.canLink && !e.canLink(t))))
                 );
             });
-        const q = function() {
+        const q = function () {
             if (
                 (_.apply(this),
                 (this.data = {}),
@@ -1814,18 +1522,13 @@ var CABLES = (function(t) {
                 arguments[1])
             ) {
                 if (
-                    ((this._shortOpName = arguments[1].split('.')[
-                        arguments[1].split('.').length - 1
-                    ]),
+                    ((this._shortOpName = arguments[1].split('.')[arguments[1].split('.').length - 1]),
                     this._shortOpName.indexOf(k.OP.OP_VERSION_PREFIX) > 0)
                 ) {
-                    const t = this._shortOpName.split(
-                        k.OP.OP_VERSION_PREFIX
-                    )[1];
+                    const t = this._shortOpName.split(k.OP.OP_VERSION_PREFIX)[1];
                     this._shortOpName = this._shortOpName.substring(
                         0,
-                        this._shortOpName.length -
-                            (k.OP.OP_VERSION_PREFIX + t).length
+                        this._shortOpName.length - (k.OP.OP_VERSION_PREFIX + t).length
                     );
                 }
                 this.uiAttribs.title = this._shortOpName;
@@ -1843,55 +1546,34 @@ var CABLES = (function(t) {
                 (this.init = null);
         };
         {
-            (q.prototype.clearUiAttrib = function(t) {
+            (q.prototype.clearUiAttrib = function (t) {
                 const e = { name: null };
                 this.uiAttrib(e);
             }),
-                (q.prototype.getTitle = function(t) {
+                (q.prototype.getTitle = function (t) {
                     return this.uiAttribs.title || this.name;
                 }),
-                (q.prototype.setTitle = function(t) {
+                (q.prototype.setTitle = function (t) {
                     const e = this.name != t;
-                    (this.name = t),
-                        this.uiAttr({ title: t }),
-                        e && this.fireEvent('onTitleChange', t);
+                    (this.name = t), this.uiAttr({ title: t }), e && this.fireEvent('onTitleChange', t);
                 });
-            const t = function(t) {
+            const t = function (t) {
                 if (t) {
-                    t.error &&
-                        console.warn(
-                            'old ui warning attribute in ' +
-                                this.name +
-                                ', use op.setUiError !'
-                        ),
-                        t.warning &&
-                            console.warn(
-                                'old ui warning attribute in ' +
-                                    this.name +
-                                    ', use op.setUiError !'
-                            ),
-                        t.hint &&
-                            console.warn(
-                                'old ui hint attribute in ' +
-                                    this.name +
-                                    ', use op.setUiError !'
-                            ),
-                        'object' != typeof t &&
-                            console.error('op.uiAttrib attribs are not string'),
+                    t.error && console.warn('old ui warning attribute in ' + this.name + ', use op.setUiError !'),
+                        t.warning && console.warn('old ui warning attribute in ' + this.name + ', use op.setUiError !'),
+                        t.hint && console.warn('old ui hint attribute in ' + this.name + ', use op.setUiError !'),
+                        'object' != typeof t && console.error('op.uiAttrib attribs are not string'),
                         this.uiAttribs || (this.uiAttribs = {});
                     for (const e in t) this.uiAttribs[e] = t[e];
-                    t.title && t.title != this.name && this.setTitle(t.title),
-                        this.fireEvent('onUiAttribsChange', t);
+                    t.title && t.title != this.name && this.setTitle(t.title), this.fireEvent('onUiAttribsChange', t);
                 }
             };
             (q.prototype.setUiAttrib = t),
                 (q.prototype.uiAttr = t),
-                (q.prototype.getName = function() {
-                    return this.uiAttribs.name
-                        ? this.uiAttribs.name
-                        : this.objName.split('.');
+                (q.prototype.getName = function () {
+                    return this.uiAttribs.name ? this.uiAttribs.name : this.objName.split('.');
                 }),
-                (q.prototype.addOutPort = function(t) {
+                (q.prototype.addOutPort = function (t) {
                     return (
                         (t.direction = k.PORT.PORT_DIR_OUT),
                         (t.parent = this),
@@ -1900,23 +1582,20 @@ var CABLES = (function(t) {
                         t
                     );
                 }),
-                (q.prototype.hasDynamicPort = function() {
+                (q.prototype.hasDynamicPort = function () {
                     let t = 0;
                     for (t = 0; t < this.portsIn.length; t++) {
-                        if (this.portsIn[t].type == k.OP.OP_PORT_TYPE_DYNAMIC)
-                            return !0;
+                        if (this.portsIn[t].type == k.OP.OP_PORT_TYPE_DYNAMIC) return !0;
                         if ('dyn' == this.portsIn[t].getName()) return !0;
                     }
                     for (t = 0; t < this.portsOut.length; t++) {
-                        if (this.portsOut[t].type == k.OP.OP_PORT_TYPE_DYNAMIC)
-                            return !0;
+                        if (this.portsOut[t].type == k.OP.OP_PORT_TYPE_DYNAMIC) return !0;
                         if ('dyn' == this.portsOut[t].getName()) return !0;
                     }
                     return !1;
                 }),
-                (q.prototype.addInPort = function(t) {
-                    if (!(t instanceof U))
-                        throw new Error('parameter is not a port!');
+                (q.prototype.addInPort = function (t) {
+                    if (!(t instanceof U)) throw new Error('parameter is not a port!');
                     return (
                         (t.direction = k.PORT.PORT_DIR_IN),
                         (t.parent = this),
@@ -1925,107 +1604,80 @@ var CABLES = (function(t) {
                         t
                     );
                 }),
-                (q.prototype.inFunction = q.prototype.inTrigger = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION)
-                    );
-                    return void 0 !== e && i.set(e), i;
-                }),
-                (q.prototype.inFunctionButton = q.prototype.inTriggerButton = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION, {
-                            display: 'button',
-                        })
-                    );
-                    return void 0 !== e && i.set(e), i;
-                }),
-                (q.prototype.inFunctionButton = q.prototype.inUiTriggerButtons = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION, {
-                            display: 'buttons',
-                        })
-                    );
-                    return void 0 !== e && i.set(e), i;
-                }),
-                (q.prototype.inValueFloat = q.prototype.inValue = q.prototype.inFloat = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE)
-                    );
-                    return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
-                }),
-                (q.prototype.inValueBool = q.prototype.inBool = function(t, e) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
-                            display: 'bool',
-                        })
-                    );
-                    return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
-                }),
-                (q.prototype.inValueString = function(t, e) {
+                (q.prototype.inFunction = q.prototype.inTrigger =
+                    function (t, e) {
+                        const i = this.addInPort(new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION));
+                        return void 0 !== e && i.set(e), i;
+                    }),
+                (q.prototype.inFunctionButton = q.prototype.inTriggerButton =
+                    function (t, e) {
+                        const i = this.addInPort(
+                            new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION, {
+                                display: 'button',
+                            })
+                        );
+                        return void 0 !== e && i.set(e), i;
+                    }),
+                (q.prototype.inFunctionButton = q.prototype.inUiTriggerButtons =
+                    function (t, e) {
+                        const i = this.addInPort(
+                            new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION, {
+                                display: 'buttons',
+                            })
+                        );
+                        return void 0 !== e && i.set(e), i;
+                    }),
+                (q.prototype.inValueFloat =
+                    q.prototype.inValue =
+                    q.prototype.inFloat =
+                        function (t, e) {
+                            const i = this.addInPort(new U(this, t, k.OP.OP_PORT_TYPE_VALUE));
+                            return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
+                        }),
+                (q.prototype.inValueBool = q.prototype.inBool =
+                    function (t, e) {
+                        const i = this.addInPort(
+                            new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
+                                display: 'bool',
+                            })
+                        );
+                        return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
+                    }),
+                (q.prototype.inValueString = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             type: 'string',
                         })
                     );
-                    return (
-                        (i.value = ''),
-                        void 0 !== e && (i.set(e), (i.defaultValue = e)),
-                        i
-                    );
+                    return (i.value = ''), void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
                 }),
-                (q.prototype.inString = function(t, e) {
+                (q.prototype.inString = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
                             type: 'string',
                         })
                     );
-                    return (
-                        (e = e || ''),
-                        (i.value = e),
-                        i.set(e),
-                        (i.defaultValue = e),
-                        i
-                    );
+                    return (e = e || ''), (i.value = e), i.set(e), (i.defaultValue = e), i;
                 }),
-                (q.prototype.inValueText = function(t, e) {
+                (q.prototype.inValueText = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             type: 'string',
                             display: 'text',
                         })
                     );
-                    return (
-                        (i.value = ''),
-                        void 0 !== e && (i.set(e), (i.defaultValue = e)),
-                        i
-                    );
+                    return (i.value = ''), void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
                 }),
-                (q.prototype.inTextarea = function(t, e) {
+                (q.prototype.inTextarea = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
                             type: 'string',
                             display: 'text',
                         })
                     );
-                    return (
-                        (i.value = ''),
-                        void 0 !== e && (i.set(e), (i.defaultValue = e)),
-                        i
-                    );
+                    return (i.value = ''), void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
                 }),
-                (q.prototype.inStringEditor = function(t, e, i, s = !0) {
+                (q.prototype.inStringEditor = function (t, e, i, s = !0) {
                     const r = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
                             type: 'string',
@@ -2034,13 +1686,9 @@ var CABLES = (function(t) {
                             hideFormatButton: s,
                         })
                     );
-                    return (
-                        (r.value = ''),
-                        void 0 !== e && (r.set(e), (r.defaultValue = e)),
-                        r
-                    );
+                    return (r.value = ''), void 0 !== e && (r.set(e), (r.defaultValue = e)), r;
                 }),
-                (q.prototype.inValueEditor = function(t, e, i, s = !0) {
+                (q.prototype.inValueEditor = function (t, e, i, s = !0) {
                     const r = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             type: 'string',
@@ -2049,64 +1697,52 @@ var CABLES = (function(t) {
                             hideFormatButton: s,
                         })
                     );
-                    return (
-                        (r.value = ''),
-                        void 0 !== e && (r.set(e), (r.defaultValue = e)),
-                        r
-                    );
+                    return (r.value = ''), void 0 !== e && (r.set(e), (r.defaultValue = e)), r;
                 }),
-                (q.prototype.inValueSelect = q.prototype.inDropDown = function(
-                    t,
-                    e,
-                    i,
-                    s
-                ) {
-                    let r = null;
-                    if (s) {
-                        const i = new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
-                            display: 'dropdown',
-                            hidePort: !0,
-                            type: 'string',
-                            values: e,
-                        });
-                        r = this.addInPort(i);
-                    } else {
-                        const s = new U(
-                                this,
-                                t + ' index',
-                                k.OP.OP_PORT_TYPE_VALUE,
-                                { increment: 'integer', hideParam: !0 }
-                            ),
-                            n = this.addInPort(s),
-                            o = new B(
-                                this,
-                                t,
-                                k.OP.OP_PORT_TYPE_VALUE,
-                                {
-                                    display: 'dropdown',
-                                    hidePort: !0,
-                                    type: 'string',
-                                    values: e,
-                                },
-                                n
-                            );
-                        if (
-                            ((s.onLinkChanged = function() {
-                                o.setUiAttribs({ greyout: s.isLinked() });
-                            }),
-                            (r = this.addInPort(o)),
-                            void 0 !== i)
-                        ) {
-                            r.set(i);
-                            const t = e.findIndex(t => t == i);
-                            n.setValue(t),
-                                (r.defaultValue = i),
-                                (n.defaultValue = t);
+                (q.prototype.inValueSelect = q.prototype.inDropDown =
+                    function (t, e, i, s) {
+                        let r = null;
+                        if (s) {
+                            const i = new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
+                                display: 'dropdown',
+                                hidePort: !0,
+                                type: 'string',
+                                values: e,
+                            });
+                            r = this.addInPort(i);
+                        } else {
+                            const s = new U(this, t + ' index', k.OP.OP_PORT_TYPE_VALUE, {
+                                    increment: 'integer',
+                                    hideParam: !0,
+                                }),
+                                n = this.addInPort(s),
+                                o = new B(
+                                    this,
+                                    t,
+                                    k.OP.OP_PORT_TYPE_VALUE,
+                                    {
+                                        display: 'dropdown',
+                                        hidePort: !0,
+                                        type: 'string',
+                                        values: e,
+                                    },
+                                    n
+                                );
+                            if (
+                                ((s.onLinkChanged = function () {
+                                    o.setUiAttribs({ greyout: s.isLinked() });
+                                }),
+                                (r = this.addInPort(o)),
+                                void 0 !== i)
+                            ) {
+                                r.set(i);
+                                const t = e.findIndex((t) => t == i);
+                                n.setValue(t), (r.defaultValue = i), (n.defaultValue = t);
+                            }
                         }
-                    }
-                    return r;
-                }),
-                (q.prototype.inSwitch = function(t, e, i, s) {
+                        return r;
+                    }),
+                (q.prototype.inSwitch = function (t, e, i, s) {
                     let r = null;
                     if (s) {
                         const i = new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
@@ -2117,12 +1753,10 @@ var CABLES = (function(t) {
                         });
                         r = this.addInPort(i);
                     } else {
-                        const s = new U(
-                                this,
-                                t + ' index',
-                                k.OP.OP_PORT_TYPE_VALUE,
-                                { increment: 'integer', hideParam: !0 }
-                            ),
+                        const s = new U(this, t + ' index', k.OP.OP_PORT_TYPE_VALUE, {
+                                increment: 'integer',
+                                hideParam: !0,
+                            }),
                             n = this.addInPort(s),
                             o = new L(
                                 this,
@@ -2137,30 +1771,29 @@ var CABLES = (function(t) {
                                 n
                             );
                         if (
-                            ((s.onLinkChanged = function() {
+                            ((s.onLinkChanged = function () {
                                 o.setUiAttribs({ greyout: s.isLinked() });
                             }),
                             (r = this.addInPort(o)),
                             void 0 !== i)
                         ) {
                             r.set(i);
-                            const t = e.findIndex(t => t == i);
-                            n.setValue(t),
-                                (r.defaultValue = i),
-                                (n.defaultValue = t);
+                            const t = e.findIndex((t) => t == i);
+                            n.setValue(t), (r.defaultValue = i), (n.defaultValue = t);
                         }
                     }
                     return r;
                 }),
-                (q.prototype.inValueInt = q.prototype.inInt = function(t, e) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
-                            increment: 'integer',
-                        })
-                    );
-                    return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
-                }),
-                (q.prototype.inFile = function(t, e, i) {
+                (q.prototype.inValueInt = q.prototype.inInt =
+                    function (t, e) {
+                        const i = this.addInPort(
+                            new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
+                                increment: 'integer',
+                            })
+                        );
+                        return void 0 !== e && (i.set(e), (i.defaultValue = e)), i;
+                    }),
+                (q.prototype.inFile = function (t, e, i) {
                     const s = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             display: 'file',
@@ -2170,7 +1803,7 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== i && (s.set(i), (s.defaultValue = i)), s;
                 }),
-                (q.prototype.inUrl = function(t, e, i) {
+                (q.prototype.inUrl = function (t, e, i) {
                     const s = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
                             display: 'file',
@@ -2180,7 +1813,7 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== i && (s.set(i), (s.defaultValue = i)), s;
                 }),
-                (q.prototype.inTexture = function(t, e) {
+                (q.prototype.inTexture = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_OBJECT, {
                             display: 'texture',
@@ -2190,13 +1823,11 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== e && i.set(e), i;
                 }),
-                (q.prototype.inObject = function(t, e, i) {
-                    const s = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_OBJECT, { objType: i })
-                    );
+                (q.prototype.inObject = function (t, e, i) {
+                    const s = this.addInPort(new U(this, t, k.OP.OP_PORT_TYPE_OBJECT, { objType: i }));
                     return void 0 !== e && s.set(e), s;
                 }),
-                (q.prototype.inGradient = function(t, e) {
+                (q.prototype.inGradient = function (t, e) {
                     const i = this.addInPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             display: 'gradient',
@@ -2205,52 +1836,37 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== e && i.set(e), i;
                 }),
-                (q.prototype.inArray = function(t, e) {
-                    const i = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_ARRAY)
-                    );
+                (q.prototype.inArray = function (t, e) {
+                    const i = this.addInPort(new U(this, t, k.OP.OP_PORT_TYPE_ARRAY));
                     return void 0 !== e && i.set(e), i;
                 }),
-                (q.prototype.inValueSlider = q.prototype.inFloatSlider = function(
-                    t,
-                    e,
-                    i,
-                    s
-                ) {
-                    const r = { display: 'range' };
-                    null != i && null != s && ((r.min = i), (r.max = s));
-                    const n = this.addInPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE, r)
-                    );
-                    return void 0 !== e && (n.set(e), (n.defaultValue = e)), n;
-                }),
-                (q.prototype.outFunction = q.prototype.outTrigger = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addOutPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION)
-                    );
-                    return void 0 !== e && i.set(e), i;
-                }),
-                (q.prototype.outValue = q.prototype.outNumber = function(t, e) {
-                    const i = this.addOutPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE)
-                    );
-                    return void 0 !== e && i.set(e), i;
-                }),
-                (q.prototype.outValueBool = q.prototype.outBool = function(
-                    t,
-                    e
-                ) {
-                    const i = this.addOutPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
-                            display: 'bool',
-                        })
-                    );
-                    return void 0 !== e ? i.set(e) : i.set(!1), i;
-                }),
-                (q.prototype.outValueString = function(t, e) {
+                (q.prototype.inValueSlider = q.prototype.inFloatSlider =
+                    function (t, e, i, s) {
+                        const r = { display: 'range' };
+                        null != i && null != s && ((r.min = i), (r.max = s));
+                        const n = this.addInPort(new U(this, t, k.OP.OP_PORT_TYPE_VALUE, r));
+                        return void 0 !== e && (n.set(e), (n.defaultValue = e)), n;
+                    }),
+                (q.prototype.outFunction = q.prototype.outTrigger =
+                    function (t, e) {
+                        const i = this.addOutPort(new U(this, t, k.OP.OP_PORT_TYPE_FUNCTION));
+                        return void 0 !== e && i.set(e), i;
+                    }),
+                (q.prototype.outValue = q.prototype.outNumber =
+                    function (t, e) {
+                        const i = this.addOutPort(new U(this, t, k.OP.OP_PORT_TYPE_VALUE));
+                        return void 0 !== e && i.set(e), i;
+                    }),
+                (q.prototype.outValueBool = q.prototype.outBool =
+                    function (t, e) {
+                        const i = this.addOutPort(
+                            new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
+                                display: 'bool',
+                            })
+                        );
+                        return void 0 !== e ? i.set(e) : i.set(!1), i;
+                    }),
+                (q.prototype.outValueString = function (t, e) {
                     const i = this.addOutPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_VALUE, {
                             type: 'string',
@@ -2258,7 +1874,7 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== e && i.set(e), i;
                 }),
-                (q.prototype.outString = function(t, e) {
+                (q.prototype.outString = function (t, e) {
                     const i = this.addOutPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_STRING, {
                             type: 'string',
@@ -2266,45 +1882,31 @@ var CABLES = (function(t) {
                     );
                     return void 0 !== e ? i.set(e) : i.set(''), i;
                 }),
-                (q.prototype.outObject = function(t, e, i) {
+                (q.prototype.outObject = function (t, e, i) {
                     const s = this.addOutPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_OBJECT, {
                             objType: i || null,
                         })
                     );
-                    return (
-                        void 0 !== e && s.set(e),
-                        (s.ignoreValueSerialize = !0),
-                        s
-                    );
+                    return void 0 !== e && s.set(e), (s.ignoreValueSerialize = !0), s;
                 }),
-                (q.prototype.outArray = function(t, e) {
-                    const i = this.addOutPort(
-                        new U(this, t, k.OP.OP_PORT_TYPE_ARRAY)
-                    );
-                    return (
-                        void 0 !== e && i.set(e),
-                        (i.ignoreValueSerialize = !0),
-                        i
-                    );
+                (q.prototype.outArray = function (t, e) {
+                    const i = this.addOutPort(new U(this, t, k.OP.OP_PORT_TYPE_ARRAY));
+                    return void 0 !== e && i.set(e), (i.ignoreValueSerialize = !0), i;
                 }),
-                (q.prototype.outTexture = function(t, e) {
+                (q.prototype.outTexture = function (t, e) {
                     const i = this.addOutPort(
                         new U(this, t, k.OP.OP_PORT_TYPE_OBJECT, {
                             preview: !0,
                             objType: 'texture',
                         })
                     );
-                    return (
-                        void 0 !== e && i.set(e),
-                        (i.ignoreValueSerialize = !0),
-                        i
-                    );
+                    return void 0 !== e && i.set(e), (i.ignoreValueSerialize = !0), i;
                 }),
-                (q.prototype.inDynamic = function(t, e, i, s) {
+                (q.prototype.inDynamic = function (t, e, i, s) {
                     const r = new U(this, t, k.OP.OP_PORT_TYPE_DYNAMIC, i);
                     return (
-                        (r.shouldLink = function(t, i) {
+                        (r.shouldLink = function (t, i) {
                             if (e && f.isArray(e)) {
                                 for (let s = 0; s < e.length; s++) {
                                     if (t == this && i.type === e[s]) return !0;
@@ -2319,186 +1921,130 @@ var CABLES = (function(t) {
                         r
                     );
                 }),
-                (q.prototype.printInfo = function() {
-                    for (let t = 0; t < this.portsIn.length; t++)
-                        d.log('in: ' + this.portsIn[t].getName());
-                    for (const t in this.portsOut)
-                        d.log('out: ' + this.portsOut[t].getName());
+                (q.prototype.printInfo = function () {
+                    for (let t = 0; t < this.portsIn.length; t++) d.log('in: ' + this.portsIn[t].getName());
+                    for (const t in this.portsOut) d.log('out: ' + this.portsOut[t].getName());
                 }),
-                (q.prototype.getOutChilds = function() {
+                (q.prototype.getOutChilds = function () {
                     const t = [];
                     for (const e in this.portsOut)
                         for (const i in this.portsOut[e].links)
-                            this.portsOut[e].type ==
-                                k.OP.OP_PORT_TYPE_FUNCTION &&
+                            this.portsOut[e].type == k.OP.OP_PORT_TYPE_FUNCTION &&
                                 t.push(this.portsOut[e].links[i].portIn.parent);
                     return t;
                 }),
-                (q.prototype.markChilds = function() {
+                (q.prototype.markChilds = function () {
                     this.marked = !0;
                     for (const t in this.portsOut)
                         for (const e in this.portsOut[t].links)
                             (this.portsOut[t].parent.marked = !0),
-                                this.portsOut[t].links[e].portIn.parent !=
-                                    this &&
-                                    this.portsOut[t].links[
-                                        e
-                                    ].portIn.parent.markChilds();
+                                this.portsOut[t].links[e].portIn.parent != this &&
+                                    this.portsOut[t].links[e].portIn.parent.markChilds();
                 }),
-                (q.prototype.selectChilds = function() {
+                (q.prototype.selectChilds = function () {
                     this.setUiAttrib({ selected: !0 });
                     for (const t in this.portsOut)
                         for (const e in this.portsOut[t].links)
                             this.portsOut[t].parent.setUiAttrib({
                                 selected: !0,
                             }),
-                                this.portsOut[t].links[e].portIn.parent !=
-                                    this &&
-                                    this.portsOut[t].links[
-                                        e
-                                    ].portIn.parent.selectChilds();
+                                this.portsOut[t].links[e].portIn.parent != this &&
+                                    this.portsOut[t].links[e].portIn.parent.selectChilds();
                 }),
-                (q.prototype.deleteChilds = function() {
+                (q.prototype.deleteChilds = function () {
                     const t = [];
                     for (const e in this.portsOut)
                         for (const i in this.portsOut[e].links)
                             this.portsOut[e].links[i].portIn.parent != this &&
-                                (this.portsOut[e].parent != this &&
-                                    t.push(this.portsOut[e].parent),
+                                (this.portsOut[e].parent != this && t.push(this.portsOut[e].parent),
                                 t.push(this.portsOut[e].links[i].portIn.parent),
-                                this.portsOut[e].links[
-                                    i
-                                ].portIn.parent.deleteChilds());
+                                this.portsOut[e].links[i].portIn.parent.deleteChilds());
                     for (const e in t) this.patch.deleteOp(t[e].id);
                 }),
-                (q.prototype.removeLinks = function() {
-                    for (let t = 0; t < this.portsIn.length; t++)
-                        this.portsIn[t].removeLinks();
-                    for (let t = 0; t < this.portsOut.length; t++)
-                        this.portsOut[t].removeLinks();
+                (q.prototype.removeLinks = function () {
+                    for (let t = 0; t < this.portsIn.length; t++) this.portsIn[t].removeLinks();
+                    for (let t = 0; t < this.portsOut.length; t++) this.portsOut[t].removeLinks();
                 }),
-                (q.prototype.countFittingPorts = function(t) {
+                (q.prototype.countFittingPorts = function (t) {
                     let e = 0;
-                    for (const i in this.portsOut)
-                        j.canLink(t, this.portsOut[i]) && e++;
-                    for (const i in this.portsIn)
-                        j.canLink(t, this.portsIn[i]) && e++;
+                    for (const i in this.portsOut) j.canLink(t, this.portsOut[i]) && e++;
+                    for (const i in this.portsIn) j.canLink(t, this.portsIn[i]) && e++;
                     return e;
                 }),
-                (q.prototype.findFittingPort = function(t, e = !1) {
+                (q.prototype.findFittingPort = function (t, e = !1) {
                     if (e) {
-                        for (const e in this.portsIn)
-                            if (j.canLink(t, this.portsIn[e]))
-                                return this.portsIn[e];
-                        for (const e in this.portsOut)
-                            if (j.canLink(t, this.portsOut[e]))
-                                return this.portsOut[e];
+                        for (const e in this.portsIn) if (j.canLink(t, this.portsIn[e])) return this.portsIn[e];
+                        for (const e in this.portsOut) if (j.canLink(t, this.portsOut[e])) return this.portsOut[e];
                     } else {
-                        for (const e in this.portsOut)
-                            if (j.canLink(t, this.portsOut[e]))
-                                return this.portsOut[e];
-                        for (const e in this.portsIn)
-                            if (j.canLink(t, this.portsIn[e]))
-                                return this.portsIn[e];
+                        for (const e in this.portsOut) if (j.canLink(t, this.portsOut[e])) return this.portsOut[e];
+                        for (const e in this.portsIn) if (j.canLink(t, this.portsIn[e])) return this.portsIn[e];
                     }
                 }),
-                (q.prototype.getSerialized = function(t) {
+                (q.prototype.getSerialized = function (t) {
                     const e = {};
                     this.opId && (e.opId = this.opId),
                         (e.objName = this.objName),
                         (e.id = this.id),
                         (e.uiAttribs = this.uiAttribs),
-                        this.uiAttribs.title == this._shortOpName &&
-                            delete this.uiAttribs.title,
+                        this.uiAttribs.title == this._shortOpName && delete this.uiAttribs.title,
                         this.uiAttribs.hasOwnProperty('working') &&
                             1 == this.uiAttribs.working &&
                             delete this.uiAttribs.working,
-                        t &&
-                            this.uiAttribs.hasOwnProperty('uierrors') &&
-                            delete this.uiAttribs.uierrors,
+                        t && this.uiAttribs.hasOwnProperty('uierrors') && delete this.uiAttribs.uierrors,
                         (e.portsIn = []),
                         (e.portsOut = []);
-                    for (let t = 0; t < this.portsIn.length; t++)
-                        e.portsIn.push(this.portsIn[t].getSerialized());
-                    for (const t in this.portsOut)
-                        e.portsOut.push(this.portsOut[t].getSerialized());
+                    for (let t = 0; t < this.portsIn.length; t++) e.portsIn.push(this.portsIn[t].getSerialized());
+                    for (const t in this.portsOut) e.portsOut.push(this.portsOut[t].getSerialized());
                     return e;
                 }),
-                (q.prototype.getFirstOutPortByType = function(t) {
-                    for (const e in this.portsOut)
-                        if (this.portsOut[e].type == t) return this.portsOut[e];
+                (q.prototype.getFirstOutPortByType = function (t) {
+                    for (const e in this.portsOut) if (this.portsOut[e].type == t) return this.portsOut[e];
                 }),
-                (q.prototype.getPort = q.prototype.getPortByName = function(
-                    t,
-                    e
-                ) {
-                    if (e) {
-                        for (let e = 0; e < this.portsIn.length; e++)
-                            if (this.portsIn[e].getName().toLowerCase() == t)
-                                return this.portsIn[e];
-                        for (let e = 0; e < this.portsOut.length; e++)
-                            if (this.portsOut[e].getName().toLowerCase() == t)
-                                return this.portsOut[e];
-                    } else {
-                        for (let e = 0; e < this.portsIn.length; e++)
-                            if (this.portsIn[e].getName() == t)
-                                return this.portsIn[e];
-                        for (let e = 0; e < this.portsOut.length; e++)
-                            if (this.portsOut[e].getName() == t)
-                                return this.portsOut[e];
-                    }
-                }),
-                (q.prototype.getPortById = function(t) {
-                    for (let e = 0; e < this.portsIn.length; e++)
-                        if (this.portsIn[e].id == t) return this.portsIn[e];
+                (q.prototype.getPort = q.prototype.getPortByName =
+                    function (t, e) {
+                        if (e) {
+                            for (let e = 0; e < this.portsIn.length; e++)
+                                if (this.portsIn[e].getName().toLowerCase() == t) return this.portsIn[e];
+                            for (let e = 0; e < this.portsOut.length; e++)
+                                if (this.portsOut[e].getName().toLowerCase() == t) return this.portsOut[e];
+                        } else {
+                            for (let e = 0; e < this.portsIn.length; e++)
+                                if (this.portsIn[e].getName() == t) return this.portsIn[e];
+                            for (let e = 0; e < this.portsOut.length; e++)
+                                if (this.portsOut[e].getName() == t) return this.portsOut[e];
+                        }
+                    }),
+                (q.prototype.getPortById = function (t) {
+                    for (let e = 0; e < this.portsIn.length; e++) if (this.portsIn[e].id == t) return this.portsIn[e];
                     for (let e = 0; e < this.portsOut.length; e++)
                         if (this.portsOut[e].id == t) return this.portsOut[e];
                 }),
-                (q.prototype.updateAnims = function() {
-                    for (let t = 0; t < this.portsIn.length; t++)
-                        this.portsIn[t].updateAnim();
+                (q.prototype.updateAnims = function () {
+                    for (let t = 0; t < this.portsIn.length; t++) this.portsIn[t].updateAnim();
                 }),
-                (q.prototype.log = function() {
+                (q.prototype.log = function () {
                     if (this.patch.silent) return;
                     const t = ['[op ' + this._shortOpName + ']'];
-                    t.push.apply(t, arguments),
-                        Function.prototype.apply.apply(console.log, [
-                            console,
-                            t,
-                        ]);
+                    t.push.apply(t, arguments), Function.prototype.apply.apply(console.log, [console, t]);
                 }),
-                (q.prototype.error = function() {
+                (q.prototype.error = function () {
                     if (this.patch.silent) return;
                     const t = ['[op ' + this._shortOpName + ']'];
-                    t.push.apply(t, arguments),
-                        Function.prototype.apply.apply(console.error, [
-                            console,
-                            t,
-                        ]);
+                    t.push.apply(t, arguments), Function.prototype.apply.apply(console.error, [console, t]);
                 }),
-                (q.prototype.warn = function() {
+                (q.prototype.warn = function () {
                     if (this.patch.silent) return;
                     const t = ['[op ' + this._shortOpName + ']'];
-                    t.push.apply(t, arguments),
-                        Function.prototype.apply.apply(console.warn, [
-                            console,
-                            t,
-                        ]);
+                    t.push.apply(t, arguments), Function.prototype.apply.apply(console.warn, [console, t]);
                 }),
-                (q.prototype.unLink = function() {
-                    for (let t = 0; t < this.portsOut.length; t++)
-                        this.portsOut[t].removeLinks();
-                    for (let t = 0; t < this.portsIn.length; t++)
-                        this.portsIn[t].removeLinks();
+                (q.prototype.unLink = function () {
+                    for (let t = 0; t < this.portsOut.length; t++) this.portsOut[t].removeLinks();
+                    for (let t = 0; t < this.portsIn.length; t++) this.portsIn[t].removeLinks();
                 }),
                 (q.unLinkTempReLinkP1 = null),
                 (q.unLinkTempReLinkP2 = null),
-                (q.prototype.undoUnLinkTemporary = function() {
-                    if (
-                        (this.shakeLink && this.shakeLink.remove(),
-                        (this.shakeLink = null),
-                        this.oldLinks)
-                    ) {
+                (q.prototype.undoUnLinkTemporary = function () {
+                    if ((this.shakeLink && this.shakeLink.remove(), (this.shakeLink = null), this.oldLinks)) {
                         for (let t = 0; t < this.oldLinks.length; t++)
                             this.patch.link(
                                 this.oldLinks[t].in.parent,
@@ -2508,10 +2054,9 @@ var CABLES = (function(t) {
                             );
                         this.oldLinks.length = 0;
                     }
-                    (q.unLinkTempReLinkP1 = null),
-                        (q.unLinkTempReLinkP2 = null);
+                    (q.unLinkTempReLinkP1 = null), (q.unLinkTempReLinkP2 = null);
                 }),
-                (q.prototype.unLinkTemporary = function() {
+                (q.prototype.unLinkTemporary = function () {
                     let t = 0;
                     (this.shakeLink = null),
                         (this.oldLinks = []),
@@ -2519,14 +2064,9 @@ var CABLES = (function(t) {
                             this.portsIn[0].isLinked() &&
                             this.portsOut.length > 0 &&
                             this.portsOut[0].isLinked() &&
-                            this.portsIn[0].getType() ==
-                                this.portsOut[0].getType() &&
-                            ((q.unLinkTempReLinkP1 = this.portsIn[0].links[0].getOtherPort(
-                                this.portsIn[0]
-                            )),
-                            (q.unLinkTempReLinkP2 = this.portsOut[0].links[0].getOtherPort(
-                                this.portsOut[0]
-                            )));
+                            this.portsIn[0].getType() == this.portsOut[0].getType() &&
+                            ((q.unLinkTempReLinkP1 = this.portsIn[0].links[0].getOtherPort(this.portsIn[0])),
+                            (q.unLinkTempReLinkP2 = this.portsOut[0].links[0].getOtherPort(this.portsOut[0])));
                     for (let e = 0; e < this.portsIn.length; e++)
                         for (t = 0; t < this.portsIn[e].links.length; t++)
                             this.oldLinks.push({
@@ -2549,51 +2089,33 @@ var CABLES = (function(t) {
                                 q.unLinkTempReLinkP2.getName()
                             ));
                 }),
-                (q.prototype.profile = function(t) {
+                (q.prototype.profile = function (t) {
                     for (let t = 0; t < this.portsIn.length; t++)
-                        (this.portsIn[t]._onTriggered = this.portsIn[
-                            t
-                        ]._onTriggeredProfiling),
-                            (this.portsIn[t].set = this.portsIn[
-                                t
-                            ]._onSetProfiling);
+                        (this.portsIn[t]._onTriggered = this.portsIn[t]._onTriggeredProfiling),
+                            (this.portsIn[t].set = this.portsIn[t]._onSetProfiling);
                 }),
-                (q.prototype.findParent = function(t) {
+                (q.prototype.findParent = function (t) {
                     for (let e = 0; e < this.portsIn.length; e++)
                         if (this.portsIn[e].isLinked()) {
-                            if (
-                                this.portsIn[e].links[0].portOut.parent
-                                    .objName == t
-                            )
+                            if (this.portsIn[e].links[0].portOut.parent.objName == t)
                                 return this.portsIn[e].links[0].portOut.parent;
                             let i = null;
-                            if (
-                                ((i = this.portsIn[
-                                    e
-                                ].links[0].portOut.parent.findParent(t)),
-                                i)
-                            )
-                                return i;
+                            if (((i = this.portsIn[e].links[0].portOut.parent.findParent(t)), i)) return i;
                         }
                     return null;
                 }),
-                (q.prototype.cleanUp = function() {
+                (q.prototype.cleanUp = function () {
                     if (this._instances) {
                         for (let t = 0; t < this._instances.length; t++)
-                            this._instances[t].onDelete &&
-                                this._instances[t].onDelete();
+                            this._instances[t].onDelete && this._instances[t].onDelete();
                         this._instances.length = 0;
                     }
                 }),
-                (q.prototype.instanced = function(t) {
+                (q.prototype.instanced = function (t) {
                     if (0 === this.patch.instancing.numCycles()) return !1;
                     let e = 0,
                         i = 0;
-                    if (
-                        !this._instances ||
-                        this._instances.length !=
-                            this.patch.instancing.numCycles()
-                    ) {
+                    if (!this._instances || this._instances.length != this.patch.instancing.numCycles()) {
                         for (
                             this._instances || (this._instances = []),
                                 d.log(
@@ -2607,68 +2129,47 @@ var CABLES = (function(t) {
                             e < this._instances.length;
                             e++
                         ) {
-                            (this._instances[e] = this.patch.createOp(
-                                this.objName,
-                                !0
-                            )),
-                                (this._instances[e].instanced = function() {
+                            (this._instances[e] = this.patch.createOp(this.objName, !0)),
+                                (this._instances[e].instanced = function () {
                                     return !1;
                                 }),
                                 this._instances[e].uiAttr(this.uiAttribs);
                             for (let t = 0; t < this.portsOut.length; t++)
-                                this.portsOut[t].type ==
-                                    k.OP.OP_PORT_TYPE_FUNCTION &&
-                                    (this._instances[e].getPortByName(
-                                        this.portsOut[t].name
-                                    ).trigger = this.portsOut[t].trigger.bind(
-                                        this.portsOut[t]
-                                    ));
+                                this.portsOut[t].type == k.OP.OP_PORT_TYPE_FUNCTION &&
+                                    (this._instances[e].getPortByName(this.portsOut[t].name).trigger = this.portsOut[
+                                        t
+                                    ].trigger.bind(this.portsOut[t]));
                         }
                         for (i = 0; i < this.portsIn.length; i++)
-                            (this.portsIn[i].onChange = null),
-                                (this.portsIn[i].onValueChanged = null);
+                            (this.portsIn[i].onChange = null), (this.portsIn[i].onValueChanged = null);
                     }
                     for (i = 0; i < this.portsIn.length; i++)
                         (this.portsIn[i].type != k.OP.OP_PORT_TYPE_VALUE &&
                             this.portsIn[i].type != k.OP.OP_PORT_TYPE_ARRAY) ||
-                            this._instances[
-                                this.patch.instancing.index()
-                            ].portsIn[i].set(this.portsIn[i].get()),
+                            this._instances[this.patch.instancing.index()].portsIn[i].set(this.portsIn[i].get()),
                             this.portsIn[i].type,
                             k.OP.OP_PORT_TYPE_FUNCTION;
                     for (i = 0; i < this.portsOut.length; i++)
                         this.portsOut[i].type == k.OP.OP_PORT_TYPE_VALUE &&
-                            this.portsOut[i].set(
-                                this._instances[
-                                    this.patch.instancing.index()
-                                ].portsOut[i].get()
-                            );
+                            this.portsOut[i].set(this._instances[this.patch.instancing.index()].portsOut[i].get());
                     return !0;
                 }),
-                (q.prototype.initInstancable = function() {}),
-                (q.prototype.setValues = function(t) {
+                (q.prototype.initInstancable = function () {}),
+                (q.prototype.setValues = function (t) {
                     for (const e in t) {
                         const i = this.getPortByName(e);
-                        i
-                            ? i.set(t[e])
-                            : d.log('op.setValues: port not found:', e);
+                        i ? i.set(t[e]) : d.log('op.setValues: port not found:', e);
                     }
                 }),
-                (q.prototype.setUiError = function(t, e, i) {
+                (q.prototype.setUiError = function (t, e, i) {
                     if (!e && !this.hasUiErrors) return;
                     if (!e && !this._uiErrors.hasOwnProperty(t)) return;
-                    if (
-                        this._uiErrors.hasOwnProperty(t) &&
-                        this._uiErrors[t].txt == e
-                    )
-                        return;
-                    t.indexOf(' ') > -1 &&
-                        console.warn('setuierror id cant have spaces!'),
+                    if (this._uiErrors.hasOwnProperty(t) && this._uiErrors[t].txt == e) return;
+                    t.indexOf(' ') > -1 && console.warn('setuierror id cant have spaces!'),
                         !e && this._uiErrors.hasOwnProperty(t)
                             ? delete this._uiErrors[t]
                             : !e ||
-                              (this._uiErrors.hasOwnProperty(t) &&
-                                  this._uiErrors[t].txt == e) ||
+                              (this._uiErrors.hasOwnProperty(t) && this._uiErrors[t].txt == e) ||
                               (null == i && (i = 2),
                               (this._uiErrors[t] = {
                                   txt: e,
@@ -2677,72 +2178,56 @@ var CABLES = (function(t) {
                               }));
                     const s = [];
                     for (const t in this._uiErrors) s.push(this._uiErrors[t]);
-                    this.uiAttr({ uierrors: s }),
-                        (this.hasUiErrors = Object.keys(this._uiErrors).length);
+                    this.uiAttr({ uierrors: s }), (this.hasUiErrors = Object.keys(this._uiErrors).length);
                 }),
-                (q.prototype.setError = function(t, e) {
-                    if (
-                        (console.warn(
-                            'old error message op.error() - use op.setUiError()'
-                        ),
-                        void 0 === e)
-                    )
+                (q.prototype.setError = function (t, e) {
+                    if ((console.warn('old error message op.error() - use op.setUiError()'), void 0 === e))
                         this.uiAttr({ error: t });
                     else if (this._uiErrors[t] != e) {
                         (this._uiErrors[t] = e), e || delete this._uiErrors[t];
                         const i = [];
-                        for (const t in this._uiErrors)
-                            i.push(this._uiErrors[t]);
+                        for (const t in this._uiErrors) i.push(this._uiErrors[t]);
                         this.uiAttr({ errors: i }), console.log(i);
                     }
                 }),
-                (q.prototype.addListener = q.prototype.addEventListener = function(
-                    t,
-                    e
-                ) {
-                    this._eventCallbacks[t]
-                        ? this._eventCallbacks[t].push(e)
-                        : (this._eventCallbacks[t] = [e]);
-                }),
-                (q.prototype.hasEventListener = function(t, e) {
+                (q.prototype.addListener = q.prototype.addEventListener =
+                    function (t, e) {
+                        this._eventCallbacks[t] ? this._eventCallbacks[t].push(e) : (this._eventCallbacks[t] = [e]);
+                    }),
+                (q.prototype.hasEventListener = function (t, e) {
                     if (t && e) {
                         if (this._eventCallbacks[t]) {
                             return -1 != this._eventCallbacks[t].indexOf(e);
                         }
                     } else d.log('hasListener: missing parameters');
                 }),
-                (q.prototype.removeEventListener = function(t, e) {
+                (q.prototype.removeEventListener = function (t, e) {
                     if (this._eventCallbacks[t]) {
                         const i = this._eventCallbacks[t].indexOf(e);
-                        -1 == i
-                            ? d.log('eventlistener ' + t + ' not found...')
-                            : this._eventCallbacks[t].slice(i);
+                        -1 == i ? d.log('eventlistener ' + t + ' not found...') : this._eventCallbacks[t].slice(i);
                     }
                 }),
-                (q.prototype.fireEvent = function(t, e) {
+                (q.prototype.fireEvent = function (t, e) {
                     if (this._eventCallbacks[t])
                         for (let i = 0; i < this._eventCallbacks[t].length; i++)
-                            this._eventCallbacks[t][i] &&
-                                this._eventCallbacks[t][i].cb(e);
-                    this.onUiAttrChange &&
-                        'onUiAttribsChange' == t &&
-                        this.onUiAttrChange(e);
+                            this._eventCallbacks[t][i] && this._eventCallbacks[t][i].cb(e);
+                    this.onUiAttrChange && 'onUiAttribsChange' == t && this.onUiAttrChange(e);
                 }),
-                (q.prototype.setEnabled = function(t) {
+                (q.prototype.setEnabled = function (t) {
                     (this.enabled = t), this.fireEvent('onEnabledChange', t);
                 }),
-                (q.prototype.setPortGroup = function(t, e) {
+                (q.prototype.setPortGroup = function (t, e) {
                     for (let i = 0; i < e.length; i++)
                         e[i] && e[i].setUiAttribs
                             ? e[i].setUiAttribs({ group: t })
                             : console.error('setPortGroup: invalid port!');
                 }),
-                (q.prototype.setUiAxisPorts = function(t, e, i) {
+                (q.prototype.setUiAxisPorts = function (t, e, i) {
                     t && t.setUiAttribs({ axis: 'X' }),
                         e && e.setUiAttribs({ axis: 'Y' }),
                         i && i.setUiAttribs({ axis: 'Z' });
                 }),
-                (q.prototype.removePort = function(t) {
+                (q.prototype.removePort = function (t) {
                     for (let e = 0; e < this.portsIn.length; e++)
                         if (this.portsIn[e] == t)
                             return (
@@ -2751,42 +2236,34 @@ var CABLES = (function(t) {
                                 void this.fireEvent('onPortRemoved', {})
                             );
                 }),
-                (q.prototype._checkLinksNeededToWork = function() {}),
-                (q.prototype.toWorkNeedsParent = function(t) {
+                (q.prototype._checkLinksNeededToWork = function () {}),
+                (q.prototype.toWorkNeedsParent = function (t) {
                     this.patch.isEditorMode() && (this._needsParentOp = t);
                 }),
-                (q.prototype.toWorkPortsNeedToBeLinked = function() {
+                (q.prototype.toWorkPortsNeedToBeLinked = function () {
                     if (this.patch.isEditorMode())
                         for (let t = 0; t < arguments.length; t++)
-                            -1 ==
-                                this._needsLinkedToWork.indexOf(arguments[t]) &&
+                            -1 == this._needsLinkedToWork.indexOf(arguments[t]) &&
                                 this._needsLinkedToWork.push(arguments[t]);
                 }),
-                (q.prototype.toWorkPortsNeedToBeLinkedReset = function() {
+                (q.prototype.toWorkPortsNeedToBeLinkedReset = function () {
                     this.patch.isEditorMode() &&
                         ((this._needsLinkedToWork.length = 0),
-                        this.checkLinkTimeWarnings &&
-                            this.checkLinkTimeWarnings());
+                        this.checkLinkTimeWarnings && this.checkLinkTimeWarnings());
                 }),
-                (q.prototype.initVarPorts = function() {
+                (q.prototype.initVarPorts = function () {
                     for (let t = 0; t < this.portsIn.length; t++)
                         this.portsIn[t].getVariableName() &&
-                            this.portsIn[t].setVariable(
-                                this.portsIn[t].getVariableName()
-                            );
+                            this.portsIn[t].setVariable(this.portsIn[t].getVariableName());
                 }),
-                (q.prototype.refreshParams = function() {
-                    this.patch &&
-                        this.patch.isEditorMode() &&
-                        this.isCurrentUiOp() &&
-                        gui.opParams.show(this);
+                (q.prototype.refreshParams = function () {
+                    this.patch && this.patch.isEditorMode() && this.isCurrentUiOp() && gui.opParams.show(this);
                 }),
-                (q.prototype.isCurrentUiOp = function() {
-                    if (this.patch.isEditorMode())
-                        return gui.patchView.isCurrentOp(this);
+                (q.prototype.isCurrentUiOp = function () {
+                    if (this.patch.isEditorMode()) return gui.patchView.isCurrentOp(this);
                 });
         }
-        (q.getNamespaceClassName = function(t) {
+        (q.getNamespaceClassName = function (t) {
             return t
                 ? t.startsWith('Ops.Gl')
                     ? 'gl'
@@ -2803,7 +2280,7 @@ var CABLES = (function(t) {
                     : 'default'
                 : 'default';
         }),
-            (q.isSubpatchOp = function(t) {
+            (q.isSubpatchOp = function (t) {
                 return 'Ops.Ui.Patch' == t || 'Ops.Ui.SubPatch' == t;
             });
         const Q = new (class {
@@ -2855,7 +2332,7 @@ var CABLES = (function(t) {
                         (this.profileMeshNumElements = 0);
                 }
             })(),
-            J = function(t, e) {
+            J = function (t, e) {
                 if (!t) throw new Error('no cgl');
                 (this._cgl = t),
                     (this.tex = this._cgl.gl.createTexture()),
@@ -2878,37 +2355,33 @@ var CABLES = (function(t) {
                     e
                         ? ((this.name = e.name || this.name),
                           e.isDepthTexture && (this.textureType = J.TYPE_DEPTH),
-                          e.isFloatingPointTexture &&
-                              (this.textureType = J.TYPE_FLOAT),
-                          'textureType' in e &&
-                              (this.textureType = e.textureType),
+                          e.isFloatingPointTexture && (this.textureType = J.TYPE_FLOAT),
+                          'textureType' in e && (this.textureType = e.textureType),
                           'filter' in e && (this.filter = e.filter),
                           'wrap' in e && (this.wrap = e.wrap),
-                          'unpackAlpha' in e &&
-                              (this.unpackAlpha = e.unpackAlpha),
+                          'unpackAlpha' in e && (this.unpackAlpha = e.unpackAlpha),
                           'flip' in e && (this.flip = e.flip),
                           'shadowMap' in e && (this.shadowMap = e.shadowMap),
-                          'anisotropic' in e &&
-                              (this.anisotropic = e.anisotropic))
+                          'anisotropic' in e && (this.anisotropic = e.anisotropic))
                         : (e = {}),
                     e.width || (e.width = 8),
                     e.height || (e.height = 8),
                     Q.profileTextureNew++,
                     this.setSize(e.width, e.height);
             };
-        (J.prototype.compareSettings = function(t) {
+        (J.prototype.compareSettings = function (t) {
             return (
                 !!t &&
                 t.width == this.width &&
-                    t.height == this.height &&
-                    t.filter == this.filter &&
-                    t.wrap == this.wrap &&
-                    t.textureType == this.textureType &&
-                    t.unpackAlpha == this.unpackAlpha &&
-                    t.flip == this.flip
+                t.height == this.height &&
+                t.filter == this.filter &&
+                t.wrap == this.wrap &&
+                t.textureType == this.textureType &&
+                t.unpackAlpha == this.unpackAlpha &&
+                t.flip == this.flip
             );
         }),
-            (J.prototype.clone = function() {
+            (J.prototype.clone = function () {
                 const t = new J(this._cgl, {
                     name: this.name,
                     filter: this.filter,
@@ -2921,27 +2394,16 @@ var CABLES = (function(t) {
                 });
                 return (
                     this.compareSettings(t) ||
-                        (console.error(
-                            'Cloned texture settings do not compare!'
-                        ),
-                        d.log(this),
-                        d.log(t)),
+                        (console.error('Cloned texture settings do not compare!'), d.log(this), d.log(t)),
                     t
                 );
             }),
-            (J.prototype.setSize = function(t, e) {
+            (J.prototype.setSize = function (t, e) {
                 if (
                     ((t != t || t <= 0 || !t) && (t = 8),
                     (e != e || e <= 0 || !e) && (e = 8),
                     (t > this._cgl.maxTexSize || e > this._cgl.maxTexSize) &&
-                        console.error(
-                            'texture size too big! ' +
-                                t +
-                                'x' +
-                                e +
-                                ' / max: ' +
-                                this._cgl.maxTexSize
-                        ),
+                        console.error('texture size too big! ' + t + 'x' + e + ' / max: ' + this._cgl.maxTexSize),
                     (t = Math.min(t, this._cgl.maxTexSize)),
                     (e = Math.min(e, this._cgl.maxTexSize)),
                     (t = Math.floor(t)),
@@ -2966,13 +2428,8 @@ var CABLES = (function(t) {
                 )
                     if (1 == this._cgl.glVersion)
                         if (this._cgl.glUseHalfFloatTex) {
-                            const i = this._cgl.gl.getExtension(
-                                'OES_texture_half_float'
-                            );
-                            if (1 == this._cgl.glVersion && !i)
-                                throw new Error(
-                                    'no half float texture extension'
-                                );
+                            const i = this._cgl.gl.getExtension('OES_texture_half_float');
+                            if (1 == this._cgl.glVersion && !i) throw new Error('no half float texture extension');
                             this._cgl.gl.texImage2D(
                                 this.texTarget,
                                 0,
@@ -3050,12 +2507,11 @@ var CABLES = (function(t) {
                         this._cgl.gl.UNSIGNED_BYTE,
                         null
                     );
-                this._cgl.printError('cgltex') &&
-                    (this.printInfo(), console.log(new Error().stack)),
+                this._cgl.printError('cgltex') && (this.printInfo(), console.log(new Error().stack)),
                     this.updateMipMap(),
                     this._cgl.gl.bindTexture(this.texTarget, null);
             }),
-            (J.prototype.initFromData = function(t, e, i, s, r) {
+            (J.prototype.initFromData = function (t, e, i, s, r) {
                 (this.filter = s),
                     (this.wrap = r),
                     null == s && (this.filter = J.FILTER_LINEAR),
@@ -3079,40 +2535,25 @@ var CABLES = (function(t) {
                     this.updateMipMap(),
                     this._cgl.gl.bindTexture(this.texTarget, null);
             }),
-            (J.prototype.updateMipMap = function() {
+            (J.prototype.updateMipMap = function () {
                 (2 != this._cgl.glVersion && !this.isPowerOfTwo()) ||
                     this.filter != J.FILTER_MIPMAP ||
-                    (this._cgl.gl.generateMipmap(this.texTarget),
-                    Q.profileGenMipMap++);
+                    (this._cgl.gl.generateMipmap(this.texTarget), Q.profileGenMipMap++);
             }),
-            (J.prototype.initTexture = function(t, e) {
+            (J.prototype.initTexture = function (t, e) {
                 this._cgl.checkFrameStarted('texture inittexture'),
                     (this._fromData = !1),
-                    this._cgl.gl.pixelStorei(
-                        this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,
-                        this.unpackAlpha
-                    ),
+                    this._cgl.gl.pixelStorei(this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, this.unpackAlpha),
                     t.width && (this.width = t.width),
                     t.height && (this.height = t.height),
                     e && (this.filter = e),
                     t.width > this._cgl.maxTexSize &&
-                        console.error(
-                            '[cgl_texture] texture size to big!!!',
-                            t.width,
-                            this._cgl.maxTexSize
-                        ),
+                        console.error('[cgl_texture] texture size to big!!!', t.width, this._cgl.maxTexSize),
                     t.height > this._cgl.maxTexSize &&
-                        console.error(
-                            '[cgl_texture] texture size to big!!!',
-                            t.height,
-                            this._cgl.maxTexSize
-                        ),
+                        console.error('[cgl_texture] texture size to big!!!', t.height, this._cgl.maxTexSize),
                     this._cgl.gl.bindTexture(this.texTarget, this.tex),
                     (this.flipped = !this.flip),
-                    this._cgl.gl.pixelStorei(
-                        this._cgl.gl.UNPACK_FLIP_Y_WEBGL,
-                        this.flipped
-                    ),
+                    this._cgl.gl.pixelStorei(this._cgl.gl.UNPACK_FLIP_Y_WEBGL, this.flipped),
                     this._cgl.gl.texImage2D(
                         this.texTarget,
                         0,
@@ -3124,12 +2565,9 @@ var CABLES = (function(t) {
                     this._setFilter(),
                     this.updateMipMap(),
                     this._cgl.gl.bindTexture(this.texTarget, null),
-                    this._cgl.gl.pixelStorei(
-                        this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,
-                        !1
-                    );
+                    this._cgl.gl.pixelStorei(this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !1);
             }),
-            (J.prototype.delete = function() {
+            (J.prototype.delete = function () {
                 this.loading
                     ? setTimeout(this.delete.bind(this), 50)
                     : ((this.width = 0),
@@ -3137,30 +2575,27 @@ var CABLES = (function(t) {
                       Q.profileTextureDelete++,
                       this._cgl.gl.deleteTexture(this.tex));
             }),
-            (J.prototype.isPowerOfTwo = function() {
-                return (
-                    J.isPowerOfTwo(this.width) && J.isPowerOfTwo(this.height)
-                );
+            (J.prototype.isPowerOfTwo = function () {
+                return J.isPowerOfTwo(this.width) && J.isPowerOfTwo(this.height);
             }),
-            (J.prototype.printInfo = function() {
+            (J.prototype.printInfo = function () {
                 d.log(this.getInfo());
             }),
-            (J.prototype.getInfoReadable = function() {
+            (J.prototype.getInfoReadable = function () {
                 const t = this.getInfo();
                 let e = '';
                 t.name = t.name.substr(0, t.name.indexOf('?rnd='));
                 for (const i in t) e += '* ' + i + ':  **' + t[i] + '**\n';
                 return e;
             }),
-            (J.prototype.getInfo = function() {
+            (J.prototype.getInfo = function () {
                 const t = {};
                 (t.name = this.name),
                     (t['power of two'] = this.isPowerOfTwo()),
                     (t.size = this.width + ' x ' + this.height);
                 let e = this.texTarget;
                 return (
-                    this.texTarget == this._cgl.gl.TEXTURE_2D &&
-                        (e = 'TEXTURE_2D'),
+                    this.texTarget == this._cgl.gl.TEXTURE_2D && (e = 'TEXTURE_2D'),
                     (t.target = e),
                     (t.unpackAlpha = this.unpackAlpha),
                     this.textureType == J.TYPE_FLOAT
@@ -3187,13 +2622,10 @@ var CABLES = (function(t) {
                     t
                 );
             }),
-            (J.prototype._setFilter = function() {
+            (J.prototype._setFilter = function () {
                 if (
                     (this._fromData ||
-                        this._cgl.gl.pixelStorei(
-                            this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,
-                            this.unpackAlpha
-                        ),
+                        this._cgl.gl.pixelStorei(this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, this.unpackAlpha),
                     this.shadowMap &&
                         (d.log('shadowmap tex'),
                         this._cgl.gl.texParameteri(
@@ -3208,9 +2640,7 @@ var CABLES = (function(t) {
                         )),
                     this.textureType == J.TYPE_FLOAT &&
                         this.filter == J.FILTER_MIPMAP &&
-                        (d.log(
-                            'texture: HDR and mipmap filtering at the same time is not possible'
-                        ),
+                        (d.log('texture: HDR and mipmap filtering at the same time is not possible'),
                         (this.filter = J.FILTER_LINEAR),
                         d.stack()),
                     1 != this._cgl.glVersion || this.isPowerOfTwo())
@@ -3274,11 +2704,10 @@ var CABLES = (function(t) {
                             );
                     else {
                         if (this.filter != J.FILTER_MIPMAP)
-                            throw (d.log(
-                                'unknown texture filter!',
-                                this.filter
-                            ),
-                            new Error('unknown texture filter!' + this.filter));
+                            throw (
+                                (d.log('unknown texture filter!', this.filter),
+                                new Error('unknown texture filter!' + this.filter))
+                            );
                         this._cgl.gl.texParameteri(
                             this.texTarget,
                             this._cgl.gl.TEXTURE_MAG_FILTER,
@@ -3291,13 +2720,9 @@ var CABLES = (function(t) {
                             );
                     }
                     if (this.anisotropic) {
-                        const t = this._cgl.gl.getExtension(
-                            'EXT_texture_filter_anisotropic'
-                        );
+                        const t = this._cgl.gl.getExtension('EXT_texture_filter_anisotropic');
                         if (t) {
-                            const e = this._cgl.gl.getParameter(
-                                t.MAX_TEXTURE_MAX_ANISOTROPY_EXT
-                            );
+                            const e = this._cgl.gl.getParameter(t.MAX_TEXTURE_MAX_ANISOTROPY_EXT);
                             this._cgl.gl.texParameterf(
                                 this._cgl.gl.TEXTURE_2D,
                                 t.TEXTURE_MAX_ANISOTROPY_EXT,
@@ -3306,11 +2731,7 @@ var CABLES = (function(t) {
                         }
                     }
                 } else
-                    this._cgl.gl.texParameteri(
-                        this.texTarget,
-                        this._cgl.gl.TEXTURE_MAG_FILTER,
-                        this._cgl.gl.NEAREST
-                    ),
+                    this._cgl.gl.texParameteri(this.texTarget, this._cgl.gl.TEXTURE_MAG_FILTER, this._cgl.gl.NEAREST),
                         this._cgl.gl.texParameteri(
                             this.texTarget,
                             this._cgl.gl.TEXTURE_MIN_FILTER,
@@ -3329,49 +2750,37 @@ var CABLES = (function(t) {
                         (this.filter = J.FILTER_NEAREST),
                         (this.wrap = J.WRAP_CLAMP_TO_EDGE);
             }),
-            (J.load = function(t, e, i, s) {
+            (J.load = function (t, e, i, s) {
                 const r = t.patch.loading.start('texture', e),
                     n = new J(t);
                 return (
                     (n.name = e),
                     t.patch.isEditorMode() &&
-                        gui
-                            .jobs()
-                            .start({
-                                id: 'loadtexture' + r,
-                                title: 'loading texture ' + CABLES.basename(e),
-                            }),
+                        gui.jobs().start({
+                            id: 'loadtexture' + r,
+                            title: 'loading texture ' + CABLES.basename(e),
+                        }),
                     (n.image = new Image()),
                     (n.image.crossOrigin = 'anonymous'),
                     (n.loading = !0),
                     s && s.hasOwnProperty('filter') && (n.filter = s.filter),
                     s && s.hasOwnProperty('flip') && (n.flip = s.flip),
                     s && s.hasOwnProperty('wrap') && (n.wrap = s.wrap),
-                    s &&
-                        s.hasOwnProperty('anisotropic') &&
-                        (n.anisotropic = s.anisotropic),
-                    s &&
-                        s.hasOwnProperty('unpackAlpha') &&
-                        (n.unpackAlpha = s.unpackAlpha),
-                    (n.image.onabort = n.image.onerror = s => {
-                        d.warn(
-                            '[cgl.texture.load] error loading texture',
-                            e,
-                            s
-                        ),
-                            (n.loading = !1),
-                            t.patch.loading.finished(r);
-                        i && i({ error: !0 }),
-                            t.patch.isEditorMode() &&
-                                gui.jobs().finish('loadtexture' + r);
-                    }),
-                    (n.image.onload = function(e) {
+                    s && s.hasOwnProperty('anisotropic') && (n.anisotropic = s.anisotropic),
+                    s && s.hasOwnProperty('unpackAlpha') && (n.unpackAlpha = s.unpackAlpha),
+                    (n.image.onabort = n.image.onerror =
+                        (s) => {
+                            d.warn('[cgl.texture.load] error loading texture', e, s),
+                                (n.loading = !1),
+                                t.patch.loading.finished(r);
+                            i && i({ error: !0 }), t.patch.isEditorMode() && gui.jobs().finish('loadtexture' + r);
+                        }),
+                    (n.image.onload = function (e) {
                         t.addNextFrameOnceCallback(() => {
                             n.initTexture(n.image),
                                 t.patch.loading.finished(r),
                                 (n.loading = !1),
-                                t.patch.isEditorMode() &&
-                                    gui.jobs().finish('loadtexture' + r),
+                                t.patch.isEditorMode() && gui.jobs().finish('loadtexture' + r),
                                 i && i(null, n);
                         });
                     }),
@@ -3379,44 +2788,21 @@ var CABLES = (function(t) {
                     n
                 );
             }),
-            (J.getTempTexture = function(t) {
+            (J.getTempTexture = function (t) {
                 return (
                     t || console.error('[getTempTexture] no cgl!'),
-                    t.tempTexture ||
-                        (t.tempTexture = J.getTemporaryTexture(
-                            t,
-                            256,
-                            J.FILTER_LINEAR,
-                            J.REPEAT
-                        )),
+                    t.tempTexture || (t.tempTexture = J.getTemporaryTexture(t, 256, J.FILTER_LINEAR, J.REPEAT)),
                     t.tempTexture
                 );
             }),
-            (J.getEmptyTexture = function(t) {
-                if (
-                    (t || console.error('[getEmptyTexture] no cgl!'),
-                    t.tempTextureEmpty)
-                )
-                    return t.tempTextureEmpty;
+            (J.getEmptyTexture = function (t) {
+                if ((t || console.error('[getEmptyTexture] no cgl!'), t.tempTextureEmpty)) return t.tempTextureEmpty;
                 t.tempTextureEmpty = new J(t, { name: 'emptyTexture' });
                 const e = new Uint8Array(256);
-                return (
-                    t.tempTextureEmpty.initFromData(
-                        e,
-                        8,
-                        8,
-                        J.FILTER_NEAREST,
-                        J.WRAP_REPEAT
-                    ),
-                    t.tempTextureEmpty
-                );
+                return t.tempTextureEmpty.initFromData(e, 8, 8, J.FILTER_NEAREST, J.WRAP_REPEAT), t.tempTextureEmpty;
             }),
-            (J.getRandomTexture = function(t) {
-                if (
-                    (t || console.error('[getRandomTexture] no cgl!'),
-                    t.randomTexture)
-                )
-                    return t.randomTexture;
+            (J.getRandomTexture = function (t) {
+                if ((t || console.error('[getRandomTexture] no cgl!'), t.randomTexture)) return t.randomTexture;
                 const e = new Uint8Array(262144);
                 for (let t = 0; t < 65536; t++)
                     (e[4 * t + 0] = 255 * Math.random()),
@@ -3425,43 +2811,22 @@ var CABLES = (function(t) {
                         (e[4 * t + 3] = 255);
                 return (
                     (t.randomTexture = new J(t)),
-                    t.randomTexture.initFromData(
-                        e,
-                        256,
-                        256,
-                        J.FILTER_NEAREST,
-                        J.WRAP_REPEAT
-                    ),
+                    t.randomTexture.initFromData(e, 256, 256, J.FILTER_NEAREST, J.WRAP_REPEAT),
                     t.randomTexture
                 );
             }),
-            (J.getTempGradientTexture = function(t) {
-                if (
-                    (t || console.error('[getTempGradientTexture] no cgl!'),
-                    t.tempTextureGradient)
-                )
+            (J.getTempGradientTexture = function (t) {
+                if ((t || console.error('[getTempGradientTexture] no cgl!'), t.tempTextureGradient))
                     return t.tempTextureGradient;
                 const e = new J(t),
                     i = new Uint8Array(262144);
                 for (let t = 0; t < 256; t++)
                     for (let e = 0; e < 256; e++)
-                        (i[4 * (e + 256 * t) + 0] = i[
-                            4 * (e + 256 * t) + 1
-                        ] = i[4 * (e + 256 * t) + 2] = 255 - t),
+                        (i[4 * (e + 256 * t) + 0] = i[4 * (e + 256 * t) + 1] = i[4 * (e + 256 * t) + 2] = 255 - t),
                             (i[4 * (e + 256 * t) + 3] = 255);
-                return (
-                    e.initFromData(
-                        i,
-                        256,
-                        256,
-                        J.FILTER_NEAREST,
-                        J.WRAP_REPEAT
-                    ),
-                    (t.tempTextureGradient = e),
-                    e
-                );
+                return e.initFromData(i, 256, 256, J.FILTER_NEAREST, J.WRAP_REPEAT), (t.tempTextureGradient = e), e;
             }),
-            (J.getTemporaryTexture = function(t, e, i, s) {
+            (J.getTemporaryTexture = function (t, e, i, s) {
                 const r = new J(t),
                     n = [];
                 for (let t = 0; t < e; t++)
@@ -3477,7 +2842,7 @@ var CABLES = (function(t) {
                 const o = new Uint8Array(n);
                 return r.initFromData(o, e, e, i, s), r;
             }),
-            (J.createFromImage = function(t, e, i) {
+            (J.createFromImage = function (t, e, i) {
                 const s = new J(t, (i = i || {}));
                 return (
                     (s.flip = !1),
@@ -3488,19 +2853,12 @@ var CABLES = (function(t) {
                     s
                 );
             }),
-            (J.fromImage = function(t, e, i, s) {
+            (J.fromImage = function (t, e, i, s) {
                 d.error('deprecated texture from image...');
                 const r = new J(t);
-                return (
-                    (r.flip = !1),
-                    i && (r.filter = i),
-                    s && (r.wrap = s),
-                    (r.image = e),
-                    r.initTexture(e),
-                    r
-                );
+                return (r.flip = !1), i && (r.filter = i), s && (r.wrap = s), (r.image = e), r.initTexture(e), r;
             }),
-            (J.isPowerOfTwo = function(t) {
+            (J.isPowerOfTwo = function (t) {
                 return (
                     1 == t ||
                     2 == t ||
@@ -3528,7 +2886,7 @@ var CABLES = (function(t) {
             (J.TYPE_DEFAULT = 0),
             (J.TYPE_DEPTH = 1),
             (J.TYPE_FLOAT = 2);
-        const Z = function(t, e, i, s) {
+        const Z = function (t, e, i, s) {
             (this.Framebuffer2DrawTargetsDefault = null),
                 (this.Framebuffer2BlittingFramebuffer = null),
                 (this.Framebuffer2FinalFramebuffer = null),
@@ -3542,43 +2900,31 @@ var CABLES = (function(t) {
                 (this._drawTargetArray = []),
                 this.Framebuffer2BlittingFramebuffer ||
                     (this.Framebuffer2BlittingFramebuffer = t.gl.createFramebuffer()),
-                this.Framebuffer2FinalFramebuffer ||
-                    (this.Framebuffer2FinalFramebuffer = t.gl.createFramebuffer()),
-                this.Framebuffer2DrawTargetsDefault ||
-                    (this.Framebuffer2DrawTargetsDefault = [
-                        t.gl.COLOR_ATTACHMENT0,
-                    ]),
+                this.Framebuffer2FinalFramebuffer || (this.Framebuffer2FinalFramebuffer = t.gl.createFramebuffer()),
+                this.Framebuffer2DrawTargetsDefault || (this.Framebuffer2DrawTargetsDefault = [t.gl.COLOR_ATTACHMENT0]),
                 (this._options = s || { isFloatingPointTexture: !1 }),
                 (this.name = this._options.name || 'unknown'),
-                this._options.hasOwnProperty('numRenderBuffers') ||
-                    (this._options.numRenderBuffers = 1),
-                this._options.hasOwnProperty('depth') ||
-                    (this._options.depth = !0),
-                this._options.hasOwnProperty('clear') ||
-                    (this._options.clear = !0),
+                this._options.hasOwnProperty('numRenderBuffers') || (this._options.numRenderBuffers = 1),
+                this._options.hasOwnProperty('depth') || (this._options.depth = !0),
+                this._options.hasOwnProperty('clear') || (this._options.clear = !0),
                 this._options.hasOwnProperty('multisampling') ||
-                    ((this._options.multisampling = !1),
-                    (this._options.multisamplingSamples = 0)),
+                    ((this._options.multisampling = !1), (this._options.multisamplingSamples = 0)),
                 this._options.multisamplingSamples &&
-                    (this._cgl.glSlowRenderer &&
-                        (this._options.multisamplingSamples = 0),
+                    (this._cgl.glSlowRenderer && (this._options.multisamplingSamples = 0),
                     this._cgl.gl.MAX_SAMPLES
                         ? (this._options.multisamplingSamples = Math.min(
                               this._cgl.maxSamples,
                               this._options.multisamplingSamples
                           ))
                         : (this._options.multisamplingSamples = 0)),
-                this._options.hasOwnProperty('filter') ||
-                    (this._options.filter = J.FILTER_LINEAR),
-                this._options.hasOwnProperty('wrap') ||
-                    (this._options.wrap = J.WRAP_REPEAT),
+                this._options.hasOwnProperty('filter') || (this._options.filter = J.FILTER_LINEAR),
+                this._options.hasOwnProperty('wrap') || (this._options.wrap = J.WRAP_REPEAT),
                 (this._numRenderBuffers = this._options.numRenderBuffers),
                 (this._colorTextures = []);
             for (let e = 0; e < this._numRenderBuffers; e++)
                 this._colorTextures[e] = new J(t, {
                     name: 'fb2 ' + this.name + ' ' + e,
-                    isFloatingPointTexture: this._options
-                        .isFloatingPointTexture,
+                    isFloatingPointTexture: this._options.isFloatingPointTexture,
                     filter: this._options.filter,
                     wrap: this._options.wrap,
                 });
@@ -3595,90 +2941,66 @@ var CABLES = (function(t) {
                 })),
                 t.aborted || this.setSize(e || 512, i || 512);
         };
-        (Z.prototype.getWidth = function() {
+        (Z.prototype.getWidth = function () {
             return this._width;
         }),
-            (Z.prototype.getHeight = function() {
+            (Z.prototype.getHeight = function () {
                 return this._height;
             }),
-            (Z.prototype.getGlFrameBuffer = function() {
+            (Z.prototype.getGlFrameBuffer = function () {
                 return this._frameBuffer;
             }),
-            (Z.prototype.getDepthRenderBuffer = function() {
+            (Z.prototype.getDepthRenderBuffer = function () {
                 return this._depthRenderbuffer;
             }),
-            (Z.prototype.getTextureColor = function() {
+            (Z.prototype.getTextureColor = function () {
                 return this._colorTextures[0];
             }),
-            (Z.prototype.getTextureColorNum = function(t) {
+            (Z.prototype.getTextureColorNum = function (t) {
                 return this._colorTextures[t];
             }),
-            (Z.prototype.getTextureDepth = function() {
+            (Z.prototype.getTextureDepth = function () {
                 return this._textureDepth;
             }),
-            (Z.prototype.setFilter = function(t) {
+            (Z.prototype.setFilter = function (t) {
                 for (let e = 0; e < this._numRenderBuffers; e++)
-                    (this._colorTextures[e].filter = t),
-                        this._colorTextures[e].setSize(
-                            this._width,
-                            this._height
-                        );
+                    (this._colorTextures[e].filter = t), this._colorTextures[e].setSize(this._width, this._height);
             }),
-            (Z.prototype.delete = Z.prototype.dispose = function() {
-                let t = 0;
-                for (t = 0; t < this._numRenderBuffers; t++)
-                    this._colorTextures[t].delete();
-                for (
-                    this._textureDepth.delete(), t = 0;
-                    t < this._numRenderBuffers;
-                    t++
-                )
-                    this._cgl.gl.deleteRenderbuffer(
-                        this._colorRenderbuffers[t]
-                    );
-                this._cgl.gl.deleteRenderbuffer(this._depthRenderbuffer),
-                    this._cgl.gl.deleteFramebuffer(this._frameBuffer),
-                    this._cgl.gl.deleteFramebuffer(this._textureFrameBuffer);
-            }),
-            (Z.prototype.setSize = function(t, e) {
+            (Z.prototype.delete = Z.prototype.dispose =
+                function () {
+                    let t = 0;
+                    for (t = 0; t < this._numRenderBuffers; t++) this._colorTextures[t].delete();
+                    for (this._textureDepth.delete(), t = 0; t < this._numRenderBuffers; t++)
+                        this._cgl.gl.deleteRenderbuffer(this._colorRenderbuffers[t]);
+                    this._cgl.gl.deleteRenderbuffer(this._depthRenderbuffer),
+                        this._cgl.gl.deleteFramebuffer(this._frameBuffer),
+                        this._cgl.gl.deleteFramebuffer(this._textureFrameBuffer);
+                }),
+            (Z.prototype.setSize = function (t, e) {
                 let i = 0;
                 if (
                     ((this._width = Math.floor(t)),
                     (this._height = Math.floor(e)),
                     (this._width = Math.min(this._width, this._cgl.maxTexSize)),
-                    (this._height = Math.min(
-                        this._height,
-                        this._cgl.maxTexSize
-                    )),
+                    (this._height = Math.min(this._height, this._cgl.maxTexSize)),
                     Q.profileFrameBuffercreate++,
                     this._frameBuffer)
                 ) {
                     for (i = 0; i < this._numRenderBuffers; i++)
-                        this._cgl.gl.deleteRenderbuffer(
-                            this._colorRenderbuffers[i]
-                        );
+                        this._cgl.gl.deleteRenderbuffer(this._colorRenderbuffers[i]);
                     this._cgl.gl.deleteRenderbuffer(this._depthRenderbuffer),
                         this._cgl.gl.deleteFramebuffer(this._frameBuffer),
-                        this._cgl.gl.deleteFramebuffer(
-                            this._textureFrameBuffer
-                        );
+                        this._cgl.gl.deleteFramebuffer(this._textureFrameBuffer);
                 }
                 (this._frameBuffer = this._cgl.gl.createFramebuffer()),
                     (this._textureFrameBuffer = this._cgl.gl.createFramebuffer());
                 const s = this._options.depth;
-                for (i = 0; i < this._numRenderBuffers; i++)
-                    this._colorTextures[i].setSize(this._width, this._height);
+                for (i = 0; i < this._numRenderBuffers; i++) this._colorTextures[i].setSize(this._width, this._height);
                 for (i = 0; i < this._numRenderBuffers; i++) {
                     const t = this._cgl.gl.createRenderbuffer();
                     this._cgl.gl.getExtension('EXT_color_buffer_float');
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._frameBuffer
-                    ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            t
-                        ),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuffer),
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, t),
                         this._options.isFloatingPointTexture
                             ? this._options.multisampling
                                 ? this._cgl.gl.renderbufferStorageMultisample(
@@ -3717,11 +3039,7 @@ var CABLES = (function(t) {
                         (this._colorRenderbuffers[i] = t);
                 }
                 for (
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._textureFrameBuffer
-                    ),
-                        i = 0;
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._textureFrameBuffer), i = 0;
                     i < this._numRenderBuffers;
                     i++
                 )
@@ -3740,24 +3058,14 @@ var CABLES = (function(t) {
                         this._textureDepth.tex,
                         0
                     ),
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._frameBuffer
-                    );
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuffer);
                 let r = this._cgl.gl.DEPTH_COMPONENT32F;
                 for (
-                    this._cgl.glSlowRenderer &&
-                        (r = this._cgl.gl.DEPTH_COMPONENT16),
+                    this._cgl.glSlowRenderer && (r = this._cgl.gl.DEPTH_COMPONENT16),
                         s &&
-                            (this._textureDepth.setSize(
-                                this._width,
-                                this._height
-                            ),
+                            (this._textureDepth.setSize(this._width, this._height),
                             (this._depthRenderbuffer = this._cgl.gl.createRenderbuffer()),
-                            this._cgl.gl.bindRenderbuffer(
-                                this._cgl.gl.RENDERBUFFER,
-                                this._depthRenderbuffer
-                            ),
+                            this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._depthRenderbuffer),
                             this._options.isFloatingPointTexture,
                             this._options.multisampling
                                 ? this._cgl.gl.renderbufferStorageMultisample(
@@ -3784,68 +3092,44 @@ var CABLES = (function(t) {
                     i < this._numRenderBuffers;
                     i++
                 )
-                    this._drawTargetArray.push(
-                        this._cgl.gl.COLOR_ATTACHMENT0 + i
-                    );
+                    this._drawTargetArray.push(this._cgl.gl.COLOR_ATTACHMENT0 + i);
                 const n = this._cgl.printError('fb setsize1');
                 n && console.log(n),
-                    this._cgl.gl.isFramebuffer(this._textureFrameBuffer) ||
-                        console.warn('invalid framebuffer');
-                const o = this._cgl.gl.checkFramebufferStatus(
-                    this._cgl.gl.FRAMEBUFFER
-                );
+                    this._cgl.gl.isFramebuffer(this._textureFrameBuffer) || console.warn('invalid framebuffer');
+                const o = this._cgl.gl.checkFramebufferStatus(this._cgl.gl.FRAMEBUFFER);
                 if (o != this._cgl.gl.FRAMEBUFFER_COMPLETE)
-                    switch (
-                        (console.log(
-                            'framebuffer incomplete: ' + this.name,
-                            this
-                        ),
-                        o)
-                    ) {
+                    switch ((console.log('framebuffer incomplete: ' + this.name, this), o)) {
                         case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_ATTACHMENT:
-                            throw (d.warn(
-                                'FRAMEBUFFER_INCOMPLETE_ATTACHMENT...',
-                                this
-                            ),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'
-                            ));
-                        case this._cgl.gl
-                            .FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
-                            throw (d.warn(
-                                'FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                            ),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                            ));
+                            throw (
+                                (d.warn('FRAMEBUFFER_INCOMPLETE_ATTACHMENT...', this),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'))
+                            );
+                        case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
+                            throw (
+                                (d.warn('FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'))
+                            );
                         case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_DIMENSIONS:
-                            throw (d.warn('FRAMEBUFFER_INCOMPLETE_DIMENSIONS'),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'
-                            ));
+                            throw (
+                                (d.warn('FRAMEBUFFER_INCOMPLETE_DIMENSIONS'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'))
+                            );
                         case this._cgl.gl.FRAMEBUFFER_UNSUPPORTED:
-                            throw (d.warn('FRAMEBUFFER_UNSUPPORTED'),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'
-                            ));
+                            throw (
+                                (d.warn('FRAMEBUFFER_UNSUPPORTED'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'))
+                            );
                         default:
-                            throw (d.warn('incomplete framebuffer', o),
-                            new Error('Incomplete framebuffer: ' + o));
+                            throw (d.warn('incomplete framebuffer', o), new Error('Incomplete framebuffer: ' + o));
                     }
                 this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null),
-                    this._cgl.gl.bindRenderbuffer(
-                        this._cgl.gl.RENDERBUFFER,
-                        null
-                    ),
+                    this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, null),
                     this._cgl.printError('fb setsize');
             }),
-            (Z.prototype.renderStart = function() {
+            (Z.prototype.renderStart = function () {
                 this._cgl.checkFrameStarted('fb2 renderstart'),
                     this._cgl.pushModelMatrix(),
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._frameBuffer
-                    ),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuffer),
                     this._cgl.pushGlFrameBuffer(this._frameBuffer),
                     this._cgl.pushFrameBuffer(this),
                     this._cgl.pushPMatrix(),
@@ -3853,31 +3137,13 @@ var CABLES = (function(t) {
                     this._cgl.gl.drawBuffers(this._drawTargetArray),
                     this._options.clear &&
                         (this._cgl.gl.clearColor(0, 0, 0, 0),
-                        this._cgl.gl.clear(
-                            this._cgl.gl.COLOR_BUFFER_BIT |
-                                this._cgl.gl.DEPTH_BUFFER_BIT
-                        ));
+                        this._cgl.gl.clear(this._cgl.gl.COLOR_BUFFER_BIT | this._cgl.gl.DEPTH_BUFFER_BIT));
             }),
-            (Z.prototype.renderEnd = function() {
-                if (
-                    (this._cgl.popPMatrix(),
-                    Q.profileFramebuffer++,
-                    this._numRenderBuffers <= 1)
-                )
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.READ_FRAMEBUFFER,
-                        this._frameBuffer
-                    ),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.DRAW_FRAMEBUFFER,
-                            this._textureFrameBuffer
-                        ),
-                        this._cgl.gl.clearBufferfv(this._cgl.gl.COLOR, 0, [
-                            0,
-                            0,
-                            0,
-                            1,
-                        ]),
+            (Z.prototype.renderEnd = function () {
+                if ((this._cgl.popPMatrix(), Q.profileFramebuffer++, this._numRenderBuffers <= 1))
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.READ_FRAMEBUFFER, this._frameBuffer),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.DRAW_FRAMEBUFFER, this._textureFrameBuffer),
+                        this._cgl.gl.clearBufferfv(this._cgl.gl.COLOR, 0, [0, 0, 0, 1]),
                         this._cgl.gl.blitFramebuffer(
                             0,
                             0,
@@ -3887,25 +3153,18 @@ var CABLES = (function(t) {
                             0,
                             this._width,
                             this._height,
-                            this._cgl.gl.COLOR_BUFFER_BIT |
-                                this._cgl.gl.DEPTH_BUFFER_BIT,
+                            this._cgl.gl.COLOR_BUFFER_BIT | this._cgl.gl.DEPTH_BUFFER_BIT,
                             this._cgl.gl.NEAREST
                         );
                 else {
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this.Framebuffer2BlittingFramebuffer
-                    ),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this.Framebuffer2BlittingFramebuffer),
                         this._cgl.gl.framebufferRenderbuffer(
                             this._cgl.gl.FRAMEBUFFER,
                             this._cgl.gl.DEPTH_ATTACHMENT,
                             this._cgl.gl.RENDERBUFFER,
                             this._depthRenderbuffer
                         ),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this.Framebuffer2FinalFramebuffer
-                        ),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this.Framebuffer2FinalFramebuffer),
                         this._cgl.gl.framebufferTexture2D(
                             this._cgl.gl.FRAMEBUFFER,
                             this._cgl.gl.DEPTH_ATTACHMENT,
@@ -3914,20 +3173,14 @@ var CABLES = (function(t) {
                             0
                         );
                     for (let t = 0; t < this._numRenderBuffers; t++) {
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this.Framebuffer2BlittingFramebuffer
-                        ),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this.Framebuffer2BlittingFramebuffer),
                             this._cgl.gl.framebufferRenderbuffer(
                                 this._cgl.gl.FRAMEBUFFER,
                                 this._cgl.gl.COLOR_ATTACHMENT0,
                                 this._cgl.gl.RENDERBUFFER,
                                 this._colorRenderbuffers[t]
                             ),
-                            this._cgl.gl.bindFramebuffer(
-                                this._cgl.gl.FRAMEBUFFER,
-                                this.Framebuffer2FinalFramebuffer
-                            ),
+                            this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this.Framebuffer2FinalFramebuffer),
                             this._cgl.gl.framebufferTexture2D(
                                 this._cgl.gl.FRAMEBUFFER,
                                 this._cgl.gl.COLOR_ATTACHMENT0,
@@ -3935,10 +3188,7 @@ var CABLES = (function(t) {
                                 this._colorTextures[t].tex,
                                 0
                             ),
-                            this._cgl.gl.bindFramebuffer(
-                                this._cgl.gl.FRAMEBUFFER,
-                                null
-                            ),
+                            this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null),
                             this._cgl.gl.bindFramebuffer(
                                 this._cgl.gl.READ_FRAMEBUFFER,
                                 this.Framebuffer2BlittingFramebuffer
@@ -3947,12 +3197,7 @@ var CABLES = (function(t) {
                                 this._cgl.gl.DRAW_FRAMEBUFFER,
                                 this.Framebuffer2FinalFramebuffer
                             ),
-                            this._cgl.gl.clearBufferfv(this._cgl.gl.COLOR, 0, [
-                                0,
-                                0,
-                                0,
-                                1,
-                            ]);
+                            this._cgl.gl.clearBufferfv(this._cgl.gl.COLOR, 0, [0, 0, 0, 1]);
                         let e = this._cgl.gl.COLOR_BUFFER_BIT;
                         0 == t && (e |= this._cgl.gl.DEPTH_BUFFER_BIT),
                             this._cgl.gl.blitFramebuffer(
@@ -3970,38 +3215,21 @@ var CABLES = (function(t) {
                     }
                 }
                 if (
-                    (this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._cgl.popGlFrameBuffer()
-                    ),
+                    (this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._cgl.popGlFrameBuffer()),
                     this._cgl.popFrameBuffer(),
                     this._cgl.popModelMatrix(),
                     this._cgl.resetViewPort(),
                     this._colorTextures[0].filter == J.FILTER_MIPMAP)
                 )
                     for (let t = 0; t < this._numRenderBuffers; t++)
-                        this._cgl.gl.bindTexture(
-                            this._cgl.gl.TEXTURE_2D,
-                            this._colorTextures[t].tex
-                        ),
+                        this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, this._colorTextures[t].tex),
                             this._colorTextures[t].updateMipMap(),
-                            this._cgl.gl.bindTexture(
-                                this._cgl.gl.TEXTURE_2D,
-                                null
-                            );
+                            this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, null);
             });
         class $ {
             constructor(t) {
-                (this._max = [
-                    -Number.MAX_VALUE,
-                    -Number.MAX_VALUE,
-                    -Number.MAX_VALUE,
-                ]),
-                    (this._min = [
-                        Number.MAX_VALUE,
-                        Number.MAX_VALUE,
-                        Number.MAX_VALUE,
-                    ]),
+                (this._max = [-Number.MAX_VALUE, -Number.MAX_VALUE, -Number.MAX_VALUE]),
+                    (this._min = [Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE]),
                     (this._center = []),
                     (this._size = []),
                     (this._first = !0),
@@ -4048,17 +3276,12 @@ var CABLES = (function(t) {
                 if (t) {
                     if (t instanceof $) {
                         const e = t;
-                        this.applyPos(e.maxX, e.maxY, e.maxZ),
-                            this.applyPos(e.minX, e.minY, e.minZ);
+                        this.applyPos(e.maxX, e.maxY, e.maxZ), this.applyPos(e.minX, e.minY, e.minZ);
                     } else {
                         let e = 0;
                         for (e = 0; e < t.vertices.length; e += 3)
                             t.vertices[e + 0] == t.vertices[e + 0] &&
-                                this.applyPos(
-                                    t.vertices[e + 0],
-                                    t.vertices[e + 1],
-                                    t.vertices[e + 2]
-                                );
+                                this.applyPos(t.vertices[e + 0], t.vertices[e + 1], t.vertices[e + 2]);
                     }
                     this.calcCenterSize();
                 }
@@ -4098,10 +3321,7 @@ var CABLES = (function(t) {
                     (this._center[0] = (this._min[0] + this._max[0]) / 2),
                     (this._center[1] = (this._min[1] + this._max[1]) / 2),
                     (this._center[2] = (this._min[2] + this._max[2]) / 2),
-                    (this._maxAxis = Math.max(
-                        this._size[2],
-                        Math.max(this._size[0], this._size[1])
-                    ));
+                    (this._maxAxis = Math.max(this._size[2], Math.max(this._size[0], this._size[1])));
             }
             mulMat4(t) {
                 vec3.transformMat4(this._max, this._max, t),
@@ -4112,16 +3332,11 @@ var CABLES = (function(t) {
                 this._wireMesh || (this._wireMesh = new CGL.WireCube(t)),
                     t.pushModelMatrix(),
                     mat4.translate(t.mMatrix, t.mMatrix, this._center),
-                    this._wireMesh.render(
-                        t,
-                        this._size[0] / 2,
-                        this._size[1] / 2,
-                        this._size[2] / 2
-                    ),
+                    this._wireMesh.render(t, this._size[0] / 2, this._size[1] / 2, this._size[2] / 2),
                     t.popModelMatrix();
             }
         }
-        const tt = function(t) {
+        const tt = function (t) {
             (this.name = t),
                 (this.faceVertCount = 3),
                 (this._vertices = []),
@@ -4145,93 +3360,59 @@ var CABLES = (function(t) {
                     },
                 });
         };
-        (tt.prototype.clear = function() {
+        (tt.prototype.clear = function () {
             (this.vertices = new Float32Array([])),
                 (this.verticesIndices.length = 0),
                 (this.texCoords = new Float32Array([])),
                 (this.texCoordsIndices.length = 0),
                 (this.vertexNormals = new Float32Array([]));
         }),
-            (tt.prototype.getAttributes = function() {
+            (tt.prototype.getAttributes = function () {
                 return this._attributes;
             }),
-            (tt.prototype.getAttribute = function(t) {
-                for (const e in this._attributes)
-                    if (this._attributes[e].name == t)
-                        return this._attributes[e];
+            (tt.prototype.getAttribute = function (t) {
+                for (const e in this._attributes) if (this._attributes[e].name == t) return this._attributes[e];
                 return null;
             }),
-            (tt.prototype.setAttribute = function(t, e, i) {
+            (tt.prototype.setAttribute = function (t, e, i) {
                 let s = '';
-                1 == i
-                    ? (s = 'float')
-                    : 2 == i
-                    ? (s = 'vec2')
-                    : 3 == i
-                    ? (s = 'vec3')
-                    : 4 == i && (s = 'vec4');
+                1 == i ? (s = 'float') : 2 == i ? (s = 'vec2') : 3 == i ? (s = 'vec3') : 4 == i && (s = 'vec4');
                 const r = { name: t, data: e, itemSize: i, type: s };
                 this._attributes[t] = r;
             }),
-            (tt.prototype.setVertices = function(t) {
-                t instanceof Float32Array
-                    ? (this._vertices = t)
-                    : (this._vertices = new Float32Array(t));
+            (tt.prototype.setVertices = function (t) {
+                t instanceof Float32Array ? (this._vertices = t) : (this._vertices = new Float32Array(t));
             }),
-            (tt.prototype.setTexCoords = function(t) {
-                t instanceof Float32Array
-                    ? (this.texCoords = t)
-                    : (this.texCoords = new Float32Array(t));
+            (tt.prototype.setTexCoords = function (t) {
+                t instanceof Float32Array ? (this.texCoords = t) : (this.texCoords = new Float32Array(t));
             }),
-            (tt.prototype.calcNormals = function(t) {
+            (tt.prototype.calcNormals = function (t) {
                 t || this.unIndex(), this.calculateNormals({});
             }),
-            (tt.prototype.setPointVertices = function(t) {
+            (tt.prototype.setPointVertices = function (t) {
                 if (t.length % 3 == 0) {
-                    t instanceof Float32Array
-                        ? (this.vertices = t)
-                        : (this.vertices = new Float32Array(t)),
+                    t instanceof Float32Array ? (this.vertices = t) : (this.vertices = new Float32Array(t)),
                         this.texCoords instanceof Float32Array ||
-                            (this.texCoords = new Float32Array(
-                                (t.length / 3) * 2
-                            )),
+                            (this.texCoords = new Float32Array((t.length / 3) * 2)),
                         (this.verticesIndices.length = t.length / 3);
                     for (let e = 0; e < t.length / 3; e++)
-                        (this.verticesIndices[e] = e),
-                            (this.texCoords[2 * e] = 0),
-                            (this.texCoords[2 * e + 1] = 0);
-                } else
-                    console.error(
-                        'CGL MESH : SetPointVertices: Array must be multiple of three.'
-                    );
+                        (this.verticesIndices[e] = e), (this.texCoords[2 * e] = 0), (this.texCoords[2 * e + 1] = 0);
+                } else console.error('CGL MESH : SetPointVertices: Array must be multiple of three.');
             }),
-            (tt.prototype.merge = function(t) {
+            (tt.prototype.merge = function (t) {
                 if (!t) return;
                 const e = this.verticesIndices.length,
                     i = this.vertices.length / 3;
-                this.verticesIndices.length =
-                    this.verticesIndices.length + t.verticesIndices.length;
+                this.verticesIndices.length = this.verticesIndices.length + t.verticesIndices.length;
                 for (let s = 0; s < t.verticesIndices.length; s++)
                     this.verticesIndices[e + s] = t.verticesIndices[s] + i;
                 (this.vertices = f.float32Concat(this.vertices, t.vertices)),
-                    (this.texCoords = f.float32Concat(
-                        this.texCoords,
-                        t.texCoords
-                    )),
-                    (this.vertexNormals = f.float32Concat(
-                        this.vertexNormals,
-                        t.vertexNormals
-                    )),
-                    (this.tangents = f.float32Concat(
-                        this.tangents,
-                        t.tangents
-                    )),
-                    (this.bitangents = f.float32Concat(
-                        this.bitangents,
-                        t.bitangents
-                    ));
+                    (this.texCoords = f.float32Concat(this.texCoords, t.texCoords)),
+                    (this.vertexNormals = f.float32Concat(this.vertexNormals, t.vertexNormals)),
+                    (this.tangents = f.float32Concat(this.tangents, t.tangents)),
+                    (this.bitangents = f.float32Concat(this.bitangents, t.bitangents));
             }),
-            (tt.prototype.copy = function() {
+            (tt.prototype.copy = function () {
                 let t = 0;
                 const e = new tt();
                 if (
@@ -4240,74 +3421,48 @@ var CABLES = (function(t) {
                     this.verticesIndices)
                 )
                     for (
-                        e.verticesIndices.length = this.verticesIndices.length,
-                            t = 0;
+                        e.verticesIndices.length = this.verticesIndices.length, t = 0;
                         t < this.verticesIndices.length;
                         t++
                     )
                         e.verticesIndices[t] = this.verticesIndices[t];
-                for (
-                    e.texCoords = new Float32Array(this.texCoords.length),
-                        t = 0;
-                    t < this.texCoords.length;
-                    t++
-                )
+                for (e.texCoords = new Float32Array(this.texCoords.length), t = 0; t < this.texCoords.length; t++)
                     e.texCoords[t] = this.texCoords[t];
                 for (
-                    e.texCoordsIndices.length = this.texCoordsIndices.length,
-                        t = 0;
+                    e.texCoordsIndices.length = this.texCoordsIndices.length, t = 0;
                     t < this.texCoordsIndices.length;
                     t++
                 )
                     e.texCoordsIndices[t] = this.texCoordsIndices[t];
                 for (
-                    e.vertexNormals = new Float32Array(
-                        this.vertexNormals.length
-                    ),
-                        t = 0;
+                    e.vertexNormals = new Float32Array(this.vertexNormals.length), t = 0;
                     t < this.vertexNormals.length;
                     t++
                 )
                     e.vertexNormals[t] = this.vertexNormals[t];
                 if (this.tangents)
                     for (
-                        e.tangents = [],
-                            e.tangents.length = this.tangents.length,
-                            t = 0;
+                        e.tangents = [], e.tangents.length = this.tangents.length, t = 0;
                         t < this.tangents.length;
                         t++
                     )
                         e.tangents[t] = this.tangents[t];
                 if (this.biTangents)
                     for (
-                        e.biTangents = [],
-                            e.biTangents.length = this.biTangents.length,
-                            t = 0;
+                        e.biTangents = [], e.biTangents.length = this.biTangents.length, t = 0;
                         t < this.biTangents.length;
                         t++
                     )
                         e.biTangents[t] = this.biTangents[t];
-                for (
-                    e.barycentrics.length = this.barycentrics.length, t = 0;
-                    t < this.barycentrics.length;
-                    t++
-                )
+                for (e.barycentrics.length = this.barycentrics.length, t = 0; t < this.barycentrics.length; t++)
                     e.barycentrics[t] = this.barycentrics[t];
-                for (
-                    e.morphTargets.length = this.morphTargets.length, t = 0;
-                    t < this.morphTargets.length;
-                    t++
-                )
+                for (e.morphTargets.length = this.morphTargets.length, t = 0; t < this.morphTargets.length; t++)
                     e.morphTargets[t] = this.morphTargets[t];
-                for (
-                    e.vertexColors.length = this.vertexColors.length, t = 0;
-                    t < this.vertexColors.length;
-                    t++
-                )
+                for (e.vertexColors.length = this.vertexColors.length, t = 0; t < this.vertexColors.length; t++)
                     e.vertexColors[t] = this.vertexColors[t];
                 return e;
             }),
-            (tt.prototype.calculateNormals = function(t) {
+            (tt.prototype.calculateNormals = function (t) {
                 const e = vec3.create(),
                     i = vec3.create(),
                     s = vec3.create();
@@ -4317,14 +3472,11 @@ var CABLES = (function(t) {
                         vec3.subtract(i, r[0], r[2]),
                         vec3.cross(s, e, i),
                         vec3.normalize(s, s),
-                        t &&
-                            t.forceZUp &&
-                            s[2] < 0 &&
-                            ((s[0] *= -1), (s[1] *= -1), (s[2] *= -1)),
+                        t && t.forceZUp && s[2] < 0 && ((s[0] *= -1), (s[1] *= -1), (s[2] *= -1)),
                         s
                     );
                 }
-                (this.getVertexVec = function(t) {
+                (this.getVertexVec = function (t) {
                     const e = [0, 0, 0];
                     return (
                         (e[0] = this.vertices[3 * t + 0]),
@@ -4333,13 +3485,9 @@ var CABLES = (function(t) {
                         e
                     );
                 }),
-                    (this.vertexNormals instanceof Float32Array &&
-                        this.vertexNormals.length == this.vertices.length) ||
-                        (this.vertexNormals = new Float32Array(
-                            this.vertices.length
-                        ));
-                for (let t = 0; t < this.vertices.length; t++)
-                    this.vertexNormals[t] = 0;
+                    (this.vertexNormals instanceof Float32Array && this.vertexNormals.length == this.vertices.length) ||
+                        (this.vertexNormals = new Float32Array(this.vertices.length));
+                for (let t = 0; t < this.vertices.length; t++) this.vertexNormals[t] = 0;
                 if (this.isIndexed()) {
                     const t = [];
                     t.length = this.verticesIndices.length / 3;
@@ -4350,122 +3498,59 @@ var CABLES = (function(t) {
                             this.getVertexVec(this.verticesIndices[e + 2]),
                         ];
                         (t[e / 3] = r(i)),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 0] + 0
-                            ] += t[e / 3][0]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 0] + 1
-                            ] += t[e / 3][1]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 0] + 2
-                            ] += t[e / 3][2]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 1] + 0
-                            ] += t[e / 3][0]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 1] + 1
-                            ] += t[e / 3][1]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 1] + 2
-                            ] += t[e / 3][2]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 2] + 0
-                            ] += t[e / 3][0]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 2] + 1
-                            ] += t[e / 3][1]),
-                            (this.vertexNormals[
-                                3 * this.verticesIndices[e + 2] + 2
-                            ] += t[e / 3][2]);
+                            (this.vertexNormals[3 * this.verticesIndices[e + 0] + 0] += t[e / 3][0]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 0] + 1] += t[e / 3][1]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 0] + 2] += t[e / 3][2]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 1] + 0] += t[e / 3][0]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 1] + 1] += t[e / 3][1]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 1] + 2] += t[e / 3][2]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 2] + 0] += t[e / 3][0]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 2] + 1] += t[e / 3][1]),
+                            (this.vertexNormals[3 * this.verticesIndices[e + 2] + 2] += t[e / 3][2]);
                     }
                     for (let t = 0; t < this.verticesIndices.length; t += 3)
                         for (let e = 0; e < 3; e++) {
                             const i = [
-                                this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 0
-                                ],
-                                this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 1
-                                ],
-                                this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 2
-                                ],
+                                this.vertexNormals[3 * this.verticesIndices[t + e] + 0],
+                                this.vertexNormals[3 * this.verticesIndices[t + e] + 1],
+                                this.vertexNormals[3 * this.verticesIndices[t + e] + 2],
                             ];
                             vec3.normalize(i, i),
-                                (this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 0
-                                ] = i[0]),
-                                (this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 1
-                                ] = i[1]),
-                                (this.vertexNormals[
-                                    3 * this.verticesIndices[t + e] + 2
-                                ] = i[2]);
+                                (this.vertexNormals[3 * this.verticesIndices[t + e] + 0] = i[0]),
+                                (this.vertexNormals[3 * this.verticesIndices[t + e] + 1] = i[1]),
+                                (this.vertexNormals[3 * this.verticesIndices[t + e] + 2] = i[2]);
                         }
                 } else {
                     const t = [];
                     for (let e = 0; e < this.vertices.length; e += 9) {
                         const i = r([
-                            [
-                                this.vertices[e + 0],
-                                this.vertices[e + 1],
-                                this.vertices[e + 2],
-                            ],
-                            [
-                                this.vertices[e + 3],
-                                this.vertices[e + 4],
-                                this.vertices[e + 5],
-                            ],
-                            [
-                                this.vertices[e + 6],
-                                this.vertices[e + 7],
-                                this.vertices[e + 8],
-                            ],
+                            [this.vertices[e + 0], this.vertices[e + 1], this.vertices[e + 2]],
+                            [this.vertices[e + 3], this.vertices[e + 4], this.vertices[e + 5]],
+                            [this.vertices[e + 6], this.vertices[e + 7], this.vertices[e + 8]],
                         ]);
-                        t.push(
-                            i[0],
-                            i[1],
-                            i[2],
-                            i[0],
-                            i[1],
-                            i[2],
-                            i[0],
-                            i[1],
-                            i[2]
-                        );
+                        t.push(i[0], i[1], i[2], i[0], i[1], i[2], i[0], i[1], i[2]);
                     }
                     this.vertexNormals = t;
                 }
             }),
-            (tt.prototype.calcTangentsBitangents = function() {
+            (tt.prototype.calcTangentsBitangents = function () {
                 if (!this.vertices.length)
-                    return void console.error(
-                        'Cannot calculate tangents/bitangents without vertices.'
-                    );
+                    return void console.error('Cannot calculate tangents/bitangents without vertices.');
                 if (!this.vertexNormals.length)
-                    return void console.error(
-                        'Cannot calculate tangents/bitangents without normals.'
-                    );
+                    return void console.error('Cannot calculate tangents/bitangents without normals.');
                 if (!this.texCoords.length) {
-                    console.warn(
-                        'No texcoords. Replacing with default values [0, 0].'
-                    );
+                    console.warn('No texcoords. Replacing with default values [0, 0].');
                     const t = (this.vertices.length / 3) * 2;
                     this.texCoords = new Float32Array(t);
                     for (let e = 0; e < t; e += 1) this.texCoords[e] = 0;
                 }
                 if (!this.verticesIndices || !this.verticesIndices.length)
-                    return void console.error(
-                        'Cannot calculate tangents/bitangents without vertex indices.'
-                    );
-                if (this.verticesIndices.length % 3 != 0)
-                    return void console.error('Vertex indices mismatch!');
+                    return void console.error('Cannot calculate tangents/bitangents without vertex indices.');
+                if (this.verticesIndices.length % 3 != 0) return void console.error('Vertex indices mismatch!');
                 const t = this.verticesIndices.length / 3,
                     e = this.vertices.length / 3;
                 (this.tangents = new Float32Array(this.vertexNormals.length)),
-                    (this.biTangents = new Float32Array(
-                        this.vertexNormals.length
-                    ));
+                    (this.biTangents = new Float32Array(this.vertexNormals.length));
                 const i = [];
                 i.length = 2 * e;
                 const s = vec3.create(),
@@ -4480,39 +3565,12 @@ var CABLES = (function(t) {
                     const t = this.verticesIndices[3 * c],
                         p = this.verticesIndices[3 * c + 1],
                         d = this.verticesIndices[3 * c + 2];
-                    vec3.set(
-                        s,
-                        this.vertices[3 * t],
-                        this.vertices[3 * t + 1],
-                        this.vertices[3 * t + 2]
-                    ),
-                        vec3.set(
-                            r,
-                            this.vertices[3 * p],
-                            this.vertices[3 * p + 1],
-                            this.vertices[3 * p + 2]
-                        ),
-                        vec3.set(
-                            n,
-                            this.vertices[3 * d],
-                            this.vertices[3 * d + 1],
-                            this.vertices[3 * d + 2]
-                        ),
-                        vec2.set(
-                            o,
-                            this.texCoords[2 * t],
-                            this.texCoords[2 * t + 1]
-                        ),
-                        vec2.set(
-                            h,
-                            this.texCoords[2 * p],
-                            this.texCoords[2 * p + 1]
-                        ),
-                        vec2.set(
-                            a,
-                            this.texCoords[2 * d],
-                            this.texCoords[2 * d + 1]
-                        );
+                    vec3.set(s, this.vertices[3 * t], this.vertices[3 * t + 1], this.vertices[3 * t + 2]),
+                        vec3.set(r, this.vertices[3 * p], this.vertices[3 * p + 1], this.vertices[3 * p + 2]),
+                        vec3.set(n, this.vertices[3 * d], this.vertices[3 * d + 1], this.vertices[3 * d + 2]),
+                        vec2.set(o, this.texCoords[2 * t], this.texCoords[2 * t + 1]),
+                        vec2.set(h, this.texCoords[2 * p], this.texCoords[2 * p + 1]),
+                        vec2.set(a, this.texCoords[2 * d], this.texCoords[2 * d + 1]);
                     const _ = r[0] - s[0],
                         f = n[0] - s[0],
                         g = r[1] - s[1],
@@ -4524,18 +3582,8 @@ var CABLES = (function(t) {
                         y = h[1] - o[1],
                         O = a[1] - o[1],
                         x = 1 / (A * O - b * y);
-                    vec3.set(
-                        l,
-                        (O * _ - y * f) * x,
-                        (O * g - y * m) * x,
-                        (O * E - y * T) * x
-                    ),
-                        vec3.set(
-                            u,
-                            (A * f - b * _) * x,
-                            (A * m - b * g) * x,
-                            (A * T - b * E) * x
-                        ),
+                    vec3.set(l, (O * _ - y * f) * x, (O * g - y * m) * x, (O * E - y * T) * x),
+                        vec3.set(u, (A * f - b * _) * x, (A * m - b * g) * x, (A * T - b * E) * x),
                         (i[t] = l),
                         (i[p] = l),
                         (i[d] = l),
@@ -4561,10 +3609,7 @@ var CABLES = (function(t) {
                     ),
                         vec3.set(p, i[t][0], i[t][1], i[t][2]);
                     const s = vec3.dot(c, p);
-                    vec3.scale(f, c, s),
-                        vec3.subtract(g, p, f),
-                        vec3.normalize(E, g),
-                        vec3.cross(m, c, p);
+                    vec3.scale(f, c, s), vec3.subtract(g, p, f), vec3.normalize(E, g), vec3.cross(m, c, p);
                     vec3.dot(m, i[t + e]);
                     const r = 1;
                     vec3.scale(d, E, 1 / r),
@@ -4577,130 +3622,50 @@ var CABLES = (function(t) {
                         (this.biTangents[3 * t + 2] = _[2]);
                 }
             }),
-            (tt.prototype.isIndexed = function() {
+            (tt.prototype.isIndexed = function () {
                 return 0 != this.verticesIndices.length;
             }),
-            (tt.prototype.unIndex = function(t) {
+            (tt.prototype.unIndex = function (t) {
                 const e = [],
                     i = [],
                     s = [],
                     r = [];
                 let n = 0,
                     o = 0;
-                for (
-                    this.vertexNormals = [], o = 0;
-                    o < this.verticesIndices.length;
-                    o += 3
-                )
+                for (this.vertexNormals = [], o = 0; o < this.verticesIndices.length; o += 3)
                     e.push(this.vertices[3 * this.verticesIndices[o + 0] + 0]),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 0] + 1]
-                        ),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 0] + 2]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 0] + 0
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 0] + 1
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 0] + 2
-                            ]
-                        ),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 0] + 1]),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 0] + 2]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 0] + 0]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 0] + 1]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 0] + 2]),
                         this.texCoords
-                            ? (s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 0] + 0
-                                  ]
-                              ),
-                              s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 0] + 1
-                                  ]
-                              ))
+                            ? (s.push(this.texCoords[2 * this.verticesIndices[o + 0] + 0]),
+                              s.push(this.texCoords[2 * this.verticesIndices[o + 0] + 1]))
                             : (s.push(0), s.push(0)),
                         i.push(n),
                         n++,
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 1] + 0]
-                        ),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 1] + 1]
-                        ),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 1] + 2]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 1] + 0
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 1] + 1
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 1] + 2
-                            ]
-                        ),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 1] + 0]),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 1] + 1]),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 1] + 2]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 1] + 0]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 1] + 1]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 1] + 2]),
                         this.texCoords
-                            ? (s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 1] + 0
-                                  ]
-                              ),
-                              s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 1] + 1
-                                  ]
-                              ))
+                            ? (s.push(this.texCoords[2 * this.verticesIndices[o + 1] + 0]),
+                              s.push(this.texCoords[2 * this.verticesIndices[o + 1] + 1]))
                             : (s.push(0), s.push(0)),
                         i.push(n),
                         n++,
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 2] + 0]
-                        ),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 2] + 1]
-                        ),
-                        e.push(
-                            this.vertices[3 * this.verticesIndices[o + 2] + 2]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 2] + 0
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 2] + 1
-                            ]
-                        ),
-                        r.push(
-                            this.vertexNormals[
-                                3 * this.verticesIndices[o + 2] + 2
-                            ]
-                        ),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 2] + 0]),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 2] + 1]),
+                        e.push(this.vertices[3 * this.verticesIndices[o + 2] + 2]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 2] + 0]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 2] + 1]),
+                        r.push(this.vertexNormals[3 * this.verticesIndices[o + 2] + 2]),
                         this.texCoords
-                            ? (s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 2] + 0
-                                  ]
-                              ),
-                              s.push(
-                                  this.texCoords[
-                                      2 * this.verticesIndices[o + 2] + 1
-                                  ]
-                              ))
+                            ? (s.push(this.texCoords[2 * this.verticesIndices[o + 2] + 0]),
+                              s.push(this.texCoords[2 * this.verticesIndices[o + 2] + 1]))
                             : (s.push(0), s.push(0)),
                         i.push(n),
                         n++;
@@ -4711,19 +3676,17 @@ var CABLES = (function(t) {
                     t && (this.verticesIndices = i),
                     this.calculateNormals();
             }),
-            (tt.prototype.calcBarycentric = function() {
+            (tt.prototype.calcBarycentric = function () {
                 this.barycentrics.length = this.vertices.length;
                 let t = 0;
-                for (t = 0; t < this.vertices.length; t++)
-                    this.barycentrics[t] = 0;
+                for (t = 0; t < this.vertices.length; t++) this.barycentrics[t] = 0;
                 let e = 0;
-                for (t = 0; t < this.vertices.length; t += 3)
-                    (this.barycentrics[t + e] = 1), e++, 3 == e && (e = 0);
+                for (t = 0; t < this.vertices.length; t += 3) (this.barycentrics[t + e] = 1), e++, 3 == e && (e = 0);
             }),
-            (tt.prototype.getBounds = function() {
+            (tt.prototype.getBounds = function () {
                 return new $(this);
             }),
-            (tt.prototype.center = function(t, e, i) {
+            (tt.prototype.center = function (t, e, i) {
                 void 0 === t && ((t = !0), (e = !0), (i = !0));
                 let s = 0;
                 const r = this.getBounds(),
@@ -4739,7 +3702,7 @@ var CABLES = (function(t) {
                         i && (this.vertices[s + 2] -= n[2]));
                 return n;
             }),
-            (tt.prototype.mapTexCoords2d = function() {
+            (tt.prototype.mapTexCoords2d = function () {
                 const t = this.getBounds(),
                     e = this.vertices.length / 3;
                 this.texCoords = new Float32Array(2 * e);
@@ -4747,11 +3710,10 @@ var CABLES = (function(t) {
                     const e = this.vertices[3 * i + 0],
                         s = this.vertices[3 * i + 1];
                     (this.texCoords[2 * i + 0] = e / (t.maxX - t.minX) + 0.5),
-                        (this.texCoords[2 * i + 1] =
-                            1 - s / (t.maxY - t.minY) + 0.5);
+                        (this.texCoords[2 * i + 1] = 1 - s / (t.maxY - t.minY) + 0.5);
                 }
             }),
-            (tt.buildFromFaces = function(t) {
+            (tt.buildFromFaces = function (t) {
                 const e = [],
                     i = [];
                 for (let s = 0; s < t.length; s += 3) {
@@ -4760,26 +3722,12 @@ var CABLES = (function(t) {
                         o = t[s + 2],
                         h = [-1, -1, -1];
                     for (let t = 0; t < e; t += 3)
-                        e[t + 0] == r[0] &&
-                            e[t + 1] == r[1] &&
-                            e[t + 2] == r[2] &&
-                            (h[0] = t / 3),
-                            e[t + 0] == n[0] &&
-                                e[t + 1] == n[1] &&
-                                e[t + 2] == n[2] &&
-                                (h[1] = t / 3),
-                            e[t + 0] == o[0] &&
-                                e[t + 1] == o[1] &&
-                                e[t + 2] == o[2] &&
-                                (h[2] = t / 3);
-                    -1 == h[0] &&
-                        (e.push(r[0], r[1], r[2]), (h[0] = (e.length - 1) / 3)),
-                        -1 == h[1] &&
-                            (e.push(n[0], n[1], n[2]),
-                            (h[1] = (e.length - 1) / 3)),
-                        -1 == h[2] &&
-                            (e.push(o[0], o[1], o[2]),
-                            (h[2] = (e.length - 1) / 3)),
+                        e[t + 0] == r[0] && e[t + 1] == r[1] && e[t + 2] == r[2] && (h[0] = t / 3),
+                            e[t + 0] == n[0] && e[t + 1] == n[1] && e[t + 2] == n[2] && (h[1] = t / 3),
+                            e[t + 0] == o[0] && e[t + 1] == o[1] && e[t + 2] == o[2] && (h[2] = t / 3);
+                    -1 == h[0] && (e.push(r[0], r[1], r[2]), (h[0] = (e.length - 1) / 3)),
+                        -1 == h[1] && (e.push(n[0], n[1], n[2]), (h[1] = (e.length - 1) / 3)),
+                        -1 == h[2] && (e.push(o[0], o[1], o[2]), (h[2] = (e.length - 1) / 3)),
                         i.push(parseInt(h[0], 10)),
                         i.push(parseInt(h[1], 10)),
                         i.push(parseInt(h[2], 10));
@@ -4787,7 +3735,7 @@ var CABLES = (function(t) {
                 const s = new tt();
                 return (s.vertices = e), (s.verticesIndices = i), s;
             }),
-            (tt.json2geom = function(t) {
+            (tt.json2geom = function (t) {
                 const e = new tt();
                 if (
                     ((e.verticesIndices = []),
@@ -4797,18 +3745,11 @@ var CABLES = (function(t) {
                     (e.tangents = t.tangents || []),
                     (e.biTangents = t.bitangents || []),
                     t.texturecoords && e.setTexCoords(t.texturecoords[0]),
-                    t.vertices_b64 &&
-                        (e.vertices = new Float32Array(c(t.vertices_b64))),
-                    t.normals_b64 &&
-                        (e.vertexNormals = new Float32Array(c(t.normals_b64))),
-                    t.tangents_b64 &&
-                        (e.tangents = new Float32Array(c(t.tangents_b64))),
-                    t.bitangents_b64 &&
-                        (e.biTangents = new Float32Array(c(t.bitangents_b64))),
-                    t.texturecoords_b64 &&
-                        e.setTexCoords(
-                            new Float32Array(c(t.texturecoords_b64[0]))
-                        ),
+                    t.vertices_b64 && (e.vertices = new Float32Array(c(t.vertices_b64))),
+                    t.normals_b64 && (e.vertexNormals = new Float32Array(c(t.normals_b64))),
+                    t.tangents_b64 && (e.tangents = new Float32Array(c(t.tangents_b64))),
+                    t.bitangents_b64 && (e.biTangents = new Float32Array(c(t.bitangents_b64))),
+                    t.texturecoords_b64 && e.setTexCoords(new Float32Array(c(t.texturecoords_b64[0]))),
                     t.faces_b64)
                 )
                     e.verticesIndices = new Uint32Array(c(t.faces_b64));
@@ -4821,7 +3762,7 @@ var CABLES = (function(t) {
                 }
                 return e;
             });
-        const et = function(t, e, i, s, r, n, o, h, a, l) {
+        const et = function (t, e, i, s, r, n, o, h, a, l) {
             if (
                 ((this._loc = -1),
                 (this._type = e),
@@ -4899,58 +3840,31 @@ var CABLES = (function(t) {
                         (this._port2 = r),
                         (this._port3 = n),
                         (this._port4 = o),
-                        this._port.on(
-                            'change',
-                            this.updateFromPort4f.bind(this)
-                        ),
-                        this._port2.on(
-                            'change',
-                            this.updateFromPort4f.bind(this)
-                        ),
-                        this._port3.on(
-                            'change',
-                            this.updateFromPort4f.bind(this)
-                        ),
-                        this._port4.on(
-                            'change',
-                            this.updateFromPort4f.bind(this)
-                        ),
+                        this._port.on('change', this.updateFromPort4f.bind(this)),
+                        this._port2.on('change', this.updateFromPort4f.bind(this)),
+                        this._port3.on('change', this.updateFromPort4f.bind(this)),
+                        this._port4.on('change', this.updateFromPort4f.bind(this)),
                         this.updateFromPort4f())
                       : r && n
                       ? ((this._value = [0, 0, 0]),
                         (this._port2 = r),
                         (this._port3 = n),
-                        this._port.on(
-                            'change',
-                            this.updateFromPort3f.bind(this)
-                        ),
-                        this._port2.on(
-                            'change',
-                            this.updateFromPort3f.bind(this)
-                        ),
-                        this._port3.on(
-                            'change',
-                            this.updateFromPort3f.bind(this)
-                        ),
+                        this._port.on('change', this.updateFromPort3f.bind(this)),
+                        this._port2.on('change', this.updateFromPort3f.bind(this)),
+                        this._port3.on('change', this.updateFromPort3f.bind(this)),
                         this.updateFromPort3f())
                       : r
                       ? ((this._value = [0, 0]),
                         (this._port2 = r),
-                        this._port.on(
-                            'change',
-                            this.updateFromPort2f.bind(this)
-                        ),
-                        this._port2.on(
-                            'change',
-                            this.updateFromPort2f.bind(this)
-                        ),
+                        this._port.on('change', this.updateFromPort2f.bind(this)),
+                        this._port2.on('change', this.updateFromPort2f.bind(this)),
                         this.updateFromPort2f())
                       : this._port.on('change', this.updateFromPort.bind(this)))
                 : (this._value = s),
                 this.setValue(this._value),
                 (this.needsUpdate = !0);
         };
-        (et.prototype.copy = function(t) {
+        (et.prototype.copy = function (t) {
             const e = new et(
                 t,
                 this._type,
@@ -4965,7 +3879,7 @@ var CABLES = (function(t) {
             );
             return (e.shaderType = this.shaderType), e;
         }),
-            (et.prototype.getGlslTypeString = function() {
+            (et.prototype.getGlslTypeString = function () {
                 return 'f' == this._type
                     ? 'float'
                     : 'i' == this._type
@@ -4984,423 +3898,272 @@ var CABLES = (function(t) {
                     ? 'sampler2D'
                     : 'tc' == this._type
                     ? 'samplerCube'
-                    : void console.log(
-                          '[CGL UNIFORM] unknown glsl type string ',
-                          this._type
-                      );
+                    : void console.log('[CGL UNIFORM] unknown glsl type string ', this._type);
             }),
-            (et.prototype._isValidLoc = function() {
+            (et.prototype._isValidLoc = function () {
                 return -1 != this._loc;
             }),
-            (et.prototype.getType = function() {
+            (et.prototype.getType = function () {
                 return this._type;
             }),
-            (et.prototype.getName = function() {
+            (et.prototype.getName = function () {
                 return this._name;
             }),
-            (et.prototype.getValue = function() {
+            (et.prototype.getValue = function () {
                 return this._value;
             }),
-            (et.prototype.getShaderType = function() {
+            (et.prototype.getShaderType = function () {
                 return this.shaderType;
             }),
-            (et.prototype.isStructMember = function() {
+            (et.prototype.isStructMember = function () {
                 return !!this._structName;
             }),
-            (et.prototype.resetLoc = function() {
+            (et.prototype.resetLoc = function () {
                 (this._loc = -1), (this.needsUpdate = !0);
             }),
-            (et.prototype.bindTextures = function() {
+            (et.prototype.bindTextures = function () {
                 return this._value;
             }),
-            (et.prototype.resetLoc = function() {
+            (et.prototype.resetLoc = function () {
                 (this._loc = -1), (this.needsUpdate = !0);
             }),
-            (et.prototype.bindTextures = function() {}),
-            (et.prototype.getLoc = function() {
+            (et.prototype.bindTextures = function () {}),
+            (et.prototype.getLoc = function () {
                 return this._loc;
             }),
-            (et.prototype.updateFromPort4f = function() {
+            (et.prototype.updateFromPort4f = function () {
                 (this._value[0] = this._port.get()),
                     (this._value[1] = this._port2.get()),
                     (this._value[2] = this._port3.get()),
                     (this._value[3] = this._port4.get()),
                     this.setValue(this._value);
             }),
-            (et.prototype.updateFromPort3f = function() {
+            (et.prototype.updateFromPort3f = function () {
                 (this._value[0] = this._port.get()),
                     (this._value[1] = this._port2.get()),
                     (this._value[2] = this._port3.get()),
                     this.setValue(this._value);
             }),
-            (et.prototype.updateFromPort2f = function() {
-                (this._value[0] = this._port.get()),
-                    (this._value[1] = this._port2.get()),
-                    this.setValue(this._value);
+            (et.prototype.updateFromPort2f = function () {
+                (this._value[0] = this._port.get()), (this._value[1] = this._port2.get()), this.setValue(this._value);
             }),
-            (et.prototype.updateFromPort = function() {
+            (et.prototype.updateFromPort = function () {
                 this.setValue(this._port.get());
             }),
-            (et.prototype.updateValueF = function() {
+            (et.prototype.updateValueF = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._shader.getCgl().gl.uniform1f(this._loc, this._value),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.setValueF = function(t) {
-                t != this._value &&
-                    ((this.needsUpdate = !0), (this._value = t));
+            (et.prototype.setValueF = function (t) {
+                t != this._value && ((this.needsUpdate = !0), (this._value = t));
             }),
-            (et.prototype.updateValueI = function() {
+            (et.prototype.updateValueI = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._shader.getCgl().gl.uniform1i(this._loc, this._value),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.updateValue2I = function() {
+            (et.prototype.updateValue2I = function () {
                 this._value &&
                     (this._isValidLoc() ||
                         ((this._loc = this._shader
                             .getCgl()
-                            .gl.getUniformLocation(
-                                this._shader.getProgram(),
-                                this._name
-                            )),
+                            .gl.getUniformLocation(this._shader.getProgram(), this._name)),
                         Q.profileShaderGetUniform++,
                         (Q.profileShaderGetUniformName = this._name)),
-                    this._shader
-                        .getCgl()
-                        .gl.uniform2i(
-                            this._loc,
-                            this._value[0],
-                            this._value[1]
-                        ),
+                    this._shader.getCgl().gl.uniform2i(this._loc, this._value[0], this._value[1]),
                     (this.needsUpdate = !1),
                     Q.profileUniformCount++);
             }),
-            (et.prototype.updateValue3I = function() {
+            (et.prototype.updateValue3I = function () {
                 this._value &&
                     (this._isValidLoc() ||
                         ((this._loc = this._shader
                             .getCgl()
-                            .gl.getUniformLocation(
-                                this._shader.getProgram(),
-                                this._name
-                            )),
+                            .gl.getUniformLocation(this._shader.getProgram(), this._name)),
                         Q.profileShaderGetUniform++,
                         (Q.profileShaderGetUniformName = this._name)),
-                    this._shader
-                        .getCgl()
-                        .gl.uniform3i(
-                            this._loc,
-                            this._value[0],
-                            this._value[1],
-                            this._value[2]
-                        ),
+                    this._shader.getCgl().gl.uniform3i(this._loc, this._value[0], this._value[1], this._value[2]),
                     (this.needsUpdate = !1),
                     Q.profileUniformCount++);
             }),
-            (et.prototype.updateValue4I = function() {
+            (et.prototype.updateValue4I = function () {
                 this._isValidLoc() ||
-                    ((this._loc = this._shader
-                        .getCgl()
-                        .gl.getUniformLocation(
-                            this._shader.getProgram(),
-                            this._name
-                        )),
+                    ((this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     Q.profileShaderGetUniform++,
                     (Q.profileShaderGetUniformName = this._name)),
                     this._shader
                         .getCgl()
-                        .gl.uniform4i(
-                            this._loc,
-                            this._value[0],
-                            this._value[1],
-                            this._value[2],
-                            this._value[3]
-                        ),
+                        .gl.uniform4i(this._loc, this._value[0], this._value[1], this._value[2], this._value[3]),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.setValueI = function(t) {
-                t != this._value &&
-                    ((this.needsUpdate = !0), (this._value = t));
+            (et.prototype.setValueI = function (t) {
+                t != this._value && ((this.needsUpdate = !0), (this._value = t));
             }),
-            (et.prototype.setValue2I = function(t) {
+            (et.prototype.setValue2I = function (t) {
                 t &&
                     (this._oldValue
-                        ? (t[0] == this._oldValue[0] &&
-                              t[1] == this._oldValue[1]) ||
-                          ((this._oldValue[0] = t[0]),
-                          (this._oldValue[1] = t[1]),
-                          (this.needsUpdate = !0))
-                        : ((this._oldValue = [t[0] - 1, 1]),
-                          (this.needsUpdate = !0)),
+                        ? (t[0] == this._oldValue[0] && t[1] == this._oldValue[1]) ||
+                          ((this._oldValue[0] = t[0]), (this._oldValue[1] = t[1]), (this.needsUpdate = !0))
+                        : ((this._oldValue = [t[0] - 1, 1]), (this.needsUpdate = !0)),
                     (this._value = t));
             }),
-            (et.prototype.setValue3I = function(t) {
+            (et.prototype.setValue3I = function (t) {
                 t &&
                     (this._oldValue
-                        ? (t[0] == this._oldValue[0] &&
-                              t[1] == this._oldValue[1] &&
-                              t[2] == this._oldValue[2]) ||
+                        ? (t[0] == this._oldValue[0] && t[1] == this._oldValue[1] && t[2] == this._oldValue[2]) ||
                           ((this._oldValue[0] = t[0]),
                           (this._oldValue[1] = t[1]),
                           (this._oldValue[2] = t[2]),
                           (this.needsUpdate = !0))
-                        : ((this._oldValue = [t[0] - 1, 1, 2]),
-                          (this.needsUpdate = !0)),
+                        : ((this._oldValue = [t[0] - 1, 1, 2]), (this.needsUpdate = !0)),
                     (this._value = t));
             }),
-            (et.prototype.setValue4I = function(t) {
+            (et.prototype.setValue4I = function (t) {
                 (this.needsUpdate = !0), (this._value = t || vec4.create());
             }),
-            (et.prototype.updateValueBool = function() {
+            (et.prototype.updateValueBool = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
-                    this._shader
-                        .getCgl()
-                        .gl.uniform1i(this._loc, this._value ? 1 : 0),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
+                    this._shader.getCgl().gl.uniform1i(this._loc, this._value ? 1 : 0),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.setValueBool = function(t) {
-                t != this._value &&
-                    ((this.needsUpdate = !0), (this._value = t));
+            (et.prototype.setValueBool = function (t) {
+                t != this._value && ((this.needsUpdate = !0), (this._value = t));
             }),
-            (et.prototype.setValueArray4F = function(t) {
+            (et.prototype.setValueArray4F = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValueArray4F = function() {
+            (et.prototype.updateValueArray4F = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._value &&
-                        (this._shader
-                            .getCgl()
-                            .gl.uniform4fv(this._loc, this._value),
-                        Q.profileUniformCount++);
+                        (this._shader.getCgl().gl.uniform4fv(this._loc, this._value), Q.profileUniformCount++);
             }),
-            (et.prototype.setValueArray3F = function(t) {
+            (et.prototype.setValueArray3F = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValueArray3F = function() {
+            (et.prototype.updateValueArray3F = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._value &&
-                        (this._shader
-                            .getCgl()
-                            .gl.uniform3fv(this._loc, this._value),
-                        Q.profileUniformCount++);
+                        (this._shader.getCgl().gl.uniform3fv(this._loc, this._value), Q.profileUniformCount++);
             }),
-            (et.prototype.setValueArray2F = function(t) {
+            (et.prototype.setValueArray2F = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValueArray2F = function() {
+            (et.prototype.updateValueArray2F = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._value &&
-                        (this._shader
-                            .getCgl()
-                            .gl.uniform2fv(this._loc, this._value),
-                        Q.profileUniformCount++);
+                        (this._shader.getCgl().gl.uniform2fv(this._loc, this._value), Q.profileUniformCount++);
             }),
-            (et.prototype.setValueArrayF = function(t) {
+            (et.prototype.setValueArrayF = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValueArrayF = function() {
+            (et.prototype.updateValueArrayF = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._value &&
-                        (this._shader
-                            .getCgl()
-                            .gl.uniform1fv(this._loc, this._value),
-                        Q.profileUniformCount++);
+                        (this._shader.getCgl().gl.uniform1fv(this._loc, this._value), Q.profileUniformCount++);
             }),
-            (et.prototype.setValueArrayT = function(t) {
+            (et.prototype.setValueArrayT = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValueArrayT = function() {
+            (et.prototype.updateValueArrayT = function () {
                 this._isValidLoc()
                     ? (this.needsUpdate = !1)
-                    : (this._loc = this._shader
-                          .getCgl()
-                          .gl.getUniformLocation(
-                              this._shader.getProgram(),
-                              this._name
-                          )),
+                    : (this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     this._value &&
-                        (this._shader
-                            .getCgl()
-                            .gl.uniform1iv(this._loc, this._value),
-                        Q.profileUniformCount++);
+                        (this._shader.getCgl().gl.uniform1iv(this._loc, this._value), Q.profileUniformCount++);
             }),
-            (et.prototype.updateValue3F = function() {
+            (et.prototype.updateValue3F = function () {
                 this._value &&
                     (this._isValidLoc() ||
                         ((this._loc = this._shader
                             .getCgl()
-                            .gl.getUniformLocation(
-                                this._shader.getProgram(),
-                                this._name
-                            )),
+                            .gl.getUniformLocation(this._shader.getProgram(), this._name)),
                         Q.profileShaderGetUniform++,
                         (Q.profileShaderGetUniformName = this._name)),
-                    this._shader
-                        .getCgl()
-                        .gl.uniform3f(
-                            this._loc,
-                            this._value[0],
-                            this._value[1],
-                            this._value[2]
-                        ),
+                    this._shader.getCgl().gl.uniform3f(this._loc, this._value[0], this._value[1], this._value[2]),
                     (this.needsUpdate = !1),
                     Q.profileUniformCount++);
             }),
-            (et.prototype.setValue3F = function(t) {
+            (et.prototype.setValue3F = function (t) {
                 t &&
                     (this._oldValue
-                        ? (t[0] == this._oldValue[0] &&
-                              t[1] == this._oldValue[1] &&
-                              t[2] == this._oldValue[2]) ||
+                        ? (t[0] == this._oldValue[0] && t[1] == this._oldValue[1] && t[2] == this._oldValue[2]) ||
                           ((this._oldValue[0] = t[0]),
                           (this._oldValue[1] = t[1]),
                           (this._oldValue[2] = t[2]),
                           (this.needsUpdate = !0))
-                        : ((this._oldValue = [t[0] - 1, 1, 2]),
-                          (this.needsUpdate = !0)),
+                        : ((this._oldValue = [t[0] - 1, 1, 2]), (this.needsUpdate = !0)),
                     (this._value = t));
             }),
-            (et.prototype.updateValue2F = function() {
+            (et.prototype.updateValue2F = function () {
                 this._value &&
                     (this._isValidLoc() ||
                         ((this._loc = this._shader
                             .getCgl()
-                            .gl.getUniformLocation(
-                                this._shader.getProgram(),
-                                this._name
-                            )),
+                            .gl.getUniformLocation(this._shader.getProgram(), this._name)),
                         Q.profileShaderGetUniform++,
                         (Q.profileShaderGetUniformName = this._name)),
-                    this._shader
-                        .getCgl()
-                        .gl.uniform2f(
-                            this._loc,
-                            this._value[0],
-                            this._value[1]
-                        ),
+                    this._shader.getCgl().gl.uniform2f(this._loc, this._value[0], this._value[1]),
                     (this.needsUpdate = !1),
                     Q.profileUniformCount++);
             }),
-            (et.prototype.setValue2F = function(t) {
+            (et.prototype.setValue2F = function (t) {
                 t &&
                     (this._oldValue
-                        ? (t[0] == this._oldValue[0] &&
-                              t[1] == this._oldValue[1]) ||
-                          ((this._oldValue[0] = t[0]),
-                          (this._oldValue[1] = t[1]),
-                          (this.needsUpdate = !0))
-                        : ((this._oldValue = [t[0] - 1, 1]),
-                          (this.needsUpdate = !0)),
+                        ? (t[0] == this._oldValue[0] && t[1] == this._oldValue[1]) ||
+                          ((this._oldValue[0] = t[0]), (this._oldValue[1] = t[1]), (this.needsUpdate = !0))
+                        : ((this._oldValue = [t[0] - 1, 1]), (this.needsUpdate = !0)),
                     (this._value = t));
             }),
-            (et.prototype.updateValueT = function() {
+            (et.prototype.updateValueT = function () {
                 this._isValidLoc() ||
-                    ((this._loc = this._shader
-                        .getCgl()
-                        .gl.getUniformLocation(
-                            this._shader.getProgram(),
-                            this._name
-                        )),
+                    ((this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     Q.profileShaderGetUniform++,
                     (Q.profileShaderGetUniformName = this._name)),
                     Q.profileUniformCount++,
                     this._shader.getCgl().gl.uniform1i(this._loc, this._value),
                     (this.needsUpdate = !1);
             }),
-            (et.prototype.setValueT = function(t) {
+            (et.prototype.setValueT = function (t) {
                 (this.needsUpdate = !0), (this._value = t);
             }),
-            (et.prototype.updateValue4F = function() {
+            (et.prototype.updateValue4F = function () {
                 this._isValidLoc() ||
-                    ((this._loc = this._shader
-                        .getCgl()
-                        .gl.getUniformLocation(
-                            this._shader.getProgram(),
-                            this._name
-                        )),
+                    ((this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     Q.profileShaderGetUniform++,
                     (Q.profileShaderGetUniformName = this._name)),
                     (this.needsUpdate = !1),
                     this._shader
                         .getCgl()
-                        .gl.uniform4f(
-                            this._loc,
-                            this._value[0],
-                            this._value[1],
-                            this._value[2],
-                            this._value[3]
-                        ),
+                        .gl.uniform4f(this._loc, this._value[0], this._value[1], this._value[2], this._value[3]),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.setValue4F = function(t) {
+            (et.prototype.setValue4F = function (t) {
                 (this.needsUpdate = !0), (this._value = t || vec4.create());
             }),
-            (et.prototype.updateValueM4 = function() {
+            (et.prototype.updateValueM4 = function () {
                 this._isValidLoc() ||
-                    ((this._loc = this._shader
-                        .getCgl()
-                        .gl.getUniformLocation(
-                            this._shader.getProgram(),
-                            this._name
-                        )),
+                    ((this._loc = this._shader.getCgl().gl.getUniformLocation(this._shader.getProgram(), this._name)),
                     Q.profileShaderGetUniform++,
                     (Q.profileShaderGetUniformName = this._name)),
-                    this._shader
-                        .getCgl()
-                        .gl.uniformMatrix4fv(this._loc, !1, this._value),
+                    this._shader.getCgl().gl.uniformMatrix4fv(this._loc, !1, this._value),
                     Q.profileUniformCount++;
             }),
-            (et.prototype.setValueM4 = function(t) {
+            (et.prototype.setValueM4 = function (t) {
                 (this.needsUpdate = !0), (this._value = t || mat4.create());
             });
         const it = 180 / Math.PI,
@@ -5428,7 +4191,7 @@ var CABLES = (function(t) {
                 },
             };
         const rt = { lastMesh: null },
-            nt = function(t, e, i) {
+            nt = function (t, e, i) {
                 (this._cgl = t),
                     (this._bufVertexAttrib = null),
                     (this._bufVerticesIndizes = this._cgl.gl.createBuffer()),
@@ -5456,158 +4219,110 @@ var CABLES = (function(t) {
                     });
             };
         var ot;
-        (nt.prototype.updateVertices = function(t) {
-            this.setAttribute(
-                st.SHADER.SHADERVAR_VERTEX_POSITION,
-                t.vertices,
-                3
-            );
+        (nt.prototype.updateVertices = function (t) {
+            this.setAttribute(st.SHADER.SHADERVAR_VERTEX_POSITION, t.vertices, 3);
         }),
-            (nt.prototype.setAttributePointer = function(t, e, i, s) {
+            (nt.prototype.setAttributePointer = function (t, e, i, s) {
                 for (let r = 0; r < this._attributes.length; r++)
                     this._attributes[r].name == t &&
-                        (this._attributes[r].pointer ||
-                            (this._attributes[r].pointer = []),
+                        (this._attributes[r].pointer || (this._attributes[r].pointer = []),
                         this._attributes[r].pointer.push({
                             loc: -1,
                             name: e,
                             stride: i,
                             offset: s,
-                            instanced:
-                                t == st.SHADER.SHADERVAR_INSTANCE_MMATRIX,
+                            instanced: t == st.SHADER.SHADERVAR_INSTANCE_MMATRIX,
                         }));
             }),
-            (nt.prototype.getAttribute = function(t) {
+            (nt.prototype.getAttribute = function (t) {
                 for (let e = 0; e < this._attributes.length; e++)
-                    if (this._attributes[e].name == t)
-                        return this._attributes[e];
+                    if (this._attributes[e].name == t) return this._attributes[e];
             }),
-            (nt.prototype.setAttributeRange = function(t, e, i, s) {
+            (nt.prototype.setAttributeRange = function (t, e, i, s) {
                 t &&
                     (i || s) &&
-                    (this._cgl.gl.bindBuffer(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        t.buffer
-                    ),
+                    (this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, t.buffer),
                     (Q.profileMeshAttributes += s - i || 0),
-                    this._cgl.gl.bufferSubData(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        4 * i,
-                        e,
-                        i,
-                        s - i
-                    ));
+                    this._cgl.gl.bufferSubData(this._cgl.gl.ARRAY_BUFFER, 4 * i, e, i, s - i));
             }),
-            (nt.prototype._bufferArray = function(t, e) {
+            (nt.prototype._bufferArray = function (t, e) {
                 let i = null;
                 t &&
-                    (this._cgl.debugOneFrame &&
-                        console.log('_bufferArray', t.length, e.name),
+                    (this._cgl.debugOneFrame && console.log('_bufferArray', t.length, e.name),
                     t instanceof Float32Array
                         ? (i = t)
                         : e && e.floatArray && e.floatArray.length == t.length
                         ? (e.floatArray.set(t), (i = e.floatArray))
                         : ((i = new Float32Array(t)),
                           this._cgl.debugOneFrame &&
-                              console.log(
-                                  '_bufferArray create new float32array',
-                                  t.length,
-                                  e.name
-                              ),
+                              console.log('_bufferArray create new float32array', t.length, e.name),
                           Q.profileNonTypedAttrib++,
-                          (Q.profileNonTypedAttribNames =
-                              this._geom.name + ' ' + e.name)),
+                          (Q.profileNonTypedAttribNames = this._geom.name + ' ' + e.name)),
                     e && i && (e.floatArray = i),
-                    this._cgl.gl.bufferData(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        i,
-                        this._cgl.gl.DYNAMIC_DRAW
-                    ));
+                    this._cgl.gl.bufferData(this._cgl.gl.ARRAY_BUFFER, i, this._cgl.gl.DYNAMIC_DRAW));
             }),
-            (nt.prototype.addAttribute = nt.prototype.updateAttribute = nt.prototype.setAttribute = function(
-                t,
-                e,
-                i,
-                s
-            ) {
-                let r = null,
-                    n = !1,
-                    o = 0;
-                const h = e.length / i;
-                for (
-                    Q.profileMeshAttributes += h || 0,
-                        0 === h &&
-                            console.warn(
-                                'CGL_MESH: ' +
-                                    this._geom.name +
-                                    ' num items in attribute ' +
-                                    t +
-                                    ' is ZERO'
-                            ),
-                        'function' == typeof s && (r = s),
-                        'object' == typeof s &&
-                            (s.cb && (r = s.cb),
-                            s.instanced && (n = s.instanced)),
-                        t == st.SHADER.SHADERVAR_INSTANCE_MMATRIX && (n = !0),
-                        o = 0;
-                    o < this._attributes.length;
-                    o++
-                )
-                    if (this._attributes[o].name == t)
+            (nt.prototype.addAttribute =
+                nt.prototype.updateAttribute =
+                nt.prototype.setAttribute =
+                    function (t, e, i, s) {
+                        let r = null,
+                            n = !1,
+                            o = 0;
+                        const h = e.length / i;
+                        for (
+                            Q.profileMeshAttributes += h || 0,
+                                0 === h &&
+                                    console.warn(
+                                        'CGL_MESH: ' + this._geom.name + ' num items in attribute ' + t + ' is ZERO'
+                                    ),
+                                'function' == typeof s && (r = s),
+                                'object' == typeof s && (s.cb && (r = s.cb), s.instanced && (n = s.instanced)),
+                                t == st.SHADER.SHADERVAR_INSTANCE_MMATRIX && (n = !0),
+                                o = 0;
+                            o < this._attributes.length;
+                            o++
+                        )
+                            if (this._attributes[o].name == t)
+                                return (
+                                    (this._attributes[o].numItems = h),
+                                    this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, this._attributes[o].buffer),
+                                    this._bufferArray(e, this._attributes[o]),
+                                    this._attributes[o]
+                                );
+                        const a = this._cgl.gl.createBuffer();
+                        this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, a);
+                        let l = this._cgl.gl.FLOAT;
+                        s && s.type && (l = s.type);
+                        const u = {
+                            buffer: a,
+                            name: t,
+                            cb: r,
+                            itemSize: i,
+                            numItems: h,
+                            startItem: 0,
+                            instanced: n,
+                            type: l,
+                        };
                         return (
-                            (this._attributes[o].numItems = h),
-                            this._cgl.gl.bindBuffer(
-                                this._cgl.gl.ARRAY_BUFFER,
-                                this._attributes[o].buffer
-                            ),
-                            this._bufferArray(e, this._attributes[o]),
-                            this._attributes[o]
+                            this._bufferArray(e, u),
+                            t == st.SHADER.SHADERVAR_VERTEX_POSITION && (this._bufVertexAttrib = u),
+                            this._attributes.push(u),
+                            (this._attribLocs = {}),
+                            u
                         );
-                const a = this._cgl.gl.createBuffer();
-                this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, a);
-                let l = this._cgl.gl.FLOAT;
-                s && s.type && (l = s.type);
-                const u = {
-                    buffer: a,
-                    name: t,
-                    cb: r,
-                    itemSize: i,
-                    numItems: h,
-                    startItem: 0,
-                    instanced: n,
-                    type: l,
-                };
-                return (
-                    this._bufferArray(e, u),
-                    t == st.SHADER.SHADERVAR_VERTEX_POSITION &&
-                        (this._bufVertexAttrib = u),
-                    this._attributes.push(u),
-                    (this._attribLocs = {}),
-                    u
-                );
-            }),
-            (nt.prototype.getAttributes = function() {
+                    }),
+            (nt.prototype.getAttributes = function () {
                 return this._attributes;
             }),
-            (nt.prototype.updateTexCoords = function(t) {
+            (nt.prototype.updateTexCoords = function (t) {
                 if (t.texCoords && t.texCoords.length > 0)
-                    this.setAttribute(
-                        st.SHADER.SHADERVAR_VERTEX_TEXCOORD,
-                        t.texCoords,
-                        2
-                    );
+                    this.setAttribute(st.SHADER.SHADERVAR_VERTEX_TEXCOORD, t.texCoords, 2);
                 else {
-                    const e = new Float32Array(
-                        Math.round((t.vertices.length / 3) * 2)
-                    );
-                    this.setAttribute(
-                        st.SHADER.SHADERVAR_VERTEX_TEXCOORD,
-                        e,
-                        2
-                    );
+                    const e = new Float32Array(Math.round((t.vertices.length / 3) * 2));
+                    this.setAttribute(st.SHADER.SHADERVAR_VERTEX_TEXCOORD, e, 2);
                 }
             }),
-            (nt.prototype.updateNormals = function(t) {
+            (nt.prototype.updateNormals = function (t) {
                 if (t.vertexNormals && t.vertexNormals.length > 0)
                     this.setAttribute('attrVertNormal', t.vertexNormals, 3);
                 else {
@@ -5615,43 +4330,24 @@ var CABLES = (function(t) {
                     this.setAttribute('attrVertNormal', e, 3);
                 }
             }),
-            (nt.prototype._setVertexNumbers = function() {
+            (nt.prototype._setVertexNumbers = function () {
                 const t = this._geom.vertices.length / 3;
-                if (
-                    !this._verticesNumbers ||
-                    this._verticesNumbers.length != t
-                ) {
+                if (!this._verticesNumbers || this._verticesNumbers.length != t) {
                     this._verticesNumbers = new Float32Array(t);
                     for (let e = 0; e < t; e++) this._verticesNumbers[e] = e;
-                    this.setAttribute(
-                        st.SHADER.SHADERVAR_VERTEX_NUMBER,
-                        this._verticesNumbers,
-                        1,
-                        (e, i, s) => {
-                            s.uniformNumVertices ||
-                                (s.uniformNumVertices = new et(
-                                    s,
-                                    'f',
-                                    'numVertices',
-                                    t
-                                )),
-                                s.uniformNumVertices.setValue(t);
-                        }
-                    );
+                    this.setAttribute(st.SHADER.SHADERVAR_VERTEX_NUMBER, this._verticesNumbers, 1, (e, i, s) => {
+                        s.uniformNumVertices || (s.uniformNumVertices = new et(s, 'f', 'numVertices', t)),
+                            s.uniformNumVertices.setValue(t);
+                    });
                 }
             }),
-            (nt.prototype.setVertexIndices = function(t) {
+            (nt.prototype.setVertexIndices = function (t) {
                 if (this._bufVerticesIndizes)
                     if (t.length > 0) {
                         for (let e = 0; e < t.length; e++)
                             if (t[e] >= this._geom.vertices.length / 3)
-                                return void console.warn(
-                                    'invalid index in ' + this._geom.name
-                                );
-                        this._cgl.gl.bindBuffer(
-                            this._cgl.gl.ELEMENT_ARRAY_BUFFER,
-                            this._bufVerticesIndizes
-                        ),
+                                return void console.warn('invalid index in ' + this._geom.name);
+                        this._cgl.gl.bindBuffer(this._cgl.gl.ELEMENT_ARRAY_BUFFER, this._bufVerticesIndizes),
                             t instanceof Uint16Array
                                 ? (this.vertIndicesTyped = t)
                                 : (this.vertIndicesTyped = new Uint16Array(t)),
@@ -5665,10 +4361,9 @@ var CABLES = (function(t) {
                     } else this._bufVerticesIndizes.numItems = 0;
                 else d.warn('no bufVerticesIndizes');
             }),
-            (nt.prototype.setGeom = function(t) {
+            (nt.prototype.setGeom = function (t) {
                 (this._geom = t),
-                    null != t.glPrimitive &&
-                        (this._glPrimitive = t.glPrimitive),
+                    null != t.glPrimitive && (this._glPrimitive = t.glPrimitive),
                     (rt.lastMesh = null),
                     Q.profileMeshSetGeom++,
                     this._disposeAttributes(),
@@ -5679,67 +4374,38 @@ var CABLES = (function(t) {
                     this._geom.hasOwnProperty('tangents') &&
                         this._geom.tangents &&
                         this._geom.tangents.length > 0 &&
-                        this.setAttribute(
-                            'attrTangent',
-                            this._geom.tangents,
-                            3
-                        ),
+                        this.setAttribute('attrTangent', this._geom.tangents, 3),
                     this._geom.hasOwnProperty('biTangents') &&
                         this._geom.biTangents &&
                         this._geom.biTangents.length > 0 &&
-                        this.setAttribute(
-                            'attrBiTangent',
-                            this._geom.biTangents,
-                            3
-                        ),
+                        this.setAttribute('attrBiTangent', this._geom.biTangents, 3),
                     this._geom.vertexColors.length > 0 &&
-                        (this._geom.vertexColors.flat &&
-                            this._geom.vertexColors.flat(100),
-                        this.setAttribute(
-                            'attrVertColor',
-                            this._geom.vertexColors,
-                            4
-                        )),
+                        (this._geom.vertexColors.flat && this._geom.vertexColors.flat(100),
+                        this.setAttribute('attrVertColor', this._geom.vertexColors, 4)),
                     this.addVertexNumbers && this._setVertexNumbers();
                 const e = this._geom.getAttributes();
-                for (const t in e)
-                    this.setAttribute(t, e[t].data, e[t].itemSize);
+                for (const t in e) this.setAttribute(t, e[t].data, e[t].itemSize);
             }),
-            (nt.prototype._preBind = function(t) {
+            (nt.prototype._preBind = function (t) {
                 for (let e = 0; e < this._attributes.length; e++)
-                    this._attributes[e].cb &&
-                        this._attributes[e].cb(
-                            this._attributes[e],
-                            this._geom,
-                            t
-                        );
+                    this._attributes[e].cb && this._attributes[e].cb(this._attributes[e], this._geom, t);
             }),
-            (nt.prototype._checkAttrLengths = function() {
+            (nt.prototype._checkAttrLengths = function () {
                 for (let t = 0; t < this._attributes.length; t++)
                     this._attributes[0].floatArray.length,
                         this._attributes[0].itemSize,
                         this._attributes[t].floatArray.length,
                         this._attributes[t].itemSize;
             }),
-            (nt.prototype._bind = function(t) {
+            (nt.prototype._bind = function (t) {
                 if (!t.isValid()) return;
                 t != this._lastShader && this.unBind();
                 let e = [];
-                this._attribLocs[t.id]
-                    ? (e = this._attribLocs[t.id])
-                    : (this._attribLocs[t.id] = e),
+                this._attribLocs[t.id] ? (e = this._attribLocs[t.id]) : (this._attribLocs[t.id] = e),
                     (this._lastShader = t);
                 let i = 0;
-                if (
-                    t.lastCompile > this._lastAttrUpdate ||
-                    e.length != this._attributes.length
-                ) {
-                    for (
-                        this._lastAttrUpdate = t.lastCompile, i = 0;
-                        i < this._attributes.length;
-                        i++
-                    )
-                        e[i] = -1;
+                if (t.lastCompile > this._lastAttrUpdate || e.length != this._attributes.length) {
+                    for (this._lastAttrUpdate = t.lastCompile, i = 0; i < this._attributes.length; i++) e[i] = -1;
                     this._checkAttrLengths();
                 }
                 for (i = 0; i < this._attributes.length; i++) {
@@ -5748,124 +4414,45 @@ var CABLES = (function(t) {
                         (-1 == e[i] &&
                             s._attrLocationLastShaderTime != t.lastCompile &&
                             ((s._attrLocationLastShaderTime = t.lastCompile),
-                            (e[i] = this._cgl.glGetAttribLocation(
-                                t.getProgram(),
-                                s.name
-                            )),
+                            (e[i] = this._cgl.glGetAttribLocation(t.getProgram(), s.name)),
                             Q.profileAttrLoc++),
                         -1 != e[i])
                     )
                         if (
                             (this._cgl.gl.enableVertexAttribArray(e[i]),
-                            this._cgl.gl.bindBuffer(
-                                this._cgl.gl.ARRAY_BUFFER,
-                                s.buffer
-                            ),
+                            this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, s.buffer),
                             s.instanced)
                         )
                             if (s.itemSize <= 4)
                                 (s.itemSize && 0 != s.itemSize) ||
-                                    d.log(
-                                        'instanced attrib itemsize error',
-                                        this._geom.name,
-                                        s
-                                    ),
-                                    this._cgl.gl.vertexAttribPointer(
-                                        e[i],
-                                        s.itemSize,
-                                        s.type,
-                                        !1,
-                                        4 * s.itemSize,
-                                        0
-                                    ),
+                                    d.log('instanced attrib itemsize error', this._geom.name, s),
+                                    this._cgl.gl.vertexAttribPointer(e[i], s.itemSize, s.type, !1, 4 * s.itemSize, 0),
                                     this._cgl.gl.vertexAttribDivisor(e[i], 1);
                             else if (16 == s.itemSize) {
                                 const t = 64;
-                                this._cgl.gl.vertexAttribPointer(
-                                    e[i],
-                                    4,
-                                    s.type,
-                                    !1,
-                                    t,
-                                    0
-                                ),
-                                    this._cgl.gl.enableVertexAttribArray(
-                                        e[i] + 1
-                                    ),
-                                    this._cgl.gl.vertexAttribPointer(
-                                        e[i] + 1,
-                                        4,
-                                        s.type,
-                                        !1,
-                                        t,
-                                        16
-                                    ),
-                                    this._cgl.gl.enableVertexAttribArray(
-                                        e[i] + 2
-                                    ),
-                                    this._cgl.gl.vertexAttribPointer(
-                                        e[i] + 2,
-                                        4,
-                                        s.type,
-                                        !1,
-                                        t,
-                                        32
-                                    ),
-                                    this._cgl.gl.enableVertexAttribArray(
-                                        e[i] + 3
-                                    ),
-                                    this._cgl.gl.vertexAttribPointer(
-                                        e[i] + 3,
-                                        4,
-                                        s.type,
-                                        !1,
-                                        t,
-                                        48
-                                    ),
+                                this._cgl.gl.vertexAttribPointer(e[i], 4, s.type, !1, t, 0),
+                                    this._cgl.gl.enableVertexAttribArray(e[i] + 1),
+                                    this._cgl.gl.vertexAttribPointer(e[i] + 1, 4, s.type, !1, t, 16),
+                                    this._cgl.gl.enableVertexAttribArray(e[i] + 2),
+                                    this._cgl.gl.vertexAttribPointer(e[i] + 2, 4, s.type, !1, t, 32),
+                                    this._cgl.gl.enableVertexAttribArray(e[i] + 3),
+                                    this._cgl.gl.vertexAttribPointer(e[i] + 3, 4, s.type, !1, t, 48),
                                     this._cgl.gl.vertexAttribDivisor(e[i], 1),
-                                    this._cgl.gl.vertexAttribDivisor(
-                                        e[i] + 1,
-                                        1
-                                    ),
-                                    this._cgl.gl.vertexAttribDivisor(
-                                        e[i] + 2,
-                                        1
-                                    ),
-                                    this._cgl.gl.vertexAttribDivisor(
-                                        e[i] + 3,
-                                        1
-                                    );
-                            } else
-                                d.log('unknown instance attrib size', s.name);
+                                    this._cgl.gl.vertexAttribDivisor(e[i] + 1, 1),
+                                    this._cgl.gl.vertexAttribDivisor(e[i] + 2, 1),
+                                    this._cgl.gl.vertexAttribDivisor(e[i] + 3, 1);
+                            } else d.log('unknown instance attrib size', s.name);
                         else {
                             if (
-                                ((s.itemSize && 0 != s.itemSize) ||
-                                    d.log(
-                                        'attrib itemsize error',
-                                        this._geom.name,
-                                        s
-                                    ),
-                                this._cgl.gl.vertexAttribPointer(
-                                    e[i],
-                                    s.itemSize,
-                                    s.type,
-                                    !1,
-                                    4 * s.itemSize,
-                                    0
-                                ),
+                                ((s.itemSize && 0 != s.itemSize) || d.log('attrib itemsize error', this._geom.name, s),
+                                this._cgl.gl.vertexAttribPointer(e[i], s.itemSize, s.type, !1, 4 * s.itemSize, 0),
                                 s.pointer)
                             )
                                 for (let e = 0; e < s.pointer.length; e++) {
                                     const i = s.pointer[e];
-                                    -1 == i.loc &&
-                                        (i.loc = this._cgl.glGetAttribLocation(
-                                            t.getProgram(),
-                                            i.name
-                                        )),
+                                    -1 == i.loc && (i.loc = this._cgl.glGetAttribLocation(t.getProgram(), i.name)),
                                         Q.profileAttrLoc++,
-                                        this._cgl.gl.enableVertexAttribArray(
-                                            i.loc
-                                        ),
+                                        this._cgl.gl.enableVertexAttribArray(i.loc),
                                         this._cgl.gl.vertexAttribPointer(
                                             i.loc,
                                             s.itemSize,
@@ -5879,26 +4466,19 @@ var CABLES = (function(t) {
                         }
                 }
                 0 !== this._bufVerticesIndizes.numItems &&
-                    this._cgl.gl.bindBuffer(
-                        this._cgl.gl.ELEMENT_ARRAY_BUFFER,
-                        this._bufVerticesIndizes
-                    );
+                    this._cgl.gl.bindBuffer(this._cgl.gl.ELEMENT_ARRAY_BUFFER, this._bufVerticesIndizes);
             }),
-            (nt.prototype.unBind = function() {
+            (nt.prototype.unBind = function () {
                 const t = this._lastShader;
                 if (((this._lastShader = null), !t)) return;
                 let e = [];
-                this._attribLocs[t.id]
-                    ? (e = this._attribLocs[t.id])
-                    : (this._attribLocs[t.id] = e),
+                this._attribLocs[t.id] ? (e = this._attribLocs[t.id]) : (this._attribLocs[t.id] = e),
                     (rt.lastMesh = null);
                 for (let t = 0; t < this._attributes.length; t++)
                     this._attributes[t].instanced &&
                         (this._attributes[t].itemSize <= 4
-                            ? (-1 != e[t] &&
-                                  this._cgl.gl.vertexAttribDivisor(e[t], 0),
-                              e[t] >= 0 &&
-                                  this._cgl.gl.disableVertexAttribArray(e[t]))
+                            ? (-1 != e[t] && this._cgl.gl.vertexAttribDivisor(e[t], 0),
+                              e[t] >= 0 && this._cgl.gl.disableVertexAttribArray(e[t]))
                             : (this._cgl.gl.vertexAttribDivisor(e[t], 0),
                               this._cgl.gl.vertexAttribDivisor(e[t] + 1, 0),
                               this._cgl.gl.vertexAttribDivisor(e[t] + 2, 0),
@@ -5906,21 +4486,20 @@ var CABLES = (function(t) {
                               this._cgl.gl.disableVertexAttribArray(e[t] + 1),
                               this._cgl.gl.disableVertexAttribArray(e[t] + 2),
                               this._cgl.gl.disableVertexAttribArray(e[t] + 3))),
-                        -1 != e[t] &&
-                            this._cgl.gl.disableVertexAttribArray(e[t]);
+                        -1 != e[t] && this._cgl.gl.disableVertexAttribArray(e[t]);
             }),
-            (nt.prototype.meshChanged = function() {
+            (nt.prototype.meshChanged = function () {
                 return this._cgl.lastMesh && this._cgl.lastMesh != this;
             }),
-            (nt.prototype.printDebug = function(t) {
+            (nt.prototype.printDebug = function (t) {
                 d.log('--attributes');
                 for (let t = 0; t < this._attributes.length; t++)
                     d.log('attribute ' + t + ' ' + this._attributes[t].name);
             }),
-            (nt.prototype.setNumVertices = function(t) {
+            (nt.prototype.setNumVertices = function (t) {
                 this._bufVertexAttrib.numItems = t;
             }),
-            (nt.prototype.render = function(t) {
+            (nt.prototype.render = function (t) {
                 if (!t || !t.isValid()) return;
                 t.wireframe ||
                     this._geom.isIndexed() ||
@@ -5933,14 +4512,9 @@ var CABLES = (function(t) {
                         this._geom.unIndex(),
                         this._geom.calcBarycentric(),
                         this.setGeom(this._geom),
-                        this.setAttribute(
-                            'attrBarycentric',
-                            this._geom.barycentrics,
-                            3
-                        ));
+                        this.setAttribute('attrBarycentric', this._geom.barycentrics, 3));
                 let e = !1;
-                rt.lastMesh != this &&
-                    (rt.lastMesh && rt.lastMesh.unBind(), (e = !0)),
+                rt.lastMesh != this && (rt.lastMesh && rt.lastMesh.unBind(), (e = !0)),
                     e && this._preBind(t),
                     t.bind(),
                     t.bindTextures && t.bindTextures(),
@@ -5948,8 +4522,7 @@ var CABLES = (function(t) {
                     this.addVertexNumbers && this._setVertexNumbers(),
                     (rt.lastMesh = this);
                 let i = this._cgl.gl.TRIANGLES;
-                void 0 !== this._glPrimitive && (i = this._glPrimitive),
-                    null !== t.glPrimitive && (i = t.glPrimitive);
+                void 0 !== this._glPrimitive && (i = this._glPrimitive), null !== t.glPrimitive && (i = t.glPrimitive);
                 let s = 1;
                 this.hasFeedbacks()
                     ? this.drawFeedbacks(t, i)
@@ -5959,8 +4532,7 @@ var CABLES = (function(t) {
                           ? this._cgl.gl.drawArrays(
                                 i,
                                 this._bufVertexAttrib.startItem,
-                                this._bufVertexAttrib.numItems -
-                                    this._bufVertexAttrib.startItem
+                                this._bufVertexAttrib.numItems - this._bufVertexAttrib.startItem
                             )
                           : this._cgl.gl.drawArraysInstanced(
                                 i,
@@ -5969,12 +4541,7 @@ var CABLES = (function(t) {
                                 this._numInstances
                             ))
                     : 0 === this._numInstances
-                    ? this._cgl.gl.drawElements(
-                          i,
-                          this._bufVerticesIndizes.numItems,
-                          this._cgl.gl.UNSIGNED_SHORT,
-                          0
-                      )
+                    ? this._cgl.gl.drawElements(i, this._bufVerticesIndizes.numItems, this._cgl.gl.UNSIGNED_SHORT, 0)
                     : this._cgl.gl.drawElementsInstanced(
                           i,
                           this._bufVerticesIndizes.numItems,
@@ -5982,12 +4549,10 @@ var CABLES = (function(t) {
                           0,
                           this._numInstances
                       ),
-                    (Q.profileMeshNumElements +=
-                        (this._bufVertexAttrib.numItems / s) *
-                        (this._numInstances || 1)),
+                    (Q.profileMeshNumElements += (this._bufVertexAttrib.numItems / s) * (this._numInstances || 1)),
                     Q.profileMeshDraw++;
             }),
-            (nt.prototype.setNumInstances = function(t) {
+            (nt.prototype.setNumInstances = function (t) {
                 if (((t = Math.max(0, t)), this._numInstances != t)) {
                     this._numInstances = t;
                     const e = new Float32Array(t);
@@ -5995,98 +4560,67 @@ var CABLES = (function(t) {
                     this.setAttribute('instanceIndex', e, 1, { instanced: !0 });
                 }
             }),
-            (nt.prototype._disposeAttributes = function() {
+            (nt.prototype._disposeAttributes = function () {
                 if (this._attributes) {
                     for (let t = 0; t < this._attributes.length; t++)
                         this._attributes[t].buffer &&
-                            (this._cgl.gl.deleteBuffer(
-                                this._attributes[t].buffer
-                            ),
+                            (this._cgl.gl.deleteBuffer(this._attributes[t].buffer),
                             (this._attributes[t].buffer = null));
                     this._attributes.length = 0;
                 }
             }),
-            (nt.prototype.dispose = function() {
+            (nt.prototype.dispose = function () {
                 this._bufVertexAttrib &&
                     this._bufVertexAttrib.buffer &&
                     this._cgl.gl.deleteBuffer(this._bufVertexAttrib.buffer),
-                    this._bufVerticesIndizes &&
-                        this._cgl.gl.deleteBuffer(this._bufVerticesIndizes),
+                    this._bufVerticesIndizes && this._cgl.gl.deleteBuffer(this._bufVerticesIndizes),
                     this._disposeAttributes();
             }),
-            ((ot = nt).prototype.hasFeedbacks = function() {
+            ((ot = nt).prototype.hasFeedbacks = function () {
                 return this._feedBacks.length > 0;
             }),
-            (ot.prototype.removeFeedbacks = function(t) {
-                this._feedbacks &&
-                    ((this._feedbacks.length = 0),
-                    (this._feedBacksChanged = !0));
+            (ot.prototype.removeFeedbacks = function (t) {
+                this._feedbacks && ((this._feedbacks.length = 0), (this._feedBacksChanged = !0));
             }),
-            (ot.prototype.setAttributeFeedback = function() {}),
-            (ot.prototype.setFeedback = function(t, e, i) {
+            (ot.prototype.setAttributeFeedback = function () {}),
+            (ot.prototype.setFeedback = function (t, e, i) {
                 let s = { nameOut: e },
                     r = !1;
                 this.unBindFeedbacks();
                 for (let t = 0; t < this._feedBacks.length; t++)
-                    this._feedBacks[t].nameOut == e &&
-                        ((s = this._feedBacks[t]), (r = !0));
+                    this._feedBacks[t].nameOut == e && ((s = this._feedBacks[t]), (r = !0));
                 return (
                     r || (this._feedBacksChanged = !0),
                     (s.initialArr = i),
                     (s.attrib = t),
                     s.outBuffer && this._cgl.gl.deleteBuffer(s.outBuffer),
                     (s.outBuffer = this._cgl.gl.createBuffer()),
-                    this._cgl.gl.bindBuffer(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        s.outBuffer
-                    ),
-                    this._cgl.gl.bufferData(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        s.initialArr,
-                        this._cgl.gl.STATIC_DRAW
-                    ),
-                    this._cgl.gl.bindBuffer(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        s.attrib.buffer
-                    ),
-                    this._cgl.gl.bufferData(
-                        this._cgl.gl.ARRAY_BUFFER,
-                        s.initialArr,
-                        this._cgl.gl.STATIC_DRAW
-                    ),
+                    this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, s.outBuffer),
+                    this._cgl.gl.bufferData(this._cgl.gl.ARRAY_BUFFER, s.initialArr, this._cgl.gl.STATIC_DRAW),
+                    this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, s.attrib.buffer),
+                    this._cgl.gl.bufferData(this._cgl.gl.ARRAY_BUFFER, s.initialArr, this._cgl.gl.STATIC_DRAW),
                     r || this._feedBacks.push(s),
                     s
                 );
             }),
-            (ot.prototype.bindFeedback = function(t) {
+            (ot.prototype.bindFeedback = function (t) {
                 if (!this._feedBacks || 0 === this._feedBacks.length) return;
                 -1 == this._transformFeedBackLoc &&
                     (this._transformFeedBackLoc = this._cgl.gl.createTransformFeedback()),
-                    this._cgl.gl.bindTransformFeedback(
-                        this._cgl.gl.TRANSFORM_FEEDBACK,
-                        this._transformFeedBackLoc
-                    );
+                    this._cgl.gl.bindTransformFeedback(this._cgl.gl.TRANSFORM_FEEDBACK, this._transformFeedBackLoc);
                 let e = !1;
                 for (let i = 0; i < this._feedBacks.length; i++) {
                     const s = this._feedBacks[i];
                     s.attrib == t &&
-                        ((e = !0),
-                        this._cgl.gl.bindBufferBase(
-                            this._cgl.gl.TRANSFORM_FEEDBACK_BUFFER,
-                            i,
-                            s.outBuffer
-                        ));
+                        ((e = !0), this._cgl.gl.bindBufferBase(this._cgl.gl.TRANSFORM_FEEDBACK_BUFFER, i, s.outBuffer));
                 }
             }),
-            (ot.prototype.drawFeedbacks = function(t, e) {
+            (ot.prototype.drawFeedbacks = function (t, e) {
                 let i = 0;
                 if (this._feedBacksChanged) {
                     const e = [];
                     for (
-                        this._cgl.gl.bindTransformFeedback(
-                            this._cgl.gl.TRANSFORM_FEEDBACK,
-                            this._transformFeedBackLoc
-                        ),
+                        this._cgl.gl.bindTransformFeedback(this._cgl.gl.TRANSFORM_FEEDBACK, this._transformFeedBackLoc),
                             i = 0;
                         i < this._feedBacks.length;
                         i++
@@ -6097,70 +4631,41 @@ var CABLES = (function(t) {
                         d.log('feedbacknames', e),
                         t.compile(),
                         (this._feedBacksChanged = !1),
-                        this._cgl.gl.bindTransformFeedback(
-                            this._cgl.gl.TRANSFORM_FEEDBACK,
-                            null
-                        ),
+                        this._cgl.gl.bindTransformFeedback(this._cgl.gl.TRANSFORM_FEEDBACK, null),
                         void d.log('changed finished')
                     );
                 }
                 this._cgl.gl.beginTransformFeedback(this.glPrimitive),
-                    this._cgl.gl.drawArrays(
-                        e,
-                        0,
-                        this._feedBacks[0].attrib.numItems
-                    ),
+                    this._cgl.gl.drawArrays(e, 0, this._feedBacks[0].attrib.numItems),
                     this._cgl.gl.endTransformFeedback(),
                     this.unBindFeedbacks(),
                     this.feedBacksSwapBuffers();
             }),
-            (ot.prototype.unBindFeedbacks = function() {
+            (ot.prototype.unBindFeedbacks = function () {
                 for (let t = 0; t < this._feedBacks.length; t++)
-                    this._cgl.gl.bindBufferBase(
-                        this._cgl.gl.TRANSFORM_FEEDBACK_BUFFER,
-                        t,
-                        null
-                    );
-                this._cgl.gl.bindTransformFeedback(
-                    this._cgl.gl.TRANSFORM_FEEDBACK,
-                    null
-                );
+                    this._cgl.gl.bindBufferBase(this._cgl.gl.TRANSFORM_FEEDBACK_BUFFER, t, null);
+                this._cgl.gl.bindTransformFeedback(this._cgl.gl.TRANSFORM_FEEDBACK, null);
             }),
-            (ot.prototype.feedBacksSwapBuffers = function() {
+            (ot.prototype.feedBacksSwapBuffers = function () {
                 for (let t = 0; t < this._feedBacks.length; t++) {
                     const e = this._feedBacks[t].attrib.buffer;
-                    (this._feedBacks[t].attrib.buffer = this._feedBacks[
-                        t
-                    ].outBuffer),
+                    (this._feedBacks[t].attrib.buffer = this._feedBacks[t].outBuffer),
                         (this._feedBacks[t].outBuffer = e);
                 }
             });
         const ht = {
-                getSimpleRect: function(t, e) {
+                getSimpleRect: function (t, e) {
                     const i = new tt(e);
                     return (
                         (i.vertices = [1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1, 0]),
                         (i.texCoords = [1, 1, 0, 1, 1, 0, 0, 0]),
                         (i.verticesIndices = [0, 1, 2, 2, 1, 3]),
-                        (i.vertexNormals = [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                        ]),
+                        (i.vertexNormals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
                         new nt(t, i)
                     );
                 },
             },
-            at = function(t, e) {
+            at = function (t, e) {
                 (this._cgl = t),
                     t.TextureEffectMesh || this.createMesh(),
                     (this._textureSource = null),
@@ -6173,25 +4678,17 @@ var CABLES = (function(t) {
                     (this.switched = !1),
                     (this.depth = !1);
             };
-        (at.prototype.setSourceTexture = function(t) {
-            t.textureType == J.TYPE_FLOAT &&
-                this._cgl.gl.getExtension('EXT_color_buffer_float'),
+        (at.prototype.setSourceTexture = function (t) {
+            t.textureType == J.TYPE_FLOAT && this._cgl.gl.getExtension('EXT_color_buffer_float'),
                 null === t
-                    ? ((this._textureSource = new J(this._cgl)),
-                      this._textureSource.setSize(16, 16))
+                    ? ((this._textureSource = new J(this._cgl)), this._textureSource.setSize(16, 16))
                     : (this._textureSource = t),
                 this._textureSource.compareSettings(this._textureTarget) ||
                     (this._textureTarget && this._textureTarget.delete(),
                     (this._textureTarget = this._textureSource.clone()),
                     Q.profileEffectBuffercreate++,
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._frameBuf
-                    ),
-                    this._cgl.gl.bindRenderbuffer(
-                        this._cgl.gl.RENDERBUFFER,
-                        this._renderbuffer
-                    ),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuf),
+                    this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._renderbuffer),
                     this.depth &&
                         this._cgl.gl.renderbufferStorage(
                             this._cgl.gl.RENDERBUFFER,
@@ -6214,22 +4711,10 @@ var CABLES = (function(t) {
                             this._renderbuffer
                         ),
                     this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, null),
-                    this._cgl.gl.bindRenderbuffer(
-                        this._cgl.gl.RENDERBUFFER,
-                        null
-                    ),
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        null
-                    ),
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        this._frameBuf2
-                    ),
-                    this._cgl.gl.bindRenderbuffer(
-                        this._cgl.gl.RENDERBUFFER,
-                        this._renderbuffer2
-                    ),
+                    this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, null),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuf2),
+                    this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._renderbuffer2),
                     this.depth &&
                         this._cgl.gl.renderbufferStorage(
                             this._cgl.gl.RENDERBUFFER,
@@ -6252,16 +4737,10 @@ var CABLES = (function(t) {
                             this._renderbuffer2
                         ),
                     this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, null),
-                    this._cgl.gl.bindRenderbuffer(
-                        this._cgl.gl.RENDERBUFFER,
-                        null
-                    ),
-                    this._cgl.gl.bindFramebuffer(
-                        this._cgl.gl.FRAMEBUFFER,
-                        null
-                    ));
+                    this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, null),
+                    this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null));
         }),
-            (at.prototype.startEffect = function() {
+            (at.prototype.startEffect = function () {
                 this._textureTarget
                     ? ((this.switched = !1),
                       this._cgl.pushDepthTest(!1),
@@ -6276,8 +4755,7 @@ var CABLES = (function(t) {
                       mat4.perspective(
                           this._cgl.pMatrix,
                           45,
-                          this.getCurrentTargetTexture().width /
-                              this.getCurrentTargetTexture().height,
+                          this.getCurrentTargetTexture().width / this.getCurrentTargetTexture().height,
                           0.1,
                           1100
                       ),
@@ -6289,7 +4767,7 @@ var CABLES = (function(t) {
                       mat4.identity(this._cgl.mvMatrix))
                     : d.log('effect has no target');
             }),
-            (at.prototype.endEffect = function() {
+            (at.prototype.endEffect = function () {
                 this._cgl.popDepthTest(!1),
                     this._cgl.popModelMatrix(),
                     this._cgl.popPMatrix(),
@@ -6298,78 +4776,50 @@ var CABLES = (function(t) {
                     this._cgl.popPMatrix(),
                     this._cgl.resetViewPort();
             }),
-            (at.prototype.bind = function() {
+            (at.prototype.bind = function () {
                 null !== this._textureSource
                     ? this.switched
-                        ? (this._cgl.gl.bindFramebuffer(
-                              this._cgl.gl.FRAMEBUFFER,
-                              this._frameBuf2
-                          ),
+                        ? (this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuf2),
                           this._cgl.pushGlFrameBuffer(this._frameBuf2))
-                        : (this._cgl.gl.bindFramebuffer(
-                              this._cgl.gl.FRAMEBUFFER,
-                              this._frameBuf
-                          ),
+                        : (this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuf),
                           this._cgl.pushGlFrameBuffer(this._frameBuf))
                     : d.log('no base texture set!');
             }),
-            (at.prototype.finish = function() {
+            (at.prototype.finish = function () {
                 null !== this._textureSource
-                    ? (this._cgl.TextureEffectMesh.render(
-                          this._cgl.getShader()
-                      ),
-                      this._cgl.gl.bindFramebuffer(
-                          this._cgl.gl.FRAMEBUFFER,
-                          this._cgl.popGlFrameBuffer()
-                      ),
+                    ? (this._cgl.TextureEffectMesh.render(this._cgl.getShader()),
+                      this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._cgl.popGlFrameBuffer()),
                       Q.profileTextureEffect++,
                       this._textureTarget.filter == J.FILTER_MIPMAP &&
                           (this.switched
-                              ? (this._cgl.gl.bindTexture(
-                                    this._cgl.gl.TEXTURE_2D,
-                                    this._textureSource.tex
-                                ),
+                              ? (this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, this._textureSource.tex),
                                 this._textureSource.updateMipMap())
-                              : (this._cgl.gl.bindTexture(
-                                    this._cgl.gl.TEXTURE_2D,
-                                    this._textureTarget.tex
-                                ),
+                              : (this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, this._textureTarget.tex),
                                 this._textureTarget.updateMipMap()),
-                          this._cgl.gl.bindTexture(
-                              this._cgl.gl.TEXTURE_2D,
-                              null
-                          )),
+                          this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_2D, null)),
                       (this.switched = !this.switched))
                     : d.log('no base texture set!');
             }),
-            (at.prototype.getCurrentTargetTexture = function() {
-                return this.switched
-                    ? this._textureSource
-                    : this._textureTarget;
+            (at.prototype.getCurrentTargetTexture = function () {
+                return this.switched ? this._textureSource : this._textureTarget;
             }),
-            (at.prototype.getCurrentSourceTexture = function() {
-                return this.switched
-                    ? this._textureTarget
-                    : this._textureSource;
+            (at.prototype.getCurrentSourceTexture = function () {
+                return this.switched ? this._textureTarget : this._textureSource;
             }),
-            (at.prototype.delete = function() {
+            (at.prototype.delete = function () {
                 this._textureTarget && this._textureTarget.delete(),
                     this._textureSource && this._textureSource.delete(),
                     this._cgl.gl.deleteRenderbuffer(this._renderbuffer),
                     this._cgl.gl.deleteFramebuffer(this._frameBuf);
             }),
-            (at.prototype.createMesh = function() {
-                this._cgl.TextureEffectMesh = ht.getSimpleRect(
-                    this._cgl,
-                    'textureEffect rect'
-                );
+            (at.prototype.createMesh = function () {
+                this._cgl.TextureEffectMesh = ht.getSimpleRect(this._cgl, 'textureEffect rect');
             }),
-            (at.checkOpNotInTextureEffect = function(t) {
+            (at.checkOpNotInTextureEffect = function (t) {
                 return t.uiAttribs.error && !t.patch.cgl.currentTextureEffect
                     ? (t.uiAttr({ error: null }), !0)
                     : !t.patch.cgl.currentTextureEffect ||
-                          (t.patch.cgl.currentTextureEffect &&
-                          !t.uiAttribs.error
+                          (t.patch.cgl.currentTextureEffect && !t.uiAttribs.error
                               ? (t.setUiError(
                                     'textureeffect',
                                     'This op can not be a child of a ImageCompose/texture effect! imagecompose should only have textureeffect childs.',
@@ -6378,7 +4828,7 @@ var CABLES = (function(t) {
                                 !1)
                               : !t.patch.cgl.currentTextureEffect);
             }),
-            (at.checkOpInEffect = function(t) {
+            (at.checkOpInEffect = function (t) {
                 return t.patch.cgl.currentTextureEffect && t.uiAttribs.error
                     ? (t.uiAttr({ error: null }), !0)
                     : !!t.patch.cgl.currentTextureEffect ||
@@ -6391,7 +4841,7 @@ var CABLES = (function(t) {
                                 ),
                                 !1));
             }),
-            (at.getBlendCode = function() {
+            (at.getBlendCode = function () {
                 return (
                     ''.endl() +
                     'vec3 _blend(vec3 base,vec3 blend)'.endl() +
@@ -6461,58 +4911,26 @@ var CABLES = (function(t) {
                     '}'
                 );
             }),
-            (at.onChangeBlendSelect = function(t, e) {
-                'normal' == e
-                    ? t.define('BM_NORMAL')
-                    : t.removeDefine('BM_NORMAL'),
-                    'multiply' == e
-                        ? t.define('BM_MULTIPLY')
-                        : t.removeDefine('BM_MULTIPLY'),
-                    'multiply invert' == e
-                        ? t.define('BM_MULTIPLY_INV')
-                        : t.removeDefine('BM_MULTIPLY_INV'),
-                    'average' == e
-                        ? t.define('BM_AVERAGE')
-                        : t.removeDefine('BM_AVERAGE'),
+            (at.onChangeBlendSelect = function (t, e) {
+                'normal' == e ? t.define('BM_NORMAL') : t.removeDefine('BM_NORMAL'),
+                    'multiply' == e ? t.define('BM_MULTIPLY') : t.removeDefine('BM_MULTIPLY'),
+                    'multiply invert' == e ? t.define('BM_MULTIPLY_INV') : t.removeDefine('BM_MULTIPLY_INV'),
+                    'average' == e ? t.define('BM_AVERAGE') : t.removeDefine('BM_AVERAGE'),
                     'add' == e ? t.define('BM_ADD') : t.removeDefine('BM_ADD'),
-                    'substract' == e
-                        ? t.define('BM_SUBSTRACT')
-                        : t.removeDefine('BM_SUBSTRACT'),
-                    'difference' == e
-                        ? t.define('BM_DIFFERENCE')
-                        : t.removeDefine('BM_DIFFERENCE'),
-                    'negation' == e
-                        ? t.define('BM_NEGATION')
-                        : t.removeDefine('BM_NEGATION'),
-                    'exclusion' == e
-                        ? t.define('BM_EXCLUSION')
-                        : t.removeDefine('BM_EXCLUSION'),
-                    'lighten' == e
-                        ? t.define('BM_LIGHTEN')
-                        : t.removeDefine('BM_LIGHTEN'),
-                    'darken' == e
-                        ? t.define('BM_DARKEN')
-                        : t.removeDefine('BM_DARKEN'),
-                    'overlay' == e
-                        ? t.define('BM_OVERLAY')
-                        : t.removeDefine('BM_OVERLAY'),
-                    'screen' == e
-                        ? t.define('BM_SCREEN')
-                        : t.removeDefine('BM_SCREEN'),
-                    'softlight' == e
-                        ? t.define('BM_SOFTLIGHT')
-                        : t.removeDefine('BM_SOFTLIGHT'),
-                    'hardlight' == e
-                        ? t.define('BM_HARDLIGHT')
-                        : t.removeDefine('BM_HARDLIGHT'),
-                    'color dodge' == e
-                        ? t.define('BM_COLORDODGE')
-                        : t.removeDefine('BM_COLORDODGE'),
-                    'color burn' == e
-                        ? t.define('BM_COLORBURN')
-                        : t.removeDefine('BM_COLORBURN');
+                    'substract' == e ? t.define('BM_SUBSTRACT') : t.removeDefine('BM_SUBSTRACT'),
+                    'difference' == e ? t.define('BM_DIFFERENCE') : t.removeDefine('BM_DIFFERENCE'),
+                    'negation' == e ? t.define('BM_NEGATION') : t.removeDefine('BM_NEGATION'),
+                    'exclusion' == e ? t.define('BM_EXCLUSION') : t.removeDefine('BM_EXCLUSION'),
+                    'lighten' == e ? t.define('BM_LIGHTEN') : t.removeDefine('BM_LIGHTEN'),
+                    'darken' == e ? t.define('BM_DARKEN') : t.removeDefine('BM_DARKEN'),
+                    'overlay' == e ? t.define('BM_OVERLAY') : t.removeDefine('BM_OVERLAY'),
+                    'screen' == e ? t.define('BM_SCREEN') : t.removeDefine('BM_SCREEN'),
+                    'softlight' == e ? t.define('BM_SOFTLIGHT') : t.removeDefine('BM_SOFTLIGHT'),
+                    'hardlight' == e ? t.define('BM_HARDLIGHT') : t.removeDefine('BM_HARDLIGHT'),
+                    'color dodge' == e ? t.define('BM_COLORDODGE') : t.removeDefine('BM_COLORDODGE'),
+                    'color burn' == e ? t.define('BM_COLORBURN') : t.removeDefine('BM_COLORBURN');
             }),
-            (at.AddBlendSelect = function(t, e) {
+            (at.AddBlendSelect = function (t, e) {
                 return t.inValueSelect(
                     e,
                     [
@@ -6537,9 +4955,9 @@ var CABLES = (function(t) {
                     'normal'
                 );
             }),
-            (at.setupBlending = function(t, e, i, s) {
+            (at.setupBlending = function (t, e, i, s) {
                 t.setPortGroup('Blending', [i, s]),
-                    (i.onChange = function() {
+                    (i.onChange = function () {
                         at.onChangeBlendSelect(e, i.get());
                         let s = i.get();
                         'normal' == s
@@ -6558,9 +4976,7 @@ var CABLES = (function(t) {
                             ? (s = 'sub')
                             : 'difference' == s
                             ? (s = 'diff')
-                            : 'negation' == s ||
-                              'negation' == s ||
-                              'negation' == s
+                            : 'negation' == s || 'negation' == s || 'negation' == s
                             ? (s = 'neg')
                             : 'exclusion' == s
                             ? (s = 'exc')
@@ -6577,11 +4993,10 @@ var CABLES = (function(t) {
                     });
             });
         const lt = {
-                'CGL.BLENDMODES': function() {
-                    (this.name = 'blendmodes'),
-                        (this.srcHeadFrag = at.getBlendCode());
+                'CGL.BLENDMODES': function () {
+                    (this.name = 'blendmodes'), (this.srcHeadFrag = at.getBlendCode());
                 },
-                'CGL.RANDOM_OLD': function() {
+                'CGL.RANDOM_OLD': function () {
                     (this.name = 'randomNumber'),
                         (this.srcHeadFrag =
                             ''.endl() +
@@ -6594,7 +5009,7 @@ var CABLES = (function(t) {
                             '    return vec3( cgl_random(co),cgl_random(co+0.5711),cgl_random(co+1.5711));'.endl() +
                             '}');
                 },
-                'CGL.RANDOM_LOW': function() {
+                'CGL.RANDOM_LOW': function () {
                     (this.name = 'randomNumber'),
                         (this.srcHeadFrag =
                             ''.endl() +
@@ -6607,7 +5022,7 @@ var CABLES = (function(t) {
                             '    return vec3( cgl_random(co),cgl_random(co+0.5711),cgl_random(co+1.5711));'.endl() +
                             '}');
                 },
-                'CGL.RANDOM_TEX': function() {
+                'CGL.RANDOM_TEX': function () {
                     (this.name = 'randomNumbertex'),
                         (this.srcHeadFrag =
                             ''.endl() +
@@ -6620,22 +5035,21 @@ var CABLES = (function(t) {
                             '{'.endl() +
                             '    return texture(CGLRNDTEX,co*5711.0).rgb;'.endl() +
                             '}'),
-                        (this.initUniforms = function(t) {
+                        (this.initUniforms = function (t) {
                             return [new et(t, 't', 'CGLRNDTEX', 7)];
                         }),
-                        (this.onBind = function(t, e) {
-                            J.getRandomTexture(t),
-                                t.setTexture(7, J.getRandomTexture(t).tex);
+                        (this.onBind = function (t, e) {
+                            J.getRandomTexture(t), t.setTexture(7, J.getRandomTexture(t).tex);
                         });
                 },
             },
-            ut = function() {
+            ut = function () {
                 return window.performance.now();
             },
-            ct = function() {
+            ct = function () {
                 return ut();
             },
-            pt = function() {
+            pt = function () {
                 (this._timeStart = ut()),
                     (this._timeOffset = 0),
                     (this._currentTime = 0),
@@ -6647,87 +5061,68 @@ var CABLES = (function(t) {
                     (this.cbPlayPause = []),
                     (this.cbTimeChange = []);
             };
-        (pt.prototype._getTime = function() {
-            return (
-                (this._lastTime = (ut() - this._timeStart) / 1e3),
-                this._lastTime + this._timeOffset
-            );
+        (pt.prototype._getTime = function () {
+            return (this._lastTime = (ut() - this._timeStart) / 1e3), this._lastTime + this._timeOffset;
         }),
-            (pt.prototype._eventPlayPause = function() {
-                if (!this._eventsPaused)
-                    for (const t in this.cbPlayPause) this.cbPlayPause[t]();
+            (pt.prototype._eventPlayPause = function () {
+                if (!this._eventsPaused) for (const t in this.cbPlayPause) this.cbPlayPause[t]();
             }),
-            (pt.prototype._eventTimeChange = function() {
-                if (!this._eventsPaused)
-                    for (const t in this.cbTimeChange) this.cbTimeChange[t]();
+            (pt.prototype._eventTimeChange = function () {
+                if (!this._eventsPaused) for (const t in this.cbTimeChange) this.cbTimeChange[t]();
             }),
-            (pt.prototype.setDelay = function(t) {
+            (pt.prototype.setDelay = function (t) {
                 (this._delay = t), this._eventTimeChange();
             }),
-            (pt.prototype.isPlaying = function() {
+            (pt.prototype.isPlaying = function () {
                 return !this._paused;
             }),
-            (pt.prototype.update = function() {
-                if (!this._paused)
-                    return (
-                        (this._currentTime = this._getTime()), this._currentTime
-                    );
+            (pt.prototype.update = function () {
+                if (!this._paused) return (this._currentTime = this._getTime()), this._currentTime;
             }),
-            (pt.prototype.getMillis = function() {
+            (pt.prototype.getMillis = function () {
                 return 1e3 * this.get();
             }),
-            (pt.prototype.get = pt.prototype.getTime = function() {
-                return this.overwriteTime >= 0
-                    ? this.overwriteTime - this._delay
-                    : this._currentTime - this._delay;
-            }),
-            (pt.prototype.togglePlay = function() {
+            (pt.prototype.get = pt.prototype.getTime =
+                function () {
+                    return this.overwriteTime >= 0 ? this.overwriteTime - this._delay : this._currentTime - this._delay;
+                }),
+            (pt.prototype.togglePlay = function () {
                 this._paused ? this.play() : this.pause();
             }),
-            (pt.prototype.setTime = function(t) {
+            (pt.prototype.setTime = function (t) {
                 t < 0 && (t = 0),
                     (this._timeStart = ut()),
                     (this._timeOffset = t),
                     (this._currentTime = t),
                     this._eventTimeChange();
             }),
-            (pt.prototype.setOffset = function(t) {
+            (pt.prototype.setOffset = function (t) {
                 this._currentTime + t < 0
-                    ? ((this._timeStart = ut()),
-                      (this._timeOffset = 0),
-                      (this._currentTime = 0))
-                    : ((this._timeOffset += t),
-                      (this._currentTime = this._lastTime + this._timeOffset)),
+                    ? ((this._timeStart = ut()), (this._timeOffset = 0), (this._currentTime = 0))
+                    : ((this._timeOffset += t), (this._currentTime = this._lastTime + this._timeOffset)),
                     this._eventTimeChange();
             }),
-            (pt.prototype.play = function() {
-                (this._timeStart = ut()),
-                    (this._paused = !1),
-                    this._eventPlayPause();
+            (pt.prototype.play = function () {
+                (this._timeStart = ut()), (this._paused = !1), this._eventPlayPause();
             }),
-            (pt.prototype.pause = function() {
-                (this._timeOffset = this._currentTime),
-                    (this._paused = !0),
-                    this._eventPlayPause();
+            (pt.prototype.pause = function () {
+                (this._timeOffset = this._currentTime), (this._paused = !0), this._eventPlayPause();
             }),
-            (pt.prototype.pauseEvents = function(t) {
+            (pt.prototype.pauseEvents = function (t) {
                 this._eventsPaused = t;
             }),
-            (pt.prototype.onPlayPause = function(t) {
+            (pt.prototype.onPlayPause = function (t) {
                 t && 'function' == typeof t && this.cbPlayPause.push(t);
             }),
-            (pt.prototype.onTimeChange = function(t) {
+            (pt.prototype.onTimeChange = function (t) {
                 t && 'function' == typeof t && this.cbTimeChange.push(t);
             });
         const dt = Math.PI / 180,
             _t = (Math.PI, -1 != window.navigator.userAgent.indexOf('Windows')),
-            ft = function(t) {
+            ft = function (t) {
                 let e;
                 if (t.wheelDelta)
-                    (e =
-                        (t.wheelDelta % 120) - 0 == -0
-                            ? t.wheelDelta / 120
-                            : t.wheelDelta / 30),
+                    (e = (t.wheelDelta % 120) - 0 == -0 ? t.wheelDelta / 120 : t.wheelDelta / 30),
                         (e *= -1.5),
                         _t && (e *= 2);
                 else {
@@ -6749,7 +5144,7 @@ var CABLES = (function(t) {
             },
             Tt = /[&<>"']/g,
             At = RegExp(Tt.source),
-            bt = function(t, e) {
+            bt = function (t, e) {
                 if (!t) throw new Error('shader constructed without cgl ' + e);
                 (this._cgl = t),
                     (this._name = e || 'unknown'),
@@ -6795,48 +5190,39 @@ var CABLES = (function(t) {
                     (this._tempNormalMatrix = mat4.create()),
                     (this._tempCamPosMatrix = mat4.create()),
                     (this._tempInverseViewMatrix = mat4.create()),
-                    this.setModules([
-                        'MODULE_VERTEX_POSITION',
-                        'MODULE_COLOR',
-                        'MODULE_BEGIN_FRAG',
-                    ]);
+                    this.setModules(['MODULE_VERTEX_POSITION', 'MODULE_COLOR', 'MODULE_BEGIN_FRAG']);
             };
-        (bt.prototype.isValid = function() {
+        (bt.prototype.isValid = function () {
             return this._isValid;
         }),
-            (bt.prototype.getCgl = function() {
+            (bt.prototype.getCgl = function () {
                 return this._cgl;
             }),
-            (bt.prototype.getName = function() {
+            (bt.prototype.getName = function () {
                 return this._name;
             }),
-            (bt.prototype.enableExtension = function(t) {
-                this.setWhyCompile('enable extension ' + t),
-                    (this._needsRecompile = !0),
-                    this._extensions.push(t);
+            (bt.prototype.enableExtension = function (t) {
+                this.setWhyCompile('enable extension ' + t), (this._needsRecompile = !0), this._extensions.push(t);
             }),
-            (bt.prototype.getAttrVertexPos = function() {
+            (bt.prototype.getAttrVertexPos = function () {
                 return this._attrVertexPos;
             }),
-            (bt.prototype.hasTextureUniforms = function() {
-                for (let t = 0; t < this._uniforms.length; t++)
-                    if ('t' == this._uniforms[t].getType()) return !0;
+            (bt.prototype.hasTextureUniforms = function () {
+                for (let t = 0; t < this._uniforms.length; t++) if ('t' == this._uniforms[t].getType()) return !0;
                 return !1;
             }),
-            (bt.prototype.setWhyCompile = function(t) {}),
-            (bt.prototype.copyUniformValues = function(t) {
+            (bt.prototype.setWhyCompile = function (t) {}),
+            (bt.prototype.copyUniformValues = function (t) {
                 for (let e = 0; e < t._uniforms.length; e++)
-                    this._uniforms[e] &&
-                        this._uniforms[e].set(t._uniforms[e].getValue());
+                    this._uniforms[e] && this._uniforms[e].set(t._uniforms[e].getValue());
                 this.popTextures();
                 for (let e = 0; e < t._textureStackUni.length; e++)
                     (this._textureStackUni[e] = t._textureStackUni[e]),
                         (this._textureStackTex[e] = t._textureStackTex[e]),
                         (this._textureStackType[e] = t._textureStackType[e]),
-                        (this._textureStackTexCgl[e] =
-                            t._textureStackTexCgl[e]);
+                        (this._textureStackTexCgl[e] = t._textureStackTexCgl[e]);
             }),
-            (bt.prototype.copy = function() {
+            (bt.prototype.copy = function () {
                 const t = new bt(this._cgl, this._name + ' copy');
                 t.setSource(this.srcVert, this.srcFrag),
                     (t._modules = JSON.parse(JSON.stringify(this._modules))),
@@ -6851,13 +5237,13 @@ var CABLES = (function(t) {
                 }
                 return (t._needsRecompile = !0), t;
             }),
-            (bt.prototype.setSource = function(t, e) {
+            (bt.prototype.setSource = function (t, e) {
                 (this.srcVert = t),
                     (this.srcFrag = e),
                     this.setWhyCompile('Source changed'),
                     (this._needsRecompile = !0);
             }),
-            (bt.prototype._addLibs = function(t) {
+            (bt.prototype._addLibs = function (t) {
                 for (const e in lt)
                     if (t.indexOf(e) > -1) {
                         const i = new lt[e]();
@@ -6867,7 +5253,7 @@ var CABLES = (function(t) {
                     }
                 return t;
             }),
-            (bt.prototype.createStructUniforms = function() {
+            (bt.prototype.createStructUniforms = function () {
                 let t = '',
                     e = '';
                 (this._structNames = []),
@@ -6877,46 +5263,24 @@ var CABLES = (function(t) {
                     (this._structUniformNamesIndicesVert = []);
                 for (let i = 0; i < this._uniforms.length; i++)
                     if (this._uniforms[i].isStructMember()) {
-                        const s =
-                            '{{INJECTION_POINT_STRUCT_' +
-                            this._uniforms[i]._structName +
-                            '}}';
-                        if (
-                            -1 ===
-                            this._structNames.indexOf(
-                                this._uniforms[i]._structName
-                            )
-                        ) {
-                            const r =
-                                'struct ' +
-                                this._uniforms[i]._structName +
-                                ' {'.endl() +
-                                s +
-                                '};'.endl().endl();
+                        const s = '{{INJECTION_POINT_STRUCT_' + this._uniforms[i]._structName + '}}';
+                        if (-1 === this._structNames.indexOf(this._uniforms[i]._structName)) {
+                            const r = 'struct ' + this._uniforms[i]._structName + ' {'.endl() + s + '};'.endl().endl();
                             ('both' !== this._uniforms[i].getShaderType() &&
                                 'frag' !== this._uniforms[i].getShaderType()) ||
                                 (t = t.concat(r)),
                                 ('both' !== this._uniforms[i].getShaderType() &&
-                                    'vert' !==
-                                        this._uniforms[i].getShaderType()) ||
+                                    'vert' !== this._uniforms[i].getShaderType()) ||
                                     (e = e.concat(r)),
-                                this._structNames.push(
-                                    this._uniforms[i]._structName
-                                ),
-                                (this._injectedStringsFrag[
-                                    this._uniforms[i]._structName
-                                ] = []),
-                                (this._injectedStringsVert[
-                                    this._uniforms[i]._structName
-                                ] = []);
+                                this._structNames.push(this._uniforms[i]._structName),
+                                (this._injectedStringsFrag[this._uniforms[i]._structName] = []),
+                                (this._injectedStringsVert[this._uniforms[i]._structName] = []);
                         }
                         let r = '';
-                        this._uniforms[i].comment &&
-                            (r = ' // ' + this._uniforms[i].comment);
+                        this._uniforms[i].comment && (r = ' // ' + this._uniforms[i].comment);
                         let n = '';
                         if (
-                            (null == this._uniforms[i].getGlslTypeString() &&
-                                (n += '//'),
+                            (null == this._uniforms[i].getGlslTypeString() && (n += '//'),
                             (n +=
                                 '  ' +
                                 this._uniforms[i].getGlslTypeString() +
@@ -6927,85 +5291,40 @@ var CABLES = (function(t) {
                             'both' === this._uniforms[i].getShaderType())
                         ) {
                             if (
-                                -1 ===
-                                    this._injectedStringsFrag[
-                                        this._uniforms[i]._structName
-                                    ].indexOf(n) &&
-                                -1 ===
-                                    this._injectedStringsVert[
-                                        this._uniforms[i]._structName
-                                    ].indexOf(n)
+                                -1 === this._injectedStringsFrag[this._uniforms[i]._structName].indexOf(n) &&
+                                -1 === this._injectedStringsVert[this._uniforms[i]._structName].indexOf(n)
                             ) {
                                 const r = t.lastIndexOf(s),
                                     o = e.lastIndexOf(s);
                                 (t = t.slice(0, r) + n + t.slice(r - 1)),
                                     (e = e.slice(0, o) + n + e.slice(o - 1)),
-                                    this._injectedStringsFrag[
-                                        this._uniforms[i]._structName
-                                    ].push(n),
-                                    this._injectedStringsVert[
-                                        this._uniforms[i]._structName
-                                    ].push(n);
+                                    this._injectedStringsFrag[this._uniforms[i]._structName].push(n),
+                                    this._injectedStringsVert[this._uniforms[i]._structName].push(n);
                             }
-                            -1 ===
-                                this._structUniformNamesIndicesFrag.indexOf(
-                                    i
-                                ) &&
+                            -1 === this._structUniformNamesIndicesFrag.indexOf(i) &&
                                 this._structUniformNamesIndicesFrag.push(i),
-                                -1 ===
-                                    this._structUniformNamesIndicesVert.indexOf(
-                                        i
-                                    ) &&
+                                -1 === this._structUniformNamesIndicesVert.indexOf(i) &&
                                     this._structUniformNamesIndicesVert.push(i);
-                        } else if (
-                            'frag' === this._uniforms[i].getShaderType()
-                        ) {
-                            if (
-                                -1 ===
-                                this._injectedStringsFrag[
-                                    this._uniforms[i]._structName
-                                ].indexOf(n)
-                            ) {
+                        } else if ('frag' === this._uniforms[i].getShaderType()) {
+                            if (-1 === this._injectedStringsFrag[this._uniforms[i]._structName].indexOf(n)) {
                                 const e = t.lastIndexOf(s);
                                 (t = t.slice(0, e) + n + t.slice(e - 1)),
-                                    this._injectedStringsFrag[
-                                        this._uniforms[i]._structName
-                                    ].push(n);
+                                    this._injectedStringsFrag[this._uniforms[i]._structName].push(n);
                             }
-                            -1 ===
-                                this._structUniformNamesIndicesFrag.indexOf(
-                                    i
-                                ) &&
+                            -1 === this._structUniformNamesIndicesFrag.indexOf(i) &&
                                 this._structUniformNamesIndicesFrag.push(i);
-                        } else if (
-                            'vert' === this._uniforms[i].getShaderType()
-                        ) {
-                            if (
-                                -1 ===
-                                this._injectedStringsVert[
-                                    this._uniforms[i]._structName
-                                ].indexOf(n)
-                            ) {
+                        } else if ('vert' === this._uniforms[i].getShaderType()) {
+                            if (-1 === this._injectedStringsVert[this._uniforms[i]._structName].indexOf(n)) {
                                 const t = e.lastIndexOf(s);
                                 (e = e.slice(0, t) + n + e.slice(t - 1)),
-                                    this._injectedStringsVert[
-                                        this._uniforms[i]._structName
-                                    ].push(n);
+                                    this._injectedStringsVert[this._uniforms[i]._structName].push(n);
                             }
-                            -1 ===
-                                this._structUniformNamesIndicesVert.indexOf(
-                                    i
-                                ) &&
+                            -1 === this._structUniformNamesIndicesVert.indexOf(i) &&
                                 this._structUniformNamesIndicesVert.push(i);
                         }
                     }
-                (this._uniDeclarationsFrag = []),
-                    (this._uniDeclarationsVert = []);
-                for (
-                    let e = 0;
-                    e < this._structUniformNamesIndicesFrag.length;
-                    e += 1
-                ) {
+                (this._uniDeclarationsFrag = []), (this._uniDeclarationsVert = []);
+                for (let e = 0; e < this._structUniformNamesIndicesFrag.length; e += 1) {
                     const i = this._structUniformNamesIndicesFrag[e],
                         s =
                             'UNI ' +
@@ -7014,20 +5333,11 @@ var CABLES = (function(t) {
                             this._uniforms[i]._structUniformName +
                             ';'.endl();
                     if (-1 === this._uniDeclarationsFrag.indexOf(s)) {
-                        const e =
-                            '{{INJECTION_POINT_STRUCT_' +
-                            this._uniforms[i]._structName +
-                            '}}';
-                        (t = t.replace(e, '')),
-                            (t += s),
-                            this._uniDeclarationsFrag.push(s);
+                        const e = '{{INJECTION_POINT_STRUCT_' + this._uniforms[i]._structName + '}}';
+                        (t = t.replace(e, '')), (t += s), this._uniDeclarationsFrag.push(s);
                     }
                 }
-                for (
-                    let t = 0;
-                    t < this._structUniformNamesIndicesVert.length;
-                    t += 1
-                ) {
+                for (let t = 0; t < this._structUniformNamesIndicesVert.length; t += 1) {
                     const i = this._structUniformNamesIndicesVert[t],
                         s =
                             'UNI ' +
@@ -7036,52 +5346,35 @@ var CABLES = (function(t) {
                             this._uniforms[i]._structUniformName +
                             ';'.endl();
                     if (-1 === this._uniDeclarationsVert.indexOf(s)) {
-                        const t =
-                            '{{INJECTION_POINT_STRUCT_' +
-                            this._uniforms[i]._structName +
-                            '}}';
-                        (e = e.replace(t, '')),
-                            (e += s),
-                            this._uniDeclarationsVert.push(s);
+                        const t = '{{INJECTION_POINT_STRUCT_' + this._uniforms[i]._structName + '}}';
+                        (e = e.replace(t, '')), (e += s), this._uniDeclarationsVert.push(s);
                     }
                 }
                 return [e, t];
             }),
-            (bt.prototype.compile = function() {
+            (bt.prototype.compile = function () {
                 const t = performance.now();
-                Q.profileShaderCompiles++,
-                    (Q.profileShaderCompileName = this._name);
+                Q.profileShaderCompiles++, (Q.profileShaderCompileName = this._name);
                 let e = '';
                 if (this._extensions)
                     for (let t = 0; t < this._extensions.length; t++)
-                        e +=
-                            '#extension ' +
-                            this._extensions[t] +
-                            ' : enable'.endl();
+                        e += '#extension ' + this._extensions[t] + ' : enable'.endl();
                 let i = '';
                 this._defines.length && (i = '\n// cgl generated'.endl());
                 for (let t = 0; t < this._defines.length; t++)
-                    i +=
-                        '#define ' +
-                        this._defines[t][0] +
-                        ' ' +
-                        this._defines[t][1] +
-                        ''.endl();
+                    i += '#define ' + this._defines[t][0] + ' ' + this._defines[t][1] + ''.endl();
                 const s = this.createStructUniforms();
                 if (this._uniforms) {
-                    const t = this._uniforms.map(t => t._name),
+                    const t = this._uniforms.map((t) => t._name),
                         e = [];
                     for (let i = 0; i < this._uniforms.length; i++) {
                         const s = this._uniforms[i];
                         t.indexOf(s._name, i + 1) > -1 && e.push(i);
                     }
                     for (let t = this._uniforms.length - 1; t >= 0; t -= 1)
-                        e.indexOf(t) > -1
-                            ? this._uniforms.splice(t, 1)
-                            : this._uniforms[t].resetLoc();
+                        e.indexOf(t) > -1 ? this._uniforms.splice(t, 1) : this._uniforms[t].resetLoc();
                 }
-                this.hasTextureUniforms() &&
-                    (i += '#define HAS_TEXTURES'.endl());
+                this.hasTextureUniforms() && (i += '#define HAS_TEXTURES'.endl());
                 let r = '',
                     n = '';
                 if (
@@ -7093,33 +5386,19 @@ var CABLES = (function(t) {
                 ) {
                     let t = '';
                     if (
-                        (this.srcFrag.indexOf('outColor0') > -1 &&
-                            (this._drawBuffers[0] = !0),
-                        this.srcFrag.indexOf('outColor1') > -1 &&
-                            (this._drawBuffers[1] = !0),
-                        this.srcFrag.indexOf('outColor2') > -1 &&
-                            (this._drawBuffers[2] = !0),
-                        this.srcFrag.indexOf('outColor3') > -1 &&
-                            (this._drawBuffers[3] = !0),
+                        (this.srcFrag.indexOf('outColor0') > -1 && (this._drawBuffers[0] = !0),
+                        this.srcFrag.indexOf('outColor1') > -1 && (this._drawBuffers[1] = !0),
+                        this.srcFrag.indexOf('outColor2') > -1 && (this._drawBuffers[2] = !0),
+                        this.srcFrag.indexOf('outColor3') > -1 && (this._drawBuffers[3] = !0),
                         1 == this._drawBuffers.length)
                     )
-                        (t = 'out vec4 outColor;'.endl()),
-                            (t += '#define gl_FragColor outColor'.endl());
+                        (t = 'out vec4 outColor;'.endl()), (t += '#define gl_FragColor outColor'.endl());
                     else {
                         let e = 0;
                         t += 'vec4 outColor;'.endl();
                         for (let i = 0; i < this._drawBuffers.length; i++)
-                            0 == e &&
-                                (t +=
-                                    '#define gl_FragColor outColor' +
-                                    i +
-                                    ''.endl()),
-                                (t +=
-                                    'layout(location = ' +
-                                    i +
-                                    ') out vec4 outColor' +
-                                    i +
-                                    ';'.endl()),
+                            0 == e && (t += '#define gl_FragColor outColor' + i + ''.endl()),
+                                (t += 'layout(location = ' + i + ') out vec4 outColor' + i + ';'.endl()),
                                 e++;
                     }
                     (r =
@@ -7177,15 +5456,13 @@ var CABLES = (function(t) {
                             '#define UNI uniform'.endl());
                 let o = '\n// cgl generated'.endl(),
                     h = '\n// cgl generated'.endl();
-                (n += '\n// active mods: --------------- '),
-                    (r += '\n// active mods: --------------- ');
+                (n += '\n// active mods: --------------- '), (r += '\n// active mods: --------------- ');
                 let a = !1,
                     l = !1;
                 for (let t = 0; t < this._moduleNames.length; t++)
                     for (let e = 0; e < this._modules.length; e++)
                         this._modules[e].name == this._moduleNames[t] &&
-                            ((this._modules[e].srcBodyFrag ||
-                                this._modules[e].srcHeadFrag) &&
+                            ((this._modules[e].srcBodyFrag || this._modules[e].srcHeadFrag) &&
                                 ((a = !0),
                                 (n +=
                                     '\n// ' +
@@ -7197,8 +5474,7 @@ var CABLES = (function(t) {
                                     ' (' +
                                     this._modules[e].name +
                                     ')')),
-                            (this._modules[e].srcBodyVert ||
-                                this._modules[e].srcHeadVert) &&
+                            (this._modules[e].srcBodyVert || this._modules[e].srcHeadVert) &&
                                 ((r +=
                                     '\n// ' +
                                     t +
@@ -7210,47 +5486,30 @@ var CABLES = (function(t) {
                                     this._modules[e].name +
                                     ')'),
                                 (l = !0)));
-                l || (n += '\n// no mods used...'),
-                    a || (n += '\n// no mods used...'),
-                    (n += '\n'),
-                    (r += '\n');
+                l || (n += '\n// no mods used...'), a || (n += '\n// no mods used...'), (n += '\n'), (r += '\n');
                 for (let t = 0; t < this._uniforms.length; t++)
-                    if (
-                        this._uniforms[t].shaderType &&
-                        !this._uniforms[t].isStructMember()
-                    ) {
+                    if (this._uniforms[t].shaderType && !this._uniforms[t].isStructMember()) {
                         let e = '';
                         this._uniforms[t].getGlslTypeString() || (e += '// '),
-                            (e +=
-                                'UNI ' +
-                                this._uniforms[t].getGlslTypeString() +
-                                ' ' +
-                                this._uniforms[t].getName());
+                            (e += 'UNI ' + this._uniforms[t].getGlslTypeString() + ' ' + this._uniforms[t].getName());
                         let i = '';
-                        this._uniforms[t].comment &&
-                            (i = ' // ' + this._uniforms[t].comment),
-                            ('vert' != this._uniforms[t].shaderType &&
-                                'both' != this._uniforms[t].shaderType) ||
+                        this._uniforms[t].comment && (i = ' // ' + this._uniforms[t].comment),
+                            ('vert' != this._uniforms[t].shaderType && 'both' != this._uniforms[t].shaderType) ||
                                 (-1 == this.srcVert.indexOf(e) &&
                                     -1 ==
                                         this.srcVert.indexOf(
                                             'uniform ' +
-                                                this._uniforms[
-                                                    t
-                                                ].getGlslTypeString() +
+                                                this._uniforms[t].getGlslTypeString() +
                                                 ' ' +
                                                 this._uniforms[t].getName()
                                         ) &&
                                     (o += e + ';' + i.endl())),
-                            ('frag' != this._uniforms[t].shaderType &&
-                                'both' != this._uniforms[t].shaderType) ||
+                            ('frag' != this._uniforms[t].shaderType && 'both' != this._uniforms[t].shaderType) ||
                                 (-1 == this.srcFrag.indexOf(e) &&
                                     -1 ==
                                         this.srcFrag.indexOf(
                                             'uniform ' +
-                                                this._uniforms[
-                                                    t
-                                                ].getGlslTypeString() +
+                                                this._uniforms[t].getGlslTypeString() +
                                                 ' ' +
                                                 this._uniforms[t].getName()
                                         ) &&
@@ -7261,51 +5520,24 @@ var CABLES = (function(t) {
                 for (let t = 0; t < this._uniforms.length; t++)
                     this._uniforms[t].shaderType &&
                         !this._uniforms[t].isStructMember() &&
-                        (('vert' != this._uniforms[t].shaderType &&
-                            'both' != this._uniforms[t].shaderType) ||
-                            c++,
-                        ('frag' != this._uniforms[t].shaderType &&
-                            'both' != this._uniforms[t].shaderType) ||
-                            u++);
+                        (('vert' != this._uniforms[t].shaderType && 'both' != this._uniforms[t].shaderType) || c++,
+                        ('frag' != this._uniforms[t].shaderType && 'both' != this._uniforms[t].shaderType) || u++);
                 u >= this._cgl.maxUniformsFrag &&
-                    console.warn(
-                        '[cgl_shader] num uniforms frag: ' +
-                            u +
-                            ' / ' +
-                            this._cgl.maxUniformsFrag
-                    ),
+                    console.warn('[cgl_shader] num uniforms frag: ' + u + ' / ' + this._cgl.maxUniformsFrag),
                     c >= this._cgl.maxUniformsVert &&
-                        console.warn(
-                            '[cgl_shader] num uniforms vert: ' +
-                                c +
-                                ' / ' +
-                                this._cgl.maxUniformsVert
-                        ),
-                    -1 == n.indexOf('precision') &&
-                        (n =
-                            'precision ' +
-                            this.precision +
-                            ' float;'.endl() +
-                            n),
-                    -1 == r.indexOf('precision') &&
-                        (r =
-                            'precision ' +
-                            this.precision +
-                            ' float;'.endl() +
-                            r),
-                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                        navigator.userAgent
-                    ) &&
-                        ((n += '#define MOBILE'.endl()),
-                        (r += '#define MOBILE'.endl())),
+                        console.warn('[cgl_shader] num uniforms vert: ' + c + ' / ' + this._cgl.maxUniformsVert),
+                    -1 == n.indexOf('precision') && (n = 'precision ' + this.precision + ' float;'.endl() + n),
+                    -1 == r.indexOf('precision') && (r = 'precision ' + this.precision + ' float;'.endl() + r),
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
+                        ((n += '#define MOBILE'.endl()), (r += '#define MOBILE'.endl())),
                     (r = e + r + i + s[0] + o + '\n// -- \n' + this.srcVert),
                     (n = e + n + i + s[1] + h + '\n// -- \n' + this.srcFrag);
                 let p = '',
                     d = '';
-                this._modules.sort(function(t, e) {
+                this._modules.sort(function (t, e) {
                     return t.group - e.group;
                 }),
-                    this._modules.sort(function(t, e) {
+                    this._modules.sort(function (t, e) {
                         return t.priority || 0 - e.priority || 0;
                     });
                 let _ = !1;
@@ -7335,22 +5567,12 @@ var CABLES = (function(t) {
                                     ' - ' +
                                     this._modules[s].title +
                                     ' ------\n'),
-                                (e +=
-                                    '\n\n//---- MOD: ' +
-                                    this._modules[s].title +
-                                    ' ------\n'),
-                                (i +=
-                                    '\n\n//---- MOD: ' +
-                                    this._modules[s].title +
-                                    ' ------\n'),
+                                (e += '\n\n//---- MOD: ' + this._modules[s].title + ' ------\n'),
+                                (i += '\n\n//---- MOD: ' + this._modules[s].title + ' ------\n'),
                                 !_)
                             ) {
                                 _ = !0;
-                                for (
-                                    let t = 0;
-                                    t < this._attributes.length;
-                                    t++
-                                )
+                                for (let t = 0; t < this._attributes.length; t++)
                                     this._attributes[t].name &&
                                         this._attributes[t].type &&
                                         ((p +=
@@ -7369,13 +5591,9 @@ var CABLES = (function(t) {
                                             ((p +=
                                                 ''.endl() +
                                                 '#ifndef ATTRIB_' +
-                                                this._attributes[
-                                                    t
-                                                ].nameFrag.endl() +
+                                                this._attributes[t].nameFrag.endl() +
                                                 '  #define ATTRIB_' +
-                                                this._attributes[
-                                                    t
-                                                ].nameFrag.endl() +
+                                                this._attributes[t].nameFrag.endl() +
                                                 '  OUT ' +
                                                 this._attributes[t].type +
                                                 ' ' +
@@ -7391,13 +5609,9 @@ var CABLES = (function(t) {
                                         (d +=
                                             ''.endl() +
                                             '#ifndef ATTRIB_' +
-                                            this._attributes[
-                                                t
-                                            ].nameFrag.endl() +
+                                            this._attributes[t].nameFrag.endl() +
                                             '  #define ATTRIB_' +
-                                            this._attributes[
-                                                t
-                                            ].nameFrag.endl() +
+                                            this._attributes[t].nameFrag.endl() +
                                             '  IN ' +
                                             this._attributes[t].type +
                                             ' ' +
@@ -7413,38 +5627,14 @@ var CABLES = (function(t) {
                                 (d += '\n//---- end mod ------\n'),
                                 (e += '\n//---- end mod ------\n'),
                                 (i += '\n//---- end mod ------\n'),
-                                (e = e.replace(
-                                    /{{mod}}/g,
-                                    this._modules[s].prefix
-                                )),
-                                (i = i.replace(
-                                    /{{mod}}/g,
-                                    this._modules[s].prefix
-                                )),
-                                (p = p.replace(
-                                    /{{mod}}/g,
-                                    this._modules[s].prefix
-                                )),
-                                (d = d.replace(
-                                    /{{mod}}/g,
-                                    this._modules[s].prefix
-                                )),
-                                (e = e.replace(
-                                    /MOD_/g,
-                                    this._modules[s].prefix
-                                )),
-                                (i = i.replace(
-                                    /MOD_/g,
-                                    this._modules[s].prefix
-                                )),
-                                (p = p.replace(
-                                    /MOD_/g,
-                                    this._modules[s].prefix
-                                )),
-                                (d = d.replace(
-                                    /MOD_/g,
-                                    this._modules[s].prefix
-                                ));
+                                (e = e.replace(/{{mod}}/g, this._modules[s].prefix)),
+                                (i = i.replace(/{{mod}}/g, this._modules[s].prefix)),
+                                (p = p.replace(/{{mod}}/g, this._modules[s].prefix)),
+                                (d = d.replace(/{{mod}}/g, this._modules[s].prefix)),
+                                (e = e.replace(/MOD_/g, this._modules[s].prefix)),
+                                (i = i.replace(/MOD_/g, this._modules[s].prefix)),
+                                (p = p.replace(/MOD_/g, this._modules[s].prefix)),
+                                (d = d.replace(/MOD_/g, this._modules[s].prefix));
                         }
                     (r = r.replace('{{' + this._moduleNames[t] + '}}', e)),
                         (n = n.replace('{{' + this._moduleNames[t] + '}}', i));
@@ -7456,10 +5646,8 @@ var CABLES = (function(t) {
                     (n = this._addLibs(n)),
                     this._program)
                 ) {
-                    (this._program = this._createProgram(r, n)),
-                        (this._projMatrixUniform = null);
-                    for (let t = 0; t < this._uniforms.length; t++)
-                        this._uniforms[t].resetLoc();
+                    (this._program = this._createProgram(r, n)), (this._projMatrixUniform = null);
+                    for (let t = 0; t < this._uniforms.length; t++) this._uniforms[t].resetLoc();
                 } else this._program = this._createProgram(r, n);
                 (this.finalShaderFrag = n),
                     (this.finalShaderVert = r),
@@ -7468,18 +5656,16 @@ var CABLES = (function(t) {
                     (this._needsRecompile = !1),
                     (this.lastCompile = ct()),
                     this._cgl.printError('shader compile'),
-                    (CGL.profileData.shaderCompileTime +=
-                        performance.now() - t);
+                    (CGL.profileData.shaderCompileTime += performance.now() - t);
             }),
-            (bt.hasChanged = function() {
+            (bt.hasChanged = function () {
                 return this._needsRecompile;
             }),
-            (bt.prototype.bind = function() {
+            (bt.prototype.bind = function () {
                 if (this._isValid) {
                     if (
                         ((rt.lastShader = this),
-                        (this._program && !this._needsRecompile) ||
-                            this.compile(),
+                        (this._program && !this._needsRecompile) || this.compile(),
                         !this._projMatrixUniform)
                     ) {
                         (this._attrVertexPos = this._cgl.glGetAttribLocation(
@@ -7490,10 +5676,7 @@ var CABLES = (function(t) {
                                 this._program,
                                 st.SHADER.SHADERVAR_UNI_PROJMAT
                             )),
-                            (this._mvMatrixUniform = this._cgl.gl.getUniformLocation(
-                                this._program,
-                                'mvMatrix'
-                            )),
+                            (this._mvMatrixUniform = this._cgl.gl.getUniformLocation(this._program, 'mvMatrix')),
                             (this._vMatrixUniform = this._cgl.gl.getUniformLocation(
                                 this._program,
                                 st.SHADER.SHADERVAR_UNI_VIEWMAT
@@ -7514,59 +5697,37 @@ var CABLES = (function(t) {
                                 this._program,
                                 st.SHADER.SHADERVAR_UNI_INVVIEWMAT
                             ));
-                        for (let t = 0; t < this._uniforms.length; t++)
-                            this._uniforms[t].needsUpdate = !0;
+                        for (let t = 0; t < this._uniforms.length; t++) this._uniforms[t].needsUpdate = !0;
                     }
                     this._cgl.currentProgram != this._program &&
                         (Q.profileShaderBinds++,
                         this._cgl.gl.useProgram(this._program),
                         (this._cgl.currentProgram = this._program));
                     for (let t = 0; t < this._uniforms.length; t++)
-                        this._uniforms[t].needsUpdate &&
-                            this._uniforms[t].updateValue();
+                        this._uniforms[t].needsUpdate && this._uniforms[t].updateValue();
                     if (
-                        (this._pMatrixState !=
-                            this._cgl.getProjectionMatrixStateCount() &&
+                        (this._pMatrixState != this._cgl.getProjectionMatrixStateCount() &&
                             ((this._pMatrixState = this._cgl.getProjectionMatrixStateCount()),
-                            this._cgl.gl.uniformMatrix4fv(
-                                this._projMatrixUniform,
-                                !1,
-                                this._cgl.pMatrix
-                            ),
+                            this._cgl.gl.uniformMatrix4fv(this._projMatrixUniform, !1, this._cgl.pMatrix),
                             Q.profileMVPMatrixCount++),
                         this._vMatrixUniform)
                     )
-                        this._vMatrixState !=
-                            this._cgl.getViewMatrixStateCount() &&
-                            (this._cgl.gl.uniformMatrix4fv(
-                                this._vMatrixUniform,
-                                !1,
-                                this._cgl.vMatrix
-                            ),
+                        this._vMatrixState != this._cgl.getViewMatrixStateCount() &&
+                            (this._cgl.gl.uniformMatrix4fv(this._vMatrixUniform, !1, this._cgl.vMatrix),
                             Q.profileMVPMatrixCount++,
                             (this._vMatrixState = this._cgl.getViewMatrixStateCount()),
                             this._inverseViewMatrixUniform &&
-                                (mat4.invert(
-                                    this._tempInverseViewMatrix,
-                                    this._cgl.vMatrix
-                                ),
+                                (mat4.invert(this._tempInverseViewMatrix, this._cgl.vMatrix),
                                 this._cgl.gl.uniformMatrix4fv(
                                     this._inverseViewMatrixUniform,
                                     !1,
                                     this._tempInverseViewMatrix
                                 ),
                                 Q.profileMVPMatrixCount++)),
-                            this._cgl.gl.uniformMatrix4fv(
-                                this._mMatrixUniform,
-                                !1,
-                                this._cgl.mMatrix
-                            ),
+                            this._cgl.gl.uniformMatrix4fv(this._mMatrixUniform, !1, this._cgl.mMatrix),
                             Q.profileMVPMatrixCount++,
                             this._camPosUniform &&
-                                (mat4.invert(
-                                    this._tempCamPosMatrix,
-                                    this._cgl.vMatrix
-                                ),
+                                (mat4.invert(this._tempCamPosMatrix, this._cgl.vMatrix),
                                 this._cgl.gl.uniform3f(
                                     this._camPosUniform,
                                     this._tempCamPosMatrix[12],
@@ -7577,103 +5738,68 @@ var CABLES = (function(t) {
                     else {
                         const t = mat4.create();
                         mat4.mul(t, this._cgl.vMatrix, this._cgl.mMatrix),
-                            this._cgl.gl.uniformMatrix4fv(
-                                this._mvMatrixUniform,
-                                !1,
-                                t
-                            ),
+                            this._cgl.gl.uniformMatrix4fv(this._mvMatrixUniform, !1, t),
                             Q.profileMVPMatrixCount++;
                     }
                     this._normalMatrixUniform &&
                         (mat4.invert(this._tempNormalMatrix, this._cgl.mMatrix),
-                        mat4.transpose(
-                            this._tempNormalMatrix,
-                            this._tempNormalMatrix
-                        ),
-                        this._cgl.gl.uniformMatrix4fv(
-                            this._normalMatrixUniform,
-                            !1,
-                            this._tempNormalMatrix
-                        ),
+                        mat4.transpose(this._tempNormalMatrix, this._tempNormalMatrix),
+                        this._cgl.gl.uniformMatrix4fv(this._normalMatrixUniform, !1, this._tempNormalMatrix),
                         Q.profileMVPMatrixCount++);
                     for (let t = 0; t < this._libs.length; t++)
-                        this._libs[t].onBind &&
-                            this._libs[t].onBind.bind(this._libs[t])(
-                                this._cgl,
-                                this
-                            );
+                        this._libs[t].onBind && this._libs[t].onBind.bind(this._libs[t])(this._cgl, this);
                     this._bindTextures();
                 }
             }),
-            (bt.prototype.toggleDefine = function(t, e) {
+            (bt.prototype.toggleDefine = function (t, e) {
                 e &&
                     'object' == typeof e &&
                     e.addEventListener &&
                     (e.removeEventListener('change', e.onToggleDefine),
-                    (e.onToggleDefine = e => {
+                    (e.onToggleDefine = (e) => {
                         this.toggleDefine(t, e);
                     }),
                     e.on('change', e.onToggleDefine),
                     (e = e.get())),
                     e ? this.define(t) : this.removeDefine(t);
             }),
-            (bt.prototype.define = function(t, e) {
+            (bt.prototype.define = function (t, e) {
                 null == e && (e = ''),
                     'object' == typeof e &&
                         (e.removeEventListener('change', e.onDefineChange),
-                        (e.onDefineChange = e => {
+                        (e.onDefineChange = (e) => {
                             this.define(t, e);
                         }),
                         e.on('change', e.onDefineChange),
                         (e = e.get()));
                 for (let i = 0; i < this._defines.length; i++) {
-                    if (this._defines[i][0] == t && this._defines[i][1] == e)
-                        return;
-                    if (this._defines[i][0] == t)
-                        return (
-                            (this._defines[i][1] = e),
-                            void (this._needsRecompile = !0)
-                        );
+                    if (this._defines[i][0] == t && this._defines[i][1] == e) return;
+                    if (this._defines[i][0] == t) return (this._defines[i][1] = e), void (this._needsRecompile = !0);
                 }
-                this._defines.push([t, e]),
-                    (this._needsRecompile = !0),
-                    this.setWhyCompile('define ' + t + ' ' + e);
+                this._defines.push([t, e]), (this._needsRecompile = !0), this.setWhyCompile('define ' + t + ' ' + e);
             }),
-            (bt.prototype.getDefines = function() {
+            (bt.prototype.getDefines = function () {
                 return this._defines;
             }),
-            (bt.prototype.getDefine = function(t) {
-                for (let e = 0; e < this._defines.length; e++)
-                    if (this._defines[e][0] == t) return this._defines[e][1];
+            (bt.prototype.getDefine = function (t) {
+                for (let e = 0; e < this._defines.length; e++) if (this._defines[e][0] == t) return this._defines[e][1];
                 return null;
             }),
-            (bt.prototype.hasDefine = function(t) {
-                for (let e = 0; e < this._defines.length; e++)
-                    if (this._defines[e][0] == t) return !0;
+            (bt.prototype.hasDefine = function (t) {
+                for (let e = 0; e < this._defines.length; e++) if (this._defines[e][0] == t) return !0;
             }),
-            (bt.prototype.removeDefine = function(t) {
+            (bt.prototype.removeDefine = function (t) {
                 for (let e = 0; e < this._defines.length; e++)
-                    if (this._defines[e][0] == t)
-                        return (
-                            this._defines.splice(e, 1),
-                            void (this._needsRecompile = !0)
-                        );
+                    if (this._defines[e][0] == t) return this._defines.splice(e, 1), void (this._needsRecompile = !0);
             }),
-            (bt.prototype.removeModule = function(t) {
+            (bt.prototype.removeModule = function (t) {
                 for (let e = 0; e < this._modules.length; e++)
-                    if (
-                        t &&
-                        t.id &&
-                        (this._modules[e].id == t.id || !this._modules[e])
-                    ) {
+                    if (t && t.id && (this._modules[e].id == t.id || !this._modules[e])) {
                         let i = !0;
                         for (; i; ) {
                             i = !1;
                             for (let e = 0; e < this._uniforms.length; e++)
-                                0 !=
-                                    this._uniforms[e]
-                                        .getName()
-                                        .indexOf(t.prefix) ||
+                                0 != this._uniforms[e].getName().indexOf(t.prefix) ||
                                     (this._uniforms.splice(e, 1), (i = !0));
                         }
                         (this._needsRecompile = !0),
@@ -7682,13 +5808,13 @@ var CABLES = (function(t) {
                         break;
                     }
             }),
-            (bt.prototype.getNumModules = function() {
+            (bt.prototype.getNumModules = function () {
                 return this._modules.length;
             }),
-            (bt.prototype.getCurrentModules = function() {
+            (bt.prototype.getCurrentModules = function () {
                 return this._modules;
             }),
-            (bt.prototype.addModule = function(t, e) {
+            (bt.prototype.addModule = function (t, e) {
                 return (
                     t.id || (t.id = y()),
                     t.numId || (t.numId = this._moduleNumId),
@@ -7703,108 +5829,78 @@ var CABLES = (function(t) {
                     t
                 );
             }),
-            (bt.prototype.hasModule = function(t) {
-                for (let e = 0; e < this._modules.length; e++)
-                    if (this._modules[e].id == t) return !0;
+            (bt.prototype.hasModule = function (t) {
+                for (let e = 0; e < this._modules.length; e++) if (this._modules[e].id == t) return !0;
                 return !1;
             }),
-            (bt.prototype.setModules = function(t) {
+            (bt.prototype.setModules = function (t) {
                 this._moduleNames = t;
             }),
-            (bt.prototype.dispose = function() {
+            (bt.prototype.dispose = function () {
                 this._cgl.gl.deleteProgram(this._program);
             }),
-            (bt.prototype.setDrawBuffers = function(t) {
+            (bt.prototype.setDrawBuffers = function (t) {
                 (this._drawBuffers = t), (this._needsRecompile = !0);
             }),
-            (bt.prototype.getUniforms = function() {
+            (bt.prototype.getUniforms = function () {
                 return this._uniforms;
             }),
-            (bt.prototype.getUniform = function(t) {
+            (bt.prototype.getUniform = function (t) {
                 for (let e = 0; e < this._uniforms.length; e++)
-                    if (this._uniforms[e].getName() == t)
-                        return this._uniforms[e];
+                    if (this._uniforms[e].getName() == t) return this._uniforms[e];
                 return null;
             }),
-            (bt.prototype.removeUniform = function(t) {
+            (bt.prototype.removeUniform = function (t) {
                 for (let e = 0; e < this._uniforms.length; e++)
-                    this._uniforms[e].getName() == t &&
-                        this._uniforms.splice(e, 1);
-                (this._needsRecompile = !0),
-                    this.setWhyCompile('remove uniform ' + t);
+                    this._uniforms[e].getName() == t && this._uniforms.splice(e, 1);
+                (this._needsRecompile = !0), this.setWhyCompile('remove uniform ' + t);
             }),
-            (bt.prototype._addUniform = function(t) {
-                this._uniforms.push(t),
-                    this.setWhyCompile('add uniform ' + name),
-                    (this._needsRecompile = !0);
+            (bt.prototype._addUniform = function (t) {
+                this._uniforms.push(t), this.setWhyCompile('add uniform ' + name), (this._needsRecompile = !0);
             }),
-            (bt.prototype.addUniformFrag = function(t, e, i, s, r, n) {
+            (bt.prototype.addUniformFrag = function (t, e, i, s, r, n) {
                 const o = new CGL.Uniform(this, t, e, i, s, r, n);
                 return (o.shaderType = 'frag'), o;
             }),
-            (bt.prototype.addUniformVert = function(t, e, i, s, r, n) {
+            (bt.prototype.addUniformVert = function (t, e, i, s, r, n) {
                 const o = new CGL.Uniform(this, t, e, i, s, r, n);
                 return (o.shaderType = 'vert'), o;
             }),
-            (bt.prototype.addUniformBoth = function(t, e, i, s, r, n) {
+            (bt.prototype.addUniformBoth = function (t, e, i, s, r, n) {
                 const o = new CGL.Uniform(this, t, e, i, s, r, n);
                 return (o.shaderType = 'both'), o;
             }),
-            (bt.prototype.addUniformStructFrag = function(t, e, i) {
+            (bt.prototype.addUniformStructFrag = function (t, e, i) {
                 const s = {};
                 if (!i) return s;
                 for (let r = 0; r < i.length; r += 1) {
                     const n = i[r];
                     if (!this.hasUniform(e + '.' + n.name)) {
-                        const i = new CGL.Uniform(
-                            this,
-                            n.type,
-                            e + '.' + n.name,
-                            n.v1,
-                            n.v2,
-                            n.v3,
-                            n.v4,
-                            e,
-                            t,
-                            n.name
-                        );
+                        const i = new CGL.Uniform(this, n.type, e + '.' + n.name, n.v1, n.v2, n.v3, n.v4, e, t, n.name);
                         (i.shaderType = 'frag'), (s[e + '.' + n.name] = i);
                     }
                 }
                 return s;
             }),
-            (bt.prototype.addUniformStructVert = function(t, e, i) {
+            (bt.prototype.addUniformStructVert = function (t, e, i) {
                 const s = {};
                 if (!i) return s;
                 for (let r = 0; r < i.length; r += 1) {
                     const n = i[r];
                     if (!this.hasUniform(e + '.' + n.name)) {
-                        const i = new CGL.Uniform(
-                            this,
-                            n.type,
-                            e + '.' + n.name,
-                            n.v1,
-                            n.v2,
-                            n.v3,
-                            n.v4,
-                            e,
-                            t,
-                            n.name
-                        );
+                        const i = new CGL.Uniform(this, n.type, e + '.' + n.name, n.v1, n.v2, n.v3, n.v4, e, t, n.name);
                         (i.shaderType = 'vert'), (s[e + '.' + n.name] = i);
                     }
                 }
                 return s;
             }),
-            (bt.prototype.addUniformStructBoth = function(t, e, i) {
+            (bt.prototype.addUniformStructBoth = function (t, e, i) {
                 const s = {};
                 if (!i) return s;
                 for (let r = 0; r < i.length; r += 1) {
                     const n = i[r];
                     if (
-                        (('2i' !== n.type &&
-                            'i' !== n.type &&
-                            '3i' !== n.type) ||
+                        (('2i' !== n.type && 'i' !== n.type && '3i' !== n.type) ||
                             console.error(
                                 'Adding an integer struct member to both shaders can potentially error. Please use different structs for each shader. Error occured in struct:',
                                 t,
@@ -7816,204 +5912,145 @@ var CABLES = (function(t) {
                             ),
                         !this.hasUniform(e + '.' + n.name))
                     ) {
-                        const i = new CGL.Uniform(
-                            this,
-                            n.type,
-                            e + '.' + n.name,
-                            n.v1,
-                            n.v2,
-                            n.v3,
-                            n.v4,
-                            e,
-                            t,
-                            n.name
-                        );
+                        const i = new CGL.Uniform(this, n.type, e + '.' + n.name, n.v1, n.v2, n.v3, n.v4, e, t, n.name);
                         (i.shaderType = 'both'), (s[e + '.' + n.name] = i);
                     }
                 }
                 return s;
             }),
-            (bt.prototype.hasUniform = function(t) {
-                for (let e = 0; e < this._uniforms.length; e++)
-                    if (this._uniforms[e].getName() == t) return !0;
+            (bt.prototype.hasUniform = function (t) {
+                for (let e = 0; e < this._uniforms.length; e++) if (this._uniforms[e].getName() == t) return !0;
                 return !1;
             }),
-            (bt.prototype._createProgram = function(t, e) {
+            (bt.prototype._createProgram = function (t, e) {
                 const i = this._cgl.gl.createProgram();
                 return (
-                    (this.vshader = bt.createShader(
-                        this._cgl,
-                        t,
-                        this._cgl.gl.VERTEX_SHADER,
-                        this
-                    )),
-                    (this.fshader = bt.createShader(
-                        this._cgl,
-                        e,
-                        this._cgl.gl.FRAGMENT_SHADER,
-                        this
-                    )),
+                    (this.vshader = bt.createShader(this._cgl, t, this._cgl.gl.VERTEX_SHADER, this)),
+                    (this.fshader = bt.createShader(this._cgl, e, this._cgl.gl.FRAGMENT_SHADER, this)),
                     this._cgl.gl.attachShader(i, this.vshader),
                     this._cgl.gl.attachShader(i, this.fshader),
                     this._linkProgram(i),
                     i
                 );
             }),
-            (bt.prototype.hasErrors = function() {
+            (bt.prototype.hasErrors = function () {
                 return this._hasErrors;
             }),
-            (bt.prototype._linkProgram = function(t) {
+            (bt.prototype._linkProgram = function (t) {
                 this._feedBackNames.length > 0 &&
-                    this._cgl.gl.transformFeedbackVaryings(
-                        t,
-                        this._feedBackNames,
-                        this._cgl.gl.SEPARATE_ATTRIBS
-                    ),
+                    this._cgl.gl.transformFeedbackVaryings(t, this._feedBackNames, this._cgl.gl.SEPARATE_ATTRIBS),
                     this._cgl.gl.linkProgram(t),
                     (this._isValid = !0),
                     !1 !== this._cgl.patch.config.glValidateShader &&
                         (this._cgl.gl.validateProgram(t),
-                        this._cgl.gl.getProgramParameter(
-                            t,
-                            this._cgl.gl.LINK_STATUS
-                        ) ||
-                            (console.warn(
-                                this._cgl.gl.getShaderInfoLog(this.fshader) ||
-                                    'empty shader infolog'
-                            ),
-                            console.warn(
-                                this._cgl.gl.getShaderInfoLog(this.vshader) ||
-                                    'empty shader infolog'
-                            ),
+                        this._cgl.gl.getProgramParameter(t, this._cgl.gl.LINK_STATUS) ||
+                            (console.warn(this._cgl.gl.getShaderInfoLog(this.fshader) || 'empty shader infolog'),
+                            console.warn(this._cgl.gl.getShaderInfoLog(this.vshader) || 'empty shader infolog'),
                             console.error(name + ' shader linking fail...'),
                             d.log('srcFrag', this.srcFrag),
                             d.log('srcVert', this.srcVert),
-                            d.log(
-                                name + ' programinfo: ',
-                                this._cgl.gl.getProgramInfoLog(t)
-                            ),
+                            d.log(name + ' programinfo: ', this._cgl.gl.getProgramInfoLog(t)),
                             d.log('--------------------------------------'),
                             d.log(this),
                             d.log('--------------------------------------'),
                             (this._isValid = !1),
                             (this._name = 'errorshader'),
-                            this.setSource(
-                                bt.getDefaultVertexShader(),
-                                bt.getErrorFragmentShader()
-                            )));
+                            this.setSource(bt.getDefaultVertexShader(), bt.getErrorFragmentShader())));
             }),
-            (bt.prototype.getProgram = function() {
+            (bt.prototype.getProgram = function () {
                 return this._program;
             }),
-            (bt.prototype.setFeedbackNames = function(t) {
+            (bt.prototype.setFeedbackNames = function (t) {
                 (this._needsRecompile = !0), (this._feedBackNames = t);
             }),
-            (bt.prototype.getDefaultVertexShader = bt.getDefaultVertexShader = function() {
-                return (
-                    ''.endl() +
-                    '{{MODULES_HEAD}}'.endl() +
-                    'IN vec3 vPosition;'.endl() +
-                    'IN vec2 attrTexCoord;'.endl() +
-                    'IN vec3 attrVertNormal;'.endl() +
-                    'IN vec3 attrTangent,attrBiTangent;'.endl() +
-                    'IN float attrVertIndex;'.endl() +
-                    'OUT vec2 texCoord;'.endl() +
-                    'OUT vec3 norm;'.endl() +
-                    'UNI mat4 projMatrix;'.endl() +
-                    'UNI mat4 viewMatrix;'.endl() +
-                    'UNI mat4 modelMatrix;'.endl() +
-                    'void main()'.endl() +
-                    '{'.endl() +
-                    '   texCoord=attrTexCoord;'.endl() +
-                    '   norm=attrVertNormal;'.endl() +
-                    '   vec4 pos=vec4(vPosition,  1.0);'.endl() +
-                    '   mat4 mMatrix=modelMatrix;'.endl() +
-                    '   {{MODULE_VERTEX_POSITION}}'.endl() +
-                    '   gl_Position = projMatrix * (viewMatrix*mMatrix) * pos;'.endl() +
-                    '}'
-                );
-            }),
-            (bt.prototype.getDefaultFragmentShader = bt.getDefaultFragmentShader = function(
-                t,
-                e,
-                i
-            ) {
-                return (
-                    null == t && ((t = 0.5), (e = 0.5), (i = 0.5)),
-                    ''.endl() +
-                        'IN vec2 texCoord;'.endl() +
+            (bt.prototype.getDefaultVertexShader = bt.getDefaultVertexShader =
+                function () {
+                    return (
+                        ''.endl() +
                         '{{MODULES_HEAD}}'.endl() +
+                        'IN vec3 vPosition;'.endl() +
+                        'IN vec2 attrTexCoord;'.endl() +
+                        'IN vec3 attrVertNormal;'.endl() +
+                        'IN vec3 attrTangent,attrBiTangent;'.endl() +
+                        'IN float attrVertIndex;'.endl() +
+                        'OUT vec2 texCoord;'.endl() +
+                        'OUT vec3 norm;'.endl() +
+                        'UNI mat4 projMatrix;'.endl() +
+                        'UNI mat4 viewMatrix;'.endl() +
+                        'UNI mat4 modelMatrix;'.endl() +
                         'void main()'.endl() +
                         '{'.endl() +
-                        '    vec4 col=vec4(' +
-                        t +
-                        ',' +
-                        e +
-                        ',' +
-                        i +
-                        ',1.0);'.endl() +
-                        '    {{MODULE_COLOR}}'.endl() +
-                        '    outColor = col;'.endl() +
+                        '   texCoord=attrTexCoord;'.endl() +
+                        '   norm=attrVertNormal;'.endl() +
+                        '   vec4 pos=vec4(vPosition,  1.0);'.endl() +
+                        '   mat4 mMatrix=modelMatrix;'.endl() +
+                        '   {{MODULE_VERTEX_POSITION}}'.endl() +
+                        '   gl_Position = projMatrix * (viewMatrix*mMatrix) * pos;'.endl() +
                         '}'
-                );
-            }),
-            (bt.prototype.addAttribute = function(t) {
+                    );
+                }),
+            (bt.prototype.getDefaultFragmentShader = bt.getDefaultFragmentShader =
+                function (t, e, i) {
+                    return (
+                        null == t && ((t = 0.5), (e = 0.5), (i = 0.5)),
+                        ''.endl() +
+                            'IN vec2 texCoord;'.endl() +
+                            '{{MODULES_HEAD}}'.endl() +
+                            'void main()'.endl() +
+                            '{'.endl() +
+                            '    vec4 col=vec4(' +
+                            t +
+                            ',' +
+                            e +
+                            ',' +
+                            i +
+                            ',1.0);'.endl() +
+                            '    {{MODULE_COLOR}}'.endl() +
+                            '    outColor = col;'.endl() +
+                            '}'
+                    );
+                }),
+            (bt.prototype.addAttribute = function (t) {
                 for (let e = 0; e < this._attributes.length; e++)
-                    if (
-                        this._attributes[e].name == t.name &&
-                        this._attributes[e].nameFrag == t.nameFrag
-                    )
-                        return;
+                    if (this._attributes[e].name == t.name && this._attributes[e].nameFrag == t.nameFrag) return;
                 this._attributes.push(t), (this._needsRecompile = !0);
             }),
-            (bt.prototype.bindTextures = bt.prototype._bindTextures = function() {
-                this._textureStackTex.length > this._cgl.maxTextureUnits &&
-                    console.log(
-                        '[shader._bindTextures] too many textures bound',
-                        this._textureStackTex.length +
-                            '/' +
-                            this._cgl.maxTextureUnits
-                    );
-                for (let t = 0; t < this._textureStackTex.length; t++)
-                    this._textureStackTex[t]
-                        ? this._textureStackUni[t]
-                            ? (this._textureStackUni[t].setValue(t),
-                              this._cgl.setTexture(
-                                  t,
-                                  this._textureStackTex[t],
-                                  this._textureStackType[t]
-                              ))
-                            : (console.log(
-                                  'no uniform for pushtexture',
-                                  this._name
-                              ),
-                              this._cgl.setTexture(
-                                  t,
-                                  this._textureStackTex[t],
-                                  this._textureStackType[t]
-                              ))
-                        : console.log('no texture for pushtexture', this._name);
-            }),
-            (bt.prototype.pushTexture = function(t, e, i) {
+            (bt.prototype.bindTextures = bt.prototype._bindTextures =
+                function () {
+                    this._textureStackTex.length > this._cgl.maxTextureUnits &&
+                        console.log(
+                            '[shader._bindTextures] too many textures bound',
+                            this._textureStackTex.length + '/' + this._cgl.maxTextureUnits
+                        );
+                    for (let t = 0; t < this._textureStackTex.length; t++)
+                        this._textureStackTex[t]
+                            ? this._textureStackUni[t]
+                                ? (this._textureStackUni[t].setValue(t),
+                                  this._cgl.setTexture(t, this._textureStackTex[t], this._textureStackType[t]))
+                                : (console.log('no uniform for pushtexture', this._name),
+                                  this._cgl.setTexture(t, this._textureStackTex[t], this._textureStackType[t]))
+                            : console.log('no texture for pushtexture', this._name);
+                }),
+            (bt.prototype.pushTexture = function (t, e, i) {
                 if (!t) throw new Error('no uniform given to texturestack');
                 if (!e) throw new Error('no texture given to texturestack');
                 this._textureStackUni.push(t),
                     e.tex
-                        ? (this._textureStackTexCgl.push(e),
-                          this._textureStackTex.push(e.tex))
-                        : (this._textureStackTexCgl.push(null),
-                          this._textureStackTex.push(e)),
+                        ? (this._textureStackTexCgl.push(e), this._textureStackTex.push(e.tex))
+                        : (this._textureStackTexCgl.push(null), this._textureStackTex.push(e)),
                     this._textureStackType.push(i);
             }),
-            (bt.prototype.popTexture = function() {
-                this._textureStackUni.pop(),
-                    this._textureStackTex.pop(),
-                    this._textureStackType.pop();
+            (bt.prototype.popTexture = function () {
+                this._textureStackUni.pop(), this._textureStackTex.pop(), this._textureStackType.pop();
             }),
-            (bt.prototype.popTextures = function() {
-                this._textureStackTex.length = this._textureStackTexCgl.length = this._textureStackType.length = this._textureStackUni.length = 0;
+            (bt.prototype.popTextures = function () {
+                this._textureStackTex.length =
+                    this._textureStackTexCgl.length =
+                    this._textureStackType.length =
+                    this._textureStackUni.length =
+                        0;
             }),
-            (bt.getErrorFragmentShader = function() {
+            (bt.getErrorFragmentShader = function () {
                 return (
                     ''.endl() +
                     'void main()'.endl() +
@@ -8024,20 +6061,18 @@ var CABLES = (function(t) {
                     '}'
                 );
             }),
-            (bt.createShader = function(t, e, i, s) {
+            (bt.createShader = function (t, e, i, s) {
                 if (t.aborted) return;
                 t.printError('shader create1');
                 const r = t.gl.createShader(i);
                 if (
-                    (t.gl.shaderSource(r, e),
-                    t.gl.compileShader(r),
-                    !t.gl.getShaderParameter(r, t.gl.COMPILE_STATUS))
+                    (t.gl.shaderSource(r, e), t.gl.compileShader(r), !t.gl.getShaderParameter(r, t.gl.COMPILE_STATUS))
                 ) {
                     d.log('compile status: '),
                         i == t.gl.VERTEX_SHADER && d.log('VERTEX_SHADER'),
                         i == t.gl.FRAGMENT_SHADER && d.log('FRAGMENT_SHADER');
                     let o = t.gl.getShaderInfoLog(r) || 'empty shader info log';
-                    const h = (function(t) {
+                    const h = (function (t) {
                         const e = [],
                             i = t.split('\n');
                         for (const t in i) {
@@ -8057,7 +6092,7 @@ var CABLES = (function(t) {
                         s && (a += '<span class="error">'),
                             (a +=
                                 (n = i) && At.test(n)
-                                    ? n.replace(Tt, function(t) {
+                                    ? n.replace(Tt, function (t) {
                                           return Et[t];
                                       })
                                     : n || ''),
@@ -8066,57 +6101,32 @@ var CABLES = (function(t) {
                     console.warn(o),
                         (o = o.replace(/\n/g, '<br/>')),
                         (a = o + '<br/>' + a + '<br/><br/>'),
-                        t.patch.emitEvent(
-                            'criticalError',
-                            'Shader error ' + name,
-                            a
-                        ),
-                        t.patch.isEditorMode() &&
-                            d.log('Shader error ' + name, a),
+                        t.patch.emitEvent('criticalError', 'Shader error ' + name, a),
+                        t.patch.isEditorMode() && d.log('Shader error ' + name, a),
                         (a += '</div>'),
                         (this._name = 'errorshader'),
-                        s.setSource(
-                            bt.getDefaultVertexShader(),
-                            bt.getErrorFragmentShader()
-                        );
+                        s.setSource(bt.getDefaultVertexShader(), bt.getErrorFragmentShader());
                 }
                 var n;
                 return t.printError('shader create2'), r;
             });
-        const yt = function() {
-            (this._arr = [mat4.create()]),
-                (this._index = 0),
-                (this.stateCounter = 0);
+        const yt = function () {
+            (this._arr = [mat4.create()]), (this._index = 0), (this.stateCounter = 0);
         };
-        (yt.prototype.push = function(t) {
-            if (
-                (this._index++,
-                this.stateCounter++,
-                this._index == this._arr.length)
-            ) {
+        (yt.prototype.push = function (t) {
+            if ((this._index++, this.stateCounter++, this._index == this._arr.length)) {
                 const t = mat4.create();
                 this._arr.push(t);
             }
-            return (
-                mat4.copy(
-                    this._arr[this._index],
-                    t || this._arr[this._index - 1]
-                ),
-                this._arr[this._index]
-            );
+            return mat4.copy(this._arr[this._index], t || this._arr[this._index - 1]), this._arr[this._index];
         }),
-            (yt.prototype.pop = function() {
-                return (
-                    this.stateCounter++,
-                    this._index--,
-                    this._index < 0 && (this._index = 0),
-                    this._arr[this._index]
-                );
+            (yt.prototype.pop = function () {
+                return this.stateCounter++, this._index--, this._index < 0 && (this._index = 0), this._arr[this._index];
             }),
-            (yt.prototype.length = function() {
+            (yt.prototype.length = function () {
                 return this._index;
             });
-        const Ot = function(t) {
+        const Ot = function (t) {
             _.apply(this);
             const e = [0, 0, 0, 0];
             (this.glVersion = 0),
@@ -8158,78 +6168,47 @@ var CABLES = (function(t) {
                 mat4.identity(this.mMatrix),
                 mat4.identity(this.vMatrix);
             const i = new bt(this, 'simpleshader');
-            i.setModules([
-                'MODULE_VERTEX_POSITION',
-                'MODULE_COLOR',
-                'MODULE_BEGIN_FRAG',
-            ]),
-                i.setSource(
-                    bt.getDefaultVertexShader(),
-                    bt.getDefaultFragmentShader()
-                );
+            i.setModules(['MODULE_VERTEX_POSITION', 'MODULE_COLOR', 'MODULE_BEGIN_FRAG']),
+                i.setSource(bt.getDefaultVertexShader(), bt.getDefaultFragmentShader());
             let s = i;
             this.aborted = !1;
             const r = [];
-            (this.addEventListener = function(t, e) {
+            (this.addEventListener = function (t, e) {
                 'resize' == t && r.push(e);
             }),
-                (this.removeEventListener = function(t, e) {
-                    if ('resize' == t)
-                        for (const t in r)
-                            if (r[t] == e) return void r.splice(t, 1);
+                (this.removeEventListener = function (t, e) {
+                    if ('resize' == t) for (const t in r) if (r[t] == e) return void r.splice(t, 1);
                 }),
-                (this.exitError = function(t, e) {
+                (this.exitError = function (t, e) {
                     this.patch.exitError(t, e), (this.aborted = !0);
                 }),
-                (this.setCanvas = function(t) {
+                (this.setCanvas = function (t) {
                     if (
-                        ((this.canvas =
-                            'string' == typeof t
-                                ? document.getElementById(t)
-                                : t),
-                        this.patch.config.canvas ||
-                            (this.patch.config.canvas = {}),
-                        this.patch.config.canvas.hasOwnProperty(
-                            'preserveDrawingBuffer'
-                        ) ||
+                        ((this.canvas = 'string' == typeof t ? document.getElementById(t) : t),
+                        this.patch.config.canvas || (this.patch.config.canvas = {}),
+                        this.patch.config.canvas.hasOwnProperty('preserveDrawingBuffer') ||
                             (this.patch.config.canvas.preserveDrawingBuffer = !1),
-                        this.patch.config.canvas.hasOwnProperty(
-                            'premultipliedAlpha'
-                        ) || (this.patch.config.canvas.premultipliedAlpha = !1),
-                        this.patch.config.canvas.hasOwnProperty('alpha') ||
-                            (this.patch.config.canvas.alpha = !1),
+                        this.patch.config.canvas.hasOwnProperty('premultipliedAlpha') ||
+                            (this.patch.config.canvas.premultipliedAlpha = !1),
+                        this.patch.config.canvas.hasOwnProperty('alpha') || (this.patch.config.canvas.alpha = !1),
                         this.patch.config.hasOwnProperty('clearCanvasColor') &&
                             (this.clearCanvasTransparent = this.patch.config.clearCanvasColor),
                         this.patch.config.hasOwnProperty('clearCanvasDepth') &&
                             (this.clearCanvasDepth = this.patch.config.clearCanvasDepth),
                         this.patch.config.canvas.forceWebGl1 ||
-                            (this.gl = this.canvas.getContext(
-                                'webgl2',
-                                this.patch.config.canvas
-                            )),
-                        this.gl &&
-                        'WebGL 1.0' != this.gl.getParameter(this.gl.VERSION)
+                            (this.gl = this.canvas.getContext('webgl2', this.patch.config.canvas)),
+                        this.gl && 'WebGL 1.0' != this.gl.getParameter(this.gl.VERSION)
                             ? (this.glVersion = 2)
                             : ((this.gl =
-                                  this.canvas.getContext(
-                                      'webgl',
-                                      this.patch.config.canvas
-                                  ) ||
-                                  this.canvas.getContext(
-                                      'experimental-webgl',
-                                      this.patch.config.canvas
-                                  )),
+                                  this.canvas.getContext('webgl', this.patch.config.canvas) ||
+                                  this.canvas.getContext('experimental-webgl', this.patch.config.canvas)),
                               (this.glVersion = 1),
-                              /^((?!chrome|android).)*safari/i.test(
-                                  navigator.userAgent
-                              ) && (this.glUseHalfFloatTex = !0),
+                              /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
+                                  (this.glUseHalfFloatTex = !0),
                               /iPad|iPhone|iPod/.test(navigator.userAgent) &&
                                   !window.MSStream &&
-                                  (this.patch.config.canvas.hasOwnProperty(
-                                      'powerPreference'
-                                  ) ||
-                                      (this.patch.config.canvas.powerPreference =
-                                          'high-performance'))),
+                                  (this.patch.config.canvas.hasOwnProperty('powerPreference') ||
+                                      (this.patch.config.canvas.powerPreference = 'high-performance'))),
                         !this.gl)
                     )
                         return void this.exitError(
@@ -8238,68 +6217,48 @@ var CABLES = (function(t) {
                         );
                     const e = this.gl.getExtension('WEBGL_debug_renderer_info');
                     if (e) {
-                        'Google SwiftShader' ===
-                            this.gl.getParameter(e.UNMASKED_RENDERER_WEBGL) &&
+                        'Google SwiftShader' === this.gl.getParameter(e.UNMASKED_RENDERER_WEBGL) &&
                             (this.glSlowRenderer = !0);
                     }
                     this.gl.getExtension('OES_standard_derivatives');
-                    const i =
-                        this.gl.getExtension('ANGLE_instanced_arrays') ||
-                        this.gl;
-                    this.canvas.addEventListener('webglcontextlost', t => {
+                    const i = this.gl.getExtension('ANGLE_instanced_arrays') || this.gl;
+                    this.canvas.addEventListener('webglcontextlost', (t) => {
                         console.log('canvas lost...', t), (this.aborted = !0);
                     }),
-                        (this.maxTextureUnits = this.gl.getParameter(
-                            this.gl.MAX_TEXTURE_IMAGE_UNITS
-                        )),
-                        (this.maxTexSize = this.gl.getParameter(
-                            this.gl.MAX_TEXTURE_SIZE
-                        )),
-                        (this.maxUniformsFrag = this.gl.getParameter(
-                            this.gl.MAX_FRAGMENT_UNIFORM_VECTORS
-                        )),
-                        (this.maxUniformsVert = this.gl.getParameter(
-                            this.gl.MAX_VERTEX_UNIFORM_VECTORS
-                        )),
+                        (this.maxTextureUnits = this.gl.getParameter(this.gl.MAX_TEXTURE_IMAGE_UNITS)),
+                        (this.maxTexSize = this.gl.getParameter(this.gl.MAX_TEXTURE_SIZE)),
+                        (this.maxUniformsFrag = this.gl.getParameter(this.gl.MAX_FRAGMENT_UNIFORM_VECTORS)),
+                        (this.maxUniformsVert = this.gl.getParameter(this.gl.MAX_VERTEX_UNIFORM_VECTORS)),
                         (this.maxSamples = 0),
-                        this.gl.MAX_SAMPLES &&
-                            (this.maxSamples = this.gl.getParameter(
-                                this.gl.MAX_SAMPLES
-                            )),
+                        this.gl.MAX_SAMPLES && (this.maxSamples = this.gl.getParameter(this.gl.MAX_SAMPLES)),
                         i.vertexAttribDivisorANGLE &&
-                            ((this.gl.vertexAttribDivisor = i.vertexAttribDivisorANGLE.bind(
-                                i
-                            )),
-                            (this.gl.drawElementsInstanced = i.drawElementsInstancedANGLE.bind(
-                                i
-                            ))),
+                            ((this.gl.vertexAttribDivisor = i.vertexAttribDivisorANGLE.bind(i)),
+                            (this.gl.drawElementsInstanced = i.drawElementsInstancedANGLE.bind(i))),
                         this.updateSize();
                 }),
-                (this.updateSize = function() {
-                    (this.canvas.width = this.canvasWidth =
-                        this.canvas.clientWidth * this.pixelDensity),
-                        (this.canvas.height = this.canvasHeight =
-                            this.canvas.clientHeight * this.pixelDensity);
+                (this.updateSize = function () {
+                    (this.canvas.width = this.canvasWidth = this.canvas.clientWidth * this.pixelDensity),
+                        (this.canvas.height = this.canvasHeight = this.canvas.clientHeight * this.pixelDensity);
                 }),
                 (this.canvasWidth = -1),
                 (this.canvasHeight = -1),
                 (this.canvasScale = 1);
             let n = -1,
                 o = -1;
-            (this.getViewPort = function() {
+            (this.getViewPort = function () {
                 return e;
             }),
-                (this.resetViewPort = function() {
+                (this.resetViewPort = function () {
                     this.gl.viewport(e[0], e[1], e[2], e[3]);
                 }),
-                (this.setViewPort = function(t, i, s, r) {
+                (this.setViewPort = function (t, i, s, r) {
                     (e[0] = Math.round(t)),
                         (e[1] = Math.round(i)),
                         (e[2] = Math.round(s)),
                         (e[3] = Math.round(r)),
                         this.gl.viewport(e[0], e[1], e[2], e[3]);
                 }),
-                (this.screenShot = function(t, e, i, s) {
+                (this.screenShot = function (t, e, i, s) {
                     e &&
                         (this.gl.clearColor(1, 1, 1, 1),
                         this.gl.colorMask(!1, !1, !1, !0),
@@ -8308,157 +6267,110 @@ var CABLES = (function(t) {
                         this.canvas &&
                             this.canvas.toBlob &&
                             this.canvas.toBlob(
-                                e => {
-                                    t
-                                        ? t(e)
-                                        : d.log('no screenshot callback...');
+                                (e) => {
+                                    t ? t(e) : d.log('no screenshot callback...');
                                 },
                                 i,
                                 s
                             );
                 }),
-                (this.endFrame = function() {
+                (this.endFrame = function () {
                     if (
-                        (this.patch.isEditorMode() &&
-                            CABLES.GL_MARKER.drawMarkerLayer(this),
+                        (this.patch.isEditorMode() && CABLES.GL_MARKER.drawMarkerLayer(this),
                         this.setPreviousShader(),
                         this._vMatrixStack.length() > 0 &&
-                            this.logStackError(
-                                'view matrix stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('view matrix stack length !=0 at end of rendering...'),
                         this._mMatrixStack.length() > 0 &&
-                            this.logStackError(
-                                'mvmatrix stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('mvmatrix stack length !=0 at end of rendering...'),
                         this._pMatrixStack.length() > 0 &&
-                            this.logStackError(
-                                'pmatrix stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('pmatrix stack length !=0 at end of rendering...'),
                         this._glFrameBufferStack.length > 0 &&
-                            this.logStackError(
-                                'glFrameBuffer stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('glFrameBuffer stack length !=0 at end of rendering...'),
                         this._stackDepthTest.length > 0 &&
-                            this.logStackError(
-                                'depthtest stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('depthtest stack length !=0 at end of rendering...'),
                         this._stackDepthWrite.length > 0 &&
-                            this.logStackError(
-                                'depthwrite stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('depthwrite stack length !=0 at end of rendering...'),
                         this._stackDepthFunc.length > 0 &&
-                            this.logStackError(
-                                'depthfunc stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('depthfunc stack length !=0 at end of rendering...'),
                         this._stackBlend.length > 0 &&
-                            this.logStackError(
-                                'blend stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('blend stack length !=0 at end of rendering...'),
                         this._stackBlendMode.length > 0 &&
-                            this.logStackError(
-                                'blendMode stack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('blendMode stack length !=0 at end of rendering...'),
                         this._shaderStack.length > 0 &&
-                            this.logStackError(
-                                'this._shaderStack length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('this._shaderStack length !=0 at end of rendering...'),
                         this._stackCullFace.length > 0 &&
-                            this.logStackError(
-                                'this._stackCullFace length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('this._stackCullFace length !=0 at end of rendering...'),
                         this._stackCullFaceFacing.length > 0 &&
-                            this.logStackError(
-                                'this._stackCullFaceFacing length !=0 at end of rendering...'
-                            ),
+                            this.logStackError('this._stackCullFaceFacing length !=0 at end of rendering...'),
                         (this._frameStarted = !1),
                         n != this.canvasWidth || o != this.canvasHeight)
                     ) {
                         (n = this.canvasWidth),
                             (o = this.canvasHeight),
-                            this.setSize(
-                                this.canvasWidth / this.pixelDensity,
-                                this.canvasHeight / this.pixelDensity
-                            ),
+                            this.setSize(this.canvasWidth / this.pixelDensity, this.canvasHeight / this.pixelDensity),
                             this.updateSize();
                         for (let t = 0; t < r.length; t++) r[t]();
                     }
                     this._cursor != this._currentCursor &&
                         (this._currentCursor = this.canvas.style.cursor = this._cursor);
                 }),
-                (this.logStackError = function(t) {
-                    this._hadStackError ||
-                        ((this._hadStackError = !0), console.warn(t));
+                (this.logStackError = function (t) {
+                    this._hadStackError || ((this._hadStackError = !0), console.warn(t));
                 }),
-                (this.getShader = function() {
-                    if (
-                        s &&
-                        (!this.frameStore ||
-                            ((!0 === this.frameStore.renderOffscreen) ==
-                                s.offScreenPass) ==
-                                !0)
-                    )
+                (this.getShader = function () {
+                    if (s && (!this.frameStore || ((!0 === this.frameStore.renderOffscreen) == s.offScreenPass) == !0))
                         return s;
                     for (let t = this._shaderStack.length - 1; t >= 0; t--)
                         if (
                             this._shaderStack[t] &&
-                            this.frameStore.renderOffscreen ==
-                                this._shaderStack[t].offScreenPass
+                            this.frameStore.renderOffscreen == this._shaderStack[t].offScreenPass
                         )
                             return this._shaderStack[t];
                 }),
-                (this.getDefaultShader = function() {
+                (this.getDefaultShader = function () {
                     return i;
                 }),
-                (this.pushShader = this.setShader = function(t) {
-                    this._shaderStack.push(t), (s = t);
-                }),
-                (this.popShader = this.setPreviousShader = function() {
-                    if (0 === this._shaderStack.length)
-                        throw new Error('Invalid shader stack pop!');
-                    this._shaderStack.pop(),
-                        (s = this._shaderStack[this._shaderStack.length - 1]);
-                }),
-                (this.pushGlFrameBuffer = function(t) {
+                (this.pushShader = this.setShader =
+                    function (t) {
+                        this._shaderStack.push(t), (s = t);
+                    }),
+                (this.popShader = this.setPreviousShader =
+                    function () {
+                        if (0 === this._shaderStack.length) throw new Error('Invalid shader stack pop!');
+                        this._shaderStack.pop(), (s = this._shaderStack[this._shaderStack.length - 1]);
+                    }),
+                (this.pushGlFrameBuffer = function (t) {
                     this._glFrameBufferStack.push(t);
                 }),
-                (this.popGlFrameBuffer = function() {
+                (this.popGlFrameBuffer = function () {
                     return 0 == this._glFrameBufferStack.length
                         ? null
                         : (this._glFrameBufferStack.pop(),
-                          this._glFrameBufferStack[
-                              this._glFrameBufferStack.length - 1
-                          ]);
+                          this._glFrameBufferStack[this._glFrameBufferStack.length - 1]);
                 }),
-                (this.getCurrentGlFrameBuffer = function() {
+                (this.getCurrentGlFrameBuffer = function () {
                     return 0 === this._glFrameBufferStack.length
                         ? null
-                        : this._glFrameBufferStack[
-                              this._glFrameBufferStack.length - 1
-                          ];
+                        : this._glFrameBufferStack[this._glFrameBufferStack.length - 1];
                 }),
-                (this.pushFrameBuffer = function(t) {
+                (this.pushFrameBuffer = function (t) {
                     this._frameBufferStack.push(t);
                 }),
-                (this.popFrameBuffer = function() {
+                (this.popFrameBuffer = function () {
                     return 0 == this._frameBufferStack.length
                         ? null
-                        : (this._frameBufferStack.pop(),
-                          this._frameBufferStack[
-                              this._frameBufferStack.length - 1
-                          ]);
+                        : (this._frameBufferStack.pop(), this._frameBufferStack[this._frameBufferStack.length - 1]);
                 }),
-                (this.getCurrentFrameBuffer = function() {
+                (this.getCurrentFrameBuffer = function () {
                     return 0 === this._frameBufferStack.length
                         ? null
-                        : this._frameBufferStack[
-                              this._frameBufferStack.length - 1
-                          ];
+                        : this._frameBufferStack[this._frameBufferStack.length - 1];
                 });
             const h = vec3.create();
             vec3.set(h, 0, 0, 2);
             const a = vec3.create();
             vec3.set(a, 0, 0, 0),
-                (this.renderStart = function(t, e, s) {
+                (this.renderStart = function (t, e, s) {
                     e || (e = a),
                         s || (s = h),
                         this.pushDepthTest(!0),
@@ -8466,19 +6378,10 @@ var CABLES = (function(t) {
                         this.pushDepthFunc(t.gl.LEQUAL),
                         this.pushCullFaceFacing(t.gl.BACK),
                         this.pushCullFace(!1),
-                        this.clearCanvasTransparent &&
-                            (t.gl.clearColor(0, 0, 0, 0),
-                            t.gl.clear(t.gl.COLOR_BUFFER_BIT)),
-                        this.clearCanvasDepth &&
-                            t.gl.clear(t.gl.DEPTH_BUFFER_BIT),
+                        this.clearCanvasTransparent && (t.gl.clearColor(0, 0, 0, 0), t.gl.clear(t.gl.COLOR_BUFFER_BIT)),
+                        this.clearCanvasDepth && t.gl.clear(t.gl.DEPTH_BUFFER_BIT),
                         t.setViewPort(0, 0, t.canvasWidth, t.canvasHeight),
-                        mat4.perspective(
-                            t.pMatrix,
-                            45,
-                            t.canvasWidth / t.canvasHeight,
-                            0.1,
-                            1e3
-                        ),
+                        mat4.perspective(t.pMatrix, 45, t.canvasWidth / t.canvasHeight, 0.1, 1e3),
                         mat4.identity(t.mMatrix),
                         mat4.identity(t.vMatrix),
                         mat4.translate(t.mMatrix, t.mMatrix, e),
@@ -8487,20 +6390,14 @@ var CABLES = (function(t) {
                         t.pushModelMatrix(),
                         t.pushViewMatrix(),
                         t.pushBlendMode(st.BLEND_MODES.BLEND_NORMAL, !1);
-                    for (let t = 0; t < this._textureslots.length; t++)
-                        this._textureslots[t] = null;
-                    if (
-                        (this.pushShader(i),
-                        (this._frameStarted = !0),
-                        this._onetimeCallbacks.length > 0)
-                    ) {
-                        for (let t = 0; t < this._onetimeCallbacks.length; t++)
-                            this._onetimeCallbacks[t]();
+                    for (let t = 0; t < this._textureslots.length; t++) this._textureslots[t] = null;
+                    if ((this.pushShader(i), (this._frameStarted = !0), this._onetimeCallbacks.length > 0)) {
+                        for (let t = 0; t < this._onetimeCallbacks.length; t++) this._onetimeCallbacks[t]();
                         this._onetimeCallbacks.length = 0;
                     }
                     this.emitEvent('beginFrame');
                 }),
-                (this.renderEnd = function(t) {
+                (this.renderEnd = function (t) {
                     t.popViewMatrix(),
                         t.popModelMatrix(),
                         t.popPMatrix(),
@@ -8514,91 +6411,66 @@ var CABLES = (function(t) {
                         t.endFrame(),
                         this.emitEvent('endFrame');
                 }),
-                (this.getTexture = function(t) {
+                (this.getTexture = function (t) {
                     return this._textureslots[t];
                 }),
-                (this.checkFrameStarted = function(t) {
-                    this._frameStarted ||
-                        console.warn('frame not started ' + t);
+                (this.checkFrameStarted = function (t) {
+                    this._frameStarted || console.warn('frame not started ' + t);
                 }),
-                (this.setTexture = function(t, e, i) {
+                (this.setTexture = function (t, e, i) {
                     this.checkFrameStarted('cgl setTexture'),
                         this._textureslots[t] != e &&
                             (this.gl.activeTexture(this.gl.TEXTURE0 + t),
                             this.gl.bindTexture(i || this.gl.TEXTURE_2D, e),
                             (this._textureslots[t] = e));
                 }),
-                (this.fullScreen = function() {
+                (this.fullScreen = function () {
                     this.canvas.requestFullscreen
                         ? this.canvas.requestFullscreen()
                         : this.canvas.mozRequestFullScreen
                         ? this.canvas.mozRequestFullScreen()
                         : this.canvas.webkitRequestFullscreen
                         ? this.canvas.webkitRequestFullscreen()
-                        : this.canvas.msRequestFullscreen &&
-                          this.canvas.msRequestFullscreen();
+                        : this.canvas.msRequestFullscreen && this.canvas.msRequestFullscreen();
                 }),
-                (this.setSize = function(t, e) {
+                (this.setSize = function (t, e) {
                     (this.canvas.style.width = t + 'px'),
                         (this.canvas.style.height = e + 'px'),
                         (this.canvas.width = t * this.pixelDensity),
                         (this.canvas.height = e * this.pixelDensity),
                         this.updateSize();
                 }),
-                (this._resizeToWindowSize = function() {
-                    this.setSize(window.innerWidth, window.innerHeight),
-                        this.updateSize();
+                (this._resizeToWindowSize = function () {
+                    this.setSize(window.innerWidth, window.innerHeight), this.updateSize();
                 }),
-                (this._resizeToParentSize = function() {
+                (this._resizeToParentSize = function () {
                     const t = this.canvas.parentElement;
                     t
-                        ? (this.setSize(t.clientWidth, t.clientHeight),
-                          this.updateSize())
-                        : console.error(
-                              'cables: can not resize to container element'
-                          );
+                        ? (this.setSize(t.clientWidth, t.clientHeight), this.updateSize())
+                        : console.error('cables: can not resize to container element');
                 }),
-                (this.setAutoResize = function(t) {
-                    window.removeEventListener(
-                        'resize',
-                        this._resizeToWindowSize.bind(this)
-                    ),
-                        window.removeEventListener(
-                            'resize',
-                            this._resizeToParentSize.bind(this)
-                        ),
+                (this.setAutoResize = function (t) {
+                    window.removeEventListener('resize', this._resizeToWindowSize.bind(this)),
+                        window.removeEventListener('resize', this._resizeToParentSize.bind(this)),
                         'window' == t &&
-                            (window.addEventListener(
-                                'resize',
-                                this._resizeToWindowSize.bind(this)
-                            ),
-                            window.addEventListener(
-                                'orientationchange',
-                                this._resizeToWindowSize.bind(this)
-                            ),
+                            (window.addEventListener('resize', this._resizeToWindowSize.bind(this)),
+                            window.addEventListener('orientationchange', this._resizeToWindowSize.bind(this)),
                             this._resizeToWindowSize()),
                         'parent' == t &&
-                            (window.addEventListener(
-                                'resize',
-                                this._resizeToParentSize.bind(this)
-                            ),
+                            (window.addEventListener('resize', this._resizeToParentSize.bind(this)),
                             this._resizeToParentSize());
                 }),
-                (this.printError = function(t) {
+                (this.printError = function (t) {
                     const e = this.gl.getError();
                     if (e != this.gl.NO_ERROR) {
                         let i = '';
                         return (
                             e == this.gl.OUT_OF_MEMORY && (i = 'OUT_OF_MEMORY'),
                             e == this.gl.INVALID_ENUM && (i = 'INVALID_ENUM'),
-                            e == this.gl.INVALID_OPERATION &&
-                                (i = 'INVALID_OPERATION'),
-                            e == this.gl.INVALID_FRAMEBUFFER_OPERATION &&
-                                (i = 'INVALID_FRAMEBUFFER_OPERATION'),
+                            e == this.gl.INVALID_OPERATION && (i = 'INVALID_OPERATION'),
+                            e == this.gl.INVALID_FRAMEBUFFER_OPERATION && (i = 'INVALID_FRAMEBUFFER_OPERATION'),
                             e == this.gl.INVALID_VALUE && (i = 'INVALID_VALUE'),
-                            e == this.gl.CONTEXT_LOST_WEBGL &&
-                                ((this.aborted = !0),
-                                (i = 'CONTEXT_LOST_WEBGL')),
+                            e == this.gl.CONTEXT_LOST_WEBGL && ((this.aborted = !0), (i = 'CONTEXT_LOST_WEBGL')),
                             e == this.gl.NO_ERROR && (i = 'NO_ERROR'),
                             d.log('gl error: ', t, e, i),
                             !0
@@ -8606,40 +6478,28 @@ var CABLES = (function(t) {
                     }
                     return !1;
                 }),
-                (this.saveScreenshot = function(t, e, i, s, r) {
+                (this.saveScreenshot = function (t, e, i, s, r) {
                     this.patch.renderOneFrame();
                     let n = this.canvas.clientWidth,
                         o = this.canvas.clientHeight;
                     function h(t, e, i) {
-                        return (
-                            Array(e - String(t).length + 1).join(i || '0') + t
-                        );
+                        return Array(e - String(t).length + 1).join(i || '0') + t;
                     }
-                    i && ((this.canvas.width = i), (n = i)),
-                        s && ((this.canvas.height = s), (o = s));
+                    i && ((this.canvas.width = i), (n = i)), s && ((this.canvas.height = s), (o = s));
                     const a = new Date(),
                         l = ''
-                            .concat(
-                                String(a.getFullYear()) +
-                                    String(a.getMonth() + 1) +
-                                    String(a.getDate()),
-                                '_'
-                            )
+                            .concat(String(a.getFullYear()) + String(a.getMonth() + 1) + String(a.getDate()), '_')
                             .concat(h(a.getHours(), 2))
                             .concat(h(a.getMinutes(), 2))
                             .concat(h(a.getSeconds(), 2));
                     t ? (t += '.png') : (t = 'cables_' + l + '.png'),
                         this.patch.cgl.screenShot(
-                            function(i) {
-                                if (
-                                    ((this.canvas.width = n),
-                                    (this.canvas.height = o),
-                                    i)
-                                ) {
+                            function (i) {
+                                if (((this.canvas.width = n), (this.canvas.height = o), i)) {
                                     const s = document.createElement('a');
                                     (s.download = t),
                                         (s.href = URL.createObjectURL(i)),
-                                        setTimeout(function() {
+                                        setTimeout(function () {
                                             s.click(), e && e(i);
                                         }, 100);
                                 } else d.log('screenshot: no blob');
@@ -8648,249 +6508,182 @@ var CABLES = (function(t) {
                         );
                 });
         };
-        (Ot.prototype.addNextFrameOnceCallback = function(t) {
+        (Ot.prototype.addNextFrameOnceCallback = function (t) {
             t && this._onetimeCallbacks.push(t);
         }),
-            (Ot.prototype.pushViewMatrix = function() {
+            (Ot.prototype.pushViewMatrix = function () {
                 this.vMatrix = this._vMatrixStack.push(this.vMatrix);
             }),
-            (Ot.prototype.popViewMatrix = function() {
+            (Ot.prototype.popViewMatrix = function () {
                 this.vMatrix = this._vMatrixStack.pop();
             }),
-            (Ot.prototype.getViewMatrixStateCount = function() {
+            (Ot.prototype.getViewMatrixStateCount = function () {
                 return this._vMatrixStack.stateCounter;
             }),
-            (Ot.prototype.pushPMatrix = function() {
+            (Ot.prototype.pushPMatrix = function () {
                 this.pMatrix = this._pMatrixStack.push(this.pMatrix);
             }),
-            (Ot.prototype.popPMatrix = function() {
+            (Ot.prototype.popPMatrix = function () {
                 return (this.pMatrix = this._pMatrixStack.pop()), this.pMatrix;
             }),
-            (Ot.prototype.getProjectionMatrixStateCount = function() {
+            (Ot.prototype.getProjectionMatrixStateCount = function () {
                 return this._pMatrixStack.stateCounter;
             }),
-            (Ot.prototype.pushMvMatrix = Ot.prototype.pushModelMatrix = function() {
-                this.mMatrix = this._mMatrixStack.push(this.mMatrix);
-            }),
-            (Ot.prototype.popMvMatrix = Ot.prototype.popmMatrix = Ot.prototype.popModelMatrix = function() {
-                return (this.mMatrix = this._mMatrixStack.pop()), this.mMatrix;
-            }),
-            (Ot.prototype.modelMatrix = function() {
+            (Ot.prototype.pushMvMatrix = Ot.prototype.pushModelMatrix =
+                function () {
+                    this.mMatrix = this._mMatrixStack.push(this.mMatrix);
+                }),
+            (Ot.prototype.popMvMatrix =
+                Ot.prototype.popmMatrix =
+                Ot.prototype.popModelMatrix =
+                    function () {
+                        return (this.mMatrix = this._mMatrixStack.pop()), this.mMatrix;
+                    }),
+            (Ot.prototype.modelMatrix = function () {
                 return this.mMatrix;
             }),
             (Ot.prototype._stackDepthTest = []),
-            (Ot.prototype.pushDepthTest = function(t) {
+            (Ot.prototype.pushDepthTest = function (t) {
                 this._stackDepthTest.push(t),
-                    t
-                        ? this.gl.enable(this.gl.DEPTH_TEST)
-                        : this.gl.disable(this.gl.DEPTH_TEST);
+                    t ? this.gl.enable(this.gl.DEPTH_TEST) : this.gl.disable(this.gl.DEPTH_TEST);
             }),
-            (Ot.prototype.stateDepthTest = function() {
+            (Ot.prototype.stateDepthTest = function () {
                 return this._stackDepthTest[this._stackDepthTest.length - 1];
             }),
-            (Ot.prototype.popDepthTest = function() {
+            (Ot.prototype.popDepthTest = function () {
                 this._stackDepthTest.pop(),
                     this._stackDepthTest[this._stackDepthTest.length - 1]
                         ? this.gl.enable(this.gl.DEPTH_TEST)
                         : this.gl.disable(this.gl.DEPTH_TEST);
             }),
             (Ot.prototype._stackDepthWrite = []),
-            (Ot.prototype.pushDepthWrite = function(t) {
+            (Ot.prototype.pushDepthWrite = function (t) {
                 this._stackDepthWrite.push(t), this.gl.depthMask(t);
             }),
-            (Ot.prototype.stateDepthWrite = function() {
+            (Ot.prototype.stateDepthWrite = function () {
                 return this._stackDepthWrite[this._stackDepthWrite.length - 1];
             }),
-            (Ot.prototype.popDepthWrite = function() {
-                this._stackDepthWrite.pop(),
-                    this.gl.depthMask(
-                        this._stackDepthWrite[this._stackDepthWrite.length - 1]
-                    );
+            (Ot.prototype.popDepthWrite = function () {
+                this._stackDepthWrite.pop(), this.gl.depthMask(this._stackDepthWrite[this._stackDepthWrite.length - 1]);
             }),
             (Ot.prototype._stackCullFace = []),
-            (Ot.prototype.pushCullFace = function(t) {
-                this._stackCullFace.push(t),
-                    t
-                        ? this.gl.enable(this.gl.CULL_FACE)
-                        : this.gl.disable(this.gl.CULL_FACE);
+            (Ot.prototype.pushCullFace = function (t) {
+                this._stackCullFace.push(t), t ? this.gl.enable(this.gl.CULL_FACE) : this.gl.disable(this.gl.CULL_FACE);
             }),
-            (Ot.prototype.stateCullFace = function() {
+            (Ot.prototype.stateCullFace = function () {
                 return this._stackCullFace[this._stackCullFace.length - 1];
             }),
-            (Ot.prototype.popCullFace = function() {
+            (Ot.prototype.popCullFace = function () {
                 this._stackCullFace.pop(),
                     this._stackCullFace[this._stackCullFace.length - 1]
                         ? this.gl.enable(this.gl.CULL_FACE)
                         : this.gl.disable(this.gl.CULL_FACE);
             }),
             (Ot.prototype._stackCullFaceFacing = []),
-            (Ot.prototype.pushCullFaceFacing = function(t) {
+            (Ot.prototype.pushCullFaceFacing = function (t) {
                 this._stackCullFaceFacing.push(t),
-                    this.gl.cullFace(
-                        this._stackCullFaceFacing[
-                            this._stackCullFaceFacing.length - 1
-                        ]
-                    );
+                    this.gl.cullFace(this._stackCullFaceFacing[this._stackCullFaceFacing.length - 1]);
             }),
-            (Ot.prototype.stateCullFaceFacing = function() {
-                return this._stackCullFaceFacing[
-                    this._stackCullFaceFacing.length - 1
-                ];
+            (Ot.prototype.stateCullFaceFacing = function () {
+                return this._stackCullFaceFacing[this._stackCullFaceFacing.length - 1];
             }),
-            (Ot.prototype.popCullFaceFacing = function() {
+            (Ot.prototype.popCullFaceFacing = function () {
                 this._stackCullFaceFacing.pop(),
                     this._stackCullFaceFacing.length > 0 &&
-                        this.gl.cullFace(
-                            this._stackCullFaceFacing[
-                                this._stackCullFaceFacing.length - 1
-                            ]
-                        );
+                        this.gl.cullFace(this._stackCullFaceFacing[this._stackCullFaceFacing.length - 1]);
             }),
             (Ot.prototype._stackDepthFunc = []),
-            (Ot.prototype.pushDepthFunc = function(t) {
+            (Ot.prototype.pushDepthFunc = function (t) {
                 this._stackDepthFunc.push(t), this.gl.depthFunc(t);
             }),
-            (Ot.prototype.stateDepthFunc = function() {
-                return (
-                    this._stackDepthFunc.length > 0 &&
-                    this._stackDepthFunc[this._stackDepthFunc.length - 1]
-                );
+            (Ot.prototype.stateDepthFunc = function () {
+                return this._stackDepthFunc.length > 0 && this._stackDepthFunc[this._stackDepthFunc.length - 1];
             }),
-            (Ot.prototype.popDepthFunc = function() {
+            (Ot.prototype.popDepthFunc = function () {
                 this._stackDepthFunc.pop(),
                     this._stackDepthFunc.length > 0 &&
-                        this.gl.depthFunc(
-                            this._stackDepthFunc[
-                                this._stackDepthFunc.length - 1
-                            ]
-                        );
+                        this.gl.depthFunc(this._stackDepthFunc[this._stackDepthFunc.length - 1]);
             }),
             (Ot.prototype._stackBlend = []),
-            (Ot.prototype.pushBlend = function(t) {
-                this._stackBlend.push(t),
-                    t
-                        ? this.gl.enable(this.gl.BLEND)
-                        : this.gl.disable(this.gl.BLEND);
+            (Ot.prototype.pushBlend = function (t) {
+                this._stackBlend.push(t), t ? this.gl.enable(this.gl.BLEND) : this.gl.disable(this.gl.BLEND);
             }),
-            (Ot.prototype.popBlend = function() {
+            (Ot.prototype.popBlend = function () {
                 this._stackBlend.pop(),
                     this._stackBlend[this._stackBlend.length - 1]
                         ? this.gl.enable(this.gl.BLEND)
                         : this.gl.disable(this.gl.BLEND);
             }),
-            (Ot.prototype.stateBlend = function() {
+            (Ot.prototype.stateBlend = function () {
                 return this._stackBlend[this._stackBlend.length - 1];
             });
         (Ot.prototype._stackBlendMode = []),
             (Ot.prototype._stackBlendModePremul = []),
-            (Ot.prototype.pushBlendMode = function(t, e) {
-                this._stackBlendMode.push(t),
-                    this._stackBlendModePremul.push(e);
+            (Ot.prototype.pushBlendMode = function (t, e) {
+                this._stackBlendMode.push(t), this._stackBlendModePremul.push(e);
                 const i = this._stackBlendMode.length - 1;
-                this.pushBlend(
-                    this._stackBlendMode[i] !== st.BLEND_MODES.BLEND_NONE
-                ),
-                    this._setBlendMode(
-                        this._stackBlendMode[i],
-                        this._stackBlendModePremul[i]
-                    );
+                this.pushBlend(this._stackBlendMode[i] !== st.BLEND_MODES.BLEND_NONE),
+                    this._setBlendMode(this._stackBlendMode[i], this._stackBlendModePremul[i]);
             }),
-            (Ot.prototype.popBlendMode = function() {
+            (Ot.prototype.popBlendMode = function () {
                 this._stackBlendMode.pop(), this._stackBlendModePremul.pop();
                 const t = this._stackBlendMode.length - 1;
-                this.popBlend(
-                    this._stackBlendMode[t] !== st.BLEND_MODES.BLEND_NONE
-                ),
-                    t >= 0 &&
-                        this._setBlendMode(
-                            this._stackBlendMode[t],
-                            this._stackBlendModePremul[t]
-                        );
+                this.popBlend(this._stackBlendMode[t] !== st.BLEND_MODES.BLEND_NONE),
+                    t >= 0 && this._setBlendMode(this._stackBlendMode[t], this._stackBlendModePremul[t]);
             }),
-            (Ot.prototype.glGetAttribLocation = function(t, e) {
+            (Ot.prototype.glGetAttribLocation = function (t, e) {
                 const i = this.gl.getAttribLocation(t, e);
                 return i;
             }),
-            (Ot.prototype.shouldDrawHelpers = function(t) {
+            (Ot.prototype.shouldDrawHelpers = function (t) {
                 return (
                     !this.frameStore.shadowPass &&
                     !!t.patch.isEditorMode() &&
-                        (CABLES.UI.renderHelper ||
-                            (CABLES.UI.renderHelperCurrent &&
-                                t.isCurrentUiOp()))
+                    (CABLES.UI.renderHelper || (CABLES.UI.renderHelperCurrent && t.isCurrentUiOp()))
                 );
             }),
-            (Ot.prototype._setBlendMode = function(t, e) {
+            (Ot.prototype._setBlendMode = function (t, e) {
                 const i = this.gl;
                 t == st.BLEND_MODES.BLEND_NONE ||
                     (t == st.BLEND_MODES.BLEND_ADD
                         ? e
                             ? (i.blendEquationSeparate(i.FUNC_ADD, i.FUNC_ADD),
                               i.blendFuncSeparate(i.ONE, i.ONE, i.ONE, i.ONE))
-                            : (i.blendEquation(i.FUNC_ADD),
-                              i.blendFunc(i.SRC_ALPHA, i.ONE))
+                            : (i.blendEquation(i.FUNC_ADD), i.blendFunc(i.SRC_ALPHA, i.ONE))
                         : t == st.BLEND_MODES.BLEND_SUB
                         ? e
                             ? (i.blendEquationSeparate(i.FUNC_ADD, i.FUNC_ADD),
-                              i.blendFuncSeparate(
-                                  i.ZERO,
-                                  i.ZERO,
-                                  i.ONE_MINUS_SRC_COLOR,
-                                  i.ONE_MINUS_SRC_ALPHA
-                              ))
-                            : (i.blendEquation(i.FUNC_ADD),
-                              i.blendFunc(i.ZERO, i.ONE_MINUS_SRC_COLOR))
+                              i.blendFuncSeparate(i.ZERO, i.ZERO, i.ONE_MINUS_SRC_COLOR, i.ONE_MINUS_SRC_ALPHA))
+                            : (i.blendEquation(i.FUNC_ADD), i.blendFunc(i.ZERO, i.ONE_MINUS_SRC_COLOR))
                         : t == st.BLEND_MODES.BLEND_MUL
                         ? e
                             ? (i.blendEquationSeparate(i.FUNC_ADD, i.FUNC_ADD),
-                              i.blendFuncSeparate(
-                                  i.ZERO,
-                                  i.SRC_COLOR,
-                                  i.ZERO,
-                                  i.SRC_ALPHA
-                              ))
-                            : (i.blendEquation(i.FUNC_ADD),
-                              i.blendFunc(i.ZERO, i.SRC_COLOR))
+                              i.blendFuncSeparate(i.ZERO, i.SRC_COLOR, i.ZERO, i.SRC_ALPHA))
+                            : (i.blendEquation(i.FUNC_ADD), i.blendFunc(i.ZERO, i.SRC_COLOR))
                         : t == st.BLEND_MODES.BLEND_NORMAL
                         ? e
                             ? (i.blendEquationSeparate(i.FUNC_ADD, i.FUNC_ADD),
-                              i.blendFuncSeparate(
-                                  i.ONE,
-                                  i.ONE_MINUS_SRC_ALPHA,
-                                  i.ONE,
-                                  i.ONE_MINUS_SRC_ALPHA
-                              ))
+                              i.blendFuncSeparate(i.ONE, i.ONE_MINUS_SRC_ALPHA, i.ONE, i.ONE_MINUS_SRC_ALPHA))
                             : (i.blendEquationSeparate(i.FUNC_ADD, i.FUNC_ADD),
-                              i.blendFuncSeparate(
-                                  i.SRC_ALPHA,
-                                  i.ONE_MINUS_SRC_ALPHA,
-                                  i.ONE,
-                                  i.ONE_MINUS_SRC_ALPHA
-                              ))
+                              i.blendFuncSeparate(i.SRC_ALPHA, i.ONE_MINUS_SRC_ALPHA, i.ONE, i.ONE_MINUS_SRC_ALPHA))
                         : d.log('setblendmode: unknown blendmode'));
             }),
-            (Ot.prototype.setCursor = function(t) {
+            (Ot.prototype.setCursor = function (t) {
                 this._cursor = t;
             });
         const xt = Object.assign(
             {
-                Framebuffer: function(t, e, i, s) {
+                Framebuffer: function (t, e, i, s) {
                     const r = t,
                         n =
                             r.gl.getExtension('WEBGL_depth_texture') ||
                             r.gl.getExtension('WEBKIT_WEBGL_depth_texture') ||
                             r.gl.getExtension('MOZ_WEBGL_depth_texture') ||
                             r.gl.DEPTH_TEXTURE;
-                    n ||
-                        r.exitError(
-                            'NO_DEPTH_TEXTURE',
-                            'no depth texture support'
-                        );
+                    n || r.exitError('NO_DEPTH_TEXTURE', 'no depth texture support');
                     let o = e || 512,
                         h = i || 512;
-                    (s = s || { isFloatingPointTexture: !1 }).hasOwnProperty(
-                        'filter'
-                    ) || (s.filter = J.FILTER_LINEAR);
+                    (s = s || { isFloatingPointTexture: !1 }).hasOwnProperty('filter') || (s.filter = J.FILTER_LINEAR);
                     const a = new J(r, {
                         isFloatingPointTexture: s.isFloatingPointTexture,
                         filter: s.filter,
@@ -8900,28 +6693,28 @@ var CABLES = (function(t) {
                     n && (l = new J(r, { isDepthTexture: !0 }));
                     const u = r.gl.createFramebuffer(),
                         c = r.gl.createRenderbuffer();
-                    (this.getWidth = function() {
+                    (this.getWidth = function () {
                         return o;
                     }),
-                        (this.getHeight = function() {
+                        (this.getHeight = function () {
                             return h;
                         }),
-                        (this.getGlFrameBuffer = function() {
+                        (this.getGlFrameBuffer = function () {
                             return u;
                         }),
-                        (this.getDepthRenderBuffer = function() {
+                        (this.getDepthRenderBuffer = function () {
                             return c;
                         }),
-                        (this.getTextureColor = function() {
+                        (this.getTextureColor = function () {
                             return a;
                         }),
-                        (this.getTextureDepth = function() {
+                        (this.getTextureDepth = function () {
                             return l;
                         }),
-                        (this.setFilter = function(t) {
+                        (this.setFilter = function (t) {
                             (a.filter = t), a.setSize(o, h);
                         }),
-                        (this.setSize = function(t, e) {
+                        (this.setSize = function (t, e) {
                             if (
                                 (t < 2 && (t = 2),
                                 e < 2 && (e = 2),
@@ -8932,13 +6725,7 @@ var CABLES = (function(t) {
                                 r.gl.bindRenderbuffer(r.gl.RENDERBUFFER, c),
                                 a.setSize(o, h),
                                 l && l.setSize(o, h),
-                                n &&
-                                    r.gl.renderbufferStorage(
-                                        r.gl.RENDERBUFFER,
-                                        r.gl.DEPTH_COMPONENT16,
-                                        o,
-                                        h
-                                    ),
+                                n && r.gl.renderbufferStorage(r.gl.RENDERBUFFER, r.gl.DEPTH_COMPONENT16, o, h),
                                 r.gl.framebufferTexture2D(
                                     r.gl.FRAMEBUFFER,
                                     r.gl.COLOR_ATTACHMENT0,
@@ -8963,57 +6750,45 @@ var CABLES = (function(t) {
                                 !r.gl.isFramebuffer(u))
                             )
                                 throw new Error('Invalid framebuffer');
-                            const i = r.gl.checkFramebufferStatus(
-                                r.gl.FRAMEBUFFER
-                            );
+                            const i = r.gl.checkFramebufferStatus(r.gl.FRAMEBUFFER);
                             switch (i) {
                                 case r.gl.FRAMEBUFFER_COMPLETE:
                                     break;
                                 case r.gl.FRAMEBUFFER_INCOMPLETE_ATTACHMENT:
-                                    throw (d.warn(
-                                        'FRAMEBUFFER_INCOMPLETE_ATTACHMENT...',
-                                        o,
-                                        h,
-                                        a.tex,
-                                        c
-                                    ),
-                                    new Error(
-                                        'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'
-                                    ));
-                                case r.gl
-                                    .FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
-                                    throw (d.warn(
-                                        'FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                                    ),
-                                    new Error(
-                                        'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                                    ));
+                                    throw (
+                                        (d.warn('FRAMEBUFFER_INCOMPLETE_ATTACHMENT...', o, h, a.tex, c),
+                                        new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'))
+                                    );
+                                case r.gl.FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
+                                    throw (
+                                        (d.warn('FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'),
+                                        new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'))
+                                    );
                                 case r.gl.FRAMEBUFFER_INCOMPLETE_DIMENSIONS:
-                                    throw (d.warn(
-                                        'FRAMEBUFFER_INCOMPLETE_DIMENSIONS'
-                                    ),
-                                    new Error(
-                                        'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'
-                                    ));
+                                    throw (
+                                        (d.warn('FRAMEBUFFER_INCOMPLETE_DIMENSIONS'),
+                                        new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'))
+                                    );
                                 case r.gl.FRAMEBUFFER_UNSUPPORTED:
-                                    throw (d.warn('FRAMEBUFFER_UNSUPPORTED'),
-                                    new Error(
-                                        'Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'
-                                    ));
+                                    throw (
+                                        (d.warn('FRAMEBUFFER_UNSUPPORTED'),
+                                        new Error('Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'))
+                                    );
                                 case 36059:
                                     d.warn(
                                         'Incomplete: FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER from ext. Or Safari/iOS undefined behaviour.'
                                     );
                                     break;
                                 default:
-                                    throw (d.warn('incomplete framebuffer', i),
-                                    new Error('Incomplete framebuffer: ' + i));
+                                    throw (
+                                        (d.warn('incomplete framebuffer', i), new Error('Incomplete framebuffer: ' + i))
+                                    );
                             }
                             r.gl.bindTexture(r.gl.TEXTURE_2D, null),
                                 r.gl.bindRenderbuffer(r.gl.RENDERBUFFER, null),
                                 r.gl.bindFramebuffer(r.gl.FRAMEBUFFER, null);
                         }),
-                        (this.renderStart = function() {
+                        (this.renderStart = function () {
                             r.pushModelMatrix(),
                                 r.gl.bindFramebuffer(r.gl.FRAMEBUFFER, u),
                                 r.pushGlFrameBuffer(u),
@@ -9021,54 +6796,26 @@ var CABLES = (function(t) {
                                 r.pushPMatrix(),
                                 r.gl.viewport(0, 0, o, h),
                                 r.gl.clearColor(0, 0, 0, 0),
-                                r.gl.clear(
-                                    r.gl.COLOR_BUFFER_BIT |
-                                        r.gl.DEPTH_BUFFER_BIT
-                                );
+                                r.gl.clear(r.gl.COLOR_BUFFER_BIT | r.gl.DEPTH_BUFFER_BIT);
                         }),
-                        (this.renderEnd = function() {
+                        (this.renderEnd = function () {
                             r.popPMatrix(),
-                                r.gl.bindFramebuffer(
-                                    r.gl.FRAMEBUFFER,
-                                    r.popGlFrameBuffer()
-                                ),
+                                r.gl.bindFramebuffer(r.gl.FRAMEBUFFER, r.popGlFrameBuffer()),
                                 r.popFrameBuffer(),
                                 r.popModelMatrix(),
                                 r.resetViewPort();
                         }),
-                        (this.delete = function() {
-                            a.delete(),
-                                l && l.delete(),
-                                r.gl.deleteRenderbuffer(c),
-                                r.gl.deleteFramebuffer(u);
+                        (this.delete = function () {
+                            a.delete(), l && l.delete(), r.gl.deleteRenderbuffer(c), r.gl.deleteFramebuffer(u);
                         }),
                         this.setSize(o, h);
                 },
                 Framebuffer2: Z,
                 Geometry: tt,
                 BoundingBox: $,
-                Marker: function(t) {
+                Marker: function (t) {
                     const e = new tt('marker');
-                    e.setPointVertices([
-                        1e-5,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        1e-5,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        1e-5,
-                        0,
-                        0,
-                        1,
-                    ]);
+                    e.setPointVertices([1e-5, 0, 0, 1, 0, 0, 0, 1e-5, 0, 0, 1, 0, 0, 0, 1e-5, 0, 0, 1]);
                     const i = new nt(t, e, t.gl.LINES);
                     i.setGeom(e);
                     const s = new bt(t, 'markermaterial'),
@@ -9097,16 +6844,12 @@ var CABLES = (function(t) {
                             '}';
                     s.setSource(n, r),
                         (this._vScale = vec3.create()),
-                        (this.draw = function(t, e, r) {
+                        (this.draw = function (t, e, r) {
                             const n = e || 2;
                             t.pushModelMatrix(),
                                 t.pushShader(s),
                                 vec3.set(this._vScale, n, n, n),
-                                mat4.scale(
-                                    t.mvMatrix,
-                                    t.mvMatrix,
-                                    this._vScale
-                                ),
+                                mat4.scale(t.mvMatrix, t.mvMatrix, this._vScale),
                                 t.pushDepthTest(1 == r),
                                 i.render(t.getShader()),
                                 t.popDepthTest(),
@@ -9114,30 +6857,21 @@ var CABLES = (function(t) {
                                 t.popModelMatrix();
                         });
                 },
-                WirePoint: function(t) {
+                WirePoint: function (t) {
                     const e = t.gl.createBuffer(),
                         i = vec3.create();
-                    (this.render = function(t, s) {
-                        t.pushModelMatrix(),
-                            vec3.set(i, s, s, s),
-                            mat4.scale(t.mvMatrix, t.mvMatrix, i);
+                    (this.render = function (t, s) {
+                        t.pushModelMatrix(), vec3.set(i, s, s, s), mat4.scale(t.mvMatrix, t.mvMatrix, i);
                         const r = t.getShader();
                         r.bind(),
                             t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
-                            t.gl.vertexAttribPointer(
-                                r.getAttrVertexPos(),
-                                e.itemSize,
-                                t.gl.FLOAT,
-                                !1,
-                                0,
-                                0
-                            ),
+                            t.gl.vertexAttribPointer(r.getAttrVertexPos(), e.itemSize, t.gl.FLOAT, !1, 0, 0),
                             t.gl.enableVertexAttribArray(r.getAttrVertexPos()),
                             t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
                             t.gl.drawArrays(t.gl.LINE_STRIP, 0, e.numItems),
                             t.popModelMatrix();
                     }),
-                        (function() {
+                        (function () {
                             const i = [];
                             let s = 0,
                                 r = 0;
@@ -9157,39 +6891,26 @@ var CABLES = (function(t) {
                                     i.push(0.5 * Math.cos(r)),
                                     i.push(0.5 * Math.sin(r));
                             t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
-                                t.gl.bufferData(
-                                    t.gl.ARRAY_BUFFER,
-                                    new Float32Array(i),
-                                    t.gl.STATIC_DRAW
-                                ),
+                                t.gl.bufferData(t.gl.ARRAY_BUFFER, new Float32Array(i), t.gl.STATIC_DRAW),
                                 (e.itemSize = 3),
                                 (e.numItems = i.length / e.itemSize);
                         })();
                 },
-                WireCube: function(t) {
+                WireCube: function (t) {
                     const e = t.gl.createBuffer(),
                         i = vec3.create();
-                    (this.render = function(t, s, r, n) {
-                        t.pushModelMatrix(),
-                            vec3.set(i, s || 1, r || 1, n || 1),
-                            mat4.scale(t.mvMatrix, t.mvMatrix, i);
+                    (this.render = function (t, s, r, n) {
+                        t.pushModelMatrix(), vec3.set(i, s || 1, r || 1, n || 1), mat4.scale(t.mvMatrix, t.mvMatrix, i);
                         const o = t.getShader();
                         o.bind(),
                             t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
-                            t.gl.vertexAttribPointer(
-                                o.getAttrVertexPos(),
-                                e.itemSize,
-                                t.gl.FLOAT,
-                                !1,
-                                0,
-                                0
-                            ),
+                            t.gl.vertexAttribPointer(o.getAttrVertexPos(), e.itemSize, t.gl.FLOAT, !1, 0, 0),
                             t.gl.enableVertexAttribArray(o.getAttrVertexPos()),
                             t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
                             t.gl.drawArrays(t.gl.LINE_STRIP, 0, e.numItems),
                             t.popModelMatrix();
                     }),
-                        (function() {
+                        (function () {
                             const i = [];
                             i.push(-1, -1, 1),
                                 i.push(1, -1, 1),
@@ -9212,11 +6933,7 @@ var CABLES = (function(t) {
                                 i.push(1, -1, 1),
                                 i.push(1, -1, -1),
                                 t.gl.bindBuffer(t.gl.ARRAY_BUFFER, e),
-                                t.gl.bufferData(
-                                    t.gl.ARRAY_BUFFER,
-                                    new Float32Array(i),
-                                    t.gl.STATIC_DRAW
-                                ),
+                                t.gl.bufferData(t.gl.ARRAY_BUFFER, new Float32Array(i), t.gl.STATIC_DRAW),
                                 (e.itemSize = 3),
                                 (e.numItems = i.length / e.itemSize);
                         })();
@@ -9255,11 +6972,7 @@ var CABLES = (function(t) {
                                 '   gl_Position = projMatrix * mvMatrix * vec4(vPosition,1.0);'.endl() +
                                 '}';
                         this.shader.setSource(i, e),
-                            (this.coloruni = this.shader.addUniformFrag(
-                                '4f',
-                                'color',
-                                [1, 0.777, 1, 1]
-                            ));
+                            (this.coloruni = this.shader.addUniformFrag('4f', 'color', [1, 0.777, 1, 1]));
                     }
                     setColor(t, e, i, s) {
                         this.coloruni.set(t, e, i, s);
@@ -9272,7 +6985,7 @@ var CABLES = (function(t) {
             st.BLEND_MODES
         );
         window.CGL = xt;
-        const It = function(t) {
+        const It = function (t) {
             (this._loadingAssets = {}),
                 (this._cbFinished = []),
                 (this._assetTasks = []),
@@ -9285,26 +6998,20 @@ var CABLES = (function(t) {
                 (this._wasFinishedPrinted = !1),
                 (this._loadingAssetTaskCb = !1);
         };
-        (It.prototype.setOnFinishedLoading = function(t) {
+        (It.prototype.setOnFinishedLoading = function (t) {
             this._cbFinished.push(t);
         }),
-            (It.prototype.getNumAssets = function() {
+            (It.prototype.getNumAssets = function () {
                 return this._countFinished;
             }),
-            (It.prototype.getProgress = function() {
+            (It.prototype.getProgress = function () {
                 return this._percent;
             }),
-            (It.prototype.checkStatus = function() {
+            (It.prototype.checkStatus = function () {
                 (this._countFinished = 0), (this._count = 0);
                 for (const t in this._loadingAssets)
-                    this._count++,
-                        this._loadingAssets[t].finished ||
-                            this._countFinished++;
-                if (
-                    ((this._percent =
-                        (this._count - this._countFinished) / this._count),
-                    0 === this._countFinished)
-                ) {
+                    this._count++, this._loadingAssets[t].finished || this._countFinished++;
+                if (((this._percent = (this._count - this._countFinished) / this._count), 0 === this._countFinished)) {
                     for (let t = 0; t < this._cbFinished.length; t++)
                         if (this._cbFinished[t]) {
                             const e = this._cbFinished[t];
@@ -9312,11 +7019,10 @@ var CABLES = (function(t) {
                                 e(this._patch);
                             }, 200);
                         }
-                    this._wasFinishedPrinted ||
-                        ((this._wasFinishedPrinted = !0), this.print());
+                    this._wasFinishedPrinted || ((this._wasFinishedPrinted = !0), this.print());
                 }
             }),
-            (It.prototype.print = function() {
+            (It.prototype.print = function () {
                 if (this._patch.config.silent) return;
                 const t = [];
                 for (const e in this._loadingAssets)
@@ -9324,44 +7030,32 @@ var CABLES = (function(t) {
                         this._loadingAssets[e].order,
                         this._loadingAssets[e].type,
                         this._loadingAssets[e].name,
-                        (this._loadingAssets[e].timeEnd -
-                            this._loadingAssets[e].timeStart) /
-                            1e3 +
-                            's',
+                        (this._loadingAssets[e].timeEnd - this._loadingAssets[e].timeStart) / 1e3 + 's',
                     ]);
                 console.groupCollapsed(
-                    'finished loading ' +
-                        this._order +
-                        ' assets in ' +
-                        (Date.now() - this._startTime) / 1e3 +
-                        's'
+                    'finished loading ' + this._order + ' assets in ' + (Date.now() - this._startTime) / 1e3 + 's'
                 ),
                     console.table(t),
                     console.groupEnd();
             }),
-            (It.prototype.finished = function(t) {
+            (It.prototype.finished = function (t) {
                 this._loadingAssets[t] &&
-                    ((this._loadingAssets[t].finished = !0),
-                    (this._loadingAssets[t].timeEnd = Date.now())),
+                    ((this._loadingAssets[t].finished = !0), (this._loadingAssets[t].timeEnd = Date.now())),
                     this.checkStatus();
             }),
-            (It.prototype._startAssetTasks = function() {
-                for (let t = 0; t < this._assetTasks.length; t++)
-                    this._assetTasks[t]();
+            (It.prototype._startAssetTasks = function () {
+                for (let t = 0; t < this._assetTasks.length; t++) this._assetTasks[t]();
                 this._assetTasks.length = 0;
             }),
-            (It.prototype.addAssetLoadingTask = function(t) {
+            (It.prototype.addAssetLoadingTask = function (t) {
                 this._patch.isEditorMode() && !CABLES.UI.loaded
                     ? (this._assetTasks.push(t),
                       this._loadingAssetTaskCb ||
-                          window.gui.addEventListener(
-                              'uiloaded',
-                              this._startAssetTasks.bind(this)
-                          ),
+                          window.gui.addEventListener('uiloaded', this._startAssetTasks.bind(this)),
                       (this._loadingAssetTaskCb = !0))
                     : t();
             }),
-            (It.prototype.start = function(t, e) {
+            (It.prototype.start = function (t, e) {
                 0 == this._startTime && (this._startTime = Date.now());
                 const i = y();
                 return (
@@ -9377,60 +7071,51 @@ var CABLES = (function(t) {
                     i
                 );
             });
-        const vt = function() {
+        const vt = function () {
             (this._loops = []), (this._indizes = []), (this._index = 0);
         };
-        (vt.prototype.pushLoop = function(t) {
-            this._loops.push(Math.abs(Math.floor(t))),
-                this._indizes.push(this._index);
+        (vt.prototype.pushLoop = function (t) {
+            this._loops.push(Math.abs(Math.floor(t))), this._indizes.push(this._index);
         }),
-            (vt.prototype.popLoop = function() {
-                this._loops.pop(),
-                    (this._index = this._indizes.pop()),
-                    0 === this._loops.length && (this._index = 0);
+            (vt.prototype.popLoop = function () {
+                this._loops.pop(), (this._index = this._indizes.pop()), 0 === this._loops.length && (this._index = 0);
             }),
-            (vt.prototype.numLoops = function() {
+            (vt.prototype.numLoops = function () {
                 return this._loops.length;
             }),
-            (vt.prototype.numCycles = function() {
+            (vt.prototype.numCycles = function () {
                 if (0 === this._loops.length) return 0;
                 let t = this._loops[0];
-                for (let e = 1; e < this._loops.length; e++)
-                    t *= this._loops[e];
+                for (let e = 1; e < this._loops.length; e++) t *= this._loops[e];
                 return t;
             }),
-            (vt.prototype.inLoop = function() {
+            (vt.prototype.inLoop = function () {
                 return this._loops.length > 0;
             }),
-            (vt.prototype.increment = function() {
+            (vt.prototype.increment = function () {
                 this._index++;
             }),
-            (vt.prototype.index = function() {
+            (vt.prototype.index = function () {
                 return this._index;
             });
-        const Pt = function() {
+        const Pt = function () {
                 let t = {},
                     e = null,
                     i = 0;
-                (this.getItems = function() {
+                (this.getItems = function () {
                     return t;
                 }),
-                    (this.clear = function() {
+                    (this.clear = function () {
                         t = {};
                     }),
-                    (this.add = function(s, r) {
+                    (this.add = function (s, r) {
                         null !== e &&
                             ((r && r.id == e) ||
                                 (t[e] &&
                                     ((t[e].timeUsed += performance.now() - i),
-                                    (!t[e].peakTime ||
-                                        ct() - t[e].peakTime > 5e3) &&
-                                        ((t[e].peak = 0),
-                                        (t[e].peakTime = ct())),
-                                    (t[e].peak = Math.max(
-                                        t[e].peak,
-                                        performance.now() - i
-                                    ))))),
+                                    (!t[e].peakTime || ct() - t[e].peakTime > 5e3) &&
+                                        ((t[e].peak = 0), (t[e].peakTime = ct())),
+                                    (t[e].peak = Math.max(t[e].peak, performance.now() - i))))),
                             null !== r
                                 ? (t[r.id] ||
                                       (t[r.id] = {
@@ -9439,27 +7124,18 @@ var CABLES = (function(t) {
                                       }),
                                   t[r.id].numTriggers++,
                                   (t[r.id].opid = r.parent.id),
-                                  (t[r.id].title =
-                                      r.parent.name + '.' + r.name),
-                                  (t[r.id].subPatch =
-                                      r.parent.uiAttribs.subPatch),
+                                  (t[r.id].title = r.parent.name + '.' + r.name),
+                                  (t[r.id].subPatch = r.parent.uiAttribs.subPatch),
                                   (e = r.id),
                                   (i = performance.now()))
                                 : (e = null);
                     }),
-                    (this.print = function() {
+                    (this.print = function () {
                         d.log('--------');
-                        for (const e in t)
-                            d.log(
-                                t[e].title +
-                                    ': ' +
-                                    t[e].numTriggers +
-                                    ' / ' +
-                                    t[e].timeUsed
-                            );
+                        for (const e in t) d.log(t[e].title + ': ' + t[e].numTriggers + ' / ' + t[e].timeUsed);
                     });
             },
-            Rt = function(t) {
+            Rt = function (t) {
                 (this._patch = t), (this.result = []);
             };
         (Rt.MIDI = 0),
@@ -9479,7 +7155,7 @@ var CABLES = (function(t) {
                 caniuse: 'https://caniuse.com/#search=webaudio',
             }),
             (Rt.infos[Rt.WEBGL2] = { title: 'WebGL 2' }),
-            (Rt.prototype.checkRequirement = function(t, e) {
+            (Rt.prototype.checkRequirement = function (t, e) {
                 switch (((this.result = []), t)) {
                     case Rt.WEBGL2:
                         return e.patch.cgl.glVersion >= 2;
@@ -9491,47 +7167,44 @@ var CABLES = (function(t) {
                         let t = !1;
                         return (
                             window.audioContext && (t = !0),
-                            t ||
-                                (!('webkitAudioContext' in window) &&
-                                    !('AudioContext' in window)) ||
-                                (t = !0),
+                            t || (!('webkitAudioContext' in window) && !('AudioContext' in window)) || (t = !0),
                             t
                         );
                 }
             }),
-            (Rt.prototype.checkOp = function(t) {
+            (Rt.prototype.checkOp = function (t) {
                 if (t && t.requirements)
                     for (let e = 0; e < t.requirements.length; e++) {
                         const i = t.requirements[e];
                         if (!this.result[i]) {
                             const e = this.checkRequirement(i, t);
                             if (!e) {
-                                t.patch.cgl &&
-                                    t.patch.cgl.canvas &&
-                                    t.patch.cgl.canvas.remove();
+                                t.patch.cgl && t.patch.cgl.canvas && t.patch.cgl.canvas.remove();
                                 let e = Rt.infos[i].title;
-                                throw (Rt.infos[i].caniuse &&
-                                    (e =
-                                        '<a href="' +
-                                        Rt.infos[i].caniuse +
-                                        '" target="_blank">' +
-                                        Rt.infos[i].title +
-                                        ' (' +
-                                        t.objName +
-                                        ')</a>'),
-                                new Error(
-                                    'this browser does not meet requirement: ' +
-                                        Rt.infos[i].title +
-                                        ' (' +
-                                        t.objName +
-                                        ')'
-                                ));
+                                throw (
+                                    (Rt.infos[i].caniuse &&
+                                        (e =
+                                            '<a href="' +
+                                            Rt.infos[i].caniuse +
+                                            '" target="_blank">' +
+                                            Rt.infos[i].title +
+                                            ' (' +
+                                            t.objName +
+                                            ')</a>'),
+                                    new Error(
+                                        'this browser does not meet requirement: ' +
+                                            Rt.infos[i].title +
+                                            ' (' +
+                                            t.objName +
+                                            ')'
+                                    ))
+                                );
                             }
                             this.result[i] = { success: e, info: Rt.infos[i] };
                         }
                     }
             });
-        const Nt = function(t) {
+        const Nt = function (t) {
             _.apply(this),
                 (this.ops = []),
                 (this.settings = {}),
@@ -9578,31 +7251,23 @@ var CABLES = (function(t) {
                 (this._frameInterval = 0),
                 (this._lastFrameTime = 0),
                 (this._frameWasdelayed = !0),
-                (function() {
+                (function () {
                     return !this;
                 })() || console.log('not in strict mode: core patch'),
                 (this._isLocal = 0 === document.location.href.indexOf('file:')),
                 d.setSilent(this.config.silent),
-                this.config.hasOwnProperty('doRequestAnimation') ||
-                    (this.config.doRequestAnimation = !0),
-                this.config.prefixAssetPath ||
-                    (this.config.prefixAssetPath = ''),
+                this.config.hasOwnProperty('doRequestAnimation') || (this.config.doRequestAnimation = !0),
+                this.config.prefixAssetPath || (this.config.prefixAssetPath = ''),
                 this.config.masterVolume || (this.config.masterVolume = 1),
                 (this._variables = {}),
                 (this._variableListeners = []),
                 (this.vars = {}),
                 t && t.vars && (this.vars = t.vars),
                 (this.cgl = new Ot(this)),
-                this.cgl.setCanvas(
-                    this.config.glCanvasId || this.config.glCanvas || 'glcanvas'
-                ),
-                !0 === this.config.glCanvasResizeToWindow &&
-                    this.cgl.setAutoResize('window'),
-                !0 === this.config.glCanvasResizeToParent &&
-                    this.cgl.setAutoResize('parent'),
-                this.loading.setOnFinishedLoading(
-                    this.config.onFinishedLoading
-                ),
+                this.cgl.setCanvas(this.config.glCanvasId || this.config.glCanvas || 'glcanvas'),
+                !0 === this.config.glCanvasResizeToWindow && this.cgl.setAutoResize('window'),
+                !0 === this.config.glCanvasResizeToParent && this.cgl.setAutoResize('parent'),
+                this.loading.setOnFinishedLoading(this.config.onFinishedLoading),
                 this.cgl.aborted && (this.aborted = !0),
                 this.cgl.silent && (this.silent = !0),
                 this.freeTimer.play(),
@@ -9614,43 +7279,36 @@ var CABLES = (function(t) {
                           C(this.config.patchFile, (t, e) => {
                               const i = JSON.parse(e);
                               if (t) {
-                                  return (
-                                      d.error('err', t),
-                                      d.error('data', i),
-                                      void d.error('data', i.msg)
-                                  );
+                                  return d.error('err', t), d.error('data', i), void d.error('data', i.msg);
                               }
                               this.deSerialize(i);
                           }),
                     this.timer.play()),
                 console.log('made with https://cables.gl');
         };
-        (Nt.prototype.isPlaying = function() {
+        (Nt.prototype.isPlaying = function () {
             return !this._paused;
         }),
-            (Nt.prototype.isRenderingOneFrame = function() {
+            (Nt.prototype.isRenderingOneFrame = function () {
                 return this._renderOneFrame;
             }),
-            (Nt.prototype.renderOneFrame = function() {
-                (this._paused = !0),
-                    (this._renderOneFrame = !0),
-                    this.exec(),
-                    (this._renderOneFrame = !1);
+            (Nt.prototype.renderOneFrame = function () {
+                (this._paused = !0), (this._renderOneFrame = !0), this.exec(), (this._renderOneFrame = !1);
             }),
-            (Nt.prototype.getFPS = function() {
+            (Nt.prototype.getFPS = function () {
                 return this._perf.fps;
             }),
-            (Nt.prototype.isEditorMode = function() {
+            (Nt.prototype.isEditorMode = function () {
                 return !0 === this.config.editorMode;
             }),
-            (Nt.prototype.pause = function() {
+            (Nt.prototype.pause = function () {
                 cancelAnimationFrame(this._animReq),
                     this.emitEvent('pause'),
                     (this._animReq = null),
                     (this._paused = !0),
                     this.freeTimer.pause();
             }),
-            (Nt.prototype.resume = function() {
+            (Nt.prototype.resume = function () {
                 this._paused &&
                     (cancelAnimationFrame(this._animReq),
                     this.emitEvent('resume'),
@@ -9658,21 +7316,20 @@ var CABLES = (function(t) {
                     this.freeTimer.play(),
                     this.exec());
             }),
-            (Nt.prototype.setVolume = function(t) {
+            (Nt.prototype.setVolume = function (t) {
                 this.config.masterVolume = t;
                 for (let e = 0; e < this._volumeListeners.length; e++)
                     this._volumeListeners[e].onMasterVolumeChanged(t);
             }),
-            (Nt.prototype.getAssetPath = function() {
-                if (this.isEditorMode())
-                    return '/assets/' + gui.project()._id + '/';
+            (Nt.prototype.getAssetPath = function () {
+                if (this.isEditorMode()) return '/assets/' + gui.project()._id + '/';
                 if (document.location.href.indexOf('cables.gl') > 0) {
                     const t = document.location.href.split('/');
                     return '/assets/' + t[t.length - 1] + '/';
                 }
                 return 'assets/';
             }),
-            (Nt.prototype.getFilePath = function(t) {
+            (Nt.prototype.getFilePath = function (t) {
                 return (
                     this._isLocal &&
                         !this.config.allowLocalFileAccess &&
@@ -9681,27 +7338,22 @@ var CABLES = (function(t) {
                             'Browser security forbids loading files directly without a webserver. Upload files to a server to work. use allowLocalFileAccess:true to ignore this.'
                         ),
                     t
-                        ? 0 === (t = String(t)).indexOf('https:') ||
-                          0 === t.indexOf('http:')
+                        ? 0 === (t = String(t)).indexOf('https:') || 0 === t.indexOf('http:')
                             ? t
                             : ((t = t.replace('//', '/')),
-                              this.config.prefixAssetPath +
-                                  t +
-                                  (this.config.suffixAssetPath || ''))
+                              this.config.prefixAssetPath + t + (this.config.suffixAssetPath || ''))
                         : t
                 );
             }),
-            (Nt.prototype.clear = function() {
+            (Nt.prototype.clear = function () {
                 for (
-                    this.cgl.TextureEffectMesh = null,
-                        this.animFrameOps.length = 0,
-                        this.timer = new pt();
+                    this.cgl.TextureEffectMesh = null, this.animFrameOps.length = 0, this.timer = new pt();
                     this.ops.length > 0;
 
                 )
                     this.deleteOp(this.ops[0].id);
             }),
-            (Nt.getOpClass = function(t) {
+            (Nt.getOpClass = function (t) {
                 const e = t.split('.');
                 let i = null;
                 try {
@@ -9717,97 +7369,65 @@ var CABLES = (function(t) {
                             : 6 == e.length
                             ? (i = window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]])
                             : 7 == e.length
-                            ? (i =
-                                  window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][
-                                      e[6]
-                                  ])
+                            ? (i = window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][e[6]])
                             : 8 == e.length
-                            ? (i =
-                                  window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][
-                                      e[6]
-                                  ][e[7]])
+                            ? (i = window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][e[6]][e[7]])
                             : 9 == e.length
-                            ? (i =
-                                  window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][
-                                      e[6]
-                                  ][e[7]][e[8]])
+                            ? (i = window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][e[6]][e[7]][e[8]])
                             : 10 == e.length &&
-                              (i =
-                                  window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][
-                                      e[6]
-                                  ][e[7]][e[8]][e[9]]),
+                              (i = window[e[0]][e[1]][e[2]][e[3]][e[4]][e[5]][e[6]][e[7]][e[8]][e[9]]),
                         i
                     );
                 } catch (t) {
                     return null;
                 }
             }),
-            (Nt.prototype.createOp = function(t, e) {
+            (Nt.prototype.createOp = function (t, e) {
                 const i = t.split('.');
                 let s = null,
                     r = '';
                 try {
                     if (-1 == t.indexOf('Ops.')) {
                         const i = t;
-                        if (!CABLES.OPS[i])
-                            throw new Error('could not find op by id: ' + i);
-                        (r = CABLES.OPS[i].objName),
-                            (s = new CABLES.OPS[i].f(this, r, e, i)),
-                            (s.opId = i);
+                        if (!CABLES.OPS[i]) throw new Error('could not find op by id: ' + i);
+                        (r = CABLES.OPS[i].objName), (s = new CABLES.OPS[i].f(this, r, e, i)), (s.opId = i);
                     }
                     if (!s) {
                         r = t;
                         if (!Nt.getOpClass(r))
-                            throw (this.emitEvent(
-                                'criticalError',
-                                'unknown op',
-                                'unknown op: ' + r
-                            ),
-                            d.error('unknown op: ' + r),
-                            new Error('unknown op: ' + r));
+                            throw (
+                                (this.emitEvent('criticalError', 'unknown op', 'unknown op: ' + r),
+                                d.error('unknown op: ' + r),
+                                new Error('unknown op: ' + r))
+                            );
                         if (
                             (2 == i.length
                                 ? (s = new window[i[0]][i[1]](this, r, e))
                                 : 3 == i.length
                                 ? (s = new window[i[0]][i[1]][i[2]](this, r, e))
                                 : 4 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]](
-                                      this,
-                                      r,
-                                      e
-                                  ))
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]](this, r, e))
                                 : 5 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]](
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]](this, r, e))
+                                : 6 == i.length
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][i[5]](this, r, e))
+                                : 7 == i.length
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][i[5]][i[6]](this, r, e))
+                                : 8 == i.length
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][i[5]][i[6]][i[7]](this, r, e))
+                                : 9 == i.length
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][i[5]][i[6]][i[7]][i[8]](this, r, e))
+                                : 10 == i.length
+                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][i[5]][i[6]][i[7]][i[8]][i[9]](
                                       this,
                                       r,
                                       e
                                   ))
-                                : 6 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][
-                                      i[5]
-                                  ](this, r, e))
-                                : 7 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][
-                                      i[5]
-                                  ][i[6]](this, r, e))
-                                : 8 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][
-                                      i[5]
-                                  ][i[6]][i[7]](this, r, e))
-                                : 9 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][
-                                      i[5]
-                                  ][i[6]][i[7]][i[8]](this, r, e))
-                                : 10 == i.length
-                                ? (s = new window[i[0]][i[1]][i[2]][i[3]][i[4]][
-                                      i[5]
-                                  ][i[6]][i[7]][i[8]][i[9]](this, r, e))
                                 : d.log('parts.length', i.length),
                             s)
                         ) {
                             s.opId = null;
-                            for (const t in CABLES.OPS)
-                                CABLES.OPS[t].objName == r && (s.opId = t);
+                            for (const t in CABLES.OPS) CABLES.OPS[t].objName == r && (s.opId = t);
                         }
                     }
                 } catch (t) {
@@ -9817,24 +7437,17 @@ var CABLES = (function(t) {
                         this.emitEvent('exceptionOp', t, r),
                         !this.isEditorMode())
                     )
-                        throw (d.log(t),
-                        d.error('[instancing error] ' + r, t),
-                        CABLES.api && CABLES.api.sendErrorReport(t),
-                        this.exitError(
-                            'INSTANCE_ERR',
-                            'Instancing Error ' + r,
-                            t
-                        ),
-                        new Error('instancing error ' + r));
+                        throw (
+                            (d.log(t),
+                            d.error('[instancing error] ' + r, t),
+                            CABLES.api && CABLES.api.sendErrorReport(t),
+                            this.exitError('INSTANCE_ERR', 'Instancing Error ' + r, t),
+                            new Error('instancing error ' + r))
+                        );
                 }
-                return (
-                    s
-                        ? ((s.objName = r), (s.patch = this))
-                        : console.log('no op was created!?'),
-                    s
-                );
+                return s ? ((s.objName = r), (s.patch = this)) : console.log('no op was created!?'), s;
             }),
-            (Nt.prototype.addOp = function(t, e, i) {
+            (Nt.prototype.addOp = function (t, e, i) {
                 const s = this.createOp(t, i);
                 return (
                     s
@@ -9842,10 +7455,8 @@ var CABLES = (function(t) {
                           e && e.hasOwnProperty('error') && delete e.error,
                           s.uiAttr(e),
                           s.onCreate && s.onCreate(),
-                          s.hasOwnProperty('onAnimFrame') &&
-                              this.addOnAnimFrame(s),
-                          s.hasOwnProperty('onMasterVolumeChanged') &&
-                              this._volumeListeners.push(s),
+                          s.hasOwnProperty('onAnimFrame') && this.addOnAnimFrame(s),
+                          s.hasOwnProperty('onMasterVolumeChanged') && this._volumeListeners.push(s),
                           this.ops.push(s),
                           (this._opIdCache[s.id] = s),
                           this.emitEvent('onOpAdd', s),
@@ -9854,25 +7465,22 @@ var CABLES = (function(t) {
                     s
                 );
             }),
-            (Nt.prototype.addOnAnimFrame = function(t) {
-                for (let e = 0; e < this.animFrameOps.length; e++)
-                    if (this.animFrameOps[e] == t) return;
+            (Nt.prototype.addOnAnimFrame = function (t) {
+                for (let e = 0; e < this.animFrameOps.length; e++) if (this.animFrameOps[e] == t) return;
                 this.animFrameOps.push(t);
             }),
-            (Nt.prototype.removeOnAnimFrame = function(t) {
+            (Nt.prototype.removeOnAnimFrame = function (t) {
                 for (let e = 0; e < this.animFrameOps.length; e++)
-                    if (this.animFrameOps[e] == t)
-                        return void this.animFrameOps.splice(e, 1);
+                    if (this.animFrameOps[e] == t) return void this.animFrameOps.splice(e, 1);
             }),
-            (Nt.prototype.addOnAnimFrameCallback = function(t) {
+            (Nt.prototype.addOnAnimFrameCallback = function (t) {
                 this.animFrameCallbacks.push(t);
             }),
-            (Nt.prototype.removeOnAnimCallback = function(t) {
+            (Nt.prototype.removeOnAnimCallback = function (t) {
                 for (let e = 0; e < this.animFrameCallbacks.length; e++)
-                    if (this.animFrameCallbacks[e] == t)
-                        return void this.animFrameCallbacks.splice(e, 1);
+                    if (this.animFrameCallbacks[e] == t) return void this.animFrameCallbacks.splice(e, 1);
             }),
-            (Nt.prototype.deleteOp = function(t, e, i) {
+            (Nt.prototype.deleteOp = function (t, e, i) {
                 let s = !1;
                 for (const r in this.ops)
                     if (this.ops[r].id == t) {
@@ -9885,69 +7493,42 @@ var CABLES = (function(t) {
                                     this.ops[r].portsIn[0].isLinked() &&
                                     this.ops[r].portsOut.length > 0 &&
                                     this.ops[r].portsOut[0].isLinked() &&
-                                    this.ops[r].portsIn[0].getType() ==
-                                        this.ops[r].portsOut[0].getType() &&
-                                    ((n = this.ops[
-                                        r
-                                    ].portsIn[0].links[0].getOtherPort(
-                                        this.ops[r].portsIn[0]
-                                    )),
-                                    (o = this.ops[
-                                        r
-                                    ].portsOut[0].links[0].getOtherPort(
-                                        this.ops[r].portsOut[0]
-                                    )));
+                                    this.ops[r].portsIn[0].getType() == this.ops[r].portsOut[0].getType() &&
+                                    ((n = this.ops[r].portsIn[0].links[0].getOtherPort(this.ops[r].portsIn[0])),
+                                    (o = this.ops[r].portsOut[0].links[0].getOtherPort(this.ops[r].portsOut[0])));
                             const h = this.ops[r];
                             h.removeLinks(),
-                                this.onDelete &&
-                                    (d.warn(
-                                        'deprecated this.onDelete',
-                                        this.onDelete
-                                    ),
-                                    this.onDelete(h)),
+                                this.onDelete && (d.warn('deprecated this.onDelete', this.onDelete), this.onDelete(h)),
                                 this.ops.splice(r, 1),
                                 this.emitEvent('onOpDelete', h, i),
                                 h.onDelete && h.onDelete(i),
                                 h.cleanUp(),
-                                null !== n &&
-                                    null !== o &&
-                                    this.link(
-                                        n.parent,
-                                        n.getName(),
-                                        o.parent,
-                                        o.getName()
-                                    ),
+                                null !== n && null !== o && this.link(n.parent, n.getName(), o.parent, o.getName()),
                                 delete this._opIdCache[t];
                         }
                     }
                 s || console.log('core patch deleteop: not found...');
             }),
-            (Nt.prototype.getFrameNum = function() {
+            (Nt.prototype.getFrameNum = function () {
                 return this._frameNum;
             }),
-            (Nt.prototype.renderFrame = function(t) {
+            (Nt.prototype.renderFrame = function (t) {
                 this.timer.update(), this.freeTimer.update();
                 const e = this.timer.getTime(),
                     i = performance.now();
                 for (let t = 0; t < this.animFrameCallbacks.length; ++t)
-                    this.animFrameCallbacks[t] &&
-                        this.animFrameCallbacks[t](e, this._frameNum);
+                    this.animFrameCallbacks[t] && this.animFrameCallbacks[t](e, this._frameNum);
                 for (let t = 0; t < this.animFrameOps.length; ++t)
-                    this.animFrameOps[t].onAnimFrame &&
-                        this.animFrameOps[t].onAnimFrame(e);
+                    this.animFrameOps[t].onAnimFrame && this.animFrameOps[t].onAnimFrame(e);
                 (CGL.profileData.profileOnAnimFrameOps = performance.now() - i),
                     this.emitEvent('onRenderFrame', e),
                     this._frameNum++,
-                    1 == this._frameNum &&
-                        this.config.onFirstFrameRendered &&
-                        this.config.onFirstFrameRendered();
+                    1 == this._frameNum && this.config.onFirstFrameRendered && this.config.onFirstFrameRendered();
             }),
-            (Nt.prototype.exec = function(t) {
-                if (!this._renderOneFrame && (this._paused || this.aborted))
-                    return;
+            (Nt.prototype.exec = function (t) {
+                if (!this._renderOneFrame && (this._paused || this.aborted)) return;
                 (this.config.fpsLimit = this.config.fpsLimit || 0),
-                    this.config.fpsLimit &&
-                        (this._frameInterval = 1e3 / this.config.fpsLimit);
+                    this.config.fpsLimit && (this._frameInterval = 1e3 / this.config.fpsLimit);
                 const e = CABLES.now(),
                     i = e - this._frameNext;
                 if (
@@ -9974,12 +7555,9 @@ var CABLES = (function(t) {
                         (this._perf._lastFrameTime = CABLES.now()),
                         this._perf._fpsFrameCount++,
                         (this._perf._fpsMsCount += CABLES.now() - t),
-                        this._frameInterval &&
-                            (this._frameNext = e - (i % this._frameInterval));
+                        this._frameInterval && (this._frameNext = e - (i % this._frameInterval));
                 }
-                this._frameWasdelayed &&
-                    (this.emitEvent('renderDelayEnd'),
-                    (this._frameWasdelayed = !1)),
+                this._frameWasdelayed && (this.emitEvent('renderDelayEnd'), (this._frameWasdelayed = !1)),
                     this._renderOneFrame &&
                         (this.onOneFrameRendered && this.onOneFrameRendered(),
                         this.emitEvent('renderedOneFrame'),
@@ -9987,61 +7565,38 @@ var CABLES = (function(t) {
                     CABLES.now() - this._perf._fpsStart >= 1e3 &&
                         this._perf.fps != this._perf._fpsFrameCount &&
                         ((this._perf.fps = this._perf._fpsFrameCount),
-                        (this._perf.ms = Math.round(
-                            this._perf._fpsMsCount / this._perf._fpsFrameCount
-                        )),
+                        (this._perf.ms = Math.round(this._perf._fpsMsCount / this._perf._fpsFrameCount)),
                         this.emitEvent('performance', this._perf),
                         (this._perf._fpsFrameCount = 0),
                         (this._perf._fpsMsCount = 0),
                         (this._perf._fpsStart = CABLES.now())),
-                    this.config.doRequestAnimation &&
-                        (this._animReq = requestAnimationFrame(
-                            this.exec.bind(this)
-                        ));
+                    this.config.doRequestAnimation && (this._animReq = requestAnimationFrame(this.exec.bind(this)));
             }),
-            (Nt.prototype.link = function(t, e, i, s, r) {
+            (Nt.prototype.link = function (t, e, i, s, r) {
                 if (!t) return void d.log('link: op1 is null ');
                 if (!i) return void d.log('link: op2 is null');
                 const n = t.getPort(e, r),
                     o = i.getPort(s, r);
                 if (n)
                     if (o) {
-                        if (!n.shouldLink(n, o) || !o.shouldLink(n, o))
-                            return !1;
+                        if (!n.shouldLink(n, o) || !o.shouldLink(n, o)) return !1;
                         if (j.canLink(n, o)) {
                             const t = new j(this);
-                            return (
-                                t.link(n, o),
-                                this.emitEvent('onLink', n, o, t),
-                                t
-                            );
+                            return t.link(n, o), this.emitEvent('onLink', n, o, t), t;
                         }
-                    } else
-                        console.warn(
-                            'port not found! ' +
-                                s +
-                                ' of ' +
-                                i.name +
-                                '(' +
-                                i.objName +
-                                ')'
-                        );
-                else
-                    console.warn(
-                        'port not found! ' + e + '(' + t.objName + ')'
-                    );
+                    } else console.warn('port not found! ' + s + ' of ' + i.name + '(' + i.objName + ')');
+                else console.warn('port not found! ' + e + '(' + t.objName + ')');
             }),
-            (Nt.prototype.serialize = function(t) {
+            (Nt.prototype.serialize = function (t) {
                 const e = { ops: [] };
                 e.settings = this.settings;
-                for (const t in this.ops)
-                    e.ops.push(this.ops[t].getSerialized());
+                for (const t in this.ops) e.ops.push(this.ops[t].getSerialized());
                 return t ? e : JSON.stringify(e);
             }),
-            (Nt.prototype.getOpById = function(t) {
+            (Nt.prototype.getOpById = function (t) {
                 return this._opIdCache[t];
             }),
-            (Nt.prototype.getOpsById = function(t) {
+            (Nt.prototype.getOpsById = function (t) {
                 const e = [];
                 for (const i in this.ops)
                     for (let s = 0; s < t.length; s++)
@@ -10051,38 +7606,33 @@ var CABLES = (function(t) {
                         }
                 return e;
             }),
-            (Nt.prototype.getOpsByName = function(t) {
+            (Nt.prototype.getOpsByName = function (t) {
                 const e = [];
-                for (const i in this.ops)
-                    this.ops[i].name == t && e.push(this.ops[i]);
+                for (const i in this.ops) this.ops[i].name == t && e.push(this.ops[i]);
                 return e;
             }),
-            (Nt.prototype.getOpsByObjName = function(t) {
+            (Nt.prototype.getOpsByObjName = function (t) {
                 const e = [];
-                for (const i in this.ops)
-                    this.ops[i].objName == t && e.push(this.ops[i]);
+                for (const i in this.ops) this.ops[i].objName == t && e.push(this.ops[i]);
                 return e;
             }),
-            (Nt.prototype.loadLib = function(t) {
+            (Nt.prototype.loadLib = function (t) {
                 M(
                     '/ui/libs/' + t + '.js',
                     (t, e) => {
                         const i = document.createElement('script');
                         (i.type = 'text/javascript'),
                             (i.text = e),
-                            document
-                                .getElementsByTagName('head')[0]
-                                .appendChild(i);
+                            document.getElementsByTagName('head')[0].appendChild(i);
                     },
                     'GET'
                 );
             }),
-            (Nt.prototype.reloadOp = function(t, e) {
+            (Nt.prototype.reloadOp = function (t, e) {
                 let i = 0;
                 const s = [],
                     r = [];
-                for (const e in this.ops)
-                    this.ops[e].objName == t && r.push(this.ops[e]);
+                for (const e in this.ops) this.ops[e].objName == t && r.push(this.ops[e]);
                 for (let e = 0; e < r.length; e++) {
                     i++;
                     const n = r[e];
@@ -10096,9 +7646,7 @@ var CABLES = (function(t) {
                             t
                                 ? t.set(n.portsIn[a].get())
                                 : d.error(
-                                      '[reloadOp] could not set port ' +
-                                          n.portsIn[a].name +
-                                          ', propably renamed port ?'
+                                      '[reloadOp] could not set port ' + n.portsIn[a].name + ', propably renamed port ?'
                                   );
                         } else
                             for (; n.portsIn[a].links.length; ) {
@@ -10109,10 +7657,7 @@ var CABLES = (function(t) {
                                     (l = o.link(h, t, i, e)),
                                     l
                                         ? l.setValue()
-                                        : d.log(
-                                              '[reloadOp] relink after op reload not successfull for port ' +
-                                                  e
-                                          );
+                                        : d.log('[reloadOp] relink after op reload not successfull for port ' + e);
                             }
                     for (a in n.portsOut)
                         for (; n.portsOut[a].links.length; ) {
@@ -10121,36 +7666,25 @@ var CABLES = (function(t) {
                                 i = n.portsOut[a].links[0].portIn.parent;
                             n.portsOut[a].links[0].remove(),
                                 (l = o.link(h, t, i, e)),
-                                l
-                                    ? l.setValue()
-                                    : d.log(
-                                          'relink after op reload not successfull for port ' +
-                                              e
-                                      );
+                                l ? l.setValue() : d.log('relink after op reload not successfull for port ' + e);
                         }
                     this.deleteOp(n.id, !1, !0);
                 }
                 e(i, s);
             }),
-            (Nt.prototype.getSubPatchOps = function(t) {
+            (Nt.prototype.getSubPatchOps = function (t) {
                 const e = [];
                 for (const i in this.ops)
-                    this.ops[i].uiAttribs &&
-                        this.ops[i].uiAttribs.subPatch == t &&
-                        e.push(this.ops[i]);
+                    this.ops[i].uiAttribs && this.ops[i].uiAttribs.subPatch == t && e.push(this.ops[i]);
                 return e;
             }),
-            (Nt.prototype.getSubPatchOp = function(t, e) {
+            (Nt.prototype.getSubPatchOp = function (t, e) {
                 for (const i in this.ops)
-                    if (
-                        this.ops[i].uiAttribs &&
-                        this.ops[i].uiAttribs.subPatch == t &&
-                        this.ops[i].objName == e
-                    )
+                    if (this.ops[i].uiAttribs && this.ops[i].uiAttribs.subPatch == t && this.ops[i].objName == e)
                         return this.ops[i];
                 return !1;
             }),
-            (Nt.prototype.deSerialize = function(t, e) {
+            (Nt.prototype.deSerialize = function (t, e) {
                 if (this.aborted) return;
                 const i = this.loading.start('core', 'deserialize');
                 this.onLoadStart && this.onLoadStart(),
@@ -10165,48 +7699,30 @@ var CABLES = (function(t) {
                         n = t.ops[i];
                     let o = null;
                     try {
-                        o = n.opId
-                            ? this.addOp(n.opId, n.uiAttribs, n.id)
-                            : this.addOp(n.objName, n.uiAttribs, n.id);
+                        o = n.opId ? this.addOp(n.opId, n.uiAttribs, n.id) : this.addOp(n.objName, n.uiAttribs, n.id);
                     } catch (t) {
-                        throw (console.warn(
-                            '[instancing error] op data:',
-                            n,
-                            t
-                        ),
-                        new Error('instancing error: ' + n.objName));
+                        throw (
+                            (console.warn('[instancing error] op data:', n, t),
+                            new Error('instancing error: ' + n.objName))
+                        );
                     }
                     if ((r.checkOp(o), o)) {
-                        e && (o.id = b()),
-                            (o.portsInData = n.portsIn),
-                            (o._origData = n);
+                        e && (o.id = b()), (o.portsInData = n.portsIn), (o._origData = n);
                         for (const t in n.portsIn) {
                             const e = n.portsIn[t],
                                 i = o.getPort(e.name);
                             if (
                                 (!i ||
-                                    ('bool' != i.uiAttribs.display &&
-                                        'bool' != i.uiAttribs.type) ||
+                                    ('bool' != i.uiAttribs.display && 'bool' != i.uiAttribs.type) ||
                                     isNaN(e.value) ||
                                     (e.value = !0 === e.value),
-                                i &&
-                                    void 0 !== e.value &&
-                                    i.type != k.OP.OP_PORT_TYPE_TEXTURE &&
-                                    i.set(e.value),
-                                i &&
-                                    e &&
-                                    e.animated &&
-                                    i.setAnimated(e.animated),
-                                i &&
-                                    e &&
-                                    e.useVariable &&
-                                    i.setVariableName(e.useVariable),
+                                i && void 0 !== e.value && i.type != k.OP.OP_PORT_TYPE_TEXTURE && i.set(e.value),
+                                i && e && e.animated && i.setAnimated(e.animated),
+                                i && e && e.useVariable && i.setVariableName(e.useVariable),
                                 i && e && e.anim)
                             ) {
-                                i.anim || (i.anim = new K()),
-                                    e.anim.loop && (i.anim.loop = e.anim.loop);
-                                for (const t in e.anim.keys)
-                                    i.anim.keys.push(new V.Key(e.anim.keys[t]));
+                                i.anim || (i.anim = new K()), e.anim.loop && (i.anim.loop = e.anim.loop);
+                                for (const t in e.anim.keys) i.anim.keys.push(new V.Key(e.anim.keys[t]));
                             }
                         }
                         for (const e in n.portsOut) {
@@ -10218,9 +7734,7 @@ var CABLES = (function(t) {
                         }
                     }
                     const h = Math.round(100 * (CABLES.now() - s)) / 100;
-                    !this.silent &&
-                        h > 200 &&
-                        console.warn('long op init ', t.ops[i].objName, h);
+                    !this.silent && h > 200 && console.warn('long op init ', t.ops[i].objName, h);
                 }
                 for (const t in this.ops)
                     this.ops[t].onLoadedValueSet &&
@@ -10232,94 +7746,68 @@ var CABLES = (function(t) {
                         if (t.ops[e].portsIn)
                             for (let i = 0; i < t.ops[e].portsIn.length; i++)
                                 if (t.ops[e].portsIn[i].links)
-                                    for (
-                                        let r = 0;
-                                        r < t.ops[e].portsIn[i].links.length;
-                                        r++
-                                    )
+                                    for (let r = 0; r < t.ops[e].portsIn[i].links.length; r++)
                                         t.ops[e].portsIn[i].links[r] &&
-                                            ((n =
-                                                t.ops[e].portsIn[i].links[r]
-                                                    .objIn),
-                                            (o =
-                                                t.ops[e].portsIn[i].links[r]
-                                                    .objOut),
-                                            (h =
-                                                t.ops[e].portsIn[i].links[r]
-                                                    .portIn),
-                                            (a =
-                                                t.ops[e].portsIn[i].links[r]
-                                                    .portOut),
-                                            s.link(
-                                                s.getOpById(n),
-                                                h,
-                                                s.getOpById(o),
-                                                a
-                                            ));
+                                            ((n = t.ops[e].portsIn[i].links[r].objIn),
+                                            (o = t.ops[e].portsIn[i].links[r].objOut),
+                                            (h = t.ops[e].portsIn[i].links[r].portIn),
+                                            (a = t.ops[e].portsIn[i].links[r].portOut),
+                                            s.link(s.getOpById(n), h, s.getOpById(o), a));
                 var n, o, h, a;
                 for (const t in this.ops)
-                    this.ops[t].onLoaded &&
-                        (this.ops[t].onLoaded(), (this.ops[t].onLoaded = null));
-                for (const t in this.ops)
-                    this.ops[t].init &&
-                        (this.ops[t].init(), (this.ops[t].init = null));
+                    this.ops[t].onLoaded && (this.ops[t].onLoaded(), (this.ops[t].onLoaded = null));
+                for (const t in this.ops) this.ops[t].init && (this.ops[t].init(), (this.ops[t].init = null));
                 if (this.config.variables)
-                    for (const t in this.config.variables)
-                        this.setVarValue(t, this.config.variables[t]);
+                    for (const t in this.config.variables) this.setVarValue(t, this.config.variables[t]);
                 for (const t in this.ops) this.ops[t].initVarPorts();
                 setTimeout(() => {
                     this.loading.finished(i);
                 }, 100),
-                    this.config.onPatchLoaded &&
-                        this.config.onPatchLoaded(this),
+                    this.config.onPatchLoaded && this.config.onPatchLoaded(this),
                     this.onLoadEnd && this.onLoadEnd();
             }),
-            (Nt.prototype.profile = function(t) {
+            (Nt.prototype.profile = function (t) {
                 this.profiler = new Pt();
                 for (const e in this.ops) this.ops[e].profile(t);
             }),
-            ((Nt.Variable = function(t, e, i) {
-                (this._name = t),
-                    (this._changeListeners = []),
-                    (this.type = i),
-                    this.setValue(e);
-            }).prototype.getValue = function() {
+            ((Nt.Variable = function (t, e, i) {
+                (this._name = t), (this._changeListeners = []), (this.type = i), this.setValue(e);
+            }).prototype.getValue = function () {
                 return this._v;
             }),
-            (Nt.Variable.prototype.getName = function() {
+            (Nt.Variable.prototype.getName = function () {
                 return this._name;
             }),
-            (Nt.Variable.prototype.setValue = function(t) {
+            (Nt.Variable.prototype.setValue = function (t) {
                 this._v = t;
-                for (let e = 0; e < this._changeListeners.length; e++)
-                    this._changeListeners[e](t);
+                for (let e = 0; e < this._changeListeners.length; e++) this._changeListeners[e](t);
             }),
-            (Nt.Variable.prototype.addListener = function(t) {
+            (Nt.Variable.prototype.addListener = function (t) {
                 this._changeListeners.push(t);
             }),
-            (Nt.Variable.prototype.removeListener = function(t) {
+            (Nt.Variable.prototype.removeListener = function (t) {
                 const e = this._changeListeners.indexOf(t);
                 this._changeListeners.splice(e, 1);
             }),
-            (Nt.prototype.setVariable = function(t, e) {
+            (Nt.prototype.setVariable = function (t, e) {
                 this._variables.hasOwnProperty(t)
                     ? this._variables[t].setValue(e)
                     : console.warn('variable ' + t + ' not found!');
             }),
-            (Nt.prototype._sortVars = function() {
+            (Nt.prototype._sortVars = function () {
                 if (!this.isEditorMode()) return;
                 const t = {};
                 Object.keys(this._variables)
                     .sort()
-                    .forEach(e => {
+                    .forEach((e) => {
                         t[e] = this._variables[e];
                     }),
                     (this._variables = t);
             }),
-            (Nt.prototype.hasVar = function(t) {
+            (Nt.prototype.hasVar = function (t) {
                 return this._variables.hasOwnProperty('name');
             }),
-            (Nt.prototype.setVarValue = function(t, e) {
+            (Nt.prototype.setVarValue = function (t, e) {
                 return (
                     this._variables.hasOwnProperty(t)
                         ? this._variables[t].setValue(e)
@@ -10329,35 +7817,26 @@ var CABLES = (function(t) {
                     this._variables[t]
                 );
             }),
-            (Nt.prototype.getVarValue = function(t, e) {
-                if (this._variables.hasOwnProperty(t))
-                    return this._variables[t].getValue();
+            (Nt.prototype.getVarValue = function (t, e) {
+                if (this._variables.hasOwnProperty(t)) return this._variables[t].getValue();
             }),
-            (Nt.prototype.getVar = function(t) {
-                if (this._variables.hasOwnProperty(t))
-                    return this._variables[t];
+            (Nt.prototype.getVar = function (t) {
+                if (this._variables.hasOwnProperty(t)) return this._variables[t];
             }),
-            (Nt.prototype.getVars = function() {
+            (Nt.prototype.getVars = function () {
                 return this._variables;
             }),
-            (Nt.prototype.deleteVar = function(t) {
+            (Nt.prototype.deleteVar = function (t) {
                 for (let e = 0; e < this.ops.length; e++)
                     for (let i = 0; i < this.ops[e].portsIn.length; i++)
-                        this.ops[e].portsIn[i].getVariableName() == t &&
-                            this.ops[e].portsIn[i].setVariable(null);
-                delete this._variables[t],
-                    this.emitEvent('variableDeleted', t),
-                    this.emitEvent('variablesChanged');
+                        this.ops[e].portsIn[i].getVariableName() == t && this.ops[e].portsIn[i].setVariable(null);
+                delete this._variables[t], this.emitEvent('variableDeleted', t), this.emitEvent('variablesChanged');
             }),
-            (Nt.prototype.getVars = function() {
+            (Nt.prototype.getVars = function () {
                 return this._variables;
             }),
-            (Nt.prototype.exitError = function(t, e, i) {
-                if (
-                    ((this.aborted = !0),
-                    this && this.config && this.config.onError)
-                )
-                    this.config.onError(t, e);
+            (Nt.prototype.exitError = function (t, e, i) {
+                if (((this.aborted = !0), this && this.config && this.config.onError)) this.config.onError(t, e);
                 else if (!this.isEditorMode()) {
                     const s = document.createElement('div'),
                         r = this.cgl.canvas.getBoundingClientRect();
@@ -10368,39 +7847,30 @@ var CABLES = (function(t) {
                         (s.style.top = r.top + 'px'),
                         (s.style.left = r.left + 'px');
                     let n = 'cables - An error occured:<br/>';
-                    (n += '[' + t + '] - ' + e),
-                        i && (n += '<br/>Exception: ' + i.message),
-                        (s.innerHTML = n);
+                    (n += '[' + t + '] - ' + e), i && (n += '<br/>Exception: ' + i.message), (s.innerHTML = n);
                     const o = this.cgl.canvas.parentElement;
                     for (; o.hasChildNodes(); ) o.removeChild(o.lastChild);
                     document.body.appendChild(s);
                 }
             }),
-            (Nt.prototype.preRenderOps = function() {
+            (Nt.prototype.preRenderOps = function () {
                 d.log('prerendering...');
                 let t = null;
                 CABLES.StopWatch && (t = new CABLES.StopWatch('prerendering'));
                 for (let t = 0; t < this.ops.length; t++)
-                    this.ops[t].preRender &&
-                        (this.ops[t].preRender(),
-                        d.log('prerender ' + this.ops[t].objName));
+                    this.ops[t].preRender && (this.ops[t].preRender(), d.log('prerender ' + this.ops[t].objName));
                 t && t.stop('prerendering');
             }),
-            (Nt.prototype.dispose = function() {
+            (Nt.prototype.dispose = function () {
                 this.pause(), this.clear();
             });
         var Ft = Nt;
         const St = {
-                addPatch: function(t, e) {
+                addPatch: function (t, e) {
                     let i = t,
                         s = y();
-                    if (
-                        'string' == typeof t &&
-                        ((s = t), (i = document.getElementById(s)), !i)
-                    )
-                        return void console.error(
-                            s + ' Polyshape Container Element not found!'
-                        );
+                    if ('string' == typeof t && ((s = t), (i = document.getElementById(s)), !i))
+                        return void console.error(s + ' Polyshape Container Element not found!');
                     const r = document.createElement('canvas');
                     return (
                         (r.id = 'glcanvas_' + s),
@@ -10408,15 +7878,14 @@ var CABLES = (function(t) {
                         (r.height = i.clientHeight),
                         window.addEventListener(
                             'resize',
-                            function() {
-                                this.setAttribute('width', i.clientWidth),
-                                    (this.height = i.clientHeight);
+                            function () {
+                                this.setAttribute('width', i.clientWidth), (this.height = i.clientHeight);
                             }.bind(r)
                         ),
                         i.appendChild(r),
                         ((e = e || {}).glCanvasId = r.id),
                         e.onError ||
-                            (e.onError = function(t) {
+                            (e.onError = function (t) {
                                 d.error(t);
                             }),
                         (CABLES.patch = new Ft(e)),
@@ -10426,97 +7895,72 @@ var CABLES = (function(t) {
             },
             Mt = {
                 toneJsInitialized: !1,
-                createAudioContext: function(t) {
-                    if (
-                        ((window.AudioContext =
-                            window.AudioContext || window.webkitAudioContext),
-                        window.AudioContext)
-                    )
+                createAudioContext: function (t) {
+                    if (((window.AudioContext = window.AudioContext || window.webkitAudioContext), window.AudioContext))
                         return (
-                            window.audioContext ||
-                                (window.audioContext = new AudioContext()),
+                            window.audioContext || (window.audioContext = new AudioContext()),
                             window.Tone &&
                                 !Mt.toneJsInitialized &&
-                                (Tone.setContext(window.audioContext),
-                                (Mt.toneJsInitialized = !0)),
+                                (Tone.setContext(window.audioContext), (Mt.toneJsInitialized = !0)),
                             window.audioContext
                         );
-                    t.patch.config.onError(
-                        'NO_WEBAUDIO',
-                        'Web Audio is not supported in this browser.'
-                    );
+                    t.patch.config.onError('NO_WEBAUDIO', 'Web Audio is not supported in this browser.');
                 },
-                getAudioContext: function() {
+                getAudioContext: function () {
                     return window.audioContext;
                 },
-                createAudioInPort: function(t, e, i, s) {
+                createAudioInPort: function (t, e, i, s) {
                     if (!t || !e || !i) {
-                        const e =
-                            'ERROR: createAudioInPort needs three parameters, op, portName and audioNode';
+                        const e = 'ERROR: createAudioInPort needs three parameters, op, portName and audioNode';
                         throw (t.log(e), new Error(e));
                     }
                     s || (s = 0),
                         (t.webAudio = t.webAudio || {}),
-                        (t.webAudio.audioInPorts =
-                            t.webAudio.audioInPorts || []);
+                        (t.webAudio.audioInPorts = t.webAudio.audioInPorts || []);
                     const r = t.inObject(e);
                     return (
                         (r.webAudio = {}),
                         (r.webAudio.previousAudioInNode = null),
                         (r.webAudio.audioNode = i),
                         (t.webAudio.audioInPorts[e] = r),
-                        (r.onChange = function() {
+                        (r.onChange = function () {
                             const e = r.get();
                             if (e)
                                 try {
                                     e.connect
-                                        ? (e.connect(
-                                              r.webAudio.audioNode,
-                                              0,
-                                              s
-                                          ),
-                                          t.setUiError('audioCtx', null))
+                                        ? (e.connect(r.webAudio.audioNode, 0, s), t.setUiError('audioCtx', null))
                                         : t.setUiError(
                                               'audioCtx',
                                               'The passed input is not an audio context. Please make sure you connect an audio context to the input.',
                                               2
                                           );
                                 } catch (i) {
-                                    throw (t.log(
-                                        'Error: Failed to connect web audio node!',
-                                        i
-                                    ),
-                                    t.log(
-                                        'port.webAudio.audioNode',
-                                        r.webAudio.audioNode
-                                    ),
-                                    t.log('audioInNode: ', e),
-                                    t.log('inputChannelIndex:', s),
-                                    t.log('audioInNode.connect: ', e.connect),
-                                    i);
+                                    throw (
+                                        (t.log('Error: Failed to connect web audio node!', i),
+                                        t.log('port.webAudio.audioNode', r.webAudio.audioNode),
+                                        t.log('audioInNode: ', e),
+                                        t.log('inputChannelIndex:', s),
+                                        t.log('audioInNode.connect: ', e.connect),
+                                        i)
+                                    );
                                 }
                             else if (r.webAudio.previousAudioInNode)
                                 try {
                                     r.webAudio.previousAudioInNode.disconnect &&
-                                        r.webAudio.previousAudioInNode.disconnect(
-                                            r.webAudio.audioNode,
-                                            0,
-                                            s
-                                        ),
+                                        r.webAudio.previousAudioInNode.disconnect(r.webAudio.audioNode, 0, s),
                                         t.setUiError('audioCtx', null);
                                 } catch (e) {
                                     try {
-                                        r.webAudio.previousAudioInNode.disconnect(
-                                            r.webAudio.audioNode
-                                        );
+                                        r.webAudio.previousAudioInNode.disconnect(r.webAudio.audioNode);
                                     } catch (i) {
-                                        throw (t.log(
-                                            'Disconnecting audio node with in/out port index, as well as without in/out-port-index did not work ',
-                                            e
-                                        ),
-                                        e.printStackTrace &&
-                                            e.printStackTrace(),
-                                        e);
+                                        throw (
+                                            (t.log(
+                                                'Disconnecting audio node with in/out port index, as well as without in/out-port-index did not work ',
+                                                e
+                                            ),
+                                            e.printStackTrace && e.printStackTrace(),
+                                            e)
+                                        );
                                     }
                                 }
                             r.webAudio.previousAudioInNode = e;
@@ -10524,68 +7968,59 @@ var CABLES = (function(t) {
                         r
                     );
                 },
-                replaceNodeInPort: function(t, e, i) {
+                replaceNodeInPort: function (t, e, i) {
                     const s = t.webAudio.previousAudioInNode;
                     if (s && s.disconnect) {
                         try {
                             s.disconnect(e);
                         } catch (t) {
-                            throw (t.printStackTrace && t.printStackTrace(),
-                            new Error(
-                                'replaceNodeInPort: Could not disconnect old audio node. ' +
-                                    t.name +
-                                    ' ' +
-                                    t.message
-                            ));
+                            throw (
+                                (t.printStackTrace && t.printStackTrace(),
+                                new Error(
+                                    'replaceNodeInPort: Could not disconnect old audio node. ' +
+                                        t.name +
+                                        ' ' +
+                                        t.message
+                                ))
+                            );
                         }
                         t.webAudio.audioNode = i;
                         try {
                             s.connect(i);
                         } catch (t) {
-                            throw (t.printStackTrace && t.printStackTrace(),
-                            new Error(
-                                'replaceNodeInPort: Could not connect to new node. ' +
-                                    t.name +
-                                    ' ' +
-                                    t.message
-                            ));
+                            throw (
+                                (t.printStackTrace && t.printStackTrace(),
+                                new Error(
+                                    'replaceNodeInPort: Could not connect to new node. ' + t.name + ' ' + t.message
+                                ))
+                            );
                         }
                     }
                 },
-                createAudioOutPort: function(t, e, i) {
+                createAudioOutPort: function (t, e, i) {
                     if (!t || !e || !i) {
-                        const e =
-                            'ERROR: createAudioOutPort needs three parameters, op, portName and audioNode';
+                        const e = 'ERROR: createAudioOutPort needs three parameters, op, portName and audioNode';
                         throw (t.log(e), new Error(e));
                     }
                     const s = t.outObject(e);
                     return s.set(i), s;
                 },
-                createAudioParamInPort: function(t, e, i, s, r) {
+                createAudioParamInPort: function (t, e, i, s, r) {
                     if (!t || !e || !i)
                         return (
-                            t.log(
-                                'ERROR: createAudioParamInPort needs three parameters, op, portName and audioNode'
-                            ),
+                            t.log('ERROR: createAudioParamInPort needs three parameters, op, portName and audioNode'),
                             t && t.name && t.log('opname: ', t.name),
                             t.log('portName', e),
                             void t.log('audioNode: ', i)
                         );
-                    (t.webAudio = t.webAudio || {}),
-                        (t.webAudio.audioInPorts =
-                            t.webAudio.audioInPorts || []);
-                    const n = t.inDynamic(
-                        e,
-                        [k.OP.OP_PORT_TYPE_VALUE, k.OP.OP_PORT_TYPE_OBJECT],
-                        s,
-                        r
-                    );
+                    (t.webAudio = t.webAudio || {}), (t.webAudio.audioInPorts = t.webAudio.audioInPorts || []);
+                    const n = t.inDynamic(e, [k.OP.OP_PORT_TYPE_VALUE, k.OP.OP_PORT_TYPE_OBJECT], s, r);
                     return (
                         (n.webAudio = {}),
                         (n.webAudio.previousAudioInNode = null),
                         (n.webAudio.audioNode = i),
                         (t.webAudio.audioInPorts[e] = n),
-                        (n.onChange = function() {
+                        (n.onChange = function () {
                             const e = n.get(),
                                 i = n.webAudio.audioNode,
                                 s = Mt.getAudioContext();
@@ -10594,99 +8029,59 @@ var CABLES = (function(t) {
                                     try {
                                         e.connect(i);
                                     } catch (e) {
-                                        throw (t.log(
-                                            'Could not connect audio node: ',
-                                            e
-                                        ),
-                                        e.printStackTrace &&
-                                            e.printStackTrace(),
-                                        e);
+                                        throw (
+                                            (t.log('Could not connect audio node: ', e),
+                                            e.printStackTrace && e.printStackTrace(),
+                                            e)
+                                        );
                                     }
                                     n.webAudio.previousAudioInNode = e;
                                 } else {
-                                    if (
-                                        i._param &&
-                                        i._param.minValue &&
-                                        i._param.maxValue
-                                    )
-                                        if (
-                                            e >= i._param.minValue &&
-                                            e <= i._param.maxValue
-                                        )
+                                    if (i._param && i._param.minValue && i._param.maxValue)
+                                        if (e >= i._param.minValue && e <= i._param.maxValue)
                                             try {
-                                                i.setValueAtTime
-                                                    ? i.setValueAtTime(
-                                                          e,
-                                                          s.currentTime
-                                                      )
-                                                    : (i.value = e);
+                                                i.setValueAtTime ? i.setValueAtTime(e, s.currentTime) : (i.value = e);
                                             } catch (e) {
-                                                throw (t.log(
-                                                    'Possible AudioParam problem with tone.js op: ',
-                                                    e
-                                                ),
-                                                e.printStackTrace &&
-                                                    e.printStackTrace(),
-                                                e);
+                                                throw (
+                                                    (t.log('Possible AudioParam problem with tone.js op: ', e),
+                                                    e.printStackTrace && e.printStackTrace(),
+                                                    e)
+                                                );
                                             }
-                                        else
-                                            t.log(
-                                                'Warning: The value for an audio parameter is out of range!'
-                                            );
+                                        else t.log('Warning: The value for an audio parameter is out of range!');
                                     else if (i.minValue && i.maxValue)
                                         if (e >= i.minValue && e <= i.maxValue)
                                             try {
-                                                i.setValueAtTime
-                                                    ? i.setValueAtTime(
-                                                          e,
-                                                          s.currentTime
-                                                      )
-                                                    : (i.value = e);
+                                                i.setValueAtTime ? i.setValueAtTime(e, s.currentTime) : (i.value = e);
                                             } catch (e) {
-                                                throw (t.log(
-                                                    'AudioParam has minValue / maxValue defined, and value is in range, but setting the value failed! ',
-                                                    e
-                                                ),
-                                                e.printStackTrace &&
-                                                    e.printStackTrace(),
-                                                e);
+                                                throw (
+                                                    (t.log(
+                                                        'AudioParam has minValue / maxValue defined, and value is in range, but setting the value failed! ',
+                                                        e
+                                                    ),
+                                                    e.printStackTrace && e.printStackTrace(),
+                                                    e)
+                                                );
                                             }
-                                        else
-                                            t.log(
-                                                'Warning: The value for an audio parameter is out of range!'
-                                            );
+                                        else t.log('Warning: The value for an audio parameter is out of range!');
                                     else
                                         try {
-                                            i.setValueAtTime
-                                                ? i.setValueAtTime(
-                                                      e,
-                                                      s.currentTime
-                                                  )
-                                                : (i.value = e);
+                                            i.setValueAtTime ? i.setValueAtTime(e, s.currentTime) : (i.value = e);
                                         } catch (e) {
-                                            throw (t.log(
-                                                'Possible AudioParam problem (without minValue / maxValue): ',
-                                                e
-                                            ),
-                                            e.printStackTrace &&
-                                                e.printStackTrace(),
-                                            e);
-                                        }
-                                    if (
-                                        n.webAudio.previousAudioInNode &&
-                                        n.webAudio.previousAudioInNode
-                                            .disconnect
-                                    ) {
-                                        try {
-                                            n.webAudio.previousAudioInNode.disconnect(
-                                                i
+                                            throw (
+                                                (t.log(
+                                                    'Possible AudioParam problem (without minValue / maxValue): ',
+                                                    e
+                                                ),
+                                                e.printStackTrace && e.printStackTrace(),
+                                                e)
                                             );
+                                        }
+                                    if (n.webAudio.previousAudioInNode && n.webAudio.previousAudioInNode.disconnect) {
+                                        try {
+                                            n.webAudio.previousAudioInNode.disconnect(i);
                                         } catch (e) {
-                                            throw (t.log(
-                                                'Could not disconnect previous audio node: ',
-                                                e
-                                            ),
-                                            e);
+                                            throw (t.log('Could not disconnect previous audio node: ', e), e);
                                         }
                                         n.webAudio.previousAudioInNode = void 0;
                                     }
@@ -10696,29 +8091,26 @@ var CABLES = (function(t) {
                         n
                     );
                 },
-                loadAudioFile: function(t, e, i, s) {
+                loadAudioFile: function (t, e, i, s) {
                     const r = Mt.createAudioContext(),
                         n = t.loading.start('audio', e);
                     t.isEditorMode() &&
-                        gui
-                            .jobs()
-                            .start({
-                                id: 'loadaudio' + n,
-                                title: ' loading audio (' + e + ')',
-                            });
+                        gui.jobs().start({
+                            id: 'loadaudio' + n,
+                            title: ' loading audio (' + e + ')',
+                        });
                     const o = new XMLHttpRequest();
                     e &&
                         (o.open('GET', e, !0),
                         (o.responseType = 'arraybuffer'),
-                        (o.onload = function() {
+                        (o.onload = function () {
                             t.loading.finished(n),
-                                t.isEditorMode() &&
-                                    gui.jobs().finish('loadaudio' + n),
+                                t.isEditorMode() && gui.jobs().finish('loadaudio' + n),
                                 r.decodeAudioData(o.response, i, s);
                         }),
                         o.send());
                 },
-                isValidToneTime: function(t) {
+                isValidToneTime: function (t) {
                     try {
                         new Tone.Time(t);
                     } catch (t) {
@@ -10726,7 +8118,7 @@ var CABLES = (function(t) {
                     }
                     return !0;
                 },
-                isValidToneNote: function(t) {
+                isValidToneNote: function (t) {
                     try {
                         Tone.Frequency(t);
                     } catch (t) {
@@ -10735,45 +8127,24 @@ var CABLES = (function(t) {
                     return !0;
                 },
             },
-            Ct = function(t, e, i) {
+            Ct = function (t, e, i) {
                 (this._patch = t), (this.connector = i);
             };
-        Ct.prototype._receive = function(t) {
+        Ct.prototype._receive = function (t) {
             console.log('ev', t);
             let e = {};
-            if (
-                ((e = t.hasOwnProperty('event') ? t : JSON.parse(t.data)),
-                e.event == k.PACO.PACO_OP_CREATE)
-            ) {
-                if (
-                    (d.log('op create: data.vars.objName'),
-                    this._patch.getOpById(e.vars.opId))
-                )
-                    return;
+            if (((e = t.hasOwnProperty('event') ? t : JSON.parse(t.data)), e.event == k.PACO.PACO_OP_CREATE)) {
+                if ((d.log('op create: data.vars.objName'), this._patch.getOpById(e.vars.opId))) return;
                 let t = null;
                 window.gui
                     ? gui.serverOps.loadOpLibs(e.vars.objName, () => {
-                          (t = this._patch.addOp(
-                              e.vars.objName,
-                              null,
-                              e.vars.opId
-                          )),
-                              (t.id = e.vars.opId);
+                          (t = this._patch.addOp(e.vars.objName, null, e.vars.opId)), (t.id = e.vars.opId);
                       })
-                    : ((t = this._patch.addOp(
-                          e.vars.objName,
-                          null,
-                          e.vars.opId
-                      )),
-                      (t.id = e.vars.opId));
+                    : ((t = this._patch.addOp(e.vars.objName, null, e.vars.opId)), (t.id = e.vars.opId));
             } else if (e.event == k.PACO.PACO_LOAD)
-                d.log('PACO load patch.....'),
-                    this._patch.clear(),
-                    this._patch.deSerialize(e.vars.patch);
-            else if (e.event == k.PACO.PACO_CLEAR)
-                this._patch.clear(), d.log('clear');
-            else if (e.event == k.PACO.PACO_OP_DELETE)
-                d.log('op delete'), this._patch.deleteOp(e.vars.op, !0);
+                d.log('PACO load patch.....'), this._patch.clear(), this._patch.deSerialize(e.vars.patch);
+            else if (e.event == k.PACO.PACO_CLEAR) this._patch.clear(), d.log('clear');
+            else if (e.event == k.PACO.PACO_OP_DELETE) d.log('op delete'), this._patch.deleteOp(e.vars.op, !0);
             else if (e.event == k.PACO.PACO_OP_ENABLE) {
                 const t = this._patch.getOpById(e.vars.op);
                 t && (t.enabled = !0);
@@ -10783,8 +8154,7 @@ var CABLES = (function(t) {
             } else if (e.event == k.PACO.PACO_UNLINK) {
                 const t = this._patch.getOpById(e.vars.op1),
                     i = this._patch.getOpById(e.vars.op2);
-                if (!t || !i)
-                    return void console.log('[paco] unlink op not found ');
+                if (!t || !i) return void console.log('[paco] unlink op not found ');
                 const s = t.getPort(e.vars.port1),
                     r = i.getPort(e.vars.port2);
                 s.removeLinkTo(r);
@@ -10793,18 +8163,15 @@ var CABLES = (function(t) {
                     i = this._patch.getOpById(e.vars.op2);
                 this._patch.link(t, e.vars.port1, i, e.vars.port2);
             } else if (e.event == k.PACO.PACO_VALUECHANGE) {
-                this._patch
-                    .getOpById(e.vars.op)
-                    .getPort(e.vars.port)
-                    .set(e.vars.v);
+                this._patch.getOpById(e.vars.op).getPort(e.vars.port).set(e.vars.v);
             } else d.log('unknown patchConnectionEvent!', t);
         };
-        const wt = function(t) {
+        const wt = function (t) {
             (this.connectors = []),
-                t.addEventListener('onOpDelete', t => {
+                t.addEventListener('onOpDelete', (t) => {
                     this.send(CABLES.PACO_OP_DELETE, { op: t.id });
                 }),
-                t.addEventListener('onOpAdd', t => {
+                t.addEventListener('onOpAdd', (t) => {
                     this.send(CABLES.PACO_OP_CREATE, {
                         opId: t.id,
                         objName: t.objName,
@@ -10827,24 +8194,19 @@ var CABLES = (function(t) {
                     });
                 });
         };
-        wt.prototype.send = function(t, e) {
-            for (let i = 0; i < this.connectors.length; i++)
-                this.connectors[i].send(t, e);
+        wt.prototype.send = function (t, e) {
+            for (let i = 0; i < this.connectors.length; i++) this.connectors[i].send(t, e);
         };
-        const kt = function() {
-            window.BroadcastChannel &&
-                (this.bc = new BroadcastChannel('test_channel'));
+        const kt = function () {
+            window.BroadcastChannel && (this.bc = new BroadcastChannel('test_channel'));
         };
-        (kt.prototype.receive = function(t) {
-            this.bc &&
-                (d.log('init'), (this.bc.onmessage = t._receive.bind(t)));
+        (kt.prototype.receive = function (t) {
+            this.bc && (d.log('init'), (this.bc.onmessage = t._receive.bind(t)));
         }),
-            (kt.prototype.send = function(t, e) {
+            (kt.prototype.send = function (t, e) {
                 if (!this.bc) return;
                 const i = {};
-                (i.event = t),
-                    (i.vars = e),
-                    this.bc.postMessage(JSON.stringify(i));
+                (i.event = t), (i.vars = e), this.bc.postMessage(JSON.stringify(i));
             });
         const Ut = Object.assign(
             {
@@ -10859,19 +8221,19 @@ var CABLES = (function(t) {
                 Instancing: vt,
                 Timer: pt,
                 WEBAUDIO: Mt,
-                Variable: function() {
+                Variable: function () {
                     let t = null;
                     const e = [];
-                    (this.onChanged = function(t) {
+                    (this.onChanged = function (t) {
                         e.push(t);
                     }),
-                        (this.getValue = function() {
+                        (this.getValue = function () {
                             return t;
                         }),
-                        (this.setValue = function(e) {
+                        (this.setValue = function (e) {
                             (t = e), this.emitChanged();
                         }),
-                        (this.emitChanged = function() {
+                        (this.emitChanged = function () {
                             for (let t = 0; t < e.length; t++) e[t]();
                         });
                 },
@@ -10891,7 +8253,7 @@ var CABLES = (function(t) {
         );
         Ut.build = i(1);
         e.default = Ut;
-        (function() {
+        (function () {
             return !this;
         })() || console.log('not in strict mode: index core');
     },
@@ -10924,22 +8286,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-!(function(t, n) {
+!(function (t, n) {
     'object' == typeof exports && 'undefined' != typeof module
         ? n(exports)
         : 'function' == typeof define && define.amd
         ? define(['exports'], n)
         : n(((t = t || self).glMatrix = {}));
-})(this, function(t) {
+})(this, function (t) {
     'use strict';
     var n = 1e-6,
         a = 'undefined' != typeof Float32Array ? Float32Array : Array,
         r = Math.random;
     var u = Math.PI / 180;
     Math.hypot ||
-        (Math.hypot = function() {
-            for (var t = 0, n = arguments.length; n--; )
-                t += arguments[n] * arguments[n];
+        (Math.hypot = function () {
+            for (var t = 0, n = arguments.length; n--; ) t += arguments[n] * arguments[n];
             return Math.sqrt(t);
         });
     var e = Object.freeze({
@@ -10948,13 +8309,13 @@ THE SOFTWARE.
             return a;
         },
         RANDOM: r,
-        setMatrixArrayType: function(t) {
+        setMatrixArrayType: function (t) {
             a = t;
         },
-        toRadian: function(t) {
+        toRadian: function (t) {
             return t * u;
         },
-        equals: function(t, a) {
+        equals: function (t, a) {
             return Math.abs(t - a) <= n * Math.max(1, Math.abs(t), Math.abs(a));
         },
     });
@@ -10967,98 +8328,59 @@ THE SOFTWARE.
             c = a[1],
             h = a[2],
             s = a[3];
-        return (
-            (t[0] = r * i + e * c),
-            (t[1] = u * i + o * c),
-            (t[2] = r * h + e * s),
-            (t[3] = u * h + o * s),
-            t
-        );
+        return (t[0] = r * i + e * c), (t[1] = u * i + o * c), (t[2] = r * h + e * s), (t[3] = u * h + o * s), t;
     }
     function i(t, n, a) {
-        return (
-            (t[0] = n[0] - a[0]),
-            (t[1] = n[1] - a[1]),
-            (t[2] = n[2] - a[2]),
-            (t[3] = n[3] - a[3]),
-            t
-        );
+        return (t[0] = n[0] - a[0]), (t[1] = n[1] - a[1]), (t[2] = n[2] - a[2]), (t[3] = n[3] - a[3]), t;
     }
     var c = o,
         h = i,
         s = Object.freeze({
-            create: function() {
+            create: function () {
                 var t = new a(4);
-                return (
-                    a != Float32Array && ((t[1] = 0), (t[2] = 0)),
-                    (t[0] = 1),
-                    (t[3] = 1),
-                    t
-                );
+                return a != Float32Array && ((t[1] = 0), (t[2] = 0)), (t[0] = 1), (t[3] = 1), t;
             },
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(4);
-                return (
-                    (n[0] = t[0]),
-                    (n[1] = t[1]),
-                    (n[2] = t[2]),
-                    (n[3] = t[3]),
-                    n
-                );
+                return (n[0] = t[0]), (n[1] = t[1]), (n[2] = t[2]), (n[3] = t[3]), n;
             },
-            copy: function(t, n) {
-                return (
-                    (t[0] = n[0]),
-                    (t[1] = n[1]),
-                    (t[2] = n[2]),
-                    (t[3] = n[3]),
-                    t
-                );
+            copy: function (t, n) {
+                return (t[0] = n[0]), (t[1] = n[1]), (t[2] = n[2]), (t[3] = n[3]), t;
             },
-            identity: function(t) {
+            identity: function (t) {
                 return (t[0] = 1), (t[1] = 0), (t[2] = 0), (t[3] = 1), t;
             },
-            fromValues: function(t, n, r, u) {
+            fromValues: function (t, n, r, u) {
                 var e = new a(4);
                 return (e[0] = t), (e[1] = n), (e[2] = r), (e[3] = u), e;
             },
-            set: function(t, n, a, r, u) {
+            set: function (t, n, a, r, u) {
                 return (t[0] = n), (t[1] = a), (t[2] = r), (t[3] = u), t;
             },
-            transpose: function(t, n) {
+            transpose: function (t, n) {
                 if (t === n) {
                     var a = n[1];
                     (t[1] = n[2]), (t[2] = a);
-                } else
-                    (t[0] = n[0]), (t[1] = n[2]), (t[2] = n[1]), (t[3] = n[3]);
+                } else (t[0] = n[0]), (t[1] = n[2]), (t[2] = n[1]), (t[3] = n[3]);
                 return t;
             },
-            invert: function(t, n) {
+            invert: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
                     e = n[3],
                     o = a * e - u * r;
-                return o
-                    ? ((o = 1 / o),
-                      (t[0] = e * o),
-                      (t[1] = -r * o),
-                      (t[2] = -u * o),
-                      (t[3] = a * o),
-                      t)
-                    : null;
+                return o ? ((o = 1 / o), (t[0] = e * o), (t[1] = -r * o), (t[2] = -u * o), (t[3] = a * o), t) : null;
             },
-            adjoint: function(t, n) {
+            adjoint: function (t, n) {
                 var a = n[0];
-                return (
-                    (t[0] = n[3]), (t[1] = -n[1]), (t[2] = -n[2]), (t[3] = a), t
-                );
+                return (t[0] = n[3]), (t[1] = -n[1]), (t[2] = -n[2]), (t[3] = a), t;
             },
-            determinant: function(t) {
+            determinant: function (t) {
                 return t[0] * t[3] - t[2] * t[1];
             },
             multiply: o,
-            rotate: function(t, n, a) {
+            rotate: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11066,80 +8388,43 @@ THE SOFTWARE.
                     i = Math.sin(a),
                     c = Math.cos(a);
                 return (
-                    (t[0] = r * c + e * i),
-                    (t[1] = u * c + o * i),
-                    (t[2] = r * -i + e * c),
-                    (t[3] = u * -i + o * c),
-                    t
+                    (t[0] = r * c + e * i), (t[1] = u * c + o * i), (t[2] = r * -i + e * c), (t[3] = u * -i + o * c), t
                 );
             },
-            scale: function(t, n, a) {
+            scale: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
                     o = n[3],
                     i = a[0],
                     c = a[1];
-                return (
-                    (t[0] = r * i),
-                    (t[1] = u * i),
-                    (t[2] = e * c),
-                    (t[3] = o * c),
-                    t
-                );
+                return (t[0] = r * i), (t[1] = u * i), (t[2] = e * c), (t[3] = o * c), t;
             },
-            fromRotation: function(t, n) {
+            fromRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
                 return (t[0] = r), (t[1] = a), (t[2] = -a), (t[3] = r), t;
             },
-            fromScaling: function(t, n) {
+            fromScaling: function (t, n) {
                 return (t[0] = n[0]), (t[1] = 0), (t[2] = 0), (t[3] = n[1]), t;
             },
-            str: function(t) {
-                return (
-                    'mat2(' +
-                    t[0] +
-                    ', ' +
-                    t[1] +
-                    ', ' +
-                    t[2] +
-                    ', ' +
-                    t[3] +
-                    ')'
-                );
+            str: function (t) {
+                return 'mat2(' + t[0] + ', ' + t[1] + ', ' + t[2] + ', ' + t[3] + ')';
             },
-            frob: function(t) {
+            frob: function (t) {
                 return Math.hypot(t[0], t[1], t[2], t[3]);
             },
-            LDU: function(t, n, a, r) {
-                return (
-                    (t[2] = r[2] / r[0]),
-                    (a[0] = r[0]),
-                    (a[1] = r[1]),
-                    (a[3] = r[3] - t[2] * a[1]),
-                    [t, n, a]
-                );
+            LDU: function (t, n, a, r) {
+                return (t[2] = r[2] / r[0]), (a[0] = r[0]), (a[1] = r[1]), (a[3] = r[3] - t[2] * a[1]), [t, n, a];
             },
-            add: function(t, n, a) {
-                return (
-                    (t[0] = n[0] + a[0]),
-                    (t[1] = n[1] + a[1]),
-                    (t[2] = n[2] + a[2]),
-                    (t[3] = n[3] + a[3]),
-                    t
-                );
+            add: function (t, n, a) {
+                return (t[0] = n[0] + a[0]), (t[1] = n[1] + a[1]), (t[2] = n[2] + a[2]), (t[3] = n[3] + a[3]), t;
             },
             subtract: i,
-            exactEquals: function(t, n) {
-                return (
-                    t[0] === n[0] &&
-                    t[1] === n[1] &&
-                    t[2] === n[2] &&
-                    t[3] === n[3]
-                );
+            exactEquals: function (t, n) {
+                return t[0] === n[0] && t[1] === n[1] && t[2] === n[2] && t[3] === n[3];
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = t[2],
@@ -11149,25 +8434,16 @@ THE SOFTWARE.
                     h = a[2],
                     s = a[3];
                 return (
-                    Math.abs(r - i) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(i)) &&
-                    Math.abs(u - c) <=
-                        n * Math.max(1, Math.abs(u), Math.abs(c)) &&
-                    Math.abs(e - h) <=
-                        n * Math.max(1, Math.abs(e), Math.abs(h)) &&
+                    Math.abs(r - i) <= n * Math.max(1, Math.abs(r), Math.abs(i)) &&
+                    Math.abs(u - c) <= n * Math.max(1, Math.abs(u), Math.abs(c)) &&
+                    Math.abs(e - h) <= n * Math.max(1, Math.abs(e), Math.abs(h)) &&
                     Math.abs(o - s) <= n * Math.max(1, Math.abs(o), Math.abs(s))
                 );
             },
-            multiplyScalar: function(t, n, a) {
-                return (
-                    (t[0] = n[0] * a),
-                    (t[1] = n[1] * a),
-                    (t[2] = n[2] * a),
-                    (t[3] = n[3] * a),
-                    t
-                );
+            multiplyScalar: function (t, n, a) {
+                return (t[0] = n[0] * a), (t[1] = n[1] * a), (t[2] = n[2] * a), (t[3] = n[3] * a), t;
             },
-            multiplyScalarAndAdd: function(t, n, a, r) {
+            multiplyScalarAndAdd: function (t, n, a, r) {
                 return (
                     (t[0] = n[0] + a[0] * r),
                     (t[1] = n[1] + a[1] * r),
@@ -11216,74 +8492,28 @@ THE SOFTWARE.
     var l = M,
         v = f,
         b = Object.freeze({
-            create: function() {
+            create: function () {
                 var t = new a(6);
-                return (
-                    a != Float32Array &&
-                        ((t[1] = 0), (t[2] = 0), (t[4] = 0), (t[5] = 0)),
-                    (t[0] = 1),
-                    (t[3] = 1),
-                    t
-                );
+                return a != Float32Array && ((t[1] = 0), (t[2] = 0), (t[4] = 0), (t[5] = 0)), (t[0] = 1), (t[3] = 1), t;
             },
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(6);
-                return (
-                    (n[0] = t[0]),
-                    (n[1] = t[1]),
-                    (n[2] = t[2]),
-                    (n[3] = t[3]),
-                    (n[4] = t[4]),
-                    (n[5] = t[5]),
-                    n
-                );
+                return (n[0] = t[0]), (n[1] = t[1]), (n[2] = t[2]), (n[3] = t[3]), (n[4] = t[4]), (n[5] = t[5]), n;
             },
-            copy: function(t, n) {
-                return (
-                    (t[0] = n[0]),
-                    (t[1] = n[1]),
-                    (t[2] = n[2]),
-                    (t[3] = n[3]),
-                    (t[4] = n[4]),
-                    (t[5] = n[5]),
-                    t
-                );
+            copy: function (t, n) {
+                return (t[0] = n[0]), (t[1] = n[1]), (t[2] = n[2]), (t[3] = n[3]), (t[4] = n[4]), (t[5] = n[5]), t;
             },
-            identity: function(t) {
-                return (
-                    (t[0] = 1),
-                    (t[1] = 0),
-                    (t[2] = 0),
-                    (t[3] = 1),
-                    (t[4] = 0),
-                    (t[5] = 0),
-                    t
-                );
+            identity: function (t) {
+                return (t[0] = 1), (t[1] = 0), (t[2] = 0), (t[3] = 1), (t[4] = 0), (t[5] = 0), t;
             },
-            fromValues: function(t, n, r, u, e, o) {
+            fromValues: function (t, n, r, u, e, o) {
                 var i = new a(6);
-                return (
-                    (i[0] = t),
-                    (i[1] = n),
-                    (i[2] = r),
-                    (i[3] = u),
-                    (i[4] = e),
-                    (i[5] = o),
-                    i
-                );
+                return (i[0] = t), (i[1] = n), (i[2] = r), (i[3] = u), (i[4] = e), (i[5] = o), i;
             },
-            set: function(t, n, a, r, u, e, o) {
-                return (
-                    (t[0] = n),
-                    (t[1] = a),
-                    (t[2] = r),
-                    (t[3] = u),
-                    (t[4] = e),
-                    (t[5] = o),
-                    t
-                );
+            set: function (t, n, a, r, u, e, o) {
+                return (t[0] = n), (t[1] = a), (t[2] = r), (t[3] = u), (t[4] = e), (t[5] = o), t;
             },
-            invert: function(t, n) {
+            invert: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -11302,11 +8532,11 @@ THE SOFTWARE.
                       t)
                     : null;
             },
-            determinant: function(t) {
+            determinant: function (t) {
                 return t[0] * t[3] - t[1] * t[2];
             },
             multiply: M,
-            rotate: function(t, n, a) {
+            rotate: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11325,7 +8555,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            scale: function(t, n, a) {
+            scale: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11334,17 +8564,9 @@ THE SOFTWARE.
                     c = n[5],
                     h = a[0],
                     s = a[1];
-                return (
-                    (t[0] = r * h),
-                    (t[1] = u * h),
-                    (t[2] = e * s),
-                    (t[3] = o * s),
-                    (t[4] = i),
-                    (t[5] = c),
-                    t
-                );
+                return (t[0] = r * h), (t[1] = u * h), (t[2] = e * s), (t[3] = o * s), (t[4] = i), (t[5] = c), t;
             },
-            translate: function(t, n, a) {
+            translate: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11363,62 +8585,24 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromRotation: function(t, n) {
+            fromRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
-                return (
-                    (t[0] = r),
-                    (t[1] = a),
-                    (t[2] = -a),
-                    (t[3] = r),
-                    (t[4] = 0),
-                    (t[5] = 0),
-                    t
-                );
+                return (t[0] = r), (t[1] = a), (t[2] = -a), (t[3] = r), (t[4] = 0), (t[5] = 0), t;
             },
-            fromScaling: function(t, n) {
-                return (
-                    (t[0] = n[0]),
-                    (t[1] = 0),
-                    (t[2] = 0),
-                    (t[3] = n[1]),
-                    (t[4] = 0),
-                    (t[5] = 0),
-                    t
-                );
+            fromScaling: function (t, n) {
+                return (t[0] = n[0]), (t[1] = 0), (t[2] = 0), (t[3] = n[1]), (t[4] = 0), (t[5] = 0), t;
             },
-            fromTranslation: function(t, n) {
-                return (
-                    (t[0] = 1),
-                    (t[1] = 0),
-                    (t[2] = 0),
-                    (t[3] = 1),
-                    (t[4] = n[0]),
-                    (t[5] = n[1]),
-                    t
-                );
+            fromTranslation: function (t, n) {
+                return (t[0] = 1), (t[1] = 0), (t[2] = 0), (t[3] = 1), (t[4] = n[0]), (t[5] = n[1]), t;
             },
-            str: function(t) {
-                return (
-                    'mat2d(' +
-                    t[0] +
-                    ', ' +
-                    t[1] +
-                    ', ' +
-                    t[2] +
-                    ', ' +
-                    t[3] +
-                    ', ' +
-                    t[4] +
-                    ', ' +
-                    t[5] +
-                    ')'
-                );
+            str: function (t) {
+                return 'mat2d(' + t[0] + ', ' + t[1] + ', ' + t[2] + ', ' + t[3] + ', ' + t[4] + ', ' + t[5] + ')';
             },
-            frob: function(t) {
+            frob: function (t) {
                 return Math.hypot(t[0], t[1], t[2], t[3], t[4], t[5], 1);
             },
-            add: function(t, n, a) {
+            add: function (t, n, a) {
                 return (
                     (t[0] = n[0] + a[0]),
                     (t[1] = n[1] + a[1]),
@@ -11430,7 +8614,7 @@ THE SOFTWARE.
                 );
             },
             subtract: f,
-            multiplyScalar: function(t, n, a) {
+            multiplyScalar: function (t, n, a) {
                 return (
                     (t[0] = n[0] * a),
                     (t[1] = n[1] * a),
@@ -11441,7 +8625,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            multiplyScalarAndAdd: function(t, n, a, r) {
+            multiplyScalarAndAdd: function (t, n, a, r) {
                 return (
                     (t[0] = n[0] + a[0] * r),
                     (t[1] = n[1] + a[1] * r),
@@ -11452,17 +8636,12 @@ THE SOFTWARE.
                     t
                 );
             },
-            exactEquals: function(t, n) {
+            exactEquals: function (t, n) {
                 return (
-                    t[0] === n[0] &&
-                    t[1] === n[1] &&
-                    t[2] === n[2] &&
-                    t[3] === n[3] &&
-                    t[4] === n[4] &&
-                    t[5] === n[5]
+                    t[0] === n[0] && t[1] === n[1] && t[2] === n[2] && t[3] === n[3] && t[4] === n[4] && t[5] === n[5]
                 );
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = t[2],
@@ -11476,16 +8655,11 @@ THE SOFTWARE.
                     l = a[4],
                     v = a[5];
                 return (
-                    Math.abs(r - h) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(h)) &&
-                    Math.abs(u - s) <=
-                        n * Math.max(1, Math.abs(u), Math.abs(s)) &&
-                    Math.abs(e - M) <=
-                        n * Math.max(1, Math.abs(e), Math.abs(M)) &&
-                    Math.abs(o - f) <=
-                        n * Math.max(1, Math.abs(o), Math.abs(f)) &&
-                    Math.abs(i - l) <=
-                        n * Math.max(1, Math.abs(i), Math.abs(l)) &&
+                    Math.abs(r - h) <= n * Math.max(1, Math.abs(r), Math.abs(h)) &&
+                    Math.abs(u - s) <= n * Math.max(1, Math.abs(u), Math.abs(s)) &&
+                    Math.abs(e - M) <= n * Math.max(1, Math.abs(e), Math.abs(M)) &&
+                    Math.abs(o - f) <= n * Math.max(1, Math.abs(o), Math.abs(f)) &&
+                    Math.abs(i - l) <= n * Math.max(1, Math.abs(i), Math.abs(l)) &&
                     Math.abs(c - v) <= n * Math.max(1, Math.abs(c), Math.abs(v))
                 );
             },
@@ -11495,13 +8669,7 @@ THE SOFTWARE.
     function m() {
         var t = new a(9);
         return (
-            a != Float32Array &&
-                ((t[1] = 0),
-                (t[2] = 0),
-                (t[3] = 0),
-                (t[5] = 0),
-                (t[6] = 0),
-                (t[7] = 0)),
+            a != Float32Array && ((t[1] = 0), (t[2] = 0), (t[3] = 0), (t[5] = 0), (t[6] = 0), (t[7] = 0)),
             (t[0] = 1),
             (t[4] = 1),
             (t[8] = 1),
@@ -11558,7 +8726,7 @@ THE SOFTWARE.
         y = x,
         q = Object.freeze({
             create: m,
-            fromMat4: function(t, n) {
+            fromMat4: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = n[1]),
@@ -11572,7 +8740,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(9);
                 return (
                     (n[0] = t[0]),
@@ -11587,7 +8755,7 @@ THE SOFTWARE.
                     n
                 );
             },
-            copy: function(t, n) {
+            copy: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = n[1]),
@@ -11601,7 +8769,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromValues: function(t, n, r, u, e, o, i, c, h) {
+            fromValues: function (t, n, r, u, e, o, i, c, h) {
                 var s = new a(9);
                 return (
                     (s[0] = t),
@@ -11616,7 +8784,7 @@ THE SOFTWARE.
                     s
                 );
             },
-            set: function(t, n, a, r, u, e, o, i, c, h) {
+            set: function (t, n, a, r, u, e, o, i, c, h) {
                 return (
                     (t[0] = n),
                     (t[1] = a),
@@ -11630,7 +8798,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            identity: function(t) {
+            identity: function (t) {
                 return (
                     (t[0] = 1),
                     (t[1] = 0),
@@ -11644,17 +8812,12 @@ THE SOFTWARE.
                     t
                 );
             },
-            transpose: function(t, n) {
+            transpose: function (t, n) {
                 if (t === n) {
                     var a = n[1],
                         r = n[2],
                         u = n[5];
-                    (t[1] = n[3]),
-                        (t[2] = n[6]),
-                        (t[3] = a),
-                        (t[5] = n[7]),
-                        (t[6] = r),
-                        (t[7] = u);
+                    (t[1] = n[3]), (t[2] = n[6]), (t[3] = a), (t[5] = n[7]), (t[6] = r), (t[7] = u);
                 } else
                     (t[0] = n[0]),
                         (t[1] = n[3]),
@@ -11667,7 +8830,7 @@ THE SOFTWARE.
                         (t[8] = n[8]);
                 return t;
             },
-            invert: function(t, n) {
+            invert: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -11695,7 +8858,7 @@ THE SOFTWARE.
                       t)
                     : null;
             },
-            adjoint: function(t, n) {
+            adjoint: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -11718,7 +8881,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            determinant: function(t) {
+            determinant: function (t) {
                 var n = t[0],
                     a = t[1],
                     r = t[2],
@@ -11728,14 +8891,10 @@ THE SOFTWARE.
                     i = t[6],
                     c = t[7],
                     h = t[8];
-                return (
-                    n * (h * e - o * c) +
-                    a * (-h * u + o * i) +
-                    r * (c * u - e * i)
-                );
+                return n * (h * e - o * c) + a * (-h * u + o * i) + r * (c * u - e * i);
             },
             multiply: d,
-            translate: function(t, n, a) {
+            translate: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11760,7 +8919,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotate: function(t, n, a) {
+            rotate: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -11785,7 +8944,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            scale: function(t, n, a) {
+            scale: function (t, n, a) {
                 var r = a[0],
                     u = a[1];
                 return (
@@ -11801,7 +8960,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromTranslation: function(t, n) {
+            fromTranslation: function (t, n) {
                 return (
                     (t[0] = 1),
                     (t[1] = 0),
@@ -11815,7 +8974,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromRotation: function(t, n) {
+            fromRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
                 return (
@@ -11831,7 +8990,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromScaling: function(t, n) {
+            fromScaling: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = 0),
@@ -11845,7 +9004,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromMat2d: function(t, n) {
+            fromMat2d: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = n[1]),
@@ -11859,7 +9018,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromQuat: function(t, n) {
+            fromQuat: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -11889,7 +9048,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            normalFromMat4: function(t, n) {
+            normalFromMat4: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -11933,7 +9092,7 @@ THE SOFTWARE.
                       t)
                     : null;
             },
-            projection: function(t, n, a) {
+            projection: function (t, n, a) {
                 return (
                     (t[0] = 2 / n),
                     (t[1] = 0),
@@ -11947,7 +9106,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            str: function(t) {
+            str: function (t) {
                 return (
                     'mat3(' +
                     t[0] +
@@ -11970,20 +9129,10 @@ THE SOFTWARE.
                     ')'
                 );
             },
-            frob: function(t) {
-                return Math.hypot(
-                    t[0],
-                    t[1],
-                    t[2],
-                    t[3],
-                    t[4],
-                    t[5],
-                    t[6],
-                    t[7],
-                    t[8]
-                );
+            frob: function (t) {
+                return Math.hypot(t[0], t[1], t[2], t[3], t[4], t[5], t[6], t[7], t[8]);
             },
-            add: function(t, n, a) {
+            add: function (t, n, a) {
                 return (
                     (t[0] = n[0] + a[0]),
                     (t[1] = n[1] + a[1]),
@@ -11998,7 +9147,7 @@ THE SOFTWARE.
                 );
             },
             subtract: x,
-            multiplyScalar: function(t, n, a) {
+            multiplyScalar: function (t, n, a) {
                 return (
                     (t[0] = n[0] * a),
                     (t[1] = n[1] * a),
@@ -12012,7 +9161,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            multiplyScalarAndAdd: function(t, n, a, r) {
+            multiplyScalarAndAdd: function (t, n, a, r) {
                 return (
                     (t[0] = n[0] + a[0] * r),
                     (t[1] = n[1] + a[1] * r),
@@ -12026,7 +9175,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            exactEquals: function(t, n) {
+            exactEquals: function (t, n) {
                 return (
                     t[0] === n[0] &&
                     t[1] === n[1] &&
@@ -12039,7 +9188,7 @@ THE SOFTWARE.
                     t[8] === n[8]
                 );
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = t[2],
@@ -12059,22 +9208,14 @@ THE SOFTWARE.
                     p = a[7],
                     y = a[8];
                 return (
-                    Math.abs(r - f) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(f)) &&
-                    Math.abs(u - l) <=
-                        n * Math.max(1, Math.abs(u), Math.abs(l)) &&
-                    Math.abs(e - v) <=
-                        n * Math.max(1, Math.abs(e), Math.abs(v)) &&
-                    Math.abs(o - b) <=
-                        n * Math.max(1, Math.abs(o), Math.abs(b)) &&
-                    Math.abs(i - m) <=
-                        n * Math.max(1, Math.abs(i), Math.abs(m)) &&
-                    Math.abs(c - d) <=
-                        n * Math.max(1, Math.abs(c), Math.abs(d)) &&
-                    Math.abs(h - x) <=
-                        n * Math.max(1, Math.abs(h), Math.abs(x)) &&
-                    Math.abs(s - p) <=
-                        n * Math.max(1, Math.abs(s), Math.abs(p)) &&
+                    Math.abs(r - f) <= n * Math.max(1, Math.abs(r), Math.abs(f)) &&
+                    Math.abs(u - l) <= n * Math.max(1, Math.abs(u), Math.abs(l)) &&
+                    Math.abs(e - v) <= n * Math.max(1, Math.abs(e), Math.abs(v)) &&
+                    Math.abs(o - b) <= n * Math.max(1, Math.abs(o), Math.abs(b)) &&
+                    Math.abs(i - m) <= n * Math.max(1, Math.abs(i), Math.abs(m)) &&
+                    Math.abs(c - d) <= n * Math.max(1, Math.abs(c), Math.abs(d)) &&
+                    Math.abs(h - x) <= n * Math.max(1, Math.abs(h), Math.abs(x)) &&
+                    Math.abs(s - p) <= n * Math.max(1, Math.abs(s), Math.abs(p)) &&
                     Math.abs(M - y) <= n * Math.max(1, Math.abs(M), Math.abs(y))
                 );
             },
@@ -12205,12 +9346,7 @@ THE SOFTWARE.
             c = n[8],
             h = n[9],
             s = n[10];
-        return (
-            (t[0] = Math.hypot(a, r, u)),
-            (t[1] = Math.hypot(e, o, i)),
-            (t[2] = Math.hypot(c, h, s)),
-            t
-        );
+        return (t[0] = Math.hypot(a, r, u)), (t[1] = Math.hypot(e, o, i)), (t[2] = Math.hypot(c, h, s)), t;
     }
     function P(t, n) {
         var r = new a(3);
@@ -12280,7 +9416,7 @@ THE SOFTWARE.
     var I = A,
         S = j,
         E = Object.freeze({
-            create: function() {
+            create: function () {
                 var t = new a(16);
                 return (
                     a != Float32Array &&
@@ -12303,7 +9439,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(16);
                 return (
                     (n[0] = t[0]),
@@ -12325,7 +9461,7 @@ THE SOFTWARE.
                     n
                 );
             },
-            copy: function(t, n) {
+            copy: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = n[1]),
@@ -12346,24 +9482,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromValues: function(
-                t,
-                n,
-                r,
-                u,
-                e,
-                o,
-                i,
-                c,
-                h,
-                s,
-                M,
-                f,
-                l,
-                v,
-                b,
-                m
-            ) {
+            fromValues: function (t, n, r, u, e, o, i, c, h, s, M, f, l, v, b, m) {
                 var d = new a(16);
                 return (
                     (d[0] = t),
@@ -12385,7 +9504,7 @@ THE SOFTWARE.
                     d
                 );
             },
-            set: function(t, n, a, r, u, e, o, i, c, h, s, M, f, l, v, b, m) {
+            set: function (t, n, a, r, u, e, o, i, c, h, s, M, f, l, v, b, m) {
                 return (
                     (t[0] = n),
                     (t[1] = a),
@@ -12407,7 +9526,7 @@ THE SOFTWARE.
                 );
             },
             identity: g,
-            transpose: function(t, n) {
+            transpose: function (t, n) {
                 if (t === n) {
                     var a = n[1],
                         r = n[2],
@@ -12446,7 +9565,7 @@ THE SOFTWARE.
                         (t[15] = n[15]);
                 return t;
             },
-            invert: function(t, n) {
+            invert: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -12497,7 +9616,7 @@ THE SOFTWARE.
                       t)
                     : null;
             },
-            adjoint: function(t, n) {
+            adjoint: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -12515,82 +9634,26 @@ THE SOFTWARE.
                     m = n[14],
                     d = n[15];
                 return (
-                    (t[0] =
-                        i * (f * d - l * m) -
-                        M * (c * d - h * m) +
-                        b * (c * l - h * f)),
-                    (t[1] = -(
-                        r * (f * d - l * m) -
-                        M * (u * d - e * m) +
-                        b * (u * l - e * f)
-                    )),
-                    (t[2] =
-                        r * (c * d - h * m) -
-                        i * (u * d - e * m) +
-                        b * (u * h - e * c)),
-                    (t[3] = -(
-                        r * (c * l - h * f) -
-                        i * (u * l - e * f) +
-                        M * (u * h - e * c)
-                    )),
-                    (t[4] = -(
-                        o * (f * d - l * m) -
-                        s * (c * d - h * m) +
-                        v * (c * l - h * f)
-                    )),
-                    (t[5] =
-                        a * (f * d - l * m) -
-                        s * (u * d - e * m) +
-                        v * (u * l - e * f)),
-                    (t[6] = -(
-                        a * (c * d - h * m) -
-                        o * (u * d - e * m) +
-                        v * (u * h - e * c)
-                    )),
-                    (t[7] =
-                        a * (c * l - h * f) -
-                        o * (u * l - e * f) +
-                        s * (u * h - e * c)),
-                    (t[8] =
-                        o * (M * d - l * b) -
-                        s * (i * d - h * b) +
-                        v * (i * l - h * M)),
-                    (t[9] = -(
-                        a * (M * d - l * b) -
-                        s * (r * d - e * b) +
-                        v * (r * l - e * M)
-                    )),
-                    (t[10] =
-                        a * (i * d - h * b) -
-                        o * (r * d - e * b) +
-                        v * (r * h - e * i)),
-                    (t[11] = -(
-                        a * (i * l - h * M) -
-                        o * (r * l - e * M) +
-                        s * (r * h - e * i)
-                    )),
-                    (t[12] = -(
-                        o * (M * m - f * b) -
-                        s * (i * m - c * b) +
-                        v * (i * f - c * M)
-                    )),
-                    (t[13] =
-                        a * (M * m - f * b) -
-                        s * (r * m - u * b) +
-                        v * (r * f - u * M)),
-                    (t[14] = -(
-                        a * (i * m - c * b) -
-                        o * (r * m - u * b) +
-                        v * (r * c - u * i)
-                    )),
-                    (t[15] =
-                        a * (i * f - c * M) -
-                        o * (r * f - u * M) +
-                        s * (r * c - u * i)),
+                    (t[0] = i * (f * d - l * m) - M * (c * d - h * m) + b * (c * l - h * f)),
+                    (t[1] = -(r * (f * d - l * m) - M * (u * d - e * m) + b * (u * l - e * f))),
+                    (t[2] = r * (c * d - h * m) - i * (u * d - e * m) + b * (u * h - e * c)),
+                    (t[3] = -(r * (c * l - h * f) - i * (u * l - e * f) + M * (u * h - e * c))),
+                    (t[4] = -(o * (f * d - l * m) - s * (c * d - h * m) + v * (c * l - h * f))),
+                    (t[5] = a * (f * d - l * m) - s * (u * d - e * m) + v * (u * l - e * f)),
+                    (t[6] = -(a * (c * d - h * m) - o * (u * d - e * m) + v * (u * h - e * c))),
+                    (t[7] = a * (c * l - h * f) - o * (u * l - e * f) + s * (u * h - e * c)),
+                    (t[8] = o * (M * d - l * b) - s * (i * d - h * b) + v * (i * l - h * M)),
+                    (t[9] = -(a * (M * d - l * b) - s * (r * d - e * b) + v * (r * l - e * M))),
+                    (t[10] = a * (i * d - h * b) - o * (r * d - e * b) + v * (r * h - e * i)),
+                    (t[11] = -(a * (i * l - h * M) - o * (r * l - e * M) + s * (r * h - e * i))),
+                    (t[12] = -(o * (M * m - f * b) - s * (i * m - c * b) + v * (i * f - c * M))),
+                    (t[13] = a * (M * m - f * b) - s * (r * m - u * b) + v * (r * f - u * M)),
+                    (t[14] = -(a * (i * m - c * b) - o * (r * m - u * b) + v * (r * c - u * i))),
+                    (t[15] = a * (i * f - c * M) - o * (r * f - u * M) + s * (r * c - u * i)),
                     t
                 );
             },
-            determinant: function(t) {
+            determinant: function (t) {
                 var n = t[0],
                     a = t[1],
                     r = t[2],
@@ -12617,7 +9680,7 @@ THE SOFTWARE.
                 );
             },
             multiply: A,
-            translate: function(t, n, a) {
+            translate: function (t, n, a) {
                 var r,
                     u,
                     e,
@@ -12670,7 +9733,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            scale: function(t, n, a) {
+            scale: function (t, n, a) {
                 var r = a[0],
                     u = a[1],
                     e = a[2];
@@ -12694,7 +9757,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotate: function(t, a, r, u) {
+            rotate: function (t, a, r, u) {
                 var e,
                     o,
                     i,
@@ -12763,14 +9826,10 @@ THE SOFTWARE.
                       (t[9] = h * z + l * P + d * j),
                       (t[10] = s * z + v * P + x * j),
                       (t[11] = M * z + b * P + p * j),
-                      a !== t &&
-                          ((t[12] = a[12]),
-                          (t[13] = a[13]),
-                          (t[14] = a[14]),
-                          (t[15] = a[15])),
+                      a !== t && ((t[12] = a[12]), (t[13] = a[13]), (t[14] = a[14]), (t[15] = a[15])),
                       t);
             },
-            rotateX: function(t, n, a) {
+            rotateX: function (t, n, a) {
                 var r = Math.sin(a),
                     u = Math.cos(a),
                     e = n[4],
@@ -12802,7 +9861,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotateY: function(t, n, a) {
+            rotateY: function (t, n, a) {
                 var r = Math.sin(a),
                     u = Math.cos(a),
                     e = n[0],
@@ -12834,7 +9893,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotateZ: function(t, n, a) {
+            rotateZ: function (t, n, a) {
                 var r = Math.sin(a),
                     u = Math.cos(a),
                     e = n[0],
@@ -12866,7 +9925,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromTranslation: function(t, n) {
+            fromTranslation: function (t, n) {
                 return (
                     (t[0] = 1),
                     (t[1] = 0),
@@ -12887,7 +9946,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromScaling: function(t, n) {
+            fromScaling: function (t, n) {
                 return (
                     (t[0] = n[0]),
                     (t[1] = 0),
@@ -12908,7 +9967,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromRotation: function(t, a, r) {
+            fromRotation: function (t, a, r) {
                 var u,
                     e,
                     o,
@@ -12941,7 +10000,7 @@ THE SOFTWARE.
                       (t[15] = 1),
                       t);
             },
-            fromXRotation: function(t, n) {
+            fromXRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
                 return (
@@ -12964,7 +10023,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromYRotation: function(t, n) {
+            fromYRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
                 return (
@@ -12987,7 +10046,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromZRotation: function(t, n) {
+            fromZRotation: function (t, n) {
                 var a = Math.sin(n),
                     r = Math.cos(n);
                 return (
@@ -13011,7 +10070,7 @@ THE SOFTWARE.
                 );
             },
             fromRotationTranslation: w,
-            fromQuat2: function(t, n) {
+            fromQuat2: function (t, n) {
                 var r = new a(3),
                     u = -n[0],
                     e = -n[1],
@@ -13037,7 +10096,7 @@ THE SOFTWARE.
             getTranslation: R,
             getScaling: z,
             getRotation: P,
-            fromRotationTranslationScale: function(t, n, a, r) {
+            fromRotationTranslationScale: function (t, n, a, r) {
                 var u = n[0],
                     e = n[1],
                     o = n[2],
@@ -13077,7 +10136,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromRotationTranslationScaleOrigin: function(t, n, a, r, u) {
+            fromRotationTranslationScaleOrigin: function (t, n, a, r, u) {
                 var e = n[0],
                     o = n[1],
                     i = n[2],
@@ -13129,7 +10188,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            fromQuat: function(t, n) {
+            fromQuat: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
@@ -13166,7 +10225,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            frustum: function(t, n, a, r, u, e, o) {
+            frustum: function (t, n, a, r, u, e, o) {
                 var i = 1 / (a - n),
                     c = 1 / (u - r),
                     h = 1 / (e - o);
@@ -13190,7 +10249,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            perspective: function(t, n, a, r, u) {
+            perspective: function (t, n, a, r, u) {
                 var e,
                     o = 1 / Math.tan(n / 2);
                 return (
@@ -13209,14 +10268,12 @@ THE SOFTWARE.
                     (t[13] = 0),
                     (t[15] = 0),
                     null != u && u !== 1 / 0
-                        ? ((e = 1 / (r - u)),
-                          (t[10] = (u + r) * e),
-                          (t[14] = 2 * u * r * e))
+                        ? ((e = 1 / (r - u)), (t[10] = (u + r) * e), (t[14] = 2 * u * r * e))
                         : ((t[10] = -1), (t[14] = -2 * r)),
                     t
                 );
             },
-            perspectiveFromFieldOfView: function(t, n, a, r) {
+            perspectiveFromFieldOfView: function (t, n, a, r) {
                 var u = Math.tan((n.upDegrees * Math.PI) / 180),
                     e = Math.tan((n.downDegrees * Math.PI) / 180),
                     o = Math.tan((n.leftDegrees * Math.PI) / 180),
@@ -13243,7 +10300,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            ortho: function(t, n, a, r, u, e, o) {
+            ortho: function (t, n, a, r, u, e, o) {
                 var i = 1 / (n - a),
                     c = 1 / (r - u),
                     h = 1 / (e - o);
@@ -13267,7 +10324,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            lookAt: function(t, a, r, u) {
+            lookAt: function (t, a, r, u) {
                 var e,
                     o,
                     i,
@@ -13287,27 +10344,19 @@ THE SOFTWARE.
                     q = r[0],
                     A = r[1],
                     w = r[2];
-                return Math.abs(b - q) < n &&
-                    Math.abs(m - A) < n &&
-                    Math.abs(d - w) < n
+                return Math.abs(b - q) < n && Math.abs(m - A) < n && Math.abs(d - w) < n
                     ? g(t)
                     : ((M = b - q),
                       (f = m - A),
                       (l = d - w),
-                      (e =
-                          p * (l *= v = 1 / Math.hypot(M, f, l)) -
-                          y * (f *= v)),
+                      (e = p * (l *= v = 1 / Math.hypot(M, f, l)) - y * (f *= v)),
                       (o = y * (M *= v) - x * l),
                       (i = x * f - p * M),
-                      (v = Math.hypot(e, o, i))
-                          ? ((e *= v = 1 / v), (o *= v), (i *= v))
-                          : ((e = 0), (o = 0), (i = 0)),
+                      (v = Math.hypot(e, o, i)) ? ((e *= v = 1 / v), (o *= v), (i *= v)) : ((e = 0), (o = 0), (i = 0)),
                       (c = f * i - l * o),
                       (h = l * e - M * i),
                       (s = M * o - f * e),
-                      (v = Math.hypot(c, h, s))
-                          ? ((c *= v = 1 / v), (h *= v), (s *= v))
-                          : ((c = 0), (h = 0), (s = 0)),
+                      (v = Math.hypot(c, h, s)) ? ((c *= v = 1 / v), (h *= v), (s *= v)) : ((c = 0), (h = 0), (s = 0)),
                       (t[0] = e),
                       (t[1] = c),
                       (t[2] = M),
@@ -13326,7 +10375,7 @@ THE SOFTWARE.
                       (t[15] = 1),
                       t);
             },
-            targetTo: function(t, n, a, r) {
+            targetTo: function (t, n, a, r) {
                 var u = n[0],
                     e = n[1],
                     o = n[2],
@@ -13342,8 +10391,7 @@ THE SOFTWARE.
                     b = h * s - i * f,
                     m = i * M - c * s;
                 return (
-                    (l = v * v + b * b + m * m) > 0 &&
-                        ((v *= l = 1 / Math.sqrt(l)), (b *= l), (m *= l)),
+                    (l = v * v + b * b + m * m) > 0 && ((v *= l = 1 / Math.sqrt(l)), (b *= l), (m *= l)),
                     (t[0] = v),
                     (t[1] = b),
                     (t[2] = m),
@@ -13363,7 +10411,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            str: function(t) {
+            str: function (t) {
                 return (
                     'mat4(' +
                     t[0] +
@@ -13400,7 +10448,7 @@ THE SOFTWARE.
                     ')'
                 );
             },
-            frob: function(t) {
+            frob: function (t) {
                 return Math.hypot(
                     t[0],
                     t[1],
@@ -13419,7 +10467,7 @@ THE SOFTWARE.
                     t[15]
                 );
             },
-            add: function(t, n, a) {
+            add: function (t, n, a) {
                 return (
                     (t[0] = n[0] + a[0]),
                     (t[1] = n[1] + a[1]),
@@ -13441,7 +10489,7 @@ THE SOFTWARE.
                 );
             },
             subtract: j,
-            multiplyScalar: function(t, n, a) {
+            multiplyScalar: function (t, n, a) {
                 return (
                     (t[0] = n[0] * a),
                     (t[1] = n[1] * a),
@@ -13462,7 +10510,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            multiplyScalarAndAdd: function(t, n, a, r) {
+            multiplyScalarAndAdd: function (t, n, a, r) {
                 return (
                     (t[0] = n[0] + a[0] * r),
                     (t[1] = n[1] + a[1] * r),
@@ -13483,7 +10531,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            exactEquals: function(t, n) {
+            exactEquals: function (t, n) {
                 return (
                     t[0] === n[0] &&
                     t[1] === n[1] &&
@@ -13503,7 +10551,7 @@ THE SOFTWARE.
                     t[15] === n[15]
                 );
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = t[2],
@@ -13537,36 +10585,21 @@ THE SOFTWARE.
                     T = a[14],
                     D = a[15];
                 return (
-                    Math.abs(r - p) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(p)) &&
-                    Math.abs(u - y) <=
-                        n * Math.max(1, Math.abs(u), Math.abs(y)) &&
-                    Math.abs(e - q) <=
-                        n * Math.max(1, Math.abs(e), Math.abs(q)) &&
-                    Math.abs(o - g) <=
-                        n * Math.max(1, Math.abs(o), Math.abs(g)) &&
-                    Math.abs(i - A) <=
-                        n * Math.max(1, Math.abs(i), Math.abs(A)) &&
-                    Math.abs(c - w) <=
-                        n * Math.max(1, Math.abs(c), Math.abs(w)) &&
-                    Math.abs(h - R) <=
-                        n * Math.max(1, Math.abs(h), Math.abs(R)) &&
-                    Math.abs(s - z) <=
-                        n * Math.max(1, Math.abs(s), Math.abs(z)) &&
-                    Math.abs(M - P) <=
-                        n * Math.max(1, Math.abs(M), Math.abs(P)) &&
-                    Math.abs(f - j) <=
-                        n * Math.max(1, Math.abs(f), Math.abs(j)) &&
-                    Math.abs(l - I) <=
-                        n * Math.max(1, Math.abs(l), Math.abs(I)) &&
-                    Math.abs(v - S) <=
-                        n * Math.max(1, Math.abs(v), Math.abs(S)) &&
-                    Math.abs(b - E) <=
-                        n * Math.max(1, Math.abs(b), Math.abs(E)) &&
-                    Math.abs(m - O) <=
-                        n * Math.max(1, Math.abs(m), Math.abs(O)) &&
-                    Math.abs(d - T) <=
-                        n * Math.max(1, Math.abs(d), Math.abs(T)) &&
+                    Math.abs(r - p) <= n * Math.max(1, Math.abs(r), Math.abs(p)) &&
+                    Math.abs(u - y) <= n * Math.max(1, Math.abs(u), Math.abs(y)) &&
+                    Math.abs(e - q) <= n * Math.max(1, Math.abs(e), Math.abs(q)) &&
+                    Math.abs(o - g) <= n * Math.max(1, Math.abs(o), Math.abs(g)) &&
+                    Math.abs(i - A) <= n * Math.max(1, Math.abs(i), Math.abs(A)) &&
+                    Math.abs(c - w) <= n * Math.max(1, Math.abs(c), Math.abs(w)) &&
+                    Math.abs(h - R) <= n * Math.max(1, Math.abs(h), Math.abs(R)) &&
+                    Math.abs(s - z) <= n * Math.max(1, Math.abs(s), Math.abs(z)) &&
+                    Math.abs(M - P) <= n * Math.max(1, Math.abs(M), Math.abs(P)) &&
+                    Math.abs(f - j) <= n * Math.max(1, Math.abs(f), Math.abs(j)) &&
+                    Math.abs(l - I) <= n * Math.max(1, Math.abs(l), Math.abs(I)) &&
+                    Math.abs(v - S) <= n * Math.max(1, Math.abs(v), Math.abs(S)) &&
+                    Math.abs(b - E) <= n * Math.max(1, Math.abs(b), Math.abs(E)) &&
+                    Math.abs(m - O) <= n * Math.max(1, Math.abs(m), Math.abs(O)) &&
+                    Math.abs(d - T) <= n * Math.max(1, Math.abs(d), Math.abs(T)) &&
                     Math.abs(x - D) <= n * Math.max(1, Math.abs(x), Math.abs(D))
                 );
             },
@@ -13588,19 +10621,13 @@ THE SOFTWARE.
         return (u[0] = t), (u[1] = n), (u[2] = r), u;
     }
     function F(t, n, a) {
-        return (
-            (t[0] = n[0] - a[0]), (t[1] = n[1] - a[1]), (t[2] = n[2] - a[2]), t
-        );
+        return (t[0] = n[0] - a[0]), (t[1] = n[1] - a[1]), (t[2] = n[2] - a[2]), t;
     }
     function L(t, n, a) {
-        return (
-            (t[0] = n[0] * a[0]), (t[1] = n[1] * a[1]), (t[2] = n[2] * a[2]), t
-        );
+        return (t[0] = n[0] * a[0]), (t[1] = n[1] * a[1]), (t[2] = n[2] * a[2]), t;
     }
     function V(t, n, a) {
-        return (
-            (t[0] = n[0] / a[0]), (t[1] = n[1] / a[1]), (t[2] = n[2] / a[2]), t
-        );
+        return (t[0] = n[0] / a[0]), (t[1] = n[1] / a[1]), (t[2] = n[2] / a[2]), t;
     }
     function Q(t, n) {
         var a = n[0] - t[0],
@@ -13625,13 +10652,7 @@ THE SOFTWARE.
             r = n[1],
             u = n[2],
             e = a * a + r * r + u * u;
-        return (
-            e > 0 && (e = 1 / Math.sqrt(e)),
-            (t[0] = n[0] * e),
-            (t[1] = n[1] * e),
-            (t[2] = n[2] * e),
-            t
-        );
+        return e > 0 && (e = 1 / Math.sqrt(e)), (t[0] = n[0] * e), (t[1] = n[1] * e), (t[2] = n[2] * e), t;
     }
     function _(t, n) {
         return t[0] * n[0] + t[1] * n[1] + t[2] * n[2];
@@ -13643,12 +10664,7 @@ THE SOFTWARE.
             o = a[0],
             i = a[1],
             c = a[2];
-        return (
-            (t[0] = u * c - e * i),
-            (t[1] = e * o - r * c),
-            (t[2] = r * i - u * o),
-            t
-        );
+        return (t[0] = u * c - e * i), (t[1] = e * o - r * c), (t[2] = r * i - u * o), t;
     }
     var N,
         k = F,
@@ -13660,16 +10676,9 @@ THE SOFTWARE.
         J = X,
         K =
             ((N = O()),
-            function(t, n, a, r, u, e) {
+            function (t, n, a, r, u, e) {
                 var o, i;
-                for (
-                    n || (n = 3),
-                        a || (a = 0),
-                        i = r ? Math.min(r * n + a, t.length) : t.length,
-                        o = a;
-                    o < i;
-                    o += n
-                )
+                for (n || (n = 3), a || (a = 0), i = r ? Math.min(r * n + a, t.length) : t.length, o = a; o < i; o += n)
                     (N[0] = t[o]),
                         (N[1] = t[o + 1]),
                         (N[2] = t[o + 2]),
@@ -13681,108 +10690,64 @@ THE SOFTWARE.
             }),
         $ = Object.freeze({
             create: O,
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(3);
                 return (n[0] = t[0]), (n[1] = t[1]), (n[2] = t[2]), n;
             },
             length: T,
             fromValues: D,
-            copy: function(t, n) {
+            copy: function (t, n) {
                 return (t[0] = n[0]), (t[1] = n[1]), (t[2] = n[2]), t;
             },
-            set: function(t, n, a, r) {
+            set: function (t, n, a, r) {
                 return (t[0] = n), (t[1] = a), (t[2] = r), t;
             },
-            add: function(t, n, a) {
-                return (
-                    (t[0] = n[0] + a[0]),
-                    (t[1] = n[1] + a[1]),
-                    (t[2] = n[2] + a[2]),
-                    t
-                );
+            add: function (t, n, a) {
+                return (t[0] = n[0] + a[0]), (t[1] = n[1] + a[1]), (t[2] = n[2] + a[2]), t;
             },
             subtract: F,
             multiply: L,
             divide: V,
-            ceil: function(t, n) {
-                return (
-                    (t[0] = Math.ceil(n[0])),
-                    (t[1] = Math.ceil(n[1])),
-                    (t[2] = Math.ceil(n[2])),
-                    t
-                );
+            ceil: function (t, n) {
+                return (t[0] = Math.ceil(n[0])), (t[1] = Math.ceil(n[1])), (t[2] = Math.ceil(n[2])), t;
             },
-            floor: function(t, n) {
-                return (
-                    (t[0] = Math.floor(n[0])),
-                    (t[1] = Math.floor(n[1])),
-                    (t[2] = Math.floor(n[2])),
-                    t
-                );
+            floor: function (t, n) {
+                return (t[0] = Math.floor(n[0])), (t[1] = Math.floor(n[1])), (t[2] = Math.floor(n[2])), t;
             },
-            min: function(t, n, a) {
-                return (
-                    (t[0] = Math.min(n[0], a[0])),
-                    (t[1] = Math.min(n[1], a[1])),
-                    (t[2] = Math.min(n[2], a[2])),
-                    t
-                );
+            min: function (t, n, a) {
+                return (t[0] = Math.min(n[0], a[0])), (t[1] = Math.min(n[1], a[1])), (t[2] = Math.min(n[2], a[2])), t;
             },
-            max: function(t, n, a) {
-                return (
-                    (t[0] = Math.max(n[0], a[0])),
-                    (t[1] = Math.max(n[1], a[1])),
-                    (t[2] = Math.max(n[2], a[2])),
-                    t
-                );
+            max: function (t, n, a) {
+                return (t[0] = Math.max(n[0], a[0])), (t[1] = Math.max(n[1], a[1])), (t[2] = Math.max(n[2], a[2])), t;
             },
-            round: function(t, n) {
-                return (
-                    (t[0] = Math.round(n[0])),
-                    (t[1] = Math.round(n[1])),
-                    (t[2] = Math.round(n[2])),
-                    t
-                );
+            round: function (t, n) {
+                return (t[0] = Math.round(n[0])), (t[1] = Math.round(n[1])), (t[2] = Math.round(n[2])), t;
             },
-            scale: function(t, n, a) {
-                return (
-                    (t[0] = n[0] * a), (t[1] = n[1] * a), (t[2] = n[2] * a), t
-                );
+            scale: function (t, n, a) {
+                return (t[0] = n[0] * a), (t[1] = n[1] * a), (t[2] = n[2] * a), t;
             },
-            scaleAndAdd: function(t, n, a, r) {
-                return (
-                    (t[0] = n[0] + a[0] * r),
-                    (t[1] = n[1] + a[1] * r),
-                    (t[2] = n[2] + a[2] * r),
-                    t
-                );
+            scaleAndAdd: function (t, n, a, r) {
+                return (t[0] = n[0] + a[0] * r), (t[1] = n[1] + a[1] * r), (t[2] = n[2] + a[2] * r), t;
             },
             distance: Q,
             squaredDistance: Y,
             squaredLength: X,
-            negate: function(t, n) {
+            negate: function (t, n) {
                 return (t[0] = -n[0]), (t[1] = -n[1]), (t[2] = -n[2]), t;
             },
-            inverse: function(t, n) {
-                return (
-                    (t[0] = 1 / n[0]), (t[1] = 1 / n[1]), (t[2] = 1 / n[2]), t
-                );
+            inverse: function (t, n) {
+                return (t[0] = 1 / n[0]), (t[1] = 1 / n[1]), (t[2] = 1 / n[2]), t;
             },
             normalize: Z,
             dot: _,
             cross: B,
-            lerp: function(t, n, a, r) {
+            lerp: function (t, n, a, r) {
                 var u = n[0],
                     e = n[1],
                     o = n[2];
-                return (
-                    (t[0] = u + r * (a[0] - u)),
-                    (t[1] = e + r * (a[1] - e)),
-                    (t[2] = o + r * (a[2] - o)),
-                    t
-                );
+                return (t[0] = u + r * (a[0] - u)), (t[1] = e + r * (a[1] - e)), (t[2] = o + r * (a[2] - o)), t;
             },
-            hermite: function(t, n, a, r, u, e) {
+            hermite: function (t, n, a, r, u, e) {
                 var o = e * e,
                     i = o * (2 * e - 3) + 1,
                     c = o * (e - 2) + e,
@@ -13795,7 +10760,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            bezier: function(t, n, a, r, u, e) {
+            bezier: function (t, n, a, r, u, e) {
                 var o = 1 - e,
                     i = o * o,
                     c = e * e,
@@ -13810,19 +10775,14 @@ THE SOFTWARE.
                     t
                 );
             },
-            random: function(t, n) {
+            random: function (t, n) {
                 n = n || 1;
                 var a = 2 * r() * Math.PI,
                     u = 2 * r() - 1,
                     e = Math.sqrt(1 - u * u) * n;
-                return (
-                    (t[0] = Math.cos(a) * e),
-                    (t[1] = Math.sin(a) * e),
-                    (t[2] = u * n),
-                    t
-                );
+                return (t[0] = Math.cos(a) * e), (t[1] = Math.sin(a) * e), (t[2] = u * n), t;
             },
-            transformMat4: function(t, n, a) {
+            transformMat4: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -13835,7 +10795,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            transformMat3: function(t, n, a) {
+            transformMat3: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2];
@@ -13846,7 +10806,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            transformQuat: function(t, n, a) {
+            transformQuat: function (t, n, a) {
                 var r = a[0],
                     u = a[1],
                     e = a[2],
@@ -13874,7 +10834,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotateX: function(t, n, a, r) {
+            rotateX: function (t, n, a, r) {
                 var u = [],
                     e = [];
                 return (
@@ -13890,7 +10850,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotateY: function(t, n, a, r) {
+            rotateY: function (t, n, a, r) {
                 var u = [],
                     e = [];
                 return (
@@ -13906,7 +10866,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            rotateZ: function(t, n, a, r) {
+            rotateZ: function (t, n, a, r) {
                 var u = [],
                     e = [];
                 return (
@@ -13922,23 +10882,23 @@ THE SOFTWARE.
                     t
                 );
             },
-            angle: function(t, n) {
+            angle: function (t, n) {
                 var a = D(t[0], t[1], t[2]),
                     r = D(n[0], n[1], n[2]);
                 Z(a, a), Z(r, r);
                 var u = _(a, r);
                 return u > 1 ? 0 : u < -1 ? Math.PI : Math.acos(u);
             },
-            zero: function(t) {
+            zero: function (t) {
                 return (t[0] = 0), (t[1] = 0), (t[2] = 0), t;
             },
-            str: function(t) {
+            str: function (t) {
                 return 'vec3(' + t[0] + ', ' + t[1] + ', ' + t[2] + ')';
             },
-            exactEquals: function(t, n) {
+            exactEquals: function (t, n) {
                 return t[0] === n[0] && t[1] === n[1] && t[2] === n[2];
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = t[2],
@@ -13946,10 +10906,8 @@ THE SOFTWARE.
                     i = a[1],
                     c = a[2];
                 return (
-                    Math.abs(r - o) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(o)) &&
-                    Math.abs(u - i) <=
-                        n * Math.max(1, Math.abs(u), Math.abs(i)) &&
+                    Math.abs(r - o) <= n * Math.max(1, Math.abs(r), Math.abs(o)) &&
+                    Math.abs(u - i) <= n * Math.max(1, Math.abs(u), Math.abs(i)) &&
                     Math.abs(e - c) <= n * Math.max(1, Math.abs(e), Math.abs(c))
                 );
             },
@@ -13964,11 +10922,7 @@ THE SOFTWARE.
         });
     function tt() {
         var t = new a(4);
-        return (
-            a != Float32Array &&
-                ((t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 0)),
-            t
-        );
+        return a != Float32Array && ((t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 0)), t;
     }
     function nt(t) {
         var n = new a(4);
@@ -13985,49 +10939,19 @@ THE SOFTWARE.
         return (t[0] = n), (t[1] = a), (t[2] = r), (t[3] = u), t;
     }
     function et(t, n, a) {
-        return (
-            (t[0] = n[0] + a[0]),
-            (t[1] = n[1] + a[1]),
-            (t[2] = n[2] + a[2]),
-            (t[3] = n[3] + a[3]),
-            t
-        );
+        return (t[0] = n[0] + a[0]), (t[1] = n[1] + a[1]), (t[2] = n[2] + a[2]), (t[3] = n[3] + a[3]), t;
     }
     function ot(t, n, a) {
-        return (
-            (t[0] = n[0] - a[0]),
-            (t[1] = n[1] - a[1]),
-            (t[2] = n[2] - a[2]),
-            (t[3] = n[3] - a[3]),
-            t
-        );
+        return (t[0] = n[0] - a[0]), (t[1] = n[1] - a[1]), (t[2] = n[2] - a[2]), (t[3] = n[3] - a[3]), t;
     }
     function it(t, n, a) {
-        return (
-            (t[0] = n[0] * a[0]),
-            (t[1] = n[1] * a[1]),
-            (t[2] = n[2] * a[2]),
-            (t[3] = n[3] * a[3]),
-            t
-        );
+        return (t[0] = n[0] * a[0]), (t[1] = n[1] * a[1]), (t[2] = n[2] * a[2]), (t[3] = n[3] * a[3]), t;
     }
     function ct(t, n, a) {
-        return (
-            (t[0] = n[0] / a[0]),
-            (t[1] = n[1] / a[1]),
-            (t[2] = n[2] / a[2]),
-            (t[3] = n[3] / a[3]),
-            t
-        );
+        return (t[0] = n[0] / a[0]), (t[1] = n[1] / a[1]), (t[2] = n[2] / a[2]), (t[3] = n[3] / a[3]), t;
     }
     function ht(t, n, a) {
-        return (
-            (t[0] = n[0] * a),
-            (t[1] = n[1] * a),
-            (t[2] = n[2] * a),
-            (t[3] = n[3] * a),
-            t
-        );
+        return (t[0] = n[0] * a), (t[1] = n[1] * a), (t[2] = n[2] * a), (t[3] = n[3] * a), t;
     }
     function st(t, n) {
         var a = n[0] - t[0],
@@ -14063,14 +10987,7 @@ THE SOFTWARE.
             u = n[2],
             e = n[3],
             o = a * a + r * r + u * u + e * e;
-        return (
-            o > 0 && (o = 1 / Math.sqrt(o)),
-            (t[0] = a * o),
-            (t[1] = r * o),
-            (t[2] = u * o),
-            (t[3] = e * o),
-            t
-        );
+        return o > 0 && (o = 1 / Math.sqrt(o)), (t[0] = a * o), (t[1] = r * o), (t[2] = u * o), (t[3] = e * o), t;
     }
     function bt(t, n) {
         return t[0] * n[0] + t[1] * n[1] + t[2] * n[2] + t[3] * n[3];
@@ -14114,18 +11031,11 @@ THE SOFTWARE.
         At = Mt,
         wt = ft,
         Rt = lt,
-        zt = (function() {
+        zt = (function () {
             var t = tt();
-            return function(n, a, r, u, e, o) {
+            return function (n, a, r, u, e, o) {
                 var i, c;
-                for (
-                    a || (a = 4),
-                        r || (r = 0),
-                        c = u ? Math.min(u * a + r, n.length) : n.length,
-                        i = r;
-                    i < c;
-                    i += a
-                )
+                for (a || (a = 4), r || (r = 0), c = u ? Math.min(u * a + r, n.length) : n.length, i = r; i < c; i += a)
                     (t[0] = n[i]),
                         (t[1] = n[i + 1]),
                         (t[2] = n[i + 2]),
@@ -14148,7 +11058,7 @@ THE SOFTWARE.
             subtract: ot,
             multiply: it,
             divide: ct,
-            ceil: function(t, n) {
+            ceil: function (t, n) {
                 return (
                     (t[0] = Math.ceil(n[0])),
                     (t[1] = Math.ceil(n[1])),
@@ -14157,7 +11067,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            floor: function(t, n) {
+            floor: function (t, n) {
                 return (
                     (t[0] = Math.floor(n[0])),
                     (t[1] = Math.floor(n[1])),
@@ -14166,7 +11076,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            min: function(t, n, a) {
+            min: function (t, n, a) {
                 return (
                     (t[0] = Math.min(n[0], a[0])),
                     (t[1] = Math.min(n[1], a[1])),
@@ -14175,7 +11085,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            max: function(t, n, a) {
+            max: function (t, n, a) {
                 return (
                     (t[0] = Math.max(n[0], a[0])),
                     (t[1] = Math.max(n[1], a[1])),
@@ -14184,7 +11094,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            round: function(t, n) {
+            round: function (t, n) {
                 return (
                     (t[0] = Math.round(n[0])),
                     (t[1] = Math.round(n[1])),
@@ -14194,7 +11104,7 @@ THE SOFTWARE.
                 );
             },
             scale: ht,
-            scaleAndAdd: function(t, n, a, r) {
+            scaleAndAdd: function (t, n, a, r) {
                 return (
                     (t[0] = n[0] + a[0] * r),
                     (t[1] = n[1] + a[1] * r),
@@ -14207,27 +11117,15 @@ THE SOFTWARE.
             squaredDistance: Mt,
             length: ft,
             squaredLength: lt,
-            negate: function(t, n) {
-                return (
-                    (t[0] = -n[0]),
-                    (t[1] = -n[1]),
-                    (t[2] = -n[2]),
-                    (t[3] = -n[3]),
-                    t
-                );
+            negate: function (t, n) {
+                return (t[0] = -n[0]), (t[1] = -n[1]), (t[2] = -n[2]), (t[3] = -n[3]), t;
             },
-            inverse: function(t, n) {
-                return (
-                    (t[0] = 1 / n[0]),
-                    (t[1] = 1 / n[1]),
-                    (t[2] = 1 / n[2]),
-                    (t[3] = 1 / n[3]),
-                    t
-                );
+            inverse: function (t, n) {
+                return (t[0] = 1 / n[0]), (t[1] = 1 / n[1]), (t[2] = 1 / n[2]), (t[3] = 1 / n[3]), t;
             },
             normalize: vt,
             dot: bt,
-            cross: function(t, n, a, r) {
+            cross: function (t, n, a, r) {
                 var u = a[0] * r[1] - a[1] * r[0],
                     e = a[0] * r[2] - a[2] * r[0],
                     o = a[0] * r[3] - a[3] * r[0],
@@ -14247,7 +11145,7 @@ THE SOFTWARE.
                 );
             },
             lerp: mt,
-            random: function(t, n) {
+            random: function (t, n) {
                 var a, u, e, o, i, c;
                 n = n || 1;
                 do {
@@ -14257,15 +11155,9 @@ THE SOFTWARE.
                     c = (e = 2 * r() - 1) * e + (o = 2 * r() - 1) * o;
                 } while (c >= 1);
                 var h = Math.sqrt((1 - i) / c);
-                return (
-                    (t[0] = n * a),
-                    (t[1] = n * u),
-                    (t[2] = n * e * h),
-                    (t[3] = n * o * h),
-                    t
-                );
+                return (t[0] = n * a), (t[1] = n * u), (t[2] = n * e * h), (t[3] = n * o * h), t;
             },
-            transformMat4: function(t, n, a) {
+            transformMat4: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -14278,7 +11170,7 @@ THE SOFTWARE.
                     t
                 );
             },
-            transformQuat: function(t, n, a) {
+            transformQuat: function (t, n, a) {
                 var r = n[0],
                     u = n[1],
                     e = n[2],
@@ -14298,21 +11190,11 @@ THE SOFTWARE.
                     t
                 );
             },
-            zero: function(t) {
+            zero: function (t) {
                 return (t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 0), t;
             },
-            str: function(t) {
-                return (
-                    'vec4(' +
-                    t[0] +
-                    ', ' +
-                    t[1] +
-                    ', ' +
-                    t[2] +
-                    ', ' +
-                    t[3] +
-                    ')'
-                );
+            str: function (t) {
+                return 'vec4(' + t[0] + ', ' + t[1] + ', ' + t[2] + ', ' + t[3] + ')';
             },
             exactEquals: dt,
             equals: xt,
@@ -14327,22 +11209,12 @@ THE SOFTWARE.
         });
     function jt() {
         var t = new a(4);
-        return (
-            a != Float32Array && ((t[0] = 0), (t[1] = 0), (t[2] = 0)),
-            (t[3] = 1),
-            t
-        );
+        return a != Float32Array && ((t[0] = 0), (t[1] = 0), (t[2] = 0)), (t[3] = 1), t;
     }
     function It(t, n, a) {
         a *= 0.5;
         var r = Math.sin(a);
-        return (
-            (t[0] = r * n[0]),
-            (t[1] = r * n[1]),
-            (t[2] = r * n[2]),
-            (t[3] = Math.cos(a)),
-            t
-        );
+        return (t[0] = r * n[0]), (t[1] = r * n[1]), (t[2] = r * n[2]), (t[3] = Math.cos(a)), t;
     }
     function St(t, n, a) {
         var r = n[0],
@@ -14369,13 +11241,7 @@ THE SOFTWARE.
             o = n[3],
             i = Math.sin(a),
             c = Math.cos(a);
-        return (
-            (t[0] = r * c + o * i),
-            (t[1] = u * c + e * i),
-            (t[2] = e * c - u * i),
-            (t[3] = o * c - r * i),
-            t
-        );
+        return (t[0] = r * c + o * i), (t[1] = u * c + e * i), (t[2] = e * c - u * i), (t[3] = o * c - r * i), t;
     }
     function Ot(t, n, a) {
         a *= 0.5;
@@ -14385,13 +11251,7 @@ THE SOFTWARE.
             o = n[3],
             i = Math.sin(a),
             c = Math.cos(a);
-        return (
-            (t[0] = r * c - e * i),
-            (t[1] = u * c + o * i),
-            (t[2] = e * c + r * i),
-            (t[3] = o * c - u * i),
-            t
-        );
+        return (t[0] = r * c - e * i), (t[1] = u * c + o * i), (t[2] = e * c + r * i), (t[3] = o * c - u * i), t;
     }
     function Tt(t, n, a) {
         a *= 0.5;
@@ -14401,13 +11261,7 @@ THE SOFTWARE.
             o = n[3],
             i = Math.sin(a),
             c = Math.cos(a);
-        return (
-            (t[0] = r * c + u * i),
-            (t[1] = u * c - r * i),
-            (t[2] = e * c + o * i),
-            (t[3] = o * c - e * i),
-            t
-        );
+        return (t[0] = r * c + u * i), (t[1] = u * c - r * i), (t[2] = e * c + o * i), (t[3] = o * c - e * i), t;
     }
     function Dt(t, n) {
         var a = n[0],
@@ -14417,13 +11271,7 @@ THE SOFTWARE.
             o = Math.sqrt(a * a + r * r + u * u),
             i = Math.exp(e),
             c = o > 0 ? (i * Math.sin(o)) / o : 0;
-        return (
-            (t[0] = a * c),
-            (t[1] = r * c),
-            (t[2] = u * c),
-            (t[3] = i * Math.cos(o)),
-            t
-        );
+        return (t[0] = a * c), (t[1] = r * c), (t[2] = u * c), (t[3] = i * Math.cos(o)), t;
     }
     function Ft(t, n) {
         var a = n[0],
@@ -14433,11 +11281,7 @@ THE SOFTWARE.
             o = Math.sqrt(a * a + r * r + u * u),
             i = o > 0 ? Math.atan2(o, e) / o : 0;
         return (
-            (t[0] = a * i),
-            (t[1] = r * i),
-            (t[2] = u * i),
-            (t[3] = 0.5 * Math.log(a * a + r * r + u * u + e * e)),
-            t
+            (t[0] = a * i), (t[1] = r * i), (t[2] = u * i), (t[3] = 0.5 * Math.log(a * a + r * r + u * u + e * e)), t
         );
     }
     function Lt(t, a, r, u) {
@@ -14455,13 +11299,9 @@ THE SOFTWARE.
             m = r[2],
             d = r[3];
         return (
-            (o = s * v + M * b + f * m + l * d) < 0 &&
-                ((o = -o), (v = -v), (b = -b), (m = -m), (d = -d)),
+            (o = s * v + M * b + f * m + l * d) < 0 && ((o = -o), (v = -v), (b = -b), (m = -m), (d = -d)),
             1 - o > n
-                ? ((e = Math.acos(o)),
-                  (i = Math.sin(e)),
-                  (c = Math.sin((1 - u) * e) / i),
-                  (h = Math.sin(u * e) / i))
+                ? ((e = Math.acos(o)), (i = Math.sin(e)), (c = Math.sin((1 - u) * e) / i), (h = Math.sin(u * e) / i))
                 : ((c = 1 - u), (h = u)),
             (t[0] = c * s + h * v),
             (t[1] = c * M + h * b),
@@ -14520,37 +11360,23 @@ THE SOFTWARE.
             ((Qt = O()),
             (Yt = D(1, 0, 0)),
             (Xt = D(0, 1, 0)),
-            function(t, n, a) {
+            function (t, n, a) {
                 var r = _(n, a);
                 return r < -0.999999
-                    ? (B(Qt, Yt, n),
-                      H(Qt) < 1e-6 && B(Qt, Xt, n),
-                      Z(Qt, Qt),
-                      It(t, Qt, Math.PI),
-                      t)
+                    ? (B(Qt, Yt, n), H(Qt) < 1e-6 && B(Qt, Xt, n), Z(Qt, Qt), It(t, Qt, Math.PI), t)
                     : r > 0.999999
                     ? ((t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 1), t)
-                    : (B(Qt, n, a),
-                      (t[0] = Qt[0]),
-                      (t[1] = Qt[1]),
-                      (t[2] = Qt[2]),
-                      (t[3] = 1 + r),
-                      rn(t, t));
+                    : (B(Qt, n, a), (t[0] = Qt[0]), (t[1] = Qt[1]), (t[2] = Qt[2]), (t[3] = 1 + r), rn(t, t));
             }),
         cn =
             ((Zt = jt()),
             (_t = jt()),
-            function(t, n, a, r, u, e) {
-                return (
-                    Lt(Zt, n, u, e),
-                    Lt(_t, a, r, e),
-                    Lt(t, Zt, _t, 2 * e * (1 - e)),
-                    t
-                );
+            function (t, n, a, r, u, e) {
+                return Lt(Zt, n, u, e), Lt(_t, a, r, e), Lt(t, Zt, _t, 2 * e * (1 - e)), t;
             }),
         hn =
             ((Bt = m()),
-            function(t, n, a, r) {
+            function (t, n, a, r) {
                 return (
                     (Bt[0] = a[0]),
                     (Bt[3] = a[1]),
@@ -14566,23 +11392,21 @@ THE SOFTWARE.
             }),
         sn = Object.freeze({
             create: jt,
-            identity: function(t) {
+            identity: function (t) {
                 return (t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 1), t;
             },
             setAxisAngle: It,
-            getAxisAngle: function(t, a) {
+            getAxisAngle: function (t, a) {
                 var r = 2 * Math.acos(a[3]),
                     u = Math.sin(r / 2);
                 return (
                     u > n
-                        ? ((t[0] = a[0] / u),
-                          (t[1] = a[1] / u),
-                          (t[2] = a[2] / u))
+                        ? ((t[0] = a[0] / u), (t[1] = a[1] / u), (t[2] = a[2] / u))
                         : ((t[0] = 1), (t[1] = 0), (t[2] = 0)),
                     r
                 );
             },
-            getAngle: function(t, n) {
+            getAngle: function (t, n) {
                 var a = Jt(t, n);
                 return Math.acos(2 * a * a - 1);
             },
@@ -14590,25 +11414,19 @@ THE SOFTWARE.
             rotateX: Et,
             rotateY: Ot,
             rotateZ: Tt,
-            calculateW: function(t, n) {
+            calculateW: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2];
-                return (
-                    (t[0] = a),
-                    (t[1] = r),
-                    (t[2] = u),
-                    (t[3] = Math.sqrt(Math.abs(1 - a * a - r * r - u * u))),
-                    t
-                );
+                return (t[0] = a), (t[1] = r), (t[2] = u), (t[3] = Math.sqrt(Math.abs(1 - a * a - r * r - u * u))), t;
             },
             exp: Dt,
             ln: Ft,
-            pow: function(t, n, a) {
+            pow: function (t, n, a) {
                 return Ft(t, n), Ht(t, t, a), Dt(t, t), t;
             },
             slerp: Lt,
-            random: function(t) {
+            random: function (t) {
                 var n = r(),
                     a = r(),
                     u = r(),
@@ -14622,32 +11440,20 @@ THE SOFTWARE.
                     t
                 );
             },
-            invert: function(t, n) {
+            invert: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = n[2],
                     e = n[3],
                     o = a * a + r * r + u * u + e * e,
                     i = o ? 1 / o : 0;
-                return (
-                    (t[0] = -a * i),
-                    (t[1] = -r * i),
-                    (t[2] = -u * i),
-                    (t[3] = e * i),
-                    t
-                );
+                return (t[0] = -a * i), (t[1] = -r * i), (t[2] = -u * i), (t[3] = e * i), t;
             },
-            conjugate: function(t, n) {
-                return (
-                    (t[0] = -n[0]),
-                    (t[1] = -n[1]),
-                    (t[2] = -n[2]),
-                    (t[3] = n[3]),
-                    t
-                );
+            conjugate: function (t, n) {
+                return (t[0] = -n[0]), (t[1] = -n[1]), (t[2] = -n[2]), (t[3] = n[3]), t;
             },
             fromMat3: Vt,
-            fromEuler: function(t, n, a, r) {
+            fromEuler: function (t, n, a, r) {
                 var u = (0.5 * Math.PI) / 180;
                 (n *= u), (a *= u), (r *= u);
                 var e = Math.sin(n),
@@ -14664,18 +11470,8 @@ THE SOFTWARE.
                     t
                 );
             },
-            str: function(t) {
-                return (
-                    'quat(' +
-                    t[0] +
-                    ', ' +
-                    t[1] +
-                    ', ' +
-                    t[2] +
-                    ', ' +
-                    t[3] +
-                    ')'
-                );
+            str: function (t) {
+                return 'quat(' + t[0] + ', ' + t[1] + ', ' + t[2] + ', ' + t[3] + ')';
             },
             clone: Nt,
             fromValues: kt,
@@ -14754,14 +11550,10 @@ THE SOFTWARE.
             (t[1] = u * x + o * m + e * b - r * d),
             (t[2] = e * x + o * d + r * m - u * b),
             (t[3] = o * x - r * b - u * m - e * d),
-            (t[4] =
-                r * s + o * i + u * h - e * c + M * x + v * b + f * d - l * m),
-            (t[5] =
-                u * s + o * c + e * i - r * h + f * x + v * m + l * b - M * d),
-            (t[6] =
-                e * s + o * h + r * c - u * i + l * x + v * d + M * m - f * b),
-            (t[7] =
-                o * s - r * i - u * c - e * h + v * x - M * b - f * m - l * d),
+            (t[4] = r * s + o * i + u * h - e * c + M * x + v * b + f * d - l * m),
+            (t[5] = u * s + o * c + e * i - r * h + f * x + v * m + l * b - M * d),
+            (t[6] = e * s + o * h + r * c - u * i + l * x + v * d + M * m - f * b),
+            (t[7] = o * s - r * i - u * c - e * h + v * x - M * b - f * m - l * d),
             t
         );
     }
@@ -14772,22 +11564,16 @@ THE SOFTWARE.
         yn = nn,
         qn = yn;
     var gn = Object.freeze({
-        create: function() {
+        create: function () {
             var t = new a(8);
             return (
                 a != Float32Array &&
-                    ((t[0] = 0),
-                    (t[1] = 0),
-                    (t[2] = 0),
-                    (t[4] = 0),
-                    (t[5] = 0),
-                    (t[6] = 0),
-                    (t[7] = 0)),
+                    ((t[0] = 0), (t[1] = 0), (t[2] = 0), (t[4] = 0), (t[5] = 0), (t[6] = 0), (t[7] = 0)),
                 (t[3] = 1),
                 t
             );
         },
-        clone: function(t) {
+        clone: function (t) {
             var n = new a(8);
             return (
                 (n[0] = t[0]),
@@ -14801,21 +11587,11 @@ THE SOFTWARE.
                 n
             );
         },
-        fromValues: function(t, n, r, u, e, o, i, c) {
+        fromValues: function (t, n, r, u, e, o, i, c) {
             var h = new a(8);
-            return (
-                (h[0] = t),
-                (h[1] = n),
-                (h[2] = r),
-                (h[3] = u),
-                (h[4] = e),
-                (h[5] = o),
-                (h[6] = i),
-                (h[7] = c),
-                h
-            );
+            return (h[0] = t), (h[1] = n), (h[2] = r), (h[3] = u), (h[4] = e), (h[5] = o), (h[6] = i), (h[7] = c), h;
         },
-        fromRotationTranslationValues: function(t, n, r, u, e, o, i) {
+        fromRotationTranslationValues: function (t, n, r, u, e, o, i) {
             var c = new a(8);
             (c[0] = t), (c[1] = n), (c[2] = r), (c[3] = u);
             var h = 0.5 * e,
@@ -14830,7 +11606,7 @@ THE SOFTWARE.
             );
         },
         fromRotationTranslation: Mn,
-        fromTranslation: function(t, n) {
+        fromTranslation: function (t, n) {
             return (
                 (t[0] = 0),
                 (t[1] = 0),
@@ -14843,7 +11619,7 @@ THE SOFTWARE.
                 t
             );
         },
-        fromRotation: function(t, n) {
+        fromRotation: function (t, n) {
             return (
                 (t[0] = n[0]),
                 (t[1] = n[1]),
@@ -14856,52 +11632,28 @@ THE SOFTWARE.
                 t
             );
         },
-        fromMat4: function(t, n) {
+        fromMat4: function (t, n) {
             var r = jt();
             P(r, n);
             var u = new a(3);
             return R(u, n), Mn(t, r, u), t;
         },
         copy: fn,
-        identity: function(t) {
-            return (
-                (t[0] = 0),
-                (t[1] = 0),
-                (t[2] = 0),
-                (t[3] = 1),
-                (t[4] = 0),
-                (t[5] = 0),
-                (t[6] = 0),
-                (t[7] = 0),
-                t
-            );
+        identity: function (t) {
+            return (t[0] = 0), (t[1] = 0), (t[2] = 0), (t[3] = 1), (t[4] = 0), (t[5] = 0), (t[6] = 0), (t[7] = 0), t;
         },
-        set: function(t, n, a, r, u, e, o, i, c) {
-            return (
-                (t[0] = n),
-                (t[1] = a),
-                (t[2] = r),
-                (t[3] = u),
-                (t[4] = e),
-                (t[5] = o),
-                (t[6] = i),
-                (t[7] = c),
-                t
-            );
+        set: function (t, n, a, r, u, e, o, i, c) {
+            return (t[0] = n), (t[1] = a), (t[2] = r), (t[3] = u), (t[4] = e), (t[5] = o), (t[6] = i), (t[7] = c), t;
         },
         getReal: ln,
-        getDual: function(t, n) {
-            return (
-                (t[0] = n[4]), (t[1] = n[5]), (t[2] = n[6]), (t[3] = n[7]), t
-            );
+        getDual: function (t, n) {
+            return (t[0] = n[4]), (t[1] = n[5]), (t[2] = n[6]), (t[3] = n[7]), t;
         },
         setReal: vn,
-        setDual: function(t, n) {
-            return (
-                (t[4] = n[0]), (t[5] = n[1]), (t[6] = n[2]), (t[7] = n[3]), t
-            );
+        setDual: function (t, n) {
+            return (t[4] = n[0]), (t[5] = n[1]), (t[6] = n[2]), (t[7] = n[3]), t;
         },
-        getTranslation: function(t, n) {
+        getTranslation: function (t, n) {
             var a = n[4],
                 r = n[5],
                 u = n[6],
@@ -14917,7 +11669,7 @@ THE SOFTWARE.
                 t
             );
         },
-        translate: function(t, n, a) {
+        translate: function (t, n, a) {
             var r = n[0],
                 u = n[1],
                 e = n[2],
@@ -14941,7 +11693,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateX: function(t, n, a) {
+        rotateX: function (t, n, a) {
             var r = -n[0],
                 u = -n[1],
                 e = -n[2],
@@ -14967,7 +11719,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateY: function(t, n, a) {
+        rotateY: function (t, n, a) {
             var r = -n[0],
                 u = -n[1],
                 e = -n[2],
@@ -14993,7 +11745,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateZ: function(t, n, a) {
+        rotateZ: function (t, n, a) {
             var r = -n[0],
                 u = -n[1],
                 e = -n[2],
@@ -15019,7 +11771,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateByQuatAppend: function(t, n, a) {
+        rotateByQuatAppend: function (t, n, a) {
             var r = a[0],
                 u = a[1],
                 e = a[2],
@@ -15044,7 +11796,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateByQuatPrepend: function(t, n, a) {
+        rotateByQuatPrepend: function (t, n, a) {
             var r = n[0],
                 u = n[1],
                 e = n[2],
@@ -15069,7 +11821,7 @@ THE SOFTWARE.
                 t
             );
         },
-        rotateAroundAxis: function(t, a, r, u) {
+        rotateAroundAxis: function (t, a, r, u) {
             if (Math.abs(u) < n) return fn(t, a);
             var e = Math.hypot(r[0], r[1], r[2]);
             u *= 0.5;
@@ -15098,7 +11850,7 @@ THE SOFTWARE.
                 t
             );
         },
-        add: function(t, n, a) {
+        add: function (t, n, a) {
             return (
                 (t[0] = n[0] + a[0]),
                 (t[1] = n[1] + a[1]),
@@ -15113,7 +11865,7 @@ THE SOFTWARE.
         },
         multiply: bn,
         mul: mn,
-        scale: function(t, n, a) {
+        scale: function (t, n, a) {
             return (
                 (t[0] = n[0] * a),
                 (t[1] = n[1] * a),
@@ -15127,7 +11879,7 @@ THE SOFTWARE.
             );
         },
         dot: dn,
-        lerp: function(t, n, a, r) {
+        lerp: function (t, n, a, r) {
             var u = 1 - r;
             return (
                 dn(n, a) < 0 && (r = -r),
@@ -15142,7 +11894,7 @@ THE SOFTWARE.
                 t
             );
         },
-        invert: function(t, n) {
+        invert: function (t, n) {
             var a = yn(n);
             return (
                 (t[0] = -n[0] / a),
@@ -15156,7 +11908,7 @@ THE SOFTWARE.
                 t
             );
         },
-        conjugate: function(t, n) {
+        conjugate: function (t, n) {
             return (
                 (t[0] = -n[0]),
                 (t[1] = -n[1]),
@@ -15173,7 +11925,7 @@ THE SOFTWARE.
         len: pn,
         squaredLength: yn,
         sqrLen: qn,
-        normalize: function(t, n) {
+        normalize: function (t, n) {
             var a = yn(n);
             if (a > 0) {
                 a = Math.sqrt(a);
@@ -15197,7 +11949,7 @@ THE SOFTWARE.
             }
             return t;
         },
-        str: function(t) {
+        str: function (t) {
             return (
                 'quat2(' +
                 t[0] +
@@ -15218,7 +11970,7 @@ THE SOFTWARE.
                 ')'
             );
         },
-        exactEquals: function(t, n) {
+        exactEquals: function (t, n) {
             return (
                 t[0] === n[0] &&
                 t[1] === n[1] &&
@@ -15230,7 +11982,7 @@ THE SOFTWARE.
                 t[7] === n[7]
             );
         },
-        equals: function(t, a) {
+        equals: function (t, a) {
             var r = t[0],
                 u = t[1],
                 e = t[2],
@@ -15299,165 +12051,119 @@ THE SOFTWARE.
         Fn = Pn,
         Ln = jn,
         Vn = Sn,
-        Qn = (function() {
+        Qn = (function () {
             var t = An();
-            return function(n, a, r, u, e, o) {
+            return function (n, a, r, u, e, o) {
                 var i, c;
-                for (
-                    a || (a = 2),
-                        r || (r = 0),
-                        c = u ? Math.min(u * a + r, n.length) : n.length,
-                        i = r;
-                    i < c;
-                    i += a
-                )
-                    (t[0] = n[i]),
-                        (t[1] = n[i + 1]),
-                        e(t, t, o),
-                        (n[i] = t[0]),
-                        (n[i + 1] = t[1]);
+                for (a || (a = 2), r || (r = 0), c = u ? Math.min(u * a + r, n.length) : n.length, i = r; i < c; i += a)
+                    (t[0] = n[i]), (t[1] = n[i + 1]), e(t, t, o), (n[i] = t[0]), (n[i + 1] = t[1]);
                 return n;
             };
         })(),
         Yn = Object.freeze({
             create: An,
-            clone: function(t) {
+            clone: function (t) {
                 var n = new a(2);
                 return (n[0] = t[0]), (n[1] = t[1]), n;
             },
-            fromValues: function(t, n) {
+            fromValues: function (t, n) {
                 var r = new a(2);
                 return (r[0] = t), (r[1] = n), r;
             },
-            copy: function(t, n) {
+            copy: function (t, n) {
                 return (t[0] = n[0]), (t[1] = n[1]), t;
             },
-            set: function(t, n, a) {
+            set: function (t, n, a) {
                 return (t[0] = n), (t[1] = a), t;
             },
-            add: function(t, n, a) {
+            add: function (t, n, a) {
                 return (t[0] = n[0] + a[0]), (t[1] = n[1] + a[1]), t;
             },
             subtract: wn,
             multiply: Rn,
             divide: zn,
-            ceil: function(t, n) {
+            ceil: function (t, n) {
                 return (t[0] = Math.ceil(n[0])), (t[1] = Math.ceil(n[1])), t;
             },
-            floor: function(t, n) {
+            floor: function (t, n) {
                 return (t[0] = Math.floor(n[0])), (t[1] = Math.floor(n[1])), t;
             },
-            min: function(t, n, a) {
-                return (
-                    (t[0] = Math.min(n[0], a[0])),
-                    (t[1] = Math.min(n[1], a[1])),
-                    t
-                );
+            min: function (t, n, a) {
+                return (t[0] = Math.min(n[0], a[0])), (t[1] = Math.min(n[1], a[1])), t;
             },
-            max: function(t, n, a) {
-                return (
-                    (t[0] = Math.max(n[0], a[0])),
-                    (t[1] = Math.max(n[1], a[1])),
-                    t
-                );
+            max: function (t, n, a) {
+                return (t[0] = Math.max(n[0], a[0])), (t[1] = Math.max(n[1], a[1])), t;
             },
-            round: function(t, n) {
+            round: function (t, n) {
                 return (t[0] = Math.round(n[0])), (t[1] = Math.round(n[1])), t;
             },
-            scale: function(t, n, a) {
+            scale: function (t, n, a) {
                 return (t[0] = n[0] * a), (t[1] = n[1] * a), t;
             },
-            scaleAndAdd: function(t, n, a, r) {
+            scaleAndAdd: function (t, n, a, r) {
                 return (t[0] = n[0] + a[0] * r), (t[1] = n[1] + a[1] * r), t;
             },
             distance: Pn,
             squaredDistance: jn,
             length: In,
             squaredLength: Sn,
-            negate: function(t, n) {
+            negate: function (t, n) {
                 return (t[0] = -n[0]), (t[1] = -n[1]), t;
             },
-            inverse: function(t, n) {
+            inverse: function (t, n) {
                 return (t[0] = 1 / n[0]), (t[1] = 1 / n[1]), t;
             },
-            normalize: function(t, n) {
+            normalize: function (t, n) {
                 var a = n[0],
                     r = n[1],
                     u = a * a + r * r;
-                return (
-                    u > 0 && (u = 1 / Math.sqrt(u)),
-                    (t[0] = n[0] * u),
-                    (t[1] = n[1] * u),
-                    t
-                );
+                return u > 0 && (u = 1 / Math.sqrt(u)), (t[0] = n[0] * u), (t[1] = n[1] * u), t;
             },
-            dot: function(t, n) {
+            dot: function (t, n) {
                 return t[0] * n[0] + t[1] * n[1];
             },
-            cross: function(t, n, a) {
+            cross: function (t, n, a) {
                 var r = n[0] * a[1] - n[1] * a[0];
                 return (t[0] = t[1] = 0), (t[2] = r), t;
             },
-            lerp: function(t, n, a, r) {
+            lerp: function (t, n, a, r) {
                 var u = n[0],
                     e = n[1];
-                return (
-                    (t[0] = u + r * (a[0] - u)), (t[1] = e + r * (a[1] - e)), t
-                );
+                return (t[0] = u + r * (a[0] - u)), (t[1] = e + r * (a[1] - e)), t;
             },
-            random: function(t, n) {
+            random: function (t, n) {
                 n = n || 1;
                 var a = 2 * r() * Math.PI;
                 return (t[0] = Math.cos(a) * n), (t[1] = Math.sin(a) * n), t;
             },
-            transformMat2: function(t, n, a) {
+            transformMat2: function (t, n, a) {
                 var r = n[0],
                     u = n[1];
-                return (
-                    (t[0] = a[0] * r + a[2] * u),
-                    (t[1] = a[1] * r + a[3] * u),
-                    t
-                );
+                return (t[0] = a[0] * r + a[2] * u), (t[1] = a[1] * r + a[3] * u), t;
             },
-            transformMat2d: function(t, n, a) {
+            transformMat2d: function (t, n, a) {
                 var r = n[0],
                     u = n[1];
-                return (
-                    (t[0] = a[0] * r + a[2] * u + a[4]),
-                    (t[1] = a[1] * r + a[3] * u + a[5]),
-                    t
-                );
+                return (t[0] = a[0] * r + a[2] * u + a[4]), (t[1] = a[1] * r + a[3] * u + a[5]), t;
             },
-            transformMat3: function(t, n, a) {
+            transformMat3: function (t, n, a) {
                 var r = n[0],
                     u = n[1];
-                return (
-                    (t[0] = a[0] * r + a[3] * u + a[6]),
-                    (t[1] = a[1] * r + a[4] * u + a[7]),
-                    t
-                );
+                return (t[0] = a[0] * r + a[3] * u + a[6]), (t[1] = a[1] * r + a[4] * u + a[7]), t;
             },
-            transformMat4: function(t, n, a) {
+            transformMat4: function (t, n, a) {
                 var r = n[0],
                     u = n[1];
-                return (
-                    (t[0] = a[0] * r + a[4] * u + a[12]),
-                    (t[1] = a[1] * r + a[5] * u + a[13]),
-                    t
-                );
+                return (t[0] = a[0] * r + a[4] * u + a[12]), (t[1] = a[1] * r + a[5] * u + a[13]), t;
             },
-            rotate: function(t, n, a, r) {
+            rotate: function (t, n, a, r) {
                 var u = n[0] - a[0],
                     e = n[1] - a[1],
                     o = Math.sin(r),
                     i = Math.cos(r);
-                return (
-                    (t[0] = u * i - e * o + a[0]),
-                    (t[1] = u * o + e * i + a[1]),
-                    t
-                );
+                return (t[0] = u * i - e * o + a[0]), (t[1] = u * o + e * i + a[1]), t;
             },
-            angle: function(t, n) {
+            angle: function (t, n) {
                 var a = t[0],
                     r = t[1],
                     u = n[0],
@@ -15469,23 +12175,22 @@ THE SOFTWARE.
                 var c = (a * u + r * e) * o * i;
                 return c > 1 ? 0 : c < -1 ? Math.PI : Math.acos(c);
             },
-            zero: function(t) {
+            zero: function (t) {
                 return (t[0] = 0), (t[1] = 0), t;
             },
-            str: function(t) {
+            str: function (t) {
                 return 'vec2(' + t[0] + ', ' + t[1] + ')';
             },
-            exactEquals: function(t, n) {
+            exactEquals: function (t, n) {
                 return t[0] === n[0] && t[1] === n[1];
             },
-            equals: function(t, a) {
+            equals: function (t, a) {
                 var r = t[0],
                     u = t[1],
                     e = a[0],
                     o = a[1];
                 return (
-                    Math.abs(r - e) <=
-                        n * Math.max(1, Math.abs(r), Math.abs(e)) &&
+                    Math.abs(r - e) <= n * Math.max(1, Math.abs(r), Math.abs(e)) &&
                     Math.abs(u - o) <= n * Math.max(1, Math.abs(u), Math.abs(o))
                 );
             },
@@ -15547,11 +12252,7 @@ CABLES.exportedPatches || (CABLES.exportedPatches = {}),
                     { name: 'Active', value: !0 },
                     { name: 'Hires Displays', value: !1 },
                 ],
-                portsOut: [
-                    { name: 'trigger' },
-                    { name: 'width', value: 640 },
-                    { name: 'height', value: 359 },
-                ],
+                portsOut: [{ name: 'trigger' }, { name: 'width', value: 640 }, { name: 'height', value: 359 }],
             },
             {
                 opId: 'eaf4f7ce-08a3-4d1b-b9f4-ebc0b7b1cde1',
@@ -16130,11 +12831,7 @@ CABLES.exportedPatches || (CABLES.exportedPatches = {}),
                     { name: 'Depth', value: !0 },
                     { name: 'Clear', value: !0 },
                 ],
-                portsOut: [
-                    { name: 'trigger' },
-                    { name: 'texture' },
-                    { name: 'textureDepth' },
-                ],
+                portsOut: [{ name: 'trigger' }, { name: 'texture' }, { name: 'textureDepth' }],
             },
             {
                 opId: 'a5b43d4c-a9ea-4eaf-9ed0-f257d222659d',
@@ -16605,8 +13302,7 @@ CABLES.exportedPatches || (CABLES.exportedPatches = {}),
         },
         exports: 2,
     }),
-    CABLES.exportedPatch ||
-        (CABLES.exportedPatch = CABLES.exportedPatches['6app0s']);
+    CABLES.exportedPatch || (CABLES.exportedPatch = CABLES.exportedPatches['6app0s']);
 var CABLES = CABLES || {};
 CABLES.OPS = CABLES.OPS || {};
 var Ops = Ops || {};
@@ -16617,7 +13313,7 @@ var Ops = Ops || {};
     (Ops.Gl.Meshes = Ops.Gl.Meshes || {}),
     (Ops.Gl.Shader = Ops.Gl.Shader || {}),
     (Ops.Gl.TextureEffects = Ops.Gl.TextureEffects || {}),
-    (Ops.Gl.MainLoop = function() {
+    (Ops.Gl.MainLoop = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inValue('FPS Limit', 0),
@@ -16632,14 +13328,12 @@ var Ops = Ops || {};
             u = e.inValueBool('Active', !0),
             h = e.inValueBool('Hires Displays', !1);
         (e.onAnimFrame = E),
-            (h.onChange = function() {
-                h.get()
-                    ? (e.patch.cgl.pixelDensity = window.devicePixelRatio)
-                    : (e.patch.cgl.pixelDensity = 1),
+            (h.onChange = function () {
+                h.get() ? (e.patch.cgl.pixelDensity = window.devicePixelRatio) : (e.patch.cgl.pixelDensity = 1),
                     e.patch.cgl.updateSize(),
                     CABLES.UI && gui.setLayout();
             }),
-            (u.onChange = function() {
+            (u.onChange = function () {
                 e.patch.removeOnAnimFrame(e),
                     u.get()
                         ? (e.setUiAttrib({ extendTitle: '' }),
@@ -16664,7 +13358,7 @@ var Ops = Ops || {};
                 _ && (_.style.display = 'block');
             }
             if (
-                (e.patch.cgl.canvas.addEventListener('mouseleave', function() {
+                (e.patch.cgl.canvas.addEventListener('mouseleave', function () {
                     _ && (_.style.display = 'none');
                 }),
                 e.patch.cgl.canvas.addEventListener('mouseenter', t),
@@ -16675,10 +13369,8 @@ var Ops = Ops || {};
                     const n = e.patch.cgl.canvas.parentElement;
                     n && n.appendChild(_),
                         _.addEventListener('mouseenter', t),
-                        _.addEventListener('click', function(e) {
-                            CABLES.UI && !e.shiftKey
-                                ? gui.cycleRendererSize()
-                                : g.fullScreen();
+                        _.addEventListener('click', function (e) {
+                            CABLES.UI && !e.shiftKey ? gui.cycleRendererSize() : g.fullScreen();
                         });
                 }
                 (_.style.padding = '10px'),
@@ -16698,14 +13390,9 @@ var Ops = Ops || {};
         }
         function E(c) {
             if (!u.get()) return;
-            if (
-                g.aborted ||
-                0 === g.canvas.clientWidth ||
-                0 === g.canvas.clientHeight
-            )
-                return;
+            if (g.aborted || 0 === g.canvas.clientWidth || 0 === g.canvas.clientHeight) return;
             const h = performance.now();
-            (e.patch.config.fpsLimit = (function() {
+            (e.patch.config.fpsLimit = (function () {
                 if (o.get() && e.patch.loading.getProgress() < 1) return 5;
                 if (r.get()) {
                     if (!x) return 10;
@@ -16714,34 +13401,24 @@ var Ops = Ops || {};
                 return t.get();
             })()),
                 -1 != g.canvasWidth
-                    ? ((g.canvasWidth == a.get() &&
-                          g.canvasHeight == i.get()) ||
+                    ? ((g.canvasWidth == a.get() && g.canvasHeight == i.get()) ||
                           (a.set(g.canvasWidth), i.set(g.canvasHeight)),
                       CABLES.now() - f > 1e3 &&
                           ((CGL.fpsReport = CGL.fpsReport || []),
-                          e.patch.loading.getProgress() >= 1 &&
-                              0 !== f &&
-                              CGL.fpsReport.push(d),
+                          e.patch.loading.getProgress() >= 1 && 0 !== f && CGL.fpsReport.push(d),
                           (d = 0),
                           (f = CABLES.now())),
                       (CGL.MESH.lastShader = null),
                       (CGL.MESH.lastMesh = null),
                       g.renderStart(g, m, p),
                       s.get() &&
-                          (g.gl.clearColor(0, 0, 0, 1),
-                          g.gl.clear(
-                              g.gl.COLOR_BUFFER_BIT | g.gl.DEPTH_BUFFER_BIT
-                          )),
+                          (g.gl.clearColor(0, 0, 0, 1), g.gl.clear(g.gl.COLOR_BUFFER_BIT | g.gl.DEPTH_BUFFER_BIT)),
                       n.trigger(),
                       CGL.MESH.lastMesh && CGL.MESH.lastMesh.unBind(),
                       CGL.Texture.previewTexture &&
                           (CGL.Texture.texturePreviewer ||
-                              (CGL.Texture.texturePreviewer = new CGL.Texture.texturePreview(
-                                  g
-                              )),
-                          CGL.Texture.texturePreviewer.render(
-                              CGL.Texture.previewTexture
-                          )),
+                              (CGL.Texture.texturePreviewer = new CGL.Texture.texturePreview(g)),
+                          CGL.Texture.texturePreviewer.render(CGL.Texture.previewTexture)),
                       g.renderEnd(g),
                       l.get() &&
                           (g.gl.clearColor(1, 1, 1, 1),
@@ -16750,8 +13427,7 @@ var Ops = Ops || {};
                           g.gl.colorMask(!0, !0, !0, !0)),
                       g.frameStore.phong || (g.frameStore.phong = {}),
                       d++,
-                      (CGL.profileData.profileMainloopMs =
-                          performance.now() - h))
+                      (CGL.profileData.profileMainloopMs = performance.now() - h))
                     : g.setCanvas(e.patch.config.glCanvasId);
         }
         window.addEventListener('blur', () => {
@@ -16763,9 +13439,8 @@ var Ops = Ops || {};
             document.addEventListener('visibilitychange', () => {
                 x = !document.hidden;
             }),
-            (e.onDelete = function() {
-                g.gl.clearColor(0, 0, 0, 0),
-                    g.gl.clear(g.gl.COLOR_BUFFER_BIT | g.gl.DEPTH_BUFFER_BIT);
+            (e.onDelete = function () {
+                g.gl.clearColor(0, 0, 0, 0), g.gl.clear(g.gl.COLOR_BUFFER_BIT | g.gl.DEPTH_BUFFER_BIT);
             });
     }),
     (Ops.Gl.MainLoop.prototype = new CABLES.Op()),
@@ -16773,7 +13448,7 @@ var Ops = Ops || {};
         f: Ops.Gl.MainLoop,
         objName: 'Ops.Gl.MainLoop',
     }),
-    (Ops.Gl.Matrix.OrbitControls = function() {
+    (Ops.Gl.Matrix.OrbitControls = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inTrigger('render'),
@@ -16832,18 +13507,14 @@ var Ops = Ops || {};
             k = null;
         Z(), (e.onDelete = oe);
         let H = !1;
-        v.onChange = function() {
+        v.onChange = function () {
             (H = v.get()), e.log('doLockPointer', H);
         };
         const z = Math.PI,
             Y = 2 * Math.PI;
         function W() {
             let e = 0;
-            V % Y < -z
-                ? ((e = -Y), (V %= -Y))
-                : V % Y > z
-                ? ((e = Y), (V %= Y))
-                : (V %= Y),
+            V % Y < -z ? ((e = -Y), (V %= -Y)) : V % Y > z ? ((e = Y), (V %= Y)) : (V %= Y),
                 (X %= Math.PI),
                 vec3.set(O, 0, 0, 0),
                 vec3.set(L, 0, 0, 0),
@@ -16864,16 +13535,10 @@ var Ops = Ops || {};
         let Q = 0;
         function $(e) {
             const t = c.get();
-            I < n.get() * t && (I = n.get() * t),
-                I > a.get() * t && (I = a.get() * t),
-                b.set(I * t);
+            I < n.get() * t && (I = n.get() * t), I > a.get() * t && (I = a.get() * t), b.set(I * t);
             let i = 0;
             const r = vec3.create();
-            return (
-                (i = ((360 * e) / 2) * CGL.DEG2RAD),
-                vec3.set(r, Math.cos(i) * I * t, Math.sin(i) * I * t, 0),
-                r
-            );
+            return (i = ((360 * e) / 2) * CGL.DEG2RAD), vec3.set(r, Math.cos(i) * I * t, Math.sin(i) * I * t, 0), r;
         }
         function J(e) {
             if (!R) return;
@@ -16885,15 +13550,11 @@ var Ops = Ops || {};
                 (a *= h.get()),
                 (i *= g.get()),
                 2 == e.buttons && f.get()
-                    ? ((O[2] += 0.01 * a * c.get()),
-                      (O[1] += 0.01 * i * c.get()))
+                    ? ((O[2] += 0.01 * a * c.get()), (O[1] += 0.01 * i * c.get()))
                     : 4 == e.buttons && m.get()
                     ? ((I += 0.05 * i), (S = $(U)))
                     : p.get() &&
-                      ((w += 0.003 * a),
-                      (U += 0.002 * i),
-                      _.get() &&
-                          (U > 0.5 && (U = 0.5), U < -0.5 && (U = -0.5))),
+                      ((w += 0.003 * a), (U += 0.002 * i), _.get() && (U > 0.5 && (U = 0.5), U < -0.5 && (U = -0.5))),
                 (y = t),
                 (F = n);
         }
@@ -16904,20 +13565,11 @@ var Ops = Ops || {};
             } catch (e) {}
             if (H) {
                 const t = e.patch.cgl.canvas;
-                (t.requestPointerLock =
-                    t.requestPointerLock ||
-                    t.mozRequestPointerLock ||
-                    t.webkitRequestPointerLock),
-                    t.requestPointerLock
-                        ? t.requestPointerLock()
-                        : e.warn('no requestPointerLock found'),
+                (t.requestPointerLock = t.requestPointerLock || t.mozRequestPointerLock || t.webkitRequestPointerLock),
+                    t.requestPointerLock ? t.requestPointerLock() : e.warn('no requestPointerLock found'),
                     document.addEventListener('pointerlockchange', ne, !1),
                     document.addEventListener('mozpointerlockchange', ne, !1),
-                    document.addEventListener(
-                        'webkitpointerlockchange',
-                        ne,
-                        !1
-                    );
+                    document.addEventListener('webkitpointerlockchange', ne, !1);
             }
         }
         function te(e) {
@@ -16940,7 +13592,7 @@ var Ops = Ops || {};
                 document.addEventListener('mousemove', J, !1);
         }
         function ae(e) {}
-        (t.onTriggered = function() {
+        (t.onTriggered = function () {
             C.pushViewMatrix(), (V = K(V, w));
             let e = 180 * ((X = K(X, U)) + 0.5);
             0 !== i.get() && e < i.get()
@@ -16951,19 +13603,13 @@ var Ops = Ops || {};
             const t = V * CGL.RAD2DEG;
             T.set(e),
                 E.set(t),
-                (function(e, t) {
+                (function (e, t) {
                     const i = c.get();
                     I < n.get() * i && (I = n.get() * i);
                     I > a.get() * i && (I = a.get() * i);
                     b.set(I * i);
                     let r = 0;
-                    (r = ((360 * t) / 2) * CGL.DEG2RAD),
-                        vec3.set(
-                            e,
-                            Math.cos(r) * I * i,
-                            Math.sin(r) * I * i,
-                            0
-                        );
+                    (r = ((360 * t) / 2) * CGL.DEG2RAD), vec3.set(e, Math.cos(r) * I * i, Math.sin(r) * I * i, 0);
                 })(S, X),
                 vec3.add(N, S, O),
                 vec3.add(B, L, O),
@@ -16981,16 +13627,16 @@ var Ops = Ops || {};
                 C.popViewMatrix(),
                 (q = !1);
         }),
-            (o.onChange = function() {
+            (o.onChange = function () {
                 (I = o.get()), W();
             }),
-            (l.onChange = function() {
+            (l.onChange = function () {
                 V = w = l.get() * Math.PI * 2;
             }),
-            (s.onChange = function() {
+            (s.onChange = function () {
                 (X = U = s.get() - 0.5), (S = $(U));
             });
-        const ie = function(e) {
+        const ie = function (e) {
             if (m.get()) {
                 const t = 0.06 * CGL.getWheelSpeed(e);
                 (I += 1.2 * parseFloat(t)), (S = $(U));
@@ -17002,7 +13648,7 @@ var Ops = Ops || {};
                 k.addEventListener('pointerup', te),
                 k.addEventListener('pointerleave', te),
                 k.addEventListener('pointerenter', ae),
-                k.addEventListener('contextmenu', function(e) {
+                k.addEventListener('contextmenu', function (e) {
                     e.preventDefault();
                 }),
                 k.addEventListener('wheel', ie, { passive: !0 });
@@ -17017,7 +13663,7 @@ var Ops = Ops || {};
                 k.removeEventListener('wheel', ie));
         }
         var se;
-        (d.onChange = function() {
+        (d.onChange = function () {
             d.get() ? re() : oe();
         }),
             (S = $(0)),
@@ -17034,7 +13680,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Matrix.OrbitControls,
         objName: 'Ops.Gl.Matrix.OrbitControls',
     }),
-    (Ops.Gl.GLTF.GltfScene_v2 = function() {
+    (Ops.Gl.GLTF.GltfScene_v2 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = class {
@@ -17094,23 +13740,13 @@ var Ops = Ops || {};
                         z.pushViewMatrix(),
                         vec3.set(this.vUp, 0, 1, 0),
                         vec3.set(this.vCenter, 0, -1, 0),
-                        vec3.transformQuat(
-                            this.vCenter,
-                            this.vCenter,
-                            this.quat
-                        ),
+                        vec3.transformQuat(this.vCenter, this.vCenter, this.quat),
                         vec3.normalize(this.vCenter, this.vCenter),
                         vec3.add(this.vCenter, this.vCenter, this.pos),
-                        mat4.lookAt(
-                            z.vMatrix,
-                            this.pos,
-                            this.vCenter,
-                            this.vUp
-                        );
+                        mat4.lookAt(z.vMatrix, this.pos, this.vCenter, this.vUp);
                 }
                 end() {
-                    z.frameStore.shadowPass ||
-                        (z.popPMatrix(), z.popViewMatrix());
+                    z.frameStore.shadowPass || (z.popPMatrix(), z.popViewMatrix());
                 }
             },
             n = 8,
@@ -17128,12 +13764,10 @@ var Ops = Ops || {};
                         (this.loaded = Date.now());
                 }
                 getNode(e) {
-                    for (let t = 0; t < this.nodes.length; t++)
-                        if (this.nodes[t].name == e) return this.nodes[t];
+                    for (let t = 0; t < this.nodes.length; t++) if (this.nodes[t].name == e) return this.nodes[t];
                 }
                 unHideAll() {
-                    for (let e = 0; e < this.nodes.length; e++)
-                        this.nodes[e].unHide();
+                    for (let e = 0; e < this.nodes.length; e++) this.nodes[e].unHide();
                 }
             };
         function i(e) {
@@ -17153,29 +13787,18 @@ var Ops = Ops || {};
                         break;
                     case 12:
                     case 13:
-                        (r = e[n++]),
-                            (t += String.fromCharCode(
-                                ((31 & i) << 6) | (63 & r)
-                            ));
+                        (r = e[n++]), (t += String.fromCharCode(((31 & i) << 6) | (63 & r)));
                         break;
                     case 14:
                         (r = e[n++]),
                             (o = e[n++]),
-                            (t += String.fromCharCode(
-                                ((15 & i) << 12) |
-                                    ((63 & r) << 6) |
-                                    ((63 & o) << 0)
-                            ));
+                            (t += String.fromCharCode(((15 & i) << 12) | ((63 & r) << 6) | ((63 & o) << 0)));
                 }
             return t;
         }
         function r(e, t, n, a) {
             const r = {};
-            if (
-                ((r.size = e.getUint32(a + 0, H)),
-                (r.type = i(t.subarray(a + 4, a + 4 + 4))),
-                'BIN\0' == r.type)
-            )
+            if (((r.size = e.getUint32(a + 0, H)), (r.type = i(t.subarray(a + 4, a + 4 + 4))), 'BIN\0' == r.type))
                 r.dataView = new DataView(n, a + 8, r.size);
             else if ('JSON' == r.type) {
                 const e = i(t.subarray(a + 8, a + 8 + r.size));
@@ -17195,10 +13818,7 @@ var Ops = Ops || {};
             let g = 0;
             const d = i(h.subarray(g, 4));
             if (((g += 4), 'glTF' != d)) return;
-            u.timing.push(
-                'Start parsing',
-                Math.round(performance.now() - u.startTime)
-            );
+            u.timing.push('Start parsing', Math.round(performance.now() - u.startTime));
             const f = new DataView(e),
                 m = f.getUint32(g, H);
             g += 4;
@@ -17213,13 +13833,7 @@ var Ops = Ops || {};
                 p.push(r(f, h, e, g));
             const _ = p[0].data.bufferViews,
                 v = p[0].data.accessors;
-            if (
-                (u.timing.push(
-                    'Parse buffers',
-                    Math.round(performance.now() - u.startTime)
-                ),
-                _)
-            )
+            if ((u.timing.push('Parse buffers', Math.round(performance.now() - u.startTime)), _))
                 for (s = 0; s < v.length; s++) {
                     const e = v[s],
                         t = _[e.bufferView];
@@ -17239,39 +13853,20 @@ var Ops = Ops || {};
                         l = null;
                     if (p[1].dataView)
                         if (5126 == e.componentType || 5125 == e.componentType)
-                            for (
-                                r = r || 4, l = new Float32Array(a), o = 0;
-                                o < a;
-                                o++
-                            )
+                            for (r = r || 4, l = new Float32Array(a), o = 0; o < a; o++)
                                 (l[o] = p[1].dataView.getFloat32(i, H)),
-                                    4 != r &&
-                                        (o + 1) % n == 0 &&
-                                        (i += r - 4 * n),
+                                    4 != r && (o + 1) % n == 0 && (i += r - 4 * n),
                                     (i += 4);
                         else if (5123 == e.componentType)
-                            for (
-                                r = r || 2, l = new Uint16Array(a), o = 0;
-                                o < a;
-                                o++
-                            )
+                            for (r = r || 2, l = new Uint16Array(a), o = 0; o < a; o++)
                                 (l[o] = p[1].dataView.getUint16(i, H)),
-                                    2 != r &&
-                                        (o + 1) % n == 0 &&
-                                        (i += r - 2 * n),
+                                    2 != r && (o + 1) % n == 0 && (i += r - 2 * n),
                                     (i += 2);
-                        else
-                            console.error(
-                                'unknown component type',
-                                e.componentType
-                            );
+                        else console.error('unknown component type', e.componentType);
                     u.accBuffers.push(l);
                 }
             if (
-                (u.timing.push(
-                    'Parse mesh groups',
-                    Math.round(performance.now() - u.startTime)
-                ),
+                (u.timing.push('Parse mesh groups', Math.round(performance.now() - u.startTime)),
                 (u.json.meshes = u.json.meshes || []),
                 u.json.meshes)
             )
@@ -17280,11 +13875,7 @@ var Ops = Ops || {};
                     u.meshes.push(e);
                 }
             for (
-                u.timing.push(
-                    'Parse nodes',
-                    Math.round(performance.now() - u.startTime)
-                ),
-                    s = 0;
+                u.timing.push('Parse nodes', Math.round(performance.now() - u.startTime)), s = 0;
                 s < u.json.nodes.length;
                 s++
             ) {
@@ -17297,12 +13888,9 @@ var Ops = Ops || {};
             }
             return (
                 (Q = !0),
-                u.timing.push(
-                    'load anims',
-                    Math.round(performance.now() - u.startTime)
-                ),
+                u.timing.push('load anims', Math.round(performance.now() - u.startTime)),
                 u.json.animations &&
-                    (function(e) {
+                    (function (e) {
                         let t = 0;
                         for (let n = 0; n < e.json.animations.length; n++) {
                             const a = e.json.animations[n];
@@ -17310,55 +13898,30 @@ var Ops = Ops || {};
                                 const i = a.channels[n],
                                     r = e.nodes[i.target.node],
                                     o = a.samplers[i.sampler],
-                                    s =
-                                        (e.json.accessors[o.input],
-                                        e.accBuffers[o.input]),
+                                    s = (e.json.accessors[o.input], e.accBuffers[o.input]),
                                     l = e.json.accessors[o.output],
                                     c = e.accBuffers[o.output];
                                 let u = 1;
-                                'VEC2' == l.type
-                                    ? (u = 2)
-                                    : 'VEC3' == l.type
-                                    ? (u = 3)
-                                    : 'VEC4' == l.type && (u = 4);
+                                'VEC2' == l.type ? (u = 2) : 'VEC3' == l.type ? (u = 3) : 'VEC4' == l.type && (u = 4);
                                 const h = [];
-                                for (t = 0; t < u; t++)
-                                    h.push(new CABLES.TL.Anim());
+                                for (t = 0; t < u; t++) h.push(new CABLES.TL.Anim());
                                 if ('LINEAR' == o.interpolation);
                                 else if ('STEP' == o.interpolation)
-                                    for (t = 0; t < u; t++)
-                                        h[t].defaultEasing =
-                                            CONSTANTS.ANIM.EASING_ABSOLUTE;
-                                else
-                                    console.warn(
-                                        '[gltf] unknown interpolation',
-                                        o.interpolation
-                                    );
+                                    for (t = 0; t < u; t++) h[t].defaultEasing = CONSTANTS.ANIM.EASING_ABSOLUTE;
+                                else console.warn('[gltf] unknown interpolation', o.interpolation);
                                 for (let e = 0; e < s.length; e++)
-                                    for (
-                                        q = Math.max(s[e], q), t = 0;
-                                        t < u;
-                                        t++
-                                    )
-                                        h[t].setValue(s[e], c[e * u + t]);
+                                    for (q = Math.max(s[e], q), t = 0; t < u; t++) h[t].setValue(s[e], c[e * u + t]);
                                 r.setAnim(i.target.path, h);
                             }
                         }
                     })(u),
-                u.timing.push(
-                    'load cameras',
-                    Math.round(performance.now() - u.startTime)
-                ),
+                u.timing.push('load cameras', Math.round(performance.now() - u.startTime)),
                 u.json.cameras &&
-                    (function(e) {
+                    (function (e) {
                         if (e && e.json.cameras)
-                            for (let n = 0; n < e.json.cameras.length; n++)
-                                e.cams.push(new t(e, e.json.cameras[n]));
+                            for (let n = 0; n < e.json.cameras.length; n++) e.cams.push(new t(e, e.json.cameras[n]));
                     })(u),
-                u.timing.push(
-                    'finished',
-                    Math.round(performance.now() - u.startTime)
-                ),
+                u.timing.push('finished', Math.round(performance.now() - u.startTime)),
                 u
             );
         }
@@ -17371,83 +13934,55 @@ var Ops = Ops || {};
                         (this.mesh = null),
                         (this.geom = new CGL.Geometry('gltf_' + this.name)),
                         (this.geom.verticesIndices = []),
-                        t.hasOwnProperty('indices') &&
-                            (this.geom.verticesIndices =
-                                n.accBuffers[t.indices]),
+                        t.hasOwnProperty('indices') && (this.geom.verticesIndices = n.accBuffers[t.indices]),
                         this.fillGeomAttribs(n, this.geom, t.attributes),
                         t.targets)
                     )
                         for (var a = 0; a < t.targets.length; a++) {
                             var i = new CGL.Geometry('gltf_' + this.name);
-                            t.hasOwnProperty('indices') &&
-                                (i.verticesIndices = n.accBuffers[t.indices]),
+                            t.hasOwnProperty('indices') && (i.verticesIndices = n.accBuffers[t.indices]),
                                 this.fillGeomAttribs(n, i, t.targets[a]),
                                 this.geom.morphTargets.push(i);
                         }
-                    (this.morphGeom = this.geom.copy()),
-                        (this.bounds = this.geom.getBounds());
+                    (this.morphGeom = this.geom.copy()), (this.bounds = this.geom.getBounds());
                 }
                 fillGeomAttribs(e, t, n) {
                     if (
-                        (n.hasOwnProperty('POSITION') &&
-                            (t.vertices = e.accBuffers[n.POSITION]),
-                        n.hasOwnProperty('NORMAL') &&
-                            (t.vertexNormals = e.accBuffers[n.NORMAL]),
-                        n.hasOwnProperty('TEXCOORD_0') &&
-                            (t.texCoords = e.accBuffers[n.TEXCOORD_0]),
-                        n.hasOwnProperty('TANGENT') &&
-                            (t.tangents = e.accBuffers[n.TANGENT]),
-                        n.hasOwnProperty('COLOR_0') &&
-                            (t.vertexColors = e.accBuffers[n.COLOR_0]),
+                        (n.hasOwnProperty('POSITION') && (t.vertices = e.accBuffers[n.POSITION]),
+                        n.hasOwnProperty('NORMAL') && (t.vertexNormals = e.accBuffers[n.NORMAL]),
+                        n.hasOwnProperty('TEXCOORD_0') && (t.texCoords = e.accBuffers[n.TEXCOORD_0]),
+                        n.hasOwnProperty('TANGENT') && (t.tangents = e.accBuffers[n.TANGENT]),
+                        n.hasOwnProperty('COLOR_0') && (t.vertexColors = e.accBuffers[n.COLOR_0]),
                         'X-ZY' == P.get())
                     )
                         for (let e = 0; e < t.vertexNormals.length; e += 3) {
                             let n = t.vertexNormals[e + 2];
-                            (t.vertexNormals[e + 2] = t.vertexNormals[e + 1]),
-                                (t.vertexNormals[e + 1] = -n);
+                            (t.vertexNormals[e + 2] = t.vertexNormals[e + 1]), (t.vertexNormals[e + 1] = -n);
                         }
                     if ('XZ-Y' == O.get())
                         for (let e = 0; e < t.vertices.length; e += 3) {
                             let n = t.vertices[e + 2];
-                            (t.vertices[e + 2] = -t.vertices[e + 1]),
-                                (t.vertices[e + 1] = n);
+                            (t.vertices[e + 2] = -t.vertices[e + 1]), (t.vertices[e + 1] = n);
                         }
-                    (t.vertexNormals.length && !R.get()) ||
-                        t.calculateNormals(),
-                        t.calcTangentsBitangents();
+                    (t.vertexNormals.length && !R.get()) || t.calculateNormals(), t.calcTangentsBitangents();
                 }
                 render(e, t) {
                     if (this.geom)
                         if (this.mesh) {
                             if (this.geom.morphTargets.length) {
                                 (this.test = 11.7 * K),
-                                    this.test >=
-                                        this.geom.morphTargets.length - 1 &&
-                                        (this.test = 0);
-                                const e = this.geom.morphTargets[
-                                        Math.floor(this.test)
-                                    ],
-                                    t = this.geom.morphTargets[
-                                        Math.floor(this.test + 1)
-                                    ];
+                                    this.test >= this.geom.morphTargets.length - 1 && (this.test = 0);
+                                const e = this.geom.morphTargets[Math.floor(this.test)],
+                                    t = this.geom.morphTargets[Math.floor(this.test + 1)];
                                 if (e && e.vertices) {
                                     const a = this.test % 1;
-                                    for (
-                                        var n = 0;
-                                        n < this.morphGeom.vertices.length;
-                                        n++
-                                    )
+                                    for (var n = 0; n < this.morphGeom.vertices.length; n++)
                                         this.morphGeom.vertices[n] =
-                                            this.geom.vertices[n] +
-                                            (1 - a) * e.vertices[n] +
-                                            a * t.vertices[n];
+                                            this.geom.vertices[n] + (1 - a) * e.vertices[n] + a * t.vertices[n];
                                     this.mesh.updateVertices(this.morphGeom);
                                 }
                             }
-                            const a =
-                                !t &&
-                                -1 != this.material &&
-                                Z.shaders[this.material];
+                            const a = !t && -1 != this.material && Z.shaders[this.material];
                             a && e.pushShader(Z.shaders[this.material]),
                                 this.mesh.render(e.getShader(), t),
                                 a && e.popShader();
@@ -17456,9 +13991,7 @@ var Ops = Ops || {};
             },
             l = class {
                 constructor(e, t) {
-                    (this.bounds = new CGL.BoundingBox()),
-                        (this.meshes = []),
-                        (this.name = t.name);
+                    (this.bounds = new CGL.BoundingBox()), (this.meshes = []), (this.name = t.name);
                     const n = t.primitives;
                     for (var a = 0; a < n.length; a++) {
                         var i = new s(this.name, n[a], e);
@@ -17466,8 +13999,7 @@ var Ops = Ops || {};
                     }
                 }
                 render(e, t) {
-                    for (var n = 0; n < this.meshes.length; n++)
-                        this.meshes[n].render(e, t);
+                    for (var n = 0; n < this.meshes.length; n++) this.meshes[n].render(e, t);
                 }
             };
         const c = class {
@@ -17490,12 +14022,7 @@ var Ops = Ops || {};
             updateMatrix() {
                 if (
                     (mat4.identity(this.mat),
-                    this._node.translation &&
-                        mat4.translate(
-                            this.mat,
-                            this.mat,
-                            this._node.translation
-                        ),
+                    this._node.translation && mat4.translate(this.mat, this.mat, this._node.translation),
                     this._node.rotation)
                 ) {
                     const e = mat4.create();
@@ -17505,32 +14032,23 @@ var Ops = Ops || {};
                 }
                 if (
                     (this._node.scale &&
-                        ((this._scale = this._node.scale),
-                        mat4.scale(this.mat, this.mat, this._scale)),
-                    this._node.hasOwnProperty('mesh') &&
-                        (this.mesh = this._gltf.meshes[this._node.mesh]),
+                        ((this._scale = this._node.scale), mat4.scale(this.mat, this.mat, this._scale)),
+                    this._node.hasOwnProperty('mesh') && (this.mesh = this._gltf.meshes[this._node.mesh]),
                     this._node.children)
                 )
                     for (let e = 0; e < this._node.children.length; e++)
                         (this._gltf.json.nodes[e].isChild = !0),
                             this._gltf.nodes[this._node.children[e]] &&
-                                (this._gltf.nodes[
-                                    this._node.children[e]
-                                ].isChild = !0),
+                                (this._gltf.nodes[this._node.children[e]].isChild = !0),
                             this.children.push(this._node.children[e]);
             }
             unHide() {
                 this.hidden = !1;
-                for (let e = 0; e < this.children.length; e++)
-                    this.children[e].unHide && this.children[e].unHide();
+                for (let e = 0; e < this.children.length; e++) this.children[e].unHide && this.children[e].unHide();
             }
             calcBounds(e, t, n) {
                 const a = mat4.create();
-                if (
-                    (t && mat4.copy(a, t),
-                    this.mat && mat4.mul(a, a, this.mat),
-                    this.mesh)
-                ) {
+                if ((t && mat4.copy(a, t), this.mat && mat4.mul(a, a, this.mat), this.mesh)) {
                     const e = this.mesh.bounds.copy();
                     e.mulMat4(a),
                         n.apply(e),
@@ -17565,12 +14083,7 @@ var Ops = Ops || {};
                               this._animTrans[1].getValue(K),
                               this._animTrans[2].getValue(K),
                           ])
-                        : this.translation &&
-                          mat4.translate(
-                              this._animMat,
-                              this._animMat,
-                              this.translation
-                          ),
+                        : this.translation && mat4.translate(this._animMat, this._animMat, this.translation),
                         t && this._animRot
                             ? (CABLES.TL.Anim.slerpQuaternion(
                                   K,
@@ -17581,30 +14094,17 @@ var Ops = Ops || {};
                                   this._animRot[3]
                               ),
                               mat4.fromQuat(this._tempMat, this._tempQuat),
-                              mat4.mul(
-                                  this._animMat,
-                                  this._animMat,
-                                  this._tempMat
-                              ))
+                              mat4.mul(this._animMat, this._animMat, this._tempMat))
                             : this._rot &&
                               (mat4.fromQuat(this._tempRotmat, this._rot),
-                              mat4.mul(
-                                  this._animMat,
-                                  this._animMat,
-                                  this._tempRotmat
-                              )),
+                              mat4.mul(this._animMat, this._animMat, this._tempRotmat)),
                         t && this._animScale
                             ? mat4.scale(this._animMat, this._animMat, [
                                   this._animScale[0].getValue(K),
                                   this._animScale[1].getValue(K),
                                   this._animScale[2].getValue(K),
                               ])
-                            : this._scale &&
-                              mat4.scale(
-                                  this._animMat,
-                                  this._animMat,
-                                  this._scale
-                              ),
+                            : this._scale && mat4.scale(this._animMat, this._animMat, this._scale),
                         mat4.mul(e.mMatrix, e.mMatrix, this._animMat);
                 } else mat4.mul(e.mMatrix, e.mMatrix, this.mat);
                 mat4.copy(this.absMat, e.mMatrix);
@@ -17613,21 +14113,11 @@ var Ops = Ops || {};
                 if (
                     (t || e.pushModelMatrix(),
                     t || this.transform(e, o || K),
-                    (this.hidden && !r) ||
-                        (this.mesh && !n && this.mesh.render(e, a)),
+                    (this.hidden && !r) || (this.mesh && !n && this.mesh.render(e, a)),
                     !i)
                 )
                     for (let s = 0; s < this.children.length; s++)
-                        Z.nodes[this.children[s]] &&
-                            Z.nodes[this.children[s]].render(
-                                e,
-                                t,
-                                n,
-                                a,
-                                i,
-                                r,
-                                o
-                            );
+                        Z.nodes[this.children[s]] && Z.nodes[this.children[s]].render(e, t, n, a, i, r, o);
                 t || e.popModelMatrix();
             }
         };
@@ -17642,11 +14132,7 @@ var Ops = Ops || {};
                     r = '';
                 for (i = 0; i < a; i++) {
                     var o = 'identBg';
-                    0 == i && (o = 'identBgLevel0'),
-                        (r +=
-                            '<td class="ident  ' +
-                            o +
-                            '" ><div style=""></div></td>');
+                    0 == i && (o = 'identBgLevel0'), (r += '<td class="ident  ' + o + '" ><div style=""></div></td>');
                 }
                 CABLES.uuid();
                 if (
@@ -17654,31 +14140,20 @@ var Ops = Ops || {};
                     (t += '<td colspan="' + (20 - a) + '">'),
                     n.mesh && n.mesh.meshes.length
                         ? (t += '<span class="icon icon-cube"></span>&nbsp;')
-                        : (t +=
-                              '<span class="icon icon-circle"></span> &nbsp;'),
+                        : (t += '<span class="icon icon-circle"></span> &nbsp;'),
                     (t += n.name),
                     (t += '</td>'),
                     (t += '<td>'),
                     (t += '</td>'),
                     n.mesh)
                 ) {
-                    for (t += '<td>', i = 0; i < n.mesh.meshes.length; i++)
-                        t += n.mesh.meshes[i].name;
-                    for (
-                        t += '</td>', t += '<td>', i = 0;
-                        i < n.mesh.meshes.length;
-                        i++
-                    )
-                        n.mesh.meshes[i].material &&
-                            (t +=
-                                Z.json.materials[n.mesh.meshes[i].material]
-                                    .name);
+                    for (t += '<td>', i = 0; i < n.mesh.meshes.length; i++) t += n.mesh.meshes[i].name;
+                    for (t += '</td>', t += '<td>', i = 0; i < n.mesh.meshes.length; i++)
+                        n.mesh.meshes[i].material && (t += Z.json.materials[n.mesh.meshes[i].material].name);
                     t += '</td>';
                 } else t += '<td>-</td><td>-</td>';
                 (t += '<td>'),
-                    n._animRot || n._animScale || n._animTrans
-                        ? (t += 'Yes')
-                        : (t += '-'),
+                    n._animRot || n._animScale || n._animTrans ? (t += 'Yes') : (t += '-'),
                     (t += '</td>'),
                     (t += '<td>');
                 var s = '';
@@ -17710,8 +14185,7 @@ var Ops = Ops || {};
                     (t += '</tr>'),
                     n.children)
                 )
-                    for (i = 0; i < n.children.length; i++)
-                        t = g(t, Z.nodes[n.children[i]], a + 1);
+                    for (i = 0; i < n.children.length; i++) t = g(t, Z.nodes[n.children[i]], a + 1);
                 return t;
             }
         }
@@ -17721,27 +14195,14 @@ var Ops = Ops || {};
                 ((a += ' <td>' + n + '</td>'),
                 (a += ' <td>' + t.name + '</td>'),
                 (a += ' <td>'),
-                t.pbrMetallicRoughness &&
-                    t.pbrMetallicRoughness.baseColorFactor)
+                t.pbrMetallicRoughness && t.pbrMetallicRoughness.baseColorFactor)
             ) {
                 var i = '';
-                (i +=
-                    '' +
-                    Math.round(
-                        255 * t.pbrMetallicRoughness.baseColorFactor[0]
-                    )),
-                    (i +=
-                        ',' +
-                        Math.round(
-                            255 * t.pbrMetallicRoughness.baseColorFactor[1]
-                        )),
+                (i += '' + Math.round(255 * t.pbrMetallicRoughness.baseColorFactor[0])),
+                    (i += ',' + Math.round(255 * t.pbrMetallicRoughness.baseColorFactor[1])),
                     (a +=
                         '<div style="width:15px;height:15px;;background-color:rgb(' +
-                        (i +=
-                            ',' +
-                            Math.round(
-                                255 * t.pbrMetallicRoughness.baseColorFactor[2]
-                            )) +
+                        (i += ',' + Math.round(255 * t.pbrMetallicRoughness.baseColorFactor[2])) +
                         ')">&nbsp;</a>');
             }
             return (
@@ -17764,10 +14225,7 @@ var Ops = Ops || {};
             console.log(Z);
             const t = {};
             var n = '<div style="overflow:scroll;width:100%;height:100%">';
-            if (
-                ((n += 'generator:' + Z.json.asset.generator),
-                Z.json.materials && 0 != Z.json.materials.length)
-            ) {
+            if (((n += 'generator:' + Z.json.asset.generator), Z.json.materials && 0 != Z.json.materials.length)) {
                 (n += '<h3>Materials (' + Z.json.materials.length + ')</h3>'),
                     (n += '<table class="table treetable">'),
                     (n += '<tr>'),
@@ -17777,8 +14235,7 @@ var Ops = Ops || {};
                     (n += ' <th>Function</th>'),
                     (n += ' <th></th>'),
                     (n += '</tr>');
-                for (var a = 0; a < Z.json.materials.length; a++)
-                    n += d(Z.json.materials[a], a);
+                for (var a = 0; a < Z.json.materials.length; a++) n += d(Z.json.materials[a], a);
                 n += '</table>';
             } else (n += '<h3>Materials</h3>'), (n += 'No materials');
             (n += '<h3>Nodes (' + Z.nodes.length + ')</h3>'),
@@ -17790,8 +14247,7 @@ var Ops = Ops || {};
                 (n += ' <th>Anim</th>'),
                 (n += ' <th>Show</th>'),
                 (n += '</tr>');
-            for (a = 0; a < Z.nodes.length; a++)
-                Z.nodes[a].isChild || (n = g(n, Z.nodes[a], 1));
+            for (a = 0; a < Z.nodes.length; a++) Z.nodes[a].isChild || (n = g(n, Z.nodes[a], 1));
             (n += '</table>'),
                 (n += '<h3>Meshes (' + Z.json.meshes.length + ')</h3>'),
                 (n += '<table class="table treetable">'),
@@ -17804,41 +14260,26 @@ var Ops = Ops || {};
             var i = [];
             t.meshes = 0;
             for (a = 0; a < Z.json.meshes.length; a++) {
-                (n += '<tr>'),
-                    (n += '<td>' + Z.json.meshes[a].name + '</td>'),
-                    (n += '<td>');
+                (n += '<tr>'), (n += '<td>' + Z.json.meshes[a].name + '</td>'), (n += '<td>');
                 for (var r = 0; r < Z.json.meshes[a].primitives.length; r++)
                     Z.json.meshes[a].primitives[r].material
-                        ? (n +=
-                              Z.json.materials[
-                                  Z.json.meshes[a].primitives[r].material
-                              ].name)
+                        ? (n += Z.json.materials[Z.json.meshes[a].primitives[r].material].name)
                         : (n += 'None');
                 (n += '</td>'), (n += '<td>');
                 for (r = 0; r < Z.json.meshes[a].primitives.length; r++)
                     Z.json.meshes[a].primitives[r].attributes.POSITION &&
-                        (n +=
-                            Z.json.accessors[
-                                Z.json.meshes[a].primitives[r].attributes
-                                    .POSITION
-                            ].count);
+                        (n += Z.json.accessors[Z.json.meshes[a].primitives[r].attributes.POSITION].count);
                 (n += '</td>'), (n += '<td>');
                 for (r = 0; r < Z.json.meshes[a].primitives.length; r++)
                     n += Object.keys(Z.json.meshes[a].primitives[r].attributes);
                 (n += '</td>'), (n += '</tr>');
                 for (r = 0; r < Z.json.meshes[a].primitives.length; r++) {
-                    var o =
-                        Z.json.accessors[Z.json.meshes[a].primitives[r].indices]
-                            .bufferView;
-                    for (var s in (-1 == i.indexOf(o) &&
-                        (i.push(o),
-                        (t.meshes += Z.json.bufferViews[o].byteLength)),
+                    var o = Z.json.accessors[Z.json.meshes[a].primitives[r].indices].bufferView;
+                    for (var s in (-1 == i.indexOf(o) && (i.push(o), (t.meshes += Z.json.bufferViews[o].byteLength)),
                     Z.json.meshes[a].primitives[r].attributes)) {
                         const e = Z.json.meshes[a].primitives[r].attributes[s],
                             n = Z.json.accessors[e].bufferView;
-                        -1 == i.indexOf(n) &&
-                            (i.push(n),
-                            (t.meshes += Z.json.bufferViews[n].byteLength));
+                        -1 == i.indexOf(n) && (i.push(n), (t.meshes += Z.json.bufferViews[n].byteLength));
                     }
                 }
             }
@@ -17855,39 +14296,17 @@ var Ops = Ops || {};
                     (t.animations = 0);
                 for (a = 0; a < Z.json.animations.length; a++) {
                     for (r = 0; r < Z.json.animations[a].samplers.length; r++) {
-                        o =
-                            Z.json.accessors[
-                                Z.json.animations[a].samplers[r].input
-                            ].bufferView;
-                        -1 == i.indexOf(o) &&
-                            (i.push(o),
-                            (t.animations += Z.json.bufferViews[o].byteLength));
-                        o =
-                            Z.json.accessors[
-                                Z.json.animations[a].samplers[r].output
-                            ].bufferView;
-                        -1 == i.indexOf(o) &&
-                            (i.push(o),
-                            (t.animations += Z.json.bufferViews[o].byteLength));
+                        o = Z.json.accessors[Z.json.animations[a].samplers[r].input].bufferView;
+                        -1 == i.indexOf(o) && (i.push(o), (t.animations += Z.json.bufferViews[o].byteLength));
+                        o = Z.json.accessors[Z.json.animations[a].samplers[r].output].bufferView;
+                        -1 == i.indexOf(o) && (i.push(o), (t.animations += Z.json.bufferViews[o].byteLength));
                     }
                     for (r = 0; r < Z.json.animations[a].channels.length; r++) {
                         (n += '<tr>'),
-                            (n +=
-                                '  <td>' +
-                                Z.json.animations[a].name +
-                                ' (' +
-                                a +
-                                ')</td>'),
-                            (n +=
-                                '  <td>' +
-                                Z.nodes[
-                                    Z.json.animations[a].channels[r].target.node
-                                ].name +
-                                '</td>'),
+                            (n += '  <td>' + Z.json.animations[a].name + ' (' + a + ')</td>'),
+                            (n += '  <td>' + Z.nodes[Z.json.animations[a].channels[r].target.node].name + '</td>'),
                             (n += '  <td>'),
-                            (n +=
-                                Z.json.animations[a].channels[r].target.path +
-                                ' '),
+                            (n += Z.json.animations[a].channels[r].target.path + ' '),
                             (n += '  </td>');
                         const e = Z.json.animations[a].channels[r].sampler,
                             t = Z.json.animations[a].samplers[e];
@@ -17909,10 +14328,7 @@ var Ops = Ops || {};
                     (t.images = 0);
                 for (a = 0; a < Z.json.images.length; a++)
                     Z.json.images[a].bufferView &&
-                        (t.images +=
-                            Z.json.bufferViews[
-                                Z.json.images[a].bufferView
-                            ].byteLength),
+                        (t.images += Z.json.bufferViews[Z.json.images[a].bufferView].byteLength),
                         (n += '<tr>'),
                         (n += '<td>' + Z.json.images[a].name + '</td>'),
                         (n += '<td>' + Z.json.images[a].mimeType + '</td>'),
@@ -17940,26 +14356,11 @@ var Ops = Ops || {};
                         (n += '<td>' + Z.json.cameras[a].name + '</td>'),
                         (n += '<td>' + Z.json.cameras[a].type + '</td>'),
                         (n += '<td>'),
-                        (n +=
-                            'yfov: ' +
-                            Math.round(
-                                100 * Z.json.cameras[a].perspective.yfov
-                            ) /
-                                100),
+                        (n += 'yfov: ' + Math.round(100 * Z.json.cameras[a].perspective.yfov) / 100),
                         (n += ', '),
-                        (n +=
-                            'zfar: ' +
-                            Math.round(
-                                100 * Z.json.cameras[a].perspective.zfar
-                            ) /
-                                100),
+                        (n += 'zfar: ' + Math.round(100 * Z.json.cameras[a].perspective.zfar) / 100),
                         (n += ', '),
-                        (n +=
-                            'znear: ' +
-                            Math.round(
-                                100 * Z.json.cameras[a].perspective.znear
-                            ) /
-                                100),
+                        (n += 'znear: ' + Math.round(100 * Z.json.cameras[a].perspective.znear) / 100),
                         (n += '</td>'),
                         (n += '<tr>');
                 n += '</table>';
@@ -17999,11 +14400,7 @@ var Ops = Ops || {};
                 console.log(Z);
         }
         function m(e) {
-            return e > 1024
-                ? Math.round(e / 1024) + ' kb'
-                : e > 512e3
-                ? Math.round(e / 1024) + ' mb'
-                : e + ' bytes';
+            return e > 1024 ? Math.round(e / 1024) + ' kb' : e > 512e3 ? Math.round(e / 1024) + ' mb' : e + ' bytes';
         }
         const p = e.inString('data'),
             _ = e.inTrigger('Render'),
@@ -18061,9 +14458,7 @@ var Ops = Ops || {};
                     'XZ' == T.get() && (ie[1] = -Z.bounds.minY));
         }
         function oe() {
-            if (((Y = null), Z))
-                for (let e = 0; e < Z.cams.length; e++)
-                    Z.cams[e].name == b.get() && (Y = Z.cams[e]);
+            if (((Y = null), Z)) for (let e = 0; e < Z.cams.length; e++) Z.cams[e].name == b.get() && (Y = Z.cams[e]);
         }
         function se(t) {
             J || (J = z.patch.loading.start('gltf' + v.get(), v.get()));
@@ -18074,7 +14469,7 @@ var Ops = Ops || {};
                 (a.responseType = 'arraybuffer'),
                 h(),
                 z.patch.loading.addAssetLoadingTask(() => {
-                    (a.onload = function(t) {
+                    (a.onload = function (t) {
                         (W = []), (q = 0);
                         const n = a.response;
                         (Z = o(n)),
@@ -18085,22 +14480,15 @@ var Ops = Ops || {};
                             G.set(q),
                             ce(),
                             u && f(),
-                            (function() {
+                            (function () {
                                 const e = ['None'];
                                 if (Z && Z.json.cameras)
-                                    for (
-                                        let t = 0;
-                                        t < Z.json.cameras.length;
-                                        t++
-                                    )
-                                        e.push(Z.json.cameras[t].name);
+                                    for (let t = 0; t < Z.json.cameras.length; t++) e.push(Z.json.cameras[t].name);
                                 b.uiAttribs.values = e;
                             })(),
                             oe(),
                             V.set(W),
-                            Z &&
-                                ((Z.loaded = Date.now()),
-                                Z.bounds && X.set(Z.bounds)),
+                            Z && ((Z.loaded = Date.now()), Z.bounds && X.set(Z.bounds)),
                             re(),
                             k.set(!0);
                     }),
@@ -18109,7 +14497,7 @@ var Ops = Ops || {};
         }
         function le(e) {
             clearTimeout($),
-                ($ = setTimeout(function() {
+                ($ = setTimeout(function () {
                     se(e);
                 }, 30));
         }
@@ -18118,11 +14506,9 @@ var Ops = Ops || {};
                 if ((Z.unHideAll(), ee && ee.hiddenNodes))
                     for (const t in ee.hiddenNodes) {
                         const n = Z.getNode(t);
-                        n
-                            ? (n.hidden = !0)
-                            : e.warn('node to be hidden not found', t, n);
+                        n ? (n.hidden = !0) : e.warn('node to be hidden not found', t, n);
                     }
-                !(function() {
+                !(function () {
                     const e = y.get();
                     if (Z && ee && ee.hiddenNodes && e)
                         for (let t = 0; t < e.length; t++) {
@@ -18133,16 +14519,11 @@ var Ops = Ops || {};
             }
         }
         function ue() {
-            return (
-                (ee = (ee = p.get()) && '' !== ee ? JSON.parse(ee) : {}),
-                Z && ce(),
-                ee
-            );
+            return (ee = (ee = p.get()) && '' !== ee ? JSON.parse(ee) : {}), Z && ce(), ee;
         }
         function he(e, t) {
             for (let n = 0; n < Z.nodes.length; n++)
-                Z.nodes[n].children.indexOf(t) >= 0 &&
-                    (e.push(Z.nodes[n]), Z.nodes[n].isChild && he(e, n));
+                Z.nodes[n].children.indexOf(t) >= 0 && (e.push(Z.nodes[n]), Z.nodes[n].isChild && he(e, n));
         }
         (E.onTriggered = f),
             p.setUiAttribs({ hideParam: !0, hidePort: !0 }),
@@ -18150,27 +14531,23 @@ var Ops = Ops || {};
             (y.onChange = ce),
             e.setPortGroup('Transform', [A, C, T]),
             (T.onChange = re),
-            (A.onChange = function() {
+            (A.onChange = function () {
                 C.setUiAttribs({ greyout: !A.get() });
             }),
-            (I.onChange = function() {
+            (I.onChange = function () {
                 Q = !0;
             }),
-            (e.onDelete = function() {
+            (e.onDelete = function () {
                 h();
             }),
-            (M.onChange = function() {
+            (M.onChange = function () {
                 S.setUiAttribs({ greyout: M.get() });
             }),
             (b.onChange = oe),
-            (_.onTriggered = function() {
+            (_.onTriggered = function () {
                 if (
-                    ((K = M.get()
-                        ? e.patch.timer.getTime()
-                        : Math.max(0, S.get())),
-                    L.get()
-                        ? (K %= q) < ne && j.trigger()
-                        : q > 0 && K >= q && j.trigger(),
+                    ((K = M.get() ? e.patch.timer.getTime() : Math.max(0, S.get())),
+                    L.get() ? (K %= q) < ne && j.trigger() : q > 0 && K >= q && j.trigger(),
                     (ne = K),
                     z.pushModelMatrix(),
                     B.set(K || 0),
@@ -18178,9 +14555,7 @@ var Ops = Ops || {};
                 ) {
                     if (A.get()) {
                         const e = C.get() / Z.bounds.maxAxis;
-                        (Z.scale = e),
-                            vec3.set(te, e, e, e),
-                            mat4.scale(z.mMatrix, z.mMatrix, te);
+                        (Z.scale = e), vec3.set(te, e, e, e), mat4.scale(z.mMatrix, z.mMatrix, te);
                     }
                     ae && mat4.translate(z.mMatrix, z.mMatrix, ie);
                 }
@@ -18188,7 +14563,7 @@ var Ops = Ops || {};
                     ((z.frameStore.currentScene = Z),
                     F.trigger(),
                     Q &&
-                        (function() {
+                        (function () {
                             if (!Z) return;
                             Z.shaders = {};
                             for (let e = 0; e < I.links.length; e++) {
@@ -18198,17 +14573,9 @@ var Ops = Ops || {};
                                 if (n && a && n.get()) {
                                     const e = a.get();
                                     if (Z.json.materials)
-                                        for (
-                                            let a = 0;
-                                            a < Z.json.materials.length;
-                                            a++
-                                        )
+                                        for (let a = 0; a < Z.json.materials.length; a++)
                                             Z.json.materials[a].name == e &&
-                                                (Z.shaders[a] &&
-                                                    t.warn(
-                                                        'double material assignment:',
-                                                        e
-                                                    ),
+                                                (Z.shaders[a] && t.warn('double material assignment:', e),
                                                 (Z.shaders[a] = n.get()));
                                 }
                             }
@@ -18221,39 +14588,25 @@ var Ops = Ops || {};
                         Z.bounds &&
                             z.shouldDrawHelpers(e) &&
                             (CABLES.UI.renderHelper
-                                ? z.pushShader(
-                                      CABLES.GL_MARKER.getDefaultShader(z)
-                                  )
-                                : z.pushShader(
-                                      CABLES.GL_MARKER.getSelectedShader(z)
-                                  ),
+                                ? z.pushShader(CABLES.GL_MARKER.getDefaultShader(z))
+                                : z.pushShader(CABLES.GL_MARKER.getSelectedShader(z)),
                             Z.bounds.render(z),
                             z.popShader());
-                    for (let e = 0; e < Z.nodes.length; e++)
-                        Z.nodes[e].isChild || Z.nodes[e].render(z);
+                    for (let e = 0; e < Z.nodes.length; e++) Z.nodes[e].isChild || Z.nodes[e].render(z);
                 }
-                w.trigger(),
-                    (z.frameStore.currentScene = null),
-                    z.popModelMatrix(),
-                    Y && Y.end();
+                w.trigger(), (z.frameStore.currentScene = null), z.popModelMatrix(), Y && Y.end();
             }),
-            (e.onFileChanged = function(e) {
-                e &&
-                    e.length > 3 &&
-                    v.get() &&
-                    v.get().indexOf(e) > -1 &&
-                    le(!0);
+            (e.onFileChanged = function (e) {
+                e && e.length > 3 && v.get() && v.get().indexOf(e) > -1 && le(!0);
             }),
-            (e.onFileChanged = function(e) {
+            (e.onFileChanged = function (e) {
                 v.get() && v.get().indexOf(e) > -1 && le(!0);
             }),
-            (e.exposeTexture = function(t) {
+            (e.exposeTexture = function (t) {
                 const n = gui.corePatch().addOp('Ops.Gl.GLTF.GltfTexture');
-                n.getPort('Name').set(t),
-                    e.patch.link(e, w.name, n, 'Render'),
-                    gui.patch().focusOp(n.id, !0);
+                n.getPort('Name').set(t), e.patch.link(e, w.name, n, 'Render'), gui.patch().focusOp(n.id, !0);
             }),
-            (e.exposeNode = function(t, n) {
+            (e.exposeNode = function (t, n) {
                 if (n) {
                     for (let n = 0; n < Z.nodes.length; n++)
                         if (Z.nodes[n].name == t) {
@@ -18263,42 +14616,34 @@ var Ops = Ops || {};
                             let i = w.name,
                                 r = e;
                             for (let t = 0; t < a.length; t++) {
-                                const n = gui
-                                    .corePatch()
-                                    .addOp('Ops.Gl.GLTF.GltfNode_v2');
+                                const n = gui.corePatch().addOp('Ops.Gl.GLTF.GltfNode_v2');
                                 n.getPort('Node Name').set(a[t].name),
                                     e.patch.link(r, i, n, 'Render'),
                                     t == a.length - 1
                                         ? n.getPort('Transformation').set(!1)
-                                        : (n.getPort('Draw Mesh').set(!1),
-                                          n.getPort('Draw Childs').set(!1)),
+                                        : (n.getPort('Draw Mesh').set(!1), n.getPort('Draw Childs').set(!1)),
                                     (i = 'Next'),
                                     (r = n);
                             }
                         }
                 } else {
                     const n = gui.corePatch().addOp('Ops.Gl.GLTF.GltfNode_v2');
-                    n.getPort('Node Name').set(t),
-                        e.patch.link(e, w.name, n, 'Render'),
-                        gui.patch().focusOp(n.id, !0);
+                    n.getPort('Node Name').set(t), e.patch.link(e, w.name, n, 'Render'), gui.patch().focusOp(n.id, !0);
                 }
                 CABLES.UI.MODAL.hide();
             }),
-            (e.assignMaterial = function(t) {
+            (e.assignMaterial = function (t) {
                 const n = gui.corePatch().addOp('Ops.Gl.GLTF.GltfSetMaterial');
                 n.getPort('Material Name').set(t),
                     e.patch.link(e, I.name, n, 'Material'),
                     gui.patch().focusOp(n.id, !0),
                     CABLES.UI.MODAL.hide();
             }),
-            (e.toggleNodeVisibility = function(e) {
+            (e.toggleNodeVisibility = function (e) {
                 const t = Z.getNode(e);
                 (t.hidden = !t.hidden),
                     (ee.hiddenNodes = ee.hiddenNodes || {}),
-                    t &&
-                        (t.hidden
-                            ? (ee.hiddenNodes[e] = !0)
-                            : delete ee.hiddenNodes[e]),
+                    t && (t.hidden ? (ee.hiddenNodes[e] = !0) : delete ee.hiddenNodes[e]),
                     p.set(JSON.stringify(ee));
             });
     }),
@@ -18307,7 +14652,7 @@ var Ops = Ops || {};
         f: Ops.Gl.GLTF.GltfScene_v2,
         objName: 'Ops.Gl.GLTF.GltfScene_v2',
     }),
-    (Ops.Gl.Phong.LambertMaterial_v2 = function() {
+    (Ops.Gl.Phong.LambertMaterial_v2 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t =
@@ -18320,11 +14665,10 @@ var Ops = Ops || {};
             o = e.inValueSlider('Diffuse G', Math.random()),
             s = e.inValueSlider('Diffuse B', Math.random()),
             l = e.inValueSlider('Diffuse A', 1);
-        r.setUiAttribs({ colorPick: !0 }),
-            e.setPortGroup('Diffuse Color', [r, o, s, l]);
+        r.setUiAttribs({ colorPick: !0 }), e.setPortGroup('Diffuse Color', [r, o, s, l]);
         const c = e.inBool('Double Sided', !1);
         c.setUiAttribs({ hidePort: !0 }),
-            (c.onChange = function() {
+            (c.onChange = function () {
                 p.toggleDefine('DOUBLE_SIDED', c.get());
             }),
             e.setPortGroup('Material Properties', [c]);
@@ -18335,13 +14679,10 @@ var Ops = Ops || {};
         function d() {
             u.get()
                 ? p.hasDefine('HAS_TEXTURE_DIFFUSE') ||
-                  (p.define('HAS_TEXTURE_DIFFUSE'),
-                  h || (h = new CGL.Uniform(p, 't', 'texDiffuse', 0)))
-                : (p.removeUniform('texDiffuse'),
-                  p.removeDefine('HAS_TEXTURE_DIFFUSE'),
-                  (h = null));
+                  (p.define('HAS_TEXTURE_DIFFUSE'), h || (h = new CGL.Uniform(p, 't', 'texDiffuse', 0)))
+                : (p.removeUniform('texDiffuse'), p.removeDefine('HAS_TEXTURE_DIFFUSE'), (h = null));
         }
-        (g.onChange = function() {
+        (g.onChange = function () {
             p.toggleDefine('COLORIZE_TEXTURE', g.get());
         }),
             e.setPortGroup('Texture', [u, g]);
@@ -18374,33 +14715,18 @@ var Ops = Ops || {};
                 (n.isUsed = !0),
                     b[t].position.setValue(n.position),
                     b[t].color.setValue(n.color),
-                    b[t].lightProperties.setValue([
-                        n.intensity,
-                        n.attenuation,
-                        n.falloff,
-                        n.radius,
-                    ]),
+                    b[t].lightProperties.setValue([n.intensity, n.attenuation, n.falloff, n.radius]),
                     b[t].conePointAt.setValue(n.conePointAt),
-                    b[t].spotProperties.setValue([
-                        n.cosConeAngle,
-                        n.cosConeAngleInner,
-                        n.spotExponent,
-                    ]),
-                    b[t].castLightType.setValue([
-                        Number(n.castLight),
-                        a[n.type],
-                    ]);
+                    b[t].spotProperties.setValue([n.cosConeAngle, n.cosConeAngleInner, n.spotExponent]),
+                    b[t].castLightType.setValue([Number(n.castLight), a[n.type]]);
             }
         }
         let A = 0;
         function C(e) {
             e.length !== A
-                ? (!(function(e) {
+                ? (!(function (e) {
                       for (let e = 0; e < b.length; e += 1) b[e] = null;
-                      (E.directional = !1),
-                          (E.spot = !1),
-                          (E.ambient = !1),
-                          (E.point = !1);
+                      (E.directional = !1), (E.spot = !1), (E.ambient = !1), (E.point = !1);
                       for (let t = 0; t < e.length; t += 1) {
                           if (t === _) return;
                           b[t] = null;
@@ -18408,18 +14734,8 @@ var Ops = Ops || {};
                           E[n] || (E[n] = !0),
                               b[t] ||
                                   (b[t] = {
-                                      color: new CGL.Uniform(
-                                          p,
-                                          '3f',
-                                          'lights[' + t + '].color',
-                                          [1, 1, 1]
-                                      ),
-                                      position: new CGL.Uniform(
-                                          p,
-                                          '3f',
-                                          'lights[' + t + '].position',
-                                          [0, 11, 0]
-                                      ),
+                                      color: new CGL.Uniform(p, '3f', 'lights[' + t + '].color', [1, 1, 1]),
+                                      position: new CGL.Uniform(p, '3f', 'lights[' + t + '].position', [0, 11, 0]),
                                       lightProperties: new CGL.Uniform(
                                           p,
                                           '4f',
@@ -18446,11 +14762,7 @@ var Ops = Ops || {};
                                       ),
                                   });
                       }
-                      for (
-                          let e = 0, t = Object.keys(E);
-                          e < t.length;
-                          e += 1
-                      ) {
+                      for (let e = 0, t = Object.keys(E); e < t.length; e += 1) {
                           const n = t[e];
                           p.toggleDefine('HAS_' + n.toUpperCase(), E[n]);
                       }
@@ -18470,69 +14782,30 @@ var Ops = Ops || {};
                   ((x = null), C(m.frameStore.lightStack))
                 : (x ||
                       (x = {
-                          color: new CGL.Uniform(p, '3f', 'lights[0].color', [
-                              1,
-                              1,
-                              1,
-                          ]),
-                          position: new CGL.Uniform(
-                              p,
-                              '3f',
-                              'lights[0].position',
-                              [0, 11, 0]
-                          ),
-                          lightProperties: new CGL.Uniform(
-                              p,
-                              '4f',
-                              'lights[0].lightProperties',
-                              [1, 1, 1, 1]
-                          ),
-                          conePointAt: new CGL.Uniform(
-                              p,
-                              '3f',
-                              'lights[0].conePointAt',
-                              vec3.create()
-                          ),
-                          spotProperties: new CGL.Uniform(
-                              p,
-                              '3f',
-                              'lights[0].spotProperties',
-                              [0, 0, 0, 0]
-                          ),
-                          castLightType: new CGL.Uniform(
-                              p,
-                              '2i',
-                              'lights[0].castLightType',
-                              [0, 0]
-                          ),
+                          color: new CGL.Uniform(p, '3f', 'lights[0].color', [1, 1, 1]),
+                          position: new CGL.Uniform(p, '3f', 'lights[0].position', [0, 11, 0]),
+                          lightProperties: new CGL.Uniform(p, '4f', 'lights[0].lightProperties', [1, 1, 1, 1]),
+                          conePointAt: new CGL.Uniform(p, '3f', 'lights[0].conePointAt', vec3.create()),
+                          spotProperties: new CGL.Uniform(p, '3f', 'lights[0].spotProperties', [0, 0, 0, 0]),
+                          castLightType: new CGL.Uniform(p, '2i', 'lights[0].castLightType', [0, 0]),
                       }),
                   mat4.invert(S, m.vMatrix),
                   (v[0].position = [S[12], S[13], S[14]]),
                   (e = v[0]),
                   p.define('NUM_LIGHTS', '1'),
                   p.hasDefine('HAS_SPOT') && p.removeDefine('HAS_SPOT'),
-                  p.hasDefine('HAS_DIRECTIONAL') &&
-                      p.removeDefine('HAS_DIRECTIONAL'),
+                  p.hasDefine('HAS_DIRECTIONAL') && p.removeDefine('HAS_DIRECTIONAL'),
                   p.hasDefine('HAS_AMBIENT') && p.removeDefine('HAS_AMBIENT'),
                   p.hasDefine('HAS_POINT') || p.define('HAS_POINT'),
                   x.position.setValue(e.position),
                   x.color.setValue(e.color),
-                  x.lightProperties.setValue([
-                      e.intensity,
-                      e.attenuation,
-                      e.falloff,
-                      e.radius,
-                  ]),
+                  x.lightProperties.setValue([e.intensity, e.attenuation, e.falloff, e.radius]),
                   x.castLightType.setValue([1, a[e.type]]),
                   x.conePointAt.setValue(e.conePointAt),
-                  x.spotProperties.setValue([
-                      e.cosConeAngle,
-                      e.cosConeAngleInner,
-                      e.spotExponent,
-                  ]),
+                  x.spotProperties.setValue([e.cosConeAngle, e.cosConeAngleInner, e.spotExponent]),
                   (A = -1));
         }
-        (i.onTriggered = function() {
+        (i.onTriggered = function () {
             p
                 ? (m.frameStore.lightStack &&
                       (0 === m.frameStore.lightStack.length
@@ -18557,7 +14830,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Phong.LambertMaterial_v2,
         objName: 'Ops.Gl.Phong.LambertMaterial_v2',
     }),
-    (Ops.Sequence = function() {
+    (Ops.Sequence = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = [],
@@ -18577,7 +14850,7 @@ var Ops = Ops || {};
         f: Ops.Sequence,
         objName: 'Ops.Sequence',
     }),
-    (Ops.Gl.Meshes.Cube_v2 = function() {
+    (Ops.Gl.Meshes.Cube_v2 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inTrigger('Render'),
@@ -18615,15 +14888,10 @@ var Ops = Ops || {};
                 A = i.get(),
                 C = -1 * i.get();
             o.get()
-                ? ((e *= 0.5),
-                  (t *= 0.5),
-                  (n *= 0.5),
-                  (p *= 0.5),
-                  (A *= 0.5),
-                  (C *= 0.5))
+                ? ((e *= 0.5), (t *= 0.5), (n *= 0.5), (p *= 0.5), (A *= 0.5), (C *= 0.5))
                 : ((t = 0), (p = 0), (C = 0)),
                 'Side' == s.get()
-                    ? (function(e, t, n, a, i, r, o) {
+                    ? (function (e, t, n, a, i, r, o) {
                           e.vertices = [
                               i,
                               r,
@@ -18753,229 +15021,22 @@ var Ops = Ops || {};
                               0 + s,
                           ]),
                               (e.vertexNormals = new Float32Array([
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
+                                  0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 1, 0,
+                                  0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0,
                               ])),
                               (e.tangents = new Float32Array([
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
+                                  -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, -1,
+                                  0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,
                               ])),
                               (e.biTangents = new Float32Array([
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
+                                  0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, -1,
+                                  0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
                               ]));
                       })(x, e, n, A, t, p, C)
-                    : (function(e, t, n, a, i, r, o) {
+                    : (function (e, t, n, a, i, r, o) {
                           e.vertices = [
                               i,
                               r,
@@ -19131,226 +15192,19 @@ var Ops = Ops || {};
                           ),
                               e.setTexCoords(d),
                               (e.vertexNormals = [
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
+                                  0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 1, 0,
+                                  0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0,
                               ]),
                               (e.tangents = new Float32Array([
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
+                                  -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, -1,
+                                  0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,
                               ])),
                               (e.biTangents = new Float32Array([
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  -1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
-                                  0,
-                                  1,
-                                  0,
+                                  0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, -1,
+                                  0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0,
+                                  1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
                               ]));
                       })(x, e, n, A, t, p, C),
                 (x.verticesIndices = []),
@@ -19367,21 +15221,32 @@ var Ops = Ops || {};
                 _.set(x),
                 (T = !1);
         }
-        (l.onChange = c.onChange = u.onChange = h.onChange = g.onChange = d.onChange = f.onChange = m.onChange = s.onChange = a.onChange = r.onChange = i.onChange = o.onChange = function() {
-            T = !0;
-        }),
-            (t.onLinkChanged = function() {
+        (l.onChange =
+            c.onChange =
+            u.onChange =
+            h.onChange =
+            g.onChange =
+            d.onChange =
+            f.onChange =
+            m.onChange =
+            s.onChange =
+            a.onChange =
+            r.onChange =
+            i.onChange =
+            o.onChange =
+                function () {
+                    T = !0;
+                }),
+            (t.onLinkChanged = function () {
                 t.isLinked() ? A() : _.set(null);
             }),
-            (t.onTriggered = function() {
-                T && A(),
-                    n.get() && b && E && b.render(v.getShader()),
-                    p.trigger();
+            (t.onTriggered = function () {
+                T && A(), n.get() && b && E && b.render(v.getShader()), p.trigger();
             }),
-            (e.preRender = function() {
+            (e.preRender = function () {
                 A(), b.render(v.getShader());
             }),
-            (e.onDelete = function() {
+            (e.onDelete = function () {
                 b && b.dispose();
             });
     }),
@@ -19390,7 +15255,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Meshes.Cube_v2,
         objName: 'Ops.Gl.Meshes.Cube_v2',
     }),
-    (Ops.Gl.Matrix.Transform = function() {
+    (Ops.Gl.Matrix.Transform = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inTrigger('render'),
@@ -19425,43 +15290,40 @@ var Ops = Ops || {};
                 f && mat4.scale(d, d, g),
                 (v = !1);
         }
-        (o.onChange = s.onChange = l.onChange = function() {
-            v = !0;
-        }),
-            (n.onChange = a.onChange = i.onChange = function() {
-                p = !0;
-            }),
-            (r.onChange = function() {
+        (o.onChange =
+            s.onChange =
+            l.onChange =
+                function () {
+                    v = !0;
+                }),
+            (n.onChange =
+                a.onChange =
+                i.onChange =
+                    function () {
+                        p = !0;
+                    }),
+            (r.onChange = function () {
                 _ = !0;
             }),
-            (t.onTriggered = function() {
+            (t.onTriggered = function () {
                 let t = !1;
                 p &&
-                    (!(function() {
-                        (m = !1),
-                            (0 !== n.get() || 0 !== a.get() || 0 !== i.get()) &&
-                                (m = !0);
+                    (!(function () {
+                        (m = !1), (0 !== n.get() || 0 !== a.get() || 0 !== i.get()) && (m = !0);
                         vec3.set(h, n.get(), a.get(), i.get()), (p = !1);
                     })(),
                     (t = !0)),
-                    _ &&
-                        ((f = !0),
-                        vec3.set(g, r.get(), r.get(), r.get()),
-                        (_ = !1),
-                        (t = !0)),
+                    _ && ((f = !0), vec3.set(g, r.get(), r.get(), r.get()), (_ = !1), (t = !0)),
                     v && (t = !0),
                     t && x(),
                     u.pushModelMatrix(),
                     mat4.multiply(u.mMatrix, u.mMatrix, d),
                     c.trigger(),
                     u.popModelMatrix(),
-                    CABLES.UI &&
-                        CABLES.UI.showCanvasTransforms &&
-                        gui.setTransform(e.id, n.get(), a.get(), i.get()),
-                    e.isCurrentUiOp() &&
-                        gui.setTransformGizmo({ posX: n, posY: a, posZ: i });
+                    CABLES.UI && CABLES.UI.showCanvasTransforms && gui.setTransform(e.id, n.get(), a.get(), i.get()),
+                    e.isCurrentUiOp() && gui.setTransformGizmo({ posX: n, posY: a, posZ: i });
             }),
-            (e.transform3d = function() {
+            (e.transform3d = function () {
                 return { pos: [n, a, i] };
             }),
             x();
@@ -19471,7 +15333,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Matrix.Transform,
         objName: 'Ops.Gl.Matrix.Transform',
     }),
-    (Ops.Gl.Phong.SpotLight_v5 = function() {
+    (Ops.Gl.Phong.SpotLight_v5 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.patch.cgl,
@@ -19532,11 +15394,7 @@ var Ops = Ops || {};
             w.setUiAttribs({ greyout: !0, hidePort: !0 });
         const B = e.inBool('Enable Advanced', !1),
             D = e.inSwitch('MSAA', ['none', '2x', '4x', '8x'], 'none'),
-            V = e.inSwitch(
-                'Texture Filter',
-                ['Linear', 'Nearest', 'Mip Map'],
-                'Linear'
-            ),
+            V = e.inSwitch('Texture Filter', ['Linear', 'Nearest', 'Mip Map'], 'Linear'),
             X = e.inSwitch('Anisotropic', [0, 1, 2, 4, 8, 16], '0');
         D.setUiAttribs({ greyout: !0, hidePort: !0 }),
             V.setUiAttribs({ greyout: !0, hidePort: !0 }),
@@ -19544,7 +15402,7 @@ var Ops = Ops || {};
             e.setPortGroup('Advanced Options', [B, D, V, X]);
         let j = !1;
         B.setUiAttribs({ hidePort: !0 }),
-            (B.onChange = function() {
+            (B.onChange = function () {
                 D.setUiAttribs({ greyout: !B.get() }),
                     V.setUiAttribs({ greyout: !B.get() }),
                     X.setUiAttribs({ greyout: !B.get() });
@@ -19556,16 +15414,16 @@ var Ops = Ops || {};
             W = e.outNumber('World Position Z'),
             Z = new CGL.Light(t, {
                 type: 'spot',
-                position: [0, 1, 2].map(function(e) {
+                position: [0, 1, 2].map(function (e) {
                     return c[e].get();
                 }),
-                color: [0, 1, 2].map(function(e) {
+                color: [0, 1, 2].map(function (e) {
                     return _[e].get();
                 }),
-                specular: [0, 1, 2].map(function(e) {
+                specular: [0, 1, 2].map(function (e) {
                     return E[e].get();
                 }),
-                conePointAt: [0, 1, 2].map(function(e) {
+                conePointAt: [0, 1, 2].map(function (e) {
                     return d[e].get();
                 }),
                 intensity: i.get(),
@@ -19581,12 +15439,32 @@ var Ops = Ops || {};
             });
         Z.castLight = a.get();
         let q = !1;
-        (f.onChange = m.onChange = p.onChange = v.onChange = x.onChange = b.onChange = u.onChange = h.onChange = g.onChange = o.onChange = s.onChange =
-            l.onChange),
-            (a.onChange = i.onChange = r.onChange = M.onChange = T.onChange = A.onChange = C.onChange = I.onChange = y.onChange = F.onChange = function() {
-                q = !0;
-            }),
-            (P.onChange = function() {
+        (f.onChange =
+            m.onChange =
+            p.onChange =
+            v.onChange =
+            x.onChange =
+            b.onChange =
+            u.onChange =
+            h.onChange =
+            g.onChange =
+            o.onChange =
+            s.onChange =
+                l.onChange),
+            (a.onChange =
+                i.onChange =
+                r.onChange =
+                M.onChange =
+                T.onChange =
+                A.onChange =
+                C.onChange =
+                I.onChange =
+                y.onChange =
+                F.onChange =
+                    function () {
+                        q = !0;
+                    }),
+            (P.onChange = function () {
                 j = !0;
                 const e = P.get();
                 R.setUiAttribs({ greyout: !e }),
@@ -19611,7 +15489,7 @@ var Ops = Ops || {};
                     Z.createBlurShader(),
                     Z.updateProjectionMatrix(null, y.get(), F.get(), T.get())),
                 B.get() &&
-                    (function() {
+                    (function () {
                         const e = Number(D.get().charAt(0));
                         let t = null;
                         const n = Number(X.get());
@@ -19619,8 +15497,7 @@ var Ops = Ops || {};
                             ? (t = CGL.Texture.FILTER_LINEAR)
                             : 'Nearest' == V.get()
                             ? (t = CGL.Texture.FILTER_NEAREST)
-                            : 'Mip Map' == V.get() &&
-                              (t = CGL.Texture.FILTER_MIPMAP);
+                            : 'Mip Map' == V.get() && (t = CGL.Texture.FILTER_MIPMAP);
                         const a = Number(R.get()),
                             i = { isFloatingPointTexture: !0, filter: t };
                         e &&
@@ -19634,15 +15511,19 @@ var Ops = Ops || {};
                     })(),
                 (j = !1);
         }
-        D.onChange = X.onChange = V.onChange = R.onChange = function() {
-            j = !0;
-        };
+        D.onChange =
+            X.onChange =
+            V.onChange =
+            R.onChange =
+                function () {
+                    j = !0;
+                };
         const $ = vec3.create(),
             J = vec3.create(),
             ee = vec3.create(),
             te = vec3.create();
         let ne = !1;
-        n.onTriggered = function() {
+        n.onTriggered = function () {
             if (j) {
                 if (t.frameStore.shadowPass) return;
                 Q();
@@ -19651,9 +15532,7 @@ var Ops = Ops || {};
                 (t.frameStore.shadowPass ||
                     (Z.isUsed || ne
                         ? (!Z.isUsed && ne) ||
-                          (Z.isUsed && ne
-                              ? (e.setUiError('lightUsed', null), (ne = !1))
-                              : Z.isUsed)
+                          (Z.isUsed && ne ? (e.setUiError('lightUsed', null), (ne = !1)) : Z.isUsed)
                         : (e.setUiError(
                               'lightUsed',
                               'No operator is using this light. Make sure this op is positioned before an operator that uses lights. Also make sure there is an operator that uses lights after this.',
@@ -19662,16 +15541,16 @@ var Ops = Ops || {};
                           (ne = !0)),
                     (Z.isUsed = !1)),
                 q &&
-                    ((Z.position = [0, 1, 2].map(function(e) {
+                    ((Z.position = [0, 1, 2].map(function (e) {
                         return c[e].get();
                     })),
-                    (Z.color = [0, 1, 2].map(function(e) {
+                    (Z.color = [0, 1, 2].map(function (e) {
                         return _[e].get();
                     })),
-                    (Z.specular = [0, 1, 2].map(function(e) {
+                    (Z.specular = [0, 1, 2].map(function (e) {
                         return E[e].get();
                     })),
-                    (Z.conePointAt = [0, 1, 2].map(function(e) {
+                    (Z.conePointAt = [0, 1, 2].map(function (e) {
                         return d[e].get();
                     })),
                     (Z.intensity = i.get()),
@@ -19711,7 +15590,7 @@ var Ops = Ops || {};
             ) {
                 const e = 1.5 * G.get() * K;
                 O.get() &&
-                    Z.renderPasses(U.get(), e, function() {
+                    Z.renderPasses(U.get(), e, function () {
                         k.trigger();
                     }),
                     H.set(null),
@@ -19732,16 +15611,12 @@ var Ops = Ops || {};
         f: Ops.Gl.Phong.SpotLight_v5,
         objName: 'Ops.Gl.Phong.SpotLight_v5',
     }),
-    (Ops.Gl.Texture = function() {
+    (Ops.Gl.Texture = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inFile('file', 'image'),
             n = e.inSwitch('filter', ['nearest', 'linear', 'mipmap']),
-            a = e.inValueSelect(
-                'wrap',
-                ['repeat', 'mirrored repeat', 'clamp to edge'],
-                'clamp to edge'
-            ),
+            a = e.inValueSelect('wrap', ['repeat', 'mirrored repeat', 'clamp to edge'], 'clamp to edge'),
             i = e.inValueBool('flip', !1),
             r = e.inValueBool('unpackPreMultipliedAlpha', !1),
             o = e.inSwitch('Anisotropic', [0, 1, 2, 4, 8, 16], 0),
@@ -19750,41 +15625,38 @@ var Ops = Ops || {};
             c = e.outValue('height'),
             u = e.outValue('loading'),
             h = e.outValue('Aspect Ratio');
-        e.setPortGroup('Size', [l, c]),
-            r.hidePort(),
-            e.toWorkPortsNeedToBeLinked(s);
+        e.setPortGroup('Size', [l, c]), r.hidePort(), e.toWorkPortsNeedToBeLinked(s);
         const g = e.patch.cgl;
         let d = 0,
             f = 0,
             m = 0;
-        (t.onChange = i.onChange = function() {
-            b();
-        }),
-            (o.onChange = n.onChange = function() {
-                'nearest' == n.get()
-                    ? (d = CGL.Texture.FILTER_NEAREST)
-                    : 'linear' == n.get()
-                    ? (d = CGL.Texture.FILTER_LINEAR)
-                    : 'mipmap' == n.get()
-                    ? (d = CGL.Texture.FILTER_MIPMAP)
-                    : 'Anisotropic' == n.get() &&
-                      (d = CGL.Texture.FILTER_ANISOTROPIC);
-                (m = parseFloat(o.get())), b();
-            }),
-            (a.onChange = function() {
-                'repeat' == a.get() && (f = CGL.Texture.WRAP_REPEAT);
-                'mirrored repeat' == a.get() &&
-                    (f = CGL.Texture.WRAP_MIRRORED_REPEAT);
-                'clamp to edge' == a.get() &&
-                    (f = CGL.Texture.WRAP_CLAMP_TO_EDGE);
+        (t.onChange = i.onChange =
+            function () {
                 b();
             }),
-            (r.onChange = function() {
+            (o.onChange = n.onChange =
+                function () {
+                    'nearest' == n.get()
+                        ? (d = CGL.Texture.FILTER_NEAREST)
+                        : 'linear' == n.get()
+                        ? (d = CGL.Texture.FILTER_LINEAR)
+                        : 'mipmap' == n.get()
+                        ? (d = CGL.Texture.FILTER_MIPMAP)
+                        : 'Anisotropic' == n.get() && (d = CGL.Texture.FILTER_ANISOTROPIC);
+                    (m = parseFloat(o.get())), b();
+                }),
+            (a.onChange = function () {
+                'repeat' == a.get() && (f = CGL.Texture.WRAP_REPEAT);
+                'mirrored repeat' == a.get() && (f = CGL.Texture.WRAP_MIRRORED_REPEAT);
+                'clamp to edge' == a.get() && (f = CGL.Texture.WRAP_CLAMP_TO_EDGE);
+                b();
+            }),
+            (r.onChange = function () {
                 b();
             });
         let p = 0;
         n.set('mipmap'), a.set('repeat'), s.set(CGL.Texture.getEmptyTexture(g));
-        const _ = function() {
+        const _ = function () {
             const e = CGL.Texture.getTempTexture(g);
             s.set(e);
         };
@@ -19792,7 +15664,7 @@ var Ops = Ops || {};
             x = null;
         function b(e) {
             clearTimeout(p),
-                (p = setTimeout(function() {
+                (p = setTimeout(function () {
                     E(e);
                 }, 30));
         }
@@ -19806,17 +15678,11 @@ var Ops = Ops || {};
                       (x = CGL.Texture.load(
                           g,
                           a,
-                          function(n) {
+                          function (n) {
                               if (n)
                                   return (
                                       _(),
-                                      e.setUiError(
-                                          'errorload',
-                                          'could not load texture "' +
-                                              t.get() +
-                                              '"',
-                                          2
-                                      ),
+                                      e.setUiError('errorload', 'could not load texture "' + t.get() + '"', 2),
                                       void g.patch.loading.finished(v)
                                   );
                               e.setUiError('errorload', null),
@@ -19848,10 +15714,8 @@ var Ops = Ops || {};
                       g.patch.loading.finished(v))
                     : (g.patch.loading.finished(v), _());
         }
-        e.onFileChanged = function(e) {
-            t.get() &&
-                t.get().indexOf(e) > -1 &&
-                (s.set(null), s.set(CGL.Texture.getTempTexture(g)), E(!0));
+        e.onFileChanged = function (e) {
+            t.get() && t.get().indexOf(e) > -1 && (s.set(null), s.set(CGL.Texture.getTempTexture(g)), E(!0));
         };
     }),
     (Ops.Gl.Texture.prototype = new CABLES.Op()),
@@ -19859,7 +15723,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Texture,
         objName: 'Ops.Gl.Texture',
     }),
-    (Ops.Gl.Orthogonal_v2 = function() {
+    (Ops.Gl.Orthogonal_v2 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inTrigger('render'),
@@ -19872,7 +15736,7 @@ var Ops = Ops || {};
             l = e.outValue('Width'),
             c = e.outValue('Height'),
             u = e.patch.cgl;
-        t.onTriggered = function() {
+        t.onTriggered = function () {
             const e = u.getViewPort();
             if ('X' == a.get()) {
                 const t = e[3] / e[2];
@@ -19913,7 +15777,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Orthogonal_v2,
         objName: 'Ops.Gl.Orthogonal_v2',
     }),
-    (Ops.Gl.Render2Texture = function() {
+    (Ops.Gl.Render2Texture = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.patch.cgl,
@@ -19945,8 +15809,7 @@ var Ops = Ops || {};
                 if (
                     ('Clamp' == l.get()
                         ? (n = CGL.Texture.WRAP_CLAMP_TO_EDGE)
-                        : 'Mirror' == l.get() &&
-                          (n = CGL.Texture.WRAP_MIRRORED_REPEAT),
+                        : 'Mirror' == l.get() && (n = CGL.Texture.WRAP_MIRRORED_REPEAT),
                     d.get() && 'mipmap' == s.get()
                         ? e.setUiError(
                               'fpmipmap',
@@ -19978,27 +15841,15 @@ var Ops = Ops || {};
                     ? p.setFilter(CGL.Texture.FILTER_NEAREST)
                     : 'linear' == s.get()
                     ? p.setFilter(CGL.Texture.FILTER_LINEAR)
-                    : 'mipmap' == s.get() &&
-                      p.setFilter(CGL.Texture.FILTER_MIPMAP),
+                    : 'mipmap' == s.get() && p.setFilter(CGL.Texture.FILTER_MIPMAP),
                     g.set(p.getTextureDepth()),
                     (_ = !1);
             }
             a.val && (i.set(t.getViewPort()[2]), r.set(t.getViewPort()[3])),
-                (p.getWidth() == Math.ceil(i.get()) &&
-                    p.getHeight() == Math.ceil(r.get())) ||
-                    p.setSize(
-                        Math.max(1, Math.ceil(i.get())),
-                        Math.max(1, Math.ceil(r.get()))
-                    ),
+                (p.getWidth() == Math.ceil(i.get()) && p.getHeight() == Math.ceil(r.get())) ||
+                    p.setSize(Math.max(1, Math.ceil(i.get())), Math.max(1, Math.ceil(r.get()))),
                 p.renderStart(t),
-                o.get() &&
-                    mat4.perspective(
-                        t.pMatrix,
-                        45,
-                        i.get() / r.get(),
-                        0.1,
-                        1e3
-                    ),
+                o.get() && mat4.perspective(t.pMatrix, 45, i.get() / r.get(), 0.1, 1e3),
                 u.trigger(),
                 p.renderEnd(t),
                 t.resetViewPort(),
@@ -20008,9 +15859,15 @@ var Ops = Ops || {};
         h.set(CGL.Texture.getEmptyTexture(t)),
             e.setPortGroup('Size', [a, i, r, o]),
             (a.onChange = v),
-            (d.onChange = f.onChange = m.onChange = s.onChange = l.onChange = c.onChange = function() {
-                _ = !0;
-            }),
+            (d.onChange =
+                f.onChange =
+                m.onChange =
+                s.onChange =
+                l.onChange =
+                c.onChange =
+                    function () {
+                        _ = !0;
+                    }),
             (n.onTriggered = x),
             (e.preRender = x),
             v();
@@ -20020,7 +15877,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Render2Texture,
         objName: 'Ops.Gl.Render2Texture',
     }),
-    (Ops.Gl.TextureEffects.ImageCompose_v2 = function() {
+    (Ops.Gl.TextureEffects.ImageCompose_v2 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t = e.inTrigger('Render'),
@@ -20028,11 +15885,7 @@ var Ops = Ops || {};
             a = e.inValueInt('Width', 640),
             i = e.inValueInt('Height', 480),
             r = e.inSwitch('Filter', ['nearest', 'linear', 'mipmap'], 'linear'),
-            o = e.inValueSelect(
-                'Wrap',
-                ['clamp to edge', 'repeat', 'mirrored repeat'],
-                'repeat'
-            ),
+            o = e.inValueSelect('Wrap', ['clamp to edge', 'repeat', 'mirrored repeat'], 'repeat'),
             s = e.inValueBool('HDR'),
             l = e.inValueBool('Transparent', !1),
             c = e.outTrigger('Next'),
@@ -20049,10 +15902,7 @@ var Ops = Ops || {};
         const _ = [0, 0, 0, 0];
         let v = !0;
         const x = new CGL.Shader(g, 'imgcompose bg');
-        x.setSource(
-            x.getDefaultVertexShader(),
-            'UNI float a;\nvoid main()\n{\n   outColor= vec4(0.0,0.0,0.0,a);\n}\n'
-        );
+        x.setSource(x.getDefaultVertexShader(), 'UNI float a;\nvoid main()\n{\n   outColor= vec4(0.0,0.0,0.0,a);\n}\n');
         const b = new CGL.Uniform(x, 'f', 'a', !l.get());
         let E = CGL.Texture.FILTER_LINEAR,
             T = CGL.Texture.WRAP_CLAMP_TO_EDGE;
@@ -20081,8 +15931,7 @@ var Ops = Ops || {};
                 (v = !1);
         }
         function C() {
-            a.setUiAttribs({ greyout: n.get() }),
-                i.setUiAttribs({ greyout: n.get() });
+            a.setUiAttribs({ greyout: n.get() }), i.setUiAttribs({ greyout: n.get() });
         }
         function S() {
             (d && !v) || A();
@@ -20120,10 +15969,7 @@ var Ops = Ops || {};
                 d.startEffect(),
                 g.pushShader(x),
                 g.currentTextureEffect.bind(),
-                g.setTexture(
-                    0,
-                    g.currentTextureEffect.getCurrentSourceTexture().tex
-                ),
+                g.setTexture(0, g.currentTextureEffect.getCurrentSourceTexture().tex),
                 g.currentTextureEffect.finish(),
                 g.popShader(),
                 c.trigger(),
@@ -20135,10 +15981,8 @@ var Ops = Ops || {};
         }
         function M() {
             'repeat' == o.get() && (T = CGL.Texture.WRAP_REPEAT),
-                'mirrored repeat' == o.get() &&
-                    (T = CGL.Texture.WRAP_MIRRORED_REPEAT),
-                'clamp to edge' == o.get() &&
-                    (T = CGL.Texture.WRAP_CLAMP_TO_EDGE),
+                'mirrored repeat' == o.get() && (T = CGL.Texture.WRAP_MIRRORED_REPEAT),
+                'clamp to edge' == o.get() && (T = CGL.Texture.WRAP_CLAMP_TO_EDGE),
                 (v = !0);
         }
         function L() {
@@ -20156,13 +16000,13 @@ var Ops = Ops || {};
             (l.onChange = () => {
                 b.setValue(!l.get());
             }),
-            (s.onChange = function() {
+            (s.onChange = function () {
                 v = !0;
             }),
-            (n.onChange = function() {
+            (n.onChange = function () {
                 C();
             }),
-            (e.preRender = function() {
+            (e.preRender = function () {
                 S(), x.bind();
             });
     }),
@@ -20171,7 +16015,7 @@ var Ops = Ops || {};
         f: Ops.Gl.TextureEffects.ImageCompose_v2,
         objName: 'Ops.Gl.TextureEffects.ImageCompose_v2',
     }),
-    (Ops.Gl.TextureEffects.DrawImage_v3 = function() {
+    (Ops.Gl.TextureEffects.DrawImage_v3 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t =
@@ -20184,11 +16028,7 @@ var Ops = Ops || {};
             o = e.inTexture('Image'),
             s = e.inValueBool('removeAlphaSrc', !1),
             l = e.inTexture('Mask'),
-            c = e.inValueSelect(
-                'Mask Src',
-                ['alpha channel', 'luminance', 'luminance inv'],
-                'luminance'
-            ),
+            c = e.inValueSelect('Mask Src', ['alpha channel', 'luminance', 'luminance inv'], 'luminance'),
             u = e.inValueBool('Invert alpha channel'),
             h = e.inValueBool('Aspect Ratio', !1),
             g = e.inValueSelect('Stretch Axis', ['X', 'Y'], 'X'),
@@ -20200,12 +16040,8 @@ var Ops = Ops || {};
             _ = new CGL.Shader(p, 'drawimage');
         function v() {
             l.isLinked()
-                ? (s.setUiAttribs({ greyout: !0 }),
-                  c.setUiAttribs({ greyout: !1 }),
-                  u.setUiAttribs({ greyout: !1 }))
-                : (s.setUiAttribs({ greyout: !1 }),
-                  c.setUiAttribs({ greyout: !0 }),
-                  u.setUiAttribs({ greyout: !0 }));
+                ? (s.setUiAttribs({ greyout: !0 }), c.setUiAttribs({ greyout: !1 }), u.setUiAttribs({ greyout: !1 }))
+                : (s.setUiAttribs({ greyout: !1 }), c.setUiAttribs({ greyout: !0 }), u.setUiAttribs({ greyout: !0 }));
         }
         (l.onLinkChanged = v),
             e.setPortGroup('Mask', [l, c, u]),
@@ -20223,18 +16059,14 @@ var Ops = Ops || {};
                 _.removeDefine('ASPECT_AXIS_Y'),
                 h.get()
                     ? (_.define('ASPECT_RATIO'),
-                      f.get()
-                          ? _.define('ASPECT_CROP')
-                          : _.removeDefine('ASPECT_CROP'),
+                      f.get() ? _.define('ASPECT_CROP') : _.removeDefine('ASPECT_CROP'),
                       'X' == g.get() && _.define('ASPECT_AXIS_X'),
                       'Y' == g.get() && _.define('ASPECT_AXIS_Y'),
                       d.setUiAttribs({ greyout: !1 }),
                       f.setUiAttribs({ greyout: !1 }),
                       g.setUiAttribs({ greyout: !1 }))
                     : (_.removeDefine('ASPECT_RATIO'),
-                      f.get()
-                          ? _.define('ASPECT_CROP')
-                          : _.removeDefine('ASPECT_CROP'),
+                      f.get() ? _.define('ASPECT_CROP') : _.removeDefine('ASPECT_CROP'),
                       'X' == g.get() && _.define('ASPECT_AXIS_X'),
                       'Y' == g.get() && _.define('ASPECT_AXIS_Y'),
                       d.setUiAttribs({ greyout: !0 }),
@@ -20242,34 +16074,27 @@ var Ops = Ops || {};
                       g.setUiAttribs({ greyout: !0 }));
         }
         function E() {
-            s.get()
-                ? _.define('REMOVE_ALPHA_SRC')
-                : _.removeDefine('REMOVE_ALPHA_SRC');
+            s.get() ? _.define('REMOVE_ALPHA_SRC') : _.removeDefine('REMOVE_ALPHA_SRC');
         }
-        (u.onChange = function() {
+        (u.onChange = function () {
             u.get() ? _.define('INVERT_ALPHA') : _.removeDefine('INVERT_ALPHA');
         }),
             (h.onChange = b),
             (f.onChange = b),
             (g.onChange = b),
-            (c.onChange = function() {
+            (c.onChange = function () {
                 _.toggleDefine('ALPHA_FROM_LUMINANCE', 'luminance' == c.get()),
-                    _.toggleDefine(
-                        'ALPHA_FROM_INV_UMINANCE',
-                        'luminance_inv' == c.get()
-                    );
+                    _.toggleDefine('ALPHA_FROM_INV_UMINANCE', 'luminance_inv' == c.get());
             }),
             c.set('alpha channel');
         {
             const t = e.inValueBool('flip x'),
                 n = e.inValueBool('flip y');
-            (t.onChange = function() {
+            (t.onChange = function () {
                 t.get() ? _.define('TEX_FLIP_X') : _.removeDefine('TEX_FLIP_X');
             }),
-                (n.onChange = function() {
-                    n.get()
-                        ? _.define('TEX_FLIP_Y')
-                        : _.removeDefine('TEX_FLIP_Y');
+                (n.onChange = function () {
+                    n.get() ? _.define('TEX_FLIP_Y') : _.removeDefine('TEX_FLIP_Y');
                 });
         }
         {
@@ -20280,10 +16105,8 @@ var Ops = Ops || {};
                 M = e.inValue('Position Y', 0),
                 L = e.inValue('Rotation', 0);
             const t = e.inValueBool('Clip Repeat', !1);
-            t.onChange = function() {
-                t.get()
-                    ? _.define('CLIP_REPEAT')
-                    : _.removeDefine('CLIP_REPEAT');
+            t.onChange = function () {
+                t.get() ? _.define('CLIP_REPEAT') : _.removeDefine('CLIP_REPEAT');
             };
             new CGL.Uniform(_, 'f', 'scaleX', A),
                 new CGL.Uniform(_, 'f', 'scaleY', C),
@@ -20308,21 +16131,17 @@ var Ops = Ops || {};
         }
         CGL.TextureEffect.setupBlending(e, _, i, r);
         new CGL.Uniform(_, 'f', 'amount', r);
-        (l.onChange = function() {
-            l.get() && l.get().tex
-                ? _.define('HAS_TEXTUREALPHA')
-                : _.removeDefine('HAS_TEXTUREALPHA');
+        (l.onChange = function () {
+            l.get() && l.get().tex ? _.define('HAS_TEXTUREALPHA') : _.removeDefine('HAS_TEXTUREALPHA');
         }),
-            (a.onTriggered = function() {
+            (a.onTriggered = function () {
                 if (!CGL.TextureEffect.checkOpInEffect(e)) return;
                 const t = o.get();
                 if (t && t.tex && r.get() > 0) {
                     p.pushShader(_), p.currentTextureEffect.bind();
                     const e = p.currentTextureEffect.getCurrentSourceTexture();
                     p.setTexture(0, e.tex),
-                        x.setValue(
-                            1 / (((t.height / t.width) * e.width) / e.height)
-                        ),
+                        x.setValue(1 / (((t.height / t.width) * e.width) / e.height)),
                         p.setTexture(1, t.tex),
                         l.get() && l.get().tex && p.setTexture(2, l.get().tex),
                         p.pushBlendMode(CGL.BLEND_NONE, !0),
@@ -20342,7 +16161,7 @@ var Ops = Ops || {};
         f: Ops.Gl.TextureEffects.DrawImage_v3,
         objName: 'Ops.Gl.TextureEffects.DrawImage_v3',
     }),
-    (Ops.Gl.Meshes.FullscreenRectangle = function() {
+    (Ops.Gl.Meshes.FullscreenRectangle = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t =
@@ -20362,11 +16181,7 @@ var Ops = Ops || {};
             d = 0;
         (i.onChange = b), (o.onChange = x), (r.onChange = x);
         const f = new CGL.Shader(c, 'fullscreenrectangle');
-        f.setModules([
-            'MODULE_VERTEX_POSITION',
-            'MODULE_COLOR',
-            'MODULE_BEGIN_FRAG',
-        ]),
+        f.setModules(['MODULE_VERTEX_POSITION', 'MODULE_COLOR', 'MODULE_BEGIN_FRAG']),
             f.setSource(n, t),
             (f.fullscreenRectUniform = new CGL.Uniform(f, 't', 'tex', 0));
         var m = !1,
@@ -20377,8 +16192,7 @@ var Ops = Ops || {};
         }
         function v() {
             if (
-                ((c.getViewPort()[2] == g && c.getViewPort()[3] == d && u) ||
-                    b(),
+                ((c.getViewPort()[2] == g && c.getViewPort()[3] == d && u) || b(),
                 p && _(),
                 c.pushPMatrix(),
                 mat4.identity(c.pMatrix),
@@ -20395,9 +16209,7 @@ var Ops = Ops || {};
                     d < c.canvasHeight && (t = (c.canvasHeight - d) / 2),
                     c.setViewPort(e, t, g, d);
             }
-            m
-                ? (s.get() && c.setTexture(0, s.get().tex), u.render(f))
-                : u.render(c.getShader()),
+            m ? (s.get() && c.setTexture(0, s.get().tex), u.render(f)) : u.render(c.getShader()),
                 c.gl.clear(c.gl.DEPTH_BUFFER_BIT),
                 c.popPMatrix(),
                 c.popModelMatrix(),
@@ -20412,55 +16224,14 @@ var Ops = Ops || {};
             if (e[2] != g || e[3] != d || !u) {
                 (g = e[2]),
                     (d = e[3]),
-                    (h.vertices = new Float32Array([
-                        0 + g,
-                        0 + d,
-                        0,
-                        0,
-                        0 + d,
-                        0,
-                        0 + g,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                    ]));
+                    (h.vertices = new Float32Array([0 + g, 0 + d, 0, 0, 0 + d, 0, 0 + g, 0, 0, 0, 0, 0]));
                 var t = null;
-                (t = r.get()
-                    ? new Float32Array([1, 0, 0, 0, 1, 1, 0, 1])
-                    : new Float32Array([1, 1, 0, 1, 1, 0, 0, 0])),
+                (t = r.get() ? new Float32Array([1, 0, 0, 0, 1, 1, 0, 1]) : new Float32Array([1, 1, 0, 1, 1, 0, 0, 0])),
                     o.get() && ((t[0] = 0), (t[2] = 1), (t[4] = 0), (t[6] = 1)),
                     h.setTexCoords(t),
                     (h.verticesIndices = new Float32Array([2, 1, 0, 3, 1, 2])),
-                    (h.vertexNormals = new Float32Array([
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        1,
-                    ])),
-                    (h.tangents = new Float32Array([
-                        -1,
-                        0,
-                        0,
-                        -1,
-                        0,
-                        0,
-                        -1,
-                        0,
-                        0,
-                        -1,
-                        0,
-                        0,
-                    ])),
+                    (h.vertexNormals = new Float32Array([0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1])),
+                    (h.tangents = new Float32Array([-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0])),
                     h.biTangents,
                     new Float32Array([0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0]),
                     u ? u.setGeom(h) : (u = new CGL.Mesh(c, h));
@@ -20468,10 +16239,10 @@ var Ops = Ops || {};
         }
         (a.onTriggered = v),
             e.toWorkPortsNeedToBeLinked(a),
-            (s.onChange = function() {
+            (s.onChange = function () {
                 p = !0;
             }),
-            (e.preRender = function() {
+            (e.preRender = function () {
                 _(), f.bind(), u && u.render(f), v();
             });
     }),
@@ -20480,7 +16251,7 @@ var Ops = Ops || {};
         f: Ops.Gl.Meshes.FullscreenRectangle,
         objName: 'Ops.Gl.Meshes.FullscreenRectangle',
     }),
-    (Ops.Gl.TextureEffects.FXAA = function() {
+    (Ops.Gl.TextureEffects.FXAA = function () {
         CABLES.Op.apply(this, arguments);
         const e = this;
         var t = e.inTrigger('render'),
@@ -20498,17 +16269,12 @@ var Ops = Ops || {};
             'IN vec2 texCoord;\nUNI sampler2D tex;\nUNI float FXAA_SPAN_MAX;\nUNI float FXAA_REDUCE_MUL;\nUNI float FXAA_REDUCE_MIN;\nUNI float width;\nUNI float height;\n\nvec4 getColorFXAA(vec2 coord)\n{\n    vec2 invtexsize=vec2(1.0/width,1.0/height);\n\n    float step=1.0;\n\n    vec3 rgbNW = texture(tex, coord.xy + (vec2(-step, -step)*invtexsize )).xyz;\n    vec3 rgbNE = texture(tex, coord.xy + (vec2(+step, -step)*invtexsize )).xyz;\n    vec3 rgbSW = texture(tex, coord.xy + (vec2(-step, +step)*invtexsize )).xyz;\n    vec3 rgbSE = texture(tex, coord.xy + (vec2(+step, +step)*invtexsize )).xyz;\n    vec3 rgbM  = texture(tex, coord.xy).xyz;\n\n    vec3 luma = vec3(0.299, 0.587, 0.114);\n    float lumaNW = dot(rgbNW, luma);\n    float lumaNE = dot(rgbNE, luma);\n    float lumaSW = dot(rgbSW, luma);\n    float lumaSE = dot(rgbSE, luma);\n    float lumaM  = dot( rgbM, luma);\n\n    float lumaMin = min(lumaM, min(min(lumaNW, lumaNE), min(lumaSW, lumaSE)));\n    float lumaMax = max(lumaM, max(max(lumaNW, lumaNE), max(lumaSW, lumaSE)));\n\n    vec2 dir;\n    dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));\n    dir.y =  ((lumaNW + lumaSW) - (lumaNE + lumaSE));\n\n    float dirReduce = max((lumaNW + lumaNE + lumaSW + lumaSE) * (0.25 * FXAA_REDUCE_MUL), FXAA_REDUCE_MIN);\n\n    float rcpDirMin = 1.0/(min(abs(dir.x), abs(dir.y)) + dirReduce);\n\n    dir = min(vec2(FXAA_SPAN_MAX,  FXAA_SPAN_MAX),\n          max(vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX), dir * rcpDirMin))*invtexsize ;\n\n    vec3 rgbA = (1.0/2.0) * (\n                texture(tex, coord.xy + dir * (1.0/3.0 - 0.5)).xyz +\n                texture(tex, coord.xy + dir * (2.0/3.0 - 0.5)).xyz);\n    vec3 rgbB = rgbA * (1.0/2.0) + (1.0/4.0) * (\n                texture(tex, coord.xy + dir * (0.0/3.0 - 0.5)).xyz +\n                texture(tex, coord.xy + dir * (3.0/3.0 - 0.5)).xyz);\n    float lumaB = dot(rgbB, luma);\n\n    vec4 color=texture(tex,coord).rgba;\n\n    if((lumaB < lumaMin) || (lumaB > lumaMax)){\n      color.xyz=rgbA;\n    } else {\n      color.xyz=rgbB;\n    }\n    return color;\n}\n\nvoid main()\n{\n   vec4 col=vec4(1.0,0.0,0.0,1.0);\n   outColor= getColorFXAA(texCoord);\n}'
         );
         new CGL.Uniform(u, 't', 'tex', 0);
-        t.onTriggered = function() {
+        t.onTriggered = function () {
             CGL.TextureEffect.checkOpInEffect(e) &&
                 (c.pushShader(u),
-                (c.getViewPort()[2] == s.get() &&
-                    c.getViewPort()[3] == l.get()) ||
-                    p(),
+                (c.getViewPort()[2] == s.get() && c.getViewPort()[3] == l.get()) || p(),
                 c.currentTextureEffect.bind(),
-                c.setTexture(
-                    0,
-                    c.currentTextureEffect.getCurrentSourceTexture().tex
-                ),
+                c.setTexture(0, c.currentTextureEffect.getCurrentSourceTexture().tex),
                 c.currentTextureEffect.finish(),
                 c.popShader(),
                 n.trigger());
@@ -20516,7 +16282,7 @@ var Ops = Ops || {};
         var h = new CGL.Uniform(u, 'f', 'FXAA_SPAN_MAX', 0),
             g = new CGL.Uniform(u, 'f', 'FXAA_REDUCE_MUL', 0),
             d = new CGL.Uniform(u, 'f', 'FXAA_REDUCE_MIN', 0);
-        a.onChange = function() {
+        a.onChange = function () {
             h.setValue(parseInt(a.get(), 10));
         };
         var f = new CGL.Uniform(u, 'f', 'width', 0),
@@ -20533,10 +16299,10 @@ var Ops = Ops || {};
             (o.onChange = p),
             (e.onResize = p),
             a.set(8),
-            (r.onChange = function() {
+            (r.onChange = function () {
                 g.setValue(1 / r.get());
             }),
-            (i.onChange = function() {
+            (i.onChange = function () {
                 d.setValue(1 / i.get());
             }),
             r.set(8),
@@ -20547,7 +16313,7 @@ var Ops = Ops || {};
         f: Ops.Gl.TextureEffects.FXAA,
         objName: 'Ops.Gl.TextureEffects.FXAA',
     }),
-    (Ops.Gl.Shader.BasicMaterial_v3 = function() {
+    (Ops.Gl.Shader.BasicMaterial_v3 = function () {
         CABLES.Op.apply(this, arguments);
         const e = this,
             t =
@@ -20560,11 +16326,7 @@ var Ops = Ops || {};
         (r.ignoreValueSerialize = !0), e.toWorkPortsNeedToBeLinked(a);
         const o = e.patch.cgl,
             s = new CGL.Shader(o, 'basicmaterialnew');
-        s.setModules([
-            'MODULE_VERTEX_POSITION',
-            'MODULE_COLOR',
-            'MODULE_BEGIN_FRAG',
-        ]),
+        s.setModules(['MODULE_VERTEX_POSITION', 'MODULE_COLOR', 'MODULE_BEGIN_FRAG']),
             s.setSource(n, t),
             r.set(s),
             (a.onTriggered = M);
@@ -20572,19 +16334,14 @@ var Ops = Ops || {};
             c = e.inValueSlider('g', Math.random()),
             u = e.inValueSlider('b', Math.random()),
             h = e.inValueSlider('a', 1);
-        l.setUiAttribs({ colorPick: !0 }),
-            s.addUniformFrag('4f', 'color', l, c, u, h);
+        l.setUiAttribs({ colorPick: !0 }), s.addUniformFrag('4f', 'color', l, c, u, h);
         const g = e.inTexture('texture');
         let d = null;
         g.onChange = P;
         const f = e.inValueBool('colorizeTexture', !1),
             m = e.inTexture('textureOpacity');
         let p = null;
-        const _ = e.inSwitch(
-            'Alpha Mask Source',
-            ['Luminance', 'R', 'G', 'B', 'A'],
-            'Luminance'
-        );
+        const _ = e.inSwitch('Alpha Mask Source', ['Luminance', 'R', 'G', 'B', 'A'], 'Luminance');
         _.setUiAttribs({ greyout: !0 }), (m.onChange = L);
         const v = e.inValueBool('Opacity TexCoords Transform', !1),
             x = e.inValueBool('Discard Transparent Pixels'),
@@ -20625,8 +16382,7 @@ var Ops = Ops || {};
         }
         function P() {
             g.get()
-                ? (s.hasDefine('HAS_TEXTURE_DIFFUSE') ||
-                      s.define('HAS_TEXTURE_DIFFUSE'),
+                ? (s.hasDefine('HAS_TEXTURE_DIFFUSE') || s.define('HAS_TEXTURE_DIFFUSE'),
                   d || (d = new CGL.Uniform(s, 't', 'texDiffuse')),
                   b.setUiAttribs({ greyout: !1 }),
                   E.setUiAttribs({ greyout: !1 }),
@@ -20661,7 +16417,7 @@ var Ops = Ops || {};
             e.setPortGroup('Texture Transform', [b, E, T, A, C]),
             L(),
             P(),
-            (e.preRender = function() {
+            (e.preRender = function () {
                 s.bind(), M();
             });
     }),
@@ -20670,13 +16426,12 @@ var Ops = Ops || {};
         f: Ops.Gl.Shader.BasicMaterial_v3,
         objName: 'Ops.Gl.Shader.BasicMaterial_v3',
     }),
-    window.addEventListener('load', function(e) {
-        (CABLES.jsLoaded = new Event('CABLES.jsLoaded')),
-            document.dispatchEvent(CABLES.jsLoaded);
+    window.addEventListener('load', function (e) {
+        (CABLES.jsLoaded = new Event('CABLES.jsLoaded')), document.dispatchEvent(CABLES.jsLoaded);
     }),
     (this.CGL = this.CGL || {}),
     (this.CGL.COREMODULES = this.CGL.COREMODULES || {}),
-    (this.CGL.COREMODULES.Cubemap = (function(e) {
+    (this.CGL.COREMODULES.Cubemap = (function (e) {
         var t = {};
         function n(a) {
             if (t[a]) return t[a].exports;
@@ -20686,11 +16441,10 @@ var Ops = Ops || {};
         return (
             (n.m = e),
             (n.c = t),
-            (n.d = function(e, t, a) {
-                n.o(e, t) ||
-                    Object.defineProperty(e, t, { enumerable: !0, get: a });
+            (n.d = function (e, t, a) {
+                n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: a });
             }),
-            (n.r = function(e) {
+            (n.r = function (e) {
                 'undefined' != typeof Symbol &&
                     Symbol.toStringTag &&
                     Object.defineProperty(e, Symbol.toStringTag, {
@@ -20698,10 +16452,9 @@ var Ops = Ops || {};
                     }),
                     Object.defineProperty(e, '__esModule', { value: !0 });
             }),
-            (n.t = function(e, t) {
+            (n.t = function (e, t) {
                 if ((1 & t && (e = n(e)), 8 & t)) return e;
-                if (4 & t && 'object' == typeof e && e && e.__esModule)
-                    return e;
+                if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
                 var a = Object.create(null);
                 if (
                     (n.r(a),
@@ -20715,31 +16468,31 @@ var Ops = Ops || {};
                         n.d(
                             a,
                             i,
-                            function(t) {
+                            function (t) {
                                 return e[t];
                             }.bind(null, i)
                         );
                 return a;
             }),
-            (n.n = function(e) {
+            (n.n = function (e) {
                 var t =
                     e && e.__esModule
-                        ? function() {
+                        ? function () {
                               return e.default;
                           }
-                        : function() {
+                        : function () {
                               return e;
                           };
                 return n.d(t, 'a', t), t;
             }),
-            (n.o = function(e, t) {
+            (n.o = function (e, t) {
                 return Object.prototype.hasOwnProperty.call(e, t);
             }),
             (n.p = ''),
             n((n.s = 0))
         );
     })([
-        function(e, t, n) {
+        function (e, t, n) {
             'use strict';
             n.r(t);
             class a {
@@ -20773,16 +16526,8 @@ var Ops = Ops || {};
                     if (
                         ((e != e || e <= 0 || !e) && (e = 8),
                         (t != t || t <= 0 || !t) && (t = 8),
-                        (e > this._cgl.maxTexSize ||
-                            t > this._cgl.maxTexSize) &&
-                            console.error(
-                                'texture size too big! ' +
-                                    e +
-                                    'x' +
-                                    t +
-                                    ' / max: ' +
-                                    this._cgl.maxTexSize
-                            ),
+                        (e > this._cgl.maxTexSize || t > this._cgl.maxTexSize) &&
+                            console.error('texture size too big! ' + e + 'x' + t + ' / max: ' + this._cgl.maxTexSize),
                         (e = Math.min(e, this._cgl.maxTexSize)),
                         (t = Math.min(t, this._cgl.maxTexSize)),
                         (e = Math.floor(e)),
@@ -20795,9 +16540,7 @@ var Ops = Ops || {};
                             CGL.profileData.profileTextureResize++,
                             this.textureType != CGL.Texture.TYPE_FLOAT ||
                                 this.filter != CGL.Texture.FILTER_LINEAR ||
-                                this._cgl.gl.getExtension(
-                                    'OES_texture_float_linear'
-                                ) ||
+                                this._cgl.gl.getExtension('OES_texture_float_linear') ||
                                 (console.warn(
                                     'this graphics card does not support floating point texture linear interpolation!'
                                 ),
@@ -20806,13 +16549,9 @@ var Ops = Ops || {};
                         for (let e = 0; e < 6; e++)
                             if (1 == this._cgl.glVersion)
                                 if (this._cgl.glUseHalfFloatTex) {
-                                    const t = this._cgl.gl.getExtension(
-                                        'OES_texture_half_float'
-                                    );
+                                    const t = this._cgl.gl.getExtension('OES_texture_half_float');
                                     if (1 == this._cgl.glVersion && !t)
-                                        throw new Error(
-                                            'no half float texture extension'
-                                        );
+                                        throw new Error('no half float texture extension');
                                     this._cgl.gl.texImage2D(
                                         this._cubemapFaces[e],
                                         0,
@@ -20825,9 +16564,7 @@ var Ops = Ops || {};
                                         null
                                     );
                                 } else
-                                    this._cgl.gl.getExtension(
-                                        'OES_texture_float'
-                                    ),
+                                    this._cgl.gl.getExtension('OES_texture_float'),
                                         this._cgl.gl.texImage2D(
                                             this._cubemapFaces[e],
                                             0,
@@ -20851,24 +16588,16 @@ var Ops = Ops || {};
                                     this._cgl.gl.UNSIGNED_BYTE,
                                     null
                                 );
-                        this._cgl.gl.bindTexture(
-                            this._cgl.gl.TEXTURE_CUBE_MAP,
-                            null
-                        );
+                        this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_CUBE_MAP, null);
                     }
                 }
                 _setFilter() {
                     if (
                         (this._fromData ||
-                            this._cgl.gl.pixelStorei(
-                                this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,
-                                this.unpackAlpha
-                            ),
+                            this._cgl.gl.pixelStorei(this._cgl.gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, this.unpackAlpha),
                         this.textureType == CGL.Texture.TYPE_FLOAT &&
                             this.filter == CGL.Texture.FILTER_MIPMAP &&
-                            (console.log(
-                                'texture: HDR and mipmap filtering at the same time is not possible'
-                            ),
+                            (console.log('texture: HDR and mipmap filtering at the same time is not possible'),
                             (this.filter = CGL.Texture.FILTER_LINEAR)),
                         1 != this._cgl.glVersion || this.isPowerOfTwo())
                     )
@@ -20895,8 +16624,7 @@ var Ops = Ops || {};
                                       this._cgl.gl.TEXTURE_WRAP_T,
                                       this._cgl.gl.REPEAT
                                   ))
-                                : this.wrap ==
-                                      CGL.Texture.WRAP_MIRRORED_REPEAT &&
+                                : this.wrap == CGL.Texture.WRAP_MIRRORED_REPEAT &&
                                   (this._cgl.gl.texParameteri(
                                       this.texTarget,
                                       this._cgl.gl.TEXTURE_WRAP_S,
@@ -20932,13 +16660,10 @@ var Ops = Ops || {};
                                 );
                         else {
                             if (this.filter != CGL.Texture.FILTER_MIPMAP)
-                                throw (console.log(
-                                    'unknown texture filter!',
-                                    this.filter
-                                ),
-                                new Error(
-                                    'unknown texture filter!' + this.filter
-                                ));
+                                throw (
+                                    (console.log('unknown texture filter!', this.filter),
+                                    new Error('unknown texture filter!' + this.filter))
+                                );
                             this._cgl.gl.texParameteri(
                                 this.texTarget,
                                 this._cgl.gl.TEXTURE_MAG_FILTER,
@@ -21035,41 +16760,27 @@ var Ops = Ops || {};
                         (this.camPos = vec3.fromValues(0, 0, 0)),
                         (this._modelMatrix = mat4.create()),
                         (this._viewMatrix = mat4.create()),
-                        (this._projectionMatrix = mat4.perspective(
-                            mat4.create(),
-                            90 * CGL.DEG2RAD,
-                            1,
-                            0.1,
-                            1e3
-                        )),
+                        (this._projectionMatrix = mat4.perspective(mat4.create(), 90 * CGL.DEG2RAD, 1, 0.1, 1e3)),
                         (this._depthRenderbuffer = null),
                         (this._framebuffer = null),
                         (this._depthbuffer = null),
                         (this._textureFrameBuffer = null),
                         (this._textureDepth = null),
                         (this._options = i || { isFloatingPointTexture: !1 }),
-                        this._options.hasOwnProperty('numRenderBuffers') ||
-                            (this._options.numRenderBuffers = 1),
-                        this._options.hasOwnProperty('depth') ||
-                            (this._options.depth = !0),
-                        this._options.hasOwnProperty('clear') ||
-                            (this._options.clear = !0),
+                        this._options.hasOwnProperty('numRenderBuffers') || (this._options.numRenderBuffers = 1),
+                        this._options.hasOwnProperty('depth') || (this._options.depth = !0),
+                        this._options.hasOwnProperty('clear') || (this._options.clear = !0),
                         this._options.hasOwnProperty('multisampling') ||
-                            ((this._options.multisampling = !1),
-                            (this._options.multisamplingSamples = 0)),
+                            ((this._options.multisampling = !1), (this._options.multisamplingSamples = 0)),
                         this._options.multisamplingSamples &&
-                            (this._cgl.glSlowRenderer &&
-                                (this._options.multisamplingSamples = 0),
+                            (this._cgl.glSlowRenderer && (this._options.multisamplingSamples = 0),
                             this._cgl.gl.MAX_SAMPLES
                                 ? (this._options.multisamplingSamples = Math.min(
-                                      this._cgl.gl.getParameter(
-                                          this._cgl.gl.MAX_SAMPLES
-                                      ),
+                                      this._cgl.gl.getParameter(this._cgl.gl.MAX_SAMPLES),
                                       this._options.multisamplingSamples
                                   ))
                                 : (this._options.multisamplingSamples = 0)),
-                        this._options.hasOwnProperty('filter') ||
-                            (this._options.filter = CGL.Texture.FILTER_LINEAR),
+                        this._options.hasOwnProperty('filter') || (this._options.filter = CGL.Texture.FILTER_LINEAR),
                         (this.texture = new a(this._cgl, {
                             width: this.width,
                             height: this.height,
@@ -21083,14 +16794,8 @@ var Ops = Ops || {};
                 initializeRenderbuffers() {
                     (this._framebuffer = this._cgl.gl.createFramebuffer()),
                         (this._depthbuffer = this._cgl.gl.createRenderbuffer()),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this._framebuffer
-                        ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            this._depthbuffer
-                        ),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._framebuffer),
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._depthbuffer),
                         this._cgl.gl.renderbufferStorage(
                             this._cgl.gl.RENDERBUFFER,
                             this._cgl.gl.DEPTH_COMPONENT16,
@@ -21103,14 +16808,8 @@ var Ops = Ops || {};
                             this._cgl.gl.RENDERBUFFER,
                             this._depthbuffer
                         ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            null
-                        ),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            null
-                        );
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, null),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null);
                 }
                 getWidth() {
                     return this.width;
@@ -21132,13 +16831,9 @@ var Ops = Ops || {};
                 }
                 dispose() {
                     (this.texture = null),
-                        this._cgl.gl.deleteRenderbuffer(
-                            this._depthRenderbuffer
-                        ),
+                        this._cgl.gl.deleteRenderbuffer(this._depthRenderbuffer),
                         this._cgl.gl.deleteFramebuffer(this._framebuffer),
-                        this._cgl.gl.deleteFramebuffer(
-                            this._textureFrameBuffer
-                        );
+                        this._cgl.gl.deleteFramebuffer(this._textureFrameBuffer);
                 }
                 delete() {
                     this.dispose();
@@ -21147,30 +16842,16 @@ var Ops = Ops || {};
                     if (
                         ((this.width = Math.floor(e)),
                         (this.height = Math.floor(t)),
-                        (this.width = Math.min(
-                            this.width,
-                            this._cgl.maxTexSize
-                        )),
-                        (this.height = Math.min(
-                            this.height,
-                            this._cgl.maxTexSize
-                        )),
+                        (this.width = Math.min(this.width, this._cgl.maxTexSize)),
+                        (this.height = Math.min(this.height, this._cgl.maxTexSize)),
                         CGL.profileData.profileFrameBuffercreate++,
                         this._framebuffer &&
-                            (this._cgl.gl.deleteRenderbuffer(
-                                this._depthRenderbuffer
-                            ),
+                            (this._cgl.gl.deleteRenderbuffer(this._depthRenderbuffer),
                             this._cgl.gl.deleteFramebuffer(this._framebuffer)),
                         (this._framebuffer = this._cgl.gl.createFramebuffer()),
                         (this._depthbuffer = this._cgl.gl.createRenderbuffer()),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this._framebuffer
-                        ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            this._depthbuffer
-                        ),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._framebuffer),
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._depthbuffer),
                         this._cgl.gl.renderbufferStorage(
                             this._cgl.gl.RENDERBUFFER,
                             this._cgl.gl.DEPTH_COMPONENT16,
@@ -21187,71 +16868,55 @@ var Ops = Ops || {};
                         !this._cgl.gl.isFramebuffer(this._framebuffer))
                     )
                         throw new Error('Invalid framebuffer');
-                    const n = this._cgl.gl.checkFramebufferStatus(
-                        this._cgl.gl.FRAMEBUFFER
-                    );
+                    const n = this._cgl.gl.checkFramebufferStatus(this._cgl.gl.FRAMEBUFFER);
                     this.checkErrorsByStatus(n),
-                        this._cgl.gl.bindTexture(
-                            this._cgl.gl.TEXTURE_CUBE_MAP,
-                            null
-                        ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            null
-                        ),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            null
-                        );
+                        this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_CUBE_MAP, null),
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, null),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, null);
                 }
                 checkErrorsByStatus(e) {
                     switch (e) {
                         case this._cgl.gl.FRAMEBUFFER_COMPLETE:
                             break;
                         case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_ATTACHMENT:
-                            throw (console.error(
-                                'FRAMEBUFFER_INCOMPLETE_ATTACHMENT...',
-                                this.width,
-                                this.height,
-                                this.texture.tex,
-                                this._depthBuffer
-                            ),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'
-                            ));
-                        case this._cgl.gl
-                            .FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
-                            throw (console.error(
-                                'FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                            ),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'
-                            ));
+                            throw (
+                                (console.error(
+                                    'FRAMEBUFFER_INCOMPLETE_ATTACHMENT...',
+                                    this.width,
+                                    this.height,
+                                    this.texture.tex,
+                                    this._depthBuffer
+                                ),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_ATTACHMENT'))
+                            );
+                        case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
+                            throw (
+                                (console.error('FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT'))
+                            );
                         case this._cgl.gl.FRAMEBUFFER_INCOMPLETE_DIMENSIONS:
-                            throw (console.error(
-                                'FRAMEBUFFER_INCOMPLETE_DIMENSIONS'
-                            ),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'
-                            ));
+                            throw (
+                                (console.error('FRAMEBUFFER_INCOMPLETE_DIMENSIONS'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_INCOMPLETE_DIMENSIONS'))
+                            );
                         case this._cgl.gl.FRAMEBUFFER_UNSUPPORTED:
-                            throw (console.error('FRAMEBUFFER_UNSUPPORTED'),
-                            new Error(
-                                'Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'
-                            ));
+                            throw (
+                                (console.error('FRAMEBUFFER_UNSUPPORTED'),
+                                new Error('Incomplete framebuffer: FRAMEBUFFER_UNSUPPORTED'))
+                            );
                         case 36059:
                             console.error(
                                 'Incomplete: FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER from ext. Or Safari/iOS undefined behaviour.'
                             );
                             break;
                         default:
-                            throw (console.error('incomplete framebuffer', e),
-                            new Error('Incomplete framebuffer: ' + e));
+                            throw (
+                                (console.error('incomplete framebuffer', e), new Error('Incomplete framebuffer: ' + e))
+                            );
                     }
                 }
                 setFilter(e) {
-                    (this.texture.filter = e),
-                        this.texture.setSize(this.width, this.height);
+                    (this.texture.filter = e), this.texture.setSize(this.width, this.height);
                 }
                 setCamPos(e) {
                     this.camPos = e || this.camPos;
@@ -21262,18 +16927,9 @@ var Ops = Ops || {};
                         (this._projectionMatrix = n || this._projectionMatrix);
                 }
                 renderStart() {
-                    this._cgl.gl.bindTexture(
-                        this._cgl.gl.TEXTURE_CUBE_MAP,
-                        this.texture.tex
-                    ),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this._framebuffer
-                        ),
-                        this._cgl.gl.bindRenderbuffer(
-                            this._cgl.gl.RENDERBUFFER,
-                            this._depthbuffer
-                        ),
+                    this._cgl.gl.bindTexture(this._cgl.gl.TEXTURE_CUBE_MAP, this.texture.tex),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._framebuffer),
+                        this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, this._depthbuffer),
                         this._cgl.gl.viewport(0, 0, this.width, this.height),
                         this._cgl.pushGlFrameBuffer(this._framebuffer),
                         this._cgl.pushFrameBuffer(this);
@@ -21297,79 +16953,41 @@ var Ops = Ops || {};
                         ),
                         this._options.clear &&
                             (this._cgl.gl.clearColor(1, 1, 1, 1),
-                            this._cgl.gl.clear(
-                                this._cgl.gl.COLOR_BUFFER_BIT |
-                                    this._cgl.gl.DEPTH_BUFFER_BIT
-                            )),
+                            this._cgl.gl.clear(this._cgl.gl.COLOR_BUFFER_BIT | this._cgl.gl.DEPTH_BUFFER_BIT)),
                         this.setMatricesCubemapFace(e);
                 }
                 setMatricesCubemapFace(e) {
                     mat4.copy(this._cgl.mMatrix, this._modelMatrix),
-                        vec3.add(
-                            this._lookAtTemp,
-                            this.camPos,
-                            this._cubemapProperties[e].lookAt
-                        ),
-                        mat4.lookAt(
-                            this._cgl.vMatrix,
-                            this.camPos,
-                            this._lookAtTemp,
-                            this._cubemapProperties[e].up
-                        ),
+                        vec3.add(this._lookAtTemp, this.camPos, this._cubemapProperties[e].lookAt),
+                        mat4.lookAt(this._cgl.vMatrix, this.camPos, this._lookAtTemp, this._cubemapProperties[e].up),
                         mat4.copy(this._cgl.pMatrix, this._projectionMatrix);
                 }
                 renderEndCubemapFace() {
-                    this._cgl.popPMatrix(),
-                        this._cgl.popModelMatrix(),
-                        this._cgl.popViewMatrix();
+                    this._cgl.popPMatrix(), this._cgl.popModelMatrix(), this._cgl.popViewMatrix();
                 }
                 renderEnd() {
                     CGL.profileData.profileFramebuffer++,
                         1 !== this._cgl.glVersion &&
-                            (this._cgl.gl.bindFramebuffer(
-                                this._cgl.gl.READ_FRAMEBUFFER,
-                                this._framebuffer
-                            ),
-                            this._cgl.gl.bindFramebuffer(
-                                this._cgl.gl.DRAW_FRAMEBUFFER,
-                                this._textureFrameBuffer
-                            )),
-                        this._cgl.gl.bindFramebuffer(
-                            this._cgl.gl.FRAMEBUFFER,
-                            this._cgl.popGlFrameBuffer()
-                        ),
+                            (this._cgl.gl.bindFramebuffer(this._cgl.gl.READ_FRAMEBUFFER, this._framebuffer),
+                            this._cgl.gl.bindFramebuffer(this._cgl.gl.DRAW_FRAMEBUFFER, this._textureFrameBuffer)),
+                        this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._cgl.popGlFrameBuffer()),
                         this._cgl.popFrameBuffer(),
                         this._cgl.resetViewPort();
                 }
             }
             CGL.CubemapFramebuffer = i;
-            const r = function(e, t) {
+            const r = function (e, t) {
                 (this._cgl = e),
                     (this._modelMatrix = mat4.create()),
-                    (this._projectionMatrix = mat4.perspective(
-                        mat4.create(),
-                        90 * CGL.DEG2RAD,
-                        1,
-                        0.1,
-                        10
-                    )),
+                    (this._projectionMatrix = mat4.perspective(mat4.create(), 90 * CGL.DEG2RAD, 1, 0.1, 10)),
                     (this._viewMatrix = mat4.create()),
                     (this._lookAtTemp = vec3.fromValues(0, 0, 0)),
                     (this.cubemap = null),
                     (this.isInitialized = !1),
                     (this.size = t.size || 512),
                     (this.camPos = t.camPos || vec3.fromValues(0, 0, 0)),
-                    (this._framebuffer = new i(
-                        this._cgl,
-                        this.size,
-                        this.size,
-                        {}
-                    )),
-                    this._framebuffer.setMatrices(
-                        this._modelMatrix,
-                        null,
-                        this._projectionMatrix
-                    ),
+                    (this._framebuffer = new i(this._cgl, this.size, this.size, {})),
+                    this._framebuffer.setMatrices(this._modelMatrix, null, this._projectionMatrix),
                     this._framebuffer.setCamPos(this.camPos),
                     (this._depthbuffer = null),
                     (this.depthAttachment = null),
@@ -21407,68 +17025,50 @@ var Ops = Ops || {};
                         },
                     ]);
             };
-            (r.prototype.setMatrices = function(e, t, n) {
+            (r.prototype.setMatrices = function (e, t, n) {
                 (this._modelMatrix = e || this._modelMatrix),
                     (this._viewMatrix = t || this._viewMatrix),
                     (this._projectionMatrix = n || this._projectionMatrix),
                     this._framebuffer.setMatrices(e, t, n);
             }),
-                (r.prototype.setCamPos = function(e) {
-                    (this.camPos = e || this.camPos),
-                        this._framebuffer.setCamPos(this.camPos);
+                (r.prototype.setCamPos = function (e) {
+                    (this.camPos = e || this.camPos), this._framebuffer.setCamPos(this.camPos);
                 }),
-                (r.prototype.hasFramebuffer = function() {
+                (r.prototype.hasFramebuffer = function () {
                     return !!this._framebuffer;
                 }),
-                (r.prototype.deleteFramebuffer = function() {
+                (r.prototype.deleteFramebuffer = function () {
                     this._framebuffer && this._framebuffer.dispose();
                 }),
-                (r.prototype.setSize = function(e) {
-                    (this.size = e),
-                        (this.isInitialized = !1),
-                        this.initializeCubemap();
+                (r.prototype.setSize = function (e) {
+                    (this.size = e), (this.isInitialized = !1), this.initializeCubemap();
                 }),
-                (r.prototype.checkError = function(e) {
+                (r.prototype.checkError = function (e) {
                     const t = this._cgl.gl.getError();
                     t != this._cgl.gl.NO_ERROR &&
                         (console.log('error ' + e),
                         console.log('error size', this.size),
                         t == this._cgl.gl.NO_ERROR && console.error('NO_ERROR'),
-                        t == this._cgl.gl.OUT_OF_MEMORY &&
-                            console.error('OUT_OF_MEMORY'),
-                        t == this._cgl.gl.INVALID_ENUM &&
-                            console.error('INVALID_ENUM'),
-                        t == this._cgl.gl.INVALID_OPERATION &&
-                            console.error('INVALID_OPERATION'),
+                        t == this._cgl.gl.OUT_OF_MEMORY && console.error('OUT_OF_MEMORY'),
+                        t == this._cgl.gl.INVALID_ENUM && console.error('INVALID_ENUM'),
+                        t == this._cgl.gl.INVALID_OPERATION && console.error('INVALID_OPERATION'),
                         t == this._cgl.gl.INVALID_FRAMEBUFFER_OPERATION &&
                             console.error('INVALID_FRAMEBUFFER_OPERATION'),
-                        t == this._cgl.gl.INVALID_VALUE &&
-                            console.error('INVALID_VALUE'),
-                        t == this._cgl.gl.CONTEXT_LOST_WEBGL &&
-                            console.error('CONTEXT_LOST_WEBGL'));
+                        t == this._cgl.gl.INVALID_VALUE && console.error('INVALID_VALUE'),
+                        t == this._cgl.gl.CONTEXT_LOST_WEBGL && console.error('CONTEXT_LOST_WEBGL'));
                 }),
-                (r.prototype.initializeCubemap = function() {
+                (r.prototype.initializeCubemap = function () {
                     this.checkError(221),
-                        this.cubemap ||
-                            (this.cubemap = new i(
-                                this._cgl,
-                                this.size,
-                                this.size,
-                                {}
-                            )),
+                        this.cubemap || (this.cubemap = new i(this._cgl, this.size, this.size, {})),
                         (this.isInitialized = !0);
                 }),
-                (r.prototype.getCubemap = function() {
-                    return this._framebuffer
-                        ? this._framebuffer.getTextureColor()
-                        : null;
+                (r.prototype.getCubemap = function () {
+                    return this._framebuffer ? this._framebuffer.getTextureColor() : null;
                 }),
-                (r.prototype.renderCubemap = function(e) {
+                (r.prototype.renderCubemap = function (e) {
                     this._framebuffer.renderStart();
                     for (let t = 0; t < 6; t += 1)
-                        this._framebuffer.renderStartCubemapFace(t),
-                            e && e(),
-                            this._framebuffer.renderEndCubemapFace();
+                        this._framebuffer.renderStartCubemapFace(t), e && e(), this._framebuffer.renderEndCubemapFace();
                     this._framebuffer.renderEnd();
                 }),
                 (CGL.Cubemap = r);
@@ -21476,7 +17076,7 @@ var Ops = Ops || {};
     ]).Cubemap),
     (this.CGL = this.CGL || {}),
     (this.CGL.COREMODULES = this.CGL.COREMODULES || {}),
-    (this.CGL.COREMODULES.Light = (function(e) {
+    (this.CGL.COREMODULES.Light = (function (e) {
         var t = {};
         function n(a) {
             if (t[a]) return t[a].exports;
@@ -21486,11 +17086,10 @@ var Ops = Ops || {};
         return (
             (n.m = e),
             (n.c = t),
-            (n.d = function(e, t, a) {
-                n.o(e, t) ||
-                    Object.defineProperty(e, t, { enumerable: !0, get: a });
+            (n.d = function (e, t, a) {
+                n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: a });
             }),
-            (n.r = function(e) {
+            (n.r = function (e) {
                 'undefined' != typeof Symbol &&
                     Symbol.toStringTag &&
                     Object.defineProperty(e, Symbol.toStringTag, {
@@ -21498,10 +17097,9 @@ var Ops = Ops || {};
                     }),
                     Object.defineProperty(e, '__esModule', { value: !0 });
             }),
-            (n.t = function(e, t) {
+            (n.t = function (e, t) {
                 if ((1 & t && (e = n(e)), 8 & t)) return e;
-                if (4 & t && 'object' == typeof e && e && e.__esModule)
-                    return e;
+                if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
                 var a = Object.create(null);
                 if (
                     (n.r(a),
@@ -21515,31 +17113,31 @@ var Ops = Ops || {};
                         n.d(
                             a,
                             i,
-                            function(t) {
+                            function (t) {
                                 return e[t];
                             }.bind(null, i)
                         );
                 return a;
             }),
-            (n.n = function(e) {
+            (n.n = function (e) {
                 var t =
                     e && e.__esModule
-                        ? function() {
+                        ? function () {
                               return e.default;
                           }
-                        : function() {
+                        : function () {
                               return e;
                           };
                 return n.d(t, 'a', t), t;
             }),
-            (n.o = function(e, t) {
+            (n.o = function (e, t) {
                 return Object.prototype.hasOwnProperty.call(e, t);
             }),
             (n.p = ''),
             n((n.s = 0))
         );
     })([
-        function(e, t, n) {
+        function (e, t, n) {
             'use strict';
             function a(e, t) {
                 return (
@@ -21573,24 +17171,7 @@ var Ops = Ops || {};
                             modelMatrix: mat4.create(),
                             viewMatrix: mat4.create(),
                             projMatrix: mat4.create(),
-                            biasMatrix: mat4.fromValues(
-                                0.5,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0.5,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0.5,
-                                0,
-                                0.5,
-                                0.5,
-                                0.5,
-                                1
-                            ),
+                            biasMatrix: mat4.fromValues(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0.5, 1),
                         },
                         vectors: {
                             lookAt: vec3.create(),
@@ -21608,7 +17189,7 @@ var Ops = Ops || {};
                 );
             }
             n.r(t),
-                (a.prototype.getModifiableParameters = function() {
+                (a.prototype.getModifiableParameters = function () {
                     return [
                         'color',
                         'specular',
@@ -21622,63 +17203,35 @@ var Ops = Ops || {};
                         'conePointAt',
                     ];
                 }),
-                (a.prototype.createProjectionMatrix = a.prototype.updateProjectionMatrix = function(
-                    e,
-                    t,
-                    n,
-                    a
-                ) {
-                    'spot' === this.type
-                        ? mat4.perspective(
-                              this._shaderShadowMap.matrices.projMatrix,
-                              -2 * CGL.DEG2RAD * a,
-                              1,
-                              t,
-                              n
-                          )
-                        : 'directional' === this.type
-                        ? mat4.ortho(
-                              this._shaderShadowMap.matrices.projMatrix,
-                              -1 * e,
-                              e,
-                              -1 * e,
-                              e,
-                              t,
-                              n
-                          )
-                        : 'point' === this.type &&
-                          (mat4.perspective(
-                              this._shaderShadowMap.matrices.projMatrix,
-                              90 * CGL.DEG2RAD,
-                              1,
-                              t,
-                              n
-                          ),
-                          (this.nearFar = [t, n]));
-                }),
-                (a.prototype.hasFramebuffer = function() {
+                (a.prototype.createProjectionMatrix = a.prototype.updateProjectionMatrix =
+                    function (e, t, n, a) {
+                        'spot' === this.type
+                            ? mat4.perspective(this._shaderShadowMap.matrices.projMatrix, -2 * CGL.DEG2RAD * a, 1, t, n)
+                            : 'directional' === this.type
+                            ? mat4.ortho(this._shaderShadowMap.matrices.projMatrix, -1 * e, e, -1 * e, e, t, n)
+                            : 'point' === this.type &&
+                              (mat4.perspective(this._shaderShadowMap.matrices.projMatrix, 90 * CGL.DEG2RAD, 1, t, n),
+                              (this.nearFar = [t, n]));
+                    }),
+                (a.prototype.hasFramebuffer = function () {
                     return !!this._framebuffer;
                 }),
-                (a.prototype.hasShadowMapShader = function() {
+                (a.prototype.hasShadowMapShader = function () {
                     return !!this._shaderShadowMap.shader;
                 }),
-                (a.prototype.hasBlurShader = function() {
+                (a.prototype.hasBlurShader = function () {
                     return !!this._shaderBlur.shader;
                 }),
-                (a.prototype.hasBlurEffect = function() {
+                (a.prototype.hasBlurEffect = function () {
                     return !!this._effectBlur;
                 }),
-                (a.prototype.getShadowMap = function() {
-                    return 'point' === this.type
-                        ? null
-                        : this._framebuffer.getTextureColor();
+                (a.prototype.getShadowMap = function () {
+                    return 'point' === this.type ? null : this._framebuffer.getTextureColor();
                 }),
-                (a.prototype.getShadowMapDepth = function() {
-                    return 'point' === this.type
-                        ? null
-                        : this._framebuffer.getTextureDepth();
+                (a.prototype.getShadowMapDepth = function () {
+                    return 'point' === this.type ? null : this._framebuffer.getTextureDepth();
                 }),
-                (a.prototype.createFramebuffer = function(e, t, n) {
+                (a.prototype.createFramebuffer = function (e, t, n) {
                     this.state.isUpdating = !0;
                     const a = e || 512,
                         i = t || 512;
@@ -21695,10 +17248,7 @@ var Ops = Ops || {};
                             void (this.state.isUpdating = !1)
                         );
                     this.hasFramebuffer() && this._framebuffer.delete(),
-                        n &&
-                            n.filter &&
-                            (n.isFloatingPointTexture =
-                                n.filter !== CGL.Texture.FILTER_MIPMAP),
+                        n && n.filter && (n.isFloatingPointTexture = n.filter !== CGL.Texture.FILTER_MIPMAP),
                         1 == this._cgl.glVersion
                             ? (this._framebuffer = new CGL.Framebuffer(
                                   this._cgl,
@@ -21728,20 +17278,18 @@ var Ops = Ops || {};
                               )),
                         (this.state.isUpdating = !1);
                 }),
-                (a.prototype.hasCubemap = function() {
+                (a.prototype.hasCubemap = function () {
                     return !!this._cubemap;
                 }),
-                (a.prototype.setFramebufferSize = function(e) {
+                (a.prototype.setFramebufferSize = function (e) {
                     this.hasFramebuffer() && this._framebuffer.setSize(e, e);
                 }),
-                (a.prototype.createShadowMapShader = function(e, t) {
+                (a.prototype.createShadowMapShader = function (e, t) {
                     if (this.hasShadowMapShader()) return;
                     (this.state.isUpdating = !0),
                         (this._shaderShadowMap.shader = new CGL.Shader(
                             this._cgl,
-                            'shadowPass' +
-                                this.type.charAt(0).toUpperCase() +
-                                this.type.slice(1)
+                            'shadowPass' + this.type.charAt(0).toUpperCase() + this.type.slice(1)
                         )),
                         this._shaderShadowMap.shader.setModules([
                             'MODULE_VERTEX_POSITION',
@@ -21767,31 +17315,17 @@ var Ops = Ops || {};
                             ))),
                         1 == this._cgl.glVersion &&
                             (this._cgl.gl.getExtension('OES_texture_float'),
-                            this._cgl.gl.getExtension(
-                                'OES_texture_float_linear'
-                            ),
+                            this._cgl.gl.getExtension('OES_texture_float_linear'),
                             this._cgl.gl.getExtension('OES_texture_half_float'),
-                            this._cgl.gl.getExtension(
-                                'OES_texture_half_float_linear'
-                            ),
-                            this._shaderShadowMap.shader.enableExtension(
-                                'GL_OES_standard_derivatives'
-                            ),
-                            this._shaderShadowMap.shader.enableExtension(
-                                'GL_OES_texture_float'
-                            ),
-                            this._shaderShadowMap.shader.enableExtension(
-                                'GL_OES_texture_float_linear'
-                            ),
-                            this._shaderShadowMap.shader.enableExtension(
-                                'GL_OES_texture_half_float'
-                            ),
-                            this._shaderShadowMap.shader.enableExtension(
-                                'GL_OES_texture_half_float_linear'
-                            )),
+                            this._cgl.gl.getExtension('OES_texture_half_float_linear'),
+                            this._shaderShadowMap.shader.enableExtension('GL_OES_standard_derivatives'),
+                            this._shaderShadowMap.shader.enableExtension('GL_OES_texture_float'),
+                            this._shaderShadowMap.shader.enableExtension('GL_OES_texture_float_linear'),
+                            this._shaderShadowMap.shader.enableExtension('GL_OES_texture_half_float'),
+                            this._shaderShadowMap.shader.enableExtension('GL_OES_texture_half_float_linear')),
                         (this.state.isUpdating = !1);
                 }),
-                (a.prototype.createBlurEffect = function(e) {
+                (a.prototype.createBlurEffect = function (e) {
                     'point' !== this.type &&
                         ((this.state.isUpdating = !0),
                         this.hasBlurEffect() && this._effectBlur.delete(),
@@ -21808,7 +17342,7 @@ var Ops = Ops || {};
                         )),
                         (this.state.isUpdating = !1));
                 }),
-                (a.prototype.createBlurShader = function(e, t) {
+                (a.prototype.createBlurShader = function (e, t) {
                     if (this.hasBlurShader()) return;
                     if ('point' === this.type) return;
                     this.state.isUpdating = !0;
@@ -21816,9 +17350,7 @@ var Ops = Ops || {};
                         a = t || this.getBlurPassFragmentShader();
                     (this._shaderBlur.shader = new CGL.Shader(
                         this._cgl,
-                        'blurPass' +
-                            this.type.charAt(0).toUpperCase() +
-                            this.type.slice(1)
+                        'blurPass' + this.type.charAt(0).toUpperCase() + this.type.slice(1)
                     )),
                         this._shaderBlur.shader.setModules([
                             'MODULE_VERTEX_POSITION',
@@ -21835,7 +17367,7 @@ var Ops = Ops || {};
                         (this._shaderBlur.shader.offScreenPass = !0),
                         (this.state.isUpdating = !1);
                 }),
-                (a.prototype.renderPasses = function(e, t, n) {
+                (a.prototype.renderPasses = function (e, t, n) {
                     this.state.isUpdating ||
                         this._cgl.frameStore.shadowPass ||
                         (this._cgl.pushCullFace(!0),
@@ -21845,12 +17377,7 @@ var Ops = Ops || {};
                         (this._cgl.frameStore.renderOffscreen = !0),
                         (this._cgl.frameStore.shadowPass = !0),
                         this._cgl.pushBlend(!1),
-                        this._cgl.gl.colorMask(
-                            !0,
-                            !0,
-                            'point' === this.type,
-                            'point' === this.type
-                        ),
+                        this._cgl.gl.colorMask(!0, !0, 'point' === this.type, 'point' === this.type),
                         this.renderShadowPass(n),
                         this._cgl.gl.cullFace(this._cgl.gl.BACK),
                         this._cgl.gl.disable(this._cgl.gl.CULL_FACE),
@@ -21865,28 +17392,21 @@ var Ops = Ops || {};
                         'point' !== this.type
                             ? ((this.shadowMap = this._framebuffer.getTextureColor()),
                               (this.shadowMapDepth = this._framebuffer.getTextureDepth()))
-                            : ((this.shadowMap = null),
-                              (this.shadowMapDepth = null)));
+                            : ((this.shadowMap = null), (this.shadowMapDepth = null)));
                 }),
-                (a.prototype.renderShadowPass = function(e) {
+                (a.prototype.renderShadowPass = function (e) {
                     if (!this.state.isUpdating) {
                         if ('point' === this.type)
                             return (
-                                this._shaderShadowMap.uniforms.nearFar.setValue(
-                                    this.nearFar
-                                ),
-                                this._shaderShadowMap.uniforms.lightPosition.setValue(
-                                    this.position
-                                ),
+                                this._shaderShadowMap.uniforms.nearFar.setValue(this.nearFar),
+                                this._shaderShadowMap.uniforms.lightPosition.setValue(this.position),
                                 this._cubemap.setCamPos(this.position),
                                 this._cubemap.setMatrices(
                                     this._shaderShadowMap.matrices.modelMatrix,
                                     this._shaderShadowMap.matrices.viewMatrix,
                                     this._shaderShadowMap.matrices.projMatrix
                                 ),
-                                this._cgl.pushShader(
-                                    this._shaderShadowMap.shader
-                                ),
+                                this._cgl.pushShader(this._shaderShadowMap.shader),
                                 this._cubemap.renderCubemap(e),
                                 this._cgl.popShader(),
                                 void (this.shadowCubeMap = this._cubemap._framebuffer.getTextureColor())
@@ -21896,10 +17416,7 @@ var Ops = Ops || {};
                             this._cgl.pushViewMatrix(),
                             this._cgl.pushPMatrix(),
                             this._framebuffer.renderStart(this._cgl),
-                            mat4.copy(
-                                this._cgl.mMatrix,
-                                this._shaderShadowMap.matrices.modelMatrix
-                            ),
+                            mat4.copy(this._cgl.mMatrix, this._shaderShadowMap.matrices.modelMatrix),
                             vec3.set(
                                 this._shaderShadowMap.vectors.camPos,
                                 this.position[0],
@@ -21919,32 +17436,13 @@ var Ops = Ops || {};
                                 this._shaderShadowMap.vectors.lookAt,
                                 this._shaderShadowMap.vectors.up
                             ),
-                            mat4.copy(
-                                this._cgl.pMatrix,
-                                this._shaderShadowMap.matrices.projMatrix
-                            ),
-                            this.lightMatrix ||
-                                (this.lightMatrix = mat4.create()),
-                            mat4.mul(
-                                this.lightMatrix,
-                                this._cgl.pMatrix,
-                                this._cgl.vMatrix
-                            ),
-                            mat4.mul(
-                                this.lightMatrix,
-                                this._cgl.mMatrix,
-                                this.lightMatrix
-                            ),
-                            mat4.mul(
-                                this.lightMatrix,
-                                this._shaderShadowMap.matrices.biasMatrix,
-                                this.lightMatrix
-                            ),
+                            mat4.copy(this._cgl.pMatrix, this._shaderShadowMap.matrices.projMatrix),
+                            this.lightMatrix || (this.lightMatrix = mat4.create()),
+                            mat4.mul(this.lightMatrix, this._cgl.pMatrix, this._cgl.vMatrix),
+                            mat4.mul(this.lightMatrix, this._cgl.mMatrix, this.lightMatrix),
+                            mat4.mul(this.lightMatrix, this._shaderShadowMap.matrices.biasMatrix, this.lightMatrix),
                             this._cgl.gl.clearColor(1, 1, 1, 1),
-                            this._cgl.gl.clear(
-                                this._cgl.gl.DEPTH_BUFFER_BIT |
-                                    this._cgl.gl.COLOR_BUFFER_BIT
-                            ),
+                            this._cgl.gl.clear(this._cgl.gl.DEPTH_BUFFER_BIT | this._cgl.gl.COLOR_BUFFER_BIT),
                             e && e(),
                             this._framebuffer.renderEnd(this._cgl),
                             this._cgl.popPMatrix(),
@@ -21953,62 +17451,48 @@ var Ops = Ops || {};
                             this._cgl.popShader();
                     }
                 }),
-                (a.prototype.renderBlurPass = function(e) {
+                (a.prototype.renderBlurPass = function (e) {
                     this.state.isUpdating ||
                         (this._cgl.pushShader(this._shaderBlur.shader),
-                        this._effectBlur.setSourceTexture(
-                            this._framebuffer.getTextureColor()
-                        ),
+                        this._effectBlur.setSourceTexture(this._framebuffer.getTextureColor()),
                         this._effectBlur.startEffect(),
                         this._effectBlur.bind(),
-                        this._cgl.setTexture(
-                            0,
-                            this._effectBlur.getCurrentSourceTexture().tex
-                        ),
+                        this._cgl.setTexture(0, this._effectBlur.getCurrentSourceTexture().tex),
                         this._shaderBlur.uniforms.XY.setValue([e, 0]),
                         this._effectBlur.finish(),
                         this._effectBlur.bind(),
-                        this._cgl.setTexture(
-                            0,
-                            this._effectBlur.getCurrentSourceTexture().tex
-                        ),
+                        this._cgl.setTexture(0, this._effectBlur.getCurrentSourceTexture().tex),
                         this._shaderBlur.uniforms.XY.setValue([0, e]),
                         this._effectBlur.finish(),
                         this._effectBlur.endEffect(),
                         this._cgl.popShader());
                 }),
-                (a.prototype.getShadowPassVertexShader = function() {
+                (a.prototype.getShadowPassVertexShader = function () {
                     return `\n{{MODULES_HEAD}}\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\nIN float attrVertIndex;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\n\nOUT vec2 texCoord;\nOUT vec3 norm;\n\n${
                         'point' === this.type ? 'OUT vec3 modelPos;' : ''
                     }\nvoid main() {\n    texCoord=attrTexCoord;\n    texCoord.y = 1. - texCoord.y;\n    norm=attrVertNormal;\n    vec4 pos = vec4(vPosition, 1.0);\n    mat4 mMatrix=modelMatrix;\n\n\n    {{MODULE_VERTEX_POSITION}}\n\n    mat4 mvMatrix=viewMatrix * mMatrix;\n    vec4 vPos = projMatrix * mvMatrix * vec4(vPosition, 1.);\n    ${
-                        'point' === this.type
-                            ? 'modelPos = (mMatrix * pos).xyz;'
-                            : ''
+                        'point' === this.type ? 'modelPos = (mMatrix * pos).xyz;' : ''
                     }\n    gl_Position = vPos;\n}\n`;
                 }),
-                (a.prototype.getShadowPassFragmentShader = function() {
-                    return `\n   {{MODULES_HEAD}}\n   ${
-                        'point' === this.type ? 'IN vec3 modelPos;' : ''
-                    }\n   ${
+                (a.prototype.getShadowPassFragmentShader = function () {
+                    return `\n   {{MODULES_HEAD}}\n   ${'point' === this.type ? 'IN vec3 modelPos;' : ''}\n   ${
                         'point' === this.type ? 'UNI vec3 inLightPosition;' : ''
                     }\n   ${
                         'point' === this.type ? 'UNI vec2 inNearFar;' : ''
                     }\n\n    IN vec2 texCoord;\n\n    void main() {\n        {{MODULE_BEGIN_FRAG}}\n        vec4 col = vec4(1.);\n\n\n        outColor = vec4(1.);\n\n        {{MODULE_COLOR}}\n\n        ${
-                        'point' === this.type
-                            ? 'vec3 fromLightToFrag = (modelPos - inLightPosition);'
-                            : ''
+                        'point' === this.type ? 'vec3 fromLightToFrag = (modelPos - inLightPosition);' : ''
                     }\n\n\n        ${
                         'point' === this.type
                             ? 'float depth = (length(fromLightToFrag) - inNearFar.x) / (inNearFar.y - inNearFar.x);'
                             : 'float depth = gl_FragCoord.z;'
                     }\n\n        float dx = dFdx(depth); // for biasing depth-per-pixel\n        float dy = dFdy(depth); // for biasing depth-per-pixel\n\n        float clampedDerivative = clamp(dot(dx, dx) + dot(dy, dy), 0., 1.);\n        float moment2 = dot(depth, depth) + 0.25 * clampedDerivative;\n\n        outColor.x = depth;\n        outColor.y = moment2;\n        outColor.z = depth;\n    }\n`;
                 }),
-                (a.prototype.getBlurPassVertexShader = function() {
+                (a.prototype.getBlurPassVertexShader = function () {
                     return 'point' === this.type
                         ? ''
                         : '\n\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\n\nOUT vec2 texCoord;\nOUT vec2 coord0;\nOUT vec2 coord1;\nOUT vec2 coord2;\nOUT vec2 coord3;\nOUT vec2 coord4;\nOUT vec2 coord5;\nOUT vec2 coord6;\n\nUNI mat4 projMatrix;\nUNI mat4 mvMatrix;\nUNI mat4 modelMatrix;\n\nUNI vec2 inXY;\n\nvoid main() {\n    texCoord=attrTexCoord;\n\n    vec4 pos = vec4(vPosition,  1.0);\n\n    {{MODULE_VERTEX_POSITION}}\n\n    coord3 = attrTexCoord;\n\n\n    coord0 = attrTexCoord + (-3.0368997744118595 * inXY);\n    coord0 = clamp(coord0, 0., 1.);\n    coord1 = attrTexCoord + (-2.089778445362373 * inXY);\n    coord1 = clamp(coord1, 0., 1.);\n    coord2 = attrTexCoord + (-1.2004366090034069 * inXY);\n    coord2 = clamp(coord2, 0., 1.);\n    coord4 = attrTexCoord + (1.2004366090034069 * inXY);\n    coord4 = clamp(coord4, 0., 1.);\n    coord5 = attrTexCoord + (2.089778445362373* inXY);\n    coord5 = clamp(coord5, 0., 1.);\n    coord6 = attrTexCoord + (3.0368997744118595 * inXY);\n    coord6 = clamp(coord6, 0., 1.);\n\n    gl_Position = projMatrix * mvMatrix * pos;\n}\n    ';
                 }),
-                (a.prototype.getBlurPassFragmentShader = function() {
+                (a.prototype.getBlurPassFragmentShader = function () {
                     return 'point' === this.type
                         ? ''
                         : '\nUNI sampler2D tex;\n\nIN vec2 coord0;\nIN vec2 coord1;\nIN vec2 coord2;\nIN vec2 coord3;\nIN vec2 coord4;\nIN vec2 coord5;\nIN vec2 coord6;\n\nvoid main() {\n\n    vec4 color = vec4(0.0);\n\n\n    color.xyz += texture(tex, coord0).xyz * 0.06927096443792478;  // 1/64\n    color.xyz += texture(tex, coord1).xyz * 0.1383328848652136;   // 6/64\n    color.xyz += texture(tex, coord2).xyz * 0.21920904690397863;  // 15/64\n    color.xyz += texture(tex, coord3).xyz * 0.14637421;           // 20/64\n    color.xyz += texture(tex, coord4).xyz * 0.21920904690397863;  // 15/64\n    color.xyz += texture(tex, coord5).xyz * 0.1383328848652136;   // 6/64\n    color.xyz += texture(tex, coord6).xyz * 0.06927096443795711;  // 1/64\n\n    color.a = 1.;\n\n    outColor = color;\n}\n    ';

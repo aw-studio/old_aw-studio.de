@@ -55,7 +55,7 @@ class ImportReferencesCommand extends Command
 
         $oldReferences = OldReferences::all();
         foreach ($oldReferences as $old) {
-            DB::update('ALTER TABLE `references` AUTO_INCREMENT = ' . $old->id . ';');
+            DB::update('ALTER TABLE `references` AUTO_INCREMENT = '.$old->id.';');
             $new = new Reference();
             $new->forceFill($old->toArray());
             $new->save();
@@ -64,7 +64,7 @@ class ImportReferencesCommand extends Command
 
         $oldReferenceTranslations = OldReferenceTranslations::all();
         foreach ($oldReferenceTranslations as $old) {
-            DB::update('ALTER TABLE `reference_translations` AUTO_INCREMENT = ' . $old->id . ';');
+            DB::update('ALTER TABLE `reference_translations` AUTO_INCREMENT = '.$old->id.';');
 
             $new = new ReferenceTranslation();
             $new->forceFill($old->toArray());
@@ -82,7 +82,7 @@ class ImportReferencesCommand extends Command
         $oldReferenceDetails = FormBlocks::where('model_type', 'App\Models\Reference')->get();
 
         foreach ($oldReferenceDetails as $old) {
-            DB::update('ALTER TABLE lit_repeatables AUTO_INCREMENT = ' . $old->id . ';');
+            DB::update('ALTER TABLE lit_repeatables AUTO_INCREMENT = '.$old->id.';');
             $new = new LitRepeatable();
 
             $new->form_type = 'show';

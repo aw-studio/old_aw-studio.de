@@ -17,7 +17,7 @@ body.aw-nav-open #aw-nav {
     z-index: 60;
 }
 #aw-nav > div {
-    transition: transform .6s ease-out;
+    transition: transform 0.6s ease-out;
     transform: translateY(10px);
 }
 body.aw-nav-open #aw-nav > div {

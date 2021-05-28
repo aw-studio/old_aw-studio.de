@@ -30,7 +30,7 @@ class BlogImageRepeatable extends Repeatable
      */
     public function preview(ColumnBuilder $preview): void
     {
-        $preview->col('<span class="text-secondary">' . fa('image') . ' Bild</span>');
+        $preview->col('<span class="text-secondary">'.fa('image').' Bild</span>');
     }
 
     /**

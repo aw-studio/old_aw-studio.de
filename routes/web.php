@@ -33,15 +33,15 @@ use Illuminate\Support\Facades\Route;
 // }
 
 Route::trans('/', HomeController::class)->name('home');
-Route::trans('/__(routes.references)', ReferencesController::class . '@index')->name('references.index');
-Route::trans('/__(routes.references)/{slug}', ReferencesController::class . '@show')->translator('getReferenceSlug')->name('references.show');
+Route::trans('/__(routes.references)', ReferencesController::class.'@index')->name('references.index');
+Route::trans('/__(routes.references)/{slug}', ReferencesController::class.'@show')->translator('getReferenceSlug')->name('references.show');
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 
-Route::trans('/__(routes.blog)', BlogController::class . '@index')->name('blog.index');
-Route::trans('/__(routes.blog)/{slug}', BlogController::class . '@show')->translator('getPostSlug')->name('blog.show');
+Route::trans('/__(routes.blog)', BlogController::class.'@index')->name('blog.index');
+Route::trans('/__(routes.blog)/{slug}', BlogController::class.'@show')->translator('getPostSlug')->name('blog.show');
 
-Route::trans('/__(routes.application)', ApplicationController::class . '@index')->name('application');
+Route::trans('/__(routes.application)', ApplicationController::class.'@index')->name('application');
 
 Route::trans('/__(routes.imprint)', ImprintController::class)->name('imprint');
 Route::trans('/__(routes.datapolicy)', DatapolicyController::class)->name('datapolicy');
