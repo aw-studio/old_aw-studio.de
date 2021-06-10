@@ -8,6 +8,16 @@ require('./directives');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import Vue from 'vue';
+import LitImage from '@aw-studio/vue-lit-image';
+
+Vue.use(LitImage, {
+    conversions: {
+        sm: 300,
+        md: 500,
+        lg: 900,
+        xl: 1400,
+    },
+});
 
 const app = new Vue({
     el: '#app',

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@aw-studio/vue-lit-image": "^0.0.5",
         "lit-bricks": "file:vendor/litstack/bricks",
         "vue": "^2.6.12"
     }
