@@ -16,7 +16,7 @@
         "browser-sync-webpack-plugin": "^2.2.2",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.2.7",
+        "postcss": "^8.3.4",
         "sass": "^1.32.8",
         "sass-loader": "^11.0.1",
         "tailwindcss": "^2.0.3",
@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@aw-studio/vue-lit-image": "^0.0.5",
         "lit-bricks": "file:vendor/litstack/bricks",
         "vue": "^2.6.12"
     }
