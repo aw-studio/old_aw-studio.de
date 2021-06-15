@@ -5,16 +5,16 @@
                 <div
                     class="relative z-20 flex flex-col items-start justify-center w-full py-2"
                 >
-                    <div class="flex items-center justify-end w-full ml-auto">
+                    <div class="flex items-center justify-end w-full mb-5">
                         <div class="flex flex-wrap mr-4">
                             <div
-                                class="px-4 py-2 ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
+                                class="flex items-center px-4 py-px ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
                                 v-for="tag in selected"
                                 :key="tag.id"
                             >
                                 {{ tag.title }}
                                 <button
-                                    class="w-2 h-2 mr-1 cursor-pointer"
+                                    class="flex items-center justify-center w-3 h-8 mr-2 text-white cursor-pointer"
                                     @click="remove(tag)"
                                 >
                                     <svg
@@ -63,7 +63,7 @@
                                 exclude: ['button'],
                                 handler: 'onClose',
                             }"
-                            class="absolute top-0 right-0 w-full px-3 py-2 text-white bg-black rounded shadow md:w-1/2 lg:w-1/3 xl:w-1/4 filterTranslation"
+                            class="absolute top-0 right-0 px-3 py-2 text-white bg-black rounded shadow filterTranslation"
                         >
                             <button
                                 v-for="tag in categories"
@@ -80,8 +80,8 @@
             </div>
         </section>
         <!-- <section v-if="categories.length > 0" class="pt-20"></section> -->
-        <section class="flex flex-col w-full gap-10 lg:flex-row">
-            <div v-for="post in posts" :key="post.id" class="w-full lg:w-1/2">
+        <section class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <div v-for="post in posts" :key="post.id" class="w-full">
                 <a
                     :href="`blog/${post.slug}`"
                     class="relative block mb-2 lg:mb-6"
@@ -89,17 +89,22 @@
                     <div class="relative">
                         <div class="absolute">
                             <div
-                                v-if="post.tags.length > 0"
+                                v-if="post.tags.length > 0 && post.image"
                                 class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
                             >
                                 {{ post.tags[0].title }}
                             </div>
                         </div>
-                        <img
+                        <!-- <img
                             v-if="post.image"
                             class="z-10 w-full mb-4 lg:mb-8"
                             :src="post.image.conversion_urls.xl"
                             alt=""
+                        /> -->
+                        <lit-image
+                            v-if="post.image"
+                            :image="post.image"
+                            classes="w-full z-10 mb-4 lg:mb-8"
                         />
                     </div>
                     <div v-html="post.title" class="text-xl md:text-2xl" />
@@ -180,17 +185,34 @@ export default {
 </script>
 
 <style>
-/* #dropdown-button {
-    transform: rotate(0deg);
-    transition: transform 0.3s;
-}
-#dropdown-button.filterActive {
-    transform: rotate(180deg);
-} */
 .clicked {
     @apply bg-gray-400;
 }
 .filterTranslation {
     transform: translateY(45px);
+    width: 100%;
+}
+.blog-template {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+@media (min-width: 768px) {
+    .filterTranslation {
+        width: 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .filterTranslation {
+        width: 33.33333%;
+    }
+    .blog-template {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1280px) {
+    .filterTranslation {
+        width: 25%;
+    }
 }
 </style>
