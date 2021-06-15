@@ -5,21 +5,16 @@
                 <div
                     class="relative z-20 flex flex-col items-start justify-center w-full py-2"
                 >
-                    <div
-                        style="justify-content: flex-end; margin-bottom:20px"
-                        class="flex items-center"
-                    >
+                    <div class="flex items-center justify-end w-full mb-5">
                         <div class="flex flex-wrap mr-4">
                             <div
-                                class="flex items-center px-4 py-px text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
-                                style="margin-left: 8px"
+                                class="flex items-center px-4 py-px ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
                                 v-for="tag in selected"
                                 :key="tag.id"
                             >
                                 {{ tag.title }}
                                 <button
-                                    class="flex items-center justify-center mr-2 cursor-pointer"
-                                    style="color: #ffffff; height: 30px; width:auto;"
+                                    class="flex items-center justify-center w-3 h-8 mr-2 text-white cursor-pointer"
                                     @click="remove(tag)"
                                 >
                                     <svg
@@ -28,8 +23,7 @@
                                         width="10"
                                         height="10"
                                         preserveAspectRatio="xMinYMin"
-                                        style="fill: currentColor"
-                                        class="icon__icon"
+                                        class="fill-current icon__icon"
                                     >
                                         <path
                                             d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z"
@@ -69,8 +63,7 @@
                                 exclude: ['button'],
                                 handler: 'onClose',
                             }"
-                            style="padding-inline: 12px"
-                            class="absolute top-0 right-0 py-2 text-white bg-black rounded shadow filterTranslation"
+                            class="absolute top-0 right-0 px-3 py-2 text-white bg-black rounded shadow filterTranslation"
                         >
                             <button
                                 v-for="tag in categories"
@@ -87,8 +80,8 @@
             </div>
         </section>
         <!-- <section v-if="categories.length > 0" class="pt-20"></section> -->
-        <section class="blog-template">
-            <div v-for="post in posts" :key="post.id" class="w-full lg:w-1/2">
+        <section class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <div v-for="post in posts" :key="post.id" class="w-full">
                 <a
                     :href="`blog/${post.slug}`"
                     class="relative block mb-2 lg:mb-6"
