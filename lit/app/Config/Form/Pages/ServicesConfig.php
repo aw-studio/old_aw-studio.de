@@ -76,10 +76,10 @@ class ServicesConfig extends FormConfig
                             ->translatable()
                             ->width(12);
 
-                        $form->image('illustration')
-                            ->title('Illustration')
-                            ->maxFiles(1)
-                            ->showFullImage()
+                        $form->textarea('illustration_svg')
+                            ->title('Illustration als SVGS')
+                            ->placeholder('<svg ...')
+                            ->hint('Füge hier den SVG Code ein.')
                             ->width(12);
 
                         $form->wysiwyg('list_primary')
@@ -129,10 +129,10 @@ class ServicesConfig extends FormConfig
                             ->translatable()
                             ->width(12);
 
-                        $form->image('illustration')
-                            ->title('Illustration')
-                            ->maxFiles(1)
-                            ->showFullImage()
+                        $form->textarea('illustration_svg')
+                            ->title('Illustration als SVGS')
+                            ->placeholder('<svg ...')
+                            ->hint('Füge hier den SVG Code ein.')
                             ->width(12);
 
                         $form->wysiwyg('text')
