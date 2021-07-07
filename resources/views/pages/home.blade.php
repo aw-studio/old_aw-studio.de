@@ -112,6 +112,7 @@ $playground_no = rand(1,4);
 
 
 
+@if($posts->isNotEmpty())
 <section class="py-8 bg-white md:py-20 lg:py-40">
     <div class="container">
         <div class="grid grid-cols-12 gap-5 mb-12">
@@ -125,12 +126,15 @@ $playground_no = rand(1,4);
             </div>
             @foreach($posts as $post)
             <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
-                <x-post :post="$post" />
+                @if ($post->active)
+                    <x-post :post="$post" />
+                @endif
             </div>
             @endforeach
         </div>
     </div>
 </section>
+@endif
 
 
 <section class="pt-20 pb-20 bg-white border-t border-black md:pb-40 lg:pb-40">

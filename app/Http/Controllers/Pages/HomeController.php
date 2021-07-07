@@ -11,7 +11,7 @@ class HomeController
     {
         return view('pages.home')->with([
             'form'       => Form::load('pages', 'home'),
-            'posts'      => Post::all()->take(2),
+            'posts'      => Post::whereActive(1)->take(2)->get(),
             'highlights' => Form::load('collections', 'highlights'),
         ]);
     }
