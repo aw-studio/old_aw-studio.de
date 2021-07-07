@@ -82,44 +82,46 @@
         <!-- <section v-if="categories.length > 0" class="pt-20"></section> -->
         <section class="grid grid-cols-1 gap-10 lg:grid-cols-2">
             <div v-for="post in posts" :key="post.id" class="w-full">
-                <a
-                    :href="`blog/${post.slug}`"
-                    class="relative block mb-2 lg:mb-6"
-                >
-                    <div class="relative">
-                        <div class="absolute">
-                            <div
-                                v-if="post.tags.length > 0 && post.image"
-                                class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
-                            >
-                                {{ post.tags[0].title }}
+                <div v-if="post.active">
+                    <a
+                        :href="`blog/${post.slug}`"
+                        class="relative block mb-2 lg:mb-6"
+                    >
+                        <div class="relative">
+                            <div class="absolute">
+                                <div
+                                    v-if="post.tags.length > 0 && post.image"
+                                    class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
+                                >
+                                    {{ post.tags[0].title }}
+                                </div>
                             </div>
-                        </div>
-                        <!-- <img
+                            <!-- <img
                             v-if="post.image"
                             class="z-10 w-full mb-4 lg:mb-8"
                             :src="post.image.conversion_urls.xl"
                             alt=""
                         /> -->
-                        <lit-image
-                            v-if="post.image"
-                            :image="post.image"
-                            classes="w-full z-10 mb-4 lg:mb-8"
-                        />
-                    </div>
-                    <div v-html="post.title" class="text-xl md:text-2xl" />
-                    <div v-html="post.excerpt" class="text-lg" />
-                </a>
-                <a
-                    v-if="locale == 'de'"
-                    id="go-to-post"
-                    class="aw-link"
-                    :href="`blog/${post.slug}`"
-                    >Beitrag lesen</a
-                >
-                <a v-else class="aw-link" :href="`blog/${post.slug}`"
-                    >Read post</a
-                >
+                            <lit-image
+                                v-if="post.image"
+                                :image="post.image"
+                                classes="w-full z-10 mb-4 lg:mb-8"
+                            />
+                        </div>
+                        <div v-html="post.title" class="text-xl md:text-2xl" />
+                        <div v-html="post.excerpt" class="text-lg" />
+                    </a>
+                    <a
+                        v-if="locale == 'de'"
+                        id="go-to-post"
+                        class="aw-link"
+                        :href="`blog/${post.slug}`"
+                        >Beitrag lesen</a
+                    >
+                    <a v-else class="aw-link" :href="`blog/${post.slug}`"
+                        >Read post</a
+                    >
+                </div>
             </div>
         </section>
     </div>
