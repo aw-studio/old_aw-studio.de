@@ -112,7 +112,8 @@ $playground_no = rand(1,4);
 
 
 
-{{-- <section class="py-8 bg-white md:py-20 lg:py-40">
+@if(count($posts) > 0)
+<section class="py-8 bg-white md:py-20 lg:py-40">
     <div class="container">
         <div class="grid grid-cols-12 gap-5 mb-12">
             <div class="col-span-12 col-start-1 lg:col-span-6">
@@ -132,7 +133,8 @@ $playground_no = rand(1,4);
             @endforeach
         </div>
     </div>
-</section> --}}
+</section>
+@endif
 
 
 <section class="pt-20 pb-20 bg-white border-t border-black md:pb-40 lg:pb-40">
