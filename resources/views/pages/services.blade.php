@@ -59,7 +59,7 @@ aw-first-section-is-white
                 <h3 class="h3">
                     {{ $service->h3 }}
                 </h3>
-                <div class="flex object-contain h-32">
+                <div class="flex object-contain h-32 mb-4">
                     @isset($service->illustration_svg)
                         {!! $service->illustration_svg !!}
                     @endisset
@@ -149,7 +149,7 @@ aw-first-section-is-white
             @foreach ($services->methods as $method)
             <div class="pr-12 mb-8">
 
-                <div class="flex items-end object-contain h-16 mb-2">
+                <div class="flex items-end object-contain h-16 mb-6">
                     @isset($method->illustration_svg)
                         {!! $method->illustration_svg !!}
                     @endisset
