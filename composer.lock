@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11413a4d966f65e8299fd1f8bf8d81b6",
+    "content-hash": "c31917905a20e25c2b88154244720032",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -149,16 +149,16 @@
         },
         {
             "name": "aw-studio/laravel-deeplable",
-            "version": "v0.3",
+            "version": "v0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aw-studio/laravel-deeplable.git",
-                "reference": "95b3193030a176392998be46d90efe2ed1570d7c"
+                "reference": "e649b54b493b393262f9600d4d47bead4b9ff2dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aw-studio/laravel-deeplable/zipball/95b3193030a176392998be46d90efe2ed1570d7c",
-                "reference": "95b3193030a176392998be46d90efe2ed1570d7c",
+                "url": "https://api.github.com/repos/aw-studio/laravel-deeplable/zipball/e649b54b493b393262f9600d4d47bead4b9ff2dd",
+                "reference": "e649b54b493b393262f9600d4d47bead4b9ff2dd",
                 "shasum": ""
             },
             "require": {
@@ -198,9 +198,9 @@
             ],
             "support": {
                 "issues": "https://github.com/aw-studio/laravel-deeplable/issues",
-                "source": "https://github.com/aw-studio/laravel-deeplable/tree/v0.3"
+                "source": "https://github.com/aw-studio/laravel-deeplable/tree/v0.4"
             },
-            "time": "2021-08-04T12:46:22+00:00"
+            "time": "2021-08-04T12:48:22+00:00"
         },
         {
             "name": "brick/math",
