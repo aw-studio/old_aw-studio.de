@@ -2,18 +2,19 @@
 
 namespace App\Models;
 
-use App\Models\Traits\Taggable;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Ignite\Crud\Models\Traits\Translatable;
-use Illuminate\Database\Eloquent\Model;
 use Litstack\Meta\Metaable;
+use App\Models\Traits\Taggable;
 use Litstack\Meta\Traits\HasMeta;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Illuminate\Database\Eloquent\Model;
+use AwStudio\Deeplable\Traits\Deeplable;
+use Ignite\Crud\Models\Traits\Translatable;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
 class Post extends Model implements HasMediaContract, TranslatableContract, Metaable
 {
-    use HasMedia, Translatable, Taggable, HasMeta;
+    use HasMedia, Translatable, Taggable, HasMeta, Deeplable;
 
     /**
      * The attributes that are mass assignable.

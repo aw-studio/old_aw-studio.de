@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bce86ca4028ac9c06139d3bea1743ad",
+    "content-hash": "18c30fd5f442a748f1bcf213b023365c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -146,6 +146,61 @@
                 }
             ],
             "time": "2020-11-19T14:10:38+00:00"
+        },
+        {
+            "name": "aw-studio/laravel-deeplable",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aw-studio/laravel-deeplable.git",
+                "reference": "7a0bbcb79d51aa832c3bbc1efbed473c445163a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aw-studio/laravel-deeplable/zipball/7a0bbcb79d51aa832c3bbc1efbed473c445163a7",
+                "reference": "7a0bbcb79d51aa832c3bbc1efbed473c445163a7",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.3",
+                "illuminate/support": "^8",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AwStudio\\Deeplable\\DeeplableServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AwStudio\\Deeplable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jannescb",
+                    "email": "jannes@aw-studio.de"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/aw-studio/laravel-deeplable/issues",
+                "source": "https://github.com/aw-studio/laravel-deeplable/tree/v0.1"
+            },
+            "time": "2021-08-04T11:29:24+00:00"
         },
         {
             "name": "brick/math",
