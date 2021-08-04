@@ -2,15 +2,15 @@
 
 namespace App\Models;
 
-use Litstack\Meta\Metaable;
 use App\Models\Traits\Taggable;
-use Litstack\Meta\Traits\HasMeta;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Illuminate\Database\Eloquent\Model;
-use AwStudio\Deeplable\Traits\Deeplable;
-use Ignite\Crud\Models\Traits\Translatable;
-use Spatie\MediaLibrary\HasMedia as HasMediaContract;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use AwStudio\Deeplable\Traits\Deeplable;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Ignite\Crud\Models\Traits\Translatable;
+use Illuminate\Database\Eloquent\Model;
+use Litstack\Meta\Metaable;
+use Litstack\Meta\Traits\HasMeta;
+use Spatie\MediaLibrary\HasMedia as HasMediaContract;
 
 class Post extends Model implements HasMediaContract, TranslatableContract, Metaable
 {
