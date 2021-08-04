@@ -21,7 +21,7 @@ return [
     | settings.
     |
     */
-    'api_token' => env('DEEPL_SECRET', ),
+    'api_token' => env('DEEPL_SECRET'),
 
     /*
     |--------------------------------------------------------------------------
