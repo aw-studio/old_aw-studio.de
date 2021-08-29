@@ -19,7 +19,7 @@
         "postcss": "^8.2.7",
         "sass": "^1.32.8",
         "sass-loader": "^11.0.1",
-        "tailwindcss": "^2.0.3",
+        "tailwindcss": "^2.2.8",
         "vue-loader": "^15.9.6",
         "vue-template-compiler": "^2.6.12"
     },
