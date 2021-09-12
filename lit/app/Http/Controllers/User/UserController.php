@@ -12,9 +12,9 @@ class UserController extends CrudController
      * Authorize request for permission operation and authenticated litstack-user.
      * Operations: create, read, update, delete.
      *
-     * @param  Authorizable $user
-     * @param  string       $operation
-     * @param  string       $id
+     * @param  Authorizable  $user
+     * @param  string  $operation
+     * @param  string  $id
      * @return bool
      */
     public function authorize(Authorizable $user, string $operation, $id = null): bool
