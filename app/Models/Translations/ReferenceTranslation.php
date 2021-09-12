@@ -41,10 +41,10 @@ class ReferenceTranslation extends Model
     /**
      * Unique by title + locale.
      *
-     * @param  Builder $query
-     * @param  mixed   $model
-     * @param  mixed   $attribute
-     * @param  array   $config
+     * @param  Builder  $query
+     * @param  mixed  $model
+     * @param  mixed  $attribute
+     * @param  array  $config
      * @param  string  $slug
      * @return void
      */

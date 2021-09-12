@@ -42,7 +42,7 @@ class ServicesConfig extends FormConfig
     /**
      * Setup form page.
      *
-     * @param  \Lit\Crud\CrudShow $page
+     * @param  \Lit\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
