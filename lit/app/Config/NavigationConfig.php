@@ -28,7 +28,7 @@ class NavigationConfig extends Config
     /**
      * Topbar navigation entries.
      *
-     * @param  \Ignite\Application\Navigation\Navigation $nav
+     * @param  \Ignite\Application\Navigation\Navigation  $nav
      * @return void
      */
     public function topbar(Navigation $nav)
@@ -48,7 +48,7 @@ class NavigationConfig extends Config
     /**
      * Main navigation entries.
      *
-     * @param  \Ignite\Application\Navigation\Navigation $nav
+     * @param  \Ignite\Application\Navigation\Navigation  $nav
      * @return void
      */
     public function main(Navigation $nav)
