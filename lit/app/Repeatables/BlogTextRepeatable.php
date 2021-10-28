@@ -25,7 +25,7 @@ class BlogTextRepeatable extends Repeatable
     /**
      * Build the repeatable preview.
      *
-     * @param  ColumnBuilder $preview
+     * @param  ColumnBuilder  $preview
      * @return void
      */
     public function preview(ColumnBuilder $preview): void
@@ -36,7 +36,7 @@ class BlogTextRepeatable extends Repeatable
     /**
      * Build the repeatable form.
      *
-     * @param  RepeatableForm $form
+     * @param  RepeatableForm  $form
      * @return void
      */
     public function form(RepeatableForm $form): void
