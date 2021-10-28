@@ -122,11 +122,10 @@ aw-first-section-is-white
     </div>
 </section>
 
-
-<section class="pt-40 pb-40 bg-white border-t border-white">
+{{-- <section class="pt-40 pb-40 bg-white border-t border-white">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
     </div>
-</section>
+</section> --}}
 
 @endsection
