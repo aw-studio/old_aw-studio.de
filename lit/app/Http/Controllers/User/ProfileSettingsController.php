@@ -12,8 +12,8 @@ class ProfileSettingsController extends CrudController
      * Authorize request for authenticated litstack-user and permission operation.
      * Operations: read, update.
      *
-     * @param  Authorizable $user
-     * @param  string       $operation
+     * @param  Authorizable  $user
+     * @param  string  $operation
      * @return bool
      */
     public function authorize(Authorizable $user, string $operation): bool
