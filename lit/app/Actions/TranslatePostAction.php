@@ -15,13 +15,12 @@ class TranslatePostAction
      */
     public function run(Collection $models)
     {
-        
-        $models->first()->sections()->get()->each(function($item) {
+        $models->first()->sections()->get()->each(function ($item) {
             dd($item);
             $item->translateTo('en');
         });
         $models->first()->translateTo('en');
-       
+
         return response()->success('Action executed.');
     }
 }

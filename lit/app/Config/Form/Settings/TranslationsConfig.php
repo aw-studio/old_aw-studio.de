@@ -2,10 +2,10 @@
 
 namespace Lit\Config\Form\Settings;
 
-use Ignite\Crud\CrudShow;
 use Ignite\Crud\Config\FormConfig;
-use Litstack\Deeplable\TranslateAllAction;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Settings\TranslationsController;
+use Litstack\Deeplable\TranslateAllAction;
 
 class TranslationsConfig extends FormConfig
 {
@@ -23,7 +23,7 @@ class TranslationsConfig extends FormConfig
      */
     public function routePrefix()
     {
-        return "settings/translations";
+        return 'settings/translations';
     }
 
     /**
@@ -41,7 +41,7 @@ class TranslationsConfig extends FormConfig
     /**
      * Setup form page.
      *
-     * @param \Lit\Crud\CrudShow $page
+     * @param  \Lit\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Pages;
 
-use App\Models\Reference;
 use App\Http\Controllers\Controller;
-use Lit\Config\Form\Pages\ReferencesConfig;
+use App\Models\Reference;
 use Lit\Config\Form\Collections\FeaturedConfig;
 use Lit\Config\Form\Collections\HighlightsConfig;
+use Lit\Config\Form\Pages\ReferencesConfig;
 
 class ReferencesController extends Controller
 {

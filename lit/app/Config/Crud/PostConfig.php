@@ -3,12 +3,12 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Post;
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\Config\CrudConfig;
-use Litstack\Meta\Traits\FormHasMeta;
-use Litstack\Deeplable\TranslateAction;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\PostController;
+use Litstack\Deeplable\TranslateAction;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class PostConfig extends CrudConfig
 {
@@ -72,7 +72,6 @@ class PostConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
-
         $page->headerRight()
         ->action('Übersetzen', TranslateAction::class)
         ->variant('primary');
@@ -98,10 +97,10 @@ class PostConfig extends CrudConfig
                 ->maxFiles(1)
                 ->expand()
                 ->crop(1.6181 / 1)
-                ->width(1/2);
+                ->width(1 / 2);
             $form->text('excerpt')
                 ->translatable()
-                ->width(1/2);
+                ->width(1 / 2);
         })->width(9);
 
         $page->info('Content')
@@ -121,7 +120,6 @@ class PostConfig extends CrudConfig
                 ->createAndUpdateForm(function ($form) {
                     $form->input('title')
                         ->translatable(true);
-                    
                 })
                 ->allowLinking();
         })->width(9);

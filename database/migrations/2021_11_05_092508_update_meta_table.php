@@ -21,10 +21,10 @@ class UpdateMetaTable extends Migration
             $table->bigIncrements('id');
             $table->nullableMorphs('model');
             $table->boolean('is_edited');
-            
+
             $table->timestamps();
         });
-        
+
         Schema::create('meta_translations', function (Blueprint $table) {
             $table->translates('meta', 'meta_id');
 

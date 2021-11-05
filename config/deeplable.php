@@ -37,6 +37,6 @@ return [
         App\Models\Reference::class,
         App\Models\Post::class,
         Ignite\Crud\Models\Form::class,
-        Ignite\Crud\Models\Repeatable::class
+        Ignite\Crud\Models\Repeatable::class,
     ],
 ];

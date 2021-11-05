@@ -2,10 +2,10 @@
 
 namespace Lit\Config\Form\Pages;
 
-use Ignite\Crud\CrudShow;
 use Ignite\Crud\Config\FormConfig;
-use Litstack\Meta\Traits\FormHasMeta;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\BlogController;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class BlogConfig extends FormConfig
 {

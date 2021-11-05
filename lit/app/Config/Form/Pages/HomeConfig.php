@@ -2,13 +2,13 @@
 
 namespace Lit\Config\Form\Pages;
 
-use Ignite\Crud\CrudShow;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
-use Litstack\Meta\Traits\FormHasMeta;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\HomeController;
+use Litstack\Meta\Traits\FormHasMeta;
 
-class HomeConfig extends FormConfig 
+class HomeConfig extends FormConfig
 {
     use FormHasMeta;
     /**

@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Models\Post;
-use Lit\Config\Form\Pages\HomeConfig;
 use Lit\Config\Form\Collections\HighlightsConfig;
+use Lit\Config\Form\Pages\HomeConfig;
 
 class HomeController
 {
