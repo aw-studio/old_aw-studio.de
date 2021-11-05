@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($studio->meta->title)
+{{-- @if ($studio->meta->title)
 <title>{{ $studio->meta->title }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$studio" />
 @endsection
 

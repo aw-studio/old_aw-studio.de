@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
 use App\Models\Tag;
-use Ignite\Support\Facades\Form;
+use App\Models\Post;
 use Illuminate\Http\Request;
+use Lit\Config\Form\Pages\BlogConfig;
 
 class BlogController extends Controller
 {
     public function index()
     {
         return view('pages.blog.index')->with([
-            'blog'  => Form::load('pages', 'blog'),
+            'blog'  => BlogConfig::load(),
             'posts' => Post::whereActive(1)->orderBy('updated_at')->get(),
             'tags'  => Tag::all(),
         ]);
@@ -20,7 +20,6 @@ class BlogController extends Controller
 
     public function show($slug)
     {
-        // $post = Post::whereTranslation('slug', $slug)->first();
         $post = Post::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->with('translations')->first();

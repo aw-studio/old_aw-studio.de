@@ -82,7 +82,7 @@
         <!-- <section v-if="categories.length > 0" class="pt-20"></section> -->
         <section class="grid grid-cols-1 gap-10 lg:grid-cols-2">
             <div v-for="post in posts" :key="post.id" class="w-full">
-                <div v-if="post.active">
+                <div v-if="post.active" class="mb-8">
                     <a
                         :href="`blog/${post.slug}`"
                         class="relative block mb-2 lg:mb-6"
@@ -96,20 +96,18 @@
                                     {{ post.tags[0].title }}
                                 </div>
                             </div>
-                            <!-- <img
-                            v-if="post.image"
-                            class="z-10 w-full mb-4 lg:mb-8"
-                            :src="post.image.conversion_urls.xl"
-                            alt=""
-                        /> -->
                             <lit-image
                                 v-if="post.image"
                                 :image="post.image"
                                 classes="w-full z-10 mb-4 lg:mb-8"
                             />
                         </div>
-                        <div v-html="post.title" class="text-xl md:text-2xl" />
-                        <div v-html="post.excerpt" class="text-lg" />
+                        <h2
+                            v-if="post.h1"
+                            v-html="post.h1.replace('<p>', '')"
+                            class="text-xl font-normal md:text-2xl -mb-4 pr-8"
+                        />
+                        <div v-html="post.excerpt" class="text-lg pr-8" />
                     </a>
                     <a
                         v-if="locale == 'de'"

@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Pages;
 
-use Ignite\Support\Facades\Form;
+use Lit\Config\Form\Pages\StudioConfig;
 
 class StudioController
 {
     public function __invoke()
     {
         return view('pages.studio')->with([
-            'studio' => Form::load('pages', 'studio'),
+            'studio' => StudioConfig::load(),
         ]);
     }
 }

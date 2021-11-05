@@ -16,7 +16,7 @@ return [
     'next-references' => 'continue to the references',
     'next-blog'       => 'continue to the blog',
     'next-studio'     => 'continue to studio & team',
-    'back-home'       => 'back to overview',
+    'back-home'       => 'back to homepage',
 
     'read-post' => 'Read post',
 

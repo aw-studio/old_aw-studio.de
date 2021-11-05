@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($datapolicy->meta->title)
+{{-- @if ($datapolicy->meta->title)
 <title>{{ strip_tags($datapolicy->meta->title) }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$datapolicy" />
 @endsection
 

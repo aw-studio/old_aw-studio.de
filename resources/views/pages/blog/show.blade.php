@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($post->title)
+{{-- @if ($post->title)
 <title>{{ strip_tags($post->title) }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$post" />
 @endsection
 
@@ -13,7 +13,7 @@
             <div class="grid grid-cols-12 gap-5 mt-20 lg:mt-40">
                 <div class="col-span-12 col-start-1 lg:col-start-6 lg:col-span-6">
                     <h1 class="h1">
-                        {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
+                        {!!Str::of($post->h1)->replace('<p>', '')->replace('</p>', '')!!}
                     </h1>
                 </div>
 

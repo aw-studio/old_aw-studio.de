@@ -2,26 +2,27 @@
 
 namespace Lit\Config;
 
-use Ignite\Application\Navigation\Config;
-use Ignite\Application\Navigation\Navigation;
-use Lit\Config\Crud\CustomerConfig;
-use Lit\Config\Crud\PostConfig;
-use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TagConfig;
+use Lit\Config\Crud\PostConfig;
+use Lit\Config\Crud\CustomerConfig;
+use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
-use Lit\Config\Form\Collections\FeaturedConfig;
-use Lit\Config\Form\Collections\HighlightsConfig;
-use Lit\Config\Form\Components\JobsConfig;
-use Lit\Config\Form\Navigations\MainNavigationConfig;
-use Lit\Config\Form\Pages\ApplicationConfig;
 use Lit\Config\Form\Pages\BlogConfig;
-use Lit\Config\Form\Pages\DatapolicyConfig;
 use Lit\Config\Form\Pages\HomeConfig;
-use Lit\Config\Form\Pages\ImprintConfig;
 use Lit\Config\Form\Pages\MasterConfig;
-use Lit\Config\Form\Pages\ReferencesConfig;
-use Lit\Config\Form\Pages\ServicesConfig;
 use Lit\Config\Form\Pages\StudioConfig;
+use Lit\Config\Form\Pages\ImprintConfig;
+use Ignite\Application\Navigation\Config;
+use Lit\Config\Form\Pages\ServicesConfig;
+use Lit\Config\Form\Components\JobsConfig;
+use Lit\Config\Form\Pages\DatapolicyConfig;
+use Lit\Config\Form\Pages\ReferencesConfig;
+use Lit\Config\Form\Pages\ApplicationConfig;
+use Ignite\Application\Navigation\Navigation;
+use Lit\Config\Form\Collections\FeaturedConfig;
+use Lit\Config\Form\Settings\TranslationsConfig;
+use Lit\Config\Form\Collections\HighlightsConfig;
+use Lit\Config\Form\Navigations\MainNavigationConfig;
 
 class NavigationConfig extends Config
 {
@@ -42,6 +43,12 @@ class NavigationConfig extends Config
 
             $nav->preset('user.user', ['icon' => fa('users')]),
             $nav->preset('permissions'),
+        ]);
+
+        $nav->section([
+            $nav->title('Einstellungen'),
+
+            $nav->preset(TranslationsConfig::class, ['icon' => fa('language')]),
         ]);
     }
 
@@ -66,12 +73,7 @@ class NavigationConfig extends Config
             $nav->preset(DatapolicyConfig::class)->icon(fa('file-alt')),
         ]);
         $nav->section([
-            $nav->title('Blog'),
-            $nav->preset(PostConfig::class)->icon(fa('newspaper')),
-            $nav->preset(TagConfig::class)->icon(fa('tags')),
-        ]);
-        $nav->section([
-            $nav->title('Daten'),
+            $nav->title('Daten-Objekte'),
             $nav->group([
                 'title' => 'Referenzen',
                 'icon'  => fa('asterisk'),
@@ -82,15 +84,13 @@ class NavigationConfig extends Config
             ]),
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
+            $nav->preset(PostConfig::class)->icon(fa('newspaper')),
+            $nav->preset(TagConfig::class)->icon(fa('tags')),
         ]);
         $nav->section([
             $nav->title('Komponenten'),
-
-            $nav->preset(JobsConfig::class)->icon(fa('keyboard')),
-        ]);
-        $nav->section([
-            $nav->title('Navigation'),
             $nav->preset(MainNavigationConfig::class)->icon(fa('stream')),
+            $nav->preset(JobsConfig::class)->icon(fa('keyboard')),
         ]);
     }
 }

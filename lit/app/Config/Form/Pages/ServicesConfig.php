@@ -2,14 +2,14 @@
 
 namespace Lit\Config\Form\Pages;
 
-use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
+use Ignite\Crud\Config\FormConfig;
+use Litstack\Meta\Traits\FormHasMeta;
 use Lit\Http\Controllers\Form\Pages\ServicesController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
 class ServicesConfig extends FormConfig
 {
-    use CrudHasMeta;
+    use FormHasMeta;
     /**
      * Controller class.
      *
@@ -143,6 +143,10 @@ class ServicesConfig extends FormConfig
                 });
         })->width(9);
 
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

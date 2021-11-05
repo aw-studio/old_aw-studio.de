@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($blog->meta->title)
+{{-- @if ($blog->meta->title)
 <title>{{ $blog->meta->title }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$blog" />
 @endsection
 

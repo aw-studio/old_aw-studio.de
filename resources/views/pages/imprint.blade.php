@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($imprint->meta->title)
+{{-- @if ($imprint->meta->title)
 <title>{{ $imprint->meta->title }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$imprint" />
 @endsection
 

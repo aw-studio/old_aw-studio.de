@@ -1,10 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($reference->title && $reference->subtitle)
+{{-- @if ($reference->title && $reference->subtitle)
 <title>{{ $reference->title }}: {{ $reference->subtitle }}</title>
-@endif
-
+@endif --}}
 <x-lit-meta :for="$reference" />
 @endsection
 

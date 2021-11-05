@@ -12,7 +12,7 @@
         @endisset
     </div>
     <div class="mr-8 text-xl md:text-2xl">
-        {!!Str::of($post->title)->replace('<p>', '')->replace('</p>', '')!!}
+        {!!Str::of($post->h1)->replace('<p>', '')->replace('</p>', '')!!}
     </div>
     <div class="mt-4 mr-8">
         {!! $post->excerpt !!}

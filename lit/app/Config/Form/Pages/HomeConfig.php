@@ -2,15 +2,15 @@
 
 namespace Lit\Config\Form\Pages;
 
+use Ignite\Crud\CrudShow;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
-use Ignite\Crud\CrudShow;
+use Litstack\Meta\Traits\FormHasMeta;
 use Lit\Http\Controllers\Form\Pages\HomeController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
-class HomeConfig extends FormConfig
+class HomeConfig extends FormConfig 
 {
-    use CrudHasMeta;
+    use FormHasMeta;
     /**
      * Controller class.
      *
@@ -116,10 +116,10 @@ class HomeConfig extends FormConfig
             });
         })->width(9);
 
-        // $page->info('Meta')
-        //     ->text('Die hier eingetragenen Metadaten werden auf der entsprechenden Seite im head Element geladen.')
-        //     ->width(3);
-        // $page->meta()->width(9);
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

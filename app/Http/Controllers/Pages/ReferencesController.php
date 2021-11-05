@@ -2,18 +2,20 @@
 
 namespace App\Http\Controllers\Pages;
 
-use App\Http\Controllers\Controller;
 use App\Models\Reference;
-use Ignite\Support\Facades\Form;
+use App\Http\Controllers\Controller;
+use Lit\Config\Form\Pages\ReferencesConfig;
+use Lit\Config\Form\Collections\FeaturedConfig;
+use Lit\Config\Form\Collections\HighlightsConfig;
 
 class ReferencesController extends Controller
 {
     public function index()
     {
         return view('pages.references.index')->with([
-            'references'    => Form::load('pages', 'references'),
-            'highlights'    => Form::load('collections', 'highlights'),
-            'featured'      => Form::load('collections', 'featured'),
+            'references'    => ReferencesConfig::load(),
+            'highlights'    => HighlightsConfig::load(),
+            'featured'      => FeaturedConfig::load(),
             'references_az' => Reference::get()->sortBy('title'),
         ]);
     }
@@ -39,12 +41,11 @@ class ReferencesController extends Controller
         ]);
     }
 
-    // TODO:
     private function getNextReferenceSlug($current)
     {
         $this->current = $current;
-        $highlights_references = Form::load('collections', 'highlights');
-        $featured_references = Form::load('collections', 'featured');
+        $highlights_references = HighlightsConfig::load();
+        $featured_references = FeaturedConfig::load();
         $highlights_and_featured = $highlights_references->references->merge($featured_references->references);
 
         $current_index = $highlights_and_featured->search(function ($reference) {

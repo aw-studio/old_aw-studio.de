@@ -10,7 +10,7 @@ return [
     | to DeepL.
     |
     */
-    'api_url' => 'https://api-free.deepl.com/v2/translate',
+    'api_url' => 'https://api-free.deepl.com/v2',
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ return [
     | settings.
     |
     */
-    'api_token' => env('DEEPL_SECRET'),
+    'api_token' => env('DEEPL_API_TOKEN', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,5 +36,7 @@ return [
     'translated_models' => [
         App\Models\Reference::class,
         App\Models\Post::class,
+        Ignite\Crud\Models\Form::class,
+        Ignite\Crud\Models\Repeatable::class
     ],
 ];

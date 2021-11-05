@@ -3,15 +3,16 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Post;
-use Ignite\Crud\Config\CrudConfig;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\Config\CrudConfig;
+use Litstack\Meta\Traits\FormHasMeta;
+use Litstack\Deeplable\TranslateAction;
 use Lit\Http\Controllers\Crud\PostController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
 class PostConfig extends CrudConfig
 {
-    use CrudHasMeta;
+    use FormHasMeta;
     /**
      * Model class.
      *
@@ -71,48 +72,64 @@ class PostConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
-        $page->info('Autor:in: {lit_user_username}');
+
+        $page->headerRight()
+        ->action('Übersetzen', TranslateAction::class)
+        ->variant('primary');
+
+        $page->info('Title & Settings')
+            ->width(3);
         $page->card(function ($form) {
-            $form->wysiwyg('title')
+            $form->input('title')
                 ->hint('Der Slug wird aus diesem Titel gebildet')
                 ->creationRules('required')
                 ->width(10);
-
+            $form->input('slug')
+                ->width(6);
             $form->boolean('active')
                 ->title('Aktiv/Inaktiv')
                 ->width(2);
+        })->width(9);
 
-            $form->wysiwyg('excerpt')
-                ->translatable();
-
+        $page->info('Preview')
+            ->width(3);
+        $page->card(function ($form) {
             $form->image('image')
                 ->maxFiles(1)
                 ->expand()
-                ->crop(1.6181 / 1);
-            // $form->modal('change_slug')
-            //     ->title('Slug')
-            //     ->variant('primary')
-            //     ->preview($this->routePrefix() . '/<b>{' . $this->getSlugColumnName() . '}</b>')
-            //     ->name('Change Slug')
-            //     ->form(function ($modal) {
-            //         $modal->input($this->getSlugColumnName())
-            //             ->width(12)
-            //             ->title('Slug');
-            //     })->width(4);
+                ->crop(1.6181 / 1)
+                ->width(1/2);
+            $form->text('excerpt')
+                ->translatable()
+                ->width(1/2);
+        })->width(9);
 
-            // $this->prependForm($form);
-        });
-
+        $page->info('Content')
+        ->width(3);
         $page->card(function ($form) {
+            $form->wysiwyg('h1')
+                ->width(10);
             $form->postContentAreaMacro();
-        });
+        })->width(9);
 
+        $page->info('Tags')
+        ->width(3);
         $page->card(function ($form) {
             $form->relation('tags')
                 ->type('tags')
-                ->tagValue('{title}');
-        });
+                ->tagValue('{title}')
+                ->createAndUpdateForm(function ($form) {
+                    $form->input('title')
+                        ->translatable(true);
+                    
+                })
+                ->allowLinking();
+        })->width(9);
 
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

@@ -2,15 +2,15 @@
 
 namespace Lit\Config\Form\Pages;
 
+use Ignite\Crud\CrudShow;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
-use Ignite\Crud\CrudShow;
+use Litstack\Meta\Traits\FormHasMeta;
 use Lit\Http\Controllers\Form\Pages\StudioController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
 class StudioConfig extends FormConfig
 {
-    use CrudHasMeta;
+    use FormHasMeta;
     /**
      * Controller class.
      *
@@ -75,6 +75,10 @@ class StudioConfig extends FormConfig
             $form->image('images_jobs')->title('Bild')->maxFiles(1)->expand();
         })->width(9);
 
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

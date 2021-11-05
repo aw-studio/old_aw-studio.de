@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-@if ($services->meta->title)
+{{-- @if ($services->meta->title)
 <title>{{ $services->meta->title }}</title>
-@endif
+@endif --}}
 <x-lit-meta :for="$services" />
 @endsection
 

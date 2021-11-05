@@ -22,7 +22,7 @@ class PostTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'excerpt', 'slug'];
+    protected $fillable = ['title', 'h1', 'excerpt', 'slug'];
 
     /**
      * Return the sluggable configuration array for this model.

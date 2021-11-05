@@ -2,14 +2,14 @@
 
 namespace Lit\Config\Form\Pages;
 
-use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
+use Ignite\Crud\Config\FormConfig;
+use Litstack\Meta\Traits\FormHasMeta;
 use Lit\Http\Controllers\Form\Pages\ReferencesController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
 class ReferencesConfig extends FormConfig
 {
-    use CrudHasMeta;
+    use FormHasMeta;
     /**
      * Controller class.
      *
@@ -72,6 +72,10 @@ class ReferencesConfig extends FormConfig
                 ->text('Die A-Z-Liste der Referenzen wird automatisch aus allen Referenz-Datensätzen dargestellt.<br>(siehe Datensätze -> Referenzen).');
         })->width(9);
 
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

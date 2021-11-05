@@ -3,15 +3,15 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Reference;
-use Ignite\Crud\Config\CrudConfig;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\Config\CrudConfig;
+use Litstack\Meta\Traits\FormHasMeta;
 use Lit\Http\Controllers\Crud\ReferenceController;
-use Litstack\Meta\Traits\CrudHasMeta;
 
 class ReferenceConfig extends CrudConfig
 {
-    use CrudHasMeta;
+    use FormHasMeta;
 
     /**
      * Model class.
@@ -192,6 +192,10 @@ class ReferenceConfig extends CrudConfig
                 });
         })->width(9);
 
-        $this->meta($page);
+        $page->info('SEO Informations')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);
     }
 }

@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Pages;
 
-use Ignite\Support\Facades\Form;
+use Lit\Config\Form\Pages\ServicesConfig;
 
 class ServicesController
 {
     public function __invoke()
     {
         return view('pages.services')->with([
-            'services' => Form::load('pages', 'services'),
+            'services' => ServicesConfig::load(),
         ]);
     }
 }

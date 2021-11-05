@@ -3,16 +3,17 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Models\Post;
-use Ignite\Support\Facades\Form;
+use Lit\Config\Form\Pages\HomeConfig;
+use Lit\Config\Form\Collections\HighlightsConfig;
 
 class HomeController
 {
     public function __invoke()
     {
         return view('pages.home')->with([
-            'form'       => Form::load('pages', 'home'),
+            'form'       => HomeConfig::load(),
             'posts'      => Post::whereActive(1)->take(2)->get(),
-            'highlights' => Form::load('collections', 'highlights'),
+            'highlights' => HighlightsConfig::load(),
         ]);
     }
 }

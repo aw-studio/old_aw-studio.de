@@ -16,7 +16,7 @@ return [
     'next-references' => 'weiter zu den Referenzen',
     'next-blog'       => 'weiter zum Blog',
     'next-studio'     => 'weiter zu Studio & Team',
-    'back-home'       => 'zurück zur Übersicht',
+    'back-home'       => 'zurück zur Startseite',
 
     'read-post' => 'Beitrag lesen',
 

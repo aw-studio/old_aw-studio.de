@@ -9,16 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "aw-studio/laravel-deeplable": "^0.4.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "litstack/bladesmith": "1.x-dev",
+        "litstack/bladesmith": "^1.0",
         "litstack/bricks": "dev-main",
-        "litstack/litstack": "^3.4",
-        "litstack/meta": "^1.0"
+        "litstack/deeplable": "^0.4.0",
+        "litstack/litstack": "^3.7",
+        "litstack/meta": "^2.0.0"
     },
     "require-dev": {
         "aw-studio/cshelper": "dev-main",
