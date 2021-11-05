@@ -8,7 +8,7 @@
                     <div class="flex items-center justify-end w-full mb-5">
                         <div class="flex flex-wrap mr-4">
                             <div
-                                class="flex items-center px-4 py-px ml-2 text-xs tracking-widest text-white uppercase bg-black rounded whitespace-nowrap"
+                                class="flex items-center px-4 py-px ml-2 text-xs tracking-widest text-white uppercase bg-black rounded-full whitespace-nowrap"
                                 v-for="tag in selected"
                                 :key="tag.id"
                             >
@@ -91,7 +91,7 @@
                             <div class="absolute">
                                 <div
                                     v-if="post.tags.length > 0 && post.image"
-                                    class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap"
+                                    class="absolute z-10 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap"
                                 >
                                     {{ post.tags[0].title }}
                                 </div>

@@ -21,7 +21,7 @@
                     <ul class="flex flex-wrap mt-2">
                         @foreach($post->tags as $tag)
                             <li>
-                                <div class="z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap inline-block mb-2 mr-2">
+                                <div class="z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap inline-block mb-2 mr-2">
                                     {{$tag->title}}
                                 </div>
                             </li>
@@ -42,4 +42,16 @@
     @if ($post)
         @block($post->sections)
     @endif
+
+    <section class="bg-white">
+        <div class="container pb-20">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 lg:col-span-6 text-xl lg:col-start-6 mb-20">
+                    <a class="aw-link text-base" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 @endsection

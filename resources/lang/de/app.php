@@ -17,6 +17,7 @@ return [
     'next-blog'       => 'weiter zum Blog',
     'next-studio'     => 'weiter zu Studio & Team',
     'back-home'       => 'zurück zur Startseite',
+    'back-to-blog-overview' => 'zurück zur Blog-Übersicht',
 
     'read-post' => 'Beitrag lesen',
 

@@ -17,6 +17,7 @@ return [
     'next-blog'       => 'continue to the blog',
     'next-studio'     => 'continue to studio & team',
     'back-home'       => 'back to homepage',
+    'back-to-blog-overview' => 'back to blog overview',
 
     'read-post' => 'Read post',
 

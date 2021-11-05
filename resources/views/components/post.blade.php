@@ -2,7 +2,7 @@
     <div class="relative">
         <div class="absolute">
             @if(count($post->tags) > 0 && $post->image)
-                <div class="absolute z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded left-5 top-5 whitespace-nowrap">
+                <div class="absolute z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap">
                     {{$post->tags[0]->title}}
                 </div>
             @endif
