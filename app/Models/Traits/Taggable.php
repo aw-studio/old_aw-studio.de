@@ -11,6 +11,6 @@ trait Taggable
      */
     public function tags()
     {
-        return $this->morphToMany(Tag::class, 'taggable');
+        return $this->morphToMany(Tag::class, 'taggable')->orderBy('order_column');
     }
 }

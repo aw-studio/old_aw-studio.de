@@ -28,7 +28,7 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-span-12 lg:col-span-6 lg:col-start-6">
+                <div class="col-span-12 lg:col-span-6 text-xl lg:col-start-6 mb-20">
                     {!!$post->excerpt!!}
                 </div>
 

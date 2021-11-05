@@ -115,8 +115,9 @@ class PostConfig extends CrudConfig
         ->width(3);
         $page->card(function ($form) {
             $form->relation('tags')
-                ->type('tags')
-                ->tagValue('{title}')
+                // ->type('tags')
+                // ->tagValue('{title}')
+                ->sortable()
                 ->createAndUpdateForm(function ($form) {
                     $form->input('title')
                         ->translatable(true);
