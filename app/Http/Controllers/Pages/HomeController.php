@@ -12,7 +12,7 @@ class HomeController
     {
         return view('pages.home')->with([
             'form'       => HomeConfig::load(),
-            'posts'      => Post::whereActive(1)->take(2)->get(),
+            'posts'      => Post::whereActive(1)->inRandomOrder()->take(2)->get(),
             'highlights' => HighlightsConfig::load(),
         ]);
     }
