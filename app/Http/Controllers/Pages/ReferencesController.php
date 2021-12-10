@@ -16,7 +16,7 @@ class ReferencesController extends Controller
             'references'    => ReferencesConfig::load(),
             'highlights'    => HighlightsConfig::load(),
             'featured'      => FeaturedConfig::load(),
-            'references_az' => Reference::get()->sortBy('title'),
+            'references_az' => Reference::active()->get()->sortBy('title', SORT_NATURAL|SORT_FLAG_CASE),
         ]);
     }
 
@@ -24,7 +24,7 @@ class ReferencesController extends Controller
     {
         $reference = Reference::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
-        })->with('translations')->first();
+        })->active()->with('translations')->first();
 
         if (! $reference || ! $reference->active) {
             return redirect()->route(app()->getLocale().'.references.index');

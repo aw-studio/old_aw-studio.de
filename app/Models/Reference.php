@@ -53,6 +53,10 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      */
     protected $with = ['media', 'translations'];
 
+    protected $casts = [
+        'active' => 'boolean',
+    ];
+
     /**
      * Image attribute.
      *
@@ -67,4 +71,9 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
     {
         return $this->repeatables('details');
     }
+
+    public function scopeActive($query) {
+        return $query->where('active', true);
+    }
+
 }

@@ -174,13 +174,15 @@
             @apply text-base;
         }
     }
-    section.bg-white .aw-list ul li {
+    section.bg-white .aw-list ul li,
+    section.bg-white .prose ul li {
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23161616' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
         background-position: 0 13px;
         background-repeat: no-repeat;
         @apply pl-8;
     }
-    section.bg-black .aw-list ul li {
+    section.bg-black .aw-list ul li,
+    section.bg-black .prose ul li {
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='14' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.5H1' stroke='%23FFF' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/svg%3E");
         background-position: 0 13px;
         background-repeat: no-repeat;

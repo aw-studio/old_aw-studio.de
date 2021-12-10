@@ -88,6 +88,10 @@ class ReferenceConfig extends CrudConfig
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {
+
+            $form->boolean('active')
+                ->title('Live')
+                ->width(1/3);
             $form->image('image')
                 ->title('Vorschaubild')
                 ->expand()
