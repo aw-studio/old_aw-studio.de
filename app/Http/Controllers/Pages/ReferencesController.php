@@ -16,7 +16,7 @@ class ReferencesController extends Controller
             'references'    => ReferencesConfig::load(),
             'highlights'    => HighlightsConfig::load(),
             'featured'      => FeaturedConfig::load(),
-            'references_az' => Reference::active()->get()->sortBy('title', SORT_NATURAL|SORT_FLAG_CASE),
+            'references_az' => Reference::active()->get()->sortBy('title', SORT_NATURAL | SORT_FLAG_CASE),
         ]);
     }
 

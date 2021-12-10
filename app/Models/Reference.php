@@ -72,8 +72,8 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
         return $this->repeatables('details');
     }
 
-    public function scopeActive($query) {
+    public function scopeActive($query)
+    {
         return $query->where('active', true);
     }
-
 }
