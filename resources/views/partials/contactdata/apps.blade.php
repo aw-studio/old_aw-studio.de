@@ -1,5 +1,14 @@
 <span class="flex mb-2">
     <span class="mr-2">
+        @include('partials.svg.icon-signal')
+    </span>
+    <span>
+        <a class="aw-link" target="_blank" rel="noreferrer" href="https://signal.me/#p/+4917655943025">Signal</a>
+    </span>
+</span>
+
+<span class="flex mb-2">
+    <span class="mr-2">
         @include('partials.svg.icon-whatsapp')
     </span>
     <span>
@@ -9,19 +18,10 @@
 
 <span class="flex mb-2">
     <span class="mr-2">
-        @include('partials.svg.icon-telegram')
+        @include('partials.svg.icon-discord')
     </span>
     <span>
-        <a class="aw-link" target="_blank" rel="noreferrer" href="https://t.me/alle_wetter">Telegram</a>
-    </span>
-</span>
-
-<span class="flex mb-2">
-    <span class="mr-2">
-        @include('partials.svg.icon-keybase')
-    </span>
-    <span>
-        <a class="aw-link" target="_blank" rel="noreferrer" href="https://keybase.io/team/aw_studio">Keybase</a>
+        <a class="aw-link" target="_blank" rel="noreferrer" href="https://discord.gg/u4qpb5P">Discord</a>
     </span>
 </span>
 
