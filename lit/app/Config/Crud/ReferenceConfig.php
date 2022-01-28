@@ -3,12 +3,12 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Reference;
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\Config\CrudConfig;
-use Litstack\Meta\Traits\FormHasMeta;
-use Litstack\Deeplable\TranslateAction;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\ReferenceController;
+use Litstack\Deeplable\TranslateAction;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class ReferenceConfig extends CrudConfig
 {
@@ -75,8 +75,7 @@ class ReferenceConfig extends CrudConfig
             $table->col('Jahr')
                 ->value('{date}');
 
-            
-            $table->field('Live', fn($column) => $column->sortBy('active'))
+            $table->field('Live', fn ($column) => $column->sortBy('active'))
                 ->boolean('active');
         })->search('title');
     }
@@ -89,7 +88,6 @@ class ReferenceConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
-
         $page->headerRight()
         ->action('Übersetzen', TranslateAction::class)
         ->variant('primary');
