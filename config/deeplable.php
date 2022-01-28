@@ -1,6 +1,19 @@
 <?php
 
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | API-Parameters
+    |--------------------------------------------------------------------------
+    |
+    | Here you can set optional api parameters.
+    |
+    */
+    'api_params' => [
+        'tag_handling' => 'xml', // only available in pro version
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Deepl API-URL
@@ -10,7 +23,7 @@ return [
     | to DeepL.
     |
     */
-    'api_url' => 'https://api-free.deepl.com/v2',
+    'api_url' => 'https://api.deepl.com/v2',
 
     /*
     |--------------------------------------------------------------------------
@@ -38,5 +51,6 @@ return [
         App\Models\Post::class,
         Ignite\Crud\Models\Form::class,
         Ignite\Crud\Models\Repeatable::class,
+        Ignite\Crud\Models\ListItem::class,
     ],
 ];

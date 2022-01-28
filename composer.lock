@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9baa51a08fb267096b2ab18723b188f",
+    "content-hash": "2e912d0a15130cd46e19068b4ff8f101",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3022,16 +3022,16 @@
         },
         {
             "name": "litstack/deeplable",
-            "version": "v0.4",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/litstack/deeplable.git",
-                "reference": "b9ad7d9302411322a4f90689ef414c4032cad55e"
+                "reference": "8643618def5c5986d1701a7d678336001daf2c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/litstack/deeplable/zipball/b9ad7d9302411322a4f90689ef414c4032cad55e",
-                "reference": "b9ad7d9302411322a4f90689ef414c4032cad55e",
+                "url": "https://api.github.com/repos/litstack/deeplable/zipball/8643618def5c5986d1701a7d678336001daf2c24",
+                "reference": "8643618def5c5986d1701a7d678336001daf2c24",
                 "shasum": ""
             },
             "require": {
@@ -3071,9 +3071,9 @@
             ],
             "support": {
                 "issues": "https://github.com/litstack/deeplable/issues",
-                "source": "https://github.com/litstack/deeplable/tree/v0.4"
+                "source": "https://github.com/litstack/deeplable/tree/v0.5"
             },
-            "time": "2021-09-08T10:21:23+00:00"
+            "time": "2022-01-20T10:38:20+00:00"
         },
         {
             "name": "litstack/lang",

@@ -3,11 +3,12 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Reference;
-use Ignite\Crud\Config\CrudConfig;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
-use Lit\Http\Controllers\Crud\ReferenceController;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\Config\CrudConfig;
 use Litstack\Meta\Traits\FormHasMeta;
+use Litstack\Deeplable\TranslateAction;
+use Lit\Http\Controllers\Crud\ReferenceController;
 
 class ReferenceConfig extends CrudConfig
 {
@@ -60,6 +61,10 @@ class ReferenceConfig extends CrudConfig
     public function index(CrudIndex $page)
     {
         $page->table(function ($table) {
+            $table->image('')
+                ->src('{image.conversion_urls.sm}')
+                ->maxWidth('50px')
+                ->small();
             $table->col('Title')
                 ->value('<b>{title}</b>')
                 ->sortBy('title');
@@ -70,10 +75,9 @@ class ReferenceConfig extends CrudConfig
             $table->col('Jahr')
                 ->value('{date}');
 
-            $table->image('Image')
-                ->src('{image.conversion_urls.sm}')
-                ->maxWidth('50px')
-                ->small();
+            
+            $table->field('Live', fn($column) => $column->sortBy('active'))
+                ->boolean('active');
         })->search('title');
     }
 
@@ -85,6 +89,11 @@ class ReferenceConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
+
+        $page->headerRight()
+        ->action('Übersetzen', TranslateAction::class)
+        ->variant('primary');
+
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {

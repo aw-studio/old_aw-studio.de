@@ -16,7 +16,7 @@
         "laravel/tinker": "^2.5",
         "litstack/bladesmith": "^1.0",
         "litstack/bricks": "dev-main",
-        "litstack/deeplable": "^0.4.0",
+        "litstack/deeplable": "^0.5",
         "litstack/litstack": "^3.7",
         "litstack/meta": "^2.0.0"
     },
