@@ -7,6 +7,7 @@ return [
     'studio'      => 'studio',
     'application' => 'application',
     'blog'        => 'blog',
+    'landing-pages' => 'landing-pages',
 
     'imprint'    => 'imprint',
     'datapolicy' => 'datapolicy',

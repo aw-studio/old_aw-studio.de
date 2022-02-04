@@ -11,6 +11,7 @@ use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
 use Lit\Config\Form\Pages\BlogConfig;
 use Lit\Config\Form\Pages\HomeConfig;
+use Lit\Config\Crud\LandingPageConfig;
 use Lit\Config\Form\Pages\MasterConfig;
 use Lit\Config\Form\Pages\StudioConfig;
 use Lit\Config\Form\Pages\ImprintConfig;
@@ -89,6 +90,7 @@ class NavigationConfig extends Config
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
+            $nav->preset(LandingPageConfig::class)->icon(fa('window-maximize')),
             $nav->preset(TagConfig::class)->icon(fa('tags')),
         ]);
         $nav->section([
