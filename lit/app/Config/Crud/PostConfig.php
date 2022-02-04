@@ -4,12 +4,12 @@ namespace Lit\Config\Crud;
 
 use App\Models\Post;
 use App\Models\Reference;
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\Config\CrudConfig;
-use Litstack\Meta\Traits\FormHasMeta;
-use Litstack\Deeplable\TranslateAction;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\PostController;
+use Litstack\Deeplable\TranslateAction;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class PostConfig extends CrudConfig
 {
