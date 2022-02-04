@@ -2,11 +2,12 @@
 
 namespace Lit\Config\Form\Pages;
 
+use App\Models\Service;
+use Ignite\Crud\CrudShow;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
-use Ignite\Crud\CrudShow;
-use Lit\Http\Controllers\Form\Pages\HomeController;
 use Litstack\Meta\Traits\FormHasMeta;
+use Lit\Http\Controllers\Form\Pages\HomeController;
 
 class HomeConfig extends FormConfig
 {
@@ -59,18 +60,22 @@ class HomeConfig extends FormConfig
         $page->card(function ($form) {
             $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)');
             $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum');
+            $form->wysiwyg('text_services')->hint('SEO-Text im Leistungen-Block');
+        })->width(9);
 
+        $page->info('Leistungen')
+            ->width(3);
+        $page->card(function ($form) {
             $form->group(function ($form) {
-                $form->input('h3_design')->title('Headline Design')->translatable()->hint('(h3)');
-                $form->wysiwyg('list_design')->title('List')->translatable();
-                $form->wysiwyg('text_design')->title('Text')->translatable();
-            })->width(6);
-
-            $form->group(function ($form) {
-                $form->input('h3_development')->title('Headline Development')->translatable()->hint('(h3)');
-                $form->wysiwyg('list_development')->title('List')->translatable();
-                $form->wysiwyg('text_development')->title('Text')->translatable();
-            })->width(6);
+                $form->manyRelation('services')
+                ->model(Service::class)
+                ->sortable()
+                ->preview(function ($table) {
+                    $table->col('Title')
+                        ->value('{title}')
+                        ->sortBy('title');
+                });
+            });
         })->width(9);
 
         $page->info('Digitale Lösungen / Referenzen')
