@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 use Ignite\Support\Migration\MigratePermissions;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSolutionsTables extends Migration
 {
@@ -19,7 +19,7 @@ class CreateSolutionsTables extends Migration
             $table->boolean('active')->default(true);
             $table->timestamps();
         });
-        
+
         Schema::create('solution_translations', function (Blueprint $table) {
             $table->translates('solutions');
 
@@ -29,7 +29,7 @@ class CreateSolutionsTables extends Migration
             $table->string('title')->nullable();
             $table->text('text')->nullable();
             $table->text('list')->nullable();
-            
+
             $table->string('slug')->nullable();
         });
     }

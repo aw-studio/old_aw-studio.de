@@ -2,13 +2,12 @@
 
 namespace Lit\Config\Crud;
 
-use App\Models\Solution;
 use App\Models\Reference;
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
-
-use Illuminate\Support\Str;
+use App\Models\Solution;
 use Ignite\Crud\Config\CrudConfig;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
+use Illuminate\Support\Str;
 use Lit\Http\Controllers\Crud\SolutionController;
 
 class SolutionConfig extends CrudConfig
@@ -54,7 +53,7 @@ class SolutionConfig extends CrudConfig
     /**
      * Build index page.
      *
-     * @param \Ignite\Crud\CrudIndex $page
+     * @param  \Ignite\Crud\CrudIndex  $page
      * @return void
      */
     public function index(CrudIndex $page)
@@ -67,7 +66,7 @@ class SolutionConfig extends CrudConfig
     /**
      * Setup show page.
      *
-     * @param \Ignite\Crud\CrudShow $page
+     * @param  \Ignite\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
