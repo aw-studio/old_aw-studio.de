@@ -11,6 +11,7 @@ return [
     'view-reference' => 'view reference',
     'all-references' => 'all references',
     'next-reference' => 'view next reference',
+    'related-references' => 'Related references',
 
     'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',

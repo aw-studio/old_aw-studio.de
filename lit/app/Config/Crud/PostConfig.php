@@ -3,12 +3,13 @@
 namespace Lit\Config\Crud;
 
 use App\Models\Post;
-use Ignite\Crud\Config\CrudConfig;
-use Ignite\Crud\CrudIndex;
+use App\Models\Reference;
 use Ignite\Crud\CrudShow;
-use Lit\Http\Controllers\Crud\PostController;
-use Litstack\Deeplable\TranslateAction;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\Config\CrudConfig;
 use Litstack\Meta\Traits\FormHasMeta;
+use Litstack\Deeplable\TranslateAction;
+use Lit\Http\Controllers\Crud\PostController;
 
 class PostConfig extends CrudConfig
 {
@@ -129,6 +130,25 @@ class PostConfig extends CrudConfig
             ->width(3);
         $page->card(function ($form) {
             $form->seo();
+        })->width(9);
+
+        $page->info('References')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->manyRelation('references')
+                ->title('Referenzen')
+                ->model(Reference::class)
+                ->sortable()
+                ->preview(function ($table) {
+                    $table->image('Image')
+                        ->src('{image.conversion_urls.sm}')
+                        ->maxWidth('50px')
+                        ->small();
+
+                    $table->col('Title')
+                        ->value('{title}')
+                        ->sortBy('title');
+                });
         })->width(9);
     }
 }

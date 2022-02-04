@@ -83,7 +83,6 @@ class ServiceConfig extends CrudConfig
             $form->manyRelation('references')
                 ->title('Referenzen')
                 ->model(Reference::class)
-                ->perPage(100)
                 ->sortable()
                 ->preview(function ($table) {
                     $table->image('Image')

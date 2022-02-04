@@ -21,14 +21,14 @@
                     <ul class="flex flex-wrap mt-2">
                         @foreach($post->tags as $tag)
                             <li>
-                                <div class="z-20 px-4 py-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap inline-block mb-2 mr-2">
+                                <div class="z-20 inline-block px-4 py-2 mb-2 mr-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap">
                                     {{$tag->title}}
                                 </div>
                             </li>
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-span-12 lg:col-span-6 text-xl lg:col-start-6 mb-20">
+                <div class="col-span-12 mb-20 text-xl lg:col-span-6 lg:col-start-6">
                     {!!$post->excerpt!!}
                 </div>
 
@@ -43,11 +43,29 @@
         @block($post->sections)
     @endif
 
+    @if($post->references)
+    <section class="bg-white">
+        <div class="container pb-20">
+            <h3>{{__('app.related-references')}}</h3>
+            <div class="grid grid-cols-12 gap-5">
+                @foreach($post->references as $reference)
+                <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                    <x-lit-image :image="$reference->image" class="w-full" />
+                    {{$reference->title}}
+                    {!!$reference->excerpt!!}
+                    <a class="aw-link" href="{{ __route('references.show',$reference->slug)}}">{{__('app.view-reference')}}</a>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    @endif
+
     <section class="bg-white">
         <div class="container pb-20">
             <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-12 lg:col-span-6 text-xl lg:col-start-6 mb-20">
-                    <a class="aw-link text-base" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
+                <div class="col-span-12 mb-20 text-xl lg:col-span-6 lg:col-start-6">
+                    <a class="text-base aw-link" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
                 </div>
             </div>
         </div>

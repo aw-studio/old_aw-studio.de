@@ -11,6 +11,7 @@ return [
     'view-reference' => 'Referenz ansehen',
     'all-references' => 'Alle Referenzen',
     'next-reference' => 'nächste Referenz ansehen',
+    'related-references' => 'Passende Referenzen',
 
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',

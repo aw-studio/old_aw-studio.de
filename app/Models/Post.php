@@ -72,4 +72,9 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
     {
         return $this->repeatables('sections');
     }
+
+    public function references()
+    {
+        return $this->manyRelation(Reference::class, 'references');
+    }
 }
