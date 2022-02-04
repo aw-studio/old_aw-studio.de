@@ -2,9 +2,9 @@
 
 namespace App\Models\Translations;
 
-use Illuminate\Database\Eloquent\Model;
 use Ignite\Crud\Models\Traits\Sluggable;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 class ServiceTranslation extends Model
 {
@@ -13,7 +13,7 @@ class ServiceTranslation extends Model
     /**
      * whether the model uses the default timestamp columns.
      *
-     * @var boolean
+     * @var bool
      */
     public $timestamps = false;
 
@@ -22,7 +22,7 @@ class ServiceTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title','text','list'];
+    protected $fillable = ['title', 'text', 'list'];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -33,19 +33,19 @@ class ServiceTranslation extends Model
     {
         return [
             'slug' => [
-                'source' => 'title'
-            ]
+                'source' => 'title',
+            ],
         ];
     }
 
     /**
      * Unique by title + locale.
      *
-     * @param Builder $query
-     * @param mixed $model
-     * @param mixed $attribute
-     * @param array $config
-     * @param string $slug
+     * @param  Builder  $query
+     * @param  mixed  $model
+     * @param  mixed  $attribute
+     * @param  array  $config
+     * @param  string  $slug
      * @return void
      */
     public function scopeWithUniqueSlugConstraints(Builder $query, $model, $attribute, $config, $slug)
