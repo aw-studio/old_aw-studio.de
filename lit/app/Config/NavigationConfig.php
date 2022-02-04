@@ -2,28 +2,29 @@
 
 namespace Lit\Config;
 
-use Ignite\Application\Navigation\Config;
-use Ignite\Application\Navigation\Navigation;
-use Lit\Config\Crud\CustomerConfig;
-use Lit\Config\Crud\PostConfig;
-use Lit\Config\Crud\ReferenceConfig;
-use Lit\Config\Crud\ServiceConfig;
 use Lit\Config\Crud\TagConfig;
+use Lit\Config\Crud\PostConfig;
+use Lit\Config\Crud\ServiceConfig;
+use Lit\Config\Crud\CustomerConfig;
+use Lit\Config\Crud\SolutionConfig;
+use Lit\Config\Crud\ReferenceConfig;
 use Lit\Config\Crud\TeamMemberConfig;
-use Lit\Config\Form\Collections\FeaturedConfig;
-use Lit\Config\Form\Collections\HighlightsConfig;
-use Lit\Config\Form\Components\JobsConfig;
-use Lit\Config\Form\Navigations\MainNavigationConfig;
-use Lit\Config\Form\Pages\ApplicationConfig;
 use Lit\Config\Form\Pages\BlogConfig;
-use Lit\Config\Form\Pages\DatapolicyConfig;
 use Lit\Config\Form\Pages\HomeConfig;
-use Lit\Config\Form\Pages\ImprintConfig;
 use Lit\Config\Form\Pages\MasterConfig;
-use Lit\Config\Form\Pages\ReferencesConfig;
-use Lit\Config\Form\Pages\ServicesConfig;
 use Lit\Config\Form\Pages\StudioConfig;
+use Lit\Config\Form\Pages\ImprintConfig;
+use Ignite\Application\Navigation\Config;
+use Lit\Config\Form\Pages\ServicesConfig;
+use Lit\Config\Form\Components\JobsConfig;
+use Lit\Config\Form\Pages\DatapolicyConfig;
+use Lit\Config\Form\Pages\ReferencesConfig;
+use Lit\Config\Form\Pages\ApplicationConfig;
+use Ignite\Application\Navigation\Navigation;
+use Lit\Config\Form\Collections\FeaturedConfig;
 use Lit\Config\Form\Settings\TranslationsConfig;
+use Lit\Config\Form\Collections\HighlightsConfig;
+use Lit\Config\Form\Navigations\MainNavigationConfig;
 
 class NavigationConfig extends Config
 {
@@ -84,6 +85,7 @@ class NavigationConfig extends Config
                 $nav->preset(FeaturedConfig::class)->icon(fa('star')),
             ]),
             $nav->preset(ServiceConfig::class)->icon(fa('th-list')),
+            $nav->preset(SolutionConfig::class)->icon(fa('thumbs-up')),
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),

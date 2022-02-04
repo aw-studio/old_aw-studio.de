@@ -51,6 +51,25 @@ $playground_no = rand(1,3);
                     @endforeach
                 </div>
                 @endif
+
+                @if($form->solutions)
+                <div class="grid grid-cols-12 gap-5 lg:grid-cols-8 lg:mb-40 ">
+                    @foreach($form->solutions as $solution)
+                    <div class="col-span-12 col-start-1 mb-8 md:col-start-1 md:col-span-5 lg:col-start-2 lg:col-span-3">
+                        <h3 class="h3">
+                            {{ $solution->title }}
+                        </h3>
+                        <div class="mb-8">
+                            @include('partials.svg.icon-design')
+                        </div>
+                        <div class="aw-list">
+                            {!! $solution->list !!}
+                        </div>
+                        {!! $solution->text !!}
+                    </div>
+                    @endforeach
+                </div>
+                @endif
             </div>
             <div class="col-span-12 col-start-1 pb-20 lg:col-start-9 lg:col-span-4">
                 <div class="md:sticky top-sticky lg:float-right ">

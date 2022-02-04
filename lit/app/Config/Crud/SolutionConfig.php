@@ -2,41 +2,42 @@
 
 namespace Lit\Config\Crud;
 
+use App\Models\Solution;
 use App\Models\Reference;
-use App\Models\Service;
-use Ignite\Crud\Config\CrudConfig;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
-use Illuminate\Support\Str;
-use Lit\Http\Controllers\Crud\ServiceController;
+use Ignite\Crud\CrudIndex;
 
-class ServiceConfig extends CrudConfig
+use Illuminate\Support\Str;
+use Ignite\Crud\Config\CrudConfig;
+use Lit\Http\Controllers\Crud\SolutionController;
+
+class SolutionConfig extends CrudConfig
 {
     /**
      * Model class.
      *
      * @var string
      */
-    public $model = Service::class;
+    public $model = Solution::class;
 
     /**
      * Controller class.
      *
      * @var string
      */
-    public $controller = ServiceController::class;
+    public $controller = SolutionController::class;
 
     /**
      * Model singular and plural name.
      *
-     * @param Service|null service
+     * @param Solution|null solution
      * @return array
      */
-    public function names(Service $service = null)
+    public function names(Solution $solution = null)
     {
         return [
-            'singular' => 'Leistung',
-            'plural'   => 'Leistungen',
+            'singular' => 'Solution',
+            'plural'   => 'Solutions',
         ];
     }
 
@@ -47,13 +48,13 @@ class ServiceConfig extends CrudConfig
      */
     public function routePrefix()
     {
-        return 'services';
+        return 'solutions';
     }
 
     /**
      * Build index page.
      *
-     * @param  \Ignite\Crud\CrudIndex  $page
+     * @param \Ignite\Crud\CrudIndex $page
      * @return void
      */
     public function index(CrudIndex $page)
@@ -66,7 +67,7 @@ class ServiceConfig extends CrudConfig
     /**
      * Setup show page.
      *
-     * @param  \Ignite\Crud\CrudShow  $page
+     * @param \Ignite\Crud\CrudShow $page
      * @return void
      */
     public function show(CrudShow $page)

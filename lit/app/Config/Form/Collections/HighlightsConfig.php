@@ -50,6 +50,7 @@ class HighlightsConfig extends FormConfig
             $form->manyRelation('references')
                 ->title('Referenzen')
                 ->model(Reference::class)
+                ->sortable()
                 ->preview(function ($table) {
                     $table->image('Image')
                         ->src('{image.conversion_urls.sm}')
