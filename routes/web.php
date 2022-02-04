@@ -42,7 +42,7 @@ Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 Route::trans('/__(routes.blog)', BlogController::class.'@index')->name('blog.index');
 Route::trans('/__(routes.blog)/{slug}', BlogController::class.'@show')->translator('getPostSlug')->name('blog.show');
 
-Route::trans('/__(routes.landing-pages)/{slug}', LandingPageController::class.'@show')->translator('getLandingPageSlug')->name('landing-page');
+Route::trans('/__(routes.landing-pages)/{slug}', LandingPageController::class.'@show')->translator('getLandingPageSlug')->name('landing-pages.show');
 
 Route::trans('/__(routes.application)', ApplicationController::class.'@index')->name('application');
 

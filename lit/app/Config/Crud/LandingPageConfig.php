@@ -96,10 +96,10 @@ class LandingPageConfig extends CrudConfig
         })->width(9);
 
 
-        $page->info('SEO Informations')
-        ->width(3);
-        $page->card(function ($form) {
-            $form->seo();
-        })->width(9);
+        // $page->info('SEO Informations')
+        // ->width(3);
+        // $page->card(function ($form) {
+        //     $form->seo();
+        // })->width(9);
     }
 }

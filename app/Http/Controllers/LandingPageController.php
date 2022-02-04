@@ -17,7 +17,7 @@ class LandingPageController extends Controller
             return [$item->locale => $item->slug];
         })->toArray();
 
-        return view('pages.landing-page')->with([
+        return view('pages.landing-pages.show')->with([
             'landingPage' => $landingPage,
         ]);
     }
@@ -27,7 +27,7 @@ class LandingPageController extends Controller
      *
      * @return slug
      */
-    public function getPostSlug($locale, $slug)
+    public function getLandingPageSlug($locale, $slug)
     {
         $slug = LandingPage::whereTranslation('slug', $slug)
             ->first()

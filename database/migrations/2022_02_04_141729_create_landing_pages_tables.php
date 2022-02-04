@@ -27,6 +27,7 @@ class CreateLandingPagesTables extends Migration
             // Set them to fillable in the translation Model.
 
             $table->string('title')->nullable();
+            $table->text('h1')->nullable();
             $table->text('text')->nullable();
             
             $table->string('slug')->nullable();

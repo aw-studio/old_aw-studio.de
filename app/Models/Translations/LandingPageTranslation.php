@@ -22,7 +22,7 @@ class LandingPageTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title'];
+    protected $fillable = ['title','h1','text'];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -52,6 +52,4 @@ class LandingPageTranslation extends Model
     {
         $query->where('locale', $model->locale);
     }
-
-
 }

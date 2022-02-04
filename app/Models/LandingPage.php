@@ -17,23 +17,23 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
      *
      * @var array
      */
-    protected $fillable = ['title'];
+    protected $fillable = ['title','h1','text'];
     
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title'];
+    public $translatedAttributes = ['title','h1','text'];
 
-    /** 
+    /**
      * The accessors to append to the model's array form.
      *
      * @var array
      */
     protected $appends = ['image'];
     
-    /** 
+    /**
      * The relationships that should always be loaded.
      *
      * @var array
@@ -50,5 +50,4 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
     {
         return $this->getMedia('image')->first();
     }
-
 }
