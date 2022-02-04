@@ -2,12 +2,11 @@
 
 namespace Lit\Config\Crud;
 
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
-use Ignite\Crud\Config\CrudConfig;
-use Illuminate\Support\Str;
-
 use App\Models\LandingPage;
+use Ignite\Crud\Config\CrudConfig;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
+use Illuminate\Support\Str;
 use Lit\Http\Controllers\Crud\LandingPageController;
 
 class LandingPageConfig extends CrudConfig
@@ -53,7 +52,7 @@ class LandingPageConfig extends CrudConfig
     /**
      * Build index page.
      *
-     * @param \Ignite\Crud\CrudIndex $page
+     * @param  \Ignite\Crud\CrudIndex  $page
      * @return void
      */
     public function index(CrudIndex $page)
@@ -66,7 +65,7 @@ class LandingPageConfig extends CrudConfig
     /**
      * Setup show page.
      *
-     * @param \Ignite\Crud\CrudShow $page
+     * @param  \Ignite\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
@@ -84,8 +83,6 @@ class LandingPageConfig extends CrudConfig
             ->title('Aktiv/Inaktiv')
             ->width(2);
         })->width(9);
-
-  
 
         $page->info('Content')
     ->width(3);
