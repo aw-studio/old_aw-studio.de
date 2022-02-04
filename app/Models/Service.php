@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Ignite\Crud\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
-use Ignite\Crud\Models\Traits\Translatable;
 
 class Service extends Model implements HasMediaContract, TranslatableContract
 {
@@ -17,14 +17,14 @@ class Service extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['title','active','text','list'];
-    
+    protected $fillable = ['title', 'active', 'text', 'list'];
+
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title','text','list'];
+    public $translatedAttributes = ['title', 'text', 'list'];
 
     /**
      * The accessors to append to the model's array form.
@@ -32,14 +32,13 @@ class Service extends Model implements HasMediaContract, TranslatableContract
      * @var array
      */
     protected $appends = ['image'];
-    
+
     /**
      * The relationships that should always be loaded.
      *
      * @var array
      */
     protected $with = ['media', 'translations'];
-    
 
     /**
      * Image attribute.
@@ -51,7 +50,6 @@ class Service extends Model implements HasMediaContract, TranslatableContract
         return $this->getMedia('image')->first();
     }
 
- 
     public function references()
     {
         return $this->manyRelation(Reference::class, 'references');
