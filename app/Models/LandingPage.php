@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Ignite\Crud\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
-use Ignite\Crud\Models\Traits\Translatable;
 
 class LandingPage extends Model implements HasMediaContract, TranslatableContract
 {
@@ -18,7 +18,7 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
      * @var array
      */
     protected $fillable = ['title'];
-    
+
     /**
      * The attributes to be translated.
      *
@@ -26,20 +26,19 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
      */
     public $translatedAttributes = ['title'];
 
-    /** 
+    /**
      * The accessors to append to the model's array form.
      *
      * @var array
      */
     protected $appends = ['image'];
-    
-    /** 
+
+    /**
      * The relationships that should always be loaded.
      *
      * @var array
      */
     protected $with = ['media', 'translations'];
-    
 
     /**
      * Image attribute.
@@ -50,5 +49,4 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
     {
         return $this->getMedia('image')->first();
     }
-
 }
