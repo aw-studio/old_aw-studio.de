@@ -22,7 +22,7 @@ class LandingPageTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title','h1','text'];
+    protected $fillable = ['title', 'h1', 'text'];
 
     /**
      * Return the sluggable configuration array for this model.

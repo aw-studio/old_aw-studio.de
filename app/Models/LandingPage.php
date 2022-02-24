@@ -17,14 +17,14 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
      *
      * @var array
      */
-    protected $fillable = ['title','h1','text'];
-    
+    protected $fillable = ['title', 'h1', 'text'];
+
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title','h1','text'];
+    public $translatedAttributes = ['title', 'h1', 'text'];
 
     /**
      * The accessors to append to the model's array form.
@@ -32,7 +32,6 @@ class LandingPage extends Model implements HasMediaContract, TranslatableContrac
      * @var array
      */
     protected $appends = ['image'];
-    
 
     /**
      * The relationships that should always be loaded.

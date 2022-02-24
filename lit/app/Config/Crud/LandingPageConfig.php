@@ -92,7 +92,6 @@ class LandingPageConfig extends CrudConfig
             $form->wysiwyg('text');
         })->width(9);
 
-
         // $page->info('SEO Informations')
         // ->width(3);
         // $page->card(function ($form) {
