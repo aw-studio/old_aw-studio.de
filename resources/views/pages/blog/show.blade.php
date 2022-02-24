@@ -39,6 +39,7 @@
         </div>
     </section>
 
+    @if($post->text)
     <div class="container pb-20">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 mb-20 text-xl lg:col-span-6 lg:col-start-6">
@@ -46,6 +47,7 @@
             </div>
         </div>
     </div>
+    @endif
 
     @if ($post)
         @block($post->sections)
