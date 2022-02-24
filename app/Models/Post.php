@@ -21,7 +21,7 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
      *
      * @var array
      */
-    protected $fillable = ['title', 'h1','text', 'excerpt', 'active'];
+    protected $fillable = ['title', 'h1', 'text', 'excerpt', 'active'];
 
     /**
      * The attributes to be translated.
