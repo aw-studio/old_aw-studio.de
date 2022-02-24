@@ -33,10 +33,12 @@ $playground_no = rand(1,3);
                     </h2>
                     {!! $form->text_services !!}
                 </div>
+            </div>
+            <div class="col-span-12">
                 @if($form->services)
-                <div class="grid grid-cols-12 gap-5 lg:grid-cols-8 lg:mb-40 ">
+                <div class="grid grid-cols-12 gap-5 lg:mb-40">
                     @foreach($form->services as $service)
-                    <div class="col-span-12 col-start-1 mb-8 md:col-start-1 md:col-span-5 lg:col-start-2 lg:col-span-3">
+                    <div class="col-span-12 col-start-1 mb-8 md:col-span-6 lg:col-span-3">
                         <h3 class="h3">
                             {{ $service->title }}
                         </h3>
@@ -55,7 +57,7 @@ $playground_no = rand(1,3);
                 @if($form->solutions)
                 <div class="grid grid-cols-12 gap-5 lg:grid-cols-8 lg:mb-40 ">
                     @foreach($form->solutions as $solution)
-                    <div class="col-span-12 col-start-1 mb-8 md:col-start-1 md:col-span-5 lg:col-start-2 lg:col-span-3">
+                    <div class="col-span-12 col-start-1 mb-8 md:col-span-6 lg:col-span-3">
                         <h3 class="h3">
                             {{ $solution->title }}
                         </h3>
