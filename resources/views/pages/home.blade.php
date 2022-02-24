@@ -41,7 +41,7 @@ $playground_no = rand(1,3);
                             {{ $service->title }}
                         </h3>
                         <div class="mb-8">
-                            @include('partials.svg.icon-design')
+                            {!! $service->svg !!}
                         </div>
                         <div class="aw-list">
                             {!! $service->list !!}
@@ -60,7 +60,7 @@ $playground_no = rand(1,3);
                             {{ $solution->title }}
                         </h3>
                         <div class="mb-8">
-                            @include('partials.svg.icon-design')
+                            {!! $solution->svg !!}
                         </div>
                         <div class="aw-list">
                             {!! $solution->list !!}

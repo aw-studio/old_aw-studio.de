@@ -76,7 +76,8 @@ class SolutionConfig extends CrudConfig
         $page->card(function ($form) {
             $form->input('title')->width(9);
             $form->boolean('active')->width(3);
-            $form->image('image')->hint('SVG Image')->width(5);
+            // $form->image('image')->hint('SVG Image')->width(5);
+            $form->textarea('svg')->width(5);
             $form->wysiwyg('list');
             $form->wysiwyg('text');
         })->width(9);
