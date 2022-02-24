@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddSvgColumnToServicesTable extends Migration
+class AddTextColumnToPostTranslationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddSvgColumnToServicesTable extends Migration
      */
     public function up()
     {
-        Schema::table('services', function (Blueprint $table) {
-            $table->text('svg')->after('active')->nullable();
+        Schema::table('post_translations', function (Blueprint $table) {
+            $table->text('text')->after('h1')->nullable();
         });
     }
 
@@ -25,8 +25,8 @@ class AddSvgColumnToServicesTable extends Migration
      */
     public function down()
     {
-        Schema::table('services', function (Blueprint $table) {
-            $table->dropColumn('svg');
+        Schema::table('post_translations', function (Blueprint $table) {
+            $table->dropColumn('text');
         });
     }
 }

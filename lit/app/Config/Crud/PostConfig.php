@@ -109,6 +109,8 @@ class PostConfig extends CrudConfig
         $page->card(function ($form) {
             $form->wysiwyg('h1')
                 ->width(10);
+            $form->wysiwyg('text')
+                ->width(10);
             $form->postContentAreaMacro();
         })->width(9);
 
