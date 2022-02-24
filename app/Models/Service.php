@@ -17,7 +17,7 @@ class Service extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['title', 'active', 'text', 'list','svg'];
+    protected $fillable = ['title', 'active', 'text', 'list', 'svg'];
 
     /**
      * The attributes to be translated.
