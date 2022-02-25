@@ -9,11 +9,20 @@ aw-home
 @endsection
 
 @section('content')
-
 <section class="bg-white aw-first-section">
 
     <div class="container py-20 lg:py-24 aw-jumbo">
-        <h1 class="text-2xl font-semibold sm:text-3xl lg:text-5xl">{!! nl2br(e($form->h1)) !!}</h1>
+        <h1 class="text-2xl sm:text-3xl lg:text-5xl">
+            @bot
+                {!! nl2br(e($form->h1)) !!}
+            @else
+                @if($app->currentLocale() == 'en')
+                We create<br><span id="typed-en" class="font-semibold"></span>
+                @else
+                Wir entwickeln<br><span id="typed-de" class="font-semibold"></span>
+                @endif
+            @endbot 
+        </h1>
     </div>
 
 </section>

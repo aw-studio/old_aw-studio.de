@@ -26,6 +26,7 @@
     "dependencies": {
         "@aw-studio/vue-lit-image": "^0.0.5",
         "lit-bricks": "file:vendor/litstack/bricks",
+        "typed.js": "^2.0.12",
         "vue": "^2.6.12"
     }
 }
