@@ -35,8 +35,8 @@ class SolutionConfig extends CrudConfig
     public function names(Solution $solution = null)
     {
         return [
-            'singular' => 'Solution',
-            'plural'   => 'Solutions',
+            'singular' => 'Lösung',
+            'plural'   => 'Lösungen',
         ];
     }
 
@@ -77,12 +77,12 @@ class SolutionConfig extends CrudConfig
             $form->input('title')->width(9);
             $form->boolean('active')->width(3);
             // $form->image('image')->hint('SVG Image')->width(5);
-            $form->textarea('svg')->width(5);
-            $form->wysiwyg('list');
-            $form->wysiwyg('text');
+            $form->textarea('svg');
+            $form->wysiwyg('list')->width(8);
+            $form->wysiwyg('text')->width(8);
         })->width(9);
 
-        $page->info('References')
+        $page->info('Referenzen')
         ->width(3);
         $page->card(function ($form) {
             $form->manyRelation('references')

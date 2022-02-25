@@ -128,13 +128,7 @@ class PostConfig extends CrudConfig
                 ->allowLinking();
         })->width(9);
 
-        $page->info('SEO Informations')
-            ->width(3);
-        $page->card(function ($form) {
-            $form->seo();
-        })->width(9);
-
-        $page->info('References')
+        $page->info('Referenzen')
             ->width(3);
         $page->card(function ($form) {
             $form->manyRelation('references')
@@ -152,5 +146,11 @@ class PostConfig extends CrudConfig
                         ->sortBy('title');
                 });
         })->width(9);
+
+        $page->info('SEO Informations')
+        ->width(3);
+        $page->card(function ($form) {
+            $form->seo();
+        })->width(9);     
     }
 }

@@ -52,15 +52,22 @@ class HomeConfig extends FormConfig
         $page->info('Playground')
             ->width(3);
         $page->card(function ($form) {
-            $form->textarea('h1')->title('Headline Playground')->translatable()->hint('jumbo Headline (h1)');
+            $form->textarea('h1')->title('Headline Playground …')->translatable()->hint('jumbo (h1), buzzwords will be added typed');
+            $form->list('buzzwords')
+                ->title('… Buzzwords')
+                ->maxDepth(1)
+                ->previewTitle('{buzzword}')
+                ->form(function($form) {
+                    $form->input('buzzword')
+                        ->title('Buzzword');
+                });
         })->width(9);
 
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {
             $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)');
-            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum');
-            $form->wysiwyg('text_services')->hint('SEO-Text im Leistungen-Block');
+            $form->wysiwyg('text_intro')->hint('SEO Intro-Text');
         })->width(9);
 
         $page->info('Leistungen')
@@ -76,6 +83,7 @@ class HomeConfig extends FormConfig
                         ->sortBy('title');
                 });
             });
+            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(1/2);
         })->width(9);
 
         $page->info('Digitale Lösungen / Referenzen')

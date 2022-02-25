@@ -2,10 +2,11 @@
 
 namespace Lit\Config\Form\Pages;
 
-use Ignite\Crud\Config\FormConfig;
+use App\Models\Service;
 use Ignite\Crud\CrudShow;
-use Lit\Http\Controllers\Form\Pages\ServicesController;
+use Ignite\Crud\Config\FormConfig;
 use Litstack\Meta\Traits\FormHasMeta;
+use Lit\Http\Controllers\Form\Pages\ServicesController;
 
 class ServicesConfig extends FormConfig
 {
@@ -60,37 +61,49 @@ class ServicesConfig extends FormConfig
         $page->info('Leistungen')
             ->width(3);
         $page->card(function ($form) {
-            $form->block('services')
-                ->title('Bereiche')
-                ->blockWidth(1 / 2)
-                ->repeatables(function ($repeatables) {
-                    $repeatables->add('Bereich', function ($form, $preview) {
-                        $preview->col('<b>{h3}</b>');
-                        $preview->image()
-                            ->src('{illustration.url}')
-                            ->maxWidth('50px')
-                            ->small();
 
-                        $form->input('h3')
-                            ->title('Headline')
-                            ->translatable()
-                            ->width(12);
-
-                        $form->textarea('illustration_svg')
-                            ->title('Illustration als SVGS')
-                            ->placeholder('<svg ...')
-                            ->hint('Füge hier den SVG Code ein.')
-                            ->width(12);
-
-                        $form->wysiwyg('list_primary')
-                            ->title('Primäre Liste')
-                            ->translatable();
-
-                        $form->wysiwyg('list_secondary')
-                            ->title('Sekundäre Liste')
-                            ->translatable();
-                    });
+            $form->group(function ($form) {
+                $form->manyRelation('services')
+                ->model(Service::class)
+                ->sortable()
+                ->preview(function ($table) {
+                    $table->col('Title')
+                        ->value('{title}')
+                        ->sortBy('title');
                 });
+            });
+
+            // $form->block('services')
+            //     ->title('Bereiche')
+            //     ->blockWidth(1 / 2)
+            //     ->repeatables(function ($repeatables) {
+            //         $repeatables->add('Bereich', function ($form, $preview) {
+            //             $preview->col('<b>{h3}</b>');
+            //             $preview->image()
+            //                 ->src('{illustration.url}')
+            //                 ->maxWidth('50px')
+            //                 ->small();
+
+            //             $form->input('h3')
+            //                 ->title('Headline')
+            //                 ->translatable()
+            //                 ->width(12);
+
+            //             $form->textarea('illustration_svg')
+            //                 ->title('Illustration als SVGS')
+            //                 ->placeholder('<svg ...')
+            //                 ->hint('Füge hier den SVG Code ein.')
+            //                 ->width(12);
+
+            //             $form->wysiwyg('list_primary')
+            //                 ->title('Primäre Liste')
+            //                 ->translatable();
+
+            //             $form->wysiwyg('list_secondary')
+            //                 ->title('Sekundäre Liste')
+            //                 ->translatable();
+            //         });
+            //     });
         })->width(9);
 
         $page->info('Philosophy')

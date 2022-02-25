@@ -12,15 +12,12 @@ aw-home
 <section class="bg-white aw-first-section">
 
     <div class="container py-20 lg:py-24 aw-jumbo">
-        <h1 class="text-2xl sm:text-3xl lg:text-5xl">
+        <h1 class="text-2xl sm:text-3xl lg:text-5xl" data-buzzwords="@foreach ($form->buzzwords->shuffle() as $buzzword){{ $buzzword->buzzword }},@endforeach">
             @bot
                 {!! nl2br(e($form->h1)) !!}
+                @foreach ($form->buzzwords as $buzzword){{ $buzzword->buzzword }}, @endforeach
             @else
-                @if($app->currentLocale() == 'en')
-                We create<br><span id="typed-en" class="font-semibold"></span>
-                @else
-                Wir entwickeln<br><span id="typed-de" class="font-semibold"></span>
-                @endif
+                {{ $form->h1 }}<br><span id="typed-buzzwords" class="font-semibold"></span>
             @endbot 
         </h1>
     </div>
@@ -40,7 +37,9 @@ $playground_no = rand(1,3);
                     <h2 class="h1">
                         {!! nl2br(e($form->h2)) !!}
                     </h2>
-                    {!! $form->text_services !!}
+                    <div class="text-xl">
+                        {!! $form->text_intro !!}
+                    </div>
                 </div>
             </div>
             <div class="col-span-12">
