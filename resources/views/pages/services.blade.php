@@ -57,20 +57,18 @@ aw-first-section-is-white
             @foreach ($services->services as $service)
             <div class="mb-8 lg:mb-20">
                 <h3 class="h3">
-                    {{ $service->h3 }}
+                    {{ $service->title }}
                 </h3>
-                <div class="flex object-contain h-32 mb-4">
-                    @isset($service->illustration_svg)
-                        {!! $service->illustration_svg !!}
-                    @endisset
+                <div class="mb-8">
+                    {!! $service->svg !!}
                 </div>
-
                 <div class="aw-list">
-                    {!! $service->list_primary !!}
+                    {!! $service->list !!}
                 </div>
-                {!! $service->list_secondary !!}
+                {!! $service->text !!}
             </div>
             @endforeach
+            
         </div>
     </div>
 </section>
