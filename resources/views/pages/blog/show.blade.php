@@ -53,7 +53,7 @@
         @block($post->sections)
     @endif
 
-    @if($post->references)
+    @if($post->references->count() > 0)
     <section class="bg-white">
         <div class="container pb-20">
             <h3>{{__('app.related-references')}}</h3>
