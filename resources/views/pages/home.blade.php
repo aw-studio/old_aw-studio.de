@@ -12,14 +12,16 @@ aw-home
 <section class="bg-white aw-first-section">
 
     <div class="container py-20 lg:py-24 aw-jumbo">
-        <h1 class="text-2xl sm:text-3xl lg:text-5xl" data-buzzwords="@foreach ($form->buzzwords->shuffle() as $buzzword){{ $buzzword->buzzword }},@endforeach">
-            @bot
-                {!! nl2br(e($form->h1)) !!}
-                @foreach ($form->buzzwords as $buzzword){{ $buzzword->buzzword }}, @endforeach
-            @else
-                {{ $form->h1 }}<br><span id="typed-buzzwords" class="font-semibold"></span>
-            @endbot 
-        </h1>
+        @if ($form->buzzwords)
+            <h1 class="text-2xl sm:text-3xl lg:text-5xl" data-buzzwords="@foreach ($form->buzzwords->shuffle() as $buzzword){{ $buzzword->buzzword }},@endforeach">
+                @bot
+                    {!! nl2br(e($form->h1)) !!}
+                    @foreach ($form->buzzwords as $buzzword){{ $buzzword->buzzword }}, @endforeach
+                @else
+                    {{ $form->h1 }}<br><span id="typed-buzzwords" class="font-semibold"></span>
+                @endbot 
+            </h1>
+        @endif
     </div>
 
 </section>
