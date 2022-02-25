@@ -57,7 +57,7 @@ class HomeConfig extends FormConfig
                 ->title('… Buzzwords')
                 ->maxDepth(1)
                 ->previewTitle('{buzzword}')
-                ->form(function($form) {
+                ->form(function ($form) {
                     $form->input('buzzword')
                         ->title('Buzzword');
                 });
@@ -83,7 +83,7 @@ class HomeConfig extends FormConfig
                         ->sortBy('title');
                 });
             });
-            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(1/2);
+            $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(1 / 2);
         })->width(9);
 
         $page->info('Digitale Lösungen / Referenzen')

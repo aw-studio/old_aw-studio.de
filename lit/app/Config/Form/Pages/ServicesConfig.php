@@ -3,10 +3,10 @@
 namespace Lit\Config\Form\Pages;
 
 use App\Models\Service;
-use Ignite\Crud\CrudShow;
 use Ignite\Crud\Config\FormConfig;
-use Litstack\Meta\Traits\FormHasMeta;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Pages\ServicesController;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class ServicesConfig extends FormConfig
 {
@@ -61,7 +61,6 @@ class ServicesConfig extends FormConfig
         $page->info('Leistungen')
             ->width(3);
         $page->card(function ($form) {
-
             $form->group(function ($form) {
                 $form->manyRelation('services')
                 ->model(Service::class)

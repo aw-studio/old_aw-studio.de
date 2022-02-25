@@ -151,6 +151,6 @@ class PostConfig extends CrudConfig
         ->width(3);
         $page->card(function ($form) {
             $form->seo();
-        })->width(9);     
+        })->width(9);
     }
 }
