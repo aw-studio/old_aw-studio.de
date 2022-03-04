@@ -90,7 +90,7 @@ class PostConfig extends CrudConfig
                 ->title('Aktiv/Inaktiv')
                 ->width(2);
         })->width(9);
-            
+
         $page->info('Time & Date')
                 ->width(3);
         $page->card(function ($form) {
