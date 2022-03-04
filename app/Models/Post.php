@@ -17,7 +17,7 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
     use HasMedia, Translatable, Taggable, HasMeta, Deeplable;
 
     /**
-     * The attributes that are mass assignable.
+     * The attributes that are mass assignable..
      *
      * @var array
      */
