@@ -17,11 +17,11 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
     use HasMedia, Translatable, Taggable, HasMeta, Deeplable;
 
     /**
-     * The attributes that are mass assignable.
+     * The attributes that are mass assignable..
      *
      * @var array
      */
-    protected $fillable = ['title', 'h1', 'text', 'excerpt', 'active'];
+    protected $fillable = ['title', 'h1', 'text', 'excerpt', 'active', 'created_at', 'updated_at', 'published_at'];
 
     /**
      * The attributes to be translated.

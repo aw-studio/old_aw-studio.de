@@ -22,4 +22,7 @@ return [
 
     'read-post' => 'Beitrag lesen',
 
+    'published' => 'Erstellt am',
+    'last-updated' => 'Zuletzt aktualisiert am',
+
 ];
