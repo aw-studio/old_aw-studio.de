@@ -22,4 +22,7 @@ return [
 
     'read-post' => 'Read post',
 
+    'published' => 'Published on',
+    'last-updated' => 'Last updated on',
+
 ];

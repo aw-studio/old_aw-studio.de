@@ -89,6 +89,14 @@ class PostConfig extends CrudConfig
             $form->boolean('active')
                 ->title('Aktiv/Inaktiv')
                 ->width(2);
+
+            $form->datetime('created_at')
+            ->title('Published')
+            ->width(6);
+
+            $form->datetime('updated_at')
+            ->title('Last updated')
+            ->width(6);
         })->width(9);
 
         $page->info('Preview')

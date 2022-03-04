@@ -13,7 +13,7 @@ class BlogController extends Controller
     {
         return view('pages.blog.index')->with([
             'blog'  => BlogConfig::load(),
-            'posts' => Post::whereActive(1)->orderBy('updated_at')->get(),
+            'posts' => Post::whereActive(1)->get(),
             'tags'  => Tag::all(),
         ]);
     }
@@ -56,7 +56,7 @@ class BlogController extends Controller
     public function filter(Request $request)
     {
         $tag_ids = $request->tag_ids;
-        $query = Post::whereActive(1)->orderBy('updated_at')->with('tags');
+        $query = Post::whereActive(1)->orderByDesc('updated_at')->with('tags');
 
         if (collect($tag_ids)->isNotEmpty()) {
             $posts = $query->whereHas('tags', function ($query) use ($tag_ids) {

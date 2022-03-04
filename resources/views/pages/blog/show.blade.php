@@ -53,6 +53,17 @@
         @block($post->sections)
     @endif
 
+    @if($post->text)
+    <div class="container pb-20">
+        <div class="grid grid-cols-12 gap-5">
+            <div class="col-span-12 mb-20 text-base lg:col-span-6 lg:col-start-6">
+                {{__('app.published')}} {{Carbon\Carbon::parse($post->created_at)->format('d.m.Y')}}<br>
+                {{__('app.last-updated')}} {{Carbon\Carbon::parse($post->updated_at)->format('d.m.Y')}}
+            </div>
+        </div>
+    </div>
+    @endif
+
     @if($post->references->count() > 0)
     <section class="bg-white">
         <div class="container pb-20">
@@ -60,8 +71,8 @@
             <div class="grid grid-cols-12 gap-5">
                 @foreach($post->references as $reference)
                 <div class="col-span-12 md:col-span-6 lg:col-span-4">
-                    <x-lit-image :image="$reference->image" class="w-full" />
-                    {{$reference->title}}
+                    <x-lit-image :image="$reference->image" class="w-full mb-2" />
+                    <div class="text-base font-semibold">{{$reference->title}}</div>
                     {!!$reference->excerpt!!}
                     <a class="aw-link" href="{{ __route('references.show',$reference->slug)}}">{{__('app.view-reference')}}</a>
                 </div>
