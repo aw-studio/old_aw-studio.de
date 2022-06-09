@@ -3,7 +3,7 @@
         {{ $jobs->h3_jobs }}
     </h3>
 
-    @if($jobs->job_offers->where('active',1)->count() > 0 )
+    @if($jobs->job_offers && $jobs->job_offers->where('active',1)->count() > 0 )
 
         <div class="mb-10 text-xl">
             {!! $jobs->text_job_offers !!}
