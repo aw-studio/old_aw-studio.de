@@ -91,6 +91,5 @@ class JobOfferConfig extends CrudConfig
                 $form->seo();
             })->width(9);
         });
-
     }
 }
