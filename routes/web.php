@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\JobOffersController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Pages\ApplicationController;
 use App\Http\Controllers\Pages\DatapolicyController;
@@ -41,6 +42,8 @@ Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 
 Route::trans('/__(routes.blog)', BlogController::class.'@index')->name('blog.index');
 Route::trans('/__(routes.blog)/{slug}', BlogController::class.'@show')->translator('getPostSlug')->name('blog.show');
+
+Route::trans('/__(routes.job-offers)/{slug}', JobOffersController::class.'@show')->translator('getJobOfferSlug')->name('job-offer.show');
 
 Route::trans('/__(routes.landing-pages)/{slug}', LandingPageController::class.'@show')->translator('getLandingPageSlug')->name('landing-pages.show');
 

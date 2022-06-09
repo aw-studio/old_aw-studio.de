@@ -191,6 +191,9 @@
     .aw-list ul li p {
         @apply font-semibold;
     }
+    .aw-list.normal ul li p {
+        @apply font-normal;
+    }
 
     p a,
     a.aw-link {

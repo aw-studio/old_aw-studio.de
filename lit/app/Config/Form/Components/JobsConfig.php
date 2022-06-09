@@ -2,6 +2,7 @@
 
 namespace Lit\Config\Form\Components;
 
+use App\Models\JobOffer;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Form\Components\JobsController;
@@ -33,7 +34,7 @@ class JobsConfig extends FormConfig
     public function names()
     {
         return [
-            'singular' => 'Jobs',
+            'singular' => 'Jobs-Komponente',
         ];
     }
 
@@ -47,9 +48,31 @@ class JobsConfig extends FormConfig
     {
         $page->info('Einbindung')
             ->width(3)
-            ->text('Diese Komponente wird automatisch auf der Startseite (Übersicht) sowie auf der Studio-Seite (Studio & Team) eingebunden und verlinkt zur Seite Bewerbung');
+            ->text('Diese Komponente wird automatisch auf der Startseite sowie auf der Studio-Seite eingebunden');
         $page->card(function ($form) {
             $form->input('h3_jobs')->title('Headline')->translatable();
+        })->width(9);
+
+        $page->info('Job-Angebote')
+        ->width(3)
+        ->text('Angelegte Job-Angebote können hier verknüpft werden. <a href="/admin/job-offers">Neues Job-Angebot anlegen</a>');
+        $page->card(function ($form) {
+            $form->wysiwyg('text_job_offers')->title('Text')->translatable();
+
+            $form->manyRelation('job_offers')
+                ->model(JobOffer::class)
+                ->sortable()
+                ->preview(function ($table) {
+                    $table->col('Title')
+                        ->value('{title}')
+                        ->sortBy('title');
+                })->title('Job-Angebote');
+        })->width(9);
+
+        $page->info('Initiativ-Bewerbungen')
+        ->width(3)
+        ->text('Der Button verlinkt zur Seite <a href="/admin/pages/application">Bewerbung</a>');
+        $page->card(function ($form) {
             $form->wysiwyg('text_jobs')->title('Text')->translatable();
             $form->wysiwyg('list_jobs')->title('List')->translatable();
             $form->input('button_jobs')->title('Button')->translatable()->width(6);

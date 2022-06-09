@@ -5,6 +5,7 @@ namespace Lit\Config;
 use Ignite\Application\Navigation\Config;
 use Ignite\Application\Navigation\Navigation;
 use Lit\Config\Crud\CustomerConfig;
+use Lit\Config\Crud\JobOfferConfig;
 use Lit\Config\Crud\LandingPageConfig;
 use Lit\Config\Crud\PostConfig;
 use Lit\Config\Crud\ReferenceConfig;
@@ -90,6 +91,7 @@ class NavigationConfig extends Config
             $nav->preset(CustomerConfig::class)->icon(fa('building')),
             $nav->preset(TeamMemberConfig::class)->icon(fa('users')),
             $nav->preset(PostConfig::class)->icon(fa('newspaper')),
+            $nav->preset(JobOfferConfig::class)->icon(fa('briefcase')),
             $nav->preset(LandingPageConfig::class)->icon(fa('window-maximize')),
             $nav->preset(TagConfig::class)->icon(fa('tags')),
         ]);

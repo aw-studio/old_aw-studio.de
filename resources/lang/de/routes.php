@@ -8,6 +8,7 @@ return [
     'application' => 'bewerbung',
     'blog'        => 'blog',
     'landing-pages' => 'landing-pages',
+    'job-offers' => 'jobs',
 
     'imprint'    => 'impressum',
     'datapolicy' => 'datenschutz',
