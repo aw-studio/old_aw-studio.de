@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Ignite\Crud\Models\Traits\Translatable;
+use Illuminate\Database\Eloquent\Model;
 use Litstack\Meta\Metaable;
 use Litstack\Meta\Traits\HasMeta;
-use Illuminate\Database\Eloquent\Model;
-use Ignite\Crud\Models\Traits\Translatable;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
 class JobOffer extends Model implements TranslatableContract, Metaable
 {
@@ -17,14 +17,14 @@ class JobOffer extends Model implements TranslatableContract, Metaable
      *
      * @var array
      */
-    protected $fillable = ['title','description','active','slug'];
+    protected $fillable = ['title', 'description', 'active', 'slug'];
 
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title','description','slug'];
+    public $translatedAttributes = ['title', 'description', 'slug'];
 
     /**
      * The relationships that should always be loaded.
@@ -41,5 +41,4 @@ class JobOffer extends Model implements TranslatableContract, Metaable
     {
         return $query->where('active', true);
     }
-
 }

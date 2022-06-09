@@ -21,7 +21,7 @@ class JobOfferTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title','description','slug'];
+    protected $fillable = ['title', 'description', 'slug'];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -51,5 +51,4 @@ class JobOfferTranslation extends Model
     {
         $query->where('locale', $model->locale);
     }
-
 }

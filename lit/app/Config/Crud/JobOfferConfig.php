@@ -3,15 +3,14 @@
 namespace Lit\Config\Crud;
 
 use App\Models\JobOffer;
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
 use Ignite\Crud\Config\CrudConfig;
-use Litstack\Meta\Traits\FormHasMeta;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
 use Lit\Http\Controllers\Crud\JobOfferController;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class JobOfferConfig extends CrudConfig
 {
-
     use FormHasMeta;
     /**
      * Model class.
@@ -54,7 +53,7 @@ class JobOfferConfig extends CrudConfig
     /**
      * Build index page.
      *
-     * @param  \Ignite\Crud\CrudIndex $page
+     * @param  \Ignite\Crud\CrudIndex  $page
      * @return void
      */
     public function index(CrudIndex $page)
@@ -66,14 +65,13 @@ class JobOfferConfig extends CrudConfig
                 true => '<span class="badge badge-success"”">aktiv</span>',
                 false => '<span class="badge badge-warning"”">deaktiviert</span>',
             ])->sortBy('active')->small();
-
         })->search('title');
     }
 
     /**
      * Setup show page.
      *
-     * @param  \Ignite\Crud\CrudShow $page
+     * @param  \Ignite\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
@@ -84,8 +82,7 @@ class JobOfferConfig extends CrudConfig
             $form->boolean('active')->title('Aktiv');
             $form->input('title')->title('Job-Bezeichnung')->translatable();
             $form->wysiwyg('description')->title('Stellenbeschreibung')->translatable();
-
-        })->width(9);;
+        })->width(9);
 
         $page->info('SEO Informations')
         ->width(3);
@@ -93,5 +90,4 @@ class JobOfferConfig extends CrudConfig
             $form->seo();
         })->width(9);
     }
-    
 }

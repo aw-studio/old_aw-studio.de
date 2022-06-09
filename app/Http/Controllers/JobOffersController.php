@@ -16,7 +16,6 @@ class JobOffersController extends Controller
             return redirect()->route(app()->getLocale().'.home');
         }
 
-
         return view('pages.job-offers.show')->with([
             'job_offer' => $job_offer,
         ]);
