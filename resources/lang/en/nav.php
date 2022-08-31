@@ -7,7 +7,9 @@ return [
     'references' => 'References',
     'studio'     => 'Studio & Team',
 
-    'imprint'    => 'imprint',
-    'datapolicy' => 'data policy',
+    'imprint'    => 'Imprint',
+    'datapolicy' => 'Data Policy',
+    'directions' => 'Directions',
+
 
 ];
