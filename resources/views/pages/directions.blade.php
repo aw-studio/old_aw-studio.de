@@ -58,7 +58,7 @@ aw-first-section-is-white
     }
     
     if (localStorage.getItem("gm-consent") == '1') {
-        document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFJZlmnKlnD8RiBsFp60wVSEqLFD0NGD8&libraries=places&callback=initMap"><\/script>');
+        document.write('<script src="https://maps.googleapis.com/maps/api/js?key={{env('GM_KEY')}}&libraries=places&callback=initMap"><\/script>');
             
         function initMap() {
             var markers = [
