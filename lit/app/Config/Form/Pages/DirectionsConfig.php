@@ -24,7 +24,7 @@ class DirectionsConfig extends FormConfig
      */
     public function routePrefix()
     {
-        return "pages/directions";
+        return 'pages/directions';
     }
 
     /**
@@ -42,7 +42,7 @@ class DirectionsConfig extends FormConfig
     /**
      * Setup form page.
      *
-     * @param \Lit\Crud\CrudShow $page
+     * @param  \Lit\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
