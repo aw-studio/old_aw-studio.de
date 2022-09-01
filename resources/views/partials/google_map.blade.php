@@ -12,7 +12,7 @@
 
 <div id="aw-map" class="aw-map aw-map__fullsize"></div>
 
-<script type="text/javascript">
+<script>
 let body = document.querySelector('body');
 let button_yes = document.querySelector('button.gm-consent__yes');
 
