@@ -12,6 +12,6 @@ return [
 
     'imprint'    => 'imprint',
     'datapolicy' => 'datapolicy',
-    
+
     'directions' => 'directions',
 ];

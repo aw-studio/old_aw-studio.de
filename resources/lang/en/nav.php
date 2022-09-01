@@ -11,5 +11,4 @@ return [
     'datapolicy' => 'Data Policy',
     'directions' => 'Directions',
 
-
 ];

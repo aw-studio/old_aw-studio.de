@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Pages;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Lit\Config\Form\Pages\DirectionsConfig;
 
 class DirectionsController extends Controller
