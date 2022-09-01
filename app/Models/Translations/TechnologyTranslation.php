@@ -6,12 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class TechnologyTranslation extends Model
 {
-    
-
     /**
      * whether the model uses the default timestamp columns.
      *
-     * @var boolean
+     * @var bool
      */
     public $timestamps = false;
 
@@ -20,7 +18,5 @@ class TechnologyTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','text','url'];
-
-
+    protected $fillable = ['name', 'text', 'url'];
 }

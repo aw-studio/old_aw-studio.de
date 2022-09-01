@@ -2,12 +2,11 @@
 
 namespace Lit\Config\Crud;
 
-use Ignite\Crud\CrudShow;
-use Ignite\Crud\CrudIndex;
-use Ignite\Crud\Config\CrudConfig;
-use Illuminate\Support\Str;
-
 use App\Models\Technology;
+use Ignite\Crud\Config\CrudConfig;
+use Ignite\Crud\CrudIndex;
+use Ignite\Crud\CrudShow;
+use Illuminate\Support\Str;
 use Lit\Http\Controllers\Crud\TechnologyController;
 
 class TechnologyConfig extends CrudConfig
@@ -53,35 +52,31 @@ class TechnologyConfig extends CrudConfig
     /**
      * Build index page.
      *
-     * @param \Ignite\Crud\CrudIndex $page
+     * @param  \Ignite\Crud\CrudIndex  $page
      * @return void
      */
     public function index(CrudIndex $page)
     {
         $page->table(function ($table) {
-
             $table->col('Name')->value('{name}')->sortBy('name');
-
-        })->search('name');  
+        })->search('name');
     }
 
     /**
      * Setup show page.
      *
-     * @param \Ignite\Crud\CrudShow $page
+     * @param  \Ignite\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
     {
         $page->info('Technologie')->width(3);
-        $page->card(function($form) {
-
+        $page->card(function ($form) {
             $form->input('name')->creationRules('required');
             $form->wysiwyg('text');
             $form->input('version');
             $form->input('url')->type('url');
             $form->image('image')->maxFiles(1);
-            
         })->width(9);
     }
 }

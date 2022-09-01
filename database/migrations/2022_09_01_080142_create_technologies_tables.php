@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 use Ignite\Support\Migration\MigratePermissions;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateTechnologiesTables extends Migration
 {
@@ -19,7 +19,7 @@ class CreateTechnologiesTables extends Migration
             $table->timestamps();
             $table->string('version')->nullable();
         });
-        
+
         Schema::create('technology_translations', function (Blueprint $table) {
             $table->translates('technologies');
 

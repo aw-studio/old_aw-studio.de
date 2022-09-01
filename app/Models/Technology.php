@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Ignite\Crud\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
-use Ignite\Crud\Models\Traits\Translatable;
 
 class Technology extends Model implements HasMediaContract, TranslatableContract
 {
@@ -17,29 +17,28 @@ class Technology extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['name','text','url','version'];
-    
+    protected $fillable = ['name', 'text', 'url', 'version'];
+
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['name','text','url'];
+    public $translatedAttributes = ['name', 'text', 'url'];
 
-    /** 
+    /**
      * The accessors to append to the model's array form.
      *
      * @var array
      */
     protected $appends = ['image'];
-    
-    /** 
+
+    /**
      * The relationships that should always be loaded.
      *
      * @var array
      */
     protected $with = ['media', 'translations'];
-    
 
     /**
      * Image attribute.
@@ -50,5 +49,4 @@ class Technology extends Model implements HasMediaContract, TranslatableContract
     {
         return $this->getMedia('image')->first();
     }
-
 }

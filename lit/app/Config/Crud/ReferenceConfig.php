@@ -211,32 +211,32 @@ class ReferenceConfig extends CrudConfig
             $form->oneRelation('customer')
                 ->title('Kunde')
                 ->model(Customer::class)
-                ->preview(function($preview) {
+                ->preview(function ($preview) {
                     $preview->col('name');
                 });
 
-                $form->datetime('duration_from')
+            $form->datetime('duration_from')
                     ->title('Laufzeit von')
                     ->formatted('l')
                     ->width(6);
-                $form->datetime('duration_to')
+            $form->datetime('duration_to')
                     ->title('Laufzeit bis')
                     ->formatted('l')
                     ->width(6);
 
-                $form->input('budget')->type('number');
+            $form->input('budget')->type('number');
 
-                $form->manyRelation('services')
+            $form->manyRelation('services')
                 ->title('Leistungen')
                 ->model(Service::class)
-                ->preview(function($preview) {
+                ->preview(function ($preview) {
                     $preview->col('title');
                 });
 
-                $form->manyRelation('technologies')
+            $form->manyRelation('technologies')
                 ->title('Technologien')
                 ->model(Technology::class)
-                ->preview(function($preview) {
+                ->preview(function ($preview) {
                     $preview->col('name');
                 });
         })->width(9);

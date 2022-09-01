@@ -19,7 +19,7 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      *
      * @var array
      */
-    protected $fillable = ['title', 'subtitle', 'excerpt', 'text', 'date', 'buzzwords', 'subtitle', 'link_href', 'active','duration_from','duration_to','budget'];
+    protected $fillable = ['title', 'subtitle', 'excerpt', 'text', 'date', 'buzzwords', 'subtitle', 'link_href', 'active', 'duration_from', 'duration_to', 'budget'];
 
     /**
      * The attributes to be translated.
