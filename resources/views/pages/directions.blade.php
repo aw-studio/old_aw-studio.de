@@ -175,10 +175,22 @@ aw-first-section-is-white
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "visibility": "simplified"
+                "visibility": "off"
             },
             {
-                "hue": "#ff0000"
+                "color": "#ff0000"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#727171"
             }
         ]
     },
