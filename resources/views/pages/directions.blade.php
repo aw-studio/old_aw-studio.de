@@ -33,9 +33,6 @@ aw-first-section-is-white
                 {{ __('app.map-consent') }}
             </p>
             <div class="gm-consent__buttons">
-                {{-- <button class="gm-consent__yes btn btn-primary">{{ __('app.show-map') }}</button> --}}
-                {{-- <x-button class="gm-consent__yes" text="{{ __('app.show-map') }}" link="'#'" /> --}}
-
                 <a class="inline-block px-8 py-2 text-lg font-normal text-black bg-white border-2 border-black rounded-sm cursor-pointer gm-consent__yes hover:bg-black hover:text-white">
                     {{ __('app.show-map') }}
                  </a>
@@ -69,21 +66,21 @@ aw-first-section-is-white
             var markers = [
                 {
                     // Büro
-                    lat: 54.324197994649225,
-                    lng: 10.141904909662765
+                    lat: 54.324214650024565,
+                    lng: 10.141962362253569
                 },
                 {
                     // Parkplatz
-                    lat: 54.32402682083483,
-                    lng: 10.14215016812231
+                    lat: 54.324112190947,
+                    lng: 10.142205772710751
                 },
             ]
             var map = new google.maps.Map(
                 document.getElementById('aw-map'), {
                     zoom: 18,
                     center: {
-                        lat: 54.324197994649225,
-                        lng: 10.141904909662765
+                        lat: 54.32413995660005,
+                        lng: 10.142058921773089
                     },
                     styles: [
                         {
@@ -178,7 +175,10 @@ aw-first-section-is-white
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#d6d6d6"
+                "visibility": "simplified"
+            },
+            {
+                "hue": "#ff0000"
             }
         ]
     },
