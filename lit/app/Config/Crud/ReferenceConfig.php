@@ -2,7 +2,10 @@
 
 namespace Lit\Config\Crud;
 
+use App\Models\Customer;
 use App\Models\Reference;
+use App\Models\Service;
+use App\Models\Technology;
 use Ignite\Crud\Config\CrudConfig;
 use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
@@ -199,6 +202,42 @@ class ReferenceConfig extends CrudConfig
                         $form->wysiwyg('text')
                             ->title('Text');
                     });
+                });
+        })->width(9);
+
+        $page->info('Daten')
+            ->width(3);
+        $page->card(function ($form) {
+            $form->oneRelation('customer')
+                ->title('Kunde')
+                ->model(Customer::class)
+                ->preview(function ($preview) {
+                    $preview->col('name');
+                });
+
+            $form->datetime('duration_from')
+                    ->title('Laufzeit von')
+                    ->formatted('l')
+                    ->width(6);
+            $form->datetime('duration_to')
+                    ->title('Laufzeit bis')
+                    ->formatted('l')
+                    ->width(6);
+
+            $form->input('budget')->type('number');
+
+            $form->manyRelation('services')
+                ->title('Leistungen')
+                ->model(Service::class)
+                ->preview(function ($preview) {
+                    $preview->col('title');
+                });
+
+            $form->manyRelation('technologies')
+                ->title('Technologien')
+                ->model(Technology::class)
+                ->preview(function ($preview) {
+                    $preview->col('name');
                 });
         })->width(9);
 

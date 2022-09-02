@@ -13,6 +13,7 @@ use Lit\Config\Crud\ServiceConfig;
 use Lit\Config\Crud\SolutionConfig;
 use Lit\Config\Crud\TagConfig;
 use Lit\Config\Crud\TeamMemberConfig;
+use Lit\Config\Crud\TechnologyConfig;
 use Lit\Config\Form\Collections\FeaturedConfig;
 use Lit\Config\Form\Collections\HighlightsConfig;
 use Lit\Config\Form\Components\JobsConfig;
@@ -85,6 +86,7 @@ class NavigationConfig extends Config
                 'icon'  => fa('asterisk'),
             ], [
                 $nav->preset(ReferenceConfig::class)->icon(fa('star-of-life')),
+                $nav->preset(TechnologyConfig::class)->icon(fa('atom-alt')),
                 $nav->preset(HighlightsConfig::class)->icon(fa('star')),
                 $nav->preset(FeaturedConfig::class)->icon(fa('star')),
             ]),

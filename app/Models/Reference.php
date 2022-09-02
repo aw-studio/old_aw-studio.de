@@ -19,7 +19,7 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
      *
      * @var array
      */
-    protected $fillable = ['title', 'subtitle', 'excerpt', 'text', 'date', 'buzzwords', 'subtitle', 'link_href', 'active'];
+    protected $fillable = ['title', 'subtitle', 'excerpt', 'text', 'date', 'buzzwords', 'subtitle', 'link_href', 'active', 'duration_from', 'duration_to', 'budget'];
 
     /**
      * The attributes to be translated.
@@ -75,5 +75,20 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
     public function scopeActive($query)
     {
         return $query->where('active', true);
+    }
+
+    public function customer()
+    {
+        return $this->oneRelation(Customer::class, 'customer');
+    }
+
+    public function services()
+    {
+        return $this->manyRelation(Service::class, 'services');
+    }
+
+    public function technologies()
+    {
+        return $this->oneRelation(Technology::class, 'technologies');
     }
 }
