@@ -25,4 +25,6 @@ return [
     'published' => 'Published on',
     'last-updated' => 'Last updated on',
 
+    'map-consent' => 'I consent to the integration of Google Maps.',
+    'show-map' => 'Show Map',
 ];

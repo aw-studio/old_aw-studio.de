@@ -24,5 +24,7 @@ return [
 
     'published' => 'Erstellt am',
     'last-updated' => 'Zuletzt aktualisiert am',
-
+    
+    'map-consent' => 'Ich stimme der Einbindung von Google Maps zu.',
+    'show-map' => 'Karte anzeigen',
 ];
