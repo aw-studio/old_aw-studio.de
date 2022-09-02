@@ -55,6 +55,9 @@
                         <li class="mr-4 text-sm md:mr-0 md:ml-4">
                             <a class="aw-link" href="{{__route('imprint')}}">{{ __('nav.imprint') }}</a>
                         </li>
+                        <li class="mr-4 text-sm md:mr-0 md:ml-4">
+                            <a class="aw-link" href="{{__route('directions')}}">{{ __('nav.directions') }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -20,6 +20,7 @@ use Lit\Config\Form\Navigations\MainNavigationConfig;
 use Lit\Config\Form\Pages\ApplicationConfig;
 use Lit\Config\Form\Pages\BlogConfig;
 use Lit\Config\Form\Pages\DatapolicyConfig;
+use Lit\Config\Form\Pages\DirectionsConfig;
 use Lit\Config\Form\Pages\HomeConfig;
 use Lit\Config\Form\Pages\ImprintConfig;
 use Lit\Config\Form\Pages\MasterConfig;
@@ -75,6 +76,7 @@ class NavigationConfig extends Config
             $nav->preset(ApplicationConfig::class)->icon(fa('envelope')),
             $nav->preset(ImprintConfig::class)->icon(fa('info-circle')),
             $nav->preset(DatapolicyConfig::class)->icon(fa('file-alt')),
+            $nav->preset(DirectionsConfig::class)->icon(fa('map-marker-alt')),
         ]);
         $nav->section([
             $nav->title('Daten-Objekte'),

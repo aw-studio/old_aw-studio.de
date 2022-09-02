@@ -9,5 +9,5 @@ return [
 
     'imprint'    => 'Impressum',
     'datapolicy' => 'Datenschutz',
-
+    'directions' => 'Anfahrt',
 ];

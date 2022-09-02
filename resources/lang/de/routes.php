@@ -13,4 +13,5 @@ return [
     'imprint'    => 'impressum',
     'datapolicy' => 'datenschutz',
 
+    'directions' => 'anfahrt',
 ];
