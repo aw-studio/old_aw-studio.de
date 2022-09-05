@@ -309,21 +309,17 @@ aw-first-section-is-white
                 }
             );
     
-            const officeImage = '/assets/office.svg';
-            const parkingImage = '/assets/parking.svg';
-           
             var officeMarker = new google.maps.Marker({
                 position: { lat: 54.324214650024565, lng: 10.141962362253569 },
                 map: map,
-                icon: officeImage
+                icon: '/assets/office.svg'
             });
 
             var parkingMarker = new google.maps.Marker({
-                position: { lat: 54.324112190947, lng: 10.142205772710751 },
+                position: { lat: 54.324084554290685, lng: 10.142150397427075 },
                 map: map,
-                icon: parkingImage
+                icon: '/assets/parking.svg'
             });
-            
         }
     }
     </script>
