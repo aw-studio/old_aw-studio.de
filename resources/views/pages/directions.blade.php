@@ -315,8 +315,14 @@ aw-first-section-is-white
                 icon: '/assets/office.svg'
             });
 
-            var parkingMarker = new google.maps.Marker({
+            var parkingLotMarker = new google.maps.Marker({
                 position: { lat: 54.324084554290685, lng: 10.142150397427075 },
+                map: map,
+                icon: '/assets/parking.svg'
+            });
+
+            var parkingGarageMarker = new google.maps.Marker({
+                position: { lat: 54.32501497966286, lng: 10.142792383617893 },
                 map: map,
                 icon: '/assets/parking.svg'
             });
