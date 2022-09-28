@@ -77,10 +77,10 @@ aw-first-section-is-white
             // ]
             var map = new google.maps.Map(
                 document.getElementById('aw-map'), {
-                    zoom: 19,
+                    zoom: 18,
                     center: {
-                        lat: 54.32413995660005,
-                        lng: 10.142058921773089
+                        lat: 54.32465442316737,
+                        lng: 10.142137791051734
                     },
                     styles: [
                         {
