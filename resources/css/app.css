@@ -337,6 +337,15 @@ body.aw-first-section-is-white.aw-nav-animating {
     padding-bottom: 50px;
 }
 
+.gm-style-iw button {
+    top: 10px !important;
+    right: 12px !important;
+}
+
+.gm-style-iw button span:last-child {
+    top: 0px !important;
+}
+
 @import 'custom/header';
 @import 'custom/main';
 @import 'custom/nav';
