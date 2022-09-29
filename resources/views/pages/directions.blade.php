@@ -63,18 +63,6 @@ aw-first-section-is-white
         document.write('<script src="https://maps.googleapis.com/maps/api/js?key={{env('GM_KEY')}}&libraries=places&callback=initMap"><\/script>');
             
         function initMap() {
-            // var markers = [
-            //     {
-            //         // Büro
-            //         lat: 54.324214650024565,
-            //         lng: 10.141962362253569
-            //     },
-            //     {
-            //         // Parkplatz
-            //         lat: 54.324112190947,
-            //         lng: 10.142205772710751
-            //     },
-            // ]
             var map = new google.maps.Map(
                 document.getElementById('aw-map'), {
                     zoom: 18,
@@ -325,6 +313,27 @@ aw-first-section-is-white
                 position: { lat: 54.32501497966286, lng: 10.142792383617893 },
                 map: map,
                 icon: '/assets/parking.svg'
+            });
+		
+            var infowindowOffice = new google.maps.InfoWindow({
+                content		:	'<div style="padding-left:12px;padding-right:12px;padding-top:10px;margin-right:10px;"><p style="font-size:14px;margin-bottom:20px;">Burgstraße 4<br>24105 Kiel</p><p style="font-size:14px;margin-bottom:14px;">1. Etage über dem <br>ehemaligen Lichthaus am Schloss</p></div>'
+            });                    
+            officeMarker.addListener('click', function() {
+                infowindowOffice.open(map, officeMarker);
+            });
+
+            var infowindowParkingLot = new google.maps.InfoWindow({
+                content		:	'<div style="padding-left:12px;padding-right:12px;padding-top:10px;margin-right:10px;"><p style="font-size:14px;margin-bottom:14px;">Kundenparkplatz, <br>ausgeschildert</p></div>'
+            });                    
+            parkingLotMarker.addListener('click', function() {
+                infowindowParkingLot.open(map, parkingLotMarker);
+            });
+
+            var infowindowParkingGarage = new google.maps.InfoWindow({
+                content		:	'<div style="padding-left:12px;padding-right:12px;padding-top:10px;margin-right:10px;"><p style="font-size:14px;margin-bottom:14px;padding-right:10px;">Schlossgarage<br>Öffentliches Parkhaus</p></div>'
+            });                    
+            parkingGarageMarker.addListener('click', function() {
+                infowindowParkingGarage.open(map, parkingGarageMarker);
             });
         }
     }
