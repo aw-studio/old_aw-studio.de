@@ -346,6 +346,10 @@ body.aw-first-section-is-white.aw-nav-animating {
     top: 0px !important;
 }
 
+.gm-style-mtc button {
+    width: 95px !important;
+}
+
 @import 'custom/header';
 @import 'custom/main';
 @import 'custom/nav';
