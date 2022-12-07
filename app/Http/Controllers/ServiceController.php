@@ -8,7 +8,6 @@ use Lit\Config\Crud\ServiceConfig;
 
 class ServiceController extends Controller
 {
-
     public function show($slug)
     {
         $service = Service::whereHas('translations', function ($query) use ($slug) {
@@ -38,5 +37,4 @@ class ServiceController extends Controller
 
         return ['slug' => $slug];
     }
-
 }
