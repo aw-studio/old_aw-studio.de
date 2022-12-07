@@ -11,6 +11,7 @@ use App\Http\Controllers\Pages\ImprintController;
 use App\Http\Controllers\Pages\ReferencesController;
 use App\Http\Controllers\Pages\ServicesController;
 use App\Http\Controllers\Pages\StudioController;
+use App\Http\Controllers\ServiceController;
 use Ignite\Support\Facades\Form;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -38,7 +39,10 @@ use Illuminate\Support\Facades\Route;
 Route::trans('/', HomeController::class)->name('home');
 Route::trans('/__(routes.references)', ReferencesController::class.'@index')->name('references.index');
 Route::trans('/__(routes.references)/{slug}', ReferencesController::class.'@show')->translator('getReferenceSlug')->name('references.show');
+
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
+Route::trans('/__(routes.services)/{slug}', ServiceController::class.'@show')->translator('getServiceSlug')->name('services.show');
+
 Route::trans('/__(routes.studio)', StudioController::class)->name('studio');
 
 Route::trans('/__(routes.blog)', BlogController::class.'@index')->name('blog.index');

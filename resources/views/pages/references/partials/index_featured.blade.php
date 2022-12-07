@@ -3,7 +3,7 @@
     <div class="mb-4">
         <div class="mb-4">
             <a href="{{ __route('references.show',$reference->slug) }}">
-                <x-lit-image :image="$reference->image" :alt="$reference->title" />
+                <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full" class="w-full" />
             </a>
         </div>
         <div class="text-base">
@@ -17,9 +17,3 @@
 
     @endforeach
 </div>
-
-<x-style>
-    .image-container img {
-        width: 100%;
-    }
-</x-style>

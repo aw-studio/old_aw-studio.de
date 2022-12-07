@@ -49,20 +49,17 @@ $playground_no = rand(1,3);
                 </div>
             </div>
             <div class="col-span-12">
+
                 @if($form->services)
-                <div class="grid grid-cols-12 gap-5 lg:mb-40">
+                <div class="grid grid-cols-12 grid-flow-row gap-5 lg:mb-40">
                     @foreach($form->services as $service)
-                    <div class="col-span-12 col-start-1 mb-8 md:col-span-6 lg:col-span-3">
-                        <h3 class="h3">
-                            {{ $service->title }}
-                        </h3>
-                        <div class="mb-8">
-                            {!! $service->svg !!}
-                        </div>
-                        <div class="aw-list">
-                            {!! $service->list !!}
-                        </div>
-                        {!! $service->text !!}
+                    <div class="mb-8 col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
+                            <div class="-ml-2 mb-4 h-20 transform scale-90 flex justify-center items-end">
+                                {!! $service->svg !!}
+                            </div>
+                            <span class="text-base font-semibold mb-6 flex justify-center">
+                                {{ $service->title }}
+                            </span>
                     </div>
                     @endforeach
                 </div>
@@ -169,17 +166,8 @@ $playground_no = rand(1,3);
                 <div class="text-xl">
                     {!! $form->text_management !!}
                 </div>
-                <div class="grid grid-flow-row grid-cols-3 gap-5 mb-8">
-                    @isset($form->team_members)
-                    @foreach ($form->team_members as $team_member)
-                    <div>
-                        <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full" />
-                        <p class="mt-2 text-sm">
-                            {{ $team_member->name }}
-                        </p>
-                    </div>
-                    @endforeach
-                    @endisset
+                <div class="mb-8">
+                    <x-lit-image :image="$form->image_studio" class="w-full" />
                 </div>
                 <x-button :type="'dark'" text="{!! $form->button_studio !!}" link="{{ __route('studio') }}" />
             </div>

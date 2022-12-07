@@ -76,10 +76,10 @@ class ServiceConfig extends CrudConfig
         $page->card(function ($form) {
             $form->input('title')->width(9);
             $form->boolean('active')->width(3);
-            // $form->image('image')->hint('SVG Image')->width(5);
             $form->textarea('svg');
+            $form->wysiwyg('excerpt')->width(12);
+            $form->wysiwyg('text')->width(12);
             $form->wysiwyg('list')->width(8);
-            $form->wysiwyg('text')->width(8);
         })->width(9);
 
         $page->info('Referenzen')

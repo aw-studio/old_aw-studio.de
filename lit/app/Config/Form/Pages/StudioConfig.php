@@ -65,6 +65,7 @@ class StudioConfig extends FormConfig
             $form->manyRelation('team_members')
                 ->title('Team-Mitglieder')
                 ->model(TeamMember::class)
+                ->perPage(30)
                 ->sortable();
         })->width(9);
 

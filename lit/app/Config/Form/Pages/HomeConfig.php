@@ -77,6 +77,7 @@ class HomeConfig extends FormConfig
                 $form->manyRelation('services')
                 ->model(Service::class)
                 ->sortable()
+                ->perPage(20)
                 ->preview(function ($table) {
                     $table->col('Title')
                         ->value('{title}')
@@ -114,17 +115,7 @@ class HomeConfig extends FormConfig
             $form->group(function ($form) {
                 $form->input('h3_management')->title('Headline')->translatable()->hint('kleine Headline (h3)');
                 $form->wysiwyg('text_management')->title('Text')->translatable();
-                $form->manyRelation('team_members')
-                    ->title('Geschäftsführung')
-                    ->model(TeamMember::class)
-                    // ->sortable()
-                    ->preview(function ($table) {
-                        $table->image('Image')
-                            ->src('{image.conversion_urls.sm}')
-                            ->maxWidth('50px')
-                            ->small();
-                        $table->col('name');
-                    });
+                $form->image('image_studio')->title('Bild')->maxFiles(1)->expand();
                 $form->input('button_studio')->title('Button')->translatable()->hint('Button zu Studio & Team')->width(6);
             });
         })->width(9);

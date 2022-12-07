@@ -26,14 +26,8 @@ aw-first-section-is-white
                     {{ $services->h1 }}
                 </h1>
             </div>
-            <div class="col-span-12 col-start-1 lg:col-start-4 lg:col-span-1">
-                @include('partials.svg.icon-arrow-ttb')
-            </div>
-            <div class="col-span-12 col-start-1 lg:col-start-5 lg:col-span-8">
-                <x-lit-image :image="$services->image" class="w-full" />
-            </div>
         </div>
-        <div class="grid grid-cols-12 gap-5 mt-20 lg:mt-40">
+        <div class="grid grid-cols-12 gap-5 mt-8 lg:mt-20">
             <div class="col-span-12 col-start-1 lg:col-span-7">
                 <h2 class="h1">
                     {{ $services->h2 }}
@@ -45,7 +39,6 @@ aw-first-section-is-white
                 {!! $services->text_intro !!}
             </div>
             <div class="col-span-12 col-start-1 text-xl md:col-start-8 md:col-span-5 lg:col-start-9 lg:col-span-4 md:mt-20">
-                {!! $services->text_litstack !!}
             </div>
         </div>
     </div>
@@ -53,22 +46,23 @@ aw-first-section-is-white
 
 <section class="pt-20 bg-white border-t border-black lg:pt-40">
     <div class="container pb-8 md:pd-12 lg:pb-40">
-        <div class="grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             @foreach ($services->services as $service)
             <div class="mb-8 lg:mb-20">
-                <h3 class="h3">
+                <span class="block text-xl font-semibold mb-6">
                     {{ $service->title }}
-                </h3>
-                <div class="mb-8">
+                </span>
+                <div class="mb-8 h-24 flex items-center">
                     {!! $service->svg !!}
                 </div>
-                <div class="aw-list">
-                    {!! $service->list !!}
+                <div class="pr-12">
+                    {!! $service->excerpt !!}
                 </div>
-                {!! $service->text !!}
+                <div class="mt-auto">
+                    <a class="aw-link" href="{{ __route('services.show', $service->slug)}}">mehr erfahren</a>
+                </div>
             </div>
             @endforeach
-            
         </div>
     </div>
 </section>
@@ -119,6 +113,7 @@ aw-first-section-is-white
                 <x-lit-image :image="$services->images[2]" class="w-full" />
                 @endisset
             </div>
+
 
         </div>
 

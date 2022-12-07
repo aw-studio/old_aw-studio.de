@@ -19,6 +19,7 @@ return [
     'next-studio'     => 'continue to studio & team',
     'back-home'       => 'back to homepage',
     'back-to-blog-overview' => 'back to blog overview',
+    'back-to-services-overview' => 'back to services overview',
 
     'read-post' => 'Read post',
 
