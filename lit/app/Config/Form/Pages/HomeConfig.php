@@ -73,16 +73,15 @@ class HomeConfig extends FormConfig
         $page->info('Leistungen')
             ->width(3);
         $page->card(function ($form) {
-            $form->group(function ($form) {
-                $form->manyRelation('services')
-                ->model(Service::class)
-                ->sortable()
-                ->perPage(20)
-                ->preview(function ($table) {
-                    $table->col('Title')
-                        ->value('{title}')
-                        ->sortBy('title');
-                });
+            $form->input('h2_services')->title('Headline')->translatable()->hint('große Headline (h2)');
+            $form->manyRelation('services')
+            ->model(Service::class)
+            ->sortable()
+            ->perPage(20)
+            ->preview(function ($table) {
+                $table->col('Title')
+                    ->value('{title}')
+                    ->sortBy('title');
             });
             $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(1 / 2);
         })->width(9);

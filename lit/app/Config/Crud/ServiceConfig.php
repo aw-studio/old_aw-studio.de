@@ -77,7 +77,7 @@ class ServiceConfig extends CrudConfig
             $form->input('title')->width(9);
             $form->boolean('active')->width(3);
             $form->textarea('svg');
-            $form->wysiwyg('excerpt')->width(12);
+            $form->textarea('excerpt')->width(12);
             $form->wysiwyg('text')->width(12);
             $form->wysiwyg('list')->width(8);
         })->width(9);

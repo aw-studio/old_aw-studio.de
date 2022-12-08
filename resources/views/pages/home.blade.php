@@ -38,6 +38,7 @@ $playground_no = rand(1,3);
 <section class="bg-white">
     <div class="container pt-20">
         <div class="grid grid-cols-12 gap-5">
+
             <div class="col-span-12 col-start-1 lg:col-span-8">
                 <div class="mb-20 lg:mb-40">
                     <h2 class="h1">
@@ -48,18 +49,30 @@ $playground_no = rand(1,3);
                     </div>
                 </div>
             </div>
+
             <div class="col-span-12">
 
+                <h2 class="h2 mb-20 md:mb-12 lg:mb-20">
+                    {{ $form->h2_services }}
+                </h2>
+
                 @if($form->services)
-                <div class="grid grid-cols-12 grid-flow-row gap-5 lg:mb-40">
+                <div class="grid grid-cols-12 grid-flow-row gap-1 mb-20">
                     @foreach($form->services as $service)
-                    <div class="mb-8 col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
-                            <div class="-ml-2 mb-4 h-20 transform scale-90 flex justify-center items-end">
-                                {!! $service->svg !!}
+                    <div class="col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
+                        <a href="{{ __route('services.show', $service->slug)}}" class="group/service-item block translate duration-300 relative">
+                            <div class="bg-white z-10 relative pb-4 rounded-md">
+                                <div class="-ml-2 mb-4 h-32 transform translate duration-150 scale-90 group-hover/service-item:scale-100 flex justify-center items-end">
+                                    {!! $service->svg !!}
+                                </div>
+                                <div class="text-sm font-normal translate mb-4 flex justify-center">
+                                    <span class="translate duration-300 border-b border-white group-hover/service-item:border-black">
+                                        {{ $service->title }}
+                                    </span>
+                                </div>
                             </div>
-                            <span class="text-base font-semibold mb-6 flex justify-center">
-                                {{ $service->title }}
-                            </span>
+                            <div class="absolute top-0 left-0 h-full w-full drop-shadow-2xl group-hover/service-item:drop-shadow-3xl bg-white rounded-md" class="z-index:-1;"></div>
+                        </a>
                     </div>
                     @endforeach
                 </div>
