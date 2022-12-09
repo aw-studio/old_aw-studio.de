@@ -72,7 +72,6 @@ class ServiceConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
-
         $page->headerRight()
         ->action('Übersetzen', TranslateAction::class)
         ->variant('primary');
