@@ -5,7 +5,7 @@ namespace Lit\Actions;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 
-class TranslatePostAction
+class TranslateServiceAction
 {
     /**
      * Run the action.
@@ -20,6 +20,6 @@ class TranslatePostAction
         });
         $models->first()->translateTo('en');
 
-        return response()->success('Post translated.');
+        return response()->success('Service translated.');
     }
 }

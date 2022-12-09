@@ -22,16 +22,27 @@ aw-first-section-is-white
                 <h1 class="h1 aw--animate">
                     {{ $service->title }}
                 </h1>
-                {!! $service->text !!}
-
-                {!! $service->list !!}
+                {!! $service->text !!}    
             </div>
         </div> 
     </div>
 </section>
 
+@if($service->list != '' && $service->list != '<p></p>')
+<section class="bg-white aw-first-section border-t border-black">
+    <div class="container pt-20 pb-10">
+        <div class="grid grid-cols-12 gap-5">
+            <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
+                <div class="aw-list">
+                    {!! $service->list !!}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endif
 
-<section class="py-20 pb-40 bg-white">
+<section class="py-20 pb-40 bg-white border-t border-black">
     <div class="container">
         @if($service->references->count() > 0)
         <h2 class="h2">
@@ -68,6 +79,7 @@ aw-first-section-is-white
         </div>
     </div>
 </section>
+
 
 
 

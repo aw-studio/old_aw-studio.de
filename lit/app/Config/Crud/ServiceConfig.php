@@ -9,6 +9,7 @@ use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
 use Illuminate\Support\Str;
 use Lit\Http\Controllers\Crud\ServiceController;
+use Litstack\Deeplable\TranslateAction;
 
 class ServiceConfig extends CrudConfig
 {
@@ -71,6 +72,11 @@ class ServiceConfig extends CrudConfig
      */
     public function show(CrudShow $page)
     {
+
+        $page->headerRight()
+        ->action('Übersetzen', TranslateAction::class)
+        ->variant('primary');
+
         $page->info('Content')
         ->width(3);
         $page->card(function ($form) {
