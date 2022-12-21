@@ -19,6 +19,7 @@ return [
     'next-studio'     => 'weiter zu Studio & Team',
     'back-home'       => 'zurück zur Startseite',
     'back-to-blog-overview' => 'zurück zur Blog-Übersicht',
+    'back-to-services-overview' => 'zurück zur Leistungs-Übersicht',
 
     'read-post' => 'Beitrag lesen',
 

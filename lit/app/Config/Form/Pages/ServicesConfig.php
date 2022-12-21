@@ -54,8 +54,7 @@ class ServicesConfig extends FormConfig
             $form->textarea('h1')->title('Topline')->translatable()->hint('kleine Zeile über der großen Headline (h1)');
             $form->image('image')->title('Bild')->maxFiles(1)->expand();
             $form->textarea('h2')->title('Headline')->translatable()->hint('große Headline (h2)');
-            $form->wysiwyg('text_intro')->title('Text Intro')->translatable()->width(6);
-            $form->wysiwyg('text_litstack')->title('Text Litstack')->translatable()->width(6);
+            $form->wysiwyg('text_intro')->title('Text Intro')->translatable()->width(12);
         })->width(9);
 
         $page->info('Leistungen')
@@ -65,6 +64,7 @@ class ServicesConfig extends FormConfig
                 $form->manyRelation('services')
                 ->model(Service::class)
                 ->sortable()
+                ->perPage(30)
                 ->preview(function ($table) {
                     $table->col('Title')
                         ->value('{title}')

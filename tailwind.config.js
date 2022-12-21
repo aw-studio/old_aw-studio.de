@@ -1,11 +1,5 @@
 module.exports = {
-    purge: [
-        // './resources/views/**/*.blade.php',
-        // './resources/views/**/**/*.blade.php',
-        // './resources/views/**/**/**/*.blade.php',
-        // './resources/**/*.js',
-        // './resources/components/*.vue',
-    ],
+    content: ['./resources/**/*.{js,jsx,ts,tsx,vue,blade.php}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
@@ -29,6 +23,7 @@ module.exports = {
         colors: {
             black: '#161616',
             white: '#ffffff',
+            gray: '#cccccc',
         },
         container: {
             center: true,
@@ -43,6 +38,29 @@ module.exports = {
             lg: '1024px',
             xl: '1280px',
             '2xl': '1280px',
+        },
+        dropShadow: {
+            '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '4xl': ['0 35px 35px rgba(0, 0, 0, 0.25)', '0 45px 65px rgba(0, 0, 0, 0.15)'],
+        },
+        extend: {
+            dropShadow: {
+                '2xl': '0 0 40px rgba(0, 0, 0, 0.18)',
+                '3xl': '0 0 80px rgba(0, 0, 0, 0.33)',
+            },
+            scale: {
+                105: '1.05',
+            },
+            animation: {
+                point: 'point 1s linear infinite',
+                'point-fast': 'point 0.5s linear infinite',
+            },
+            keyframes: {
+                point: {
+                    '0%, 100%': { transform: 'translateX(-2px)' },
+                    '50%': { transform: 'translateX(2px)' },
+                },
+            },
         },
     },
     variants: {

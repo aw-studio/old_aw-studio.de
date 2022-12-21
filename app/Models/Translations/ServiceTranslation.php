@@ -22,7 +22,7 @@ class ServiceTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'text', 'list'];
+    protected $fillable = ['title', 'text', 'excerpt', 'list'];
 
     /**
      * Return the sluggable configuration array for this model.
