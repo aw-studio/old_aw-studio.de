@@ -91,4 +91,11 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
     {
         return $this->oneRelation(Technology::class, 'technologies');
     }
+
+    public function customers()
+    {
+        return $this->belongsToMany(Customer::class);
+    }
+    
+
 }

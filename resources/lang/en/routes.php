@@ -3,6 +3,7 @@
 return [
 
     'references'  => 'references',
+    'references-az'  => 'references-a-z',
     'services'    => 'services',
     'studio'      => 'studio',
     'application' => 'application',

@@ -8,13 +8,13 @@
             @endif
         </div>
         @isset($post->image)
-        <x-lit-image :image="$post->image" class="z-10 w-full mb-4 lg:mb-8" />
+        <x-lit-image :image="$post->image" class="z-10 w-full mb-4 lg:mb-8 rounded-md" />
         @endisset
     </div>
-    <div class="mr-8 text-xl md:text-2xl">
+    <div class="mr-8 text-xl md:text-xl">
         {!!Str::of($post->h1)->replace('<p>', '')->replace('</p>', '')!!}
     </div>
-    <div class="mt-4 mr-8">
+    <div class="mt-4 mr-8 text-sm">
         {!! $post->excerpt !!}
     </div>
 </a>

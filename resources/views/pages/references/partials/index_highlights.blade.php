@@ -17,7 +17,7 @@
           mb-4
         ">
             <a href="{{ __route('references.show',$reference->slug) }}">
-                <x-lit-image :image="$reference->image" :alt="$reference->title" class="w-full" />
+                <x-lit-image :image="$reference->image" :alt="$reference->title" class="w-full rounded-md" />
             </a>
         </div>
         <div class="

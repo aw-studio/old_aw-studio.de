@@ -52,6 +52,7 @@ class HomeConfig extends FormConfig
         $page->info('Playground')
             ->width(3);
         $page->card(function ($form) {
+            $form->image('header_images')->title('Header Images')->maxFiles(10);
             $form->textarea('h1')->title('Headline Playground …')->translatable()->hint('jumbo (h1), buzzwords will be added typed');
             $form->list('buzzwords')
                 ->title('… Buzzwords')

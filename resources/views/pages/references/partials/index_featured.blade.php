@@ -3,15 +3,17 @@
     <div class="mb-4">
         <div class="mb-4">
             <a href="{{ __route('references.show',$reference->slug) }}">
-                <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full" class="w-full" />
+                <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full" class="w-full rounded-md" />
             </a>
         </div>
         <div class="text-base">
             <a class="text-xl aw-link" href="{{ __route('references.show',$reference->slug) }}">
-                <b>{{ $reference->title }}</b>
+                {{ $reference->title }}
             </a>
             <br>
-            {{ $reference->subtitle }}<br>
+            <span class="text-sm">
+                {{ $reference->subtitle }}<br>
+            </span>
         </div>
     </div>
 

@@ -3,10 +3,10 @@ class="
 group/button
 inline-block text-base font-normal border-2 rounded-md cursor-pointer hover:drop-shadow-2xl transition duration-300
 @if ($type == 'dark')
- text-black bg-white border-black hover:bg-black hover:text-white
+ text-white bg-black border-black hover:bg-black hover:text-white
 @endif
 @if ($type == 'light')
- text-white bg-black border-white hover:bg-white hover:text-black
+ text-black bg-white border-white hover:bg-white hover:text-black
 @endif
 "
 href="{{ $link }}" 
@@ -19,7 +19,7 @@ target="{{ $target }}"
     <span class="inline-block px-4 py-2">
         {{ $text }}
     </span>
-    <span class="border-l-2 flex items-center px-3 py-2
+    <span class="flex items-center px-3 py-2
     @if ($type == 'dark')
     bg-black
     @endif

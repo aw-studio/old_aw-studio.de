@@ -68,4 +68,15 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
     {
         return $query->where('category_id', self::CULTURE);
     }
+
+    public function scopeHasLogo($query)
+    {
+        return $query->has('media');
+    }
+
+    public function references()
+    {
+        return $this->belongsToMany(Reference::class);
+    }
+
 }

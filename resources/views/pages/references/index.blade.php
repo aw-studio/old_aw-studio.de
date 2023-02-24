@@ -24,7 +24,7 @@
     </div>
 </section>
 
-<section class="py-20 pb-40 bg-white">
+<section class="py-20 pb-20 bg-white">
     <div class="container">
         <h2 class="h2">
             {{ $references->h3_featured }}
@@ -33,19 +33,19 @@
     </div>
 </section>
 
-<section class="bg-white">
+<section class="bg-white pb-32">
     <div class="container">
-        <h2 class="h2">
-            {{ $references->h3_az }}
-        </h2>
-        @include('pages.references.partials.index_az')
+        <div class="flex justify-between pt-12">
+            <div>
+                {{-- <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a> --}}
+            </div>
+            <div>
+                <x-button :type="'dark'" text="{{ $references->h3_az }}" link="{{ __route('references.a-z') }}" />
+
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="pt-40 pb-40 bg-white border-t border-white">
-    <div class="container text-center">
-        <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
-    </div>
-</section>
 
 @endsection
