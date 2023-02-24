@@ -74,7 +74,6 @@ class CustomerConfig extends CrudConfig
     public function show(CrudShow $page)
     {
         $page->card(function ($form) {
-
             $form->group(function ($form) {
                 $form->image('image')
                 ->title('Logo')
@@ -87,10 +86,10 @@ class CustomerConfig extends CrudConfig
                 ->title('Name')
                 ->creationRules('required');
 
-            $form->input('suffix')
+                $form->input('suffix')
                 ->title('Zusatz');
 
-            $form->select('category_id')
+                $form->select('category_id')
                 ->title('Kategorie')
                 ->options([
                     1 => 'Bildung und Forschung',
@@ -98,15 +97,12 @@ class CustomerConfig extends CrudConfig
                     3 => 'Kunst & Kultur',
                 ]);
 
-            $form->input('url')
+                $form->input('url')
                 ->title('Url')
                 ->placeholder('https://')
                 ->rules('url')
                 ->max(200);
-
             })->width(8);
-
-            
         });
 
         $page->card(function ($form) {
