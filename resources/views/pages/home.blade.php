@@ -9,10 +9,12 @@ aw-home
 @endsection
 
 @section('content')
+
+
 <section class="aw-first-section">
-
-<div class="relative pt-80 bg-[#feb350]" style="background-image:url({{ $form->header_images->first()->url }});background-size:cover;background-position:center;">
-
+    @if($form->header_images->count() > 0)
+        <div class="relative pt-80 bg-[#feb350]" style="background-image:url({{ $form->header_images->first()->url }});background-size:cover;background-position:center;">
+    @endif
     <div class="relative container py-20 lg:py-24 aw-jumbo">
         @if ($form->buzzwords)
             <h1 class="text-2xl sm:text-4xl lg:text-5xl" data-buzzwords="@foreach ($form->buzzwords->shuffle() as $buzzword){{ $buzzword->buzzword }},@endforeach">
@@ -29,7 +31,6 @@ aw-home
             </h1>
         @endif
     </div>
-
 </div>
 </section>
 
