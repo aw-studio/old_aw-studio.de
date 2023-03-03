@@ -96,6 +96,4 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
     {
         return $this->belongsToMany(Customer::class);
     }
-    
-
 }

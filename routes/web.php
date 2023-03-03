@@ -41,7 +41,6 @@ Route::trans('/__(routes.references)', ReferencesController::class.'@index')->na
 Route::trans('/__(routes.references)/{slug}', ReferencesController::class.'@show')->translator('getReferenceSlug')->name('references.show');
 Route::trans('/__(routes.references-az)', ReferencesController::class.'@az')->name('references.a-z');
 
-
 Route::trans('/__(routes.services)', ServicesController::class)->name('services');
 Route::trans('/__(routes.services)/{slug}', ServiceController::class.'@show')->translator('getServiceSlug')->name('services.show');
 

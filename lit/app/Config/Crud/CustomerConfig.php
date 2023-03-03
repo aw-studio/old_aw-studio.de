@@ -106,7 +106,7 @@ class CustomerConfig extends CrudConfig
             $form->input('suffix')
                 ->title('Zusatz');
 
-            $form->select('category_id')
+                $form->select('category_id')
                 ->title('Kategorie')
                 ->options([
                     1 => 'Bildung und Forschung',
@@ -114,15 +114,12 @@ class CustomerConfig extends CrudConfig
                     3 => 'Kunst & Kultur',
                 ]);
 
-            $form->input('url')
+                $form->input('url')
                 ->title('Url')
                 ->placeholder('https://')
                 ->rules('url')
                 ->max(200);
-
             })->width(8);
-
-            
         });
 
         $page->card(function ($form) {
