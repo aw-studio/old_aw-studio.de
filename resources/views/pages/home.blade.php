@@ -12,7 +12,7 @@ aw-home
 
 
 <section class="aw-first-section">
-    @if($form->header_images->count() > 0)
+    @if($form->header_images && $form->header_images->count() > 0)
         <div class="relative pt-80 bg-[#feb350]" style="background-image:url({{ $form->header_images->first()->url }});background-size:cover;background-position:center;">
     @endif
     <div class="relative container py-20 lg:py-24 aw-jumbo">
