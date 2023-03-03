@@ -30,17 +30,36 @@
 
             @if($loop->iteration == 2)
             <div class="grid grid-cols-12 py-0 md:py-20">
-                <div class="flex flex-row-reverse justify-between col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 md:block">
+                <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
+                    <div class="flex flex-row-reverse justify-between md:block">
                     <div class="mb-8 text-xl text-right md:text-left">
-                        <b>{!! $reference->date !!}</b>
+                        <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
+                        {!! $reference->date !!}
                     </div>
-                    <div class="">
+                    <div class="aw-list">
+                        <b class="text-xl mb-4 inline-block">{{ __('app.services')}}</b><br>
                         {!! $reference->buzzwords !!}
                     </div>
+                    </div>
+                    @if($reference->customers->count() > 0)
+                    <div class="pb-20">
+                        <b class="text-xl">{{ __('app.customer')}}</b><br>
+                        <div class="flex flex-wrap">
+                            @foreach($reference->customers as $customer)
+                            <div class="bg-white mr-6 w-[200px] lg:w-[75%] aspect-video p-6 mt-6">
+                                <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endif
                 </div>
                 <div class="col-span-12 col-start-1 text-xl prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
                     {!! $reference->text !!}
                 </div>
+
+                
+
             </div>  
                 @endif
 
@@ -71,7 +90,7 @@
                 @endforeach
 
                 @if($reference->link_href)
-                    <div class="mb-20 text-center">
+                    <div class="mb-20 text-right">
                         <x-button type="light" text="{{ $reference->link_text }}" link="{{ $reference->link_href }}" target="_blank" />
                     </div>
                 @endif

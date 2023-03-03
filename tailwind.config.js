@@ -24,6 +24,7 @@ module.exports = {
             black: '#161616',
             white: '#ffffff',
             gray: '#cccccc',
+            beige: '#F2F0EE',
         },
         container: {
             center: true,

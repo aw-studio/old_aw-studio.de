@@ -17,7 +17,7 @@
     }
     .h1 {
         transition: all 0.3s;
-        @apply mb-20 text-4xl font-semibold text-black;
+        @apply mb-20 text-4xl font-normal text-black;
     }
     @media (max-width: 768px) {
         .h1 {
@@ -105,7 +105,7 @@
 
     h2,
     .h2 {
-        @apply mb-8 text-3xl font-semibold text-black;
+        @apply mb-8 text-3xl font-normal text-black;
     }
     @media (max-width: 768px) {
         h2,
@@ -122,7 +122,7 @@
 
     h3,
     .h3 {
-        @apply mb-8 text-2xl font-semibold text-black;
+        @apply mb-8 text-2xl font-normal text-black;
     }
     @media (max-width: 768px) {
         h3,
@@ -167,7 +167,7 @@
     }
 
     .aw-list ul {
-        @apply mb-8 text-lg font-semibold text-black;
+        @apply mb-8 text-lg font-normal text-black;
     }
     @media (max-width: 768px) {
         .aw-list ul {
@@ -189,7 +189,7 @@
         @apply pl-8;
     }
     .aw-list ul li p {
-        @apply font-semibold;
+        @apply font-normal;
     }
     .aw-list.normal ul li p {
         @apply font-normal;
@@ -275,6 +275,7 @@ html {
 }
 
 body {
+    @apply antialiased;
     height: 100vh;
     overflow: hidden;
 }

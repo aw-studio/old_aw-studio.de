@@ -12,6 +12,11 @@ return [
     'all-references' => 'Alle Referenzen',
     'next-reference' => 'nächste Referenz ansehen',
     'related-references' => 'Passende Referenzen',
+    'realization' => 'Umsetzung',
+    'customer' => 'Auftraggeber',
+    'services' => 'Leistungen',
+    'highlight_references' => 'Highlight Referenzen',
+    'posts' => 'Beiträge',
 
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',

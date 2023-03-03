@@ -74,29 +74,56 @@ class CustomerConfig extends CrudConfig
     public function show(CrudShow $page)
     {
         $page->card(function ($form) {
-            $form->input('name')
+            $form->group(function ($form) {
+                $form->image('image')
+                ->title('Logo')
+                ->expand()
+                ->maxFiles(1);
+
+                $form->boolean('logo_wall')
+                ->title('Name Drop in Logowall');
+
+                $form->range('logo_scale')
+                ->title('Skalierung in Logowall')
+                ->min(10)
+                ->max(300)
+                ->step(5)
+                ->hint('Skalierung in %');
+            })->width(4);
+
+            $form->group(function ($form) {
+                $form->input('name')
                 ->title('Name')
-                ->creationRules('required')
-                ->width(6);
+                ->creationRules('required');
 
-            $form->input('suffix')
-                ->title('Zusatz')
-                ->width(6);
+                $form->boolean('active')
+                ->title('Aktiv');
 
-            $form->select('category_id')
+                $form->input('suffix')
+                ->title('Zusatz');
+
+                $form->select('category_id')
                 ->title('Kategorie')
                 ->options([
                     1 => 'Bildung und Forschung',
                     2 => 'Wirtschaft',
                     3 => 'Kunst & Kultur',
-                ])->width(6);
+                ]);
 
-            $form->input('url')
+                $form->input('url')
                 ->title('Url')
                 ->placeholder('https://')
                 ->rules('url')
-                ->max(200)
-                ->width(12);
+                ->max(200);
+            })->width(8);
+        });
+
+        $page->card(function ($form) {
+            $form->relation('references')
+                ->title('Referenzen')
+                ->preview(function ($table) {
+                    $table->col('{title}');
+                });
         });
     }
 }

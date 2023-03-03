@@ -208,11 +208,17 @@ class ReferenceConfig extends CrudConfig
         $page->info('Daten')
             ->width(3);
         $page->card(function ($form) {
-            $form->oneRelation('customer')
-                ->title('Kunde')
-                ->model(Customer::class)
-                ->preview(function ($preview) {
-                    $preview->col('name');
+            // $form->oneRelation('customer')
+            //     ->title('Kunde')
+            //     ->model(Customer::class)
+            //     ->preview(function ($preview) {
+            //         $preview->col('name');
+            //     });
+
+            $form->relation('customers')
+                ->title('Kunden')
+                ->preview(function ($table) {
+                    $table->col('{name}');
                 });
 
             $form->datetime('duration_from')

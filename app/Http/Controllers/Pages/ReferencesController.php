@@ -41,6 +41,16 @@ class ReferencesController extends Controller
         ]);
     }
 
+    public function az()
+    {
+        return view('pages.references.a-z')->with([
+            'references'    => ReferencesConfig::load(),
+            'highlights'    => HighlightsConfig::load(),
+            'featured'      => FeaturedConfig::load(),
+            'references_az' => Reference::active()->get()->sortBy('title', SORT_NATURAL | SORT_FLAG_CASE),
+        ]);
+    }
+
     private function getNextReferenceSlug($current)
     {
         $this->current = $current;

@@ -1,12 +1,8 @@
 <div class="container flex flex-col items-center md:h-full md:justify-between">
 
-
-
     <div class="pt-12 mx-auto text-3xl text-white md:text-4xl nav-row sm:pb-16 md:pb-0">
         <x-lit-nav-list :list="$nav->main" />
     </div>
-
-    
 
     <div class="relative pb-24 mt-auto nav-row md:pb-16">
 
@@ -51,7 +47,7 @@
     .lit-nav-list a {
         font-size: 42px;
         line-height: 48px;
-        font-weight: 600;
+        font-weight: 400;
         padding-bottom: .005rem;
         transition: all 0.2s;
         position: relative;
@@ -66,6 +62,7 @@
     }
     .lit-nav-list a.lit--active {
         margin-left: 60px;
+        font-weight: 400;
     }
     .lit-nav-list a:hover {
         border-bottom: 2px solid rgba(255, 255, 255, 1);

@@ -17,7 +17,7 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['name', 'suffix', 'category_id', 'url'];
+    protected $fillable = ['name', 'suffix', 'category_id', 'url', 'active', 'logo_wall', 'logo_scale'];
 
     /**
      * The attributes to be translated.
@@ -39,6 +39,11 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
      * @var array
      */
     protected $with = ['media', 'translations'];
+
+    protected $casts = [
+        'active' => 'boolean',
+        'logo_wall' => 'boolean',
+    ];
 
     const RESEARCH = 1;
     const INDUSTRY = 2;
@@ -67,5 +72,15 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
     public function scopeCulture($query)
     {
         return $query->where('category_id', self::CULTURE);
+    }
+
+    public function scopeHasLogo($query)
+    {
+        return $query->has('media');
+    }
+
+    public function references()
+    {
+        return $this->belongsToMany(Reference::class);
     }
 }
