@@ -247,7 +247,6 @@ class ReferenceConfig extends CrudConfig
                 });
         })->width(9);
 
-
         $page->onlyOnUpdate(function ($page) {
             $page->info('SEO')
                 ->width(3);
@@ -255,6 +254,5 @@ class ReferenceConfig extends CrudConfig
                 $form->seo();
             })->width(9);
         });
-
     }
 }
