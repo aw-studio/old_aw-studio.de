@@ -2,6 +2,7 @@
 class="
 group/button
 inline-block text-base font-normal border-2 rounded-md cursor-pointer hover:drop-shadow-2xl transition duration-300
+hover:scale-[1.025] 
 @if ($type == 'dark')
  text-white bg-black border-black hover:bg-black hover:text-white
 @endif

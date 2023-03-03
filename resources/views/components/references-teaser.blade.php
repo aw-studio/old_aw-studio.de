@@ -2,7 +2,7 @@
     @foreach ($references as $reference)
     <div class="mb-20">
         <div class="mb-4">
-            <a href="{{ __route('references.show',$reference->slug) }}">
+            <a href="{{ __route('references.show',$reference->slug) }}" class="block hover:scale-[1.025] transition-all duration-300">
                 <x-lit-image :image="$reference->image" :alt="$reference->title" class="w-full rounded-md" />
             </a>
         </div>

@@ -25,7 +25,7 @@ class Logowall extends Component
     public function render()
     {
         return view('components.logowall')->with([
-            'customers' => Customer::hasLogo()->inRandomOrder()->get(),
+            'customers' => Customer::where('logo_wall',1)->hasLogo()->inRandomOrder()->get(),
         ]);
     }
 }

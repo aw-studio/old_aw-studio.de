@@ -75,17 +75,33 @@ class CustomerConfig extends CrudConfig
     {
         $page->card(function ($form) {
 
+
             $form->group(function ($form) {
                 $form->image('image')
                 ->title('Logo')
                 ->expand()
                 ->maxFiles(1);
+
+                $form->boolean('logo_wall')
+                ->title('Name Drop in Logowall');
+
+                $form->range('logo_scale')
+                ->title('Skalierung in Logowall')
+                ->min(10)
+                ->max(300)
+                ->step(5)
+                ->hint('Skalierung in %');
+
             })->width(4);
+
 
             $form->group(function ($form) {
                 $form->input('name')
                 ->title('Name')
                 ->creationRules('required');
+
+                $form->boolean('active')
+                ->title('Aktiv');
 
             $form->input('suffix')
                 ->title('Zusatz');

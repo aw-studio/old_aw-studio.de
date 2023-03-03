@@ -113,17 +113,31 @@ aw-home
 </div>
 </section>
 
+
+<section class="bg-white">
+    <div class="container pt-20">
+
+        <div class="grid grid-cols-12 mb-20">
+            <div class="col-start-1 col-span-5 uppercase text-sm">
+                        {{ $form->h2_solutions }}
+            </div>
+            <div class="col-start-6 col-span-7 text-xl">
+                    <div class="aw-list lg:columns-2">
+                        {!! $form->list_solutions !!}
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section class="py-8 bg-black md:py-20 lg:py-40">
     <div class="container">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 mb-8 md:col-start-2 md:col-span-9 lg:col-start-1 lg:col-span-5 lg:mb-20">
-                <div class="lg:sticky top-sticky">
-                    <h2 class="mb-0 h1 lg:pr-8">
-                        {{ $form->h2_solutions }}
-                    </h2>
-                    <div class="mt-8 aw-list">
-                        {!! $form->list_solutions !!}
-                    </div>
+                <div class="text-white uppercase">
+                    {{ __('app.highlight_references') }}
                 </div>
             </div>
             <div class="col-span-12 col-start-1 mb-12 lg:col-start-6 lg:col-span-7 lg:mb-0">
@@ -155,7 +169,7 @@ aw-home
 
         <div class="grid grid-cols-12 mb-20">
             <div class="col-start-1 col-span-5 uppercase text-sm">
-                Beiträge
+                {{ __('app.posts') }}
             </div>
             <div class="col-start-6 col-span-7 text-xl">
                 <h2 class="mb-0 h1">
@@ -178,32 +192,6 @@ aw-home
     </div>
 </section>
 @endif
-
-
-{{-- @if($posts->isNotEmpty())
-<section class="py-8 bg-white md:py-20 lg:py-40">
-    <div class="container">
-        <div class="grid grid-cols-12 gap-5 mb-12">
-            <div class="col-span-12 col-start-1 lg:col-span-6">
-                <h2 class="mb-0 h1">
-                    {{ $form->h2_blog}}
-                </h2>
-            </div>
-            <div class="order-last col-span-12 col-start-1 lg:flex lg:mt-0 lg:col-start-7 lg:col-span-6 lg:justify-end lg:items-end lg:order-none">
-                <x-button type="dark" text="{{ $form->button_blog }}" link="{{ __route('blog.index') }}" />
-            </div>
-            @foreach($posts as $post)
-            <div class="col-span-12 mt-6 lg:col-span-6 lg:mt-12">
-                @if ($post->active)
-                    <x-post :post="$post" />
-                @endif
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-@endif --}}
-
 
 <section class="bg-white border-t border-black">
     <div class="container pt-20">

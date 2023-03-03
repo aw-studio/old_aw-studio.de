@@ -12,6 +12,11 @@ return [
     'all-references' => 'all references',
     'next-reference' => 'view next reference',
     'related-references' => 'Related references',
+    'realization' => 'Realization',
+    'customer' => 'Customer',
+    'services' => 'Services',
+    'highlight_references' => 'Highlight references',
+    'posts' => 'Posts',
 
     'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',

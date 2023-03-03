@@ -1,4 +1,4 @@
-<a href="{{ __route('blog.show',$post->slug)}}" class="relative block mb-2 lg:mb-6">
+<a href="{{ __route('blog.show',$post->slug)}}" class="relative group block mb-2 lg:mb-6 hover:scale-[1.025]  transition-all duration-300">
     <div class="relative">
         <div class="absolute">
             @if(count($post->tags) > 0 && $post->image)
@@ -18,4 +18,4 @@
         {!! $post->excerpt !!}
     </div>
 </a>
-<a class="aw-link" href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a>
+{{-- <a class="aw-link" href="{{ __route('blog.show',$post->slug)}}">{{__('app.read-post')}}</a> --}}
