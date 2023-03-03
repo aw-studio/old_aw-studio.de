@@ -17,7 +17,7 @@ class Customer extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['name', 'suffix', 'category_id', 'url','active', 'logo_wall', 'logo_scale'];
+    protected $fillable = ['name', 'suffix', 'category_id', 'url', 'active', 'logo_wall', 'logo_scale'];
 
     /**
      * The attributes to be translated.

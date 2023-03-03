@@ -74,8 +74,6 @@ class CustomerConfig extends CrudConfig
     public function show(CrudShow $page)
     {
         $page->card(function ($form) {
-
-
             $form->group(function ($form) {
                 $form->image('image')
                 ->title('Logo')
@@ -91,9 +89,7 @@ class CustomerConfig extends CrudConfig
                 ->max(300)
                 ->step(5)
                 ->hint('Skalierung in %');
-
             })->width(4);
-
 
             $form->group(function ($form) {
                 $form->input('name')
@@ -103,7 +99,7 @@ class CustomerConfig extends CrudConfig
                 $form->boolean('active')
                 ->title('Aktiv');
 
-            $form->input('suffix')
+                $form->input('suffix')
                 ->title('Zusatz');
 
                 $form->select('category_id')
