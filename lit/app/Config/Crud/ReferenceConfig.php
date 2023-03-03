@@ -247,10 +247,14 @@ class ReferenceConfig extends CrudConfig
                 });
         })->width(9);
 
-        $page->info('SEO Informations')
-            ->width(3);
-        $page->card(function ($form) {
-            $form->seo();
-        })->width(9);
+
+        $page->onlyOnUpdate(function ($page) {
+            $page->info('SEO')
+                ->width(3);
+            $page->card(function ($form) {
+                $form->seo();
+            })->width(9);
+        });
+
     }
 }
