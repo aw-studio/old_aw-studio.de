@@ -21,12 +21,12 @@ aw-first-section-is-white
 <section class="bg-white">
     <div class="container pt-20">
         <div class="grid grid-cols-12">
-            <div class="col-start-1 col-span-5">
-                <h1 class="mb-4 text-sm uppercase text-black mt-2">
+            <div class="col-start-1 col-span-full lg:col-span-5">
+                <h1 class="mb-4 text-sm uppercase text-black mt-2 mb-2">
                     {{ $services->h1 }}
                 </h1>
             </div>
-            <div class="col-start-6 col-span-7">
+            <div class="lg:col-start-6 col-span-full lg:col-span-7">
                 <h2 class="h1">
                     {{ $services->h2 }}
                 </h2>
@@ -38,11 +38,11 @@ aw-first-section-is-white
 
 <section class="pt-20 bg-white">
     <div class="bg-beige py-20">
-    <div class="container pb-8 md:pd-12 lg:pb-32">
-        <div class="grid grid-flow-row grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch">
+    <div class="container pb-8 md:pd-12 lg:pb-16">
+        <div class="grid grid-flow-row grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch">
             @foreach ($services->services as $service)
-            <div class="mb-0">
-                <a href="{{ __route('services.show', $service->slug)}}" class="group/service-item block translate duration-300 relative h-full">
+            <div class="mb-0 group/service-item hover:scale-[1.025] transition-all duration-300  hover:drop-shadow-2xl">
+                <a href="{{ __route('services.show', $service->slug)}}" class="block translate duration-300 relative h-full ">
                     <div class="bg-white rounded-md z-10 relative h-full">
                         <div class="flex flex-col h-full">
                             <div class="p-6">
@@ -57,10 +57,11 @@ aw-first-section-is-white
                                 </div>
                             </div>
                             <div class="mt-auto w-full flex justify-end p-4">
-                                <div class="bg-beige rounded-md w-10 h-10 flex items-center justify-center">
+                                <div class="bg-beige group-hover/service-item:bg-black rounded-md w-10 h-10 flex items-center justify-center transition-all duration-300">
                                     <svg 
                                 class="
-                                stroke-black
+                                stroke-black transition-all duration-300
+                                group-hover/service-item:stroke-white
                                 group-hover/service-item:animate-point-fast
                                 "
                                 width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +84,7 @@ aw-first-section-is-white
 <section class="pt-20 bg-white lg:pt-40">
     <div class="container pb-20 lg:pb-20">
         <div class="grid grid-cols-12">
-            <div class="col-start-1 col-span-5">
+            <div class="col-start-1 col-span-full lg:col-span-5">
                 <h2 class="mb-0 h1">
                     {!! nl2br(e($services->h2_philosophy_quote)) !!}
                 </h2>
@@ -91,7 +92,7 @@ aw-first-section-is-white
                     {!! $services->text_philosophy_credit !!}
                 </div>
             </div>
-            <div class="col-start-6 col-span-7 text-xl">
+            <div class="lg:col-start-6  col-span-full lg:col-span-7 text-xl">
                 {!! $services->text_philosophy !!}
             </div>
         </div>
@@ -135,10 +136,8 @@ aw-first-section-is-white
 
 
 <section class="pt-20 bg-white border-t border-black lg:pt-40">
-    <div class="container pb-8 md:pd-12 lg:pb-40">
-
-        <div class="grid grid-cols-12 gap-5 mb-20">
-
+    <div class="container pb-8 md:pd-12 lg:pb-20">
+        <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 md:col-span-10 lg:col-span-6">
                 <h2 class="h1">
                     {!! nl2br(e($services->h2_workflow)) !!}
@@ -149,8 +148,13 @@ aw-first-section-is-white
             </div>
 
         </div>
+    </div>
+</section>
 
-        <div class="grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+<section class="pt-12 lg:pt-20 bg-beige">
+    <div class="container pb-8 md:pd-12 lg:pb-20">
+        <div class="grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
             @foreach ($services->methods as $method)
             <div class="pr-12 mb-8">
 
@@ -168,14 +172,12 @@ aw-first-section-is-white
             </div>
             @endforeach
         </div>
-
-
     </div>
 </section>
 
 
 
-<section class="pt-40 pb-40 bg-white border-t border-white">
+<section class="py-20 lg:py-40 bg-white border-t border-white">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('references.index') }}">{{ __('app.next-references') }}</a>
     </div>

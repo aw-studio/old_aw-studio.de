@@ -37,7 +37,7 @@
     </div>
 </section>
 
-<section class="pt-20 pb-40 bg-white border-t border-white">
+<section class="py-20 lg:py-40 bg-white border-t border-black">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('home') }}">{{ __('app.back-home') }}</a>
     </div>

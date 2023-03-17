@@ -30,11 +30,13 @@
     </div>
 
     <div class="mb-12">
-        <div class="aw-list">
+        <div class="aw-list md:columns-2">
             {!! $jobs->list_jobs !!}
         </div>
     </div>
 
-    <x-button type="dark" text="{!! $jobs->button_jobs !!}" link="{{ __route('application') }}" />
+    <div class="flex justify-end">
+        <x-button type="dark" text="{!! $jobs->button_jobs !!}" link="{{ __route('application') }}" />
+    </div>
 
 </div>

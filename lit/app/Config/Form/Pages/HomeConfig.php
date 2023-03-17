@@ -53,15 +53,15 @@ class HomeConfig extends FormConfig
             ->width(3);
         $page->card(function ($form) {
             $form->image('header_images')->title('Header Images')->maxFiles(10);
-            $form->textarea('h1')->title('Headline Playground …')->translatable()->hint('jumbo (h1), buzzwords will be added typed');
-            $form->list('buzzwords')
-                ->title('… Buzzwords')
-                ->maxDepth(1)
-                ->previewTitle('{buzzword}')
-                ->form(function ($form) {
-                    $form->input('buzzword')
-                        ->title('Buzzword');
-                });
+            $form->textarea('h1')->title('Headline Animation …')->translatable()->hint('jumbo (h1), shuffled solutions will be added typed');
+            // $form->list('buzzwords')
+            //     ->title('… Buzzwords')
+            //     ->maxDepth(1)
+            //     ->previewTitle('{buzzword}')
+            //     ->form(function ($form) {
+            //         $form->input('buzzword')
+            //             ->title('Buzzword');
+            //     });
         })->width(9);
 
         $page->info('Intro')

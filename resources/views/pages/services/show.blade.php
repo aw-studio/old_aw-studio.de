@@ -18,19 +18,24 @@ aw-first-section-is-white
 <section class="bg-white aw-first-section">
     <div class="container pt-20 pb-10">
         <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
+            <div class="col-span-12 col-start-1 lg:col-span-7">
                 <h1 class="h1 aw--animate">
                     {{ $service->title }}
                 </h1>
                 {!! $service->text !!}    
             </div>
+                <div class="col-span-12 pt-4 pb-12 text-xl lg:col-span-5 lg:col-start-8">
+                    <div class="flex lg:justify-end">
+                        <a class="text-base aw-link" href="{{ __route('services') }}">{{ __('app.back-to-services-overview') }}</a>
+                    </div>
+                </div>
         </div> 
     </div>
 </section>
 
 @if($service->list != '' && $service->list != '<p></p>')
-<section class="bg-white aw-first-section border-t border-black">
-    <div class="container pt-20 pb-10">
+<section class="bg-beige">
+    <div class="container pt-20 pb-20">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
                 <div class="aw-list">
@@ -42,23 +47,24 @@ aw-first-section-is-white
 </section>
 @endif
 
-<section class="py-20 pb-40 bg-white border-t border-black">
+@if($service->references->count() > 0)
+<section class="py-20 pb-40 bg-white border-t border-white">
     <div class="container">
-        @if($service->references->count() > 0)
+        
         <h2 class="h2">
             {{ __('app.related-references') }}
         </h2>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 grid-auto-cols">
             @foreach ($service->references as $reference)
-            <div class="mb-4">
+            <div class="mb-4 hover:scale-[1.025] transition-all duration-300">
                 <div class="mb-4">
                     <a href="{{ __route('references.show',$reference->slug) }}">
-                        <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full" class="w-full" />
+                        <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full rounded-md" class="w-full" />
                     </a>
                 </div>
                 <div class="text-base">
                     <a class="text-xl aw-link" href="{{ __route('references.show',$reference->slug) }}">
-                        <b>{{ $reference->title }}</b>
+                        {{ $reference->title }}
                     </a>
                     <br>
                     {{ $reference->subtitle }}<br>
@@ -66,22 +72,10 @@ aw-first-section-is-white
             </div>
             @endforeach
         </div>
-        @endif
+        
     </div>
 </section>
-
-<section class="bg-white">
-    <div class="container pb-20">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 mb-20 text-xl lg:col-span-6 lg:col-start-6">
-                <a class="text-base aw-link" href="{{ __route('services') }}">{{ __('app.back-to-services-overview') }}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
+@endif
 
 @endsection
 

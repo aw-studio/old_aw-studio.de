@@ -85,7 +85,7 @@
                 <div v-if="post.active" class="mb-8">
                     <a
                         :href="`blog/${post.slug}`"
-                        class="relative block mb-2 lg:mb-6"
+                        class="relative block mb-2 lg:mb-6 hover:scale-[1.02] transition-all duration-300"
                     >
                         <div class="relative">
                             <div class="absolute">
@@ -99,7 +99,7 @@
                             <lit-image
                                 v-if="post.image"
                                 :image="post.image"
-                                classes="w-full z-10 mb-4 lg:mb-8"
+                                classes="w-full z-10 mb-4 lg:mb-8 rounded-md"
                             />
                         </div>
                         <h2
@@ -109,7 +109,7 @@
                         />
                         <div v-html="post.excerpt" class="text-lg pr-8" />
                     </a>
-                    <a
+                    <!-- <a
                         v-if="locale == 'de'"
                         id="go-to-post"
                         class="aw-link"
@@ -118,7 +118,7 @@
                     >
                     <a v-else class="aw-link" :href="`blog/${post.slug}`"
                         >Read post</a
-                    >
+                    > -->
                 </div>
             </div>
         </section>
@@ -127,7 +127,7 @@
 
 <script>
 export default {
-    name: 'Events',
+    name: "Events",
     props: {
         categories: {
             type: Array,
@@ -148,7 +148,7 @@ export default {
     methods: {
         async submit() {
             const { data } = await axios.post(`/api/blog`, {
-                tag_ids: _.map(this.selected, tag => {
+                tag_ids: _.map(this.selected, (tag) => {
                     return tag.id;
                 }),
             });
@@ -178,7 +178,7 @@ export default {
     },
     computed: {
         locale() {
-            return window.location.pathname.split('/')[1];
+            return window.location.pathname.split("/")[1];
         },
     },
 };

@@ -2427,7 +2427,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'Events',
+  name: "Events",
   props: {
     categories: {
       type: Array,
@@ -2500,7 +2500,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   computed: {
     locale: function locale() {
-      return window.location.pathname.split('/')[1];
+      return window.location.pathname.split("/")[1];
     }
   }
 });
@@ -24747,7 +24747,8 @@ var render = function () {
                 _c(
                   "a",
                   {
-                    staticClass: "relative block mb-2 lg:mb-6",
+                    staticClass:
+                      "relative block mb-2 lg:mb-6 hover:scale-[1.02] transition-all duration-300",
                     attrs: { href: "blog/" + post.slug },
                   },
                   [
@@ -24778,7 +24779,7 @@ var render = function () {
                           ? _c("lit-image", {
                               attrs: {
                                 image: post.image,
-                                classes: "w-full z-10 mb-4 lg:mb-8",
+                                classes: "w-full z-10 mb-4 lg:mb-8 rounded-md",
                               },
                             })
                           : _vm._e(),
@@ -24802,24 +24803,6 @@ var render = function () {
                     }),
                   ]
                 ),
-                _vm._v(" "),
-                _vm.locale == "de"
-                  ? _c(
-                      "a",
-                      {
-                        staticClass: "aw-link",
-                        attrs: { id: "go-to-post", href: "blog/" + post.slug },
-                      },
-                      [_vm._v("Beitrag lesen")]
-                    )
-                  : _c(
-                      "a",
-                      {
-                        staticClass: "aw-link",
-                        attrs: { href: "blog/" + post.slug },
-                      },
-                      [_vm._v("Read post")]
-                    ),
               ])
             : _vm._e(),
         ])

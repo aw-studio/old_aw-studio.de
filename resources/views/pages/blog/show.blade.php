@@ -9,15 +9,15 @@
 
 @section('content')
 
-<div class="col-span-12 mb-10 lg:col-span-10 lg:col-start-2">
-    <x-lit-image :image="$post->image" class="w-full max-h-[650px] object-cover object-top" />
-</div>
-
     <section class="bg-white">
-        <div class="container pb-20">
-            <div class="grid grid-cols-12 gap-5 mt-20 lg:mt-40">
-                <div class="col-span-12 lg:col-span-2 lg:col-start-2">
-                    <ul class="flex flex-wrap mt-2">
+        <div class="container py-8 md:py-20">
+
+                <div class="grid grid-cols-12 gap-5 mb-0 md:mb-0">
+                    <div class="col-span-12 col-start-1 row-start-1 lg:col-span-7">
+                        <h1 class="h1">
+                            {!!Str::of($post->h1)->replace('<p>', '')->replace('</p>', '')!!}
+                        </h1>
+                        <ul class="flex flex-wrap">
                         @foreach($post->tags as $tag)
                             <li>
                                 <div class="z-20 inline-block px-4 py-2 mb-2 mr-2 text-xs tracking-widest text-white uppercase bg-black rounded-full left-5 top-5 whitespace-nowrap">
@@ -25,44 +25,46 @@
                                 </div>
                             </li>
                         @endforeach
-                    </ul>
-                </div>
-                <div class="col-span-12 mb-20 text-xl lg:col-span-7 lg:col-start-5">
-                    <h1 class="h1">
-                        {!!Str::of($post->h1)->replace('<p>', '')->replace('</p>', '')!!}
-                    </h1>
-                    <div>
-                        {!!$post->excerpt!!}
+                        </ul>
+                        <div class="text-lg">
+                            {!!$post->excerpt!!}
+                        </div>
+                    </div>
+                    <div class="hidden col-span-3 col-start-10 row-start-1 mt-4 text-right sm:block">
+                        <a class="text-base aw-link" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
                     </div>
                 </div>
-
-
-            </div>
         </div>
     </section>
 
-    @if($post->text)
-    <div class="container pb-20">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 mb-20 text-xl lg:col-span-7 lg:col-start-5">
-                {!!$post->text!!}
+    <div class="pb-20">
+        <x-lit-image :image="$post->image" class="w-full max-h-[650px] object-cover object-top" />
+    </div>
+
+    <section>
+        <div class="container">
+
+            <div class="grid grid-cols-12 mb-20">
+                <div class="order-2 lg:order-none col-start-1 col-span-12 lg:col-span-5 text-sm mb-8">
+                    <div class="mb-20 text-base h-full">
+                        <div class="flex items-end h-full">
+                        {{__('app.published')}} {{Carbon\Carbon::parse($post->created_at)->format('d.m.Y')}}<br>
+                        {{__('app.last-updated')}} {{Carbon\Carbon::parse($post->updated_at)->format('d.m.Y')}}
+                    </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-none lg:col-start-6 col-span-12 lg:col-span-7 text-xl">
+                    @if($post->text)
+                    {!!$post->text!!}
+            @endif
+        
+            @if ($post)
+                @block($post->sections)
+            @endif
+                </div>
             </div>
         </div>
-    </div>
-    @endif
-
-    @if ($post)
-        @block($post->sections)
-    @endif
-
-    <div class="container pb-20">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 mb-20 text-base lg:col-span-7 lg:col-start-5">
-                {{__('app.published')}} {{Carbon\Carbon::parse($post->created_at)->format('d.m.Y')}}<br>
-                {{__('app.last-updated')}} {{Carbon\Carbon::parse($post->updated_at)->format('d.m.Y')}}
-            </div>
-        </div>
-    </div>
+    </section>
 
     @if($post->references->count() > 0)
     <section class="bg-white">
@@ -81,16 +83,5 @@
         </div>
     </section>
     @endif
-
-    <section class="bg-white">
-        <div class="container pb-20">
-            <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-12 mb-20 text-xl lg:col-span-7 lg:col-start-5">
-                    <a class="text-base aw-link" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 @endsection

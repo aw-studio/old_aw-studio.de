@@ -106,23 +106,26 @@ aw-first-section-is-white
     </div>
 </section>
 
-<section class="bg-white">
-    <div class="container pt-20 pb-40">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 col-start-1 lg:col-start-1 lg:col-span-7">
-                <x-lit-image :image="$studio->images_jobs" class="w-full" />
-            </div>
-            <div class="col-span-12 col-start-1 lg:col-start-8 lg:col-span-1">
-                @include('partials.svg.icon-arrow-ttb')
-            </div>
-            <div class="col-span-12 col-start-1 lg:col-start-9 lg:col-span-4 lg:mt-40">
-                <x-jobs />
+
+
+    <section class="bg-white border-t border-black">
+        <div class="container py-12 md:py-20">
+            <div class="grid grid-cols-12">
+                <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4">
+                    Jobs
+                </div>
+                <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
+                    <div class="mb-12">
+                        <x-lit-image :image="$studio->images_jobs" class="w-full" />
+                    </div>
+                    <x-jobs />
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="pt-40 pb-40 bg-white border-t border-white">
+
+<section class="pt-40 pb-40 bg-white border-t border-black">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
     </div>

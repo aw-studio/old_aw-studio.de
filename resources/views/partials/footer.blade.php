@@ -46,6 +46,8 @@
                     <span class="mr-4 font-semibold">//* Alle Wetter</span>
                     <span class="block mr-4 md:inline">{{ __('app.claim') }}</span>
                     <span class="block mr-4 md:inline">Burgstr. 4, D-24103 Kiel</span>
+                    <a class="aw-link" href="{{__route('directions')}}">{{ __('nav.directions') }}</a>
+
                 </div>
                 <div class="col-span-12 col-start-1 md:col-start-10 md:col-span-3">
                     <ul class="flex w-full md:justify-end">
@@ -54,9 +56,6 @@
                         </li>
                         <li class="mr-4 text-sm md:mr-0 md:ml-4">
                             <a class="aw-link" href="{{__route('imprint')}}">{{ __('nav.imprint') }}</a>
-                        </li>
-                        <li class="mr-4 text-sm md:mr-0 md:ml-4">
-                            <a class="aw-link" href="{{__route('directions')}}">{{ __('nav.directions') }}</a>
                         </li>
                     </ul>
                 </div>
