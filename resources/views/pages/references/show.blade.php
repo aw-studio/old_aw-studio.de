@@ -53,38 +53,16 @@
                                 @endforeach
                             </ul>
                         </div>
-
-                        @if($reference->services->count() > 0)
-                        <div class="text-xl mb-4">{{ __('app.services')}}</div>
-                        <div class="flex flex-wrap aw-list">
-                            <ul>
-                                @foreach($reference->services as $service)
-                                <li class="text-sm">{{ $service->title }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-
-                        @if($reference->technologies->count() > 0)
-                        <div class="text-xl mb-4">Technologien</div>
-                        <div class="flex flex-wrap aw-list">
-                            <ul>
-                                @foreach($reference->technologies as $technology)
-                                <li class="text-sm">{{ $technology->name }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-
                     </div>
                     @endif
                     </div>
                 </div>
                 <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+                    <div class="text-xl">
                     {!! $reference->text !!}
                 </div>
+                </div>
             </div>  
-
 
                 @endif
 
@@ -121,22 +99,39 @@
                 @endif
         </div>
 
+        <div class="grid grid-cols-12 py-0 md:py-20">
+            <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
+                <div class="flex flex-row-reverse justify-between md:block">
+                <div class="pb-20">
+                    @if($reference->services->count() > 0)
+                    <div class="text-xl mb-4">{{ __('app.services')}}</div>
+                    <div class="flex flex-wrap aw-list">
+                        <ul>
+                            @foreach($reference->services as $service)
+                            <li class="text-sm">{{ $service->title }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
 
-<section>
-    <div class="grid grid-cols-12 py-0 md:py-20">
-        <div class="col-span-12 md:col-span-7 lg:col-span-6 col-start-1 lg:col-start-2 prose">
-            <h2> Mekmale / Features</h2>
-            {!! $reference->buzzwords !!}
-        </div>
-        <div class="col-span-12 md:col-span-3 lg:col-span-4 col-start-1 md:col-start-10 lg:col-start-9 text-white">
-            <div class="flex justify-between md:block mt-4">
-                
+                    @if($reference->technologies->count() > 0)
+                    <div class="text-xl mb-4">Technologien</div>
+                    <div class="flex flex-wrap aw-list">
+                        <ul>
+                            @foreach($reference->technologies as $technology)
+                            <li class="text-sm">{{ $technology->name }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
+
+                </div>
+                </div>
             </div>
-        </div>
-
-    </div> 
-
-</section>
+            <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+        {!! $reference->buzzwords !!}
+            </div>
+        </div>  
 
     </div>
 </section>

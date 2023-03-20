@@ -132,14 +132,6 @@ class ReferenceConfig extends CrudConfig
             ->width(3);
         $page->card(function ($form) {
 
-            $form->group(function ($form) {
-                $form->wysiwyg('buzzwords')
-                    ->title('Merkmale / Features')
-                    ->translatable()
-                    ->width(12);
-            })->width(6);   
-
-            $form->group(function ($form) {
                 $form->input('date')
                     ->title('Umsetzung (Jahr/e)');
                     $form->datetime('duration_from')
@@ -153,27 +145,27 @@ class ReferenceConfig extends CrudConfig
 
             $form->input('budget')->type('number');
 
-            })->width(6);   
-        })->width(9);
-
-        $page->info('Auftraggeber')
-->width(3);
-$page->card(function ($form) {
-
-$form->relation('customers')
+            $form->relation('customers')
     ->title('Auftraggeber')
     ->preview(function ($table) {
         $table->col('{name}');
     });
-})->width(9);
+
+        })->width(9);
+
 
         $page->info('Beschreibung')
         ->width(3);
     $page->card(function ($form) {
         $form->wysiwyg('text')
-        ->title('Beschreibung')
+        ->title('Einleitung')
         ->translatable()
         ->width(12);
+        $form->wysiwyg('buzzwords')
+        ->title('Merkmale / Features')
+        ->translatable()
+        ->width(12);
+
         $form->input('link_href')
         ->title('Link Href')
         ->placeholder('https://')
