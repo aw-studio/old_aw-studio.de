@@ -77,7 +77,7 @@ aw-first-section-is-white
     <div class="container pt-12 md:pt-20 pb-20">
         <div class="grid grid-cols-12">
             <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
-                Unser Fokus 
+                {{ $services->title_philosophy }}
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7">
                 <h2 class="mb-0 h1">
@@ -94,12 +94,11 @@ aw-first-section-is-white
     </div>
 </section>
 
-
 <section class="bg-white border-t border-black">
     <div class="container pt-12 md:pt-20 pb-20">
         <div class="grid grid-cols-12">
             <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
-                Unsere Methoden 
+                {{ $services->title_workflow }}
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
                 <h2 class="h1">
@@ -112,7 +111,6 @@ aw-first-section-is-white
         </div>
     </div>
 </section>
-
 
 <section class="pt-12 lg:pt-20 bg-beige">
     <div class="container pb-8 md:pd-12 lg:pb-20">
