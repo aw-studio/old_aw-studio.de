@@ -34,20 +34,48 @@
             <div class="grid grid-cols-12 py-0 md:py-20">
                 <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
                     <div class="flex flex-row-reverse justify-between md:block">
-                        <div class="mb-8 text-xl text-right md:text-left">
-                            <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
-                            {!! $reference->date !!}
+                        <div class="mb-8 text-right md:text-left">
+                            <div class="text-xl mb-4">{{ __('app.realization')}}</div>
+                            <span class="text-sm">
+                                {!! $reference->date !!}
+                            </span>
                         </div>
                         @if($reference->customers->count() > 0)
                     <div class="pb-20">
-                        <b class="text-xl">{{ __('app.customer')}}</b><br>
-                        <div class="flex flex-wrap">
-                            @foreach($reference->customers as $customer)
-                            <div class="bg-white mr-6 w-[200px] lg:w-[75%] aspect-video p-6 mt-6">
-                                <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
-                            </div>
-                            @endforeach
+                        <div class="text-xl mb-4">{{ __('app.customer')}}</div>
+                        <div class="flex flex-wrap aw-list">
+                            <ul>
+                                @foreach($reference->customers as $customer)
+                                <li class="text-sm">{{ $customer->name }}</li>
+                                {{-- <div class="bg-white mr-6 w-[200px] lg:w-[75%] aspect-video p-6 mt-6">
+                                    <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
+                                </div> --}}
+                                @endforeach
+                            </ul>
                         </div>
+
+                        @if($reference->services->count() > 0)
+                        <div class="text-xl mb-4">{{ __('app.services')}}</div>
+                        <div class="flex flex-wrap aw-list">
+                            <ul>
+                                @foreach($reference->services as $service)
+                                <li class="text-sm">{{ $service->title }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
+                        @if($reference->technologies->count() > 0)
+                        <div class="text-xl mb-4">Technologien</div>
+                        <div class="flex flex-wrap aw-list">
+                            <ul>
+                                @foreach($reference->technologies as $technology)
+                                <li class="text-sm">{{ $technology->name }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
                     </div>
                     @endif
                     </div>
@@ -58,53 +86,21 @@
             </div>  
 
 
-            {{-- <div class="grid grid-cols-12 py-0 md:py-20">
-
-                <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
-
-                    <div class="flex flex-row-reverse justify-between md:block">
-                    <div class="mb-8 text-xl text-right md:text-left">
-                        <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
-                        {!! $reference->date !!}
-                    </div>
-                    <div class="aw-list">
-                        <b class="text-xl mb-4 inline-block">{{ __('app.services')}}</b><br>
-                        {!! $reference->buzzwords !!}
-                    </div>
-
-                    <div class="aw-list">
-                        <b class="text-xl mb-4 inline-block">Technologien</b><br>
-                        {!! $reference->technologies !!}
-
-                    </div>
-
-                    </div>
-                    
-                </div>
-
-
-                <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
-                    {!! $reference->text !!}
-                </div>
-
-            </div>   --}}
-
-
                 @endif
 
                 <div class="text-white">
 
                     @if ($detail->type == 'image_1xfull')                    
-                        <x-lit-image :image="$detail->image" :alt="$reference->title" class="w-full" />
+                        <x-lit-image :image="$detail->image" :alt="$reference->title" class="w-full rounded-md" />
                     @endif
 
                     @if ($detail->type == 'image_2xhalf')
                     <div class="flex flex-wrap">
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image1" :alt="$reference->title" class="w-full" />
+                            <x-lit-image :image="$detail->image1" :alt="$reference->title" class="w-full rounded-md rounded-b-none sm:rounded-r-none sm:rounded-b-md" />
                         </div>
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image2" :alt="$reference->title" class="w-full" />
+                            <x-lit-image :image="$detail->image2" :alt="$reference->title" class="w-full rounded-md rounded-t-none sm:rounded-l-none sm:rounded-t-md" />
                         </div>
                     </div>
                     @endif
@@ -135,29 +131,6 @@
         <div class="col-span-12 md:col-span-3 lg:col-span-4 col-start-1 md:col-start-10 lg:col-start-9 text-white">
             <div class="flex justify-between md:block mt-4">
                 
-                <div class="mb-12">
-                    <h3 class="h4 mb-4 text-base">Erbrachte Leistungen</h3>       
-                    <div class="aw-list ">     
-                    <ul>
-                            @foreach($reference->services as $service)
-                            <li>{{ $service->title }}</li>
-                            @endforeach
-                    </ul>
-                </div>
-                </div>
-
-                <div class="mb-12">
-                    <h3 class="h4 mb-4 text-base">Eingesetze Technologien</h3>       
-                    <div class="aw-list ">     
-                    <ul>
-                        @foreach($reference->technologies as $technology)
-                        <li>{{ $technology->name }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                </div>
-
-
             </div>
         </div>
 
