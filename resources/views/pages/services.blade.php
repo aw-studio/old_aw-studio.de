@@ -1,9 +1,6 @@
 @extends('app')
 
 @section('meta')
-{{-- @if ($services->meta->title)
-<title>{{ $services->meta->title }}</title>
-@endif --}}
 <x-lit-meta :for="$services" />
 @endsection
 
@@ -11,18 +8,13 @@
 aw-first-section-is-white
 @endsection
 
-{{-- @section('meta')
-<x-meta :metaTitle="$services->metaTitle" :metaDescription="$services->metaDescription" :metaKeywords="$services->metaKeywords" />
-@endsection --}}
-
-
 @section('content')
 
 <section class="bg-white">
     <div class="container pt-20">
         <div class="grid grid-cols-12">
             <div class="col-start-1 col-span-full lg:col-span-5">
-                <h1 class="mb-4 text-sm uppercase text-black mt-2 mb-2">
+                <h1 class="text-sm uppercase text-black mt-2 mb-2 tracking-widest">
                     {{ $services->h1 }}
                 </h1>
             </div>
@@ -30,7 +22,9 @@ aw-first-section-is-white
                 <h2 class="h1">
                     {{ $services->h2 }}
                 </h2>
-                {!! $services->text_intro !!}
+                <div class="text-xl">
+                    {!! $services->text_intro !!}
+                </div>
             </div>
         </div>
     </div>
@@ -71,7 +65,6 @@ aw-first-section-is-white
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="absolute top-0 left-0 h-full w-full drop-shadow-2xl group-hover/service-item:drop-shadow-3xl bg-white rounded-md translate duration-500" class="z-index:-1;"></div> --}}
                 </a>
             </div>
             @endforeach
@@ -80,65 +73,35 @@ aw-first-section-is-white
 </div>
 </section>
 
-
-<section class="pt-20 bg-white lg:pt-40">
-    <div class="container pb-20 lg:pb-20">
+<section class="bg-white">
+    <div class="container pt-12 md:pt-20 pb-20">
         <div class="grid grid-cols-12">
-            <div class="col-start-1 col-span-full lg:col-span-5">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
+                Unser Fokus 
+            </div>
+            <div class="lg:col-start-6 col-span-full lg:col-span-7">
                 <h2 class="mb-0 h1">
                     {!! nl2br(e($services->h2_philosophy_quote)) !!}
                 </h2>
                 <div class="mt-4">
                     {!! $services->text_philosophy_credit !!}
                 </div>
-            </div>
-            <div class="lg:col-start-6  col-span-full lg:col-span-7 text-xl">
-                {!! $services->text_philosophy !!}
+                <div class="text-xl">
+                    {!! $services->text_philosophy !!}
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 
-
-
-<section class="bg-white pt-40">
-
-    <div class="container pb-40">
-
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 col-start-1 lg:col-start-1 lg:col-span-7">
-                @isset($services->images[0])
-                <x-lit-image :image="$services->images[0]" class="w-full" />
-                @endisset
+<section class="bg-white border-t border-black">
+    <div class="container pt-12 md:pt-20 pb-20">
+        <div class="grid grid-cols-12">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
+                Unsere Methoden 
             </div>
-            <div class="col-span-12 col-start-1 lg:col-start-8 lg:col-span-1">
-                @include('partials.svg.icon-arrow-ttb')
-            </div>
-
-            <div class="col-span-12 col-start-1 mt-8 mb-8 sm:col-start-1 sm:col-span-8 lg:col-start-9 lg:col-span-5 lg:mt-64 lg:mb-20">
-                @isset($services->images[1])
-                <x-lit-image :image="$services->images[1]" class="w-full" />
-                @endisset
-            </div>
-            <div class="col-span-12 col-start-1 lg:col-start-4 lg:col-span-6">
-                @isset($services->images[2])
-                <x-lit-image :image="$services->images[2]" class="w-full" />
-                @endisset
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="pt-20 bg-white border-t border-black lg:pt-40">
-    <div class="container pb-8 md:pd-12 lg:pb-20">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 col-start-1 md:col-span-10 lg:col-span-6">
+            <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
                 <h2 class="h1">
                     {!! nl2br(e($services->h2_workflow)) !!}
                 </h2>
@@ -146,7 +109,6 @@ aw-first-section-is-white
                     {!! $services->text_workflow !!}
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -174,8 +136,6 @@ aw-first-section-is-white
         </div>
     </div>
 </section>
-
-
 
 <section class="py-20 lg:py-40 bg-white border-t border-white">
     <div class="container text-center">
