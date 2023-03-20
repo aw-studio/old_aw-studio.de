@@ -130,16 +130,16 @@ class ReferenceConfig extends CrudConfig
         $page->info('Überblick')
             ->width(3);
         $page->card(function ($form) {
-                $form->input('date')
-                    ->title('Umsetzung (Jahr/e)');
-                $form->datetime('duration_from')
-                ->title('Laufzeit von')
-                ->formatted('l')
-                ->width(6);
-                $form->datetime('duration_to')
-                        ->title('Laufzeit bis')
-                        ->formatted('l')
-                        ->width(6);
+            $form->input('date')
+                ->title('Umsetzung (Jahr/e)');
+            $form->datetime('duration_from')
+            ->title('Laufzeit von')
+            ->formatted('l')
+            ->width(6);
+            $form->datetime('duration_to')
+                    ->title('Laufzeit bis')
+                    ->formatted('l')
+                    ->width(6);
 
             $form->input('budget')->type('number');
 
@@ -148,26 +148,24 @@ class ReferenceConfig extends CrudConfig
     ->preview(function ($table) {
         $table->col('{name}');
     });
-
         })->width(9);
-
 
         $page->info('Beschreibung')
         ->width(3);
-    $page->card(function ($form) {
-        $form->wysiwyg('text')
-        ->title('Einleitung')
-        ->translatable()
-        ->width(12);
-        $form->wysiwyg('buzzwords')
-        ->title('Merkmale / Features')
-        ->translatable()
-        ->width(12);
+        $page->card(function ($form) {
+            $form->wysiwyg('text')
+            ->title('Einleitung')
+            ->translatable()
+            ->width(12);
+            $form->wysiwyg('buzzwords')
+            ->title('Merkmale / Features')
+            ->translatable()
+            ->width(12);
 
-        $form->input('link_href')
-        ->title('Link Href')
-        ->placeholder('https://')
-        ->width(6);
+            $form->input('link_href')
+            ->title('Link Href')
+            ->placeholder('https://')
+            ->width(6);
 
             $form->input('link_text')
                 ->title('Link Text')
