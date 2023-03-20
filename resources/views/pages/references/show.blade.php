@@ -29,19 +29,16 @@
             @foreach ($reference->details as $detail)
 
             @if($loop->iteration == 2)
+
+
             <div class="grid grid-cols-12 py-0 md:py-20">
                 <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
                     <div class="flex flex-row-reverse justify-between md:block">
-                    <div class="mb-8 text-xl text-right md:text-left">
-                        <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
-                        {!! $reference->date !!}
-                    </div>
-                    <div class="aw-list">
-                        <b class="text-xl mb-4 inline-block">{{ __('app.services')}}</b><br>
-                        {!! $reference->buzzwords !!}
-                    </div>
-                    </div>
-                    @if($reference->customers->count() > 0)
+                        <div class="mb-8 text-xl text-right md:text-left">
+                            <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
+                            {!! $reference->date !!}
+                        </div>
+                        @if($reference->customers->count() > 0)
                     <div class="pb-20">
                         <b class="text-xl">{{ __('app.customer')}}</b><br>
                         <div class="flex flex-wrap">
@@ -53,14 +50,46 @@
                         </div>
                     </div>
                     @endif
+                    </div>
                 </div>
-                <div class="col-span-12 col-start-1 text-xl prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+                <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+                    {!! $reference->text !!}
+                </div>
+            </div>  
+
+
+            {{-- <div class="grid grid-cols-12 py-0 md:py-20">
+
+                <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
+
+                    <div class="flex flex-row-reverse justify-between md:block">
+                    <div class="mb-8 text-xl text-right md:text-left">
+                        <b class="mb-4 inline-block">{{ __('app.realization')}}</b><br>
+                        {!! $reference->date !!}
+                    </div>
+                    <div class="aw-list">
+                        <b class="text-xl mb-4 inline-block">{{ __('app.services')}}</b><br>
+                        {!! $reference->buzzwords !!}
+                    </div>
+
+                    <div class="aw-list">
+                        <b class="text-xl mb-4 inline-block">Technologien</b><br>
+                        {!! $reference->technologies !!}
+
+                    </div>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
                     {!! $reference->text !!}
                 </div>
 
-                
+            </div>   --}}
 
-            </div>  
+
                 @endif
 
                 <div class="text-white">
@@ -95,6 +124,47 @@
                     </div>
                 @endif
         </div>
+
+
+<section>
+    <div class="grid grid-cols-12 py-0 md:py-20">
+        <div class="col-span-12 md:col-span-7 lg:col-span-6 col-start-1 lg:col-start-2 prose">
+            <h2> Mekmale / Features</h2>
+            {!! $reference->buzzwords !!}
+        </div>
+        <div class="col-span-12 md:col-span-3 lg:col-span-4 col-start-1 md:col-start-10 lg:col-start-9 text-white">
+            <div class="flex justify-between md:block mt-4">
+                
+                <div class="mb-12">
+                    <h3 class="h4 mb-4 text-base">Erbrachte Leistungen</h3>       
+                    <div class="aw-list ">     
+                    <ul>
+                            @foreach($reference->services as $service)
+                            <li>{{ $service->title }}</li>
+                            @endforeach
+                    </ul>
+                </div>
+                </div>
+
+                <div class="mb-12">
+                    <h3 class="h4 mb-4 text-base">Eingesetze Technologien</h3>       
+                    <div class="aw-list ">     
+                    <ul>
+                        @foreach($reference->technologies as $technology)
+                        <li>{{ $technology->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div> 
+
+</section>
+
     </div>
 </section>
 

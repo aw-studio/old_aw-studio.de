@@ -98,67 +98,124 @@ class ReferenceConfig extends CrudConfig
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {
-            $form->boolean('active')
+
+            $form->group(function ($form) {
+                $form->boolean('active')
                 ->title('Live')
                 ->width(1 / 3);
-            $form->image('image')
+
+                $form->input('title')
+                ->title('Titel')
+                ->translatable()
+                ->creationRules('required')
+                ->width(12);
+    
+                $form->input('subtitle')
+                    ->title('Unterzeile')
+                    ->translatable()
+                    ->width(12);
+            })->width(6);
+
+            $form->group(function ($form) {
+                $form->image('image')
                 ->title('Vorschaubild')
                 ->expand()
-                ->maxFiles(1)
-                ->firstBig();
+                ->maxFiles(1);
+            })->width(6);
 
             $form->wysiwyg('excerpt')
                 ->title('Vorschau-Text')
                 ->translatable();
         })->width(9);
 
-        $page->info('Info')
+        $page->info('Überblick')
             ->width(3);
         $page->card(function ($form) {
+
             $form->group(function ($form) {
-                $form->input('title')
-                    ->title('Titel')
-                    ->translatable()
-                    ->creationRules('required')
-                    ->width(12);
-
-                $form->input('subtitle')
-                    ->title('Unterzeile')
-                    ->translatable()
-                    ->width(12);
-
-                $form->input('date')
-                    ->title('Jahr')
-                    ->width(6);
-
                 $form->wysiwyg('buzzwords')
-                    ->title('Buzzwords')
+                    ->title('Merkmale / Features')
                     ->translatable()
                     ->width(12);
+            })->width(6);   
 
-                $form->wysiwyg('text')
-                    ->title('Beschreibung')
-                    ->translatable()
-                    ->width(12);
-
-                $form->input('link_href')
-                    ->title('Link Href')
-                    ->placeholder('https://')
-                    ->width(12);
-
-                $form->input('link_text')
-                    ->title('Link Text')
-                    ->placeholder('z.B. zur Website')
-                    ->translatable()
+            $form->group(function ($form) {
+                $form->input('date')
+                    ->title('Umsetzung (Jahr/e)');
+                    $form->datetime('duration_from')
+                    ->title('Laufzeit von')
+                    ->formatted('l')
                     ->width(6);
-            })->width(8);
+            $form->datetime('duration_to')
+                    ->title('Laufzeit bis')
+                    ->formatted('l')
+                    ->width(6);
+
+            $form->input('budget')->type('number');
+
+            })->width(6);   
         })->width(9);
 
-        $page->info('Details')
+        $page->info('Auftraggeber')
+->width(3);
+$page->card(function ($form) {
+
+$form->relation('customers')
+    ->title('Auftraggeber')
+    ->preview(function ($table) {
+        $table->col('{name}');
+    });
+})->width(9);
+
+        $page->info('Beschreibung')
+        ->width(3);
+    $page->card(function ($form) {
+        $form->wysiwyg('text')
+        ->title('Beschreibung')
+        ->translatable()
+        ->width(12);
+        $form->input('link_href')
+        ->title('Link Href')
+        ->placeholder('https://')
+        ->width(6);
+
+    $form->input('link_text')
+        ->title('Link Text')
+        ->placeholder('z.B. zur Website')
+        ->translatable()
+        ->width(6);
+    })->width(9);   
+
+
+    $page->info('Leistungen')
+    ->width(3);
+$page->card(function ($form) {
+    $form->manyRelation('services')
+    ->title('Erbrachte Leistungen')
+    ->model(Service::class)
+    ->sortable()
+    ->preview(function ($preview) {
+        $preview->col('title');
+    });
+})->width(9);  
+
+$page->info('Technologien')
+->width(3);
+$page->card(function ($form) {
+    $form->manyRelation('technologies')
+    ->title('Eingesetzte Technologien')
+    ->model(Technology::class)
+    ->sortable()
+    ->preview(function ($preview) {
+        $preview->col('name');
+    });
+})->width(9);  
+
+        $page->info('Bilder & Details')
             ->width(3);
         $page->card(function ($form) {
             $form->block('details')
-                ->title('Details')
+                ->title('Bilder & ggf. weitere Details')
                 ->repeatables(function ($repeatables) {
                     $repeatables->add('image_1xfull', function ($form, $preview) {
                         $preview->image('image')
@@ -202,48 +259,6 @@ class ReferenceConfig extends CrudConfig
                         $form->wysiwyg('text')
                             ->title('Text');
                     });
-                });
-        })->width(9);
-
-        $page->info('Daten')
-            ->width(3);
-        $page->card(function ($form) {
-            // $form->oneRelation('customer')
-            //     ->title('Kunde')
-            //     ->model(Customer::class)
-            //     ->preview(function ($preview) {
-            //         $preview->col('name');
-            //     });
-
-            $form->relation('customers')
-                ->title('Kunden')
-                ->preview(function ($table) {
-                    $table->col('{name}');
-                });
-
-            $form->datetime('duration_from')
-                    ->title('Laufzeit von')
-                    ->formatted('l')
-                    ->width(6);
-            $form->datetime('duration_to')
-                    ->title('Laufzeit bis')
-                    ->formatted('l')
-                    ->width(6);
-
-            $form->input('budget')->type('number');
-
-            $form->manyRelation('services')
-                ->title('Leistungen')
-                ->model(Service::class)
-                ->preview(function ($preview) {
-                    $preview->col('title');
-                });
-
-            $form->manyRelation('technologies')
-                ->title('Technologien')
-                ->model(Technology::class)
-                ->preview(function ($preview) {
-                    $preview->col('name');
                 });
         })->width(9);
 

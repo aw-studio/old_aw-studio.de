@@ -79,7 +79,7 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
 
     public function customer()
     {
-        return $this->oneRelation(Customer::class, 'customer');
+        return $this->manyRelation(Customer::class, 'customer');
     }
 
     public function services()
@@ -89,7 +89,7 @@ class Reference extends Model implements HasMediaContract, TranslatableContract,
 
     public function technologies()
     {
-        return $this->oneRelation(Technology::class, 'technologies');
+        return $this->manyRelation(Technology::class, 'technologies');
     }
 
     public function customers()

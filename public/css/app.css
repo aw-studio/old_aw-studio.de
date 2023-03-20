@@ -1842,6 +1842,11 @@ section.bg-black ul,
   line-height: 22px !important;
 }
 
+.\!text-base{
+  font-size: 18px !important;
+  line-height: 26px !important;
+}
+
 .font-normal{
   font-weight: 400;
 }
@@ -2435,6 +2440,14 @@ body.aw-first-section-is-white.aw-nav-animating {
 
   .md\:col-start-6{
     grid-column-start: 6;
+  }
+
+  .md\:col-start-7{
+    grid-column-start: 7;
+  }
+
+  .md\:col-start-8{
+    grid-column-start: 8;
   }
 
   .md\:mb-0{
