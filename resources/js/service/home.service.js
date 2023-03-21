@@ -1,11 +1,9 @@
-import Typed from "typed.js";
+import Typed from 'typed.js';
 
-const buzzwords = document
-    .querySelector("#buzzwords")
-    .dataset.buzzwords.split(",");
+const buzzwords = document.querySelector('#buzzwords').dataset.buzzwords.split(',');
 
-if (document.getElementById("typed-buzzwords")) {
-    var typed = new Typed("#typed-buzzwords", {
+if (document.getElementById('typed-buzzwords')) {
+    var typed = new Typed('#typed-buzzwords', {
         strings: buzzwords,
         typeSpeed: 50,
         backSpeed: 20,
