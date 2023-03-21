@@ -16,7 +16,7 @@ aw-first-section-is-white
 <section class="bg-white aw-first-section">
     <div class="container py-12 md:py-20">
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 Studio           
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
@@ -57,7 +57,7 @@ aw-first-section-is-white
 <section class="bg-white border-t border-black">
     <div class="container py-12 md:py-20">
         <div class="grid grid-cols-12">
-            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 Team 
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
@@ -74,10 +74,10 @@ aw-first-section-is-white
                 <div class="grid grid-flow-row grid-cols-12 gap-4">
                     @isset($studio->team_members)
                     @foreach ($studio->team_members as $team_member)            
-                    <div class="col-span-4">
+                    <div class="col-span-6 md:col-span-4">
                         <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full mb-4"/>
-                        <span class="mt-2 text-base">
-                            <b>{{ $team_member->name }}</b><br>
+                        <span class="inline-block mb-4 text-base">
+                            <span class="block font-semibold leading-5">{{ $team_member->name }}</span>
                             @if($team_member->position)
                                 {{ $team_member->position }}<br>
                                 @endif
@@ -95,7 +95,7 @@ aw-first-section-is-white
     <section class="bg-white border-t border-black">
         <div class="container py-12 md:py-20">
             <div class="grid grid-cols-12">
-                <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4">
+                <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                     Jobs
                 </div>
                 <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
@@ -109,7 +109,7 @@ aw-first-section-is-white
     </section>
 
 
-<section class="pt-40 pb-40 bg-white border-t border-black">
+<section class="py-20 lg:py-40 bg-white border-t border-black">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('blog.index') }}">{{ __('app.next-blog') }}</a>
     </div>

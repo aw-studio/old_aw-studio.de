@@ -33,9 +33,9 @@
     </div>
 </section>
 
-<section class="bg-white pb-32">
+<section class="bg-white pb-12 lg:pb-32">
     <div class="container">
-        <div class="flex justify-end pt-12">
+        <div class="flex justify-end md:pt-12">
             <div>
                 <x-button :type="'dark'" text="{{ $references->h3_az }}" link="{{ __route('references.a-z') }}" />
             </div>
@@ -43,7 +43,7 @@
     </div>
 </section>
 
-<section class="pt-40 pb-40 bg-white border-t border-black">
+<section class="py-20 lg:py-40 bg-white border-t border-black">
     <div class="container text-center">
                 <a class="aw-link" href="{{ __route('studio') }}">{{ __('app.next-studio') }}</a>
             </div>

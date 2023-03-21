@@ -1,4 +1,4 @@
-<a href="{{ __route('blog.show',$post->slug)}}" class="relative group block mb-2 lg:mb-6 hover:scale-[1.025]  transition-all duration-300">
+<a href="{{ __route('blog.show',$post->slug)}}" class="relative group block mb-2 lg:mb-6 hover:scale-[1.025] active:scale-100 transition-all duration-300">
     <div class="relative">
         <div class="absolute">
             @if(count($post->tags) > 0 && $post->image)

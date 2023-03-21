@@ -13,7 +13,7 @@
     <div class="container py-8 md:py-20">
         <div class="grid grid-cols-12 gap-5 mb-0 md:mb-20">
             <div class="col-span-12 col-start-1 row-start-1 lg:col-span-9">
-                <h1 class="mb-0 h1">
+                <h1 class="mb-0 h1 pr-32">
                     {{ $reference->title }}
                 </h1>
                 <div class="mt-4 text-xl text-white">
@@ -46,7 +46,7 @@
                         <div class="flex flex-wrap aw-list">
                             <ul>
                                 @foreach($reference->customers as $customer)
-                                <li class="text-sm">{{ $customer->name }}</li>
+                                <li class="text-sm">{{ $customer->name }} – {{ $customer->suffix }}</li>
                                 {{-- <div class="bg-white mr-6 w-[200px] lg:w-[75%] aspect-video p-6 mt-6">
                                     <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
                                 </div> --}}
@@ -100,8 +100,8 @@
         </div>
 
         <div class="grid grid-cols-12 py-0 md:py-20">
-            <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 ">
-                <div class="flex flex-row-reverse justify-between md:block">
+            <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 order-2 md:order-none">
+                <div class="flex justify-between md:block">
                 <div class="pb-20">
                     @if($reference->services->count() > 0)
                     <div class="text-xl mb-4">{{ __('app.services')}}</div>
@@ -115,7 +115,7 @@
                     @endif
 
                     @if($reference->technologies->count() > 0)
-                    <div class="text-xl mb-4">Technologien</div>
+                    <div class="text-xl mb-4">{{ __('app.technologies')}}</div>
                     <div class="flex flex-wrap aw-list">
                         <ul>
                             @foreach($reference->technologies as $technology)
@@ -128,7 +128,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6">
+            <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6 order-1 md:order-none mb-12">
         {!! $reference->buzzwords !!}
             </div>
         </div>  
@@ -136,9 +136,7 @@
     </div>
 </section>
 
-
-{{-- TODO: --}}
-<section class="pt-12 pb-40 bg-black md:pt-0">
+<section class="py-20 lg:py-40 bg-black ">
     <div class="container text-center">
         <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
     </div>

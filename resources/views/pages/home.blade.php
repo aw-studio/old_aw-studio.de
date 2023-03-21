@@ -12,21 +12,21 @@ aw-home
 
 <section class="aw-first-section">
     @if($form->header_images && $form->header_images->count() > 0)
-        <div class="relative pt-32 md:pt-56 lg:pt-80 pb-8 bg-[#feb350]" style="background-image:url({{ $form->header_images->first()->url }});background-size:cover;background-position:center;">
+        <div class="relative pt-32 md:pt-56 lg:pt-80 pb-8 md:pb-10 lg:pb-12 bg-[#feb350]" style="background-image:url({{ $form->header_images->first()->url }});background-size:cover;background-position:center;">
             <div class="relative container aw-jumbo">
                 @if ($solutions->count() > 0)
-                    <h1 class="text-2xl sm:text-3xl lg:text-5xl" data-buzzwords="@foreach ($solutions->shuffle() as $solution){{ $solution->title }},@endforeach">
+                    <div id="buzzwords" data-buzzwords="@foreach ($solutions->shuffle() as $solution){{ $solution->title }},@endforeach">
                         @bot
                             {!! nl2br(e($form->h1)) !!}
                             @foreach ($solutions as $solution){{ $solution->title }}, @endforeach
                         @else
-                            <span class="bg-white px-4 py-2 inline-block rounded-md">
+                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md text-base sm:text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3">
                                 {{ $form->h1 }}
                             </span>
                             <div></div>
-                            <span class="bg-white px-4 py-2 mt-2 inline-block rounded-md clear-left"><span id="typed-buzzwords"></span></span>
+                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md clear-left text-base sm:text-2xl md:text-3xl lg:text-4xl"><span id="typed-buzzwords"></span></span>
                         @endbot 
-                    </h1>
+                        </div>
                 @endif
             </div>
         </div>
@@ -36,13 +36,13 @@ aw-home
 <section class="bg-white">
     <div class="container pt-12 md:pt-20">
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 Design & Development 
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
-                <h2 class="h1">
+                <h1 class="h1">
                     {!! nl2br(e($form->h2)) !!}
-                </h2>
+                </h1>
                 <div class="text-xl">
                     {!! $form->text_intro !!}
                 </div>
@@ -58,7 +58,7 @@ aw-home
 
     <div class="col-span-12">
 
-        <h2 class="text-sm uppercase tracking-wider">
+        <h2 class="text-sm uppercase tracking-widest">
             {{ $form->h2_services }}
         </h2>
 
@@ -68,7 +68,7 @@ aw-home
             <div class="col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
                 <a href="{{ __route('services.show', $service->slug)}}" class="group/service-item block translate duration-300 relative">
                     <div class="z-10 relative pb-4 rounded-md">
-                        <div class="-ml-2 mb-4 h-32 transform translate duration-150 scale-90 group-hover/service-item:scale-100 flex justify-center items-end">
+                        <div class="-ml-2 mb-4 h-32 transform translate duration-150 scale-90 group-hover/service-item:scale-100 group-active/service-item:scale-90 flex justify-center items-end">
                             {!! $service->svg !!}
                         </div>
                         <div class="text-sm font-normal translate mb-4 flex justify-center">
@@ -97,7 +97,7 @@ aw-home
 <section class="bg-white">
     <div class="container pt-12 md:pt-20">
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-6">
+            <div class="col-start-1 col-span-12 lg:col-span-5 uppercase text-sm mb-6 tracking-widest">
                         {{ $form->h2_solutions }}
             </div>
             <div class="lg:col-start-6 col-span-12 lg:col-span-7 text-xl">
@@ -121,7 +121,7 @@ aw-home
     <div class="container">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 mb-8 lg:col-start-1 lg:col-span-5 lg:mb-20">
-                <div class="text-white uppercase">
+                <div class="text-white uppercase tracking-widest">
                     {{ __('app.highlight_references') }}
                 </div>
             </div>
@@ -138,7 +138,7 @@ aw-home
 
 <section class="bg-white">
     <div class="container pt-12 md:pt-20">
-        <div class="col-start-1 col-span-5 uppercase text-sm">
+        <div class="col-start-1 col-span-5 uppercase text-sm tracking-widest">
             {{ $form->h2_customers }}
         </div>
         <div>
@@ -153,7 +153,7 @@ aw-home
     <div class="container pt-12 md:pt-20">
 
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 {{ __('app.posts') }}
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
@@ -182,7 +182,7 @@ aw-home
     <div class="container pt-12 md:pt-20">
 
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 {{ $form->h3_management }}
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
@@ -202,7 +202,7 @@ aw-home
     <div class="container pt-12 md:pt-20">
 
         <div class="grid grid-cols-12 mb-20">
-            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4">
+            <div class="col-start-1 col-span-full lg:col-span-5 uppercase text-sm mb-4 tracking-widest">
                 Jobs
             </div>
             <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">

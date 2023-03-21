@@ -2934,10 +2934,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ "./node_modules/typed.js/lib/typed.js");
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_0__);
 
-var buzzwords = document.querySelector('h1').dataset.buzzwords.split(',');
+var buzzwords = document.querySelector("#buzzwords").dataset.buzzwords.split(",");
 
-if (document.getElementById('typed-buzzwords')) {
-  var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())('#typed-buzzwords', {
+if (document.getElementById("typed-buzzwords")) {
+  var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())("#typed-buzzwords", {
     strings: buzzwords,
     typeSpeed: 50,
     backSpeed: 20,
@@ -24613,7 +24613,7 @@ var render = function () {
                                 _c(
                                   "svg",
                                   {
-                                    staticClass: "fill-current icon__icon",
+                                    staticClass: "fill-white icon__icon",
                                     attrs: {
                                       xmlns: "http://www.w3.org/2000/svg",
                                       viewBox: "0 0 12 12",
@@ -24748,7 +24748,7 @@ var render = function () {
                   "a",
                   {
                     staticClass:
-                      "relative block mb-2 lg:mb-6 hover:scale-[1.02] transition-all duration-300",
+                      "relative block mb-2 lg:mb-6 hover:scale-[1.02] active:scale-100 transition-all duration-300",
                     attrs: { href: "blog/" + post.slug },
                   },
                   [

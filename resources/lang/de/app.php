@@ -15,6 +15,7 @@ return [
     'realization' => 'Umsetzung',
     'customer' => 'Auftraggeber',
     'services' => 'Leistungen',
+    'technologies' => 'Technologien',
     'highlight_references' => 'Highlight Referenzen',
     'posts' => 'Beiträge',
 

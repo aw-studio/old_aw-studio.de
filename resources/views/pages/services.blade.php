@@ -35,7 +35,7 @@ aw-first-section-is-white
     <div class="container pb-8 md:pd-12 lg:pb-16">
         <div class="grid grid-flow-row grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch">
             @foreach ($services->services as $service)
-            <div class="mb-0 group/service-item hover:scale-[1.025] transition-all duration-300  hover:drop-shadow-2xl">
+            <div class="mb-0 group/service-item hover:scale-[1.025] active:scale-100 transition-all duration-300  hover:drop-shadow-2xl">
                 <a href="{{ __route('services.show', $service->slug)}}" class="block translate duration-300 relative h-full ">
                     <div class="bg-white rounded-md z-10 relative h-full">
                         <div class="flex flex-col h-full">
@@ -113,10 +113,10 @@ aw-first-section-is-white
 </section>
 
 <section class="pt-12 lg:pt-20 bg-beige">
-    <div class="container pb-8 md:pd-12 lg:pb-20">
+    <div class="container pb-8 md:pb-12 lg:pb-20">
         <div class="grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
             @foreach ($services->methods as $method)
-            <div class="pr-12 mb-8">
+            <div class="pr-12 md:mb-8">
 
                 <div class="flex items-end object-contain h-16 mb-6">
                     @isset($method->illustration_svg)

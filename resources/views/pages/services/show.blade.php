@@ -22,7 +22,9 @@ aw-first-section-is-white
                 <h1 class="h1 aw--animate">
                     {{ $service->title }}
                 </h1>
-                {!! $service->text !!}    
+                <div class="text-lg md:text-xl">
+                {!! $service->text !!}
+            </div>
             </div>
                 <div class="col-span-12 pt-4 pb-12 text-xl lg:col-span-5 lg:col-start-8">
                     <div class="flex lg:justify-end">
@@ -38,7 +40,8 @@ aw-first-section-is-white
     <div class="container pt-20 pb-20">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
-                <div class="aw-list">
+                <h2 class="h3">{{ $service->list_title }}</h2>
+                <div class="aw-list md:columns-2">
                     {!! $service->list !!}
                 </div>
             </div>
@@ -51,12 +54,12 @@ aw-first-section-is-white
 <section class="py-20 pb-40 bg-white border-t border-white">
     <div class="container">
         
-        <h2 class="h2">
+        <h2 class="h3">
             {{ __('app.related-references') }}
         </h2>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 grid-auto-cols">
             @foreach ($service->references as $reference)
-            <div class="mb-4 hover:scale-[1.025] transition-all duration-300">
+            <div class="mb-4 hover:scale-[1.025] active:scale-100 transition-all duration-300">
                 <div class="mb-4">
                     <a href="{{ __route('references.show',$reference->slug) }}">
                         <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full rounded-md" class="w-full" />

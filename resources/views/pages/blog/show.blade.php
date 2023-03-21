@@ -26,19 +26,19 @@
                             </li>
                         @endforeach
                         </ul>
-                        <div class="text-lg">
+                        <div class="text-lg md:text-xl">
                             {!!$post->excerpt!!}
                         </div>
                     </div>
-                    <div class="hidden col-span-3 col-start-10 row-start-1 mt-4 text-right sm:block">
+                    <div class="col-span-full lg:col-span-3 col-start-1 lg:col-start-10 lg:row-start-1 mt-4 mb-4 text-right sm:block">
                         <a class="text-base aw-link" href="{{ __route('blog.index') }}">{{ __('app.back-to-blog-overview') }}</a>
                     </div>
                 </div>
         </div>
     </section>
 
-    <div class="pb-20">
-        <x-lit-image :image="$post->image" class="w-full max-h-[650px] object-cover object-top" />
+    <div class="pb-20 lg:container">
+        <x-lit-image :image="$post->image" class="w-full object-cover object-top lg:rounded-md" />
     </div>
 
     <section>
@@ -53,7 +53,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="order-1 lg:order-none lg:col-start-6 col-span-12 lg:col-span-7 text-xl">
+                <div class="order-1 lg:order-none lg:col-start-6 col-span-12 lg:col-span-7">
                     @if($post->text)
                     {!!$post->text!!}
             @endif

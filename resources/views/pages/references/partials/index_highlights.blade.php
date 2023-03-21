@@ -3,7 +3,7 @@
 
     <div class="grid grid-cols-12 mb-20 lg:mb-40">
         <div class="
-        hover:scale-[1.0125] transition-all duration-300
+        hover:scale-[1.0125] active:scale-100 transition-all duration-300
         col-start-1
         col-span-12
             @if($loop->iteration%2 != 0)

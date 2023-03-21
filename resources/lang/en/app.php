@@ -15,6 +15,7 @@ return [
     'realization' => 'Realization',
     'customer' => 'Customer',
     'services' => 'Services',
+    'technologies' => 'Technologies',
     'highlight_references' => 'Highlight references',
     'posts' => 'Posts',
 
