@@ -2934,10 +2934,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ "./node_modules/typed.js/lib/typed.js");
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_0__);
 
-var buzzwords = document.querySelector("#buzzwords").dataset.buzzwords.split(",");
+var buzzwords = document.querySelector('#buzzwords').dataset.buzzwords.split(',');
 
-if (document.getElementById("typed-buzzwords")) {
-  var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())("#typed-buzzwords", {
+if (document.getElementById('typed-buzzwords')) {
+  var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())('#typed-buzzwords', {
     strings: buzzwords,
     typeSpeed: 50,
     backSpeed: 20,

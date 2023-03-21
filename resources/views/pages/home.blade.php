@@ -20,11 +20,11 @@ aw-home
                             {!! nl2br(e($form->h1)) !!}
                             @foreach ($solutions as $solution){{ $solution->title }}, @endforeach
                         @else
-                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md text-base sm:text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3">
+                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3">
                                 {{ $form->h1 }}
                             </span>
                             <div></div>
-                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md clear-left text-base sm:text-2xl md:text-3xl lg:text-4xl"><span id="typed-buzzwords"></span></span>
+                            <span class="bg-white px-4 py-1 md:py-2 inline-block rounded-md clear-left text-lg sm:text-2xl md:text-3xl lg:text-4xl"><span id="typed-buzzwords"></span></span>
                         @endbot 
                         </div>
                 @endif
