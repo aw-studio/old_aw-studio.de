@@ -32,6 +32,10 @@ return [
     'published' => 'Published on',
     'last-updated' => 'Last updated on',
 
+    'service-cta-title' => 'Do you have any questions? Contact us!',
+    'service-cta-contact' => 'Our contact for ',
+    'service-cta-send-email' => 'Send an email',
+
     'map-consent' => 'I consent to the integration of Google Maps.',
     'show-map' => 'Show Map',
 ];

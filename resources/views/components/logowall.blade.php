@@ -1,6 +1,6 @@
 
 {{-- Desktop --}}
-<div class="hidden md:flex justify-start flex-wrap items-start gap-12 pt-16 pb-32">
+<div class="hidden md:flex justify-start flex-wrap items-start gap-y-16 gap-x-24 pt-16 pb-32">
 
     @foreach ($customers as $customer)
 
@@ -16,7 +16,7 @@
     @endphp
     
     <div>
-        <div class="relative w-full h-32
+        <div class="relative w-full h-28
         "
         style="max-width:{{ (100*$widthfactor)*$customer->logo_scale/100 }}px;"
         >
@@ -28,9 +28,9 @@
 </div>
 
 {{-- Mobile --}}
-<div class="md:hidden overflow-y-auto -mx-6 px-6 scrollbar-hide">
+<div class="md:hidden overflow-y-auto -mx-6 px-6 sm:-mx-20 sm:px-20 scrollbar-hide">
 
-    <div class="flex pb-12 pt-8  gap-12 justify-start" style="width:{{ $customers->count()*80 }}vw">
+    <div class="flex pb-12 pt-8 gap-12 justify-start" style="width:{{ $customers->count()*80 }}vw">
 
         @foreach ($customers as $customer)
 

@@ -4,15 +4,19 @@ namespace Lit\Config\Crud;
 
 use App\Models\Reference;
 use App\Models\Service;
+use App\Models\TeamMember;
 use Ignite\Crud\Config\CrudConfig;
 use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
 use Illuminate\Support\Str;
 use Lit\Http\Controllers\Crud\ServiceController;
 use Litstack\Deeplable\TranslateAction;
+use Litstack\Meta\Traits\FormHasMeta;
 
 class ServiceConfig extends CrudConfig
 {
+    use FormHasMeta;
+
     /**
      * Model class.
      *
@@ -88,6 +92,22 @@ class ServiceConfig extends CrudConfig
             $form->wysiwyg('list')->width(8);
         })->width(9);
 
+        $page->info('Kontakt')
+        ->width(3);
+        $page->card(function ($form) {
+            $form->relation('team_member')
+                ->title('Ansprechpartner')
+                ->preview(function ($table) {
+                    $table->image('Image')
+                        ->src('{image.conversion_urls.sm}')
+                        ->maxWidth('50px')
+                        ->small();
+                    $table->col('Name')
+                        ->value('{name}')
+                        ->sortBy('name');
+                });
+        })->width(9);
+
         $page->info('Referenzen')
         ->width(3);
         $page->card(function ($form) {
@@ -106,5 +126,13 @@ class ServiceConfig extends CrudConfig
                         ->sortBy('title');
                 });
         })->width(9);
+
+        $page->onlyOnUpdate(function ($page) {
+            $page->info('SEO')
+                ->width(3);
+            $page->card(function ($form) {
+                $form->seo();
+            })->width(9);
+        });
     }
 }

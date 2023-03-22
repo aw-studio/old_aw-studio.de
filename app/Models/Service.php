@@ -6,18 +6,20 @@ use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Ignite\Crud\Models\Traits\HasMedia;
 use Ignite\Crud\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Litstack\Meta\Metaable;
+use Litstack\Meta\Traits\HasMeta;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
 
-class Service extends Model implements HasMediaContract, TranslatableContract
+class Service extends Model implements HasMediaContract, TranslatableContract, Metaable
 {
-    use HasMedia, Translatable;
+    use HasMedia, Translatable, HasMeta;
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['title', 'active', 'text', 'excerpt', 'list_title', 'list', 'svg'];
+    protected $fillable = ['title', 'active', 'text', 'excerpt', 'list_title', 'list', 'svg', 'team_member_id'];
 
     /**
      * The attributes to be translated.
@@ -53,5 +55,10 @@ class Service extends Model implements HasMediaContract, TranslatableContract
     public function references()
     {
         return $this->manyRelation(Reference::class, 'references');
+    }
+
+    public function team_member()
+    {
+        return $this->belongsTo(TeamMember::class , 'team_member_id');
     }
 }

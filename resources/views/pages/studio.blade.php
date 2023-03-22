@@ -34,17 +34,17 @@ aw-first-section-is-white
                 <div class="grid grid-flow-row grid-cols-12 gap-4">
                     <div class="col-span-full">
                         @isset($studio->images[2])
-                        <x-lit-image :image="$studio->images[2]" class="w-full" />
+                        <x-lit-image :image="$studio->images[2]" class="w-full rounded-md" />
                         @endisset
                     </div>
                     <div class="col-span-6">
                         @isset($studio->images[0])
-                        <x-lit-image :image="$studio->images[0]" class="w-full" />
+                        <x-lit-image :image="$studio->images[0]" class="w-full rounded-md" />
                         @endisset
                     </div>
                     <div class="col-span-6">
                         @isset($studio->images[1])
-                        <x-lit-image :image="$studio->images[1]" class="w-full" />
+                        <x-lit-image :image="$studio->images[1]" class="w-full rounded-md" />
                         @endisset
                     </div>
                 </div>
@@ -75,7 +75,7 @@ aw-first-section-is-white
                     @isset($studio->team_members)
                     @foreach ($studio->team_members as $team_member)            
                     <div class="col-span-6 md:col-span-4">
-                        <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full mb-4"/>
+                        <x-lit-image :image="$team_member->image" :alt="$team_member->name" class="w-full mb-4 rounded-md"/>
                         <span class="inline-block mb-4 text-base">
                             <span class="block font-semibold leading-5">{{ $team_member->name }}</span>
                             @if($team_member->position)
@@ -100,7 +100,7 @@ aw-first-section-is-white
                 </div>
                 <div class="lg:col-start-6 col-span-full lg:col-span-7 text-xl">
                     <div class="mb-12">
-                        <x-lit-image :image="$studio->images_jobs" class="w-full" />
+                        <x-lit-image :image="$studio->images_jobs" class="w-full rounded-md" />
                     </div>
                     <x-jobs />
                 </div>

@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('meta')
-{{-- <x-lit-meta :for="$form" /> --}}
+<x-lit-meta :for="$form" />
 @endsection
 
 @section('appclass')

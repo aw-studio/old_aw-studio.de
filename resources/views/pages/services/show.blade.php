@@ -1,10 +1,7 @@
 @extends('app')
 
 @section('meta')
-{{-- @if ($reference->title && $reference->subtitle)
-<title>{{ $reference->title }}: {{ $reference->subtitle }}</title>
-@endif --}}
-{{-- <x-lit-meta :for="$reference" /> --}}
+<x-lit-meta :for="$service" />
 @endsection
 
 @section('bodyclass')
@@ -39,14 +36,45 @@ aw-first-section-is-white
 <section class="bg-beige">
     <div class="container pt-20 pb-20">
         <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-7">
+            <div class="col-span-12 col-start-1 md:col-start-1 md:col-span-10 lg:col-start-1 lg:col-span-6 mb-0 md:mb-8 lg:mb-16">
                 <h2 class="h3">{{ $service->list_title }}</h2>
                 <div class="aw-list md:columns-2">
                     {!! $service->list !!}
                 </div>
             </div>
+            @if($service->team_member)
+            <div class="col-span-full col-start-1 lg:col-span-5 lg:col-start-8">
+                <h2 class="h3">{{ __('app.service-cta-title') }}</h2>
+                <p>{{ __('app.service-cta-contact') }} {{ $service->title }}:
+                </p>
+                <div class="bg-white rounded-md p-4 flex items-stretch max-w-[450px] lg:max-w-none">
+                    <div class="h-full w-24">
+                        <x-lit-image :image="$service->team_member->image" container="w-full h-full" class="rounded-md w-full h-full" />
+                    </div>
+                    <div class="pl-6 flex flex-wrap items-between">
+                        <div class="w-full">
+                            <span class="block font-semibold text-lg">
+                                {{ $service->team_member->name }}
+                            </span>
+                            <span class="block">
+                                {{ $service->team_member->position }}
+                            </span>
+                        </div>
+                        <div class="w-full h-auto mt-auto mb-2 text-base">
+                            <span class="block">
+                                <a class="aw-link" href="mailto:hallo@aw-studio.de?subject={{ str_replace('&amp;','%26',rawurlencode($service->title)) }}">{{ __('app.service-cta-send-email') }}</a>
+                            </span>
+                            <span class="block">
+                                +49 431 53 03 86 32
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endif
         </div>
     </div>
+
 </section>
 @endif
 
