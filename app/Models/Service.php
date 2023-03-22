@@ -59,6 +59,6 @@ class Service extends Model implements HasMediaContract, TranslatableContract, M
 
     public function team_member()
     {
-        return $this->belongsTo(TeamMember::class , 'team_member_id');
+        return $this->belongsTo(TeamMember::class, 'team_member_id');
     }
 }
