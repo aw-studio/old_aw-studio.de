@@ -86,7 +86,7 @@ class CustomerConfig extends CrudConfig
                 $form->range('logo_scale')
                 ->title('Skalierung in Logowall')
                 ->min(10)
-                ->max(300)
+                ->max(120)
                 ->step(5)
                 ->hint('Skalierung in %');
             })->width(4);

@@ -1,62 +1,28 @@
 
 {{-- Desktop --}}
-<div class="hidden md:flex justify-start flex-wrap items-start gap-y-16 gap-x-24 pt-16 pb-32">
-
+<div class="hidden md:grid grid-cols-12 grid-flow-row gap-8 pt-12 pb-24">
     @foreach ($customers as $customer)
-
-    @php
-        $imagefactor = $customer->image->custom_properties['original_dimensions']['width'] / $customer->image->custom_properties['original_dimensions']['height'];
-        $widthfactor = 1;
-        if($imagefactor > 2) {
-            $widthfactor = 2;
-        }
-        if($imagefactor > 5) {
-            $widthfactor = 2.5;
-        }
-    @endphp
-    
-    <div>
-        <div class="relative w-full h-28
-        "
-        style="max-width:{{ (100*$widthfactor)*$customer->logo_scale/100 }}px;"
-        >
-             <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
+    <div class="col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3">
+        <div class="bg-beige rounded-md aspect-video w-full p-6 flex justify-center items-center">
+            <div class="origin-center w-[80%] h-full" style="transform:scale({{$customer->logo_scale/100}})">
+            <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain " />
+            </div>
         </div>
-        {{-- <div class="text-center">{{ $customer->name }}</div> --}}
     </div>
     @endforeach
 </div>
 
 {{-- Mobile --}}
 <div class="md:hidden overflow-y-auto -mx-6 px-6 sm:-mx-20 sm:px-20 scrollbar-hide">
-
-    <div class="flex pb-12 pt-8 gap-12 justify-start" style="width:{{ $customers->count()*80 }}vw">
-
+    <div class="flex pb-12 pt-8 gap-6 justify-start" style="width:{{ $customers->count()*40 }}vw">
         @foreach ($customers as $customer)
-
-        @php
-            $imagefactor = $customer->image->custom_properties['original_dimensions']['width'] / $customer->image->custom_properties['original_dimensions']['height'];
-            $widthfactor = 1;
-            if($imagefactor > 2) {
-                $widthfactor = 2;
-            }
-            if($imagefactor > 5) {
-                $widthfactor = 2.5;
-            }
-        @endphp
-        
-        <div class="max-w-[80vw] w-auto pr-12">
-            <div class="relative w-full h-20 md:h-32
-            "
-            style="max-width:{{ (100*$widthfactor)*$customer->logo_scale/100 }}px;"
-            >
-    
-                 <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain" />
-                    
+        <div class="w-[40vw]">
+            <div class="bg-beige rounded-md aspect-video w-full p-6 flex justify-center items-center">
+                <div class="origin-center w-[80%] h-full" style="transform:scale({{$customer->logo_scale/100}})">
+                <x-lit-image :image="$customer->image" container="w-full h-full" class="w-full h-full object-contain " />
+                </div>
             </div>
-            {{-- <div class="text-center">{{ $customer->name }}</div> --}}
         </div>
         @endforeach
     </div>
-
 </div>
