@@ -32,7 +32,7 @@ return [
     'published' => 'Erstellt am',
     'last-updated' => 'Zuletzt aktualisiert am',
 
-    'service-cta-title' => 'Haben sie Fragen? Sprechen Sie uns an!',
+    'service-cta-title' => 'Haben Sie Fragen? Sprechen Sie uns an!',
     'service-cta-contact' => 'Unser Ansprechpartner für ',
     'service-cta-send-email' => 'E-Mail schreiben',
 
