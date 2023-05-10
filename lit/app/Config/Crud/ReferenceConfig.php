@@ -253,7 +253,6 @@ class ReferenceConfig extends CrudConfig
                         $form->input('video_id')
                             ->title('Vimeo-ID');
                     });
-
                 });
         })->width(9);
 
