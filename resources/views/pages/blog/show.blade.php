@@ -67,16 +67,26 @@
     </section>
 
     @if($post->references->count() > 0)
-    <section class="bg-white">
-        <div class="container pb-20">
-            <h3>{{__('app.related-references')}}</h3>
-            <div class="grid grid-cols-12 gap-5">
-                @foreach($post->references as $reference)
-                <div class="col-span-12 md:col-span-6 lg:col-span-4">
-                    <x-lit-image :image="$reference->image" class="w-full mb-2" />
-                    <div class="text-base font-semibold">{{$reference->title}}</div>
-                    {!!$reference->excerpt!!}
-                    <a class="aw-link" href="{{ __route('references.show',$reference->slug)}}">{{__('app.view-reference')}}</a>
+    <section class="py-20 pb-40 bg-white border-t border-black">
+        <div class="container">
+            <h2 class="h3">
+                {{ __('app.related-references') }}
+            </h2>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 grid-auto-cols">
+                @foreach ($post->references as $reference)
+                <div class="mb-4 hover:scale-[1.025] active:scale-100 transition-all duration-300">
+                    <div class="mb-4">
+                        <a href="{{ __route('references.show',$reference->slug) }}">
+                            <x-lit-image :image="$reference->image" :alt="$reference->title" container="w-full rounded-md" class="w-full" />
+                        </a>
+                    </div>
+                    <div class="text-base">
+                        <a class="text-xl aw-link" href="{{ __route('references.show',$reference->slug) }}">
+                            {{ $reference->title }}
+                        </a>
+                        <br>
+                        {{ $reference->subtitle }}<br>
+                    </div>
                 </div>
                 @endforeach
             </div>
