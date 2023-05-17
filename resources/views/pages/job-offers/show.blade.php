@@ -19,7 +19,7 @@
                         </div>
 
                         <div class="pb-8"> 
-                            <x-button type="dark" text="Jetzt bewerben" link="mailto:hallo@aw-studio.de" />
+                            <x-button type="dark" text="Jetzt bewerben" link="mailto:bewerbung@aw-studio.de" />
                         </div>
                     </div>
 
