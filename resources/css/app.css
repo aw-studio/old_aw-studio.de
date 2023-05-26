@@ -355,6 +355,7 @@ body.aw-first-section-is-white.aw-nav-animating {
 
 .trigger-prod-build {
     display: none;
+    color: transparent;
 }
 
 @import 'custom/header';
