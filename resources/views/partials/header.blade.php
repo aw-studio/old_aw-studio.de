@@ -1,13 +1,19 @@
-<div class="container flex justify-between">
+<div class="container flex justify-between items-center">
     <span class="flex items-center">
         <a href="{{__route('home')}}">
             <b class="mr-2">//* Alle Wetter</b> <span class="hidden sm:inline-block">{{ __('app.claim') }}</span>
         </a>
     </span>
-    <button aria-label="Navigation" class="aw-burger">
-        <span></span>
-        <span></span>
-    </button>
+
+    <div class="flex gap-10 items-center">
+        <x-job-offer-hint />
+        <button aria-label="Navigation" class="aw-burger">
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    
+
 </div>
 
 <x-script>

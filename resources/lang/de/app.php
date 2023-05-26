@@ -18,6 +18,7 @@ return [
     'technologies' => 'Technologien',
     'highlight_references' => 'Highlight Referenzen',
     'posts' => 'Beiträge',
+    'job-offer' => 'Job-Angebot',
 
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',
