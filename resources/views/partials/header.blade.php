@@ -5,7 +5,7 @@
         </a>
     </span>
 
-    <div class="flex gap-10 items-center">
+    <div class="flex gap-2 sm:gap-10 items-center">
         <x-job-offer-hint />
         <button aria-label="Navigation" class="aw-burger">
             <span></span>
