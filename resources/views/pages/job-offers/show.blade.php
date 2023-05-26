@@ -10,7 +10,8 @@
                 <div class="grid grid-cols-12">
                     <div class="col-span-12 lg:col-span-8">
 
-                        <h1 class="h1">
+                        <div itemscope itemtype="https://schema.org/JobPosting" directApply="true">
+                        <h1 class="h1" itemprop="title">
                             Job-Angebot: <br> {!! $job_offer->title !!}
                         </h1>
 
@@ -19,8 +20,13 @@
                         </div>
 
                         <div class="pb-8"> 
-                            <x-button type="dark" text="Jetzt bewerben" link="mailto:hallo@aw-studio.de" />
+                            <x-button type="dark" text="Jetzt bewerben" link="mailto:bewerbung@aw-studio.de" />
                         </div>
+
+                        <div class="mt-20">Veröffentlicht / aktualisiert am: <span itemprop="datePosted">{{ $job_offer->updated_at }}</span></div>
+
+                    </div>
+
                     </div>
 
                 </div>

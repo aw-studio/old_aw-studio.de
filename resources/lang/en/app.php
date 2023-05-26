@@ -18,6 +18,7 @@ return [
     'technologies' => 'Technologies',
     'highlight_references' => 'Highlight references',
     'posts' => 'Posts',
+    'job-offer' => 'Job offer',
 
     'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',

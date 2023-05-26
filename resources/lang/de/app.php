@@ -18,6 +18,7 @@ return [
     'technologies' => 'Technologien',
     'highlight_references' => 'Highlight Referenzen',
     'posts' => 'Beiträge',
+    'job-offer' => 'Job-Angebot',
 
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',
@@ -32,7 +33,7 @@ return [
     'published' => 'Erstellt am',
     'last-updated' => 'Zuletzt aktualisiert am',
 
-    'service-cta-title' => 'Haben sie Fragen? Sprechen Sie uns an!',
+    'service-cta-title' => 'Haben Sie Fragen? Sprechen Sie uns an!',
     'service-cta-contact' => 'Unser Ansprechpartner für ',
     'service-cta-send-email' => 'E-Mail schreiben',
 

@@ -353,6 +353,11 @@ body.aw-first-section-is-white.aw-nav-animating {
     width: 95px !important;
 }
 
+.trigger-prod-build {
+    display: none;
+    color: transparent;
+}
+
 @import 'custom/header';
 @import 'custom/main';
 @import 'custom/nav';

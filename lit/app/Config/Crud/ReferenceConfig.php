@@ -246,6 +246,13 @@ class ReferenceConfig extends CrudConfig
                         $form->wysiwyg('text')
                             ->title('Text');
                     });
+
+                    $repeatables->add('video', function ($form, $preview) {
+                        $preview->col('Vimeo Video: {video_id}');
+
+                        $form->input('video_id')
+                            ->title('Vimeo-ID');
+                    });
                 });
         })->width(9);
 
