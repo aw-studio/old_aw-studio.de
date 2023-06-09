@@ -196,7 +196,7 @@
         <h3>Auftraggeber:in</h3>
             <ul>
                 @foreach($reference->customers as $customer)
-                <li class="text-sm">{{ $customer->name }} – {{ $customer->suffix }}</li>
+                <li>{{ $customer->name }} @if($customer->suffix) – {{ $customer->suffix }}@endif</li>
                 @endforeach
             </ul>
         @endif
@@ -213,7 +213,7 @@
                     <h3>Leistungen</h3>
                         <ul>
                             @foreach($reference->services as $service)
-                            <li class="text-sm">{{ $service->title }}</li>
+                            <li>{{ $service->title }}</li>
                             @endforeach
                         </ul>
                     @endif
