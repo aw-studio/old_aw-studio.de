@@ -11,12 +11,11 @@ use App\Http\Controllers\Pages\ImprintController;
 use App\Http\Controllers\Pages\ReferencesController;
 use App\Http\Controllers\Pages\ServicesController;
 use App\Http\Controllers\Pages\StudioController;
+use App\Http\Controllers\ReferencesPdfController;
 use App\Http\Controllers\ServiceController;
 use Ignite\Support\Facades\Form;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ReferencesPdfController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -78,4 +77,3 @@ Route::get('/references/pdf', [ReferencesPdfController::class, 'createPdf']);
 Route::get('/references/testpdf', [ReferencesPdfController::class, 'showView']);
 
 Route::get('/reference-pdf/{slug}', [ReferencesPdfController::class, 'createSingleReferencePdf']);
-
