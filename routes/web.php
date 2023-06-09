@@ -15,6 +15,8 @@ use App\Http\Controllers\ServiceController;
 use Ignite\Support\Facades\Form;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReferencesPdfController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +73,9 @@ Route::get('/', function () {
 
     return redirect($locale);
 });
+
+Route::get('/references/pdf', [ReferencesPdfController::class, 'createPdf']);
+Route::get('/references/testpdf', [ReferencesPdfController::class, 'showView']);
+
+Route::get('/reference-pdf/{slug}', [ReferencesPdfController::class, 'createSingleReferencePdf']);
+

@@ -10,7 +10,7 @@
     <div class="container py-8 md:py-20">
         <div class="grid grid-cols-12 gap-5 mb-0 md:mb-20">
             <div class="col-span-12 col-start-1 row-start-1 lg:col-span-9">
-                <h1 class="mb-0 h1 pr-32">
+                <h1 class="pr-32 mb-0 h1">
                     {{ $reference->title }}
                 </h1>
                 <div class="mt-4 text-xl text-white">
@@ -31,17 +31,17 @@
 
                 <div class="text-white">
 
-                    @if ($detail->type == 'image_1xfull')                    
+                    @if ($detail->type == 'image_1xfull')    
                         <x-lit-image :image="$detail->image" :alt="$reference->title" class="w-full rounded-md" />
                     @endif
 
                     @if ($detail->type == 'image_2xhalf')
                     <div class="flex flex-wrap">
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image1" :alt="$reference->title" class="w-full rounded-md rounded-b-none sm:rounded-r-none sm:rounded-b-md" />
+                            <x-lit-image :image="$detail->image1" :alt="$reference->title" class="w-full rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md" />
                         </div>
                         <div class="w-full sm:w-1/2">
-                            <x-lit-image :image="$detail->image2" :alt="$reference->title" class="w-full rounded-md rounded-t-none sm:rounded-l-none sm:rounded-t-md" />
+                            <x-lit-image :image="$detail->image2" :alt="$reference->title" class="w-full rounded-bl-md rounded-br-md sm:rounded-bl-none sm:rounded-br-md sm:rounded-tr-md" />
                         </div>
                     </div>
                     @endif
@@ -71,11 +71,11 @@
         </div>
 
         <div class="grid grid-cols-12 py-0 md:py-20">
-            <div class="col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 order-2 md:order-none">
+            <div class="order-2 col-span-12 col-start-1 text-white md:col-start-1 md:col-span-4 lg:col-start-2 lg:col-span-3 md:order-none">
                 <div class="flex justify-between md:block">
                 <div class="pb-20">
                     @if($reference->services->count() > 0)
-                    <div class="text-xl mb-4">{{ __('app.services')}}</div>
+                    <div class="mb-4 text-xl">{{ __('app.services')}}</div>
                     <div class="flex flex-wrap aw-list">
                         <ul>
                             @foreach($reference->services as $service)
@@ -86,7 +86,7 @@
                     @endif
 
                     @if($reference->technologies->count() > 0)
-                    <div class="text-xl mb-4">{{ __('app.technologies')}}</div>
+                    <div class="mb-4 text-xl">{{ __('app.technologies')}}</div>
                     <div class="flex flex-wrap aw-list">
                         <ul>
                             @foreach($reference->technologies as $technology)
@@ -99,17 +99,23 @@
                 </div>
                 </div>
             </div>
-            <div class="col-span-12 col-start-1 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6 order-1 md:order-none mb-12">
+            <div class="order-1 col-span-12 col-start-1 mb-12 prose md:col-start-6 md:col-span-7 lg:col-start-6 lg:col-span-6 md:order-none">
         {!! $reference->buzzwords !!}
             </div>
         </div>  
 
     </div>
+
 </section>
 
-<section class="py-20 lg:py-40 bg-black ">
-    <div class="container text-center">
-        <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
+<section class="pb-20 bg-black lg:pb-40 ">
+    <div class="container flex justify-between gap-8">
+        <div>
+            <a href="/reference-pdf/{{ $reference->slug}}" class="aw-link">PDF Download</a>
+        </div>
+        <div class="text-right">
+            <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
+        </div>
     </div>
 </section>
 
