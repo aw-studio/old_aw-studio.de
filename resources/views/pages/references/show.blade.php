@@ -110,9 +110,11 @@
 
 <section class="pb-20 bg-black lg:pb-40 ">
     <div class="container flex justify-between gap-8">
-        <div>
-            <a href="/reference-pdf/{{ $reference->slug}}" class="aw-link">PDF Download</a>
-        </div>
+            <div>
+                @if(app()->getLocale() == 'de') 
+                <a href="/reference-pdf/{{ $reference->slug}}" class="aw-link">PDF Download</a>
+                @endif
+            </div>
         <div class="text-right">
             <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
         </div>
