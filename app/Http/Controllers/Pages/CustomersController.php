@@ -11,12 +11,11 @@ class CustomersController extends Controller
     {
         return view('pages.customers.index')->with([
             'customers'    => Customer::active()->get(),
-       ]);
+        ]);
     }
 
     public function show($slug)
     {
-
         $customer = Customer::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->active()->with('translations')->first();
