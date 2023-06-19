@@ -9,9 +9,9 @@
 <section class="bg-white pb-20 lg:pb-40">
     <div class="container pt-12 md:pt-20">
         <div class="col-start-1 col-span-5 uppercase text-sm tracking-widest">
-            <h2>
+            <h1 class="h1 mb-6 lg:mb-12">
                 {{ __('app.customers-overview')}}
-            </h2>
+            </h1>
         </div>
         <div>
             <div class="grid grid-cols-12 grid-flow-row gap-8 pt-12 pb-24">
