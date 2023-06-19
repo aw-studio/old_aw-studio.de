@@ -21,7 +21,7 @@ aw-first-section-is-white
                 {!! $customer->description !!}
                 </div>
                 <div>
-                    <x-button type="dark" text="{{ str_replace('https://www.','',$customer->url) }}" link="{{ $customer->url }}" target="_blank" />
+                    <x-button type="dark" text="{{ str_replace(['https://','www.'],'['','']',$customer->url) }}" link="{{ $customer->url }}" target="_blank" />
                 </div>
             </div>
                 <div class="col-span-12 pt-4 pb-12 text-xl lg:col-span-5 lg:col-start-8">
