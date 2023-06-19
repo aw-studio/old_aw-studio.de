@@ -22,7 +22,7 @@ class CustomerTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'suffix'];
+    protected $fillable = ['name', 'suffix','description','slug'];
 
     /**
      * Return the sluggable configuration array for this model.

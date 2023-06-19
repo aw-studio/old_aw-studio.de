@@ -20,6 +20,10 @@ return [
     'posts' => 'Posts',
     'job-offer' => 'Job offer',
 
+    'customers-overview' => 'Customers overview',
+    'back-to-customers-overview' => 'back to customers overview',
+    'customers-projects' => 'Joint projects',
+
     'next-services'   => 'continue to the range of services',
     'next-references' => 'continue to the references',
     'next-blog'       => 'continue to the blog',

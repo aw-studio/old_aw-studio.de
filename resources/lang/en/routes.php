@@ -10,6 +10,7 @@ return [
     'blog'        => 'blog',
     'landing-pages' => 'landing-pages',
     'job-offers' => 'jobs',
+    'customers' => 'customers',
 
     'imprint'    => 'imprint',
     'datapolicy' => 'datapolicy',

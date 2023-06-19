@@ -20,6 +20,10 @@ return [
     'posts' => 'Beiträge',
     'job-offer' => 'Job-Angebot',
 
+    'customers-overview' => 'Kunden-Übersicht',
+    'back-to-customers-overview' => 'Zurück zur Kunden-Übersicht',
+    'customers-projects' => 'Gemeinsame Projekte',
+
     'next-services'   => 'weiter zum Leistungsspektrum',
     'next-references' => 'weiter zu den Referenzen',
     'next-blog'       => 'weiter zum Blog',

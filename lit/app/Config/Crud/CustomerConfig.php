@@ -102,6 +102,9 @@ class CustomerConfig extends CrudConfig
                 $form->input('suffix')
                 ->title('Zusatz');
 
+                $form->wysiwyg('description')
+                ->title('Beschreibung');
+
                 $form->select('category_id')
                 ->title('Kategorie')
                 ->options([

@@ -10,8 +10,6 @@ aw-first-section-is-white
 
 @section('content')
 
-@section('content')
-
 <section class="bg-white aw-first-section">
     <div class="container pt-20 pb-10">
         <div class="grid grid-cols-12 gap-5">
@@ -107,14 +105,5 @@ aw-first-section-is-white
     </div>
 </section>
 @endif
-
-@endsection
-
-{{-- TODO: --}}
-{{-- <section class="pt-12 pb-40 bg-black md:pt-0">
-    <div class="container text-center">
-        <a class="aw-link" href="{{ __route('references.show',$next_reference_slug) }}">{{ __('app.next-reference') }}</a>
-    </div>
-</section> --}}
 
 @endsection
