@@ -27,6 +27,7 @@ use Lit\Config\Form\Pages\ImprintConfig;
 use Lit\Config\Form\Pages\MasterConfig;
 use Lit\Config\Form\Pages\ReferencesConfig;
 use Lit\Config\Form\Pages\ServicesConfig;
+use Lit\Config\Form\Pages\SolutionsConfig;
 use Lit\Config\Form\Pages\StudioConfig;
 use Lit\Config\Form\Settings\TranslationsConfig;
 
@@ -71,6 +72,7 @@ class NavigationConfig extends Config
             //$nav->preset(MasterConfig::class)->icon(fa('shapes')),
             $nav->preset(HomeConfig::class)->icon(fa('home')),
             $nav->preset(ServicesConfig::class)->icon(fa('th-list')),
+            $nav->preset(SolutionsConfig::class)->icon(fa('th-list')),
             $nav->preset(ReferencesConfig::class)->icon(fa('star-of-life')),
             $nav->preset(StudioConfig::class)->icon(fa('door-open')),
             $nav->preset(BlogConfig::class)->icon(fa('newspaper')),

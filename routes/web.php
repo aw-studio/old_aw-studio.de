@@ -5,6 +5,7 @@ use App\Http\Controllers\JobOffersController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Pages\ApplicationController;
 use App\Http\Controllers\Pages\CustomersController;
+use App\Http\Controllers\Pages\SolutionsController;
 use App\Http\Controllers\Pages\DatapolicyController;
 use App\Http\Controllers\Pages\DirectionsController;
 use App\Http\Controllers\Pages\HomeController;
@@ -53,6 +54,9 @@ Route::trans('/__(routes.blog)/{slug}', BlogController::class.'@show')->translat
 
 Route::trans('/__(routes.customers)', CustomersController::class.'@index')->name('customers.index');
 Route::trans('/__(routes.customers)/{slug}', CustomersController::class.'@show')->translator('getCustomerSlug')->name('customers.show');
+
+Route::trans('/__(routes.solutions)', SolutionsController::class.'@index')->name('solutions.index');
+Route::trans('/__(routes.solutions)/{slug}', SolutionsController::class.'@show')->translator('getSolutionSlug')->name('solutions.show');
 
 Route::trans('/__(routes.job-offers)/{slug}', JobOffersController::class.'@show')->translator('getJobOfferSlug')->name('job-offer.show');
 

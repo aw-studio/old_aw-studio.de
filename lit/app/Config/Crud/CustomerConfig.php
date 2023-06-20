@@ -57,11 +57,17 @@ class CustomerConfig extends CrudConfig
     public function index(CrudIndex $page)
     {
         $page->table(function ($table) {
+            $table->image('')
+                ->src('{image.conversion_urls.sm}')
+                ->maxWidth('80px')
+                ->small();
             $table->col('Name')
                 ->value('<b>{name}</b>')
                 ->sortBy('name');
             $table->col('Zusatz')
                 ->value('{suffix}');
+            $table->field('Active', fn ($column) => $column->sortBy('active'))
+                ->boolean('active');
         })->search('name');
     }
 

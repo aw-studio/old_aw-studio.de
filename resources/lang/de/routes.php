@@ -11,6 +11,7 @@ return [
     'landing-pages' => 'landing-pages',
     'job-offers' => 'jobs',
     'customers' => 'kunden',
+    'solutions' => 'loesungen',
 
     'imprint'    => 'impressum',
     'datapolicy' => 'datenschutz',

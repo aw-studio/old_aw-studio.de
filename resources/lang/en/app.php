@@ -31,6 +31,8 @@ return [
     'back-home'       => 'back to homepage',
     'back-to-blog-overview' => 'back to blog overview',
     'back-to-services-overview' => 'back to services overview',
+    'back-to-solutions-overview' => 'back to solutions overview',
+
 
     'read-post' => 'Read post',
 

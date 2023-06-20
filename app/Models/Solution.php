@@ -18,14 +18,14 @@ class Solution extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['title', 'active', 'text', 'list', 'svg'];
+    protected $fillable = ['title', 'excerpt', 'active', 'text', 'list', 'svg'];
 
     /**
      * The attributes to be translated.
      *
      * @var array
      */
-    public $translatedAttributes = ['title', 'text', 'list'];
+    public $translatedAttributes = ['title', 'excerpt', 'text', 'list','slug'];
 
     /**
      * The accessors to append to the model's array form.
@@ -41,6 +41,10 @@ class Solution extends Model implements HasMediaContract, TranslatableContract
      */
     protected $with = ['media', 'translations'];
 
+    protected $casts = [
+        'active' => 'boolean',
+    ];
+
     /**
      * Image attribute.
      *
@@ -54,5 +58,10 @@ class Solution extends Model implements HasMediaContract, TranslatableContract
     public function references()
     {
         return $this->manyRelation(Reference::class, 'references');
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('active', true);
     }
 }

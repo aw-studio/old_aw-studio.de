@@ -31,6 +31,7 @@ return [
     'back-home'       => 'zurück zur Startseite',
     'back-to-blog-overview' => 'zurück zur Blog-Übersicht',
     'back-to-services-overview' => 'zurück zur Leistungs-Übersicht',
+    'back-to-solutions-overview' => 'zurück zur Lösungen-Übersicht',
 
     'read-post' => 'Beitrag lesen',
 

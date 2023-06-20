@@ -3,6 +3,7 @@
 namespace Lit\Config\Form\Pages;
 
 use App\Models\Service;
+use App\Models\Solution;
 use App\Models\TeamMember;
 use Ignite\Crud\Config\FormConfig;
 use Ignite\Crud\CrudShow;
@@ -54,14 +55,6 @@ class HomeConfig extends FormConfig
         $page->card(function ($form) {
             $form->image('header_images')->title('Header Images')->maxFiles(10);
             $form->textarea('h1')->title('Headline Animation …')->translatable()->hint('jumbo (h1), shuffled solutions will be added typed');
-            // $form->list('buzzwords')
-            //     ->title('… Buzzwords')
-            //     ->maxDepth(1)
-            //     ->previewTitle('{buzzword}')
-            //     ->form(function ($form) {
-            //         $form->input('buzzword')
-            //             ->title('Buzzword');
-            //     });
         })->width(9);
 
         $page->info('Intro')
@@ -87,11 +80,22 @@ class HomeConfig extends FormConfig
             $form->input('button_services')->title('Button')->translatable()->hint('Button zum Leistungsspektrum')->width(1 / 2);
         })->width(9);
 
-        $page->info('Digitale Lösungen / Referenzen')
+        $page->info('Lösungen')
             ->width(3);
         $page->card(function ($form) {
             $form->input('h2_solutions')->title('Headline')->translatable()->hint('große Headline (h2)');
-            $form->wysiwyg('list_solutions')->title('List')->translatable();
+
+            $form->group(function ($form) {
+                $form->manyRelation('solutions')
+                ->model(Solution::class)
+                ->sortable()
+                ->perPage(30)
+                ->preview(function ($table) {
+                    $table->col('Title')
+                        ->value('{title}')
+                        ->sortBy('title');
+                });
+            });
         })->width(9);
 
         $page->info('Kunden-Listen')
