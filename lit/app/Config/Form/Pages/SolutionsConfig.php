@@ -23,7 +23,7 @@ class SolutionsConfig extends FormConfig
      */
     public function routePrefix()
     {
-        return "pages/solutions";
+        return 'pages/solutions';
     }
 
     /**
@@ -41,7 +41,7 @@ class SolutionsConfig extends FormConfig
     /**
      * Setup form page.
      *
-     * @param \Lit\Crud\CrudShow $page
+     * @param  \Lit\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)

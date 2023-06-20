@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Solution;
 use Lit\Config\Form\Pages\SolutionsConfig;
 
-
 class SolutionsController extends Controller
 {
     public function index()

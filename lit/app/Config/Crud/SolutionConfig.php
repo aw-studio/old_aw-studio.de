@@ -88,7 +88,6 @@ class SolutionConfig extends CrudConfig
             $form->textarea('excerpt')->width(12);
             $form->wysiwyg('text')->width(8);
             $form->wysiwyg('list')->width(8);
-
         })->width(9);
 
         $page->info('Referenzen')

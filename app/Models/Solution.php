@@ -25,7 +25,7 @@ class Solution extends Model implements HasMediaContract, TranslatableContract
      *
      * @var array
      */
-    public $translatedAttributes = ['title', 'excerpt', 'text', 'list','slug'];
+    public $translatedAttributes = ['title', 'excerpt', 'text', 'list', 'slug'];
 
     /**
      * The accessors to append to the model's array form.

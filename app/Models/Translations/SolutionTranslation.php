@@ -22,7 +22,7 @@ class SolutionTranslation extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'excerpt', 'text', 'list','slug'];
+    protected $fillable = ['title', 'excerpt', 'text', 'list', 'slug'];
 
     /**
      * Return the sluggable configuration array for this model.

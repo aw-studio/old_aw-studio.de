@@ -33,7 +33,6 @@ return [
     'back-to-services-overview' => 'back to services overview',
     'back-to-solutions-overview' => 'back to solutions overview',
 
-
     'read-post' => 'Read post',
 
     'published' => 'Published on',
