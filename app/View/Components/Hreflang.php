@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Hreflang extends Component
 {
-     /**
+    /**
      * The available locales.
      *
      * @var array
