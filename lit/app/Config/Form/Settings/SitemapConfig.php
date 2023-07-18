@@ -2,8 +2,8 @@
 
 namespace Lit\Config\Form\Settings;
 
-use Ignite\Crud\CrudShow;
 use Ignite\Crud\Config\FormConfig;
+use Ignite\Crud\CrudShow;
 use Lit\Actions\GenerateXmlSitemapAction;
 use Lit\Http\Controllers\Form\Settings\SitemapController;
 
@@ -23,7 +23,7 @@ class SitemapConfig extends FormConfig
      */
     public function routePrefix()
     {
-        return "settings/sitemap";
+        return 'settings/sitemap';
     }
 
     /**
@@ -41,13 +41,12 @@ class SitemapConfig extends FormConfig
     /**
      * Setup form page.
      *
-     * @param \Lit\Crud\CrudShow $page
+     * @param  \Lit\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
     {
-        $page->card(function($form) {
-
+        $page->card(function ($form) {
             // $form->action('Cache leeren', ClearCacheAction::class);
             $form->action('Sitemap generieren', GenerateXmlSitemapAction::class);
         });

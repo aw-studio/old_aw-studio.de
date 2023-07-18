@@ -2,10 +2,10 @@
 
 namespace Lit\Actions;
 
-use Spatie\Sitemap\Tags\Url;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 class GenerateXmlSitemapAction
 {
@@ -17,7 +17,7 @@ class GenerateXmlSitemapAction
      */
     public function run(Collection $models)
     {
-        // 
+        //
 
         SitemapGenerator::create(env('APP_URL'))
         // ->hasCrawled(function (Url $url) {
