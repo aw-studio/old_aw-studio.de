@@ -29,6 +29,7 @@ use Lit\Config\Form\Pages\ReferencesConfig;
 use Lit\Config\Form\Pages\ServicesConfig;
 use Lit\Config\Form\Pages\SolutionsConfig;
 use Lit\Config\Form\Pages\StudioConfig;
+use Lit\Config\Form\Settings\SitemapConfig;
 use Lit\Config\Form\Settings\TranslationsConfig;
 
 class NavigationConfig extends Config
@@ -56,6 +57,7 @@ class NavigationConfig extends Config
             $nav->title('Einstellungen'),
 
             $nav->preset(TranslationsConfig::class, ['icon' => fa('language')]),
+            $nav->preset(SitemapConfig::class, ['icon' => fa('sitemap')]),
         ]);
     }
 

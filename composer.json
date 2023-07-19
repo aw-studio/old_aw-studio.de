@@ -19,7 +19,8 @@
         "litstack/bricks": "dev-main",
         "litstack/deeplable": "^0.5",
         "litstack/litstack": "^3.7",
-        "litstack/meta": "^2.0.0"
+        "litstack/meta": "^2.0.0",
+        "spatie/laravel-sitemap": "^6.3"
     },
     "require-dev": {
         "aw-studio/cshelper": "dev-main",
