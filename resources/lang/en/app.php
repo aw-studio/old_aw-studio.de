@@ -44,4 +44,7 @@ return [
 
     'map-consent' => 'I consent to the integration of Google Maps.',
     'show-map' => 'Show Map',
+
+    'page-not-found' => 'The page was not found.',
+    'to-homepage' => 'To homepage',
 ];
