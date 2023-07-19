@@ -44,4 +44,7 @@ return [
 
     'map-consent' => 'Ich stimme der Einbindung von Google Maps zu.',
     'show-map' => 'Karte anzeigen',
+
+    'page-not-found' => 'Die Seite wurde nicht gefunden.',
+    'to-homepage' => 'Zur Startseite',
 ];

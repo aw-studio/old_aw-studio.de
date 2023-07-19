@@ -31,7 +31,9 @@
 
         <div class="absolute bottom-0 right-0 pb-0 md:pb-20 lg:pb-0">
             <ul class="flex pt-8 md:pb-4">
-                <x-lit-localize />
+                @if(Request::route() != null)
+                    <x-lit-localize />
+                @endif
             </ul>
         </div>
 
