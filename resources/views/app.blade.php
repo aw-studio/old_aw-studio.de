@@ -7,7 +7,9 @@
 
     <x-hreflang />
 
+    @if(Request::route() != null)
     <link rel="canonical" href="{{ Request::route()->translate(app()->getLocale()) }}" />
+    @endif
 
     @include('partials.favicon')
     @yield('meta')
