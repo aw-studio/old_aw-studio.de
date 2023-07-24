@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reference;
+use Ignite\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ReferencesPdfController extends Controller
 {
@@ -17,27 +19,21 @@ class ReferencesPdfController extends Controller
         ]);
     }
 
-    // public function createPdf()
-    // {
-    //     $references = Reference::orderBy('date', 'DESC')->get();
-
-    //     view()->share('references', $references);
-    //     $pdf = PDF::loadView('references_pdf', $references->toArray());
-    //     $pdfFilename = 'Alle-Wetter-Referenzen-Auswahl '.Carbon::now()->format('M Y').'.pdf';
-
-    //     return $pdf->download($pdfFilename);
-    // }
-
-    public function createSingleReferencePdf($slug)
+    public function createSingleReferencePdf($slug, Request $request)
     {
+
         $reference = Reference::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->with('translations')->first();
 
-        view()->share('reference', $reference);
-        $pdf = PDF::loadView('reference_pdf', $reference->toArray());
+        if($request->tender) {
+            $reference->setAttribute('tender',true);
+        }
+
+        $pdf = Pdf::loadView('reference_pdf', ['reference'=>$reference]);
         $pdfFilename = 'alle-wetter-referenz-'.$slug.'.pdf';
 
         return $pdf->download($pdfFilename);
     }
+
 }

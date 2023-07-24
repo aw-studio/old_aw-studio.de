@@ -194,16 +194,35 @@
                 <td style="width:7cm;">
                     @if($reference->customers->count() > 0)
         <h3>Auftraggeber:in</h3>
+            @if($reference->tender)
+            <p>
+                {!! nl2br($reference->client) !!}
+                <br><br>
+                E-Mail: {{ $reference->client_email }}<br>
+                Telefon: {{ $reference->client_phone }}
+                Ansprechperson: {{ $reference->client_contact_person }}
+            </p>
+            @else
             <ul>
                 @foreach($reference->customers as $customer)
                 <li>{{ $customer->name }} @if($customer->suffix) – {{ $customer->suffix }}@endif</li>
                 @endforeach
             </ul>
+            @endif
         @endif
                 </td>
                 <td>
                     <h3>Umsetzung</h3>
                     {!! $reference->date !!}
+                    <br>
+                    @if($reference->tender)
+                    <h3>Bearbeitungszeitraum</h3>
+                    {{ \Carbon\Carbon::parse($reference->duration_from)->format('d.m.Y') }} – {{ \Carbon\Carbon::parse($reference->duration_to)->format('d.m.Y') }}
+                    <br>
+                    <h3>Auftragswert</h3>
+                    ca. {{ $reference->budget }} €
+                    @endif
+
                 </td>
             </tr>
 
