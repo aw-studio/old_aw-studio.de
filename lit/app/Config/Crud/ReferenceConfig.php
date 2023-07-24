@@ -253,7 +253,6 @@ class ReferenceConfig extends CrudConfig
         $page->info('Ausschreibungen')
         ->width(3);
         $page->card(function ($form) {
-
             $form->datetime('duration_from')
             ->title('Bearbeitung von')
             ->formatted('l')
@@ -272,14 +271,12 @@ class ReferenceConfig extends CrudConfig
             $form->group(function ($form) {
                 $form->input('client_email')->title('E-Mail')->hint('allgemeine / öffentliche E-Mail-Adresse');
                 $form->input('client_phone')->title('Telefon')->hint('allgemeine / öffentliche Telefonnummer');
-                $form->input('client_contact_person')->title('Ansprechperson')->hint('unsere Haupt-Ansprechperson auf Kundenseite');            
+                $form->input('client_contact_person')->title('Ansprechperson')->hint('unsere Haupt-Ansprechperson auf Kundenseite');
             })->width(6);
-            
         })->width(9);
 
         $page->info('')->text('<div class="d-flex justify-content-end" style="margin-bottom:30px;"><a href="/reference-pdf/{slug}" target="_blank" download>PDF herunterladen</a>&nbsp;&nbsp;&nbsp; <a href="/reference-pdf/{slug}?tender=true" target="_blank" download>Ausschreibungs-PDF</a></div>')
             ->width(12);
-
 
         $page->onlyOnUpdate(function ($page) {
             $page->info('SEO')

@@ -85,5 +85,3 @@ Route::get('/references/pdf', [ReferencesPdfController::class, 'createPdf']);
 Route::get('/references/testpdf', [ReferencesPdfController::class, 'showView']);
 
 Route::get('/reference-pdf/{slug}', [ReferencesPdfController::class, 'createSingleReferencePdf']);
-
-

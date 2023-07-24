@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reference;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Ignite\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use Barryvdh\DomPDF\Facade\Pdf;
 
 class ReferencesPdfController extends Controller
 {
@@ -21,13 +21,12 @@ class ReferencesPdfController extends Controller
 
     public function createSingleReferencePdf($slug, Request $request)
     {
-
         $reference = Reference::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->with('translations')->first();
 
-        if($request->tender) {
-            $reference->setAttribute('tender',true);
+        if ($request->tender) {
+            $reference->setAttribute('tender', true);
         }
 
         $pdf = Pdf::loadView('reference_pdf', ['reference'=>$reference]);
@@ -35,5 +34,4 @@ class ReferencesPdfController extends Controller
 
         return $pdf->download($pdfFilename);
     }
-
 }

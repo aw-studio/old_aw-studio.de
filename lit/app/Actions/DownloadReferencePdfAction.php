@@ -2,10 +2,10 @@
 
 namespace Lit\Actions;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Collection;
 use App\Models\Reference;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Collection;
 
 class DownloadReferencePdfAction
 {
@@ -17,7 +17,6 @@ class DownloadReferencePdfAction
      */
     public function run(Collection $models)
     {
-
         $slug = $models->first()->slug;
         $reference = Reference::whereHas('translations', function ($query) use ($slug) {
             $query->where('slug', $slug)->where('locale', app()->getLocale());
