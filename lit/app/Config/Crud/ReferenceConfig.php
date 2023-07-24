@@ -9,6 +9,7 @@ use App\Models\Technology;
 use Ignite\Crud\Config\CrudConfig;
 use Ignite\Crud\CrudIndex;
 use Ignite\Crud\CrudShow;
+use Lit\Actions\DownloadReferencePdfAction;
 use Lit\Http\Controllers\Crud\ReferenceController;
 use Litstack\Deeplable\TranslateAction;
 use Litstack\Meta\Traits\FormHasMeta;
@@ -95,6 +96,10 @@ class ReferenceConfig extends CrudConfig
         ->action('Übersetzen', TranslateAction::class)
         ->variant('primary');
 
+        $page->headerRight()
+        ->action('Download PDF', DownloadReferencePdfAction::class)
+        ->variant('primary');
+
         $page->info('Intro')
             ->width(3);
         $page->card(function ($form) {
@@ -132,17 +137,6 @@ class ReferenceConfig extends CrudConfig
         $page->card(function ($form) {
             $form->input('date')
                 ->title('Umsetzung (Jahr/e)');
-            $form->datetime('duration_from')
-            ->title('Laufzeit von')
-            ->formatted('l')
-            ->width(6);
-            $form->datetime('duration_to')
-                    ->title('Laufzeit bis')
-                    ->formatted('l')
-                    ->width(6);
-
-            $form->input('budget')->type('number');
-
             $form->relation('customers')
     ->title('Auftraggeber')
     ->preview(function ($table) {
@@ -255,6 +249,34 @@ class ReferenceConfig extends CrudConfig
                     });
                 });
         })->width(9);
+
+        $page->info('Ausschreibungen')
+        ->width(3);
+        $page->card(function ($form) {
+            $form->datetime('duration_from')
+            ->title('Bearbeitung von')
+            ->formatted('l')
+            ->width(4)->hint('Projekt-Beginn');
+            $form->datetime('duration_to')
+                    ->title('Bearbeitung bis')
+                    ->formatted('l')
+                    ->width(4)->hint('Projekt-Ende');
+
+            $form->input('budget')->title('Auftragswert')->type('number')->append('€')->width(4)->hint('ungefährer Auftragswert');
+
+            $form->group(function ($form) {
+                $form->textarea('client')->title('Auftraggeber')->hint('Name und Adresse des Auftraggebers');
+            })->width(6);
+
+            $form->group(function ($form) {
+                $form->input('client_email')->title('E-Mail')->hint('allgemeine / öffentliche E-Mail-Adresse');
+                $form->input('client_phone')->title('Telefon')->hint('allgemeine / öffentliche Telefonnummer');
+                $form->input('client_contact_person')->title('Ansprechperson')->hint('unsere Haupt-Ansprechperson auf Kundenseite');
+            })->width(6);
+        })->width(9);
+
+        $page->info('')->text('<div class="d-flex justify-content-end" style="margin-bottom:30px;"><a href="/reference-pdf/{slug}" target="_blank" download>PDF herunterladen</a>&nbsp;&nbsp;&nbsp; <a href="/reference-pdf/{slug}?tender=true" target="_blank" download>Ausschreibungs-PDF</a></div>')
+            ->width(12);
 
         $page->onlyOnUpdate(function ($page) {
             $page->info('SEO')
