@@ -8,7 +8,11 @@
     <x-hreflang />
 
     @if(Request::route() != null)
-    <link rel="canonical" href="{{ Request::route()->translate(app()->getLocale()) }}" />
+        @if(strpos(Request::route()->translate(app()->getLocale()), 'index.php') !== false)
+            <link rel="canonical" href="{{ str_replace('/index.php', '', Request::route()->translate(app()->getLocale())) }}" />
+        @else
+            <link rel="canonical" href="{{ Request::route()->translate(app()->getLocale()) }}" />
+        @endif
     @endif
 
     @include('partials.favicon')
