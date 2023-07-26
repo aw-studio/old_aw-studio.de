@@ -70,16 +70,16 @@ Route::trans('/__(routes.datapolicy)', DatapolicyController::class)->name('datap
 Route::trans('/__(routes.directions)', DirectionsController::class)->name('directions');
 
 // Redirect to locale
-Route::get('/', function () {
-    $locale = app()->getLocale();
-    $acceptedLanguages = request()->server('HTTP_ACCEPT_LANGUAGE');
+// Route::get('/', function () {
+//     $locale = app()->getLocale();
+//     $acceptedLanguages = request()->server('HTTP_ACCEPT_LANGUAGE');
 
-    if (! empty($acceptedLanguages)) {
-        $locale = substr($acceptedLanguages, 0, 2);
-    }
+//     if (! empty($acceptedLanguages)) {
+//         $locale = substr($acceptedLanguages, 0, 2);
+//     }
 
-    return redirect($locale);
-});
+//     return redirect($locale);
+// });
 
 Route::get('/references/pdf', [ReferencesPdfController::class, 'createPdf']);
 Route::get('/references/testpdf', [ReferencesPdfController::class, 'showView']);
