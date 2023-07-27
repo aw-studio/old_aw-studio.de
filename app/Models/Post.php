@@ -90,7 +90,6 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
     {
         return route('blog.post.show', $this);
         return Url::create(route('blog.show', $this))
-            ->setLastModificationDate(Carbon::create($this->updated_at))
             ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
             ->setPriority(0.1);
     }
