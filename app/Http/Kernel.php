@@ -2,8 +2,8 @@
 
 namespace App\Http;
 
-use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use AwStudio\Redirects\Middleware\RedirectRoutesMiddleware;
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
