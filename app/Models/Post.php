@@ -88,8 +88,14 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
      */
     public function toSitemapTag(): Url | string | array
     {
-        return route('blog.show', $this);
-        return Url::create(route('blog.show', $this))
+        return route('de.blog.show', $this);
+        return Url::create(route('de.blog.show', $this))
+            ->setLastModificationDate(Carbon::create($this->updated_at))
+            ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
+            ->setPriority(0.1);
+
+        return route('en.blog.show', $this);
+        return Url::create(route('en.blog.show', $this))
             ->setLastModificationDate(Carbon::create($this->updated_at))
             ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
             ->setPriority(0.1);
