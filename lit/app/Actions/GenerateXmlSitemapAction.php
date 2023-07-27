@@ -2,6 +2,7 @@
 
 namespace Lit\Actions;
 
+use App\Models\Post;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 use Spatie\Sitemap\SitemapGenerator;
@@ -20,19 +21,8 @@ class GenerateXmlSitemapAction
         //
 
         SitemapGenerator::create(env('APP_URL'))
-        // ->hasCrawled(function (Url $url) {
-        //     if ($url->url === 'http://g-rack.de.test/') {
-        //         return;
-        //     }
-        //     if ($url->url === 'https://grk.aw-studio.de/') {
-        //         return;
-        //     }
-        //     if ($url->url === 'https://g-rack.de/') {
-        //         return;
-        //     }
-
-        //     return $url;
-        // })
+        ->getSitemap()
+        ->add(Post::all())
         ->writeToFile('sitemap.xml');
     }
 }

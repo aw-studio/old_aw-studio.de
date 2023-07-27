@@ -2,17 +2,20 @@
 
 namespace App\Models;
 
-use App\Models\Traits\Taggable;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
-use AwStudio\Deeplable\Traits\Deeplable;
-use Ignite\Crud\Models\Traits\HasMedia;
-use Ignite\Crud\Models\Traits\Translatable;
-use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 use Litstack\Meta\Metaable;
+use Spatie\Sitemap\Tags\Url;
+use App\Models\Traits\Taggable;
 use Litstack\Meta\Traits\HasMeta;
+use Ignite\Crud\Models\Traits\HasMedia;
+use Illuminate\Database\Eloquent\Model;
+use AwStudio\Deeplable\Traits\Deeplable;
+use Spatie\Sitemap\Contracts\Sitemapable;
+use Ignite\Crud\Models\Traits\Translatable;
 use Spatie\MediaLibrary\HasMedia as HasMediaContract;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
-class Post extends Model implements HasMediaContract, TranslatableContract, Metaable
+class Post extends Model implements HasMediaContract, TranslatableContract, Metaable, Sitemapable
 {
     use HasMedia, Translatable, Taggable, HasMeta, Deeplable;
 
@@ -76,5 +79,19 @@ class Post extends Model implements HasMediaContract, TranslatableContract, Meta
     public function references()
     {
         return $this->manyRelation(Reference::class, 'references');
+    }
+
+     /**
+     * Adding all blog posts to the sitemap
+     *
+     * @return Url|string|array
+     */
+    public function toSitemapTag(): Url | string | array
+    {
+        return route('blog.post.show', $this);
+        return Url::create(route('blog.show', $this))
+            ->setLastModificationDate(Carbon::create($this->updated_at))
+            ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
+            ->setPriority(0.1);
     }
 }
