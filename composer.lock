@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e3b64c0729b45e8a175c334b5153013",
+    "content-hash": "b2f6fa68bc53306bcc12eecd27a70e87",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -209,21 +209,21 @@
         },
         {
             "name": "aw-studio/laravel-redirects",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aw-studio/laravel-redirects.git",
-                "reference": "b1078381875cc2b97a51d6f15caa87f78db1ad30"
+                "reference": "bde84400402f1ae897f32b4b55e738359807bd94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aw-studio/laravel-redirects/zipball/b1078381875cc2b97a51d6f15caa87f78db1ad30",
-                "reference": "b1078381875cc2b97a51d6f15caa87f78db1ad30",
+                "url": "https://api.github.com/repos/aw-studio/laravel-redirects/zipball/bde84400402f1ae897f32b4b55e738359807bd94",
+                "reference": "bde84400402f1ae897f32b4b55e738359807bd94",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^8.40",
-                "illuminate/support": "^8.40",
+                "illuminate/database": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
                 "php": "^7.4 | ^8.0"
             },
             "require-dev": {
@@ -256,9 +256,9 @@
             "description": "An easy solution to handle redirects in your Laravel application",
             "support": {
                 "issues": "https://github.com/aw-studio/laravel-redirects/issues",
-                "source": "https://github.com/aw-studio/laravel-redirects/tree/v0.1"
+                "source": "https://github.com/aw-studio/laravel-redirects/tree/v0.2"
             },
-            "time": "2021-06-22T12:01:54+00:00"
+            "time": "2022-02-24T10:27:42+00:00"
         },
         {
             "name": "barryvdh/laravel-dompdf",
@@ -3329,20 +3329,20 @@
         },
         {
             "name": "litstack/meta",
-            "version": "v2.0.3",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/litstack/meta.git",
-                "reference": "bc24ddff0a8f91ededf744256e6712e4bed51dbf"
+                "reference": "fdadd5827b643e70f82872e2ce18d08591ab0e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/litstack/meta/zipball/bc24ddff0a8f91ededf744256e6712e4bed51dbf",
-                "reference": "bc24ddff0a8f91ededf744256e6712e4bed51dbf",
+                "url": "https://api.github.com/repos/litstack/meta/zipball/fdadd5827b643e70f82872e2ce18d08591ab0e42",
+                "reference": "fdadd5827b643e70f82872e2ce18d08591ab0e42",
                 "shasum": ""
             },
             "require": {
-                "aw-studio/laravel-redirects": "^0.1.0",
+                "aw-studio/laravel-redirects": "^0.1.0|^0.2.0",
                 "litstack/litstack": "^3.0"
             },
             "require-dev": {
@@ -3382,9 +3382,9 @@
             ],
             "support": {
                 "issues": "https://github.com/litstack/meta/issues",
-                "source": "https://github.com/litstack/meta/tree/v2.0.3"
+                "source": "https://github.com/litstack/meta/tree/v2.0.6"
             },
-            "time": "2021-10-29T09:17:55+00:00"
+            "time": "2022-02-24T10:36:57+00:00"
         },
         {
             "name": "livewire/livewire",
