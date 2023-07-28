@@ -38,6 +38,6 @@ return [
     'redirects' => [
         // '/old' => '/new',
         // 'blog/{url}' => 'news/{url}',
-        '/de/{any}' => '/{any}',
+        '/de/{url}' => '/{url}',
     ],
 ];
