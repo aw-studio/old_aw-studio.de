@@ -52,7 +52,7 @@ class RedirectConfig extends CrudConfig
     /**
      * Build index page.
      *
-     * @param  \Ignite\Crud\CrudIndex $page
+     * @param  \Ignite\Crud\CrudIndex  $page
      * @return void
      */
     public function index(CrudIndex $page)
@@ -81,7 +81,7 @@ class RedirectConfig extends CrudConfig
     /**
      * Setup show page.
      *
-     * @param  \Ignite\Crud\CrudShow $page
+     * @param  \Ignite\Crud\CrudShow  $page
      * @return void
      */
     public function show(CrudShow $page)
