@@ -317,6 +317,9 @@ Route::get('/de/jobs/assistenz-der-geschaeftsfuehrung-projekt-assistenz-50-m-w-d
     Route::get('/de/blog/vue-js', function () {
     return redirect ('/blog/vue-js', 301);
     });
+    Route::get('/de/blog/nuxt-js', function () {
+    return redirect ('/blog/nuxt-js', 301);
+    });
     Route::get('/de/blog/laravel', function () {
     return redirect ('/blog/laravel', 301);
     });
