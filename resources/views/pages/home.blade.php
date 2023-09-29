@@ -63,7 +63,7 @@ aw-home
         </h2>
 
         @if($form->services)
-        <div class="grid grid-flow-row grid-cols-12 gap-1 mb-20">
+        <div class="grid grid-flow-row grid-cols-10 gap-1 mb-20">
             @foreach($form->services as $service)
             <div class="col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
                 <a href="{{ __route('services.show', $service->slug)}}" class="relative block duration-300 group/service-item translate">

@@ -65,7 +65,7 @@ class ServiceConfig extends CrudConfig
     {
         $page->table(function ($table) {
             $table->col('Title')->value('{title}')->sortBy('title');
-        })->search('title');
+        })->search('title')->perPage(20);
     }
 
     /**
