@@ -22,8 +22,6 @@ class DownloadReferencePdfAction
             $query->where('slug', $slug)->where('locale', app()->getLocale());
         })->with('translations')->first();
 
-        dd($models->first()->title);
-
         $pdf = Pdf::loadView('reference_pdf', ['reference'=>$reference]);
         $pdfFilename = 'alle-wetter-referenz-'.$slug.'.pdf';
 
