@@ -6,8 +6,9 @@ use App\Models\Reference;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
+use Ignite\Contracts\Page\FileDownloadAction;
 
-class DownloadReferencePdfAction
+class DownloadReferencePdfAction implements FileDownloadAction
 {
     /**
      * Run the action.
